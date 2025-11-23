@@ -1,14 +1,40 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./styles.css";
+
+interface Contributor {
+    id: number;
+    login: string;
+    avatar_url: string;
+    html_url: string;
+    contributions: number;
+    additions?: number;
+    deletions?: number;
+    total?: number;
+}
+
+interface ContributorStats {
+    author: {
+        login: string;
+    };
+    weeks: Array<{
+        a: number;
+        d: number;
+    }>;
+}
+
+interface ContributorCardItemProps {
+    contributor: Contributor;
+    rank?: number;
+}
 
 /**
  * 获取GitHub贡献者数据(带分页)
  * @param {string} repo 仓库名称，格式为 "用户名/仓库名"
  * @returns {Promise<Array>} 贡献者数据数组
  */
-async function fetchContributors(repo) {
+async function fetchContributors(repo: string): Promise<Contributor[]> {
     try {
-        let allContributors = [];
+        let allContributors: Contributor[] = [];
         let page = 1;
         let hasNextPage = true;
 
@@ -41,7 +67,7 @@ async function fetchContributors(repo) {
  * @param {string} repo 仓库名称，格式为 "用户名/仓库名"
  * @returns {Promise<Array>} 包含统计数据的贡献者数组
  */
-async function fetchAllContributorStats(repo) {
+async function fetchAllContributorStats(repo: string): Promise<ContributorStats[]> {
     try {
         // 直接获取全部贡献者统计数据
         const response = await fetch(`https://api.github.com/repos/${repo}/stats/contributors`);
@@ -76,7 +102,7 @@ async function fetchAllContributorStats(repo) {
  * @param {string} username 贡献者用户名
  * @returns {Object} 贡献者统计数据
  */
-function getContributorStats(allStats, username) {
+function getContributorStats(allStats: ContributorStats[], username: string): { additions: number; deletions: number } {
     // 确保 allStats 是数组
     if (!Array.isArray(allStats)) {
         console.error("获取的统计数据格式错误:", allStats);
@@ -104,7 +130,7 @@ function getContributorStats(allStats, username) {
  * @param {string} username 用户名
  * @returns {boolean} 是否为机器人
  */
-function isBot(username) {
+function isBot(username: string): boolean {
     const botPatterns = [
         /bot\b/i, // 匹配包含bot单词的用户名
         /\[bot\]/i, // 匹配[bot]
@@ -126,7 +152,7 @@ function isBot(username) {
  * @param {number} num 要格式化的数字
  * @returns {string} 格式化后的字符串
  */
-function formatNumber(num) {
+function formatNumber(num: number): string {
     if (num >= 1000000) {
         return (num / 1000000).toFixed(1) + "M";
     } else if (num >= 1000) {
@@ -138,7 +164,7 @@ function formatNumber(num) {
 /**
  * 单个贡献者卡片组件
  */
-export function ContributorCardItem({ contributor, rank }) {
+export function ContributorCardItem({ contributor, rank }: ContributorCardItemProps): React.ReactElement {
     // 优先使用详细统计中的增删行数，如果没有则使用贡献数
     const additions = contributor.additions || 0;
     const deletions = contributor.deletions || 0;
@@ -175,13 +201,17 @@ export function ContributorCardItem({ contributor, rank }) {
     );
 }
 
+interface ContributorCardProps {
+    repo?: string;
+}
+
 /**
  * 贡献者卡片列表组件
  */
-export default function ContributorCard({ repo = "Cubic-Project/NitWikit" }) {
-    const [contributors, setContributors] = useState([]);
+export default function ContributorCard({ repo = "Cubic-Project/NitWikit" }: ContributorCardProps): React.ReactElement {
+    const [contributors, setContributors] = useState<Contributor[]>([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [error, setError] = useState<string | null>(null);
 
     // 获取所有贡献者数据并处理
     useEffect(() => {
@@ -189,28 +219,14 @@ export default function ContributorCard({ repo = "Cubic-Project/NitWikit" }) {
             try {
                 setLoading(true);
 
-                // 首先尝试从静态JSON文件加载
-                try {
-                    const response = await fetch("/data/contributors.json");
-                    if (response.ok) {
-                        const staticData = await response.json();
-                        console.log(`从静态JSON加载了 ${staticData.length} 位贡献者数据`);
-                        setContributors(staticData);
-                        setLoading(false);
-                        return; // 成功加载静态数据，直接返回
-                    }
-                } catch (staticError) {
-                    console.warn("无法加载静态贡献者数据，将尝试从GitHub API获取:", staticError);
-                }
-
-                // 静态数据加载失败，回退到直接请求GitHub API
+                // 直接从GitHub API获取贡献者数据
                 const contributorsData = await fetchContributors(repo);
 
                 // 过滤掉机器人账户
                 const filteredContributors = contributorsData.filter((contributor) => !isBot(contributor.login));
 
                 // 尝试获取详细统计数据
-                let statsData = [];
+                let statsData: ContributorStats[] = [];
                 try {
                     statsData = await fetchAllContributorStats(repo);
                 } catch (statsError) {
@@ -240,8 +256,9 @@ export default function ContributorCard({ repo = "Cubic-Project/NitWikit" }) {
                 console.log(`处理后共有 ${sorted.length} 位有效贡献者`);
                 setContributors(sorted);
             } catch (err) {
+                const errorMessage = err instanceof Error ? err.message : "未知错误";
                 console.error("加载贡献者数据出错:", err);
-                setError(err.message);
+                setError(errorMessage);
             } finally {
                 setLoading(false);
             }
