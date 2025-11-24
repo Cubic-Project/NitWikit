@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
 
+const CACHE_KEY = "contributors_cache";
+const CACHE_DURATION = 2 * 60 * 60 * 1000; // 2小时
+
+interface CacheData {
+    data: Contributor[];
+    timestamp: number;
+}
+
 interface Contributor {
     id: number;
     login: string;
@@ -28,6 +36,34 @@ interface ContributorCardItemProps {
 }
 
 /**
+ * 获取缓存数据
+ */
+function getCachedContributors(): Contributor[] | null {
+    try {
+        const cached = localStorage.getItem(CACHE_KEY);
+        if (!cached) return null;
+
+        const { data, timestamp } = JSON.parse(cached) as CacheData;
+        const isExpired = Date.now() - timestamp > CACHE_DURATION;
+
+        return isExpired ? null : data;
+    } catch {
+        return null;
+    }
+}
+
+/**
+ * 保存缓存数据
+ */
+function setCachedContributors(data: Contributor[]): void {
+    try {
+        localStorage.setItem(CACHE_KEY, JSON.stringify({ data, timestamp: Date.now() }));
+    } catch {
+        console.warn("无法保存缓存数据");
+    }
+}
+
+/**
  * 获取GitHub贡献者数据(带分页)
  * @param {string} repo 仓库名称，格式为 "用户名/仓库名"
  * @returns {Promise<Array>} 贡献者数据数组
@@ -36,20 +72,19 @@ async function fetchContributors(repo: string): Promise<Contributor[]> {
     try {
         let allContributors: Contributor[] = [];
         let page = 1;
-        let hasNextPage = true;
+        let hasMore = true;
 
-        // 使用循环处理分页，GitHub API默认每页返回30条数据
-        while (hasNextPage) {
+        while (hasMore) {
             const response = await fetch(`https://api.github.com/repos/${repo}/contributors?per_page=100&page=${page}`);
             if (!response.ok) {
                 throw new Error("获取贡献者数据失败");
             }
 
             const data = await response.json();
-            if (data.length === 0) {
-                hasNextPage = false;
+            if (!Array.isArray(data) || data.length === 0) {
+                hasMore = false;
             } else {
-                allContributors = [...allContributors, ...data];
+                allContributors.push(...data);
                 page++;
             }
         }
@@ -60,69 +95,6 @@ async function fetchContributors(repo: string): Promise<Contributor[]> {
         console.error("获取贡献者数据出错:", error);
         return [];
     }
-}
-
-/**
- * 获取所有贡献者的详细统计信息
- * @param {string} repo 仓库名称，格式为 "用户名/仓库名"
- * @returns {Promise<Array>} 包含统计数据的贡献者数组
- */
-async function fetchAllContributorStats(repo: string): Promise<ContributorStats[]> {
-    try {
-        // 直接获取全部贡献者统计数据
-        const response = await fetch(`https://api.github.com/repos/${repo}/stats/contributors`);
-        if (!response.ok) {
-            // GitHub可能会返回202，表示正在计算统计信息
-            if (response.status === 202) {
-                // 等待几秒后重试
-                await new Promise((resolve) => setTimeout(resolve, 3000));
-                return fetchAllContributorStats(repo);
-            }
-            throw new Error("获取贡献者统计数据失败");
-        }
-
-        const data = await response.json();
-
-        // 确保返回的是数组
-        if (!Array.isArray(data)) {
-            console.error("GitHub API返回的统计数据不是数组格式:", data);
-            return [];
-        }
-
-        return data;
-    } catch (error) {
-        console.error("获取贡献者统计数据出错:", error);
-        return [];
-    }
-}
-
-/**
- * 获取单个贡献者的统计信息
- * @param {Array} allStats 所有贡献者的统计数据
- * @param {string} username 贡献者用户名
- * @returns {Object} 贡献者统计数据
- */
-function getContributorStats(allStats: ContributorStats[], username: string): { additions: number; deletions: number } {
-    // 确保 allStats 是数组
-    if (!Array.isArray(allStats)) {
-        console.error("获取的统计数据格式错误:", allStats);
-        return { additions: 0, deletions: 0 };
-    }
-
-    const userStats = allStats.find((stat) => stat && stat.author && stat.author.login === username);
-    if (!userStats) {
-        return { additions: 0, deletions: 0 };
-    }
-
-    // 计算总添加和删除行数
-    let additions = 0;
-    let deletions = 0;
-    userStats.weeks.forEach((week) => {
-        additions += week.a;
-        deletions += week.d;
-    });
-
-    return { additions, deletions };
 }
 
 /**
@@ -153,26 +125,16 @@ function isBot(username: string): boolean {
  * @returns {string} 格式化后的字符串
  */
 function formatNumber(num: number): string {
-    if (num >= 1000000) {
-        return (num / 1000000).toFixed(1) + "M";
-    } else if (num >= 1000) {
-        return (num / 1000).toFixed(1) + "k";
-    }
-    return num.toString();
+    return Intl.NumberFormat("en-US", {
+        notation: "compact",
+        maximumFractionDigits: 1
+    }).format(num);
 }
 
 /**
  * 单个贡献者卡片组件
  */
 export function ContributorCardItem({ contributor, rank }: ContributorCardItemProps): React.ReactElement {
-    // 优先使用详细统计中的增删行数，如果没有则使用贡献数
-    const additions = contributor.additions || 0;
-    const deletions = contributor.deletions || 0;
-    const totalContribution = additions + deletions;
-
-    // 判断是否有增删行数数据
-    const hasLineStats = additions > 0 || deletions > 0;
-
     return (
         <div className="contributor-card">
             {rank && <div className="contributor-rank">{rank}</div>}
@@ -185,17 +147,7 @@ export function ContributorCardItem({ contributor, rank }: ContributorCardItemPr
                         {contributor.login}
                     </a>
                 </div>
-                <div className="contributor-stats">
-                    {hasLineStats ? (
-                        <>
-                            <span className="additions">+{formatNumber(additions)}</span>
-                            <span className="deletions">-{formatNumber(deletions)}</span>
-                        </>
-                    ) : (
-                        <span className="no-stats">行数统计暂未显示</span>
-                    )}
-                </div>
-                <div className="contributor-total">总贡献: {formatNumber(contributor.contributions)} 次提交</div>
+                <div className="contributor-total">贡献: {formatNumber(contributor.contributions)} 次</div>
             </div>
         </div>
     );
@@ -219,41 +171,25 @@ export default function ContributorCard({ repo = "Cubic-Project/NitWikit" }: Con
             try {
                 setLoading(true);
 
+                const cachedData = getCachedContributors();
+                if (cachedData) {
+                    setContributors(cachedData);
+                    setLoading(false);
+                    return;
+                }
+
                 // 直接从GitHub API获取贡献者数据
                 const contributorsData = await fetchContributors(repo);
 
                 // 过滤掉机器人账户
                 const filteredContributors = contributorsData.filter((contributor) => !isBot(contributor.login));
 
-                // 尝试获取详细统计数据
-                let statsData: ContributorStats[] = [];
-                try {
-                    statsData = await fetchAllContributorStats(repo);
-                } catch (statsError) {
-                    console.warn("获取详细统计数据失败，将使用基本贡献数据:", statsError);
-                }
+                // 排序
+                const sorted = filteredContributors
+                    .filter((c) => c.contributions > 0)
+                    .sort((a, b) => b.contributions - a.contributions);
 
-                // 合并统计数据到贡献者数据
-                const contributorsWithStats = filteredContributors.map((contributor) => {
-                    const stats = getContributorStats(statsData, contributor.login);
-
-                    return {
-                        ...contributor,
-                        additions: stats.additions || 0,
-                        deletions: stats.deletions || 0,
-                        total: contributor.contributions || 0
-                    };
-                });
-
-                // 确保所有贡献者有非零贡献值进行排序
-                const validContributors = contributorsWithStats.filter((c) => c.contributions > 0 || c.total > 0);
-
-                // 按照贡献总量排序
-                const sorted = validContributors.sort(
-                    (a, b) => (b.contributions || b.total) - (a.contributions || a.total)
-                );
-
-                console.log(`处理后共有 ${sorted.length} 位有效贡献者`);
+                setCachedContributors(sorted);
                 setContributors(sorted);
             } catch (err) {
                 const errorMessage = err instanceof Error ? err.message : "未知错误";
