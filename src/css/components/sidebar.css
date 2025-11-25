@@ -180,6 +180,7 @@
         min-width: 32px;
         min-height: 32px;
         flex-shrink: 0;
+        margin-right: 0.5rem;
     }
 
     /* 嵌套菜单项也需要足够的触摸区域 */

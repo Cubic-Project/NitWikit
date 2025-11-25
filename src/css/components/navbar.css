@@ -336,7 +336,29 @@ button[class*="colorModeToggle"]:hover {
 }
 
 .navbar-sidebar__items {
-    padding: 1rem;
+    /* 移除 padding，由子元素控制边距 */
+    padding: 0;
+}
+
+/* 移动端返回按钮样式 */
+.navbar-sidebar__back {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    /* 确保与其他菜单项对齐 */
+    width: calc(100% - 2rem);
+    margin: 0 1rem 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition-fast);
+}
+
+.navbar-sidebar__back:hover {
+    background-color: var(--bg-muted);
+    color: var(--text-primary);
 }
 
 /* 移动端侧边栏链接优化触摸目标 */
@@ -388,6 +410,6 @@ button[class*="colorModeToggle"]:hover {
     }
 
     .navbar-sidebar__items {
-        padding: 0.875rem;
+        padding: 0;
     }
 }
