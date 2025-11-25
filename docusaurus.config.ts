@@ -176,7 +176,23 @@ const config: Config = {
             tagName: "link",
             attributes: {
                 rel: "preconnect",
+                href: "https://fontsapi.zeoseven.com",
+                crossOrigin: "anonymous"
+            }
+        },
+        {
+            tagName: "link",
+            attributes: {
+                rel: "preconnect",
                 href: "https://D1KV1BYF3B-dsn.algolia.net",
+                crossOrigin: "anonymous"
+            }
+        },
+        {
+            tagName: "link",
+            attributes: {
+                rel: "preconnect",
+                href: "https://giscus.app",
                 crossOrigin: "anonymous"
             }
         }

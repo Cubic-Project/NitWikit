@@ -1,39 +1,123 @@
+/* ======================================
+   NitWikit 按钮样式
+   简洁设计 + 主题适配
+====================================== */
+
+/* ======================================
+   按钮基础样式
+====================================== */
 .button {
-    border-radius: var(--radius-md);
-    font-weight: 600;
-    transition: all var(--transition-base);
-    padding: 0.75rem 1.5rem;
-    border: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding: 0.625rem 1.25rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    text-decoration: none;
     cursor: pointer;
+    transition: all var(--transition-fast);
+    border: none;
+    gap: 0.5rem;
 }
 
+/* ======================================
+   主按钮
+====================================== */
 .button--primary {
     background-color: var(--primary);
-    color: white;
-    box-shadow: 0 1px 3px rgba(37, 160, 110, 0.2);
+    color: var(--slate-950) !important;
 }
 
 .button--primary:hover {
-    background-color: var(--primary-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(37, 160, 110, 0.3);
+    background-color: var(--primary-light);
+    text-decoration: none;
 }
 
+.button--primary:active {
+    background-color: var(--primary-dark);
+}
+
+/* ======================================
+   次要按钮
+====================================== */
 .button--secondary {
-    background-color: var(--primary-alpha-strong);
-    color: var(--primary);
+    background-color: transparent;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border);
 }
 
 .button--secondary:hover {
-    background-color: var(--primary-alpha-medium);
-    transform: translateY(-2px);
+    background-color: var(--bg-muted);
+    border-color: var(--border-dark);
+    text-decoration: none;
 }
 
-@media (max-width: 576px) {
-    .button {
-        padding: 0.65rem 1.25rem;
-    }
+/* ======================================
+   链接按钮
+====================================== */
+.button--link {
+    background-color: transparent;
+    color: var(--primary) !important;
+    padding: 0;
+}
+
+.button--link:hover {
+    text-decoration: underline;
+}
+
+/* ======================================
+   按钮尺寸
+====================================== */
+.button--sm {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+}
+
+.button--lg {
+    padding: 0.875rem 1.75rem;
+    font-size: 1rem;
+}
+
+/* ======================================
+   块级按钮
+====================================== */
+.button--block {
+    width: 100%;
+}
+
+/* ======================================
+   禁用状态
+====================================== */
+.button:disabled,
+.button--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* ======================================
+   带图标的按钮
+====================================== */
+.button svg,
+.button img {
+    width: 1em;
+    height: 1em;
+}
+
+/* ======================================
+   暗色模式
+====================================== */
+[data-theme="dark"] .button--primary {
+    color: var(--slate-950) !important;
+}
+
+[data-theme="dark"] .button--secondary {
+    color: var(--text-primary) !important;
+    border-color: var(--border);
+}
+
+[data-theme="dark"] .button--secondary:hover {
+    background-color: var(--bg-elevated);
+    border-color: var(--border-dark);
 }

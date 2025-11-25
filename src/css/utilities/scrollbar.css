@@ -1,3 +1,11 @@
+/* ======================================
+   NitWikit 滚动条样式
+   细窄设计 + 主题适配
+====================================== */
+
+/* ======================================
+   全局滚动条 - WebKit
+====================================== */
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -8,18 +16,82 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(160, 174, 192, 0.3);
+    background: var(--slate-300);
     border-radius: 100px;
+    transition: background var(--transition-fast);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(160, 174, 192, 0.5);
+    background: var(--slate-400);
 }
 
-html[data-theme="dark"] ::-webkit-scrollbar-thumb {
-    background: rgba(74, 85, 104, 0.4);
+::-webkit-scrollbar-corner {
+    background: transparent;
 }
 
-html[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
-    background: rgba(74, 85, 104, 0.6);
+/* ======================================
+   全局滚动条 - Firefox
+====================================== */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--slate-300) transparent;
+}
+
+/* ======================================
+   暗色模式滚动条
+====================================== */
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: var(--slate-600);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--slate-500);
+}
+
+[data-theme="dark"] * {
+    scrollbar-color: var(--slate-600) transparent;
+}
+
+/* ======================================
+   代码块滚动条 - 更细
+====================================== */
+pre::-webkit-scrollbar,
+.code-block::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+pre::-webkit-scrollbar-thumb,
+.code-block::-webkit-scrollbar-thumb {
+    background: var(--slate-400);
+}
+
+pre::-webkit-scrollbar-thumb:hover,
+.code-block::-webkit-scrollbar-thumb:hover {
+    background: var(--slate-500);
+}
+
+[data-theme="dark"] pre::-webkit-scrollbar-thumb,
+[data-theme="dark"] .code-block::-webkit-scrollbar-thumb {
+    background: var(--slate-600);
+}
+
+[data-theme="dark"] pre::-webkit-scrollbar-thumb:hover,
+[data-theme="dark"] .code-block::-webkit-scrollbar-thumb:hover {
+    background: var(--slate-500);
+}
+
+/* ======================================
+   侧边栏滚动条
+====================================== */
+.menu::-webkit-scrollbar {
+    width: 4px;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background: var(--slate-300);
+}
+
+[data-theme="dark"] .menu::-webkit-scrollbar-thumb {
+    background: var(--slate-700);
 }

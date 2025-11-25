@@ -1,47 +1,374 @@
+/* ======================================
+   NitWikit 提示框样式
+   渐变背景 + 左侧边框
+====================================== */
+
+/* ======================================
+   提示框基础样式
+====================================== */
 .alert {
     border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
     border-left-width: 3px;
-    background-color: var(--bg-card);
-    box-shadow: var(--shadow-sm);
     margin-bottom: 1.5rem;
-    padding: 1rem 1.5rem;
+    padding: 0.875rem 1rem;
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
 }
 
-.alert--info {
-    --ifm-alert-border-color: var(--primary);
-    --ifm-alert-color: var(--text-primary);
-}
-
-.alert--warning {
-    --ifm-alert-border-color: #f0b429;
-    --ifm-alert-color: var(--text-primary);
-}
-
-.alert--danger {
-    --ifm-alert-border-color: #ef4444;
-    --ifm-alert-color: var(--text-primary);
-}
-
-.alert--success {
-    --ifm-alert-border-color: #10b981;
-    --ifm-alert-color: var(--text-primary);
-}
-
-.alert__title {
+/* ======================================
+   提示框标题
+====================================== */
+.alert__heading {
     font-weight: 600;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
+    margin-bottom: 0.375rem;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    position: relative;
+    z-index: 1;
 }
 
+.alert p {
+    position: relative;
+    z-index: 1;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+
+/* ======================================
+   信息提示 (Info)
+====================================== */
+.alert--info {
+    border-left-color: var(--alert-info);
+    background: linear-gradient(
+        135deg,
+        var(--alert-info-bg) 0%,
+        transparent 70%
+    );
+    --ifm-alert-color: var(--text-primary);
+}
+
+.alert--info .alert__heading {
+    color: var(--alert-info);
+}
+
+/* ======================================
+   警告提示 (Warning)
+====================================== */
+.alert--warning {
+    border-left-color: var(--alert-warning);
+    background: linear-gradient(
+        135deg,
+        var(--alert-warning-bg) 0%,
+        transparent 70%
+    );
+    --ifm-alert-color: var(--text-primary);
+}
+
+.alert--warning .alert__heading {
+    color: var(--alert-warning);
+}
+
+/* ======================================
+   危险提示 (Danger)
+====================================== */
+.alert--danger {
+    border-left-color: var(--alert-danger);
+    background: linear-gradient(
+        135deg,
+        var(--alert-danger-bg) 0%,
+        transparent 70%
+    );
+    --ifm-alert-color: var(--text-primary);
+}
+
+.alert--danger .alert__heading {
+    color: var(--alert-danger);
+}
+
+/* ======================================
+   成功提示 (Success / Tip)
+====================================== */
+.alert--success {
+    border-left-color: var(--alert-success);
+    background: linear-gradient(
+        135deg,
+        var(--alert-success-bg) 0%,
+        transparent 70%
+    );
+    --ifm-alert-color: var(--text-primary);
+}
+
+.alert--success .alert__heading {
+    color: var(--alert-success);
+}
+
+/* ======================================
+   次要提示 (Secondary / Note)
+====================================== */
+.alert--secondary {
+    border-left-color: var(--alert-note);
+    background: linear-gradient(
+        135deg,
+        var(--alert-note-bg) 0%,
+        transparent 70%
+    );
+    --ifm-alert-color: var(--text-primary);
+}
+
+.alert--secondary .alert__heading {
+    color: var(--alert-note);
+}
+
+/* ======================================
+   引用块样式
+====================================== */
 blockquote {
-    border-left: 4px solid var(--primary);
-    background-color: var(--primary-alpha-light);
+    border-left: 3px solid var(--primary);
+    background: linear-gradient(
+        135deg,
+        var(--primary-alpha-8) 0%,
+        transparent 60%
+    );
     border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
-    padding: 1.25rem 1.5rem;
+    padding: 1rem 1.25rem;
     margin: 1.5rem 0;
-    font-style: italic;
+    font-style: normal;
+    color: var(--text-primary);
 }
 
 blockquote p:last-child {
     margin-bottom: 0;
+}
+
+/* ======================================
+   暗色模式
+====================================== */
+[data-theme="dark"] .alert {
+    border-color: var(--border);
+}
+
+[data-theme="dark"] .alert--info {
+    background: linear-gradient(
+        135deg,
+        var(--alert-info-bg) 0%,
+        transparent 60%
+    );
+}
+
+[data-theme="dark"] .alert--info .alert__heading {
+    color: var(--alert-info);
+}
+
+[data-theme="dark"] .alert--warning {
+    background: linear-gradient(
+        135deg,
+        var(--alert-warning-bg) 0%,
+        transparent 60%
+    );
+}
+
+[data-theme="dark"] .alert--warning .alert__heading {
+    color: var(--alert-warning);
+}
+
+[data-theme="dark"] .alert--danger {
+    background: linear-gradient(
+        135deg,
+        var(--alert-danger-bg) 0%,
+        transparent 60%
+    );
+}
+
+[data-theme="dark"] .alert--danger .alert__heading {
+    color: var(--alert-danger);
+}
+
+[data-theme="dark"] .alert--success {
+    background: linear-gradient(
+        135deg,
+        var(--alert-success-bg) 0%,
+        transparent 60%
+    );
+}
+
+[data-theme="dark"] .alert--success .alert__heading {
+    color: var(--alert-success);
+}
+
+[data-theme="dark"] .alert--secondary {
+    background: linear-gradient(
+        135deg,
+        var(--alert-note-bg) 0%,
+        transparent 60%
+    );
+}
+
+[data-theme="dark"] .alert--secondary .alert__heading {
+    color: var(--alert-note);
+}
+
+[data-theme="dark"] blockquote {
+    background: linear-gradient(
+        135deg,
+        var(--primary-alpha-10) 0%,
+        transparent 60%
+    );
+}
+
+/* ======================================
+   折叠区域样式
+====================================== */
+details {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+    background-color: var(--bg-card);
+    transition: border-color var(--transition-fast);
+}
+
+details:hover {
+    border-color: var(--primary-alpha-border);
+}
+
+details summary {
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-primary);
+    transition: background-color var(--transition-fast);
+    list-style: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::after {
+    content: "›";
+    font-size: 1.25em;
+    color: var(--text-light);
+    transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+details[open] summary::after {
+    transform: rotate(90deg);
+    color: var(--primary);
+}
+
+details summary:hover {
+    background: linear-gradient(
+        135deg,
+        var(--primary-alpha-5) 0%,
+        transparent 100%
+    );
+}
+
+details[open] summary {
+    border-bottom: 1px solid var(--border);
+}
+
+details > *:not(summary) {
+    padding: 1rem;
+}
+
+[data-theme="dark"] details {
+    background-color: var(--bg-card);
+    border-color: var(--border);
+}
+
+/* ======================================
+   移动端响应式
+====================================== */
+@media (max-width: 768px) {
+    .alert {
+        padding: 0.75rem 0.875rem;
+        margin-bottom: 1.25rem;
+        border-radius: var(--radius-md);
+    }
+
+    .alert__heading {
+        font-size: 0.8125rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .alert p {
+        font-size: 0.875rem;
+        line-height: 1.55;
+    }
+
+    blockquote {
+        padding: 0.875rem 1rem;
+        margin: 1.25rem 0;
+    }
+
+    details {
+        margin-bottom: 1rem;
+    }
+
+    details summary {
+        padding: 0.625rem 0.875rem;
+        /* 确保触摸目标足够大 */
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    details > *:not(summary) {
+        padding: 0.875rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .alert {
+        padding: 0.625rem 0.75rem;
+        margin-bottom: 1rem;
+        /* 移动端略微突破容器边缘 */
+        margin-left: -0.25rem;
+        margin-right: -0.25rem;
+        border-radius: var(--radius-sm);
+    }
+
+    .alert__heading {
+        font-size: 0.75rem;
+        gap: 0.25rem;
+    }
+
+    .alert p {
+        font-size: 0.8125rem;
+    }
+
+    blockquote {
+        padding: 0.75rem 0.875rem;
+        margin: 1rem 0;
+        margin-left: -0.25rem;
+        margin-right: -0.25rem;
+        border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+
+    details {
+        margin-left: -0.25rem;
+        margin-right: -0.25rem;
+        border-radius: var(--radius-md);
+    }
+
+    details summary {
+        padding: 0.625rem 0.75rem;
+        font-size: 0.9375rem;
+    }
+
+    details > *:not(summary) {
+        padding: 0.75rem;
+    }
+
+    details summary::after {
+        font-size: 1.125em;
+    }
 }

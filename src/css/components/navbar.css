@@ -1,101 +1,240 @@
+/* ======================================
+   NitWikit 导航栏样式
+   毛玻璃效果 + 渐变底线
+====================================== */
+
 .navbar {
-    box-shadow: 0 1px 0 0 var(--border) !important;
-    transition: all var(--transition-base);
     height: var(--ifm-navbar-height);
-    padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal);
+    padding: 0 var(--ifm-navbar-padding-horizontal);
     display: flex;
     align-items: center;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: var(--ifm-navbar-background-color);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: all var(--transition-base);
+    box-shadow: none !important;
+    position: relative;
 }
 
+/* 底部渐变线 */
+.navbar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--primary-alpha-30) 50%,
+        transparent 100%
+    );
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.navbar:hover::after {
+    opacity: 1;
+}
+
+/* ======================================
+   品牌区域
+====================================== */
 .navbar__brand {
     font-weight: 700;
-    color: var(--primary);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .navbar__title {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     letter-spacing: -0.01em;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .navbar__logo {
     height: 1.75rem;
     width: 1.75rem;
-    margin-right: 0.5rem;
     transition: transform var(--transition-base);
 }
 
 .navbar__brand:hover .navbar__logo {
-    transform: rotate(10deg);
+    transform: scale(1.05) rotate(5deg);
 }
 
+.navbar__brand:hover .navbar__title {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* ======================================
+   导航链接
+====================================== */
 .navbar__link {
     display: flex;
     align-items: center;
     font-size: 0.9375rem;
-    padding: 0.375rem 0.75rem;
+    padding: 0.5rem 0.875rem;
     border-radius: var(--radius-md);
     color: var(--text-secondary);
     transition: all var(--transition-fast);
     font-weight: 500;
+    position: relative;
+}
+
+.navbar__link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width var(--transition-fast);
+    border-radius: 1px;
 }
 
 .navbar__link:hover {
-    background-color: var(--primary-alpha-light);
-    color: var(--primary);
+    color: var(--primary-text);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navbar__link:hover::before {
+    width: 60%;
 }
 
 .navbar__link--active {
     font-weight: 600;
-    color: var(--primary);
-    background-color: var(--primary-alpha-medium);
+    color: var(--primary-text);
 }
 
+.navbar__link--active::before {
+    width: 60%;
+}
+
+/* ======================================
+   导航项
+====================================== */
+.navbar__item {
+    margin: 0 0.25rem;
+}
+
+.navbar__items {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar__items--right {
+    gap: 0.5rem;
+}
+
+/* ======================================
+   导航栏内部布局
+====================================== */
+.navbar__inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* ======================================
+   搜索框
+====================================== */
+.navbar__search {
+    margin-left: 0.5rem;
+}
+
+.navbar__search-input {
+    height: 2.25rem;
+    border-radius: var(--radius-lg);
+    background-color: var(--bg-muted);
+    border: 1px solid var(--border);
+    transition: all var(--transition-fast);
+    padding: 0 0.875rem;
+    font-size: 0.875rem;
+    width: 10rem;
+    color: var(--text-primary);
+}
+
+.navbar__search-input::placeholder {
+    color: var(--text-light);
+}
+
+.navbar__search-input:focus {
+    background-color: var(--bg-card);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-alpha-10), var(--shadow-glow);
+    outline: none;
+    width: 12rem;
+}
+
+/* ======================================
+   GitHub 链接
+====================================== */
+.header-github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+}
+
+.header-github-link:hover {
+    color: var(--text-primary);
+    background-color: var(--bg-muted);
+    transform: scale(1.05);
+}
+
+.header-github-link::before {
+    content: "";
+    width: 1.25rem;
+    height: 1.25rem;
+    background: currentColor;
+    mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat center / contain;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+.header-github-link::after {
+    display: none !important;
+}
+
+/* ======================================
+   主题切换按钮
+====================================== */
+button[class*="colorModeToggle"] {
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+button[class*="colorModeToggle"]:hover {
+    background-color: var(--bg-muted);
+}
+
+/* ======================================
+   移动端响应式
+====================================== */
 @media (max-width: 996px) {
     .navbar {
         height: auto;
         min-height: var(--ifm-navbar-height);
-        padding: 0.5rem 1rem;
-    }
-
-    .navbar__brand {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        margin: 0;
-        z-index: 0;
-    }
-
-    .navbar__title {
-        font-size: 1.2rem;
-    }
-
-    .navbar__logo {
-        height: 1.5rem;
-        width: 1.5rem;
-    }
-
-    .navbar-sidebar-toggle {
-        position: relative;
-        z-index: 10;
-        margin-right: auto;
-    }
-
-    .navbar__search {
-        position: relative;
-        z-index: 10;
-        margin-left: auto;
-    }
-
-    .navbar-sidebar {
-        z-index: 15 !important;
-        height: 100vh !important;
-        max-height: none !important;
-    }
-
-    .navbar-sidebar__body {
-        height: calc(100vh - var(--ifm-navbar-height)) !important;
+        padding: 0.75rem 1rem;
     }
 
     .navbar__inner {
@@ -105,69 +244,150 @@
         align-items: center;
     }
 
-    .navbar__items--left {
-        width: 33%;
-        justify-content: flex-start;
-    }
-
-    .navbar__items--right {
-        width: 33%;
-        justify-content: flex-end;
-    }
-
-    [class*="github-link"]:not(.header-github-link),
-    a[aria-label*="GitHub"]:not(.header-github-link),
-    .navbar__item[href="/"]:not(.navbar__brand),
-    .navbar__item[href$="/Java/"],
-    .navbar__item[href$="/Bedrock/"],
-    .navbar__item[href$="/about/"],
-    .navbar__item[href*="Java"],
-    .navbar__item[href*="Bedrock"],
-    .navbar__item[href*="about"],
-    .navbar__item:not(.navbar__logo):not(.navbar__title):not(.navbar__brand):not(.navbar-sidebar-toggle):not(
-            .navbar__search
-        ):not(.header-github-link),
-    .navbar__items--left .navbar__item:not(.navbar__brand):not(.navbar-sidebar-toggle) {
+    /* 
+     * 核心：隐藏导航链接（通用、Java、Bedrock、关于我们）
+     * 导航链接同时具有 .navbar__item 和 .navbar__link 类
+     */
+    .navbar__item.navbar__link {
         display: none !important;
-        width: 0 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        opacity: 0 !important;
-        pointer-events: none !important;
     }
 
-    .header-github-link {
+    /* 隐藏下拉菜单类型的导航项 */
+    .navbar__item.dropdown {
+        display: none !important;
+    }
+
+    /* 品牌居中显示 */
+    .navbar__brand {
         display: flex !important;
-        width: auto !important;
-        opacity: 1 !important;
-        pointer-events: auto !important;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .navbar__title {
+        font-size: 1.0625rem;
+    }
+
+    .navbar__logo {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    /* 汉堡菜单按钮 */
+    .navbar__toggle {
         position: relative;
         z-index: 10;
-        border-radius: 50%;
-        background-color: rgba(125, 125, 125, 0.1);
-        margin: 0 0.5rem !important;
     }
 
-    .navbar-sidebar .menu__list-item a[href="/"],
-    .navbar-sidebar .menu__list-item a[href$="/Java/"],
-    .navbar-sidebar .menu__list-item a[href$="/Bedrock/"],
-    .navbar-sidebar .menu__list-item a[href$="/about/"] {
-        display: flex !important;
-        width: auto !important;
-        padding: inherit !important;
-        margin: inherit !important;
-        opacity: 1 !important;
-        pointer-events: auto !important;
+    /* 右侧搜索和 GitHub */
+    .navbar__items--right {
+        position: relative;
+        z-index: 10;
+        margin-left: auto;
     }
 
-    .navbar-sidebar-toggle,
-    .navbar__brand,
-    .navbar__search {
+    /* 显示搜索 */
+    .navbar__search,
+    .DocSearch-Button {
         display: flex !important;
+    }
+
+    /* 显示 GitHub 链接 */
+    .header-github-link {
+        display: flex !important;
+    }
+
+    /* 侧边栏样式 */
+    .navbar-sidebar {
+        z-index: 15 !important;
+        height: 100vh !important;
+        max-height: none !important;
+        background: var(--bg-card);
+    }
+
+    .navbar-sidebar__backdrop {
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+    }
+
+    .navbar__link::before {
+        display: none;
     }
 }
 
-.header-github-link::after,
-.github-icon-button::after {
-    display: none !important;
+/* ======================================
+   移动端侧边栏导航
+====================================== */
+.navbar-sidebar__brand {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar-sidebar__close {
+    color: var(--text-secondary);
+    /* 增大触摸区域 */
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-sidebar__items {
+    padding: 1rem;
+}
+
+/* 移动端侧边栏链接优化触摸目标 */
+.navbar-sidebar__item {
+    min-height: 44px;
+    display: block; /* 改为 block 避免 flex 挤压 */
+}
+
+.navbar-sidebar .menu__link {
+    min-height: 44px;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    width: 100%; /* 确保占满宽度 */
+    white-space: nowrap; /* 防止文字换行 */
+}
+
+/* ======================================
+   小屏幕额外优化
+====================================== */
+@media (max-width: 540px) {
+    .navbar {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .navbar__title {
+        font-size: 1rem;
+    }
+
+    .navbar__logo {
+        height: 1.375rem;
+        width: 1.375rem;
+    }
+
+    /* 汉堡菜单触摸区域 */
+    .navbar__toggle {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 0.5rem;
+    }
+
+    .navbar-sidebar {
+        width: 85vw;
+        max-width: 320px;
+    }
+
+    .navbar-sidebar__brand {
+        padding: 0.875rem;
+    }
+
+    .navbar-sidebar__items {
+        padding: 0.875rem;
+    }
 }

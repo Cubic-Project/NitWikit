@@ -1,20 +1,50 @@
-/**
- * announcement.css - 极简公告横幅样式
- */
+/* ======================================
+   NitWikit 公告栏样式
+====================================== */
 
-/* 公告横幅基础样式 */
+/* ======================================
+   公告栏基础样式
+====================================== */
 div[class*="announcementBar"] {
-    background: #25a06e !important;
-    color: white !important;
+    background: var(--primary) !important;
+    color: var(--slate-950) !important;
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-bottom: none !important;
 }
 
-/* 超链接样式 */
 div[class*="announcementBar"] a {
-    color: white !important;
-    text-decoration: underline !important;
+    color: var(--slate-950) !important;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 div[class*="announcementBar"] a:hover {
-    color: #e0e0e0 !important;
-    text-decoration: underline !important;
+    color: var(--slate-800) !important;
+}
+
+/* ======================================
+   关闭按钮
+====================================== */
+button[class*="closeButton"] {
+    color: var(--slate-950) !important;
+    opacity: 0.7;
+}
+
+button[class*="closeButton"]:hover {
+    opacity: 1;
+    background: transparent !important;
+}
+
+/* ======================================
+   暗色模式保持一致
+====================================== */
+[data-theme="dark"] div[class*="announcementBar"] {
+    background: var(--primary) !important;
+    color: var(--slate-950) !important;
+}
+
+[data-theme="dark"] div[class*="announcementBar"] a {
+    color: var(--slate-950) !important;
 }

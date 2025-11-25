@@ -1,21 +1,76 @@
+/* ======================================
+   NitWikit 主题系统 - 暗色模式
+   借鉴 Nuxt 深邃暗色设计
+====================================== */
+
+/* ======================================
+   暗色模式变量覆盖
+====================================== */
 [data-theme="dark"] {
-    --primary: #36c085;
-    --primary-dark: #30b77c;
-    --primary-light: #4fd197;
-    --text-primary: #f7fafc;
-    --text-secondary: #e2e8f0;
-    --bg-light: #1e242c;
-    --bg-dark: #171e26;
-    --bg-card: #1e2833;
-    --bg-footer: #171e26;
-    --border: #364049;
-    --ifm-navbar-background-color: rgba(30, 36, 44, 0.98);
-    --ifm-background-color: var(--bg-dark);
+    /* 主色调 - 暗色模式稍亮以保持对比 */
+    --primary: var(--green-500);
+    --primary-dark: var(--green-600);
+    --primary-light: var(--green-400);
+    /* 暗色模式下文字主色更亮 */
+    --primary-text: var(--green-400);
+
+    /* 文字颜色 - 提升对比度 */
+    --text-primary: var(--slate-100);
+    --text-secondary: var(--slate-300);
+    --text-light: var(--slate-400);
+    --text-muted: var(--slate-400);
+
+    /* 背景颜色 - 深邃层次 (Nuxt 风格) */
+    --bg-base: var(--slate-950);
+    --bg-light: var(--slate-950);
+    --bg-muted: var(--slate-900);
+    --bg-card: var(--slate-900);
+    --bg-elevated: var(--slate-800);
+    --bg-dark: var(--slate-950);
+    --bg-footer: var(--slate-950);
+
+    /* 边框颜色 */
+    --border: var(--slate-800);
+    --border-light: var(--slate-900);
+    --border-dark: var(--slate-700);
+
+    /* 阴影 - 暗色模式下更柔和 */
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    --shadow-glow: 0 0 30px rgba(0, 220, 130, 0.12);
+
+    /* 提示框暗色 - 增强可见度 */
+    --alert-info: #60a5fa;
+    --alert-info-bg: rgba(96, 165, 250, 0.15);
+    --alert-warning: #fbbf24;
+    --alert-warning-bg: rgba(251, 191, 36, 0.15);
+    --alert-danger: #f87171;
+    --alert-danger-bg: rgba(248, 113, 113, 0.15);
+    --alert-success: #34d399;
+    --alert-success-bg: rgba(52, 211, 153, 0.15);
+    --alert-note: #a78bfa;
+    --alert-note-bg: rgba(167, 139, 250, 0.15);
+
+    /* Docusaurus 变量覆盖 */
+    --ifm-background-color: var(--bg-light);
     --ifm-background-surface-color: var(--bg-card);
+    --ifm-navbar-background-color: rgba(2, 6, 23, 0.85);
+    --ifm-font-color-base: var(--text-primary);
+    --ifm-heading-color: var(--text-primary);
+    
     --ifm-color-primary: var(--primary);
     --ifm-color-primary-dark: var(--primary-dark);
+    --ifm-color-primary-light: var(--primary-light);
+
+    --ifm-menu-color: var(--text-secondary);
+    --ifm-toc-border-color: var(--border);
 }
 
+/* ======================================
+   亮色模式背景应用
+====================================== */
 [data-theme="light"] body,
 [data-theme="light"] .main-wrapper,
 [data-theme="light"] .homepage,
@@ -29,24 +84,107 @@
     background-color: transparent;
 }
 
+/* ======================================
+   暗色模式背景应用
+====================================== */
 [data-theme="dark"] body,
 [data-theme="dark"] .main-wrapper,
 [data-theme="dark"] .docMainContainer_gTbr,
-[data-theme="dark"] .container,
 [data-theme="dark"] article,
 [data-theme="dark"] .theme-doc-markdown {
     background-color: var(--bg-dark);
 }
 
+[data-theme="dark"] .container {
+    background-color: transparent;
+}
+
+/* ======================================
+   区域渐变分割 (Nuxt 风格)
+====================================== */
+.section-gradient {
+    background: linear-gradient(
+        180deg,
+        var(--bg-muted) 0%,
+        var(--bg-light) 100%
+    );
+    border-top: 1px solid var(--border);
+}
+
+[data-theme="dark"] .section-gradient {
+    background: linear-gradient(
+        180deg,
+        rgba(15, 23, 42, 0.4) 0%,
+        var(--bg-dark) 100%
+    );
+}
+
+/* ======================================
+   卡片主题适配
+====================================== */
 [data-theme="dark"] .card {
     background-color: var(--bg-card);
     border-color: var(--border);
 }
 
 [data-theme="dark"] .card:hover {
-    border-color: rgba(54, 192, 133, 0.3);
+    border-color: var(--primary-alpha-border);
+    box-shadow: var(--shadow-glow);
 }
 
+/* ======================================
+   页脚主题适配
+====================================== */
 [data-theme="dark"] .footer__copyright {
-    border-top-color: rgba(255, 255, 255, 0.05);
+    border-top-color: var(--border);
+}
+
+/* ======================================
+   代码块主题
+====================================== */
+[data-theme="dark"] pre {
+    background-color: var(--slate-900) !important;
+}
+
+[data-theme="dark"] :not(pre) > code {
+    background-color: var(--primary-alpha-15);
+    color: var(--primary-light);
+}
+
+/* ======================================
+   滚动条主题
+====================================== */
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: var(--slate-700);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--slate-600);
+}
+
+/* ======================================
+   选择文本主题
+====================================== */
+::selection {
+    background: var(--primary-alpha-20);
+    color: inherit;
+}
+
+[data-theme="dark"] ::selection {
+    background: var(--primary-alpha-30);
+}
+
+/* ======================================
+   链接悬停发光效果
+====================================== */
+[data-theme="dark"] a:hover {
+    text-shadow: 0 0 10px var(--primary-alpha-30);
+}
+
+/* ======================================
+   输入框聚焦发光
+====================================== */
+[data-theme="dark"] input:focus,
+[data-theme="dark"] textarea:focus {
+    box-shadow: 0 0 0 3px var(--primary-alpha-20), var(--shadow-glow);
 }
