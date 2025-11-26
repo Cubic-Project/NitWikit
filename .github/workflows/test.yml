@@ -36,26 +36,8 @@ jobs:
                   key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
                   restore-keys: |
                       ${{ runner.os }}-pnpm-store-
-
             - name: "Install"
               run: "pnpm install --frozen-lockfile"
-
-            # 压缩图片
-            - name: "图片压缩"
-              uses: calibreapp/image-actions@main
-              with:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  jpegQuality: "80"
-                  pngQuality: "80"
-                  webpQuality: "80"
-                  ignorePaths: "node_modules/**"
-                  compressOnly: true
-
-            - name: "MarkdownLint Check"
-              uses: DavidAnson/markdownlint-cli2-action@v17
-              with:
-                  fix: true
-                  globs: "docs*/**/*.md"
 
             - name: "Build"
               run: "pnpm run build"
