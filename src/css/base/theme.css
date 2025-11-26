@@ -188,3 +188,30 @@
 [data-theme="dark"] textarea:focus {
     box-shadow: 0 0 0 3px var(--primary-alpha-20), var(--shadow-glow);
 }
+
+/* ======================================
+   Ant Design Timeline 暗色模式适配
+====================================== */
+[data-theme="dark"] .ant-timeline {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .ant-timeline-item-content {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .ant-timeline-item-label {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .ant-timeline-item-tail {
+    border-inline-start-color: var(--border);
+}
+
+[data-theme="dark"] .ant-timeline-item-head {
+    background-color: var(--bg-dark);
+}
+
+[data-theme="dark"] .ant-timeline-item-pending .ant-timeline-item-content {
+    color: var(--text-muted);
+}

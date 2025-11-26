@@ -1,6 +1,6 @@
 /* ======================================
    NitWikit 代码块样式
-   简洁设计 + 渐变装饰
+   简洁设计
 ====================================== */
 
 /* ======================================
@@ -15,22 +15,6 @@ pre {
     background-color: var(--slate-100) !important;
 }
 
-/* 顶部装饰渐变 */
-pre::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    background: linear-gradient(
-        180deg,
-        var(--primary-alpha-5) 0%,
-        transparent 30%
-    );
-    pointer-events: none;
-    z-index: 0;
-}
 
 /* ======================================
    代码文本
@@ -145,13 +129,6 @@ button[class*="copyButton"]:hover {
     border-color: var(--border);
 }
 
-[data-theme="dark"] pre::before {
-    background: linear-gradient(
-        180deg,
-        var(--primary-alpha-8) 0%,
-        transparent 30%
-    );
-}
 
 [data-theme="dark"] div[class*="codeBlockTitle"] {
     background: linear-gradient(
