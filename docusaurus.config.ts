@@ -65,7 +65,7 @@ const config: Config = {
     clientModules: [
         require.resolve("./src/clientModules/routeModules.js"),
         require.resolve("./src/clientModules/adsModules.js"),
-        require.resolve("./src/clientModules/themeModules.js")
+        require.resolve("./src/clientModules/themeModules.ts")
     ],
 
     presets: [

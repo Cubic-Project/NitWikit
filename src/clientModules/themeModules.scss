@@ -1,0 +1,95 @@
+$ripple-duration: 600ms;
+$cascade-duration: 400ms;
+$cascade-delay: 40ms;
+$card-wave-duration: 400ms;
+
+// 涟漪元素样式
+.theme-ripple {
+    position: fixed;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transform: scale(0);
+    pointer-events: none;
+    z-index: 9999;
+    animation: themeRippleExpand $ripple-duration cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+// 涟漪展开动画
+@keyframes themeRippleExpand {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+// 瀑布流过渡动画
+@keyframes themeCascade {
+    0% {
+        filter: brightness(1);
+    }
+    30% {
+        filter: brightness(1.05);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+
+// 卡片波浪动画
+@keyframes cardWave {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    40% {
+        transform: translateY(-2px) scale(1.005);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+// 瀑布流过渡增强效果
+.theme-transitioning {
+    .navbar {
+        animation: themeCascade $cascade-duration ease-out;
+    }
+
+    .main-wrapper {
+        animation: themeCascade $cascade-duration ease-out $cascade-delay backwards;
+    }
+
+    article {
+        animation: themeCascade $cascade-duration ease-out ($cascade-delay * 2) backwards;
+    }
+
+    .footer {
+        animation: themeCascade $cascade-duration ease-out ($cascade-delay * 5) backwards;
+    }
+
+    // 卡片波浪效果
+    .card {
+        animation: cardWave $card-wave-duration ease-out backwards;
+
+        @for $i from 1 through 6 {
+            &:nth-child(#{$i}) {
+                animation-delay: (100ms + ($i - 1) * 40ms);
+            }
+        }
+    }
+}
+
+// 尊重减少动画偏好
+@media (prefers-reduced-motion: reduce) {
+    .theme-ripple,
+    .theme-transitioning * {
+        animation: none !important;
+    }
+}
