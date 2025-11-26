@@ -59,7 +59,7 @@
     --ifm-navbar-background-color: rgba(2, 6, 23, 0.85);
     --ifm-font-color-base: var(--text-primary);
     --ifm-heading-color: var(--text-primary);
-    
+
     --ifm-color-primary: var(--primary);
     --ifm-color-primary-dark: var(--primary-dark);
     --ifm-color-primary-light: var(--primary-light);
@@ -179,14 +179,6 @@
 ====================================== */
 [data-theme="dark"] a:hover {
     text-shadow: 0 0 10px var(--primary-alpha-30);
-}
-
-/* ======================================
-   输入框聚焦发光
-====================================== */
-[data-theme="dark"] input:focus,
-[data-theme="dark"] textarea:focus {
-    box-shadow: 0 0 0 3px var(--primary-alpha-20), var(--shadow-glow);
 }
 
 /* ======================================
