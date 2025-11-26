@@ -56,7 +56,7 @@
     /* Docusaurus 变量覆盖 */
     --ifm-background-color: var(--bg-light);
     --ifm-background-surface-color: var(--bg-card);
-    --ifm-navbar-background-color: rgba(2, 6, 23, 0.85);
+    --ifm-navbar-background-color: rgba(2, 6, 23, 1);
     --ifm-font-color-base: var(--text-primary);
     --ifm-heading-color: var(--text-primary);
 

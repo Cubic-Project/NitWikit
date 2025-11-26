@@ -128,7 +128,7 @@
     --ifm-background-color: var(--bg-light);
     --ifm-background-surface-color: var(--bg-card);
 
-    --ifm-navbar-background-color: rgba(255, 255, 255, 0.8);
+    --ifm-navbar-background-color: rgba(255, 255, 255, 1);
     --ifm-navbar-height: 4rem;
     --ifm-navbar-shadow: none;
     --ifm-navbar-padding-vertical: 0;
