@@ -93,7 +93,10 @@
    悬停过渡基础
 ====================================== */
 .transition-colors {
-    transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+    transition:
+        color var(--transition-fast),
+        background-color var(--transition-fast),
+        border-color var(--transition-fast);
 }
 
 .transition-opacity {
@@ -131,7 +134,8 @@
    脉冲动画（用于提示）
 ====================================== */
 @keyframes pulse {
-    0%, 100% {
+    0%,
+    100% {
         opacity: 1;
     }
     50% {
@@ -223,16 +227,36 @@
         animation: menuItemSlideIn 250ms ease-out backwards;
     }
 
-    .navbar-sidebar--show .menu__list-item:nth-child(1) { animation-delay: 50ms; }
-    .navbar-sidebar--show .menu__list-item:nth-child(2) { animation-delay: 80ms; }
-    .navbar-sidebar--show .menu__list-item:nth-child(3) { animation-delay: 110ms; }
-    .navbar-sidebar--show .menu__list-item:nth-child(4) { animation-delay: 140ms; }
-    .navbar-sidebar--show .menu__list-item:nth-child(5) { animation-delay: 170ms; }
-    .navbar-sidebar--show .menu__list-item:nth-child(6) { animation-delay: 200ms; }
-    .navbar-sidebar--show .menu__list-item:nth-child(7) { animation-delay: 230ms; }
-    .navbar-sidebar--show .menu__list-item:nth-child(8) { animation-delay: 260ms; }
-    .navbar-sidebar--show .menu__list-item:nth-child(9) { animation-delay: 290ms; }
-    .navbar-sidebar--show .menu__list-item:nth-child(10) { animation-delay: 320ms; }
+    .navbar-sidebar--show .menu__list-item:nth-child(1) {
+        animation-delay: 50ms;
+    }
+    .navbar-sidebar--show .menu__list-item:nth-child(2) {
+        animation-delay: 80ms;
+    }
+    .navbar-sidebar--show .menu__list-item:nth-child(3) {
+        animation-delay: 110ms;
+    }
+    .navbar-sidebar--show .menu__list-item:nth-child(4) {
+        animation-delay: 140ms;
+    }
+    .navbar-sidebar--show .menu__list-item:nth-child(5) {
+        animation-delay: 170ms;
+    }
+    .navbar-sidebar--show .menu__list-item:nth-child(6) {
+        animation-delay: 200ms;
+    }
+    .navbar-sidebar--show .menu__list-item:nth-child(7) {
+        animation-delay: 230ms;
+    }
+    .navbar-sidebar--show .menu__list-item:nth-child(8) {
+        animation-delay: 260ms;
+    }
+    .navbar-sidebar--show .menu__list-item:nth-child(9) {
+        animation-delay: 290ms;
+    }
+    .navbar-sidebar--show .menu__list-item:nth-child(10) {
+        animation-delay: 320ms;
+    }
 
     /* 嵌套菜单展开动画 */
     .menu__list .menu__list {
@@ -254,6 +278,8 @@
 
     /* 活动指示条动画 */
     .menu__link--active {
-        transition: all var(--transition-fast), border-left-color 150ms ease-out;
+        transition:
+            all var(--transition-fast),
+            border-left-color 150ms ease-out;
     }
 }

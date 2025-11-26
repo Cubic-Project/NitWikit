@@ -103,20 +103,12 @@
    区域渐变分割 (Nuxt 风格)
 ====================================== */
 .section-gradient {
-    background: linear-gradient(
-        180deg,
-        var(--bg-muted) 0%,
-        var(--bg-light) 100%
-    );
+    background: linear-gradient(180deg, var(--bg-muted) 0%, var(--bg-light) 100%);
     border-top: 1px solid var(--border);
 }
 
 [data-theme="dark"] .section-gradient {
-    background: linear-gradient(
-        180deg,
-        rgba(15, 23, 42, 0.4) 0%,
-        var(--bg-dark) 100%
-    );
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, var(--bg-dark) 100%);
 }
 
 /* ======================================
@@ -221,12 +213,11 @@
 
 /* 基础过渡：为所有主题相关属性添加过渡 */
 html {
-    transition: 
-        background-color var(--theme-transition-duration) var(--theme-transition-timing);
+    transition: background-color var(--theme-transition-duration) var(--theme-transition-timing);
 }
 
 body {
-    transition: 
+    transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         color var(--theme-transition-duration) var(--theme-transition-timing);
     transition-delay: 20ms;
@@ -234,7 +225,7 @@ body {
 
 /* 导航栏 - 最先开始过渡 */
 .navbar {
-    transition: 
+    transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         border-color var(--theme-transition-duration) var(--theme-transition-timing),
         box-shadow var(--theme-transition-duration) var(--theme-transition-timing);
@@ -248,7 +239,7 @@ body {
 }
 
 .navbar__link {
-    transition: 
+    transition:
         color var(--theme-transition-duration) var(--theme-transition-timing),
         background-color var(--theme-transition-duration) var(--theme-transition-timing);
     transition-delay: 50ms;
@@ -263,14 +254,14 @@ body {
 /* 侧边栏 - 与内容同步 */
 .theme-doc-sidebar-container,
 .menu {
-    transition: 
+    transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         border-color var(--theme-transition-duration) var(--theme-transition-timing);
     transition-delay: 60ms;
 }
 
 .menu__link {
-    transition: 
+    transition:
         color var(--theme-transition-duration) var(--theme-transition-timing),
         background-color var(--theme-transition-duration) var(--theme-transition-timing);
     transition-delay: 80ms;
@@ -285,26 +276,47 @@ article,
 }
 
 /* 标题层叠过渡 */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     transition: color var(--theme-transition-duration) var(--theme-transition-timing);
 }
 
-h1 { transition-delay: 100ms; }
-h2 { transition-delay: 120ms; }
-h3 { transition-delay: 140ms; }
-h4 { transition-delay: 150ms; }
-h5 { transition-delay: 160ms; }
-h6 { transition-delay: 170ms; }
+h1 {
+    transition-delay: 100ms;
+}
+h2 {
+    transition-delay: 120ms;
+}
+h3 {
+    transition-delay: 140ms;
+}
+h4 {
+    transition-delay: 150ms;
+}
+h5 {
+    transition-delay: 160ms;
+}
+h6 {
+    transition-delay: 170ms;
+}
 
 /* 段落和文字 */
-p, li, span, td, th {
+p,
+li,
+span,
+td,
+th {
     transition: color var(--theme-transition-duration) var(--theme-transition-timing);
     transition-delay: 130ms;
 }
 
 /* 链接 */
 a {
-    transition: 
+    transition:
         color var(--theme-transition-duration) var(--theme-transition-timing),
         text-shadow var(--theme-transition-duration) var(--theme-transition-timing);
     transition-delay: 140ms;
@@ -312,7 +324,7 @@ a {
 
 /* 卡片元素 - 波浪式过渡 */
 .card {
-    transition: 
+    transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         border-color var(--theme-transition-duration) var(--theme-transition-timing),
         box-shadow var(--theme-transition-duration) var(--theme-transition-timing);
@@ -320,18 +332,35 @@ a {
 }
 
 /* 为多个卡片添加瀑布延迟 */
-.card:nth-child(1) { transition-delay: 100ms; }
-.card:nth-child(2) { transition-delay: 130ms; }
-.card:nth-child(3) { transition-delay: 160ms; }
-.card:nth-child(4) { transition-delay: 190ms; }
-.card:nth-child(5) { transition-delay: 220ms; }
-.card:nth-child(6) { transition-delay: 250ms; }
-.card:nth-child(7) { transition-delay: 280ms; }
-.card:nth-child(8) { transition-delay: 310ms; }
+.card:nth-child(1) {
+    transition-delay: 100ms;
+}
+.card:nth-child(2) {
+    transition-delay: 130ms;
+}
+.card:nth-child(3) {
+    transition-delay: 160ms;
+}
+.card:nth-child(4) {
+    transition-delay: 190ms;
+}
+.card:nth-child(5) {
+    transition-delay: 220ms;
+}
+.card:nth-child(6) {
+    transition-delay: 250ms;
+}
+.card:nth-child(7) {
+    transition-delay: 280ms;
+}
+.card:nth-child(8) {
+    transition-delay: 310ms;
+}
 
 /* 代码块 */
-pre, code {
-    transition: 
+pre,
+code {
+    transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         color var(--theme-transition-duration) var(--theme-transition-timing),
         border-color var(--theme-transition-duration) var(--theme-transition-timing);
@@ -339,8 +368,13 @@ pre, code {
 }
 
 /* 表格 */
-table, thead, tbody, tr, td, th {
-    transition: 
+table,
+thead,
+tbody,
+tr,
+td,
+th {
+    transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         border-color var(--theme-transition-duration) var(--theme-transition-timing),
         color var(--theme-transition-duration) var(--theme-transition-timing);
@@ -351,7 +385,7 @@ table, thead, tbody, tr, td, th {
 blockquote,
 .alert,
 .admonition {
-    transition: 
+    transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         border-color var(--theme-transition-duration) var(--theme-transition-timing),
         color var(--theme-transition-duration) var(--theme-transition-timing);
@@ -361,7 +395,7 @@ blockquote,
 /* 目录导航 */
 .table-of-contents,
 .table-of-contents__link {
-    transition: 
+    transition:
         color var(--theme-transition-duration) var(--theme-transition-timing),
         border-color var(--theme-transition-duration) var(--theme-transition-timing);
     transition-delay: 120ms;
@@ -369,7 +403,7 @@ blockquote,
 
 /* 页脚 - 最后完成过渡 */
 .footer {
-    transition: 
+    transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         border-color var(--theme-transition-duration) var(--theme-transition-timing);
     transition-delay: 200ms;
@@ -377,7 +411,7 @@ blockquote,
 
 .footer__link-item,
 .footer__copyright {
-    transition: 
+    transition:
         color var(--theme-transition-duration) var(--theme-transition-timing),
         border-color var(--theme-transition-duration) var(--theme-transition-timing);
     transition-delay: 220ms;
@@ -397,7 +431,7 @@ blockquote,
 /* 搜索框 */
 .DocSearch,
 .DocSearch-Button {
-    transition: 
+    transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         border-color var(--theme-transition-duration) var(--theme-transition-timing),
         color var(--theme-transition-duration) var(--theme-transition-timing);
@@ -406,7 +440,7 @@ blockquote,
 
 /* 分页导航 */
 .pagination-nav__link {
-    transition: 
+    transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         border-color var(--theme-transition-duration) var(--theme-transition-timing);
     transition-delay: 180ms;
@@ -422,7 +456,7 @@ blockquote,
 /* 标签 */
 .tag,
 .badge {
-    transition: 
+    transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         color var(--theme-transition-duration) var(--theme-transition-timing);
     transition-delay: 160ms;
@@ -434,14 +468,16 @@ button[class*="colorModeToggle"] {
 }
 
 button[class*="colorModeToggle"]::after {
-    content: '';
+    content: "";
     position: absolute;
     inset: -4px;
     border-radius: 50%;
     background: radial-gradient(circle, var(--primary-alpha-30) 0%, transparent 70%);
     opacity: 0;
     transform: scale(0.8);
-    transition: opacity 300ms ease, transform 300ms ease;
+    transition:
+        opacity 300ms ease,
+        transform 300ms ease;
     pointer-events: none;
     z-index: -1;
 }
@@ -449,7 +485,9 @@ button[class*="colorModeToggle"]::after {
 button[class*="colorModeToggle"]:active::after {
     opacity: 1;
     transform: scale(1.5);
-    transition: opacity 100ms ease, transform 100ms ease;
+    transition:
+        opacity 100ms ease,
+        transform 100ms ease;
 }
 
 /* 主题切换涟漪动画 */

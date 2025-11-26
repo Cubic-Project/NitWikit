@@ -15,7 +15,6 @@ pre {
     background-color: var(--slate-100) !important;
 }
 
-
 /* ======================================
    代码文本
 ====================================== */
@@ -38,11 +37,7 @@ pre code {
    行内代码
 ====================================== */
 :not(pre) > code {
-    background: linear-gradient(
-        135deg,
-        var(--primary-alpha-10) 0%,
-        var(--primary-alpha-5) 100%
-    );
+    background: linear-gradient(135deg, var(--primary-alpha-10) 0%, var(--primary-alpha-5) 100%);
     color: var(--primary-text);
     padding: 0.2rem 0.4rem;
     border-radius: var(--radius-sm);
@@ -59,11 +54,7 @@ pre code {
 }
 
 div[class*="codeBlockTitle"] {
-    background: linear-gradient(
-        135deg,
-        var(--slate-200) 0%,
-        var(--slate-100) 100%
-    );
+    background: linear-gradient(135deg, var(--slate-200) 0%, var(--slate-100) 100%);
     border-bottom: 1px solid var(--border);
     padding: 0.5rem 1rem;
     font-size: 0.8125rem;
@@ -76,11 +67,7 @@ div[class*="codeBlockTitle"] {
    代码行高亮
 ====================================== */
 .theme-code-block-highlighted-line {
-    background: linear-gradient(
-        90deg,
-        var(--primary-alpha-15) 0%,
-        var(--primary-alpha-5) 100%
-    );
+    background: linear-gradient(90deg, var(--primary-alpha-15) 0%, var(--primary-alpha-5) 100%);
     display: block;
     margin: 0 -1.25rem;
     padding: 0 1.25rem;
@@ -89,11 +76,7 @@ div[class*="codeBlockTitle"] {
 
 /* 错误行高亮 */
 .code-block-error-line {
-    background: linear-gradient(
-        90deg,
-        rgba(239, 68, 68, 0.15) 0%,
-        rgba(239, 68, 68, 0.05) 100%
-    );
+    background: linear-gradient(90deg, rgba(239, 68, 68, 0.15) 0%, rgba(239, 68, 68, 0.05) 100%);
     display: block;
     margin: 0 -1.25rem;
     padding: 0 1.25rem;
@@ -129,32 +112,19 @@ button[class*="copyButton"]:hover {
     border-color: var(--border);
 }
 
-
 [data-theme="dark"] div[class*="codeBlockTitle"] {
-    background: linear-gradient(
-        135deg,
-        var(--slate-800) 0%,
-        var(--slate-900) 100%
-    );
+    background: linear-gradient(135deg, var(--slate-800) 0%, var(--slate-900) 100%);
     border-bottom-color: var(--border);
 }
 
 [data-theme="dark"] :not(pre) > code {
-    background: linear-gradient(
-        135deg,
-        var(--primary-alpha-15) 0%,
-        var(--primary-alpha-10) 100%
-    );
+    background: linear-gradient(135deg, var(--primary-alpha-15) 0%, var(--primary-alpha-10) 100%);
     color: var(--primary-light);
     border-color: var(--primary-alpha-20);
 }
 
 [data-theme="dark"] .theme-code-block-highlighted-line {
-    background: linear-gradient(
-        90deg,
-        var(--primary-alpha-20) 0%,
-        var(--primary-alpha-8) 100%
-    );
+    background: linear-gradient(90deg, var(--primary-alpha-20) 0%, var(--primary-alpha-8) 100%);
 }
 
 [data-theme="dark"] button[class*="copyButton"] {

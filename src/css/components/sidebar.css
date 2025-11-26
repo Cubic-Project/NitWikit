@@ -39,7 +39,9 @@
     font-size: 0.9375rem;
     padding: 0.5rem 0.75rem;
     padding-left: 1rem;
-    transition: color var(--transition-fast), background-color var(--transition-fast);
+    transition:
+        color var(--transition-fast),
+        background-color var(--transition-fast);
     line-height: 1.5;
     font-weight: 400;
     color: var(--text-secondary);
@@ -58,7 +60,7 @@
 }
 
 .menu__link--active::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 50%;

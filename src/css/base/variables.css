@@ -7,17 +7,17 @@
     /* ======================================
        主色调 - Nuxt Green (完整色阶)
     ====================================== */
-    --green-50: #EFFDF5;
-    --green-100: #D9FBE8;
-    --green-200: #B3F5D1;
-    --green-300: #75EDAE;
-    --green-400: #00DC82;
-    --green-500: #00C16A;
-    --green-600: #00A155;
-    --green-700: #007F45;
+    --green-50: #effdf5;
+    --green-100: #d9fbe8;
+    --green-200: #b3f5d1;
+    --green-300: #75edae;
+    --green-400: #00dc82;
+    --green-500: #00c16a;
+    --green-600: #00a155;
+    --green-700: #007f45;
     --green-800: #016538;
-    --green-900: #0A5331;
-    --green-950: #052E16;
+    --green-900: #0a5331;
+    --green-950: #052e16;
 
     /* 主色语义化变量 */
     --primary: var(--green-500);
@@ -27,7 +27,7 @@
     --primary-lighter: var(--green-300);
     /* 文字专用主色 - 对比度更高 (WCAG AA) */
     --primary-text: var(--green-600);
-    
+
     /* 主色透明度变体 (简化) */
     --primary-alpha-5: rgba(0, 220, 130, 0.05);
     --primary-alpha-8: rgba(0, 220, 130, 0.08);
@@ -104,11 +104,12 @@
     /* ======================================
        字体系统
     ====================================== */
-    --font-sans: 'Public Sans', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 
-        'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 
-        system-ui, sans-serif;
-    --font-mono: 'Maple Mono NF CN', 'JetBrains Mono', 'Fira Code', SFMono-Regular, 
-        Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+    --font-sans:
+        "Public Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB",
+        "Microsoft YaHei", system-ui, sans-serif;
+    --font-mono:
+        "Maple Mono NF CN", "JetBrains Mono", "Fira Code", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+        monospace;
 
     /* ======================================
        Docusaurus/Infima 变量映射
@@ -118,15 +119,15 @@
     --ifm-color-primary-darker: var(--primary-darker);
     --ifm-color-primary-light: var(--primary-light);
     --ifm-color-primary-lighter: var(--primary-lighter);
-    --ifm-color-primary-lightest: #99F2CD;
+    --ifm-color-primary-lightest: #99f2cd;
 
     --ifm-code-font-size: 90%;
     --ifm-font-family-base: var(--font-sans);
     --ifm-font-family-monospace: var(--font-mono);
-    
+
     --ifm-background-color: var(--bg-light);
     --ifm-background-surface-color: var(--bg-card);
-    
+
     --ifm-navbar-background-color: rgba(255, 255, 255, 0.8);
     --ifm-navbar-height: 4rem;
     --ifm-navbar-shadow: none;

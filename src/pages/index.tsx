@@ -48,7 +48,8 @@ const Home: React.FC = () => {
                             Cubic <span className="text-primary">Wiki</span>
                         </h1>
                         <p className={`${styles.fadeInUp} ${styles.delay2}`}>
-                            主要针对高版本 Java 版和基岩版服务器的开服指南。从零开始，手把手教你搭建和运营 Minecraft 服务器。
+                            主要针对高版本 Java 版和基岩版服务器的开服指南。从零开始，手把手教你搭建和运营 Minecraft
+                            服务器。
                         </p>
                         <div className={`${styles.heroButtons} ${styles.fadeInUp} ${styles.delay3}`}>
                             <Link className={styles.primaryButton} to="/intro">

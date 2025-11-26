@@ -27,36 +27,26 @@
    顶部渐变装饰
 ====================================== */
 .page::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 400px;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 220, 130, 0.08) 0%,
-        rgba(0, 220, 130, 0.03) 40%,
-        transparent 100%
-    );
+    background: linear-gradient(180deg, rgba(0, 220, 130, 0.08) 0%, rgba(0, 220, 130, 0.03) 40%, transparent 100%);
     pointer-events: none;
     z-index: 0;
 }
 
 /* 顶部横向渐变线 */
 .page::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(
-        90deg,
-        transparent 0%,
-        rgba(0, 220, 130, 0.4) 50%,
-        transparent 100%
-    );
+    background: linear-gradient(90deg, transparent 0%, rgba(0, 220, 130, 0.4) 50%, transparent 100%);
     pointer-events: none;
     z-index: 1;
 }
@@ -259,7 +249,7 @@
 .primaryButton {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: #020617 !important;
-    box-shadow: 
+    box-shadow:
         0 4px 14px rgba(0, 220, 130, 0.25),
         0 0 0 0 rgba(0, 220, 130, 0);
     position: relative;
@@ -267,24 +257,19 @@
 
     // 光泽效果
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: -100%;
         width: 100%;
         height: 100%;
-        background: linear-gradient(
-            90deg,
-            transparent,
-            rgba(255, 255, 255, 0.2),
-            transparent
-        );
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
         transition: left 0.5s ease;
     }
 
     &:hover {
         background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
-        box-shadow: 
+        box-shadow:
             0 6px 20px rgba(0, 220, 130, 0.35),
             0 0 0 4px rgba(0, 220, 130, 0.1);
         transform: translateY(-2px);
@@ -378,7 +363,7 @@
     display: flex;
     flex-direction: column;
     backdrop-filter: blur(12px);
-    box-shadow: 
+    box-shadow:
         0 20px 50px rgba(0, 0, 0, 0.1),
         0 0 0 1px rgba(255, 255, 255, 0.05) inset;
 
@@ -390,7 +375,7 @@
 
     @media (max-width: 540px) {
         border-radius: 12px;
-        box-shadow: 
+        box-shadow:
             0 10px 30px rgba(0, 0, 0, 0.08),
             0 0 0 1px rgba(255, 255, 255, 0.03) inset;
     }
@@ -398,7 +383,7 @@
 
 [data-theme="dark"] .heroPanel {
     background: rgba(15, 23, 42, 0.8);
-    box-shadow: 
+    box-shadow:
         0 20px 50px rgba(0, 0, 0, 0.3),
         0 0 0 1px rgba(255, 255, 255, 0.03) inset;
 }
@@ -417,7 +402,7 @@
 
     // 小圆点装饰
     &::before {
-        content: '';
+        content: "";
         width: 6px;
         height: 6px;
         border-radius: 50%;
@@ -432,7 +417,8 @@
 }
 
 @keyframes pulse {
-    0%, 100% {
+    0%,
+    100% {
         opacity: 1;
         transform: scale(1);
     }
@@ -474,7 +460,7 @@
 
         // 左侧指示条
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             top: 50%;
@@ -570,9 +556,18 @@
     }
 }
 
-.delay1 { animation-delay: 0.1s; }
-.delay2 { animation-delay: 0.2s; }
-.delay3 { animation-delay: 0.3s; }
-.delay4 { animation-delay: 0.4s; }
-.delay5 { animation-delay: 0.5s; }
-
+.delay1 {
+    animation-delay: 0.1s;
+}
+.delay2 {
+    animation-delay: 0.2s;
+}
+.delay3 {
+    animation-delay: 0.3s;
+}
+.delay4 {
+    animation-delay: 0.4s;
+}
+.delay5 {
+    animation-delay: 0.5s;
+}

@@ -20,7 +20,9 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     background-color: var(--bg-light);
-    transition: background-color var(--transition-base), color var(--transition-base);
+    transition:
+        background-color var(--transition-base),
+        color var(--transition-base);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;

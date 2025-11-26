@@ -253,7 +253,9 @@ details summary::after {
     content: "›";
     font-size: 1.25em;
     color: var(--text-light);
-    transition: transform var(--transition-fast), color var(--transition-fast);
+    transition:
+        transform var(--transition-fast),
+        color var(--transition-fast);
 }
 
 details[open] summary::after {

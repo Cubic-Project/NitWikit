@@ -9,8 +9,8 @@
 .card {
     border-radius: var(--radius-xl);
     border: 1px solid var(--border);
-    transition: 
-        border-color var(--transition-base), 
+    transition:
+        border-color var(--transition-base),
         box-shadow var(--transition-base),
         transform var(--transition-base);
     padding: 1.5rem !important;
@@ -25,18 +25,13 @@
 
 /* 卡片内渐变装饰 */
 .card::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
-    background: linear-gradient(
-        135deg,
-        var(--primary-alpha-5) 0%,
-        transparent 50%,
-        transparent 100%
-    );
+    background: linear-gradient(135deg, var(--primary-alpha-5) 0%, transparent 50%, transparent 100%);
     opacity: 0;
     transition: opacity var(--transition-base);
     pointer-events: none;
@@ -146,17 +141,13 @@ a.card.padding--lg.cardContainer_fWXF {
 }
 
 a.card.padding--lg.cardContainer_fWXF::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
-    background: linear-gradient(
-        135deg,
-        var(--primary-alpha-5) 0%,
-        transparent 50%
-    );
+    background: linear-gradient(135deg, var(--primary-alpha-5) 0%, transparent 50%);
     opacity: 0;
     transition: opacity var(--transition-base);
 }
@@ -208,11 +199,7 @@ a.card.padding--lg.cardContainer_fWXF p {
 
 [data-theme="dark"] .card::before,
 [data-theme="dark"] a.card.padding--lg.cardContainer_fWXF::before {
-    background: linear-gradient(
-        135deg,
-        var(--primary-alpha-8) 0%,
-        transparent 50%
-    );
+    background: linear-gradient(135deg, var(--primary-alpha-8) 0%, transparent 50%);
 }
 
 /* ======================================
@@ -230,17 +217,13 @@ a.card.padding--lg.cardContainer_fWXF p {
 
 .featureCard::before,
 [class*="featureCard"]::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
-    background: linear-gradient(
-        135deg,
-        var(--primary-alpha-5) 0%,
-        transparent 50%
-    );
+    background: linear-gradient(135deg, var(--primary-alpha-5) 0%, transparent 50%);
     opacity: 0;
     transition: opacity var(--transition-base);
 }

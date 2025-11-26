@@ -11,7 +11,9 @@
     color: var(--text-secondary);
     padding: 3rem 0 2rem;
     border-top: 1px solid var(--border);
-    transition: background-color var(--transition-base), border-color var(--transition-base);
+    transition:
+        background-color var(--transition-base),
+        border-color var(--transition-base);
 }
 
 /* 移除顶部装饰条 */
@@ -34,7 +36,9 @@
 ====================================== */
 .footer__link-item {
     color: var(--text-secondary);
-    transition: color var(--transition-fast), background-color var(--transition-fast);
+    transition:
+        color var(--transition-fast),
+        background-color var(--transition-fast);
     padding: 0.25rem 0.5rem;
     margin: -0.25rem -0.5rem;
     display: inline-block;

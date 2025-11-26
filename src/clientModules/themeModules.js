@@ -9,17 +9,17 @@ if (ExecutionEnvironment.canUseDOM) {
     const init = () => {
         // 查找主题切换按钮
         const colorModeToggle = document.querySelector('button[class*="colorModeToggle"]');
-        
+
         if (colorModeToggle) {
-            colorModeToggle.addEventListener('click', handleThemeToggle);
+            colorModeToggle.addEventListener("click", handleThemeToggle);
         }
 
         // 监听 DOM 变化，处理动态加载的按钮
         const observer = new MutationObserver(() => {
             const toggle = document.querySelector('button[class*="colorModeToggle"]');
-            if (toggle && !toggle.hasAttribute('data-theme-listener')) {
-                toggle.setAttribute('data-theme-listener', 'true');
-                toggle.addEventListener('click', handleThemeToggle);
+            if (toggle && !toggle.hasAttribute("data-theme-listener")) {
+                toggle.setAttribute("data-theme-listener", "true");
+                toggle.addEventListener("click", handleThemeToggle);
             }
         });
 
@@ -29,35 +29,29 @@ if (ExecutionEnvironment.canUseDOM) {
     function handleThemeToggle(e) {
         const button = e.currentTarget;
         const rect = button.getBoundingClientRect();
-        
+
         // 创建涟漪效果
-        createRipple(
-            rect.left + rect.width / 2,
-            rect.top + rect.height / 2
-        );
+        createRipple(rect.left + rect.width / 2, rect.top + rect.height / 2);
 
         // 添加瀑布流过渡标记
-        document.documentElement.classList.add('theme-transitioning');
-        
+        document.documentElement.classList.add("theme-transitioning");
+
         // 过渡完成后移除标记
         setTimeout(() => {
-            document.documentElement.classList.remove('theme-transitioning');
+            document.documentElement.classList.remove("theme-transitioning");
         }, 600);
     }
 
     function createRipple(x, y) {
-        const ripple = document.createElement('div');
-        ripple.className = 'theme-ripple';
-        
+        const ripple = document.createElement("div");
+        ripple.className = "theme-ripple";
+
         // 计算需要覆盖整个视口的大小
-        const maxDimension = Math.max(
-            window.innerWidth,
-            window.innerHeight
-        ) * 2;
+        const maxDimension = Math.max(window.innerWidth, window.innerHeight) * 2;
 
         // 获取当前主题判断涟漪颜色
-        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        
+        const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+
         ripple.style.cssText = `
             position: fixed;
             left: ${x}px;
@@ -67,7 +61,7 @@ if (ExecutionEnvironment.canUseDOM) {
             margin-left: -${maxDimension / 2}px;
             margin-top: -${maxDimension / 2}px;
             border-radius: 50%;
-            background: ${isDark ? 'rgba(248, 250, 252, 0.08)' : 'rgba(2, 6, 23, 0.06)'};
+            background: ${isDark ? "rgba(248, 250, 252, 0.08)" : "rgba(2, 6, 23, 0.06)"};
             transform: scale(0);
             pointer-events: none;
             z-index: 9999;
@@ -77,17 +71,17 @@ if (ExecutionEnvironment.canUseDOM) {
         document.body.appendChild(ripple);
 
         // 动画结束后移除元素
-        ripple.addEventListener('animationend', () => {
+        ripple.addEventListener("animationend", () => {
             ripple.remove();
         });
     }
 
     // 注入动画关键帧样式
     function injectStyles() {
-        if (document.getElementById('theme-ripple-styles')) return;
-        
-        const style = document.createElement('style');
-        style.id = 'theme-ripple-styles';
+        if (document.getElementById("theme-ripple-styles")) return;
+
+        const style = document.createElement("style");
+        style.id = "theme-ripple-styles";
         style.textContent = `
             @keyframes themeRippleExpand {
                 0% {
@@ -168,8 +162,8 @@ if (ExecutionEnvironment.canUseDOM) {
     }
 
     // 初始化
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', () => {
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", () => {
             injectStyles();
             init();
         });
@@ -178,4 +172,3 @@ if (ExecutionEnvironment.canUseDOM) {
         init();
     }
 }
-

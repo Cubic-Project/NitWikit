@@ -92,8 +92,8 @@ server-port=25565
 - 在 Windows 下，CMD 执行`ipconfig /flushdns`
 - 在 Linux 下，终端执行 `sudo systemd-resolve --flush-caches`
 
-3.你的域名可能被 DNS 污染，你可以检查实际解析出来的 IP 和设置的是否一致，不一致就是被污染了，临时解决方案是更改 DNS
-服务器，长远来看最好打开 DNSSEC
+    3.你的域名可能被 DNS 污染，你可以检查实际解析出来的 IP 和设置的是否一致，不一致就是被污染了，临时解决方案是更改 DNS
+    服务器，长远来看最好打开 DNSSEC
 
 ### `数据流终止`
 
