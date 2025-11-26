@@ -181,9 +181,7 @@
    GitHub 链接
 ====================================== */
 .header-github-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @apply hidden md:flex items-center justify-center;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -293,9 +291,9 @@ button[class*="colorModeToggle"] {
         display: flex !important;
     }
 
-    /* 显示 GitHub 链接 */
+    /* 移动端隐藏 GitHub 链接 */
     .header-github-link {
-        display: flex !important;
+        display: none !important;
     }
 
     /* 侧边栏样式 */
