@@ -234,6 +234,59 @@
 }
 
 /* ======================================
+   标题行（带3D Logo图标）
+====================================== */
+.titleRow {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 996px) {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    @media (max-width: 540px) {
+        gap: 12px;
+    }
+}
+
+.logoIcon {
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+    position: relative;
+    margin-left: -20px; // 视觉上让模型更靠近文字
+
+    // 绿色光晕效果
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 90%;
+        background: radial-gradient(circle, rgba(0, 220, 130, 0.35) 0%, transparent 70%);
+        filter: blur(20px);
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    @media (max-width: 768px) {
+        width: 110px;
+        height: 110px;
+        margin-left: -10px;
+    }
+
+    @media (max-width: 540px) {
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+    }
+}
+
+/* ======================================
    按钮组
 ====================================== */
 .heroButtons {

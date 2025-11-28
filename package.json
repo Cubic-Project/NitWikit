@@ -35,6 +35,9 @@
         "@giscus/react": "^3.1.0",
         "@gracefullight/docusaurus-plugin-microsoft-clarity": "^1.0.0",
         "@mdx-js/react": "^3.1.1",
+        "@react-three/drei": "^10.7.7",
+        "@react-three/fiber": "^9.4.0",
+        "@types/three": "^0.181.0",
         "antd": "^5.28.1",
         "clsx": "^2.1.1",
         "docusaurus": "^1.14.7",
@@ -51,6 +54,8 @@
         "remark-parse": "^11.0.0",
         "remark-rehype": "^11.1.2",
         "sass": "^1.94.0",
+        "three": "^0.181.2",
+        "three-stdlib": "^2.36.1",
         "unified": "^11.0.5"
     },
     "devDependencies": {

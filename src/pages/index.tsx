@@ -5,6 +5,7 @@ import Layout from "@theme/Layout";
 import { useHistory } from "@docusaurus/router";
 import React, { useRef } from "react";
 import styles from "./index.module.scss";
+import CubicLogo3D from "../components/CubicLogo3D";
 
 interface Stat {
     label: string;
@@ -65,9 +66,14 @@ const Home: React.FC = () => {
 
                 <section className={styles.hero}>
                     <div className={styles.heroCopy}>
-                        <h1 className={`${styles.fadeInUp} ${styles.delay1}`}>
-                            Cubic <span className="text-primary">Wiki</span>
-                        </h1>
+                        <div className={`${styles.titleRow} ${styles.fadeInUp} ${styles.delay1}`}>
+                            <div className={styles.logoIcon}>
+                                <CubicLogo3D iconMode />
+                            </div>
+                            <h1>
+                                Cubic <span className="text-primary">Wiki</span>
+                            </h1>
+                        </div>
                         <p className={`${styles.fadeInUp} ${styles.delay2}`}>
                             主要针对高版本 Java 版和基岩版服务器的开服指南。从零开始，手把手教你搭建和运营 Minecraft
                             服务器。
@@ -89,32 +95,34 @@ const Home: React.FC = () => {
                             ))}
                         </div>
                     </div>
-                    <aside className={`${styles.heroPanel} ${styles.fadeInUp} ${styles.delay3}`}>
-                        <div className={styles.panelHeader}>
-                            <span>快速导航</span>
-                        </div>
-                        <ul className={styles.linkList}>
-                            {quickLinks.map((item, index) => (
-                                <li
-                                    key={item.title}
-                                    className={styles.linkItem}
-                                    style={{ animationDelay: `${0.4 + index * 0.1}s` }}
-                                >
-                                    <a
-                                        href={item.to}
-                                        className={styles.linkItemAnchor}
-                                        onClick={(e) => handleLinkClick(e, item.to)}
+                    <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+                        <aside className={`${styles.heroPanel} ${styles.fadeInUp} ${styles.delay3}`}>
+                            <div className={styles.panelHeader}>
+                                <span>快速导航</span>
+                            </div>
+                            <ul className={styles.linkList}>
+                                {quickLinks.map((item, index) => (
+                                    <li
+                                        key={item.title}
+                                        className={styles.linkItem}
+                                        style={{ animationDelay: `${0.4 + index * 0.1}s` }}
                                     >
-                                        <div>
-                                            <h3>{item.title}</h3>
-                                            <p>{item.description}</p>
-                                        </div>
-                                        <span>→</span>
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </aside>
+                                        <a
+                                            href={item.to}
+                                            className={styles.linkItemAnchor}
+                                            onClick={(e) => handleLinkClick(e, item.to)}
+                                        >
+                                            <div>
+                                                <h3>{item.title}</h3>
+                                                <p>{item.description}</p>
+                                            </div>
+                                            <span>→</span>
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </aside>
+                    </div>
                 </section>
             </main>
         </Layout>
