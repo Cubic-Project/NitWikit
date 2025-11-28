@@ -47,7 +47,7 @@ flowchart TD
 
 根据我们的测试，GraalVM,Dragonwell,Zulu 目前都没有被报告过不兼容
 
-Zing 与 LuckPerms 以及一些特殊插件会有一点不兼容
+Zing 21 在已测试的 Leaf 1.21.1 环境下已未发现对市场主流插件 (如 LuckPerms, Oraxen, ItemsAdder) 的不兼容，目前仅有 HuskHomes 的 MariaDB 驱动异常导致 JVM Crash 的报告，切换回 MySQL 后可持续稳定运行
 
 OpenJ9 虽然内存占用很低，但是性能很差，并且与很多插件有不兼容 (比如 Spark)。**特别注意：由于 Paper 服务端内置 Spark，因此不能在 Paper 服务端上使用 OpenJ9**
 
