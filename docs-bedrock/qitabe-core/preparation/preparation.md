@@ -1,7 +1,7 @@
 ---
 title: 准备工作
 sidebar_position: 1
-sidebar_label: Qitabe 准备工作
+sidebar_label: 其他基岩版服务器准备工作
 ---
 
 # 准备工作

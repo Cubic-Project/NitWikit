@@ -1,7 +1,7 @@
 ---
 title: 可能用到的网站
 sidebar_position: 1
-sidebar_label: Qitabe 可能用到的网站
+sidebar_label: 其他基岩版服务器可能用到的网站
 ---
 
 # 可能用到的网站

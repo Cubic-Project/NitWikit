@@ -1,7 +1,7 @@
 ---
 title: 文本编辑器
 sidebar_position: 2
-sidebar_label: Qitabe 文本编辑器
+sidebar_label: 其他基岩版服务器文本编辑器
 ---
 
 # 文本编辑器
