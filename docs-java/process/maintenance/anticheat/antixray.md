@@ -83,10 +83,6 @@ seed-stronghold: default
 
 使用方法：将 Leaf 配置文件 中的 `secure-seed` 设置为 `true`
 
-#### 插件
-
-使用插件 [AntiSeedCracker](https://www.spigotmc.org/resources/antiseedcracker-1-20-4.81495/) ，这个插件会发送一个虚假的种子到客户端，客户端仍然可以通过分析地形来破解，但难度会大大增强
-
 #### 重置资源世界
 
 如果你还是害怕长期推演导致的种子反推。你可以在使用以上一种或多种方法的前提下重置世界，但是这往往只适用于资源世界等。
