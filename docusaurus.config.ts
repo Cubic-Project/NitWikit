@@ -34,7 +34,9 @@ const config: Config = {
         // ICP 备案号
         ICP_LICENSE: ICP_LICENSE,
         // 是否为中国站点
-        IS_CHINA_SITE: IS_CHINA_SITE
+        IS_CHINA_SITE: IS_CHINA_SITE,
+        description:
+            "笨蛋开服教程为 Minecraft 玩家提供 Java 版与基岩版服务器开服指南，包含环境配置、插件使用、端口转发、常见报错解决与服务器优化技巧。适合新手与进阶服主快速掌握开服步骤，顺利搭建稳定高性能的 Minecraft 服务器。"
     },
 
     markdown: {
