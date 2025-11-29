@@ -9,27 +9,9 @@
     display: flex;
     align-items: center;
     background: var(--ifm-navbar-background-color);
-    border-bottom: 1px solid var(--border);
     transition: all var(--transition-base);
     box-shadow: none !important;
     position: relative;
-}
-
-/* 底部渐变线 */
-.navbar::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent 0%, var(--primary-alpha-30) 50%, transparent 100%);
-    opacity: 0;
-    transition: opacity var(--transition-base);
-}
-
-.navbar:hover::after {
-    opacity: 1;
 }
 
 /* ======================================

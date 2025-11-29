@@ -171,7 +171,6 @@ const Home: React.FC = () => {
     return (
         <Layout title={tagline} description={description}>
             <main>
-                {/* // TODO: head 发光 - 仿照 Nuxt */}
                 <div className={styles.page}>
                     <HeroSection stats={stats} quickLinks={quickLinks} onLinkClick={handleLinkClick} />
                 </div>

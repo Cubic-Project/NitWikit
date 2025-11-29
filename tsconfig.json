@@ -5,6 +5,7 @@
         "resolveJsonModule": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true,
+        "types": ["docusaurus-plugin-sass"],
         "paths": {
             "@/*": ["src/*"],
             "@components/*": ["src/components/*"],

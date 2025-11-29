@@ -38,7 +38,6 @@
 /* ======================================
    工具类样式
 ====================================== */
-@import "./utilities/animations.css";
 @import "./utilities/scrollbar.css";
 @import "./utilities/responsive.css";
 @import "./utilities/search.css";
