@@ -156,17 +156,6 @@ function useHomeData() {
     return { stats, quickLinks };
 }
 
-function TopBanner() {
-    return (
-        <div className={styles.topBanner}>
-            <p>🎉 笨蛋开服教程已正式更名为 Cubic Wiki，全新上线！点击了解更多信息。</p>
-            <Link className={styles.bannerLink} to="/news/cubic-wiki-launch">
-                了解更多 →
-            </Link>
-        </div>
-    );
-}
-
 /**
  * 首页主组件
  */
