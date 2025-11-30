@@ -101,7 +101,6 @@ const config: Config = {
     plugins: [
         "docusaurus-plugin-image-zoom",
         "docusaurus-plugin-sass",
-        path.resolve(__dirname, "src/plugins/remote-gh-viewer-plugin.ts"),
         ["@gracefullight/docusaurus-plugin-microsoft-clarity", { projectId: "oyfswsvfpc" }],
         [
             "@docusaurus/plugin-content-docs",
