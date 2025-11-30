@@ -5,12 +5,19 @@
 
 .theme-doc-sidebar-container {
     border: none !important;
-    border-right: 1px solid var(--border) !important;
-    background-color: var(--bg-card);
+    border-right: 1px solid var(--ifm-border-color) !important;
+    background-color: color-mix(in srgb, var(--color-surface-1), transparent calc(100% - var(--opacity-glass) * 100%));
+    backdrop-filter: var(--backdrop-filter-frosted-glass);
+    -webkit-backdrop-filter: var(--backdrop-filter-frosted-glass);
     transition: background-color var(--transition-base);
     display: block;
     min-width: 0;
     flex-shrink: 0;
+}
+
+[data-theme="dark"] .theme-doc-sidebar-container {
+    background-color: color-mix(in srgb, var(--color-surface-1), transparent calc(100% - var(--opacity-glass) * 100%));
+    border-right: 1px solid var(--ifm-border-color) !important;
 }
 
 /* ======================================
@@ -228,4 +235,22 @@
 ====================================== */
 [data-theme="dark"] .menu__list .menu__list {
     border-left-color: var(--border);
+}
+
+/* Catch Docusaurus hashed classes for Sidebar Logo */
+[class*="sidebarLogo"],
+/* Fallback for the image itself if container isn't caught */
+.theme-doc-sidebar-container img[alt="Logo"],
+/* Target the link wrapper specifically */
+a[class*="sidebarLogo"],
+/* Target the bold text inside */
+a[class*="sidebarLogo"] b,
+/* Target the image inside */
+a[class*="sidebarLogo"] img {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    pointer-events: none !important;
 }

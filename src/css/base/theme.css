@@ -1,224 +1,23 @@
 /* ======================================
-   NitWikit 主题系统 - 暗色模式
-   借鉴 Nuxt 深邃暗色设计
+   NitWikit Theme System - Animations & Overrides
+   Citizen Skin Adaptation
 ====================================== */
 
 /* ======================================
-   暗色模式变量覆盖
-====================================== */
-[data-theme="dark"] {
-    /* 主色调 - 暗色模式稍亮以保持对比 */
-    --primary: var(--green-500);
-    --primary-dark: var(--green-600);
-    --primary-light: var(--green-400);
-    /* 暗色模式下文字主色更亮 */
-    --primary-text: var(--green-400);
-
-    /* 文字颜色 - 提升对比度 */
-    --text-primary: var(--slate-100);
-    --text-secondary: var(--slate-300);
-    --text-light: var(--slate-400);
-    --text-muted: var(--slate-400);
-
-    /* 背景颜色 - 深邃层次 (Nuxt 风格) */
-    --bg-base: var(--slate-950);
-    --bg-light: var(--slate-950);
-    --bg-muted: var(--slate-900);
-    --bg-card: var(--slate-900);
-    --bg-elevated: var(--slate-800);
-    --bg-dark: var(--slate-950);
-    --bg-footer: var(--slate-950);
-
-    /* 边框颜色 */
-    --border: var(--slate-800);
-    --border-light: var(--slate-900);
-    --border-dark: var(--slate-700);
-
-    /* 阴影 - 暗色模式下更柔和 */
-    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
-    --shadow-glow: 0 0 30px rgba(0, 220, 130, 0.12);
-
-    /* 提示框暗色 - 增强可见度 */
-    --alert-info: #60a5fa;
-    --alert-info-bg: rgba(96, 165, 250, 0.15);
-    --alert-warning: #fbbf24;
-    --alert-warning-bg: rgba(251, 191, 36, 0.15);
-    --alert-danger: #f87171;
-    --alert-danger-bg: rgba(248, 113, 113, 0.15);
-    --alert-success: #34d399;
-    --alert-success-bg: rgba(52, 211, 153, 0.15);
-    --alert-note: #a78bfa;
-    --alert-note-bg: rgba(167, 139, 250, 0.15);
-
-    /* Docusaurus 变量覆盖 */
-    --ifm-background-color: var(--bg-light);
-    --ifm-background-surface-color: var(--bg-card);
-    --ifm-navbar-background-color: rgba(2, 6, 23, 1);
-    --ifm-font-color-base: var(--text-primary);
-    --ifm-heading-color: var(--text-primary);
-
-    --ifm-color-primary: var(--primary);
-    --ifm-color-primary-dark: var(--primary-dark);
-    --ifm-color-primary-light: var(--primary-light);
-
-    --ifm-menu-color: var(--text-secondary);
-    --ifm-toc-border-color: var(--border);
-}
-
-/* ======================================
-   亮色模式背景应用
-====================================== */
-[data-theme="light"] body,
-[data-theme="light"] .main-wrapper,
-[data-theme="light"] .homepage,
-[data-theme="light"] .docMainContainer_gTbr,
-[data-theme="light"] article,
-[data-theme="light"] .theme-doc-markdown {
-    background-color: var(--bg-light);
-}
-
-[data-theme="light"] .container {
-    background-color: transparent;
-}
-
-/* ======================================
-   暗色模式背景应用
-====================================== */
-[data-theme="dark"] body,
-[data-theme="dark"] .main-wrapper,
-[data-theme="dark"] .docMainContainer_gTbr,
-[data-theme="dark"] article,
-[data-theme="dark"] .theme-doc-markdown {
-    background-color: var(--bg-dark);
-}
-
-[data-theme="dark"] .container {
-    background-color: transparent;
-}
-
-/* ======================================
-   区域渐变分割 (Nuxt 风格)
-====================================== */
-.section-gradient {
-    background: linear-gradient(180deg, var(--bg-muted) 0%, var(--bg-light) 100%);
-    border-top: 1px solid var(--border);
-}
-
-[data-theme="dark"] .section-gradient {
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, var(--bg-dark) 100%);
-}
-
-/* ======================================
-   卡片主题适配
-====================================== */
-[data-theme="dark"] .card {
-    background-color: var(--bg-card);
-    border-color: var(--border);
-}
-
-[data-theme="dark"] .card:hover {
-    border-color: var(--primary-alpha-border);
-    box-shadow: var(--shadow-glow);
-}
-
-/* ======================================
-   页脚主题适配
-====================================== */
-[data-theme="dark"] .footer__copyright {
-    border-top-color: var(--border);
-}
-
-/* ======================================
-   代码块主题
-====================================== */
-[data-theme="dark"] pre {
-    background-color: var(--slate-900) !important;
-}
-
-[data-theme="dark"] :not(pre) > code {
-    background-color: var(--primary-alpha-15);
-    color: var(--primary-light);
-}
-
-/* ======================================
-   滚动条主题
-====================================== */
-[data-theme="dark"] ::-webkit-scrollbar-thumb {
-    background: var(--slate-700);
-}
-
-[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
-    background: var(--slate-600);
-}
-
-/* ======================================
-   选择文本主题
-====================================== */
-::selection {
-    background: var(--primary-alpha-20);
-    color: inherit;
-}
-
-[data-theme="dark"] ::selection {
-    background: var(--primary-alpha-30);
-}
-
-/* ======================================
-   链接悬停发光效果
-====================================== */
-[data-theme="dark"] a:hover {
-    text-shadow: 0 0 10px var(--primary-alpha-30);
-}
-
-/* ======================================
-   Ant Design Timeline 暗色模式适配
-====================================== */
-[data-theme="dark"] .ant-timeline {
-    color: var(--text-primary);
-}
-
-[data-theme="dark"] .ant-timeline-item-content {
-    color: var(--text-primary);
-}
-
-[data-theme="dark"] .ant-timeline-item-label {
-    color: var(--text-secondary);
-}
-
-[data-theme="dark"] .ant-timeline-item-tail {
-    border-inline-start-color: var(--border);
-}
-
-[data-theme="dark"] .ant-timeline-item-head {
-    background-color: var(--bg-dark);
-}
-
-[data-theme="dark"] .ant-timeline-item-pending .ant-timeline-item-content {
-    color: var(--text-muted);
-}
-
-/* ======================================
-   主题切换瀑布流动画
-   从上到下的流动过渡效果
+   Theme Transition Animations
+   (Waterfall effect from previous theme)
 ====================================== */
 
-/* 定义瀑布流变量 */
 :root {
     --theme-transition-duration: 400ms;
     --theme-transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 基础过渡：为所有主题相关属性添加过渡 */
 html {
     transition: background-color var(--theme-transition-duration) var(--theme-transition-timing);
-    /* 平滑滚动，但尊重用户的动画偏好设置 */
     scroll-behavior: smooth;
 }
 
-/* 如果用户偏好减少动画，则禁用平滑滚动 */
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
@@ -229,294 +28,90 @@ body {
     transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 20ms;
 }
 
-/* 导航栏 - 最先开始过渡 */
+/* Navbar Transition */
 .navbar {
     transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         border-color var(--theme-transition-duration) var(--theme-transition-timing),
-        box-shadow var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 0ms;
+        backdrop-filter var(--theme-transition-duration) var(--theme-transition-timing);
 }
 
-.navbar__brand,
-.navbar__title {
-    transition: color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 30ms;
-}
-
-.navbar__link {
-    transition:
-        color var(--theme-transition-duration) var(--theme-transition-timing),
-        background-color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 50ms;
-}
-
-/* 主内容区 - 稍后开始 */
-.main-wrapper {
-    transition: background-color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 40ms;
-}
-
-/* 侧边栏 - 与内容同步 */
-.theme-doc-sidebar-container,
-.menu {
-    transition:
-        background-color var(--theme-transition-duration) var(--theme-transition-timing),
-        border-color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 60ms;
-}
-
-.menu__link {
-    transition:
-        color var(--theme-transition-duration) var(--theme-transition-timing),
-        background-color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 80ms;
-}
-
-/* 文档容器 - 主要内容区域 */
-.docMainContainer_gTbr,
-article,
-.theme-doc-markdown {
-    transition: background-color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 80ms;
-}
-
-/* 标题层叠过渡 */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    transition: color var(--theme-transition-duration) var(--theme-transition-timing);
-}
-
-h1 {
-    transition-delay: 100ms;
-}
-h2 {
-    transition-delay: 120ms;
-}
-h3 {
-    transition-delay: 140ms;
-}
-h4 {
-    transition-delay: 150ms;
-}
-h5 {
-    transition-delay: 160ms;
-}
-h6 {
-    transition-delay: 170ms;
-}
-
-/* 段落和文字 */
-p,
-li,
-span,
-td,
-th {
-    transition: color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 130ms;
-}
-
-/* 链接 */
-a {
-    transition:
-        color var(--theme-transition-duration) var(--theme-transition-timing),
-        text-shadow var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 140ms;
-}
-
-/* 卡片元素 - 波浪式过渡 */
+/* Card Transitions */
 .card {
     transition:
         background-color var(--theme-transition-duration) var(--theme-transition-timing),
         border-color var(--theme-transition-duration) var(--theme-transition-timing),
-        box-shadow var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 100ms;
+        box-shadow var(--theme-transition-duration) var(--theme-transition-timing),
+        transform 0.2s ease;
 }
 
-/* 为多个卡片添加瀑布延迟 */
-.card:nth-child(1) {
-    transition-delay: 100ms;
-}
-.card:nth-child(2) {
-    transition-delay: 130ms;
-}
-.card:nth-child(3) {
-    transition-delay: 160ms;
-}
-.card:nth-child(4) {
-    transition-delay: 190ms;
-}
-.card:nth-child(5) {
-    transition-delay: 220ms;
-}
-.card:nth-child(6) {
-    transition-delay: 250ms;
-}
-.card:nth-child(7) {
-    transition-delay: 280ms;
-}
-.card:nth-child(8) {
-    transition-delay: 310ms;
+/* ======================================
+   Component Overrides for Citizen Look
+====================================== */
+
+/* Code Blocks */
+[data-theme="dark"] pre {
+    background-color: var(--color-surface-1) !important;
+    border: 1px solid var(--color-surface-2);
 }
 
-/* 代码块 */
-pre,
-code {
-    transition:
-        background-color var(--theme-transition-duration) var(--theme-transition-timing),
-        color var(--theme-transition-duration) var(--theme-transition-timing),
-        border-color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 150ms;
-}
-
-/* 表格 */
-table,
-thead,
-tbody,
-tr,
-td,
-th {
-    transition:
-        background-color var(--theme-transition-duration) var(--theme-transition-timing),
-        border-color var(--theme-transition-duration) var(--theme-transition-timing),
-        color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 160ms;
-}
-
-/* 引用块和提示框 */
-blockquote,
-.alert,
-.admonition {
-    transition:
-        background-color var(--theme-transition-duration) var(--theme-transition-timing),
-        border-color var(--theme-transition-duration) var(--theme-transition-timing),
-        color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 170ms;
-}
-
-/* 目录导航 */
-.table-of-contents,
-.table-of-contents__link {
-    transition:
-        color var(--theme-transition-duration) var(--theme-transition-timing),
-        border-color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 120ms;
-}
-
-/* 页脚 - 最后完成过渡 */
-.footer {
-    transition:
-        background-color var(--theme-transition-duration) var(--theme-transition-timing),
-        border-color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 200ms;
-}
-
-.footer__link-item,
-.footer__copyright {
-    transition:
-        color var(--theme-transition-duration) var(--theme-transition-timing),
-        border-color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 220ms;
-}
-
-/* 滚动条 */
-::-webkit-scrollbar-thumb {
-    transition: background-color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 250ms;
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    transition: background-color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 260ms;
+    background: transparent;
 }
 
-/* 搜索框 */
-.DocSearch,
-.DocSearch-Button {
-    transition:
-        background-color var(--theme-transition-duration) var(--theme-transition-timing),
-        border-color var(--theme-transition-duration) var(--theme-transition-timing),
-        color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 70ms;
+::-webkit-scrollbar-thumb {
+    background: var(--color-surface-3);
+    border-radius: 4px;
 }
 
-/* 分页导航 */
-.pagination-nav__link {
-    transition:
-        background-color var(--theme-transition-duration) var(--theme-transition-timing),
-        border-color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 180ms;
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-surface-4);
 }
 
-/* 面包屑导航 */
-.breadcrumbs__item,
-.breadcrumbs__link {
-    transition: color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 90ms;
+/* Selection */
+::selection {
+    background: var(--color-progressive);
+    color: #fff;
+    background-color: oklch(var(--color-progressive-oklch__l) var(--color-progressive-oklch__c) var(--color-progressive-oklch__h) / 0.3);
 }
 
-/* 标签 */
-.tag,
-.badge {
-    transition:
-        background-color var(--theme-transition-duration) var(--theme-transition-timing),
-        color var(--theme-transition-duration) var(--theme-transition-timing);
-    transition-delay: 160ms;
+/* Links */
+a {
+    transition: color 0.2s ease;
 }
 
-/* 主题切换按钮发光效果 */
-button[class*="colorModeToggle"] {
-    position: relative;
+/* Admonitions / Alerts */
+.alert {
+    border-radius: var(--border-radius-base);
+    border: 1px solid transparent;
 }
 
-button[class*="colorModeToggle"]::after {
-    content: "";
-    position: absolute;
-    inset: -4px;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--primary-alpha-30) 0%, transparent 70%);
-    opacity: 0;
-    transform: scale(0.8);
-    transition:
-        opacity 300ms ease,
-        transform 300ms ease;
-    pointer-events: none;
-    z-index: -1;
+.alert--info {
+    background-color: oklch(from var(--color-progressive) l c h / 0.1);
+    border-color: oklch(from var(--color-progressive) l c h / 0.2);
+    color: var(--color-progressive);
 }
 
-button[class*="colorModeToggle"]:active::after {
-    opacity: 1;
-    transform: scale(1.5);
-    transition:
-        opacity 100ms ease,
-        transform 100ms ease;
+/* ======================================
+   Image Zoom Recipe
+====================================== */
+img {
+    transition: transform 0.3s ease;
 }
 
-/* 主题切换涟漪动画 */
-@keyframes themeRipple {
-    0% {
-        transform: scale(0);
-        opacity: 0.5;
-    }
-    100% {
-        transform: scale(4);
-        opacity: 0;
-    }
+img:hover {
+    transform: var(--transform-image-hover);
 }
 
-/* 尊重用户减少动画偏好 */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        transition-delay: 0ms !important;
-        transition-duration: 0.01ms !important;
-    }
+/* Disable zoom for small icons or specific classes if needed */
+.navbar__logo:hover, .footer__logo:hover {
+    transform: none;
 }

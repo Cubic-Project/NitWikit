@@ -34,6 +34,7 @@
 @import "./components/table.css";
 @import "./components/alert.css";
 @import "./components/footer.css";
+@import "./components/layout.css";
 
 /* ======================================
    工具类样式
@@ -41,3 +42,23 @@
 @import "./utilities/scrollbar.css";
 @import "./utilities/responsive.css";
 @import "./utilities/search.css";
+
+/* ======================================
+   Layout Adjustment for Vertical Sidebar
+====================================== */
+@media (min-width: 997px) {
+    :root {
+        --ifm-navbar-height: 0px;
+    }
+
+    .main-wrapper {
+        margin-left: 60px; /* Matches sidebar width (3.75rem) */
+        width: calc(100% - 60px);
+    }
+
+    /* Adjust footer to respect sidebar */
+    .footer {
+        margin-left: 60px;
+        width: calc(100% - 60px);
+    }
+}

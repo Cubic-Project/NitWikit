@@ -1,201 +1,222 @@
 /* ======================================
    NitWikit 搜索样式
-   Algolia DocSearch 适配
+   Algolia DocSearch 适配 (Citizen 风格)
 ====================================== */
 
+:root {
+    --docsearch-primary-color: var(--color-progressive);
+    --docsearch-text-color: var(--color-base);
+    --docsearch-spacing: 12px;
+    --docsearch-icon-stroke-width: 1.4;
+    --docsearch-highlight-color: var(--docsearch-primary-color);
+    --docsearch-muted-color: var(--color-subtle);
+    --docsearch-container-background: rgba(0, 0, 0, 0.6);
+    --docsearch-logo-color: var(--docsearch-primary-color);
+
+    /* Modal */
+    --docsearch-modal-width: 600px;
+    --docsearch-modal-height: 600px;
+    --docsearch-modal-background: var(--color-surface-0);
+    --docsearch-modal-shadow: 0 0 0 1px var(--border), 0 20px 60px rgba(0,0,0,0.4);
+
+    /* Searchbox */
+    --docsearch-searchbox-height: 56px;
+    --docsearch-searchbox-background: var(--color-surface-2);
+    --docsearch-searchbox-focus-background: var(--color-surface-2);
+    --docsearch-searchbox-shadow: none;
+
+    /* Hit */
+    --docsearch-hit-height: 64px;
+    --docsearch-hit-color: var(--color-base);
+    --docsearch-hit-active-color: var(--color-emphasized);
+    --docsearch-hit-background: transparent;
+    --docsearch-hit-shadow: none;
+
+    /* Footer */
+    --docsearch-footer-height: 44px;
+    --docsearch-footer-background: var(--color-surface-0);
+    --docsearch-footer-shadow: 0 -1px 0 0 var(--border);
+}
+
+[data-theme='dark'] {
+    --docsearch-modal-background: #0b0d10; /* Deepest black/blue */
+    --docsearch-searchbox-background: #15171b;
+    --docsearch-searchbox-focus-background: #15171b;
+    --docsearch-hit-background: transparent;
+    --docsearch-hit-active-background: #1a1d21;
+    --docsearch-footer-background: #0b0d10;
+    --docsearch-key-gradient: #262b32;
+    --docsearch-key-shadow: none;
+    --docsearch-text-color: #b0b8c4;
+    --docsearch-muted-color: #6e7681;
+}
+
 /* ======================================
-   搜索按钮
-====================================== */
-.DocSearch-Button {
-    background: var(--bg-card) !important;
-    border: 1px solid var(--border) !important;
-    border-radius: var(--radius-md) !important;
-    padding: 0 0.75rem !important;
-    height: 2rem !important;
-    transition: all var(--transition-fast) !important;
-    color: var(--text-secondary) !important;
-    font-weight: 400 !important;
-    gap: 0.5rem !important;
-}
-
-.DocSearch-Button:hover {
-    background: var(--bg-muted) !important;
-    border-color: var(--primary-alpha-border) !important;
-    box-shadow: 0 0 0 2px var(--primary-alpha-10) !important;
-}
-
-.DocSearch-Button-Placeholder {
-    font-size: 0.8125rem !important;
-    color: var(--text-light) !important;
-}
-
-.DocSearch-Button-Keys {
-    display: flex !important;
-    gap: 0.125rem !important;
-    min-width: auto !important;
-}
-
-.DocSearch-Button-Key {
-    background: var(--bg-muted) !important;
-    border: 1px solid var(--border-light) !important;
-    border-radius: var(--radius-sm) !important;
-    padding: 0 0.25rem !important;
-    font-size: 0.625rem !important;
-    color: var(--text-light) !important;
-    box-shadow: none !important;
-    width: auto !important;
-    height: 1.25rem !important;
-    line-height: 1.25rem !important;
-}
-
-/* ======================================
-   搜索模态框
+   Modal Layout
 ====================================== */
 .DocSearch-Modal {
-    --docsearch-modal-background: var(--bg-card) !important;
-    --docsearch-text-color: var(--text-primary) !important;
-    --docsearch-muted-color: var(--text-secondary) !important;
-    --docsearch-searchbox-background: var(--bg-muted) !important;
-    --docsearch-searchbox-focus-background: var(--bg-card) !important;
-    --docsearch-hit-background: var(--bg-muted) !important;
-    --docsearch-hit-color: var(--text-primary) !important;
-    --docsearch-highlight-color: var(--primary-text) !important;
-    --docsearch-footer-background: var(--bg-muted) !important;
-    --docsearch-key-gradient: var(--bg-elevated) !important;
-    --docsearch-key-shadow: none !important;
-    border-radius: var(--radius-lg) !important;
-    border: 1px solid var(--border) !important;
-    box-shadow: var(--shadow-lg) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
 }
 
+/* ======================================
+   Search Bar
+====================================== */
 .DocSearch-SearchBar {
-    padding: 0.875rem !important;
+    padding: 16px !important;
+    border-bottom: 1px solid var(--border);
 }
 
 .DocSearch-Form {
-    border-radius: var(--radius-md) !important;
-    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    background-color: var(--docsearch-searchbox-background) !important;
+    box-shadow: none !important;
+    border: 1px solid transparent !important;
+}
+
+.DocSearch-Form:focus-within {
+    border-color: var(--color-progressive) !important;
+    box-shadow: 0 0 0 2px rgba(var(--color-progressive), 0.2) !important;
 }
 
 .DocSearch-Input {
-    font-size: 0.9375rem !important;
-    padding-left: 0.5rem !important;
+    font-size: 16px !important;
+    padding-left: 12px !important;
+}
+
+/* ======================================
+   Results (Hits)
+====================================== */
+.DocSearch-Dropdown {
+    padding: 0 12px !important;
+}
+
+.DocSearch-Hit {
+    padding-bottom: 4px !important;
 }
 
 .DocSearch-Hit a {
-    border-radius: var(--radius-md) !important;
-    padding: 0.75rem !important;
+    border-radius: 8px !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 1px solid transparent !important;
+    padding: 12px !important;
 }
 
 .DocSearch-Hit[aria-selected="true"] a {
-    background: var(--primary-alpha-10) !important;
-    border-color: var(--primary-alpha-border) !important;
+    background-color: var(--docsearch-hit-active-background) !important;
+    border-color: var(--border) !important;
+}
+
+/* Icon */
+.DocSearch-Hit-icon {
+    width: 32px !important;
+    height: 32px !important;
+    color: var(--text-secondary) !important;
+}
+
+/* Content */
+.DocSearch-Hit-content-wrapper {
+    margin: 0 12px !important;
 }
 
 .DocSearch-Hit-title {
-    font-weight: 500 !important;
-    font-size: 0.875rem !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: var(--color-emphasized) !important;
 }
 
 .DocSearch-Hit-path {
-    color: var(--text-light) !important;
-    font-size: 0.75rem !important;
+    font-size: 13px !important;
+    color: var(--color-subtle) !important;
+    margin-top: 2px !important;
 }
 
+/* Action (The "Page" badge) */
+.DocSearch-Hit-action {
+    display: flex !important;
+    color: var(--text-secondary) !important;
+}
+
+.DocSearch-Hit-action-button {
+    border-radius: 4px !important;
+    padding: 2px 6px !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    background: var(--color-surface-2) !important;
+    color: var(--text-secondary) !important;
+    border: 1px solid var(--border) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    visibility: visible !important;
+}
+
+/* ======================================
+   Footer
+====================================== */
 .DocSearch-Footer {
+    height: auto !important;
+    padding: 12px 24px !important;
+    background: var(--docsearch-footer-background) !important;
+    box-shadow: none !important;
     border-top: 1px solid var(--border) !important;
 }
 
-/* ======================================
-   暗色模式
-====================================== */
-[data-theme="dark"] .DocSearch-Button {
-    background: var(--bg-card) !important;
-    border-color: var(--border) !important;
+.DocSearch-Commands {
+    display: flex !important;
+    gap: 16px !important;
 }
 
-[data-theme="dark"] .DocSearch-Button:hover {
-    background: var(--bg-elevated) !important;
-    border-color: var(--primary-alpha-border) !important;
-}
-
-[data-theme="dark"] .DocSearch-Button-Key {
-    background: var(--bg-elevated) !important;
-    border-color: var(--border) !important;
-}
-
-[data-theme="dark"] .DocSearch-Modal {
-    --docsearch-highlight-color: var(--primary) !important;
-}
-
-[data-theme="dark"] .DocSearch-Form {
-    border-color: var(--border) !important;
+.DocSearch-Label {
+    font-size: 12px !important;
+    color: var(--text-secondary) !important;
 }
 
 /* ======================================
-   移动端响应式
+   Button (Trigger)
+   Keep it minimal as requested before
 ====================================== */
-@media (max-width: 996px) {
-    .DocSearch-Button {
-        padding: 0 0.625rem !important;
-        /* 确保触摸目标足够大 */
-        min-height: 36px !important;
-        min-width: 36px !important;
-    }
-
-    .DocSearch-Button-Placeholder {
-        display: none !important;
-    }
-
-    .DocSearch-Button-Keys {
-        display: none !important;
-    }
-
-    .DocSearch-Search-Icon {
-        width: 18px !important;
-        height: 18px !important;
-    }
+.DocSearch-Button {
+    /* Remove fixed dimensions to allow native adaptation */
+    /* width: 44px !important; */
+    /* height: 44px !important; */
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    border: none !important;
+    /* Ensure it takes full width of container if needed, or auto */
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 44px !important; /* Limit max size for icon look */
+    max-height: 44px !important;
 }
 
-@media (max-width: 540px) {
-    .DocSearch-Button {
-        min-height: 40px !important;
-        min-width: 40px !important;
-        padding: 0 0.5rem !important;
-        border-radius: var(--radius-md) !important;
-    }
+.DocSearch-Button:hover {
+    background-color: var(--color-surface-2) !important;
+}
 
-    /* 搜索模态框移动端全屏优化 */
-    .DocSearch-Modal {
-        border-radius: 0 !important;
-        max-width: 100vw !important;
-        margin: 0 !important;
-        height: 100vh !important;
-        max-height: 100vh !important;
-    }
+.DocSearch-Button-Placeholder, 
+.DocSearch-Button-Keys,
+.DocSearch-Button-Key {
+    display: none !important;
+}
 
-    .DocSearch-SearchBar {
-        padding: 0.75rem !important;
-    }
+.DocSearch-Button-Container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
-    .DocSearch-Input {
-        font-size: 16px !important; /* 防止 iOS 缩放 */
-        padding-left: 0.375rem !important;
-    }
-
-    .DocSearch-Hit a {
-        padding: 0.625rem !important;
-    }
-
-    .DocSearch-Hit-title {
-        font-size: 0.8125rem !important;
-    }
-
-    .DocSearch-Hit-path {
-        font-size: 0.6875rem !important;
-    }
-
-    .DocSearch-Footer {
-        padding: 0.625rem 0.75rem !important;
-    }
+.DocSearch-Search-Icon {
+    width: 24px !important;
+    height: 24px !important;
+    color: var(--text-secondary);
 }

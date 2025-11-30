@@ -1,0 +1,75 @@
+/* ======================================
+   Citizen Layout System
+   Implements the "Card" look for content
+====================================== */
+
+/* ======================================
+   Desktop Layout (Card Style)
+====================================== */
+@media (min-width: 997px) {
+    /* 
+       Make the Main Content Area look like a "Card" 
+       floating on the background
+    */
+    
+    /* 1. Ensure the global background is the deepest surface */
+    body {
+        background-color: var(--color-surface-0);
+    }
+
+    /* 2. Style the DocMainContainer (The content area) */
+    /* Use generic selector for the main content column in docs */
+    main[class*="docMainContainer"] {
+        background-color: var(--color-surface-1);
+        border-radius: var(--border-radius-base);
+        
+        /* Add margin around the card */
+        /* Top, Right, Bottom, Left */
+        /* Left margin creates space between Sidebar and Content */
+        margin: 1rem 1rem 1rem 1rem; 
+        
+        box-shadow: 0 0 0 1px var(--ifm-border-color), 
+                    0 10px 30px -10px rgba(0, 0, 0, 0.3);
+        
+        /* Ensure it takes height */
+        min-height: calc(100vh - 2rem);
+    }
+
+    /* 3. Adjust the DocSidebar to blend or stand out */
+    /* In Citizen, the sidebar is often transparent or same as bg */
+    .theme-doc-sidebar-container {
+        background-color: transparent !important; /* Let body bg show through */
+        border-right: none !important; /* Remove border between sidebar and content */
+        backdrop-filter: none !important;
+    }
+    
+    /* 4. Style the Sidebar Menu Items to look like pills */
+    .menu__link {
+        border-radius: var(--radius-md);
+    }
+    
+    /* 5. Adjust the Main Wrapper to allow the card to float */
+    /* We already shifted it by 72px in custom.css */
+    
+    /* 6. Fix the TOC (Right Sidebar) */
+    /* It's inside the card, so it should be fine. */
+    
+    /* 7. Footer */
+    .footer {
+        background-color: transparent;
+        border-top: none;
+    }
+}
+
+/* ======================================
+   Mobile Layout
+====================================== */
+@media (max-width: 996px) {
+    /* Revert to standard full width */
+    [class^="docMainContainer"] {
+        background-color: var(--color-surface-1);
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}

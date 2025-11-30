@@ -1,22 +1,20 @@
 /* ======================================
    NitWikit 导航栏样式
-   毛玻璃效果 + 渐变底线
+   垂直侧边栏 (Citizen 风格)
 ====================================== */
 
+/* 移动端基础样式 (保持不变) */
 .navbar {
     height: var(--ifm-navbar-height);
     padding: 0 var(--ifm-navbar-padding-horizontal);
     display: flex;
     align-items: center;
-    background: var(--ifm-navbar-background-color);
+    background: var(--color-surface-1);
+    border-bottom: 1px solid var(--ifm-border-color);
     transition: all var(--transition-base);
     box-shadow: none !important;
-    position: relative;
 }
 
-/* ======================================
-   品牌区域
-====================================== */
 .navbar__brand {
     font-weight: 700;
     color: var(--text-primary);
@@ -25,370 +23,176 @@
     gap: 0.5rem;
 }
 
-.navbar__title {
-    font-size: 1.125rem;
-    letter-spacing: -0.01em;
-    font-weight: 700;
-    background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
 .navbar__logo {
     height: 1.75rem;
     width: 1.75rem;
-    transition: transform var(--transition-base);
-}
-
-.navbar__brand:hover .navbar__logo {
-    transform: scale(1.05) rotate(5deg);
-}
-
-.navbar__brand:hover .navbar__title {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
 }
 
 /* ======================================
-   导航链接
+   Desktop Vertical Rail (Citizen Style)
+   屏幕宽度 >= 997px 时启用垂直侧边栏
 ====================================== */
-.navbar__link {
-    display: flex;
-    align-items: center;
-    font-size: 0.9375rem;
-    padding: 0.5rem 0.875rem;
-    border-radius: var(--radius-md);
-    color: var(--text-secondary);
-    transition: all var(--transition-fast);
-    font-weight: 500;
-    position: relative;
-}
-
-.navbar__link::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
-    background: var(--primary);
-    transition: width var(--transition-fast);
-    border-radius: 1px;
-}
-
-.navbar__link:hover {
-    color: var(--primary-text);
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.navbar__link:hover::before {
-    width: 60%;
-}
-
-.navbar__link--active {
-    font-weight: 600;
-    color: var(--primary-text);
-}
-
-.navbar__link--active::before {
-    width: 60%;
-}
-
-/* ======================================
-   导航项
-====================================== */
-.navbar__item {
-    margin: 0 0.125rem;
-}
-
-.navbar__items {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.navbar__items--right {
-    gap: 0.25rem;
-}
-
-/* ======================================
-   导航栏内部布局
-====================================== */
-.navbar__inner {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    justify-content: space-between;
-}
-
-/* ======================================
-   搜索框
-====================================== */
-.navbar__search {
-    margin-left: 0.5rem;
-}
-
-.navbar__search-input {
-    height: 2.25rem;
-    border-radius: var(--radius-lg);
-    background-color: var(--bg-muted);
-    border: 1px solid var(--border);
-    transition: all var(--transition-fast);
-    padding: 0 0.875rem;
-    font-size: 0.875rem;
-    width: 10rem;
-    color: var(--text-primary);
-}
-
-.navbar__search-input::placeholder {
-    color: var(--text-light);
-}
-
-.navbar__search-input:focus {
-    background-color: var(--bg-card);
-    border-color: var(--primary);
-    box-shadow:
-        0 0 0 3px var(--primary-alpha-10),
-        var(--shadow-glow);
-    outline: none;
-    width: 12rem;
-}
-
-/* ======================================
-   GitHub 链接
-====================================== */
-.header-github-link {
-    @apply hidden md:flex items-center justify-center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    color: var(--text-secondary);
-    transition: all var(--transition-fast);
-    position: relative;
-}
-
-.header-github-link:hover {
-    background-color: var(--ifm-color-emphasis-200);
-}
-
-.header-github-link::before {
-    content: "";
-    width: 1.25rem;
-    height: 1.25rem;
-    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
-        no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.header-github-link:hover::before {
-    width: 1.25rem !important;
-    height: 1.25rem !important;
-}
-
-[data-theme="dark"] .header-github-link::before {
-    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
-        no-repeat;
-}
-
-/* ======================================
-   主题切换按钮
-====================================== */
-button[class*="colorModeToggle"] {
-    border-radius: var(--radius-md);
-    transition: all var(--transition-fast);
-}
-
-/* ======================================
-   移动端响应式
-====================================== */
-@media (max-width: 996px) {
+@media (min-width: 997px) {
     .navbar {
-        height: auto;
-        min-height: var(--ifm-navbar-height);
-        padding: 0.75rem 1rem;
-    }
-
-    .navbar__inner {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 60px; /* 调整为 Citizen 标准宽度 (3.75rem) */
+        height: 100vh;
+        flex-direction: column;
+        padding: 1rem 0;
+        border-right: 1px solid var(--border);
+        border-bottom: none;
+        background-color: var(--color-surface-0); /* 深色背景 */
+        z-index: 200;
         align-items: center;
     }
 
-    /*
-     * 核心：隐藏导航链接（通用、Java、Bedrock、关于我们）
-     * 导航链接同时具有 .navbar__item 和 .navbar__link 类
-     */
-    .navbar__item.navbar__link {
-        display: none !important;
+    .navbar__inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
     }
 
-    /* 隐藏下拉菜单类型的导航项 */
-    .navbar__item.dropdown {
-        display: none !important;
+    /* 使用 display: contents 打平结构，以便重新排序 */
+    .navbar__items,
+    .navbar__items--right {
+        display: contents;
     }
 
-    /* 品牌居中显示 */
+    /* 1. Logo (顶部) */
     .navbar__brand {
-        display: flex !important;
+        order: 1;
+        margin-right: 0;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        border-radius: var(--radius-md);
+        transition: background-color var(--transition-fast);
+        /* Ensure text is hidden even if selector fails */
+        font-size: 0 !important; 
+    }
+    
+    .navbar__brand:hover {
+        background-color: var(--color-surface-2);
+    }
+
+    .navbar__title {
+        display: none !important; /* 强制隐藏文字 */
+    }
+    
+    .navbar__logo {
+        width: 28px;
+        height: 28px;
+        margin: 0;
+    }
+
+    /* 2. 搜索 (Logo 下方) */
+    .navbar__search {
+        order: 2;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* 强制搜索按钮为图标样式 - 使用 search.css 中的通用样式，此处仅做微调 */
+    /* 移除强制的 width/height，依赖 search.css 的 max-width/height 和 flex 布局 */
+    
+    /* 3. 菜单按钮 (搜索下方) */
+    /* 隐藏菜单按钮，因为我们使用原生侧边栏 */
+    .navbar__toggle {
+        display: none !important;
+    }
+    
+    /* 隐藏普通文本链接 (仅在 Rail 中隐藏) */
+    /* Exclude .header-github-link from being hidden */
+    .navbar__inner .navbar__item.navbar__link:not(.header-github-link) {
+        display: none;
+    }
+    
+    /* 隐藏下拉菜单 (仅在 Rail 中隐藏) */
+    .navbar__inner .navbar__item.dropdown {
+        display: none;
+    }
+
+    /* 4. 底部设置区域 (颜色切换等) */
+    /* 这是一个 hack，尝试将最后一个元素推到底部 */
+    /* 通常颜色切换按钮在 items--right 的最后 */
+    
+    /* 针对颜色切换按钮 */
+    .navbar__item {
+        order: 10; /* 默认顺序 */
+    }
+
+    /* 尝试选中颜色切换按钮容器 */
+    div[class*="colorModeToggle"] {
+        order: 100;
+        margin-top: 0.5rem !important; /* 紧跟在 GitHub 按钮下方 */
+        margin-bottom: 1rem;
+    }
+    
+    /* GitHub 链接样式 */
+    .header-github-link {
+        order: 99;
+        margin-top: auto !important; /* 将自己和后面的元素推到底部 */
+        margin-bottom: 0;
+        width: 44px;
+        height: 44px;
+        display: flex !important; /* Force display */
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--radius-md);
+    }
+    
+    .header-github-link:hover {
+        background-color: var(--color-surface-2);
+    }
+
+    .header-github-link::before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        display: block;
+        background-color: var(--text-secondary);
+        mask: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat center;
+        mask-size: contain;
+        -webkit-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat center;
+        -webkit-mask-size: contain;
+    }
+
+    /* ======================================
+       Desktop Drawer (Mobile Sidebar on Desktop)
+       REMOVED: User requested to use native left sidebar instead.
+    ====================================== */
+}
+
+/* ======================================
+   移动端样式 (保持原有逻辑)
+====================================== */
+@media (max-width: 996px) {
+    .navbar__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar__brand {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        z-index: 1;
     }
-
-    .navbar__title {
-        font-size: 1.0625rem;
+    
+    .navbar__items {
+        display: flex;
     }
-
-    .navbar__logo {
-        height: 1.5rem;
-        width: 1.5rem;
-    }
-
-    /* 汉堡菜单按钮 */
-    .navbar__toggle {
-        position: relative;
-        z-index: 10;
-    }
-
-    /* 右侧搜索和 GitHub */
+    
     .navbar__items--right {
-        position: relative;
-        z-index: 10;
+        display: flex;
         margin-left: auto;
-    }
-
-    /* 显示搜索 */
-    .navbar__search,
-    .DocSearch-Button {
-        display: flex !important;
-    }
-
-    /* 移动端隐藏 GitHub 链接 */
-    .header-github-link {
-        display: none !important;
-    }
-
-    /* 侧边栏样式 */
-    .navbar-sidebar {
-        z-index: 15 !important;
-        height: 100vh !important;
-        max-height: none !important;
-        background: var(--bg-card);
-    }
-
-    .navbar-sidebar__backdrop {
-        background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(4px);
-    }
-
-    .navbar__link::before {
-        display: none;
-    }
-}
-
-/* ======================================
-   移动端侧边栏导航
-====================================== */
-.navbar-sidebar__brand {
-    padding: 1rem;
-    border-bottom: 1px solid var(--border);
-}
-
-.navbar-sidebar__close {
-    color: var(--text-secondary);
-    /* 增大触摸区域 */
-    min-width: 44px;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar-sidebar__items {
-    /* 移除 padding，由子元素控制边距 */
-    padding: 0;
-}
-
-/* 移动端返回按钮样式 */
-.navbar-sidebar__back {
-    background: transparent;
-    border: none;
-    color: var(--text-secondary);
-    padding: 0.75rem 1rem;
-    display: flex;
-    align-items: center;
-    /* 确保与其他菜单项对齐 */
-    width: calc(100% - 2rem);
-    margin: 0 1rem 0.5rem 1rem;
-    font-weight: 600;
-    border-radius: var(--radius-md);
-    transition: background-color var(--transition-fast);
-}
-
-.navbar-sidebar__back:hover {
-    background-color: var(--bg-muted);
-    color: var(--text-primary);
-}
-
-/* 移动端侧边栏链接优化触摸目标 */
-.navbar-sidebar__item {
-    min-height: 44px;
-    display: block; /* 改为 block 避免 flex 挤压 */
-}
-
-.navbar-sidebar .menu__link {
-    min-height: 44px;
-    padding: 0.75rem 1rem;
-    display: flex;
-    align-items: center;
-    width: 100%; /* 确保占满宽度 */
-    white-space: nowrap; /* 防止文字换行 */
-}
-
-/* ======================================
-   小屏幕额外优化
-====================================== */
-@media (max-width: 540px) {
-    .navbar {
-        padding: 0.5rem 0.75rem;
-    }
-
-    .navbar__title {
-        font-size: 1rem;
-    }
-
-    .navbar__logo {
-        height: 1.375rem;
-        width: 1.375rem;
-    }
-
-    /* 汉堡菜单触摸区域 */
-    .navbar__toggle {
-        min-width: 44px;
-        min-height: 44px;
-        padding: 0.5rem;
-    }
-
-    .navbar-sidebar {
-        width: 85vw;
-        max-width: 320px;
-    }
-
-    .navbar-sidebar__brand {
-        padding: 0.875rem;
-    }
-
-    .navbar-sidebar__items {
-        padding: 0;
     }
 }
