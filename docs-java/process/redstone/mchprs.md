@@ -19,7 +19,7 @@ MCHPRS 破坏了很多基于生物/传送装置的红石机器，因此 MCHPRS �
 
 MCHPRS 的构建需要 Rust 和 Cargo，具体安装教程请自行上网搜索
 
-```shell
+```bash
 git clone https://github.com/MCHPR/MCHPRS.git
 cd MCHPRS
 cargo build --release
@@ -29,7 +29,7 @@ cargo build --release
 
 如果你希望基于你的 CPU 进一步优化 (但兼容性会下降),你可以使用这个指令构建：
 
-```shell
+```bash
 RUSTFLAGS="-C target-cpu=native" cargo build --release
 ```
 

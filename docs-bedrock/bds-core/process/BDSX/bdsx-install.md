@@ -23,7 +23,7 @@ sidebar_position: 1
 
 2.如果安装了 git，请使用 `cmd` cd 到一个空白文件夹后使用以下指令安装。
 
-```shell
+```bash
 git clone https://github.com/bdsx/bdsx.git
 ```
 

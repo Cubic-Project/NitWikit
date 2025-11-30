@@ -8,13 +8,13 @@ import TabItem from '@theme/TabItem';
 
 # 如何保持服务器在 Linux 服务器中后台运行
 
-由于 Linux 的会话机制，在 ssh 断开连接之后手动启动的服务端会停止运行，而我们需要服务端保持后台运行。
+由于 Linux 的会话机制，在 SSH 断开连接之后手动启动的服务端会停止运行，而我们需要服务端保持后台运行。
 
-## 方法一 screen(推荐)
+## 方法一 screen (推荐)
 
 使用 screen 创建一个虚拟的窗口运行服务端，首先安装 screen，在终端输入：
 
-确保你的系统上有`screen`包，没有的话安装它们：
+确保你的系统上有 `screen` 包，没有的话安装它们：
 
 <Tabs>
     <TabItem value="debian" label="Debian/Ubuntu Linux" default>
@@ -36,7 +36,7 @@ import TabItem from '@theme/TabItem';
 
 screen 的基础指令：
 
-```shell
+```bash
 screen -ls            # 列出所有的 screen
 screen -S xxx         # 创建一个名叫 xxx 的虚拟窗口 (推荐以每个子服务器命名)
 screen -r xxx         # 进入 xxx 虚拟窗口 (只能进入已创建且无人使用的 screen)
@@ -45,17 +45,21 @@ screen -S xxx -X quit # 删除 xxx 窗口 (在 screen 中输入 exit 也可以�
 ```
 
 :::info
+
 重新连接到 screen 时可以使用 `screen -Dr xxx`指令，意为踢出正在使用 xxx 窗口的用户并回到 xxx 窗口
+
 :::
 
 在 screen 中启动服务端，在 screen 中时，按快捷键 `Ctrl + A + D` 即可返回原窗口。
 
 :::tip 滚动查看日志
+
 如果你想在 screen 中向上滚动查看历史日志：
 
 - 按 `Ctrl + A + [` 进入复制模式（此时可以使用方向键或 Page Up/Down 键滚动）
 - 按 `ESC` 退出复制模式
-  :::
+
+:::
 
 推荐原因：后台运行的同时还可以在服务端控制台中查看日志，打指令
 
@@ -101,7 +105,7 @@ systemctl --user start mc.service
 systemctl --user enable mc.service
 ```
 
-_可以通过`systemctl --user status mc.service`查看服务运行状态。_
+_可以通过 `systemctl --user status mc.service` 查看服务运行状态。_
 
 [详细设置说明](https://blog.csdn.net/WHQ78164/article/details/132956725)
 
@@ -111,9 +115,9 @@ _可以通过`systemctl --user status mc.service`查看服务运行状态。_
 
 缺点：无法进入控制台打指令
 
-## 方法四 nohup 和&
+## 方法四 nohup 和 &
 
-&：在启动时后面加一个&
+&：在启动时后面加一个 `&`
 
 例如：./start.sh &
 

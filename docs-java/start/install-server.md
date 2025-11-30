@@ -75,7 +75,7 @@ import TabItem from '@theme/TabItem';
 
 接着打开 cmd，不会请查看[开启 cmd](launch-server.md#笨蛋脚本)，输入以下命令
 
-```shell
+```bash
 java -jar <你下载的安装器的文件名> --installServer
 ```
 
@@ -137,13 +137,13 @@ java -jar <你下载的安装器的文件名> --installServer
 
 然后更改启动参数，比如：
 
-```shell
+```bash
 java -Xms2G -Xmx2G -jar 核心名.jar
 ```
 
 改为
 
-```shell
+```bash
 java -Xms2G -Xmx2G  -Dignite.locator=paper -Dignite.paper.jar=核心名.jar -jar ignite.jar
 ```
 

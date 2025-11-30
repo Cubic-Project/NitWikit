@@ -112,7 +112,7 @@ Hooks:
   若 AuthMe 未被加载则会导致 AuthMeVelocity 要求玩家登录但玩家却无法登录，导致所有人无法正常在服务器中游玩。
 - 如果在 AuthMeVelocity 被加载时出现形如以下报错：
 
-```shell
+```bash
 java.lang.RuntimeException: Failed to download library
 ```
 

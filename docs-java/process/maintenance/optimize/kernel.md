@@ -19,21 +19,21 @@ tuned 调优服务可以通过设置调优配置文件来调整操作系统，�
 <Tabs defaultValue="Debian/Ubuntu">
 <TabItem value="Debian/Ubuntu">
 
-```shell
+```bash
 sudo apt install tuned
 ```
 
 </TabItem>
   <TabItem value="RedHat/CentOS">
 
-```shell
+```bash
 sudo yum install tuned
 ```
 
 </TabItem>
 <TabItem value="ArchLinux">
 
-```shell
+```bash
 sudo pacman -S tuned
 ```
 
@@ -42,13 +42,13 @@ sudo pacman -S tuned
 
 然后启动：
 
-```shell
+```bash
 systemctl enable tuned --now
 ```
 
 然后运行工具并使用以下命令调整内核：
 
-```shell
+```bash
 tuned-adm profile throughput-performance
 ```
 
@@ -78,19 +78,19 @@ vm.nr_hugepages = 6444
 
 首先需要检查操作系统是否支持大页面：
 
-```shell
+```bash
 cat /sys/kernel/mm/transparent_hugepage/shmem_enabled
 ```
 
 如果返回包含以下内容，那么操作系统支持透明大页面
 
-```shell
+```bash
 always within_size advise never deny force
 ```
 
 然后运行以下命令激活透明大页面
 
-```shell
+```bash
 echo madvise | sudo tee /sys/kernel/mm/transparent_hugepage/enabled
 echo advise | sudo tee /sys/kernel/mm/transparent_hugepage/shmem_enabled
 echo defer | sudo tee /sys/kernel/mm/transparent_hugepage/defrag
@@ -99,7 +99,7 @@ echo 1 | sudo tee /sys/kernel/mm/transparent_hugepage/khugepaged/defrag
 
 最后，我们需要配置开机自启动
 
-```shell
+```bash
 sudo apt install sysfsutils
 
 sudo tee /etc/sysfs.d/enableTHP.conf <<EOF
@@ -118,7 +118,7 @@ sudo systemctl restart sysfsutils
 
 强制所有 CPU 核心运行在最高频率 (不同于超频，不会影响 CPU 寿命)
 
-```shell
+```bash
 sudo cpupower frequency-set -g performance
 ```
 
@@ -130,13 +130,13 @@ XanMod Linux 内核融合了许多优化补丁，包括许多来自 Cloudflare,G
 
 1. 检查兼容性
 
-    ```shell
+    ```bash
     awk -f <(wget -qO- https://dl.xanmod.org/check_x86-64_psabi.sh)
     ```
 
     输出结果
 
-    ```shell
+    ```bash
     CPU supports x86-64-v4
     ```
 
@@ -148,20 +148,20 @@ XanMod Linux 内核融合了许多优化补丁，包括许多来自 Cloudflare,G
 
 2. 添加上游公钥：
 
-    ```shell
+    ```bash
     wget -qO - https://dl.xanmod.org/archive.key | gpg --dearmor -vo /usr/share/keyrings/xanmod-archive-keyring.gpg
     ```
 
 3. 添加源：
 
-    ```shell
+    ```bash
     echo 'deb [signed-by=/usr/share/keyrings/xanmod-archive-keyring.gpg] https://mirrors.tuna.tsinghua.edu.cn/xanmod releases main' | tee /etc/apt/sources.list.d/xanmod-release.list
     apt update
     ```
 
 4. 安装
 
-    ```shell
+    ```bash
     apt install -y linux-xanmod-rt-x64v3
     ```
 
@@ -177,7 +177,7 @@ XanMod Linux 内核融合了许多优化补丁，包括许多来自 Cloudflare,G
 
     重启后检查安装
 
-    ```shell
+    ```bash
     uname -r
     ```
 

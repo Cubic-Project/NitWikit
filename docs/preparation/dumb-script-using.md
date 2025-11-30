@@ -54,7 +54,7 @@ sidebar_position: 4
 
 32 位操作系统或 Win7 需要自己安装 Python，并安装以下依赖 (一大堆)
 
-```shell
+```bash
 pip install pyyaml install-jdk tqdm psutil requests rtoml
 ```
 

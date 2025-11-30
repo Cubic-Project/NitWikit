@@ -27,13 +27,13 @@ sidebar_position: 2
 
 你只需要在启动参数最后加上`--forceUpgrade`就行了，像这样
 
-```shell
+```bash
 java -Xms2G -Xmx2G -jar server.jar --nogui
 ```
 
 改成这样
 
-```shell
+```bash
 java -Xms2G -Xmx2G -jar server.jar --nogui --forceUpgrade
 ```
 

@@ -39,7 +39,7 @@ MCSManager 是一款免费，易用，现代化的游戏服务器管理面板，
 
 在控制台输入
 
-```shell
+```bash
 sudo su -c "wget -qO- https://script.mcsmanager.com/setup_cn.sh | bash"
 ```
 
@@ -47,7 +47,7 @@ sudo su -c "wget -qO- https://script.mcsmanager.com/setup_cn.sh | bash"
 
 启动方式：
 
-```shell
+```bash
 # 先启动面板守护进程。
 # 这是用于进程控制，终端管理的服务进程。
 systemctl start mcsm-daemon.service
@@ -75,7 +75,7 @@ systemctl stop mcsm-daemon.service
 
 ##### 手动安装
 
-```shell
+```bash
 # 切换到安装目录，你也可以换成其他的目录。
 cd /opt/
 
@@ -106,7 +106,7 @@ tar -zxf mcsmanager_linux_release.tar.gz
 
 :::
 
-```shell
+```bash
 # 安装依赖库
 ./install.sh
 

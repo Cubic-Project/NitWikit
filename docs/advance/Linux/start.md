@@ -101,7 +101,7 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS, mixed mode, shari
 
 `vim ~/.bashrc` 在这个文件末尾追加
 
-```shell
+```bash
 # java
 alias java8='/usr/lib/jvm/zulu-8/bin/java'
 alias java17='/usr/lib/jvm/zulu-17/bin/java'
@@ -111,13 +111,13 @@ alias java17='/usr/lib/jvm/zulu-17/bin/java'
 
 - 使用 Java8 开服：
 
-```shell
+```bash
 java8 -jar example.jar
 ```
 
 - 使用 Java17 开服：
 
-```shell
+```bash
 java17 -jar example.jar
 ```
 
@@ -137,7 +137,7 @@ TODO - 完善和排版
 
 使用 chmod 命令给脚本增加运行权限
 
-```shell
+```bash
 chmod +x example.sh
 ```
 

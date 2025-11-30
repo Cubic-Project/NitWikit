@@ -26,7 +26,7 @@ LeviLamina 的插件是以文件夹的格式存在的。通常插件文件夹中
 
 通常情况下，一个 Lip 插件的安装命令会像这样：
 
-```shell
+```bash
 lip install <一个URL>
 ```
 

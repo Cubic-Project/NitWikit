@@ -42,19 +42,19 @@ LSE 的一些特性与 LLSE 相同，你可以阅读 LLSE 来了解该插件的�
 
 一次性安装 QuickJS 和 Lua 引擎
 
-```shell
+```bash
 lip install github.com/LiteLDev/LegacyScriptEngine
 ```
 
 安装 nodejs 引擎
 
-```shell
+```bash
 lip install gitea.litebds.com/LiteLDev/legacy-script-engine-nodejs
 ```
 
 安装 python 引擎
 
-```shell
+```bash
 lip install gitea.litebds.com/LiteLDev/legacy-script-engine-python
 ```
 

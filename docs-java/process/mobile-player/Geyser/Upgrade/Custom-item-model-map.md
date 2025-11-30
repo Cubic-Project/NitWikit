@@ -31,7 +31,7 @@ java2bedrock.sh(俗称转换器) 是一个自动资源包转换工具，可以�
 
 本地运行你只需要执行
 
-```shell
+```bash
 ./converter.sh 资源包名称.zip
 ```
 

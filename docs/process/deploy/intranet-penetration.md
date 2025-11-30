@@ -44,7 +44,7 @@ Cloudflare Tunnel 是 CF 下的免费内网穿透
 
 打开 cmd，运行以下命令
 
-```shell
+```bash
 cloudflared tunnel --url tcp://localhost:服务器端口
 ```
 

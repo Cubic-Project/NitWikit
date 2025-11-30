@@ -12,19 +12,19 @@ slug: /optimize/jvm/common
 
 当然，在动手前，让我们先试一试是不是系统已经支持了这项功能，在控制台执行此命令
 
-```shell
+```bash
 java -Xlog:gc+init -XX:+UseLargePages -Xmx1g -version
 ```
 
 如果出现了以下字样，那么说明不完全兼容：
 
-```shell
+```bash
 UseLargePages disabled, no large pages configured and available on the system.
 ```
 
 那么就说明当前系统并不支持大页，不过不要急，可以试一下这一行命令：
 
-```shell
+```bash
 java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 ```
 
@@ -34,13 +34,13 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 
 如果支持 LargePages，加上此参数
 
-```shell
+```bash
 -XX:+UseLargePages  -XX:LargePageSizeInBytes=2m
 ```
 
 如果支持 TransparentHugePages，加上此参数
 
-```shell
+```bash
 -XX:+UseTransparentHugePages
 ```
 
@@ -54,7 +54,7 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 
 如果你使用的是 Pufferfish 的分支 (Purpur，Leaf，Leaves，Gale)，你可以添加此参数
 
-```shell
+```bash
 --add-modules=jdk.incubator.vector
 ```
 
@@ -64,19 +64,19 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 
 如果你使用的是 Leaf，你可以添加参数使用国内下载源：
 
-```shell
+```bash
 -DLeaf.library-download-repo=https://maven.aliyun.com/repository/public
 ```
 
 如果你使用的是 Paper 1.21.6(及其分支) 之后的版本 ，可以使用以下系统属性配置 Maven 中心仓库镜像：
 
-```shell
+```bash
 -Dorg.bukkit.plugin.java.LibraryLoader.centralURL=https://maven.aliyun.com/repository/central
 ```
 
 或者设置环境变量（优先级更高）：
 
-```shell
+```bash
 # Linux/MacOS
 export PAPER_DEFAULT_CENTRAL_REPOSITORY=https://maven.aliyun.com/repository/central
 
@@ -106,13 +106,13 @@ set PAPER_DEFAULT_CENTRAL_REPOSITORY=https://maven.aliyun.com/repository/central
 
 防止乱码
 
-```shell
+```bash
 -Dfile.encoding=UTF-8
 ```
 
 如果仍然乱码,可以添加运行:
 
-```shell
+```bash
 chcp 65001 # for Windows
 ```
 
@@ -120,7 +120,7 @@ chcp 65001 # for Windows
 
 (仅适合 Leaf 或者 Gale)
 
-```shell
+```bash
 -Dgale.log.warning.root=false -Dgale.log.warning.offline.mode=false
 ```
 
@@ -129,7 +129,7 @@ chcp 65001 # for Windows
 (仅适合 Linux 和 MacOS 系统，在 Windows 上无效)
 (原版 Minecraft 仅在个人信息公钥签名中使用到 SecureRandom)
 
-```shell
+```bash
 -Djava.security.egd=file:/dev/urandom
 ```
 
@@ -137,7 +137,7 @@ chcp 65001 # for Windows
 
 (仅适合 Java17 及以上)
 
-```shell
+```bash
  -Xlog:async
 ```
 
@@ -149,7 +149,7 @@ chcp 65001 # for Windows
 
 (仅适合 Paper 和 Paper Fork)
 
-```shell
+```bash
 -Dpaper.playerconnection.keepalive=60
 ```
 
@@ -159,7 +159,7 @@ chcp 65001 # for Windows
 
 (仅适合 Paper 和 Paper Fork)
 
-```shell
+```bash
 -Dpaper.disableWorldSymlinkValidation=true
 ```
 

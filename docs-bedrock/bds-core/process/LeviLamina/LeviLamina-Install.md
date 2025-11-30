@@ -35,7 +35,7 @@ sidebar_position: 1
 
 然后运行命令
 
-```shell
+```bash
 lip install github.com/LiteLDev/LeviLamina
 ```
 
@@ -45,19 +45,19 @@ Lip 会自动下载 BDS 并配置 LeviLamina 加载器
 
 如果因网络问题无法下载 GO 模块或 LeviLamina 及其依赖，可以运行命令
 
-```shell
+```bash
 lip config GoModuleProxyURL <url>
 ```
 
 和
 
-```shell
+```bash
 lip config GitHubMirrorURL <url>
 ```
 
 来配置镜像，官方给的镜像
 
-```shell
+```bash
 lip config GoModuleProxyURL https://goproxy.cn
 lip config GitHubMirrorURL https://github.bibk.top
 ```
@@ -72,7 +72,7 @@ lip config GitHubMirrorURL https://github.bibk.top
 
 现在，你已成功安装了 LeviLamina 了，要启动它，请运行命今
 
-```shell
+```bash
 bedrock_server_mod.exe
 ```
 
@@ -115,6 +115,6 @@ bedrock_server_mod.exe
 
 现在，你已成功安装了 LeviLamina 了，要启动它，请运行命今
 
-```shell
+```bash
 bedrock_server_mod.exe
 ```
