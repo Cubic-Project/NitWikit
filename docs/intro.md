@@ -38,7 +38,7 @@ sidebar_position: 1
 
 ## 更多
 
-对于文档中的错误请进入 [GitHub](https://github.com/Cubic-Project/NitWikit) 提出 Issue 或提交 Pr。
+对于文档中的错误请进入 [GitHub](https://github.com/Cubic-Project/NitWikit) 提出 Issue 或提交 PR。
 
 ## 本节视频教程
 

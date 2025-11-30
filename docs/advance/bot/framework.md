@@ -10,6 +10,7 @@ import TabItem from '@theme/TabItem';
 
 ## 第三方机器人框架
 
+<!-- autocorrect-disable space-punctuation -->
 <Tabs queryString="qqbot">
 <TabItem value="LLOneBot" label="LLOneBot">
 
@@ -43,9 +44,11 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 </Tabs>
+<!-- autocorrect-enable -->
 
 ## 接入 QQ 官方接口的机器人框架
 
+<!-- autocorrect-disable space-punctuation -->
 <Tabs queryString="qqbot">
 <TabItem value="Gensokyo" label="Gensokyo">
 
@@ -58,9 +61,11 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 </Tabs>
+<!-- autocorrect-enable -->
 
 ## 已停止更新的机器人框架
 
+<!-- autocorrect-disable space-punctuation -->
 <Tabs queryString="qqbot">
 <TabItem value="Shamrock" label="Shamrock">
 
@@ -113,3 +118,4 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 </Tabs>
+<!-- autocorrect-enable -->

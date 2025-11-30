@@ -14,6 +14,7 @@ import TabItem from '@theme/TabItem';
 
 关于机器人框架详情请见 [通用 | 机器人框架](./framework)
 
+<!-- autocorrect-disable space-punctuation -->
 <Tabs queryString="tyqqbot">
 <TabItem value="DLS-CQhttp" label="DLS-CQhttp">
 
@@ -82,3 +83,4 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 </Tabs>
+<!-- autocorrect-enable -->

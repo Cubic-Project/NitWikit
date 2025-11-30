@@ -8,37 +8,37 @@ sidebar_position: 2
 Linux 系统上有一个工具被业界广泛使用，它就是 `ssh`。它虽然不能远程控制桌面，但是可以远程登录服务器的命令行，并让服务器执行一些命令。由于 `ssh` 非常常用，现在很多 Linux 发行版都已经默认集成了这个命令。
 目前使用最广的提供 ssh 命令的软件是 **OpenSSH**。
 
-## 开启 ssh 服务
+## 开启 SSH 服务
 
 为了让客户能顺利连接服务器，云服务器的 sshd 服务一般默认开启。如果你使用的是家里云，或者云服务器的 sshd 服务确实没有开启 (比如你是只能通过服务商提供的 VNC 或者第三方远控软件连接的服务器，无法使用 ssh)，那么你可能需要先开启 sshd 服务才能连接到服务器。
-在主流的使用 Systemd 的 Linux 发行版中，执行`systemctl enable --now sshd`命令即可开启 sshd 服务，如果这些命令都报错，证明 sshd 服务存在问题，你可以把报错复制粘贴到搜索引擎上查询怎么修复这个问题。
+在主流的使用 Systemd 的 Linux 发行版中，执行 `systemctl enable --now sshd` 命令即可开启 sshd 服务，如果这些命令都报错，证明 sshd 服务存在问题，你可以把报错复制粘贴到搜索引擎上查询怎么修复这个问题。
 开启 sshd 服务后，你就可以连接到这台服务器了。
 
-成功开启 ssh 服务后，如果要从公网连接，你还需要把 ssh 服务的端口`22`开放到公网。开放的方法与开放 Windows 的远程桌面端口的方式完全相同，但是协议只需要 TCP 即可。
+成功开启 SSH 服务后，如果要从公网连接，你还需要把 SSH 服务的端口 `22` 开放到公网。开放的方法与开放 Windows 的远程桌面端口的方式完全相同，但是协议只需要 TCP 即可。
 
 ::: warn
 
-为了安全请不要在服务器上允许 root 用户登录 ssh！如果 ssh 被暴力破解的话会产生非常严重的后果！
+为了安全请不要在服务器上允许 root 用户登录 SSH！如果 SSH 被暴力破解的话会产生非常严重的后果！
 
 最好可以禁用密码登录，仅允许密钥登录
 
-关于配置你服务器的 ssh 使其更安全，可以查看[Arch Linux Wiki 的这篇文章](https://wiki.archlinuxcn.org/wiki/OpenSSH#%E4%BF%9D%E6%8A%A4)
+关于配置你服务器的 SSH 使其更安全，可以查看[Arch Linux Wiki 的这篇文章](https://wiki.archlinuxcn.org/wiki/OpenSSH#%E4%BF%9D%E6%8A%A4)
 
 :::
 
 :::danger
 
-配置直接在公网使用 22 端口连接服务器 ssh**会导致严重的安全性问题**，详见[如何抵御网络攻击](../../process/maintenance/how-to-defend-against-cyber-attacks.md)。
+配置直接在公网使用 22 端口连接服务器 SSH **会导致严重的安全性问题**，详见 [如何抵御网络攻击](../../process/maintenance/how-to-defend-against-cyber-attacks.md)。
 
-另外除非有明确需求，不要随意配置 UDP 协议端口映射，包括上文中提到的**不需要 UDP 协议**的 ssh，否则可能导致你的服务器被 DDoS！详见[如何抵御网络攻击](../../process/maintenance/how-to-defend-against-cyber-attacks.md)。
+另外除非有明确需求，不要随意配置 UDP 协议端口映射，包括上文中提到的 **不需要 UDP 协议** 的 SSH，否则可能导致你的服务器被 DDOS！详见 [如何抵御网络攻击](../../process/maintenance/how-to-defend-against-cyber-attacks.md)。
 
 :::
 
-## 连接 ssh 服务
+## 连接 SSH 服务
 
 ### Linux 的 ssh 命令
 
-就像 Windows 不用安装任何软件就能连接 Windows 的远程桌面一样，Linux 也内置了连接 ssh 的方式，直接执行 ssh 命令即可连接。它的语法如下：
+就像 Windows 不用安装任何软件就能连接 Windows 的远程桌面一样，Linux 也内置了连接 SSH 的方式，直接执行 ssh 命令即可连接。它的语法如下：
 
 ```shell
 ssh <username>@<address> [-p port]
@@ -82,7 +82,7 @@ Windows 系统自带的 Powershell
 
 :::tip
 
-port 输入服务器的 ssh 端口
+port 输入服务器的 SSH 端口
 
 username 为登录服务器的用户名
 
@@ -126,13 +126,13 @@ FinalShell 是一体化的的服务器，网络管理软件，不仅是 ssh 客�
 
   <TabItem value="zsh" label="macOS(zsh)">
 
-macOS 内置 ssh 命令，我们可以用终端来执行它。要打开 macos 上的终端，可以使用以下方式：
+macOS 内置 ssh 命令，我们可以用终端来执行它。要打开 macOS 上的终端，可以使用以下方式：
 
 - (如果终端 app 没有被移动过) 打开启动台，打开第一页的其他文件夹，点击终端。或者你也可以在应用文件夹 (入口默认固定在访达侧边栏上) 里找到它。
 
 - 按下 command+ 空格或键盘上的搜索键唤起 spotlight，输入“终端”，然后它就会显示在下面。
 
-![macos 终端](_images/Linux开服/连接服务器/macOS_terminal.png)
+![macOS 终端](_images/Linux开服/连接服务器/macOS_terminal.png)
 
 打开终端后，使用上文中提到的 ssh 命令即可连接到服务器。
 </TabItem>

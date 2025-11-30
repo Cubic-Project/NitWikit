@@ -149,3 +149,8 @@ sidebar_position: 100
 
 - [x] 代办事项
 - [x] 编写规范
+
+# 杂项 TODOs (待分类)
+
+- [ ] /advance/bot.md 内 TODO
+- [ ] 更新 Gensokyo 的 GitHub 链接到 https://github.com/Hoshinonyaruko/Gensokyo-MCP
