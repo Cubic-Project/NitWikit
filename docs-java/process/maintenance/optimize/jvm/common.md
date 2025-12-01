@@ -18,7 +18,7 @@ java -Xlog:gc+init -XX:+UseLargePages -Xmx1g -version
 
 如果出现了以下字样，那么说明不完全兼容：
 
-```bash
+```text
 UseLargePages disabled, no large pages configured and available on the system.
 ```
 
@@ -34,13 +34,13 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 
 如果支持 LargePages，加上此参数
 
-```bash
+```text
 -XX:+UseLargePages  -XX:LargePageSizeInBytes=2m
 ```
 
 如果支持 TransparentHugePages，加上此参数
 
-```bash
+```text
 -XX:+UseTransparentHugePages
 ```
 
@@ -54,7 +54,7 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 
 如果你使用的是 Pufferfish 的分支 (Purpur，Leaf，Leaves，Gale)，你可以添加此参数
 
-```bash
+```text
 --add-modules=jdk.incubator.vector
 ```
 
@@ -64,13 +64,13 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 
 如果你使用的是 Leaf，你可以添加参数使用国内下载源：
 
-```bash
+```text
 -DLeaf.library-download-repo=https://maven.aliyun.com/repository/public
 ```
 
-如果你使用的是 Paper 1.21.6(及其分支) 之后的版本 ，可以使用以下系统属性配置 Maven 中心仓库镜像：
+如果你使用的是 Paper 1.21.6(及其分支) 之后的版本，可以使用以下系统属性配置 Maven 中心仓库镜像：
 
-```bash
+```text
 -Dorg.bukkit.plugin.java.LibraryLoader.centralURL=https://maven.aliyun.com/repository/central
 ```
 
@@ -106,11 +106,11 @@ set PAPER_DEFAULT_CENTRAL_REPOSITORY=https://maven.aliyun.com/repository/central
 
 防止乱码
 
-```bash
+```text
 -Dfile.encoding=UTF-8
 ```
 
-如果仍然乱码,可以添加运行:
+如果仍然乱码，可以添加运行：
 
 ```bash
 chcp 65001 # for Windows
@@ -120,7 +120,7 @@ chcp 65001 # for Windows
 
 (仅适合 Leaf 或者 Gale)
 
-```bash
+```text
 -Dgale.log.warning.root=false -Dgale.log.warning.offline.mode=false
 ```
 
@@ -129,7 +129,7 @@ chcp 65001 # for Windows
 (仅适合 Linux 和 MacOS 系统，在 Windows 上无效)
 (原版 Minecraft 仅在个人信息公钥签名中使用到 SecureRandom)
 
-```bash
+```text
 -Djava.security.egd=file:/dev/urandom
 ```
 
@@ -137,7 +137,7 @@ chcp 65001 # for Windows
 
 (仅适合 Java17 及以上)
 
-```bash
+```text
  -Xlog:async
 ```
 
@@ -149,7 +149,7 @@ chcp 65001 # for Windows
 
 (仅适合 Paper 和 Paper Fork)
 
-```bash
+```text
 -Dpaper.playerconnection.keepalive=60
 ```
 
@@ -159,7 +159,7 @@ chcp 65001 # for Windows
 
 (仅适合 Paper 和 Paper Fork)
 
-```bash
+```text
 -Dpaper.disableWorldSymlinkValidation=true
 ```
 

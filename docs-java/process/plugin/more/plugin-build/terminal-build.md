@@ -17,7 +17,7 @@ sidebar_position: 5
         1. 按 `Win + R`，输入 `cmd` 打开终端
         2. 输入 `java -version`
         3. 如果看到类似下面的输出，说明安装成功：
-            ```bash
+            ```text
             java version "1.8.0_301"
             Java(TM) SE Runtime Environment (build 1.8.0_301-b09)
             Java HotSpot(TM) 64-Bit Server VM (build 25.301-b09, mixed mode)

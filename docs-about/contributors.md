@@ -8,7 +8,9 @@ import ContributorCard from '@site/src/components/ContributorCard';
 # 贡献者名单
 
 :::tip 项目贡献者
+
 以下列表展示了所有为本项目做出贡献的开发者。我们对每一位贡献者表示衷心的感谢！
+
 :::
 
 ## 贡献统计
@@ -21,7 +23,7 @@ import ContributorCard from '@site/src/components/ContributorCard';
 
 ## 如何参与贡献
 
-我们欢迎并鼓励更多的人参与到文档的改进中来！如果你希望为本项目贡献内容，请查阅[贡献指南](https://github.com/Cubic-Project/NitWikit/blob/main/CONTRIBUTING.md)。
+我们欢迎并鼓励更多的人参与到文档的改进中来！如果你希望为本项目贡献内容，请查阅 [贡献指南](https://github.com/Cubic-Project/NitWikit/blob/main/CONTRIBUTING.md)。
 
 参与贡献的方式包括但不限于：
 
@@ -33,24 +35,34 @@ import ContributorCard from '@site/src/components/ContributorCard';
 
 1. Fork 本仓库到你的 GitHub 账户
 2. 克隆你 Fork 的仓库到本地
+
     ```bash
     git clone https://github.com/你的用户名/NitWikit.git
     ```
+
     如果你对历史记录没有需求，建议这么克隆
+
     ```bash
     git clone https://github.com/你的用户名/NitWikit.git --depth 1
     ```
+
 3. 创建新的分支
+
     ```bash
     git checkout -b feature/your-feature-name
     ```
+
 4. 进行修改并提交
+
     ```bash
     git add .
     git commit -m "描述你的修改"
     ```
+
 5. 推送到你的仓库
+
     ```bash
     git push origin feature/your-feature-name
     ```
+
 6. 创建 Pull Request

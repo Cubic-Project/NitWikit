@@ -168,7 +168,7 @@ GraalJS 的未来版本可能会取消此限制。
 
 GraalJS 提供了一个`Packages`全局属性：
 
-```bash
+```text
 > Packages.java.io.File
 JavaClass[java.io.File]
 ```

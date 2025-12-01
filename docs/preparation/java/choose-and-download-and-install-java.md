@@ -123,7 +123,7 @@ https://www.java.com/zh-CN/download/
 
 输入：
 
-```shell
+```bash
 java -version
 ```
 

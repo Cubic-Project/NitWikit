@@ -14,13 +14,13 @@ sidebar_position: 4
 
 2. 使用以下命令格式进行备份：
 
-    ```shell
+    ```bash
     mysqldump -u [用户名] -p [数据库名] > [备份文件名].sql
     ```
 
     例如：
 
-    ```shell
+    ```bash
     mysqldump -u root -p mydb > mydb_backup.sql
     ```
 
@@ -36,13 +36,13 @@ sidebar_position: 4
 
 要还原备份，可以使用以下命令：
 
-```shell
+```bash
 mysql -u [用户名] -p [数据库名] < [备份文件名].sql
 ```
 
 例如：
 
-```shell
+```bash
 mysql -u root -p mydb < mydb_backup.sql
 ```
 

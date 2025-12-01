@@ -9,9 +9,9 @@ title: 关于我们
 👋你好！我是 Cubic-Project 团队的建立者与 NitWikit 的核心贡献者 llf
 ```
 
-emm Cubic-Project 的建立也确实过于 drama,由于此时,8aka-Team 组织被删除,因此我们需要新建立一个组织
+emm Cubic-Project 的建立也确实过于 drama，由于此时，8aka-Team 组织被删除，因此我们需要新建立一个组织
 
-Cubic 在群友的建议中被选中,成为了新组织的名字
+Cubic 在群友的建议中被选中，成为了新组织的名字
 
 ## 驿站自述
 

@@ -42,7 +42,7 @@ import TabItem from '@theme/TabItem';
 
 添加启动参数
 
-```bash
+```text
 -javaagent:swoftyworldmanager-classmodifier-<version>.jar
 ```
 

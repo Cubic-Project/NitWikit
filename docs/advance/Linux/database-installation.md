@@ -13,7 +13,7 @@ sidebar_position: 5
 
 在 [官方网站](https://dev.mysql.com/downloads/repo/apt/) 页面下载 `mysql-apt-config_0.8.301_all.deb`
 
-这个包是一个配置 APT 的 MySQL 仓库。安装 mysql-apt-config 后，用户可以选择想要安装的 MySQL 版本。
+这个包是一个配置 APT 的 MySQL 仓库。安装 `mysql-apt-config` 后，用户可以选择想要安装的 MySQL 版本。
 
 将文件传入服务器 `/opt` 目录下，输入以下指令安装：
 
@@ -29,7 +29,7 @@ dpkg -i mysql-apt-config_0.8.30-1_all.deb
 sudo apt update
 ```
 
-随后进行 MySQL server (即 MySQL 服务) 的安装，输入以下指令安装 MySQL：
+随后进行 MySQL Server (即 MySQL 服务) 的安装，输入以下指令安装 MySQL：
 
 ```bash
 apt install mysql-community-server -y
@@ -64,7 +64,7 @@ mysql -uroot -p
 
 输入修改密码指令：
 
-```bash
+```sql
 ALTER user 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 ```
 
