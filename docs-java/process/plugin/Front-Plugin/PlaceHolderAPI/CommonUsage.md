@@ -36,7 +36,7 @@ sidebar_position: 2
 ```text
 %server_online%         - 服务器在线人数
 %server_max_players%    - 服务器最大在线人数
-%server_tps%            - 服务器 tps
+%server_tps%            - 服务器 TPS
 %server_tps_5%
 %server_tps_15%
 %server_tps_1_colored%

@@ -9,7 +9,7 @@ sidebar_position: 1
 
 <div align="center">
 
-[Allay 官网](https://docs.allaymc.org/) | [Github 仓库](https://github.com/AllayMC/Allay)
+[Allay 官网](https://docs.allaymc.org/) | [GitHub 仓库](https://github.com/AllayMC/Allay)
 
 </div>
 
@@ -49,7 +49,7 @@ Allay 基于 Java21，故在运行&构建 Allay 前你需要安装 Java21。
 
 ### 直接运行
 
-前往[Github Releases](https://github.com/AllayMC/Allay/releases)下载
+前往[GitHub Releases](https://github.com/AllayMC/Allay/releases)下载
 
 使用以下启动脚本启动服务端（jar 文件名为示例，请改为你设置的 jar 核心名）
 

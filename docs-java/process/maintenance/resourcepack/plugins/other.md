@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 
 `SpigotMC` https://www.spigotmc.org/resources/119966/
 
-`Github` https://github.com/Mitality/BodyHealth
+`GitHub` https://github.com/Mitality/BodyHealth
 
 :::
 
@@ -32,7 +32,7 @@ import TabItem from '@theme/TabItem';
 
 `SpigotMC` https://www.spigotmc.org/resources/116619/
 
-`Github` https://github.com/toxicity188/BetterHealthBar3
+`GitHub` https://github.com/toxicity188/BetterHealthBar3
 
 `文档 (英文)` https://github.com/toxicity188/BetterHealthBar3/wiki
 
@@ -66,7 +66,7 @@ import TabItem from '@theme/TabItem';
 
 `SpigotMC` https://www.spigotmc.org/resources/114756/
 
-`Github` https://github.com/JNNGL/VanillaMinimaps
+`GitHub` https://github.com/JNNGL/VanillaMinimaps
 
 `Modrinth` https://modrinth.com/plugin/vanillaminimaps
 
@@ -84,7 +84,7 @@ import TabItem from '@theme/TabItem';
 
 `SpigotMC` https://www.spigotmc.org/resources/93795/
 
-`Github` https://github.com/ValMobile/RealisticSurvival
+`GitHub` https://github.com/ValMobile/RealisticSurvival
 
 `文档(英文)` https://github.com/ValMobile/RealisticSurvival/wiki
 

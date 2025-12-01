@@ -11,11 +11,11 @@ import { execSync } from "child_process";
 function getContributors(filePath) {
     try {
         if (typeof window !== "undefined") {
-            // 浏览器环境下无法执行git命令
+            // 浏览器环境下无法执行 git 命令
             return [];
         }
 
-        // 使用git log获取所有提交者
+        // 使用 git log 获取所有提交者
         const command = `git log --format='%aN' -- "${filePath}" | sort | uniq`;
         const output = execSync(command, { encoding: "utf-8" });
 
@@ -24,12 +24,12 @@ function getContributors(filePath) {
             .filter(Boolean)
             .map((line) => line.replace(/'/g, "").trim());
     } catch (error) {
-        console.error("获取文件贡献者失败:", error);
+        console.error("获取文件贡献者失败：", error);
         return [];
     }
 }
 
-// 重写的LastUpdated组件
+// 重写的 LastUpdated 组件
 export default function LastUpdated({ lastUpdatedAt, formattedLastUpdatedAt }) {
     const { metadata } = useDoc();
     const [contributors, setContributors] = useState([]);

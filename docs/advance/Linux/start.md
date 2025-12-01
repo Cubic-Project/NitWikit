@@ -83,7 +83,7 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS, mixed mode, shari
 
 方法很多，这里举出两种
 
-## 方法一
+### 方法一
 
 <Tabs defaultValue="Debian/Ubuntu">
   <TabItem value="Debian/Ubuntu">update-alternatives --config java</TabItem>
@@ -93,7 +93,7 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS, mixed mode, shari
 
 然后选择你想使用的 Java，接着 `java -version` 验证版本
 
-## 方法二
+### 方法二
 
 设置别名
 
@@ -129,13 +129,13 @@ TODO - 完善和排版
 
 :::
 
-在/opt 目录中使用 mkdir 创建一个目录用于开服
+在 `/opt` 目录中使用 `mkdir` 命令创建一个目录用于开服
 
 ![](_images/Linux开服/开服/5.png)
 
 将核心放入服务器内，并编写简单的开服脚本
 
-使用 chmod 命令给脚本增加运行权限
+使用 `chmod` 命令给脚本增加运行权限
 
 ```bash
 chmod +x example.sh
@@ -143,10 +143,10 @@ chmod +x example.sh
 
 ![](_images/Linux开服/开服/6.png)
 
-输入./start.sh 或者输入 bash start.sh 即可启动
+输入 `./start.sh` 或者输入 `bash start.sh` 即可启动
 
 ![](_images/Linux开服/开服/7.png)
 
-使用 vim 修改 eula 为 true 就可以开服了
+使用 `vim` 命令修改 eula 为 `true` 就可以开服了
 
 ![](_images/Linux开服/开服/8.png)

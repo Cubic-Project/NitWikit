@@ -75,7 +75,7 @@ Nashorn 目前支持 Java 8 + 以上的版本，GraalJS 支持 Java 11+ 版本
 
 ### 性能
 
-根据 [Github 性能测试](https://github.com/caoccao/GraalJS-vs-Javet-vs-Nashorn),
+根据 [GitHub 性能测试](https://github.com/caoccao/GraalJS-vs-Javet-vs-Nashorn),
 GraalJS 在非 GraalVM 上的执行性能是 Nashorn 的 8 倍，在 GraalVM 上的执行性能为 10~12 倍
 
 ### 其他功能

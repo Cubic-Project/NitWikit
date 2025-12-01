@@ -70,6 +70,7 @@ ViaProxyAuthHook 允许 ViaProxy 客户端加入需要正版验证的服务器�
 
 3. **配置密钥**
    启动服务器后，编辑生成的配置文件：
+
     ```yaml
     secret-key: "从ViaProxy配置中复制的密钥"
     viaproxy-url: "http://localhost:25568" # ViaProxy地址
@@ -81,7 +82,7 @@ ViaProxyAuthHook 允许 ViaProxy 客户端加入需要正版验证的服务器�
 
 1. 在 ViaProxy 中添加 Minecraft 账户
 2. 启用 "Proxy Online Mode"
-3. 设置认证模式为 "AUTH_HOOK"
+3. 设置认证模式为 `AUTH_HOOK`
 4. 连接到目标服务器
 
 #### CLI 模式

@@ -206,7 +206,7 @@ TODO
 
 想让他显示 PlaceholderAPI 的变量？请在所有子服务器上安装 [Tab-Bridge](https://www.spigotmc.org/resources/.83966/)
 
-此外，如果你使用了 Layout 功能，如果你不安装此插件，会导致一些显示 Bug
+此外，如果你使用了 Layout 功能，如果你不安装此插件，会导致一些显示 bug
 
 因此强烈建议将 Tab-Bridge 一起安装
 

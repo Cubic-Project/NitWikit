@@ -17,12 +17,12 @@ import TabItem from '@theme/TabItem';
 确保你的系统上有 `screen` 包，没有的话安装它们：
 
 <Tabs>
-    <TabItem value="debian" label="Debian/Ubuntu Linux" default>
+    <TabItem value="debian" label="Debian/Ubuntu" default>
         ```bash
         apt-get install screen
         ```
     </TabItem>
-    <TabItem value="redhat" label="CentOS/Redhat Linux">
+    <TabItem value="redhat" label="CentOS/Redhat">
         ```bash
         yum install screen
         ```
@@ -46,7 +46,7 @@ screen -S xxx -X quit # 删除 xxx 窗口 (在 screen 中输入 exit 也可以�
 
 :::info
 
-重新连接到 screen 时可以使用 `screen -Dr xxx`指令，意为踢出正在使用 xxx 窗口的用户并回到 xxx 窗口
+重新连接到 screen 时可以使用 `screen -Dr xxx` 指令，意为踢出正在使用 xxx 窗口的用户并回到 xxx 窗口
 
 :::
 
@@ -65,11 +65,11 @@ screen -S xxx -X quit # 删除 xxx 窗口 (在 screen 中输入 exit 也可以�
 
 ## 方法二 面板 (推荐)
 
-例如 mcsm，简单无脑可视化
+例如 MCSManager 等面板，简单无脑可视化
 
-## 方法三 Systemd
+## 方法三 systemd
 
-使用 vim 命令创建 mc.service 单元文件
+使用 `vim` 命令创建 `mc.service` 单元文件
 
 ```bash
 vim ~/.config/systemd/user/mc.service
@@ -119,11 +119,11 @@ _可以通过 `systemctl --user status mc.service` 查看服务运行状态。_
 
 &：在启动时后面加一个 `&`
 
-例如：./start.sh &
+例如：`./start.sh &`
 
 nohup：在启动时前面加上这个
 
-例如：nohup ./start.sh > run.log 2>&1 &
+例如：`nohup ./start.sh > run.log 2>&1 &`
 
 详细参数：
 
@@ -135,12 +135,12 @@ Start.sh: 你需要后台运行的程序
 
 run.log: 运行的日志，或你的文件的输出内容
 
-& 是一个描述符，如果 1 或 2 前不加&，会被当成一个普通文件。
+& 是一个描述符，如果 1 或 2 前不加 &，会被当成一个普通文件。
 
-1>&2 意思是把标准输出重定向到标准错误。
+`1>&2` 意思是把标准输出重定向到标准错误。
 
-2>&1 意思是把标准错误输出重定向到标准输出。
+`2>&1` 意思是把标准错误输出重定向到标准输出。
 
-&>filename 意思是把标准输出和标准错误输出都重定向到文件 filename 中
+`&>filename` 意思是把标准输出和标准错误输出都重定向到文件 `filename` 中
 
 :::

@@ -53,18 +53,18 @@ import TabItem from '@theme/TabItem';
 
 | Serein   | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge)                                                 |
 | -------- | ------------------------------------------------------------------------------------------------------------------------- |
-| 相关链接 | [Github 仓库](https://github.com/SereinDev/Serein) \| [文档站](https://sereindev.github.io/)                              |
+| 相关链接 | [GitHub 仓库](https://github.com/SereinDev/Serein) \| [文档站](https://sereindev.github.io/)                              |
 | 作者     | [SereinDev](https://github.com/SereinDev)                                                                                 |
 | 支持平台 | Java 版和基岩版                                                                                                           |
 | 介绍     | 本身是一个服务器管理软件，但支持使用 QQ 机器人，使用 OneBot11 标准接入 QQ，有机器人相关配置并且有平台支持插件进行功能拓展 |
-| 下载     | [Github](https://github.com/SereinDev/Serein/releases)                                                                    |
+| 下载     | [GitHub](https://github.com/SereinDev/Serein/releases)                                                                    |
 
 </TabItem>
 <TabItem value="CirnoBot" label="CirnoBot">
 
 | CirnoBot         | ![](https://img.shields.io/badge/状态-不再积极维护-yellow?style=for-the-badge)                              |
 | ---------------- | ----------------------------------------------------------------------------------------------------------- |
-| 相关链接         | [Github 仓库](https://github.com/summerkirakira/CirnoBot) \| [文档站](https://biaoju.site/cirnobot/)        |
+| 相关链接         | [GitHub 仓库](https://github.com/summerkirakira/CirnoBot) \| [文档站](https://biaoju.site/cirnobot/)        |
 | 作者             | [summerkirakira](https://github.com/summerkirakira)                                                         |
 | 支持 **Java 版** | Bukkit 及其分支                                                                                             |
 | 介绍             | 基于 NoneBot2 开发的机器人平台，可使用 OneBot11 标准接入 QQ，有机器人相关配置并且有平台支持插件进行功能拓展 |
@@ -75,7 +75,7 @@ import TabItem from '@theme/TabItem';
 
 | Minecraft_QQBot  | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge)                                                                     |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| 相关链接         | [Github 仓库](https://github.com/Minecraft-QQBot/BotServer) \| [文档站](https://qqbot.bugjump.xyz/)                                           |
+| 相关链接         | [GitHub 仓库](https://github.com/Minecraft-QQBot/BotServer) \| [文档站](https://qqbot.bugjump.xyz/)                                           |
 | 作者             | [sparkbridge](https://github.com/sparkbridge)                                                                                                 |
 | 支持 **Java 版** | Bukkit 及其分支                                                                                                                               |
 | 介绍             | 一款基于 NoneBot2 用多种方式与 Minecraft 交互的 Python QQ 机器人，可使用 OneBot11 标准接入 QQ，有机器人相关配置并且有平台支持插件进行功能拓展 |

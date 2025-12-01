@@ -35,10 +35,10 @@ PMMP 是 PocketMine-MP 的分支，由 PMMP 团队负责更新维护，目前已
 
 | PocketMine-MP  | 别名：PMMP                                                                                                                                          |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 相关链接       | [PMMP 官网](https://pmmp.io/)、[Github 仓库](https://github.com/pmmp/PocketMine-MP)                                                                 |
+| 相关链接       | [PMMP 官网](https://pmmp.io/)、[GitHub 仓库](https://github.com/pmmp/PocketMine-MP)                                                                 |
 | 作者           | [pmmp](https://github.com/pmmp/)                                                                                                                    |
 | 介绍           | PocketMine-MP 是一款高度可定制的 Minecraft: Bedrock Edition 服务器软件，支持多版本，具备强大的插件 API 和丰富的生态系统，适合需要自定义功能的服务器 |
-| 下载           | [Github Releases](https://github.com/pmmp/PocketMine-MP/releases)                                                                                   |
+| 下载           | [GitHub Releases](https://github.com/pmmp/PocketMine-MP/releases)                                                                                   |
 | 支持的 MC 版本 | 携带版 0.7.2-1.21.50(目前保持更新)                                                                                                                  |
 
 </TabItem>
@@ -86,7 +86,7 @@ NitWiki 仅提供关于 PocketMine-MP 分支的信息和教程，但不对其项
 
 | Turanic        | ---                                                                                              |
 | -------------- | ------------------------------------------------------------------------------------------------ |
-| 相关链接       | [Github 仓库](https://github.com/unresolved3169/Turanic)                                         |
+| 相关链接       | [GitHub 仓库](https://github.com/unresolved3169/Turanic)                                         |
 | 作者           | [unresolved3169](https://github.com/unresolved3169)                                              |
 | 介绍           | 基于 GenisysPro 的一个分支，添加了虚空维度、天气变化、下界门户等生存特性，现已停更并转移到 Altay |
 | 下载           | 无                                                                                               |
@@ -97,10 +97,10 @@ NitWiki 仅提供关于 PocketMine-MP 分支的信息和教程，但不对其项
 
 | Altay          | ---                                                                    |
 | -------------- | ---------------------------------------------------------------------- |
-| 相关链接       | [Github 仓库](https://github.com/unresolved3169/Altay)                 |
+| 相关链接       | [GitHub 仓库](https://github.com/unresolved3169/Altay)                 |
 | 作者           | [unresolved3169](https://github.com/unresolved3169)                    |
 | 介绍           | 基于 Turanic 的优化版本，新增大量生存特性与优化，现已停更              |
-| 下载           | [Github Releases](https://github.com/PowerNukkit/PowerNukkit/releases) |
+| 下载           | [GitHub Releases](https://github.com/PowerNukkit/PowerNukkit/releases) |
 | 支持的 MC 版本 | 1.11.x                                                                 |
 
 </TabItem>
@@ -108,10 +108,10 @@ NitWiki 仅提供关于 PocketMine-MP 分支的信息和教程，但不对其项
 
 | GenisysPro     | ---                                                                                                                                                          |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 相关链接       | [Github 仓库](https://github.com/GenisysPro/GenisysPro/)                                                                                                     |
+| 相关链接       | [GitHub 仓库](https://github.com/GenisysPro/GenisysPro/)                                                                                                     |
 | 作者           | [GenisysPro](https://github.com/GenisysPro/)                                                                                                                 |
 | 介绍           | GenisysPro 是一款基于 Genisys 开发的多功能 Minecraft 服务器软件，支持 Minecraft PE 和 Windows 10 Edition v1.1.x 版本，具备丰富的功能和性能优化，但目前已停更 |
-| 下载           | [Github Releases](https://github.com/GenisysPro/GenisysPro/releases)                                                                                         |
+| 下载           | [GitHub Releases](https://github.com/GenisysPro/GenisysPro/releases)                                                                                         |
 | 支持的 MC 版本 | 1.1.x                                                                                                                                                        |
 
 </TabItem>
@@ -119,7 +119,7 @@ NitWiki 仅提供关于 PocketMine-MP 分支的信息和教程，但不对其项
 
 | BlueLight-oldAPI | ---                                                                                                                                                            |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 相关链接         | [Github 仓库](https://github.com/BlueLightJapan/BlueLight)                                                                                                     |
+| 相关链接         | [GitHub 仓库](https://github.com/BlueLightJapan/BlueLight)                                                                                                     |
 | 作者             | [BlueLightJapan](https://github.com/BlueLightJapan/)                                                                                                           |
 | 介绍             | BlueLight-oldAPI 是一款基于 PocketMine-MP 开发的 Minecraft: Pocket Edition 服务器软件，主要特点是支持旧 API（1.2 核心），能够在无需修改的情况下使用 1.0 的插件 |
 | 下载             | 无                                                                                                                                                             |
@@ -130,7 +130,7 @@ NitWiki 仅提供关于 PocketMine-MP 分支的信息和教程，但不对其项
 
 | Steadfast2     | ---                                                                            |
 | -------------- | ------------------------------------------------------------------------------ |
-| 相关链接       | [Github 仓库](https://github.com/Hydreon/Steadfast2)                           |
+| 相关链接       | [GitHub 仓库](https://github.com/Hydreon/Steadfast2)                           |
 | 作者           | [Hydreon Corporation](https://github.com/Hydreon)                              |
 | 介绍           | 基于 PMMP 进行多版本协议优化，使不同版本能连接到一个服务器上，现已与 PMMP 合并 |
 | 下载           | 无                                                                             |

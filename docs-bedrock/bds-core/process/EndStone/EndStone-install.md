@@ -26,7 +26,7 @@ Linux 环境下：
 
 ### 一、下载 EndStone 本体
 
-前往 EndStone 开源仓库：[Github](https://github.com/EndstoneMC/endstone)，找到 Releases，打开后下载压缩包
+前往 EndStone 开源仓库：[GitHub](https://github.com/EndstoneMC/endstone)，找到 Releases，打开后下载压缩包
 
 ![1](./imgs/1.png)
 

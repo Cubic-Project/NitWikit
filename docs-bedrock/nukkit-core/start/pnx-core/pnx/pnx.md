@@ -30,4 +30,4 @@ Nukkit 生态丰富多彩，成百上千各种各样的插件供您选择，您�
 
 ## 链接
 
-- [Github 链接](https://github.com/PowerNukkitX/PowerNukkitX)
+- [GitHub 链接](https://github.com/PowerNukkitX/PowerNukkitX)

@@ -43,7 +43,7 @@ sidebar_position: 4
 ### MacOS 和手机
 
 在 iOS 和 macOS 上，需要在 App Store 登录海外的 Apple ID，然后搜索 Microsoft Remote Desktop，就可以找到这个应用。
-在安卓手机上需要在 Google play 上搜索 Microsoft Remote Desktop 就可以找到这个应用，如果手机无法使用 Google play，也可以在网上搜索安装包下载。
+在安卓手机上需要在 Google Play 上搜索 Microsoft Remote Desktop 就可以找到这个应用，如果手机无法使用 Google Play，也可以在网上搜索安装包下载。
 打开应用后，点击加号，点击 **Add PC** ，选择或输入那台电脑上的那串代码，然后点击添加或保存。随后点击或双击添加的那台电脑，然后输入帐号和密码，就可以连接到那台电脑。
 
 </details>
@@ -52,7 +52,7 @@ sidebar_position: 4
 
 #### 放行端口
 
-然后你需要在防火墙放行你 mc 服务端使用的端口，可参考教程：https://blog.csdn.net/aa1213366512/article/details/119964839。
+然后你需要在防火墙放行你 MC 服务端使用的端口，可参考教程：https://blog.csdn.net/aa1213366512/article/details/119964839。
 
 如果你使用的是家宽公网，你需要在路由器里后台放行远程桌面使用的端口，协议同时选择 TCP 和 UDP。远程桌面使用的端口为 3389，所以你需要把服务器的 **3389** 端口映射到外网。
 

@@ -3,7 +3,9 @@ title: 自动备份存档
 sidebar_position: 8
 ---
 
-# 编写备份脚本
+# 自动备份存档
+
+## 编写备份脚本
 
 在你的服务器上创建一个备份脚本：
 
@@ -99,7 +101,7 @@ fi
 
 按 `Esc` 键，切换到英文输入法输入 `:wq` 保存并退出。
 
-# 将备份脚本添加到定时任务
+## 将备份脚本添加到定时任务
 
 编辑定时任务：
 
@@ -145,8 +147,10 @@ crontab -e
 
 <!--markdownlint-disable line-length-->
 
-> 如果你恢复存档后启动服务器报错：
+> 如果你恢复存档后启动服务器出现以下报错：
+>
 > `[main/FATAL]: Failed to start the minecraft server net.minecraft.util.SessionLock$ExceptionWorldConfict: /home/minecraft/lobby/./world/session.lock: already locked (possibly by other Minecraft instance?)`
+>
 > 请检查 `world` 存档下是否存在 `session.lock` 文件，如果存在请删除，然后重启服务器。
 
 <!--markdownlint-enable line-length-->

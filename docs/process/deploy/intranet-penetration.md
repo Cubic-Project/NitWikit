@@ -38,7 +38,7 @@ Cloudflare Tunnel 是 CF 下的免费内网穿透
 
 ### 安装
 
-在[Github](https://github.com/cloudflare/cloudflared/releases) 找到适合的版本并安装
+在[GitHub](https://github.com/cloudflare/cloudflared/releases) 找到适合的版本并安装
 
 ### 使用
 
@@ -162,7 +162,7 @@ Proxy Protocol 是由 HAProxy 开发者 Willy 提出的一种反向代理协议�
 获取更多信息。frp 内置的 proxy protocol 要求被其穿透的服务器也支持 proxy protocol，否则会造成对应的服务无法使用，所以并不是随便拿一个服务就能用 proxy protocol。
 frp 启用 proxy protocol 的方式参考[自建 frp](/advance/frp#配置-proxy-protocol)。
 
-对于 mc 服务器来说，支持 proxy protocol 的软件有：
+对于 MC 服务器来说，支持 proxy protocol 的软件有：
 
 - bungeecord 系
 - paper 分支 (1.18.2)(仅支持 v2)

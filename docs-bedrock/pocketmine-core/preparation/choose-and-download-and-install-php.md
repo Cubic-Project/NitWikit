@@ -21,4 +21,4 @@ ps：因为 PHP 官网下载的 PHP 环境是纯净版，没有任何依赖，�
 
 ## 安装环境
 
-推荐 PMMP 专门打包 PHP 的 Github 仓库下载对应系统的 PHP 文件：[Github Releases](https://github.com/pmmp/PHP-Binaries/releases)
+推荐 PMMP 专门打包 PHP 的 GitHub 仓库下载对应系统的 PHP 文件：[GitHub Releases](https://github.com/pmmp/PHP-Binaries/releases)

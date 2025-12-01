@@ -29,7 +29,7 @@ NitWiki 仅提供关于 Nukkit PetteriM1 Edition 的信息和教程，但不对�
 
 而在闭源后，PM1ENK 又被指控在接下来的更新中存在对 PowerNukkitX 的抄袭
 
-在此期间，一位名为 sora-kawaii 的 Github 用户成功反混淆了 PM1ENK 并公布了源码，公开的代码显示了 PM1ENK 对开源项目的抄袭
+在此期间，一位名为 sora-kawaii 的 GitHub 用户成功反混淆了 PM1ENK 并公布了源码，公开的代码显示了 PM1ENK 对开源项目的抄袭
 
 2023 年 1 月 18 日，PM1ENK 发布了更新，此次更新被认为使用了业内最贵的付费混淆器 ZKM 以加强混淆效果
 

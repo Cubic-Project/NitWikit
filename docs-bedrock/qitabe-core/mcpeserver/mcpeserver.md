@@ -26,4 +26,4 @@ mcpeserver 是一个用 Golang 编写的 Minecraft 服务器启动器。
 
 ## 链接
 
-- [Github 链接](https://github.com/codehz/mcpeserver)
+- [GitHub 链接](https://github.com/codehz/mcpeserver)

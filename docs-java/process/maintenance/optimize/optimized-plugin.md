@@ -48,7 +48,7 @@ _[TooManyGen](https://modrinth.com/plugin/toomanygen) - 惩罚玩家跑图，实
 
 使用 Pufferfish DAB 降低远处生物的 AI 比插件利用 API 更加有效和符合游戏逻辑，
 
-因此，停止使用类似插件，如:
+因此，停止使用类似插件，如：
 
 _LaggRemover (Fork) - 有时候会导致即使插件卸载，实体 AI 也被移除了，比不上 Pufferfish(使用 Purpur Fork 即可) 根据距离衰减的
 AI._
@@ -97,7 +97,7 @@ _[Cleaner](https://www.minebbs.com/resources/cleaner-addon.4816/) - 清理生物
 
 除非玩家乐意养殖非常非常多生物，否则对生物进行堆叠仍然会使服务器浪费性能在刷新更多的生物上，否则请不要安装堆叠插件。
 
-因此，停止使用类似插件，如:
+因此，停止使用类似插件，如：
 
 _[StackMob](https://www.spigotmc.org/resources/stackmob-enhance-your-servers-performance-without-the-sacrifice.29999/) -
 实体密集时进行堆叠的插件 (若一定要使用仍推荐本插件而不是其他堆叠插件)_
@@ -111,7 +111,7 @@ _[StackMob](https://www.spigotmc.org/resources/stackmob-enhance-your-servers-per
 综上所述，不要安装堆叠插件。
 
 :::tip
-补充一点，我可以推荐给你这个，只在服务器 mspt 超过阈值才堆叠动物。如果你本身有 farmcontrol 之类的插件控制总量，那这个插件的使用是安全、无感、且能起到一定的“优化”作用的。<br />
+补充一点，我可以推荐给你这个，只在服务器 MSPT 超过阈值才堆叠动物。如果你本身有 FarmControl 之类的插件控制总量，那这个插件的使用是安全、无感、且能起到一定的“优化”作用的。<br />
 https://github.com/quiquelhappy/StackMob-5
 :::
 
@@ -258,7 +258,7 @@ Minecraft 1.20.1 开始，这还没有修复。
 
 ESU 是一款多合一插件，但优化只需要 NetworkThrottleModule 省流模块即可
 
-通过压缩区块数据包中玩家不可见的方块信息以有效降低上行带宽的占用。对非作弊玩家的影响为零。经过深度优化，每个区块的处理耗时低于 1ms. 负载低于 GrimAC 与其他假矿插件.
+通过压缩区块数据包中玩家不可见的方块信息以有效降低上行带宽的占用。对非作弊玩家的影响为零。经过深度优化，每个区块的处理耗时低于 1ms. 负载低于 GrimAC 与其他假矿插件。
 在百人原版生存服的测试环境中，该功能帮助降低了约 50% 的上行带宽。详情说明请检查模块配置中的注释。
 
 - **该功能与假矿插件相冲突，不可共同安装。插件有较一般的反矿透效果**

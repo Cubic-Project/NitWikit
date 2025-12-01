@@ -85,7 +85,7 @@ import TabItem from '@theme/TabItem';
 **劣势**：
 
 - 配置 - 配置文件比较繁杂
-- 支持 - 只有部分 mc 版本的构建
+- 支持 - 只有部分 MC 版本的构建
 
 综上所述，目前 Purpur 是综合最优选择
 

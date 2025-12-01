@@ -91,7 +91,7 @@ PocketMine-MP 官方团队建设的 PMMP 技术论坛，支持下载 PocketMine-
 <details>
   <summary>连不上怎么办</summary>
 
-这是由于 GitHub 是开放的外国网站，网站上时不时会有一些不能在此讨论的内容，所以运营商会刻意地屏蔽这个网站，在很多时候都不能正常访问。具体的表现如下：[只要 Github 域名指向任意 IP，该 IP 的 443 端口就会超时 3 分钟](https://blog.csdn.net/weixin_43659597/article/details/118882176)。
+这是由于 GitHub 是开放的外国网站，网站上时不时会有一些不能在此讨论的内容，所以运营商会刻意地屏蔽这个网站，在很多时候都不能正常访问。具体的表现如下：[只要 GitHub 域名指向任意 IP，该 IP 的 443 端口就会超时 3 分钟](https://blog.csdn.net/weixin_43659597/article/details/118882176)。
 
 有以下几种解决办法：
 

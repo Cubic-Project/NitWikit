@@ -51,7 +51,7 @@ import TabItem from '@theme/TabItem';
 
 ![](_images/install/4.png)
 
-### 从 MOJANG 官方下载
+### 从 Mojang 官方下载
 
 首先前往对应版本的发行页面
 

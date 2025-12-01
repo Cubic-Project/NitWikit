@@ -50,8 +50,8 @@ EssentialsX 是一个基于 Spigot 服务端的基础插件，为从大到小的
 
 Essentials 插件分为两个版本：
 
-- essentials(早已停更) 适合 mc 1.7.10 [下载](https://mineplugin.org/Essentials/Downloads)
-- essentialsX 适合 mc 1.8+ [下载](https://essentialsx.net/downloads.html)
+- essentials(早已停更) 适合 MC 1.7.10 [下载](https://mineplugin.org/Essentials/Downloads)
+- essentialsX 适合 MC 1.8+ [下载](https://essentialsx.net/downloads.html)
 
 <details>
 <summary>怎么找到官网并从官网下载 essx</summary>

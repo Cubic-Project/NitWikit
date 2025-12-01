@@ -35,7 +35,7 @@ import TabItem from '@theme/TabItem';
 | 介绍           | 提供类似 Bukkit 插件开发者的友好 API，简化了低层系统 API 和挂钩的处理。可以使用 C++ 或 Python 编写插件            |
 | 推荐与否       | 比较慢推荐                                                                                                        |
 | 理由           | 虽然几乎没有插件生态，仅社区有 **极少** 的插件，但最近形势较好，社区内有参与开发的声音，后续可能会追平 LeviLamina |
-| 下载           | [Github 下载](https://github.com/EndstoneMC/endstone/releases)                                                    |
+| 下载           | [GitHub 下载](https://github.com/EndstoneMC/endstone/releases)                                                    |
 | 支持的 MC 版本 | 1.20.71 - 1.21.2(目前保持更新)                                                                                    |
 
 </TabItem>
@@ -49,7 +49,7 @@ import TabItem from '@theme/TabItem';
 | 推荐与否       | 较为推荐                                                                                                                                                                               |
 | 理由           | 国内插件虽然少，但还是有很多的人去使用它，作者也从 19 年一直维护到现在                                                                                                                 |
 | 下载           | [克隆源代码下载](https://github.com/bdsx/bdsx)                                                                                                                                         |
-| 插件下载       | [npm 源](https://www.npmjs.com/search?q=%40bdsx%2F)<br />[Github](https://github.com/topics/bdsx-plugins)                                                                              |
+| 插件下载       | [npm 源](https://www.npmjs.com/search?q=%40bdsx%2F)<br />[GitHub](https://github.com/topics/bdsx-plugins)                                                                              |
 | 支持的 MC 版本 | 1.12 - 最新（目前保持更新）                                                                                                                                                            |
 
 </TabItem>
@@ -106,7 +106,7 @@ import TabItem from '@theme/TabItem';
 | 介绍           | LiteXLoader 是一款专为 LiteLoader 编写的拓展类插件加载器，旨在弥补 LiteLoader 可开发语言的不足。LiteXLoader 支持多种编程语言编写插件，并保证了插件开发与维护的便利性，例如拓展支持 Node-Js、Python、Qucik-Js 的开发 |
 | 推荐与否       | 非常不推荐                                                                                                                                                                                                          |
 | 理由           | 后续合并到 LiteLoader 中。[详情点我](#litexloader-合并至-liteloader2022 年 2 月 12 日)                                                                                                                              |
-| 下载           | [Github 下载](https://github.com/EndstoneMC/endstone/releases)                                                                                                                                                      |
+| 下载           | [GitHub 下载](https://github.com/EndstoneMC/endstone/releases)                                                                                                                                                      |
 | 支持的 MC 版本 | 1.20.71 - 1.21.2(已存档)[^Archived]                                                                                                                                                                                 |
 
 </TabItem>

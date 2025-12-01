@@ -25,4 +25,4 @@ NukkitPetteriM1Edition（简称 NukkitPM1E）是 PetteriM1 为他的服务器 Su
 
 ## 链接
 
-- [Github 链接](https://github.com/PetteriM1/NukkitPetteriM1Edition)
+- [GitHub 链接](https://github.com/PetteriM1/NukkitPetteriM1Edition)

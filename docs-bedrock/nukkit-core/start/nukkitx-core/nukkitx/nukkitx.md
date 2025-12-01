@@ -21,4 +21,4 @@ NukkitX 的开发团队 CloudburstMC 专注于维护和改进 NukkitX，但不�
 
 ## 链接
 
-- [Github 链接](https://github.com/CloudburstMC/Nukkit)
+- [GitHub 链接](https://github.com/CloudburstMC/Nukkit)

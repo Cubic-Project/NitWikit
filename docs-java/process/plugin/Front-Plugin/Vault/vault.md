@@ -36,6 +36,6 @@ sidebar_position: 2
 
 想要经济可以看看 [XConomy](../XConomy.md) 页面
 
-## Vault 支持旧版和新版本 mc 吗
+## Vault 支持旧版和新版本 MC 吗
 
 支持，不用在意 SpigotMC 上标注的版本。

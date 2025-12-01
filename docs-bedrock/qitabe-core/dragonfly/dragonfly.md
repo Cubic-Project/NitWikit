@@ -17,4 +17,4 @@ Dragonfly 是用 Go 语言编写的 Minecraft Bedrock Edition 服务器软件。
 
 ## 链接
 
-- [Github 链接](https://github.com/df-mc/dragonfly)
+- [GitHub 链接](https://github.com/df-mc/dragonfly)
