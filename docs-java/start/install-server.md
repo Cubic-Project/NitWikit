@@ -31,7 +31,7 @@ import TabItem from '@theme/TabItem';
 
 ![](_images/install/2.png)
 
-请选择 `Installer` ，左边右边都无所谓，打开后，你会来到一个广告窗口，点击最上面的 `SKIP`(没有出现就等一会，如果网站始终无法正常加载，请换用上文提到的国内下载镜像 **MCSL** )
+请选择 `Installer` ，左边右边都无所谓，打开后，你会来到一个广告窗口，点击最上面的 `SKIP`(没有出现就等一会，如果网站始终无法正常加载，请换用上文提到的国内下载镜像 **MCSL**)
 
 ![](_images/install/3.png)
 

@@ -20,7 +20,7 @@ Arthas(中文名：阿尔萨斯) 是一个 Java 诊断工具，在 Minecraft 中
 
 ## 下载
 
-自行参考[官方文档 - 下载](https://arthas.aliyun.com/doc/install-detail.html)
+自行参考 [官方文档 - 下载](https://arthas.aliyun.com/doc/install-detail.html)
 
 ### Arthas IDEA
 
@@ -30,9 +30,9 @@ Arthas 的 idea 插件，可以帮助你生成 Arthas 命令
 
 ## 启动
 
-自行参考[官方文档 - 快速开始](https://arthas.aliyun.com/doc/quick-start.html)
+自行参考 [官方文档 - 快速开始](https://arthas.aliyun.com/doc/quick-start.html)
 
-## 开始！
+## 开始
 
 :::tip
 

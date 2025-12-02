@@ -69,7 +69,7 @@ sidebar_position: 3
 
 ## 地图购买/白嫖
 
-[BreadBuilds](https://www.breadbuilds.com/) 是最大的地图网站，里面有很多优质的**免费/付费**地图
+[BreadBuilds](https://www.breadbuilds.com/) 是最大的地图网站，里面有很多优质的 **免费/付费** 地图
 
 ![](_images/bb.png)
 

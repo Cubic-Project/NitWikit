@@ -11,7 +11,7 @@ sidebar_position: 2
 
 :::tip
 
-通常与下面的 Bedrock(基岩) 二选一
+通常与下面的 Bedrock (基岩) 二选一
 
 :::
 
@@ -19,7 +19,7 @@ sidebar_position: 2
 
 然后按照那里的目录顺序从上到下阅读
 
-## 我想开 Bedrock(基岩) 版服务器
+## 我想开 Bedrock (基岩) 版服务器
 
 :::tip
 

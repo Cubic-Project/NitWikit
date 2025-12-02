@@ -1,11 +1,11 @@
 ---
-title: 搭建内网穿透 (Frp)
+title: 搭建内网穿透 (frp)
 sidebar_position: 6
 ---
 
 <!-- @format -->
 
-# 搭建内网穿透 (Frp)
+# 搭建内网穿透 (frp)
 
 ## 使用现成的内网穿透提供商
 
@@ -20,12 +20,12 @@ sidebar_position: 6
 <details>
 <summary>如何选择合适的节点？</summary>
 
-根据三角形两边之和大于第三边的定理，节点距离客户端或服务端越近，游戏延迟就越小。然而你无法确定客户端的地理位置，毕竟玩家来自大江南北。那么只有缩短节点与服务器之间的距离，才能保证所有玩家的延迟都最低。例如服务器位于河北，有两个节点分别位于山东枣庄和江苏宿迁，有两个玩家分别位于广东和辽宁，那么当选择离服务器更近的枣庄节点时，假设辽宁玩家到节点为 20ms，广东玩家到节点为 50ms，服务器到节点为 10ms，那么辽宁玩家的游戏延迟就是 20+10=30ms，广东玩家的游戏延迟就是 50ms+10ms=60ms。当选择离服务器更远的宿迁节点时，假设辽宁玩家到节点为 40ms，广东玩家到节点为 30ms，服务器到节点为 30ms，那么辽宁玩家的游戏延迟就是 50+30=70ms，广东玩家的游戏延迟就是 40+30=60ms。选择宿迁节点时虽然广东玩家的延迟不变，但是辽宁玩家连接服务器时，数据从更远的宿迁绕了一圈再回来，延迟高了很多。因此选择运营商时，优先选择拥有离自己近的节点的运营商。
+根据三角形两边之和大于第三边的定理，节点距离客户端或服务端越近，游戏延迟就越小。然而你无法确定客户端的地理位置，毕竟玩家来自大江南北。那么只有缩短节点与服务器之间的距离，才能保证所有玩家的延迟都最低。例如服务器位于河北，有两个节点分别位于山东枣庄和江苏宿迁，有两个玩家分别位于广东和辽宁，那么当选择离服务器更近的枣庄节点时，假设辽宁玩家到节点为 20 ms，广东玩家到节点为 50 ms，服务器到节点为 10 ms，那么辽宁玩家的游戏延迟就是 20+10=30 ms，广东玩家的游戏延迟就是 50ms+10ms=60 ms。当选择离服务器更远的宿迁节点时，假设辽宁玩家到节点为 40 ms，广东玩家到节点为 30 ms，服务器到节点为 30ms，那么辽宁玩家的游戏延迟就是 50+30=70 ms，广东玩家的游戏延迟就是 40+30=60 ms。选择宿迁节点时虽然广东玩家的延迟不变，但是辽宁玩家连接服务器时，数据从更远的宿迁绕了一圈再回来，延迟高了很多。因此选择运营商时，优先选择拥有离自己近的节点的运营商。
 
 </details>
 6. 实名认证：为了在意外事故中更好地规划责任，很多内网穿透运营商都要求实名认证才能开始使用，或者部分节点需要实名认证。还有一些实名认证时还要求用户必须成年 (年满 18 岁)。况且实名认证服务提供方收费，内网穿透运营商可能会让你自行承担费用，目前价格通常在 1 元。所以在选择运营商时，如果你未成年，或者没有在线支付的能力，那么在一些运营商处可能会受到限制。
 
-## 自建 Frp
+## 自建 frp
 
 首先你得确保你有一台有公网 IP 的机器作为服务端（节点），最好是 **Linux** 的。
 
@@ -34,7 +34,7 @@ sidebar_position: 6
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-### 安装 Frp
+### 安装 frp
 
 #### 服务端（公网服务器）
 
@@ -168,7 +168,7 @@ paru -Sy frpc # 客户端
 </TabItem>
 </Tabs>
 
-### 配置 Frp
+### 配置 frp
 
 #### 配置服务端（公网服务器）
 
@@ -204,7 +204,7 @@ vim /etc/frp/frpc.toml
 输入以下内容：
 
 ```toml
-serverAddr = "x.x.x.x" # 你 frps 服务器的 ip 地址
+serverAddr = "x.x.x.x" # 你 frps 服务器的 IP 地址
 serverPort = 7000 # 你 frps 服务开在的端口
 
 log.to = "/var/log/frpc.log" # 日志存放路径，一般不用改
@@ -223,7 +223,7 @@ remotePort = 25565 # 暴露服务的公网入口
 # 如果你开了互通，要基岩支持
 [[proxies]]
 name = "mc be"
-type = "udp" # 基岩版使用 udp 协议通信，不可更改
+type = "udp" # 基岩版使用 UDP 协议通信，不可更改
 localIP = "127.0.0.1"
 localPort = 19132
 remotePort = 19132
@@ -235,7 +235,7 @@ remotePort = 19132
 在 frp 解压目录下，编辑 `frpc.toml` 文件（使用记事本或其他文本编辑器）：
 
 ```toml
-serverAddr = "x.x.x.x" # 你 frps 服务器的 ip 地址
+serverAddr = "x.x.x.x" # 你 frps 服务器的 IP 地址
 serverPort = 7000 # 你 frps 服务开在的端口
 
 log.to = "./frpc.log" # 日志存放路径
@@ -263,7 +263,7 @@ remotePort = 19132
 </TabItem>
 </Tabs>
 
-### 开启 Frp
+### 开启 frp
 
 #### 启动服务端（公网服务器）
 
@@ -306,7 +306,7 @@ pacman -Sy screen
 
 ```bash
 screen -dR frps frps
-# 键盘上按Ctrl+A+D退出
+# 键盘上按 Ctrl + A + D 退出
 ```
 
 </TabItem>
@@ -340,13 +340,13 @@ WantedBy = multi-user.target
 2. 使用 systemd 命令管理 frps 服务
 
 ```bash
-# 启动frp
+# 启动 frp
 sudo systemctl start frps
-# 停止frp
+# 停止 frp
 sudo systemctl stop frps
-# 重启frp
+# 重启 frp
 sudo systemctl restart frps
-# 查看frp状态
+# 查看 frp 状态
 sudo systemctl status frps
 ```
 
@@ -398,7 +398,7 @@ pacman -Sy screen
 
 ```bash
 screen -dR frpc frpc
-# 键盘上按Ctrl+A+D退出
+# 键盘上按 Ctrl + A + D 退出
 ```
 
 ##### 使用 Systemd
@@ -429,13 +429,13 @@ WantedBy = multi-user.target
 2. 使用 systemd 命令管理 frpc 服务
 
 ```bash
-# 启动frp
+# 启动 frp
 sudo systemctl start frpc
-# 停止frp
+# 停止 frp
 sudo systemctl stop frpc
-# 重启frp
+# 重启 frp
 sudo systemctl restart frpc
-# 查看frp状态
+# 查看 frp 状态
 sudo systemctl status frpc
 ```
 
@@ -466,7 +466,9 @@ sudo systemctl enable frpc
     ```
 
 :::tip
+
 此方法会占用一个命令行窗口，关闭窗口后 frpc 会停止运行。
+
 :::
 
 ##### 方法二：使用 NSSM 设置为 Windows 服务（推荐）
@@ -513,8 +515,8 @@ sudo systemctl enable frpc
     ```xml
     <service>
       <id>frpc</id>
-      <name>Frp Client</name>
-      <description>Frp 内网穿透客户端</description>
+      <name>frp Client</name>
+      <description>frp 内网穿透客户端</description>
       <executable>C:\frp\frpc.exe</executable>
       <arguments>-c C:\frp\frpc.toml</arguments>
       <logmode>rotate</logmode>
@@ -539,9 +541,9 @@ sudo systemctl enable frpc
 </TabItem>
 </Tabs>
 
-### 配置 proxy protocol
+### 配置 PROXY protocol
 
-如果你使用的是现成的内网穿透运营商提供的内网穿透，**一定要根据运营商提供的教程操作**。以下是两个最有名的内网穿透运营商的 proxy protocol 开启方法。  
+如果你使用的是现成的内网穿透运营商提供的内网穿透，**一定要根据运营商提供的教程操作**。以下是两个最有名的内网穿透运营商的 PROXY protocol 开启方法。  
 [SakuraFrp](https://doc.natfrp.com/bestpractice/realip.html#proxy-protocol)  
 [OpenFrp](https://openfrp.wiki/use/proxy-protocol.html#%E8%8E%B7%E5%8F%96%E8%AE%BF%E9%97%AE%E8%80%85%E7%9A%84%E7%9C%9F%E5%AE%9E-ip)
 
@@ -551,7 +553,7 @@ sudo systemctl enable frpc
 [mc]
 type = tcp
 local_port = 25565
-# 目前支持 v1 和 v2 两个版本的 proxy protocol 协议。
+# 目前支持 v1 和 v2 两个版本的 PROXY protocol 协议。
 proxy_protocol_version = v2
 ```
 
@@ -567,9 +569,9 @@ transport.proxyProtocolVersion = "v2"
 
 **frps 的 frps.ini 或 frps.toml 不用动。**
 
-至于如何选择 v1 和 v2，你需要根据对应服务器对 proxy protocol 的支持情况进行选择。例如 Paper 服务端目前只支持 v2。
+至于如何选择 v1 和 v2，你需要根据对应服务器对 PROXY protocol 的支持情况进行选择。例如 Paper 服务端目前只支持 v2。
 
-在配置完 Frp 后，记得将 Paper 配置文件中的协议支持打开：
+在配置完 frp 后，记得将 Paper 配置文件中的协议支持打开：
 
 ```yaml
 # config/paper-global.yaml
@@ -577,8 +579,8 @@ proxies:
     proxy-protocol: true # 从 false 改为 true
 ```
 
-这样配置会使你的服务器仅接受来自 Frp 的连接。
+这样配置会使你的服务器仅接受来自 frp 的连接。
 
-如果你有特殊需求，需要同时支持直连和 Proxy Protocol 的话，请安装 [HAProxyDetector](https://github.com/andylizi/haproxy-detector) 插件来解决。
+如果你有特殊需求，需要同时支持直连和 PROXY protocol 的话，请安装 [HAProxyDetector](https://github.com/andylizi/haproxy-detector) 插件来解决。
 
 对于较高的版本，请使用 [HaHaWTH 的 fork 版本](https://github.com/HaHaWTH/HAProxy-Detector)。

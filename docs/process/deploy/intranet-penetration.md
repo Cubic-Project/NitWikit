@@ -11,11 +11,11 @@ sidebar_position: 5
 
 **来几个？**
 
-内网穿透一抓一大把，比如[樱花内网穿透](https://www.natfrp.com/)和[OpenFrp](https://www.openfrp.net/)
+内网穿透一抓一大把，比如 [樱花内网穿透](https://www.natfrp.com/) 和 [OpenFrp](https://www.openfrp.net/)
 
-Cloudflare 有内网穿透 Tunnel (无需注册！),MineKube 也有内网穿透 Connect(同样无需注册)，还有 Geyser 官方推荐的 Playit.gg
+Cloudflare 有内网穿透 Tunnel (无需注册！)，Minekube 也有内网穿透 Connect (同样无需注册)，还有 Geyser 官方推荐的 playit.gg
 
-自建 frp 参见[此页面](/advance/frp#配置-proxy-protocol)
+自建 frp 参见 [此页面](/advance/frp#配置-proxy-protocol)
 
 ## Cloudflare Tunnel
 
@@ -26,19 +26,19 @@ Cloudflare Tunnel 是 CF 下的免费内网穿透
 优点：
 
 - 免费，无需注册
-- 自带 n TB 高防
+- 自带 N TB 高防
 - 不限流
-- 支持 TCP,UDP,RDP,SSH,HTTP
+- 支持 TCP, UDP, RDP, SSH, HTTP
 - SSH 提供 WebSSH，还可以通过 Access 管理
 
 缺点：
 
 - 延迟较大 (不可以优选）
-- 客户端需安装 mod 才能进入 (仅限 TCP,UDP)
+- 客户端需安装 mod 才能进入 (仅限 TCP, UDP)
 
 ### 安装
 
-在[GitHub](https://github.com/cloudflare/cloudflared/releases) 找到适合的版本并安装
+在 [GitHub](https://github.com/cloudflare/cloudflared/releases) 找到适合的版本并安装
 
 ### 使用
 
@@ -48,7 +48,7 @@ Cloudflare Tunnel 是 CF 下的免费内网穿透
 cloudflared tunnel --url tcp://localhost:服务器端口
 ```
 
-`tcp`可以换成其他你需要的协议，比如`http`
+`tcp` 可以换成其他你需要的协议，比如 `http`
 
 很快你就能看到
 
@@ -69,7 +69,7 @@ INF +---------------------------------------------------------------------------
 
 ### 客户端
 
-需要安装[Modflared](https://modrinth.com/mod/modflared)
+需要安装 [Modflared](https://modrinth.com/mod/modflared)
 
 :::tip
 
@@ -88,8 +88,8 @@ Minekube 的免费内网穿透，这个组织还有另一个有名作品 Gate
 - 免费，无需注册
 - 自带高防
 - 不限流
-- 会提供一个免费域名和 1 个 AnyCast 独立 IPV4
-- 有 Dashboard，可以进行网络分流，管理，黑名单等操作
+- 会提供一个免费域名和 1 个 Anycast 独立 IPv4
+- 有管理面板，可以进行网络分流，管理，黑名单等操作
 
 缺点：
 
@@ -97,16 +97,16 @@ Minekube 的免费内网穿透，这个组织还有另一个有名作品 Gate
 
 [官网](https://connect.minekube.com/)
 
-## Playit.gg
+## playit.gg
 
-Playit 的免费内网穿透，需要登录
+playit 的免费内网穿透，需要登录
 
 优点：
 
 - 提供免费版本
 - 无限流量
 - 提供防火墙功能
-- 提供**亚太地区节点**（测试时候路由到了日本）
+- 提供 **亚太地区节点**（测试时候路由到了日本）
 - 自带高防
 - 支持 Geyser
 - 支持任意 TCP、UDP 应用
@@ -126,7 +126,7 @@ Premium 版本一个月 3 刀 (约合人民币 27 元)，一年 30 刀
 
 #### 玩家注册
 
-支持 IP 限制注册账号的登录插件 (如 Authme、CMI ) 会出问题
+支持 IP 限制注册账号的登录插件 (如 Authme、CMI) 会出问题
 
 如果内网穿透的话，他们的 IP 地址都是回环地址，所以他们不能注册账号了
 
@@ -144,28 +144,28 @@ Premium 版本一个月 3 刀 (约合人民币 27 元)，一年 30 刀
 
 因为他们的 IP 都是回环地址
 
-### ban-ip ban 掉所有人
+### /ban-ip ban 掉所有人
 
 因为你们的地址都是回环地址
 
-所以你 ban-ip 会 ban 掉所有人，包括你自己......
+所以你 /ban-ip 会 ban 掉所有人，包括你自己......
 
 ### 反假人插件
 
 这会导致反假人插件几乎不能使用，因为无论是封禁 IP 还是 IP 白名单都会因为所有玩家 IP 相同而失效。
 
-### 解决以上无法显示 IP 地址的办法：proxy protocol
+### 解决以上无法显示 IP 地址的办法：PROXY protocol
 
 正是因为 frp 在转发玩家请求时重写了请求头部，导致了以上情况的发生。frp 虽然不能不重写这个请求头部，但是他可以通过一种方式还原请求头部，让服务器正常显示出连接 IP。
-Proxy Protocol 是由 HAProxy 开发者 Willy 提出的一种反向代理协议，可以参考
+PROXY protocol 是由 HAProxy 开发者 Willy 提出的一种反向代理协议，可以参考
 [HAProxy 文档](http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt)
-获取更多信息。frp 内置的 proxy protocol 要求被其穿透的服务器也支持 proxy protocol，否则会造成对应的服务无法使用，所以并不是随便拿一个服务就能用 proxy protocol。
-frp 启用 proxy protocol 的方式参考[自建 frp](/advance/frp#配置-proxy-protocol)。
+获取更多信息。frp 内置的 PROXY protocol 要求被其穿透的服务器也支持 PROXY protocol，否则会造成对应的服务无法使用，所以并不是随便拿一个服务就能用 PROXY protocol。
+frp 启用 PROXY protocol 的方式参考[自建 frp](/advance/frp#配置-proxy-protocol)。
 
-对于 MC 服务器来说，支持 proxy protocol 的软件有：
+对于 MC 服务器来说，支持 PROXY protocol 的软件有：
 
-- bungeecord 系
-- paper 分支 (1.18.2)(仅支持 v2)
+- Bungeecord 系
+- Paper 分支 (1.18.2)(仅支持 v2)
 - [Geyser](/Java/process/mobile-player/Geyser/introduction/FAQ#frp-搭建内网穿透想显示真实-ip-怎么办)
 - Spigot 端插件 [HAProxyDetector](https://github.com/andylizi/haproxy-detector)
 

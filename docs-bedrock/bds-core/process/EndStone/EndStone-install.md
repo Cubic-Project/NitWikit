@@ -11,7 +11,7 @@ sidebar_position: 1
 
 Windows 环境下：
 
-- [VSCode](https://code.visualstudio.com/)编辑器
+- [VS Code](https://code.visualstudio.com/)编辑器
 - 可选：最新版[Python 3.12+ 环境](https://python.org)
 
 Linux 环境下：

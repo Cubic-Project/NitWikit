@@ -25,7 +25,7 @@ sidebar_position: 2
 
 :::
 
-你只需要在启动参数最后加上`--forceUpgrade`就行了，像这样
+你只需要在启动参数最后加上 `--forceUpgrade` 就行了，像这样
 
 ```bash
 java -Xms2G -Xmx2G -jar server.jar --nogui
@@ -37,11 +37,11 @@ java -Xms2G -Xmx2G -jar server.jar --nogui
 java -Xms2G -Xmx2G -jar server.jar --nogui --forceUpgrade
 ```
 
-然后启动服务端，等待转换完成，**不要进入服务器或操作服务器**，这是非常危险的，可能会**直接废档**
+然后启动服务端，等待转换完成，**不要进入服务器或操作服务器**，这是非常危险的，可能会 **直接废档**
 
 转换完后，删掉 `--forceUpgrade` 再启动就可以了
 
-## Chunker.app
+## Chunker
 
 :::info
 
@@ -53,7 +53,7 @@ java -Xms2G -Xmx2G -jar server.jar --nogui --forceUpgrade
 
 :::
 
-Chunker.app 是一个多功能的转换工具，支持基岩版和 Java 之间的转换，在转换大版本的时候也推荐使用
+Chunker 是一个多功能的转换工具，支持基岩版和 Java 之间的转换，在转换大版本的时候也推荐使用
 
 目前不支持实体和玩家背包
 
@@ -77,7 +77,7 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 
 使用 [FastAsyncWorldEdit](/Java/process/plugin/WorldManagement/FastAsyncWorldEdit)
 
-选择光源异常区域，先 //removelight 再 //fixlighting
+选择光源异常区域，先 `//removelight` 再 `//fixlighting`
 
 :::
 
@@ -145,9 +145,9 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 
 #### NKX 局部导入
 
-在 JAVA 版做完建筑，使用 [WE](https://modrinth.com/plugin/worldedit) / [FAWE](https://modrinth.com/plugin/fastasyncworldedit) 选区导出 .schematic 文件
+在 JAVA 版做完建筑，使用 [WorldEdit](https://modrinth.com/plugin/worldedit) / [FAWE](https://modrinth.com/plugin/fastasyncworldedit) 选区导出 `.schematic` 文件
 
-于 NKX 服务端内使用 [FastAsyncWorldEdit-Nukkit](https://cloudburstmc.org/resources/fastasyncworldedit.30/) 导入 .schematic 文件粘贴到指定位置
+于 NKX 服务端内使用 [FastAsyncWorldEdit-Nukkit](https://cloudburstmc.org/resources/fastasyncworldedit.30/) 导入 `.schematic` 文件粘贴到指定位置
 
 :::warning
 

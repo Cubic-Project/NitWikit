@@ -1,15 +1,17 @@
 ---
-title: SDKMAN
+title: SDKMAN!
 sidebar_position: 4
 ---
 
-# SDKMAN
+<!-- markdownlint-disable MD026 -->
 
-SDKMAN 是一个用于管理多个软件开发工具包版本的工具，特别适合需要在不同 Java 版本之间切换的开发者和服务器管理员。
+# SDKMAN!
 
-## 什么是 SDKMAN
+SDKMAN! 是一个用于管理多个软件开发工具包版本的工具，特别适合需要在不同 Java 版本之间切换的开发者和服务器管理员。
 
-SDKMAN (Software Development Kit Manager) 可以让你：
+## 什么是 SDKMAN!
+
+SDKMAN! (Software Development Kit Manager) 可以让你：
 
 - 安装多个 Java 版本
 - 在不同版本间快速切换
@@ -18,11 +20,11 @@ SDKMAN (Software Development Kit Manager) 可以让你：
 
 :::tip
 
-SDKMAN 特别适合需要管理多个 Minecraft 服务器的用户，不同版本的服务器可能需要不同的 Java 版本。
+SDKMAN! 特别适合需要管理多个 Minecraft 服务器的用户，不同版本的服务器可能需要不同的 Java 版本。
 
 :::
 
-## 安装 SDKMAN
+## 安装 SDKMAN!
 
 ### Linux / macOS / WSL
 
@@ -40,7 +42,7 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 ### Windows
 
-SDKMAN 原生不支持 Windows，但可以通过以下方式使用：
+SDKMAN! 原生不支持 Windows，但可以通过以下方式使用：
 
 1. **WSL (推荐)**: 在 Windows Subsystem for Linux 中安装
 2. **Git Bash**: 在 Git Bash 中安装 (可能不稳定)
@@ -107,7 +109,7 @@ Available Java Versions for Linux 64bit
 # 安装 Java 21 (Temurin)
 sdk install java 21.0.1-tem
 
-# 安装 Java 17 (Zulu)
+# 安装 Java 17 (Azul Zulu)
 sdk install java 17.0.9-zulu
 
 # 安装 Java 11 (Dragonwell)
@@ -217,7 +219,7 @@ java -Xmx4G -Xms4G -jar server.jar nogui
 
 :::danger
 
-不要在使用 SDKMAN 管理 Java 的同时手动修改 `JAVA_HOME` 环境变量，这可能导致冲突。
+不要在使用 SDKMAN! 管理 Java 的同时手动修改 `JAVA_HOME` 环境变量，这可能导致冲突。
 
 :::
 

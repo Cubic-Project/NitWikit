@@ -28,7 +28,7 @@ server {
     index index.php index.html;
 
     # 允许更大的文件上传
-    # 允许客户端请求体的最大大小为 100MB，这对于文件上传功能很重要。
+    # 允许客户端请求体的最大大小为 100 MB，这对于文件上传功能很重要。
     client_max_body_size 100m;
 
     # 添加安全相关的 HTTP 响应头
@@ -75,7 +75,7 @@ server {
     location ~ \.php$ {
         # 将请求通过 FastCGI 协议传递给 PHP-FPM (PHP FastCGI Process Manager) 进行处理。
         # 这里使用的是 Unix socket，它是一种在同一台机器上进行进程间通信的文件。
-        # 它的路径可能需要根据你的系统配置进行修改 (例如，在不同PHP版本下可能是 php8.1-fpm.sock)。
+        # 它的路径可能需要根据你的系统配置进行修改 (例如，在不同 PHP 版本下可能是 php8.1-fpm.sock)。
         fastcgi_pass unix:/run/php/php-fpm.sock; # 可能需要编辑此行
 
         # 定义 FastCGI 的默认索引文件
@@ -111,7 +111,7 @@ server {
     index index.php index.html;
 
     # 允许更大的文件上传
-    # 允许客户端请求体的最大大小为 100MB，这对于文件上传功能很重要。
+    # 允许客户端请求体的最大大小为 100 MB，这对于文件上传功能很重要。
     client_max_body_size 100m;
 
     # 这是一个基础的 TLS 配置示例，没有 OCSP Stapling，使用默认加密套件，也没有 HSTS。
@@ -195,9 +195,9 @@ server {
     AllowEncodedSlashes NoDecode
 
     # 这两个是 PHP 的配置项，通过 Apache 的 mod_php 模块来设置。
-    # 设置允许上传的单个文件的最大大小为 100MB。
+    # 设置允许上传的单个文件的最大大小为 100 MB。
     php_value upload_max_filesize 100M
-    # 设置 POST 请求体数据的最大大小为 100MB。
+    # 设置 POST 请求体数据的最大大小为 100 MB。
     # 这个值必须大于或等于 upload_max_filesize 才能成功上传大文件。
     php_value post_max_size 100M
 
@@ -232,9 +232,9 @@ server {
     # 允许 URL 中包含编码后的斜杠 (%2F) 并且不进行解码。
     AllowEncodedSlashes NoDecode
 
-    # 通过 mod_php 设置 PHP 的上传文件大小限制为 100MB。
+    # 通过 mod_php 设置 PHP 的上传文件大小限制为 100 MB。
     php_value upload_max_filesize 100M
-    # 设置 POST 请求体数据的最大大小为 100MB。
+    # 设置 POST 请求体数据的最大大小为 100 MB。
     php_value post_max_size 100M
 
     # 定义针对网站根目录的特定配置。
@@ -264,7 +264,7 @@ server {
 
 ## Cloudflare
 
-如果你不想自己配置 SSL 证书,你可以通过使用 Cloudflare 的免费 SSL 服务来提供 HTTPS 功能。
+如果你不想自己配置 SSL 证书，你可以通过使用 Cloudflare 的免费 SSL 服务来提供 HTTPS 功能。
 Cloudflare 的免费 SSL 服务可以为你的网站提供免费的 SSL 证书，无需任何额外的配置。
 
 ![](_images/img.png)
@@ -281,15 +281,15 @@ Cloudflare 的免费 SSL 服务可以为你的网站提供免费的 SSL 证书�
 
 如果你希望提高 Cloudflare 到源服务器的安全性，可以使用源服务器加密来实现。
 
-创建证书后,按照服务器配置配置证书,开启`经过身份验证的源服务器拉取` 即可
+创建证书后，按照服务器配置配置证书，开启`经过身份验证的源服务器拉取` 即可
 
 ### 代理配置
 
 通过代理连接会导致两个问题：
 
-- NamelessMC 会看到你的代理地址而不是你的用户地址。这会破坏 IP 封锁和速率限制。这可以通过从代理向后端 Web 服务器发送 Forwarded 、 X-Forwarded-For 或 X-Real-IP （不推荐）标头来解决。
+- NamelessMC 会看到你的代理地址而不是你的用户地址。这会破坏 IP 封锁和速率限制。这可以通过从代理向后端 Web 服务器发送 Forwarded、X-Forwarded-For 或 X-Real-IP（不推荐）标头来解决。
 
-在你的 Nginx 配置文件中添加如下几行:
+在你的 Nginx 配置文件中添加如下几行：
 
 ```nginx
 proxy_set_header X-Forwarded-For    $proxy_add_x_forwarded_for;

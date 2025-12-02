@@ -19,4 +19,4 @@ pip install pillow pillow-avif-plugin tqdm pillow-jxl-plugin
 python convert.py . --threads 10 --delete-backup --format avif
 ```
 
-你不需要更改 markdown 文件，直接运行即可
+你不需要更改 Markdown 文件，直接运行即可

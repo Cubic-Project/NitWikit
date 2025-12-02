@@ -15,7 +15,7 @@ sidebar_position: 7
 
 :::tip
 
-我们**非常推荐**你阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)
+我们 **非常推荐** 你阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)
 
 :::
 
@@ -25,11 +25,11 @@ sidebar_position: 7
 
 **`怎么开基岩版互通`**
 
-- 太直白了，请别人帮忙之前最好稍微带一些**态度**。
+- 太直白了，请别人帮忙之前最好稍微带一些 **态度**。
 
 **`什么是 pojav？插件的 wiki 在哪里？`**
 
-- **不要把群和人当做搜索引擎**(除非打钱了)。
+- **不要把群和人当做搜索引擎** (除非打钱了)。
 
 **`我玩家进不来服务器怎么办`**
 
@@ -44,7 +44,7 @@ sidebar_position: 7
 - 以下这些情况，应该去天桥的老大爷找你算算命，因为没有有效的 log 没人能知道你遇到的问题。
 - 在 **服务器** 问题中提供 **客户端** log。
 - **不完整** 的 log，甚至 **不提供** log。
-- 错误的将**客户端**收到的报错当做**服务端**报错。
+- 错误的将 **客户端** 收到的报错当做 **服务端** 报错。
 - **直接将成百上千行的 log 发到交流群**
 
 :::warning
@@ -59,7 +59,7 @@ sidebar_position: 7
 
 为避免无效问题，问问题最好需要符合以下几个基础原则：
 
-1. 先查 wiki 或搜索 - [详细说明](#看完-wiki-再问)
+1. 先查 Wiki 或搜索 - [详细说明](#看完-wiki-再问)
 
 2. 礼貌用语
 
@@ -76,7 +76,7 @@ sidebar_position: 7
 
 <!--markdownlint-disable ol-prefix-->
 
-3. 明确遇到的问题，到**对应群**里问
+3. 明确遇到的问题，到 **对应群** 里问
 
 例如，你应该：
 
@@ -107,7 +107,7 @@ sidebar_position: 7
 
 ### 看完 Wiki 再问
 
-Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会获得 `滚过去看 wiki` 回复。
+Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会获得 `滚过去看 Wiki` 回复。
 
 几乎所有的软件都会附上 Wiki，它们一般位于：
 
@@ -125,7 +125,7 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 对于不是网站形式的 Wiki 来说，也有许多种办法来搜索：
 
-#### docx(Word 文档)
+#### docx (Word 文档)
 
 按下 `Ctrl + F` (Windows) 或 `Command + F` (macOS) 即可启动 Microsoft Word 或 WPS 的搜索功能，搜索当前文档。
 
@@ -139,7 +139,7 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 #### 笨蛋脚本
 
-使用此[脚本](https://script.8aka.org/update-log)，
+使用此 [脚本](https://script.8aka.org/update-log)，
 会将日志自动上传到 `https://mclo.gs` (默认上传的日志是 `logs/latest.log`)
 
 #### 如何上传
@@ -163,7 +163,7 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 ![](_images/屏幕截图%202025-02-07%20182759.png)
 
-服务器 log 文件在服务端根目录的 logs 文件夹，一般上传 latest.log (服务端最新的日志) 即可
+服务器 log 文件在服务端根目录的 logs 文件夹，一般上传 `latest.log` (服务端最新的日志) 即可
 
 ![](_images/屏幕截图%202025-02-07%20182930.png)
 
@@ -176,7 +176,7 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 ![](\_images/问问题的技巧/如何使用 Mclogs-1.png)
 
-服务器 log 文件在服务端根目录的 logs 文件夹，一般上传 latest.log (服务端最新的日志) 即可
+服务器 log 文件在服务端根目录的 logs 文件夹，一般上传 `l`atest.log` (服务端最新的日志) 即可
 
 ![](\_images/问问题的技巧/如何使用 Mclogs-2.png)
 
@@ -218,15 +218,11 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 :::warning
 
-不遵守以上规则，可能会导致你被写入**乐子文档**
+不遵守以上规则，可能会导致你被写入 **乐子文档**
 
 :::
 
 **经典如何提问：https://settingdust.gitbook.io/stop-ask-questions-the-stupid-ways/**
-
-<a href="https://www.8aka.org/qq">
-  <img src="https://raw.githubusercontent.com/Cubic-Project/NitWikit/refs/heads/main/docs/_images/qqgroupshield.svg" alt="QQ 群"></img>
-</a>
 
 ### 经典老图
 

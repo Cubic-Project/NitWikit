@@ -10,7 +10,7 @@ sidebar_position: 1
 你需要在电脑上准备：
 
 - 最新版[node.js](https://nodejs.org/zh-cn)
-- [VSCode](https://code.visualstudio.com/)编辑器
+- [VS Code](https://code.visualstudio.com/)编辑器
 - 可选：[git](https://git-scm.com/download)
 
 当前教程假设操作环境：Windows
@@ -41,7 +41,7 @@ git clone https://github.com/bdsx/bdsx.git
 
 需要开服也是右键 `bdsx.bat` 使用管理员权限运行即可
 
-## 方法二：使用 VSCode 调试与运行
+## 方法二：使用 VS Code 调试与运行
 
 :::danger
 该方案极其不建议，可能会出现很多离谱问题！
@@ -50,10 +50,10 @@ git clone https://github.com/bdsx/bdsx.git
 
 下载源代码方法请详见 **方法一**
 
-如果需要使用 VSCode 启动 BDSX，您需要
+如果需要使用 VS Code 启动 BDSX，您需要
 
-1. 使用 VSCode 打开此项目
+1. 使用 VS Codes 打开此项目
 2. 安装 Node Debug (legacy)。您可以在右下方看到建议通知框。
-3. 打开终端（Ctrl+Shift+｀）
+3. 打开终端（Ctrl + Shift + ｀）
 4. 运行 `npm i` 来安装 NPM 包与 BDS
 5. 按下 `F5` 以构建并运行

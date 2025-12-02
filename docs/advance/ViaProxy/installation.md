@@ -73,20 +73,20 @@ java -jar ViaProxy-3.4.4.jar cli \
 
 ##### 基础连接参数
 
-- `--bind-address <地址:端口>` - 监听地址和端口 (默认: 0.0.0.0:25568)
-- `--target-address <地址:端口>` - 目标服务器地址 (默认: 127.0.0.1:25565)
-- `--target-version <版本>` - 目标服务器版本 (默认: 自动检测)
+- `--bind-address <地址:端口>` - 监听地址和端口 (默认：0.0.0.0:25568)
+- `--target-address <地址:端口>` - 目标服务器地址 (默认：127.0.0.1:25565)
+- `--target-version <版本>` - 目标服务器版本 (默认：自动检测)
 
 ##### 认证配置
 
-- `--auth-method <方式>` - 认证方式 (默认: NONE)
-- `--proxy-online-mode <true/false>` - 代理正版模式 (默认: false)
+- `--auth-method <方式>` - 认证方式 (默认：NONE)
+- `--proxy-online-mode <true/false>` - 代理正版模式 (默认：false)
 - `--minecraft-account-index <索引>` - 使用的 Minecraft 账户索引
 
 ##### 高级功能
 
-- `--chat-signing <true/false>` - 聊天签名支持 (默认: true)
-- `--simple-voice-chat-support <true/false>` - 简单语音聊天支持 (默认: false)
+- `--chat-signing <true/false>` - 聊天签名支持 (默认：true)
+- `--simple-voice-chat-support <true/false>` - 简单语音聊天支持 (默认：false)
 - `--resource-pack-url <URL>` - 自定义资源包地址
 
 ### 配置文件模式（推荐自动化部署）

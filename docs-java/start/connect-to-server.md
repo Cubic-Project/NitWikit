@@ -105,7 +105,7 @@ server-port=25565
 
 2.检查网络状况 (可以试试 ping 服务器，超时就是网的问题)
 
-3.如果使用 FRP ,检查 frp 的配置文件是否正确
+3.如果使用 frp ,检查 frp 的配置文件是否正确
 
 ### `Invalid characters in username/ 用户名包含无效字符`
 
@@ -151,7 +151,7 @@ server-port=25565
 
 1. 服务器未启动或已崩溃，检查服务器控制台是否正常运行
 2. 确认服务器 IP 和端口填写正确（默认端口为 `25565`）
-3. 若使用内网穿透（如 FRP/Ngrok），检查穿透服务是否配置正确
+3. 若使用内网穿透（如 frp/Ngrok），检查穿透服务是否配置正确
 
 ### `Internal Exception: java.io.IOException: 远程主机强迫关闭了一个现有的连接`
 

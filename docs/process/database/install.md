@@ -8,11 +8,11 @@ sidebar_position: 1
 
 ### 直接安装
 
-你可以选择直接下载安装包来安装，如果觉得麻烦，请看下面的**使用工具安装**
+你可以选择直接下载安装包来安装，如果觉得麻烦，请看下面的 **使用工具安装**
 
 :::tip
 
-[sohu MySQL 镜像源](http://mirrors.sohu.com/mysql/MySQL-8.0/)
+[搜狐 MySQL 镜像源](http://mirrors.sohu.com/mysql/MySQL-8.0/)
 
 [阿里 MySQL 镜像源](https://mirrors.aliyun.com/mysql/)
 
@@ -22,7 +22,7 @@ sidebar_position: 1
 
 对于 MySQL 安装，请看这篇文章：[2024 年 MySQL 8.0 安装 配置 教程 最简易 (保姆级)](https://blog.csdn.net/m0_52559040/article/details/121843945)
 
-而标着 `ubuntu` 或 `debian` 是 linux 版本的安装包，linux 用户请下载这个
+而标着 `ubuntu` 或 `debian` 是 Linux 版本的安装包，Linux 用户请下载这个
 
 在下载的时候请务必注意自己的系统、架构等是否与安装包上标的匹配
 
@@ -73,7 +73,7 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 
 不要设置过于简单的密码！
 
-尤其是你打算把数据库开到公网，**绝对不要**设置过于简单的密码！
+尤其是你打算把数据库开到公网，**绝对不要** 设置过于简单的密码！
 
 **这真的很严重**
 

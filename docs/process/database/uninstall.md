@@ -20,9 +20,9 @@ https://www.bt.cn/new/btcode.html
 
 ### Windows 平台
 
-首先，通过 PHPStudy 的控制面板，找到 Mysql 服务，并点击“暂停”按钮
+首先，通过 PHPStudy 的控制面板，找到 MySQL 服务，并点击“暂停”按钮
 
-之后，找到 PHPStudy 的安装目录，找到 Mysql 的安装文件夹
+之后，找到 PHPStudy 的安装目录，找到 MySQL 的安装文件夹
 
 注：通常命名为：MySQL 或者 mysqlXX（XX 为版本号）
 

@@ -5,9 +5,9 @@ sidebar_position: 6
 
 # 什么是日志？
 
-**日志**记录了服务器的运行信息，运行时产生的错误和警告，同时也是大佬们用来分析为什么功能不正常或不能用的必要途径。
+**日志** 记录了服务器的运行信息，运行时产生的错误和警告，同时也是大佬们用来分析为什么功能不正常或不能用的必要途径。
 
-正常情况下，服务器的最新日志保存在 `服务器根目录/logs/latest.log` ，是**同步控制台输出**的。
+正常情况下，服务器的最新日志保存在 `服务器根目录/logs/latest.log` ，是 **同步控制台输出** 的。
 
 每天凌晨 00:00 时服务器将会将最新的日志 **latest.log** 压缩为以时间命名的 gz 压缩文件。用压缩软件解压对应时间的压缩文件即可进行阅读。
 
@@ -35,7 +35,7 @@ sidebar_position: 6
 
 ### 线程
 
-一般为 **Server thread** 即主线程，很多插件会调用 Craft Scheduler Thread 线程，或者为了优化主线程开销开启单独线程 (如 Luckperm )。
+一般为 **Server thread** 即主线程，很多插件会调用 Craft Scheduler Thread 线程，或者为了优化主线程开销开启单独线程 (如 Luckperms)。
 
 **Craft Scheduler Thread** 一般为插件使用 Bukkit 计划任务时自动开启的线程。
 
@@ -55,7 +55,7 @@ sidebar_position: 6
 | WARN  | 警告 | 对于一些潜在的风险进行警告，有可能发展为报错 |
 | ERROR | 错误 | 服务器出现错误后输出的信息                   |
 
-总的来说，当服务器出现异常时请立刻检查日志中是否出现了 WARN 或 ERROR 级别的报错，建议先搜索查看是否有人遇到类似情况，再结合翻译结果尝试修复。如果搞不定可以请教其他人，但是切记一定要先读一读 [如何提问](/docs/start/ask-for-help.md)
+总的来说，当服务器出现异常时请立刻检查日志中是否出现了 `WARN` 或 `ERROR` 级别的报错，建议先搜索查看是否有人遇到类似情况，再结合翻译结果尝试修复。如果搞不定可以请教其他人，但是切记一定要先读一读 [如何提问](/docs/start/ask-for-help.md)
 
 #### INFO
 
@@ -82,7 +82,7 @@ sidebar_position: 6
 [00:01:32] [Server thread/WARN]: [PvPManager] Error loading Vault! No Economy plugin found
 ```
 
-这段日志说明了插件 **PvPManager** 警告我们未找到经济插件 ( No Economy plugin found )。
+这段日志说明了插件 **PvPManager** 警告我们未找到经济插件 (No Economy plugin found)。
 
 #### ERROR
 

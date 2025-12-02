@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # 笨蛋脚本使用
 
-笨蛋脚本是由本 wiki 的作者之一 lilingfeng 编写的，专门为笨蛋设计的，你只需要双击启动，回答几个问题就能帮你自动完成。
+笨蛋脚本是由本 Wiki 的作者之一 lilingfeng 编写的，专门为笨蛋设计的，你只需要双击启动，回答几个问题就能帮你自动完成。
 
 ## 下载
 
@@ -38,7 +38,7 @@ sidebar_position: 4
 
 除生成启动脚本，其他脚本都必须启动一次服务端后才能使用，生成启动脚本需要提前安装服务器核心。
 
-:::danger[使用方法]
+:::danger 使用方法
 
 所有笨蛋脚本都需要在服务器根目录执行!!
 
@@ -48,9 +48,9 @@ sidebar_position: 4
 
 我们提供其他操作系统的二进制分发文件 (注意：二进制分发仅可以在 64 位操作系统上运行，Windows 只支持 Win10 以上)
 
-[Linux](https://github.com/lilingfengdev/NitWiki-Script/releases/tag/ubuntu-latest)
+[Linux](https://github.com/Cubic-Project/NitWiki-Script/releases/tag/ubuntu-latest)
 
-[MacOS (真的有人会用 Mac 开服吗？)](https://github.com/lilingfengdev/NitWiki-Script/releases/tag/macos-latest)
+[macOS (真的有人会用 Mac 开服吗？)](https://github.com/Cubic-Project/NitWiki-Script/releases/tag/macos-latest)
 
 32 位操作系统或 Win7 需要自己安装 Python，并安装以下依赖 (一大堆)
 
@@ -62,15 +62,15 @@ pip install pyyaml install-jdk tqdm psutil requests rtoml
 
 考虑到国内 GitHub 的牛逼访问速度，我们为笨蛋脚本提供了下载镜像
 
-比如我拿到的 GitHub 链接是`https://github.com/lilingfengdev/NitWiki-Script/releases/download/ubuntu-latest/auto-antiseedcracker.bin`
+比如我拿到的 GitHub 链接是 `https://github.com/Cubic-Project/NitWiki-Script/releases/download/ubuntu-latest/auto-antiseedcracker.bin`
 
-替换`https://github.com/lilingfengdev/NitWiki-Script/releases/download`为`https://dl.8aka.org`就可以体验极速下载
+替换 `https://github.com/Cubic-Project/NitWiki-Script/releases/download` 为 `https://dl.8aka.org` 就可以体验极速下载
 
 ## 了解
 
 在启动这个脚本之前，你应该 **明白你正在干什么，会导致什么后果**，以优化脚本举例，你应该明白，执行这个脚本之后，村民的 AI 会受到限制，变得有点傻 (当然不止这个，还有其他后果，此处不详谈)。
 
-我们拒绝回答一切在启动笨蛋脚本之前不看文档导致的问题~~(除非打钱)~~。
+我们拒绝回答一切在启动笨蛋脚本之前不看文档导致的问题 ~~(除非打钱)~~。
 
 ## 宗旨
 

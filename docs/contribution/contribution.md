@@ -12,4 +12,4 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-如果有一些文档完全没有涉及到的内容，请进入 [GitHub](https://github.com/postyizhan/NitWikit/issues) 提出 Issue。或者直接加入 [企鹅群🐧611076407](https://qm.qq.com/q/lEnfzgzxjq)。
+如果有一些文档完全没有涉及到的内容，请进入 [GitHub Issues](https://github.com/postyizhan/NitWikit/issues) 提出 Issue。或者直接加入 [企鹅群🐧1074062482](https://qm.qq.com/q/UyurWW3zyI)。

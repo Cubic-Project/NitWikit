@@ -19,6 +19,6 @@ sidebar_position: 1
 
 ## 更多
 
-对于文档中的错误请进入 [GitHub](https://github.com/Cubic-Project/NitWikit) 提出 Issue 或提交 Pr。
+对于文档中的错误请进入 [GitHub Issues](https://github.com/Cubic-Project/NitWikit) 提出 Issue 或提交 PR。
 
-欢迎加入 [企鹅群 🐧611076407](https://qm.qq.com/q/lEnfzgzxjq)。
+欢迎加入 [企鹅群🐧1074062482](https://qm.qq.com/q/UyurWW3zyI)。

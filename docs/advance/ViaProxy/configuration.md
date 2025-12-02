@@ -60,7 +60,7 @@ betacraft-auth: false
 ### 代理和高级功能
 
 ```yaml
-# 后端代理设置（SOCKS/HTTP代理）
+# 后端代理设置（SOCKS/HTTP 代理）
 backend-proxy-url: "" # 格式：type://address:port
 
 # HAProxy 协议支持
@@ -140,7 +140,7 @@ map-display-entities: true # 显示实体映射为盔甲架
 ### ViaRewind 配置 (ViaLoader/viarewind.yml)
 
 ```yaml
-# 冷却指示器：TITLE（标题）、ACTION_BAR（动作栏）、BOSS_BAR（Boss栏）、DISABLED
+# 冷却指示器：TITLE（标题）、ACTION_BAR（动作栏）、BOSS_BAR（Boss 栏）、DISABLED
 cooldown-indicator: TITLE
 
 # 兼容性设置
@@ -188,7 +188,7 @@ pack-cache: disk # 资源包缓存：disabled, memory, disk
 # 资源包转换
 translate-resource-packs: true # 启用资源包转换
 resource-pack-host: 127.0.0.1 # 资源包 HTTP 服务器地址
-resource-pack-port: 0 # 资源包服务器端口（0=随机）
+resource-pack-port: 0 # 资源包服务器端口（0 = 随机）
 
 # 其他设置
 disable-server-blacklist: false # 禁用服务器黑名单

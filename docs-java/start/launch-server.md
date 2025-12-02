@@ -133,7 +133,7 @@ import TabItem from '@theme/TabItem';
 @echo off
 :start
 java -Xmx4G -Xms1G -jar server.jar nogui
-echo 服务器已关闭，5秒后重启...
+echo 服务器已关闭，5 秒后重启...
 timeout /t 5
 goto start
 ```
@@ -145,7 +145,7 @@ goto start
 #!/bin/bash
 while true; do
     java -Xmx4G -Xms1G -jar server.jar nogui
-    echo "服务器已关闭，5秒后重启..."
+    echo "服务器已关闭，5 秒后重启..."
     sleep 5
 done
 ```
@@ -260,13 +260,13 @@ java -Xms2G -Xmx2G -jar server.jar --nogui
 
 内存大小设置长这样
 
-```bash
+```text
 -Xms1024M -Xmx2048M
 ```
 
 不是这样！
 
-```bash
+```text
 -Xms 1024M -Xmx 2048M
 ```
 

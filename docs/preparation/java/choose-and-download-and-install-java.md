@@ -8,9 +8,9 @@ sidebar_position: 1
 ## 选择版本
 
 :::warning
-部分服务端有在项目的 README 中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java
-8，推荐版本为 Java 21
-MOD 服务端
+
+部分服务端有在项目的 README 中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java 8，推荐版本为 Java 21 MOD 服务端
+
 :::
 
 ### 常见插件端 (Paper 等)
@@ -65,9 +65,9 @@ MOD 服务端
 | --------- | ------------------------------------------------------------------------------------------------- |
 | Java 8    | [Dragonwell](https://dragonwell-jdk.io/)                                                          |
 | Java 11   | [Dragonwell](https://dragonwell-jdk.io/)                                                          |
-| Java 17   | [Zulu](https://d10.injdk.cn/openjdk/zulu/17/)                                                     |
-| Java 21   | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/21/) [Zulu](https://d10.injdk.cn/openjdk/zulu/21/) |
-| Java 24   | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/24/) [Zulu](https://d10.injdk.cn/openjdk/zulu/24/) |
+| Java 17   | [Azul Zulu](https://d10.injdk.cn/openjdk/zulu/17/)                                                     |
+| Java 21   | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/21/) / [Azul Zulu](https://d10.injdk.cn/openjdk/zulu/21/) |
+| Java 24   | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/24/) / [Azul Zulu](https://d10.injdk.cn/openjdk/zulu/24/) |
 
 <!--markdownlint-enable line-length-->
 

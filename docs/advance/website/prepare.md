@@ -8,27 +8,27 @@ import TabItem from '@theme/TabItem';
 
 # 准备
 
-在开始前,你需要准备一些软件
+在开始前，你需要准备一些软件
 
 # 环境准备
 
 <Tabs groupId="operating-systems">
 <TabItem value="ubuntu" label="Ubuntu/Debian">
 
-## Ubuntu/Debian系统准备
+## Ubuntu/Debian 系统准备
 
 ### 安装必需软件包
 
 ```bash
-# 安装PHP和扩展
+# 安装 PHP 和扩展
 sudo apt install -y php8.1 php8.1-fpm php8.1-mysql php8.1-gd php8.1-mbstring php8.1-xml php8.1-curl php8.1-zip
 
-# 安装MySQL/MariaDB
+# 安装 MySQL/MariaDB
 sudo apt install -y mysql-server
-# 或安装MariaDB
+# 或安装 MariaDB
 # sudo apt install -y mariadb-server
 
-# 安装Web服务器 (选择其一)
+# 安装 Web 服务器 (选择其一)
 sudo apt install -y nginx
 # sudo apt install -y apache2
 ```
@@ -36,36 +36,36 @@ sudo apt install -y nginx
 </TabItem>
 <TabItem value="centos" label="CentOS/Rocky Linux">
 
-## CentOS/Rocky Linux系统准备
+## CentOS/Rocky Linux 系统准备
 
-### 安装EPEL和Remi仓库
+### 安装 EPEL 和 Remi 仓库
 
 ```bash
-# EPEL仓库
+# EPEL 仓库
 sudo dnf install -y epel-release
 
-# Remi仓库
+# Remi 仓库
 sudo dnf install -y https://rpms.remirepo.net/enterprise/remi-release-8.rpm
 
 # 国内服务器推荐使用这一条
 sudo dnf install -y https://mirrors.tuna.tsinghua.edu.cn/remi/enterprise/remi-release-8.rpm
 ```
 
-#### 安装PHP和相关软件包
+#### 安装 PHP 和相关软件包
 
 ```bash
-# 启用PHP 8.1模块
+# 启用 PHP 8.1 模块
 sudo dnf module enable php:remi-8.1 -y
 
-# 安装PHP和扩展
+# 安装 PHP 和扩展
 sudo dnf install -y php php-fpm php-mysqlnd php-gd php-mbstring php-xml php-curl php-zip
 
-# 安装MySQL/MariaDB
+# 安装 MySQL/MariaDB
 sudo dnf install -y mysql-server
-# 或安装MariaDB
+# 或安装 MariaDB
 # sudo dnf install -y mariadb-server
 
-# 安装Web服务器
+# 安装 Web 服务器
 sudo dnf install -y nginx
 ```
 
@@ -80,26 +80,27 @@ sudo firewall-cmd --reload
 </TabItem>
 <TabItem value="windows" label="Windows">
 
-## Windows系统准备
+## Windows 系统准备
 
-### 使用XAMPP (推荐)
+### 使用 XAMPP (推荐)
 
-1. **下载XAMPP**
+1. **下载 XAMPP**
     - 访问 https://www.apachefriends.org/
-    - 下载最新版本 (包含PHP 8.1)
+    - 下载最新版本 (包含 PHP 8.1)
 
-2. **安装XAMPP**
+2. **安装 XAMPP**
     - 运行安装程序
-    - 选择Apache、MySQL、PHP组件
+    - 选择 Apache、MySQL、PHP 组件
     - 安装到默认路径 `C:\xampp`
 
 3. **启动服务**
-    - 打开XAMPP控制面板
-    - 启动Apache和MySQL服务
+    - 打开 XAMPP 控制面板
+    - 启动 Apache 和 MySQL 服务
 
-4. **配置PHP**
+4. **配置 PHP**
     - 编辑 `C:\xampp\php\php.ini`
     - 取消注释并启用必需扩展：
+
     ```ini
     extension=gd
     extension=mbstring
@@ -111,18 +112,18 @@ sudo firewall-cmd --reload
 
 ### 手动安装
 
-1. **安装PHP**
-    - 下载PHP 8.1 from https://windows.php.net/
+1. **安装 PHP**
+    - 下载 PHP 8.1 from https://windows.php.net/
     - 解压到 `C:\php`
     - 配置环境变量
 
-2. **安装MySQL**
-    - 下载MySQL Community Server
+2. **安装 MySQL**
+    - 下载 MySQL Community Server
     - 按向导安装配置
 
-3. **安装Web服务器**
-    - IIS：通过Windows功能启用
-    - 或下载Apache for Windows
+3. **安装 Web 服务器**
+    - IIS：通过 Windows 功能启用
+    - 或下载 Apache for Windows
 
 </TabItem>
 <TabItem value="shared" label="共享主机">
@@ -133,10 +134,10 @@ sudo firewall-cmd --reload
 
 - PHP 7.4+ (推荐 8.1)
 - MySQL 5.7+ 或 MariaDB 10.2+
-- 至少 100MB 存储空间
-- 支持 .htaccess (Apache) 或 URL重写
+- 至少 100 MB 存储空间
+- 支持 .htaccess (Apache) 或 URL 重写
 
-### 检查PHP扩展
+### 检查 PHP 扩展
 
 创建 `phpinfo.php` 文件检查：
 
@@ -163,17 +164,17 @@ sudo systemctl enable --now mysql
 sudo systemctl enable --now nginx
 ```
 
-## 配置SELinux (如果启用)
+## 配置 SELinux (如果启用)
 
 ```bash
-# 允许Web服务器连接数据库
+# 允许 Web 服务器连接数据库
 sudo setsebool -P httpd_can_network_connect_db 1
 
-# 允许Web服务器连接网络
+# 允许 Web 服务器连接网络
 sudo setsebool -P httpd_can_network_connect 1
 ```
 
-当然你可以选择直接关闭(推荐)
+当然你可以选择直接关闭 (推荐)
 
 ```bash
 sed -i "s#=enforcing#=disabled#g" /etc/selinux/config
@@ -182,7 +183,7 @@ sed -i "s#=enforcing#=disabled#g" /etc/selinux/config
 ## 配置数据库
 
 ```bash
-# 安全配置MySQL
+# 安全配置 MySQL
 sudo mysql_secure_installation
 
 # 创建数据库和用户
@@ -199,9 +200,9 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-## 配置PHP
+## 配置 PHP
 
-打开 `php.ini`,重要配置项：
+打开 `php.ini`，重要配置项：
 
 ```ini
 max_execution_time = 300

@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # 文本编辑器
 
-一个好用的文本编辑器是**相当**重要的，本文将介绍几个开服常用的文本编辑器。
+一个好用的文本编辑器是 **相当** 重要的，本文将介绍几个开服常用的文本编辑器。
 
 :::warning
 
@@ -37,11 +37,11 @@ sidebar_position: 2
 
 ![](_images/白点.png)
 
-VSCode 会在未保存的文件后标记一个白点，提示你这个文件编辑了但是没有保存 (其他文本编辑器类似)。
+VS Code 会在未保存的文件后标记一个白点，提示你这个文件编辑了但是没有保存 (其他文本编辑器类似)。
 
-![](_images/vscode保存和自动保存.png)
+![](_images/vscode保存和自动保存.png) <!-- autocorrect-disable space-word -->
 
-保存按钮 (红色箭头)，也可以用快捷键来保存 Ctrl + S。
+保存按钮 (红色箭头)，也可以用快捷键来保存 `Ctrl + S`。
 
 开启自动保存 (绿色箭头)。
 
@@ -51,7 +51,7 @@ VSCode 会在未保存的文件后标记一个白点，提示你这个文件编�
 
 [下载龟速怎么办](https://cn.bing.com/search?q=vscode%E4%B8%8B%E8%BD%BD%E9%BE%9F%E9%80%9F%E6%80%8E%E4%B9%88%E5%8A%9E)
 
-[VSCode 视频安装教程](https://www.bilibili.com/video/BV1nM4m117Fv/?share_source=copy_web)
+[VS Code 视频安装教程](https://www.bilibili.com/video/BV1nM4m117Fv/?share_source=copy_web)
 
 </details>
 
@@ -60,7 +60,7 @@ VSCode 会在未保存的文件后标记一个白点，提示你这个文件编�
 <details>
   <summary>点击展开</summary>
 
-![Sublime Text](_images/sublime展示.png)
+![Sublime Text](_images/sublime展示.png) <!-- autocorrect-disable space-word -->
 
 我不太喜欢的一点是保存文件时，对非激活的用户有一定概率弹出个窗口，提示你去付费支持 (可以选择不支持)。但这依旧是一个非常优秀的文本编辑器。
 
@@ -103,7 +103,7 @@ GitHub: https://github.com/rizonesoft/Notepad3
 <details>
   <summary>点击展开</summary>
 
-![NPPesu](_images/Npp展示.png)
+![NPPesu](_images/Npp展示.png) <!-- autocorrect-disable space-word -->
 
 可用，相关功能也较为完善。
 
@@ -111,7 +111,7 @@ GitHub: https://github.com/rizonesoft/Notepad3
 
 作者政治立场可能引起众怒，但请理性看待：
 
-[notepad++](http://www.notepadplus.com.cn/) 台独 + 多次辱 H [这里](https://cn.bing.com/search?q=notepad%252B%252B%E8%BE%B1%E5%8D%8E)。
+[Notepad++](http://www.notepadplus.com.cn/) 台独 + 多次辱 H [这里](https://cn.bing.com/search?q=notepad%252B%252B%E8%BE%B1%E5%8D%8E)。
 
 dizhi 08 年奥运会 声称 (仅声明，但还是挺过分的) 不同意它的政治观点就在你的源码中添加随机字符 [这里](https://zhuanlan.zhihu.com/p/609192758)。
 
@@ -126,7 +126,7 @@ dizhi 08 年奥运会 声称 (仅声明，但还是挺过分的) 不同意它的
 <details>
   <summary>点击展开</summary>
 
-![Notepad--](_images/N减减展示.png)
+![Notepad--](_images/N减减展示.png) <!-- autocorrect-disable space-word -->
 
 国内作者维护的 Notepad++ 的替代品。
 
@@ -140,7 +140,7 @@ dizhi 08 年奥运会 声称 (仅声明，但还是挺过分的) 不同意它的
 <details>
   <summary>点击展开</summary>
 
-![HbuilderX](_images/HbuilderX展示.png)
+![HbuilderX](_images/HbuilderX展示.png) <!-- autocorrect-disable space-word -->
 
 官网链接：https://dcloud.io/hbuilderx.html
 
@@ -154,7 +154,7 @@ dizhi 08 年奥运会 声称 (仅声明，但还是挺过分的) 不同意它的
 
 ### 关联右键菜单？
 
-可以在工具→设置 (Ctrl+Alt+，) 打开设置，找到“常用配置”手动选中【关联右键菜单】。
+可以在工具→设置 (Ctrl + Alt + ，) 打开设置，找到“常用配置”手动选中【关联右键菜单】。
 
 </details>
 

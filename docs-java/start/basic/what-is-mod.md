@@ -5,11 +5,11 @@ sidebar_position: 5
 
 # 什么是模组？
 
-模组 ( Mod ) 是遵循 Forge、Fabric 或 LiteLoader 等 API 规范编写的 Java 程序。
+模组 (Mod) 是遵循 Forge、Fabric 或 LiteLoader 等 API 规范编写的 Java 程序。
 
 ## 工作形式
 
-Minecraft 模组 ( Mod ) 一般来说模组会利用 Forge 或 Fabric 作为前置开发，通过反编译 Minecraft Java 源代码了解 Minecraft 干了什么，
+Minecraft 模组 (Mod) 一般来说模组会利用 Forge 或 Fabric 作为前置开发，通过反编译 Minecraft Java 源代码了解 Minecraft 干了什么，
 
 进而删减或修改内容以实现新的功能。删减或修改内容既可以是服务端，也可以是客户端。因而相较插件只能修改部分服务端的内容要有更大的功能性。
 

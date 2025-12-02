@@ -21,15 +21,15 @@ MCSManager 是一款免费，易用，现代化的游戏服务器管理面板，
 
 #### Windows
 
-首先，点击[此链接](https://cdn.imlazy.ink:233/files/mcsmanager_windows_release.zip) 一键下载到本地后解压
+首先，点击 [此链接](https://cdn.imlazy.ink:233/files/mcsmanager_windows_release.zip) 一键下载到本地后解压
 
 解压之后，你就可以看到 `start.bat`，打开就可以启动 (就是这么简单)
 
-关闭面板只需分别进入两个终端执行 `Ctrl+C` 即可。
+关闭面板只需分别进入两个终端执行 `Ctrl + C` 即可。
 
 若需要设置开机自启动，可采用这种方法：
 
-1. 在[微软官方网站](https://learn.microsoft.com/zh-cn/sysinternals/downloads/autologon)上下载 Autologon 程序并按照页面介绍配置好开机自动登录。
+1. 在 [微软官方网站](https://learn.microsoft.com/zh-cn/sysinternals/downloads/autologon) 上下载 Autologon 程序并按照页面介绍配置好开机自动登录。
 2. 为上文所述的 `start.bat` 创建一个快捷方式，并将这个快捷方式移动至 `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`。
 3. 重新启动并验证效果（可选），然后在面板的实例设置中启用实例的自动启动功能。
 
@@ -91,7 +91,7 @@ ln -s /opt/node-v20.11.0-linux-x64/bin/npm /usr/bin/npm
 mkdir /opt/mcsmanager/
 cd /opt/mcsmanager/
 
-# 下载 MCSManager(如果无法下载可以先科学上网下载再上传到服务器)
+# 下载 MCSManager (如果无法下载可以先科学上网下载再上传到服务器)
 wget https://github.com/MCSManager/MCSManager/releases/latest/download/mcsmanager_linux_release.tar.gz
 
 # 解压到安装目录
@@ -100,9 +100,9 @@ tar -zxf mcsmanager_linux_release.tar.gz
 
 启动方式
 
-:::tip Screen
+:::tip screen
 
-关于 Screen 的教程，你可以看[这个](https://blog.csdn.net/u012964600/article/details/136968398)
+关于 screen 的教程，你可以看 [这个](https://blog.csdn.net/u012964600/article/details/136968398)
 
 :::
 
@@ -110,7 +110,7 @@ tar -zxf mcsmanager_linux_release.tar.gz
 # 安装依赖库
 ./install.sh
 
-# 请使用 Screen 程序打开两个终端窗口 (或者其他接管程序)
+# 请使用 screen 程序打开两个终端窗口 (或者其他接管程序)
 
 # 先启动节点程序
 ./start-daemon.sh

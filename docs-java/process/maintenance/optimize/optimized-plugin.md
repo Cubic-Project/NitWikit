@@ -147,7 +147,7 @@ Paper 酱为你在 `/config/paper-world-default.yml` 中准备了爆炸优化。
 1. ChunkAnalyser -
    简单的搜索世界的红石，漏斗，实体之类，有很多平替插件如 [Insights](https://modrinth.com/plugin/insights)/ [Entitydetection](https://www.spigotmc.org/resources/entitydetection-tile-entity-support.20588/)；
 
-2. LagMonitor，LagMap，Benchmark - 很鸡肋的性能检测 (不如 [Spark](performance-analysis.md#spark) )；
+2. LagMonitor，LagMap，Benchmark - 很鸡肋的性能检测 (不如 [Spark](performance-analysis.md#spark))；
 
 3. RedstoneCuller -
    直接破坏红石机器，平替插件 [AntiRedstoneClock](https://hangar.papermc.io/OneLiteFeather/AntiRedstoneClock-Remastered)；

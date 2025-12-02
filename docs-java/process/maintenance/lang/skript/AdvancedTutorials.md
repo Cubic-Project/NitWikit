@@ -350,7 +350,7 @@ on EnderDragonChangePhaseEvent:
 
 :::warning
 
-一些插件使用自己的事件处理系统，或者不通过 **Bukkit** 的事件执行器传递他们的事件 ( **Skript** 的一些内部事件就是这种情况)。
+一些插件使用自己的事件处理系统，或者不通过 **Bukkit** 的事件执行器传递他们的事件 (**Skript** 的一些内部事件就是这种情况)。
 
 为了侦听事件，它必须扩展`org.bukkit.event.Event`并由 **Bukkit** 的事件执行器执行。
 

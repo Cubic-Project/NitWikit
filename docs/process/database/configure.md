@@ -32,11 +32,11 @@ port = 3306
 
 socket = /tmp/mysql.sock
 
-#设置 mysql 的安装目录，别动
+#设置 MySQL 的安装目录，别动
 
 basedir=F:\\Hzq Soft\\MySql Server 51GA
 
-#设置 mysql 数据库的数据的存放目录，如果你觉得原来存放数据库的地方不够用了可以迁到其他地方去
+#设置 MySQL 数据库的数据的存放目录，如果你觉得原来存放数据库的地方不够用了可以迁到其他地方去
 
 #但是要注意把原来的存放目录里面的东西迁移到那个地方去
 
@@ -46,7 +46,7 @@ datadir=F:\\Hzq Soft\\MySql Server 51GA\\data
 
 #innodb_log_group_home_dir  默认 datadir
 
-#设置 mysql 服务器的字符集，默认编码
+#设置 MySQL 服务器的字符集，默认编码
 
 default-character-set=utf8
 
@@ -92,7 +92,7 @@ join_buffer_size = 32M
 
 thread_cache_size = 8
 
-#并发线程数量，默认为 8，可适当增加到 2 倍以内。如果有多个 CPU 可以乘 上 CPU 的数量。双核 CPU 可以乘 上当前最核数再乘 上 70%-85%
+#并发线程数量，默认为 8，可适当增加到 2 倍以内。如果有多个 CPU 可以乘 上 CPU 的数量。双核 CPU 可以乘 上当前最核数再乘 上 70%～85%
 
 thread_concurrency = 16
 
@@ -112,7 +112,7 @@ query_cache_limit = 2M
 
 default-storage-engine = InnoDB
 
-#线程堆栈大小，mysql 说它自己用的堆栈大小不超过 64K。这个值可适当设高一点 (在 RCA 的项目中都是共用同一个数据库连接的)，默认 192K
+#线程堆栈大小，MySQL 说它自己用的堆栈大小不超过 64K。这个值可适当设高一点 (在 RCA 的项目中都是共用同一个数据库连接的)，默认 192K
 
 thread_stack = 800K
 
@@ -164,7 +164,7 @@ bulk_insert_buffer_size = 64M
 
 myisam_max_sort_file_size = 12G
 
-#如果一个 myisam 表有一个以上的索引，MyISAM 可以使用一个以上线程来排序并行它们。较耗硬件资源，如果你的环境不错，可以增加此值。
+#如果一个 MyISAM 表有一个以上的索引，MyISAM 可以使用一个以上线程来排序并行它们。较耗硬件资源，如果你的环境不错，可以增加此值。
 
 myisam_repair_threads = 2
 
@@ -172,9 +172,9 @@ myisam_repair_threads = 2
 
 myisam_recover
 
-# *** INNODB Specific options ***
+# *** InnoDB Specific options ***
 
-#开启下条将会禁用 INNODB
+#开启下条将会禁用 InnoDB
 
 #skip-innodb
 
@@ -182,7 +182,7 @@ myisam_recover
 
 innodb_additional_mem_pool_size = 16M
 
-#innodb 整体缓冲池大小，不宜过大，设为本地内存的 50%-75% 比较合适，在本机开发过程中可以设得较小一点如 64M，256M
+#InnoDB 整体缓冲池大小，不宜过大，设为本地内存的 50%～75% 比较合适，在本机开发过程中可以设得较小一点如 64M，256M
 
 innodb_buffer_pool_size = 256M
 

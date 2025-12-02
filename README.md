@@ -14,17 +14,14 @@
 
 这是一份适用于游戏 [Minecraft](https://www.minecraft.net/zh-hans) [Java 版](https://zh.minecraft.wiki/w/Java%E7%89%88)
 及 [Bedrock (基岩) 版](https://zh.minecraft.wiki/w/%E5%9F%BA%E5%B2%A9%E7%89%88)
-的服务器开服教程，在这里，你可以看到由众多用户经验编制而成的各色教程，希望它们可以成为你开服路上的一份趁手资料，也希望你能运营一个不错的服务器——一切皆有可能。动动手指来阅读第一章的内容吧。
+的服务器开服教程，在这里，你可以看到由众多用户经验编制而成的各色教程，希望它们可以成为你开服路上的一份趁手资料，也希望你能运营一个不错的服务器 —— 一切皆有可能。动动手指来阅读第一章的内容吧。
 
 # 📖 开始阅读
 
 - Docusaurus 主题：https://nitwikit.8aka.org
-- VitePress 主题：https://nitwikit2.8aka.org
-- [![](https://img.shields.io/badge/QQ群-1074062482-54B4EF?logo=data:image/png;base64,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)](https://qm.qq.com/q/uiv3CPi00w) <-点击加入
+- [![](https://img.shields.io/badge/QQ群-1074062482-54B4EF?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABsCAMAAAC4uKf/AAAAAXNSR0IArs4c6QAAAAlwSFlzAAAhOAAAITgBRZYxYAAAAJlQTFRFR3BMAAAAAAAAAAAA+q0INAUHAAAAAAAAAAAAAAAA5Z8HAAAA+K0HAAAA+qoK6yYv+q4I9q0GxBcf6hsm6BsmAAAAAAAA////6hwm+a4I+OnqhYWFQ0NDEgwKICAgOi4YY0UDYGBg83J5zMbGsRUdvoQG39/foKCg1xki8JWaNgYJJxsBcHBwYwsQh14EiRAWpnMF8E5XsLCww/r98QAAABZ0Uk5TAN2k74AQZUTDI/yAXZAY+Lg5wHU4j99m7pMAAAQqSURBVHja7ZrbdqIwFIYHKIrHqu1sFAgREfCs9f0fbgQJCaI1J9fc+F2VuvRz7/zJCsE/b9684aTTaed0Xu2xW6ZjAcExW53XmRxo4LzEZ/csuI+pXdey4CFGT28mHPgVQ2NxbQueYLS1tRA46OlycdHS0kPgpK0hGxZwYqmnxABuHFvR1QOG4BxnIVSEfhxHwPBXsYnA4LsXPAwl2MuvfWBQa6QDlMgt8FBZV+oWBEBxtCWx+HBaS1Zexs1EqheGXbdWmkeuMVuapsJ2RRlBkF4bF7iEnZ7SzEY8wtwSle44CgI/rUdkIOuygSUj45P6V7cPKMxjkwGDZWtZFP1KtisqO+f/8TJSGaGlo4sQlW0MyZjFLs2+ekQsYEFFQDCO3fB6SQih0Uf15Z5Ucq5fZloW/x7UCT1aCZ13Xgh1eqozml2votrE8yK4wVQaMkqYxVlQu/RDuMWSm2WS2FL5kKSjZZ+znR9Op6TbnRV0u0lyOuAt3NJSDiM+JKWkQXLAynEcAGVORA/ozhXjaDKu2VPmajKHGazTM1eyVZVx9zHBwOBIy6gu4VCpy2jyk3tRRAB6ZdR3YoTd05wMlV4ZBW3x/ALe0pLUZZM9Ahn2E3HX93Q6XR73GxAA7Y+ry9u+xQubXlnxGTf74zIX5XyJuuzPKSVXLvf7zQY1atls9qWG8mkLyr6mD1itliUromjwJdxFBSai8VDiW7AwJb4E46GGLReP15c2Wam5VhOh2/bNcSlrWh43Iptwk6wKy5VgRbmoYCB10LJe/HCl5fNnsUZQYUltTz3X9Z5ZFuvYy/f9MjczJlCQeyP7Wa8XBeuc2PNcCgKKKbHJx7eyhfuYUPymsAUMgYgsEN+Fm9KySHx3YAFDJCYT7WMb9MigLdpF8EVkPoge9ji6ZAbXusiyk5dBh2PIlMZMLPwDJZngoDkKskB0Hw4lFjOpmZX/c/1cZpGP4M2HUbYzdCu8C+6v4LJ9BkkIZz5aZIV0BSDvbXNO69JhVtaU3xVXjkFp5Tr9MOyqnxm/7Fx1zza4TkQGVbMtMqu52dGVo82VfbP6RiZJCDeYDAEZDvNZG8kXEh+0tBYLk6ONLbqAWmQp5sSvrb+28zwgNph2LSuAeGUh1FJhm89XYpv+ZZGTZy6yxvPBjsQhYCBYmBRktoAvUJih+pQJpRxRDJUfIA+4GxmQJqo/rduJxf61w+br+T1Dh9gEXOq2IH2YjUCTa9gfkZPtMHtQFiInu6O+kupjlnNAD3UeeRiDDsVx52iopmKP7VF0ThlTFiG4gruzkg851+j+oTMKop3v76IgBAJOZpSuTHGli1aH4C7o9pz6Q0FGuXP+vJ03H9GMJGRjaqN0k8McY2wY+an04URFjGssGZFxv//B0L8wHg+HxWvD8Xjcv319PHz/lvDNm//LP6Sx2t995a2wAAAAAElFTkSuQmCC)](https://qm.qq.com/q/uiv3CPi00w) <- 点击加入
 
-- [![](https://img.shields.io/discord/1342805340839870514.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.com/invite/jN4Br8uhSS) <-Click to Join
-
-![:NitWikit](https://count.kjchmc.cn/get/@:NitWikit)
+- [![](https://img.shields.io/discord/1342805340839870514.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.com/invite/jN4Br8uhSS) <- Click to Join
 
 # 🔖 其他地址
 
@@ -35,7 +32,7 @@
 - [klpbbs](https://klpbbs.com/forum.php?mod=viewthread&tid=136184&page=1&extra=#pid10518779)
 - [九域](https://bbs.mc9y.net/threads/1624/)
 - [暮光方块论坛](https://bbs.tsfk.top/threads/399/)
-- [mcbbs纪念版](https://mcbbs.co/thread-103-1-1.html)
+- [mcbbs 纪念版](https://mcbbs.co/thread-103-1-1.html)
 - [mcutc 论坛](https://bbs.mcutc.cn/threads/560/)
 - [HiMCBBS](https://www.himcbbs.com/threads/nitwikit-geyser.420/)
 
@@ -46,7 +43,7 @@
 
 1. 将此仓库克隆至本地
    `git clone https://github.com/Cubic-Project/NitWikit.git`
-   更快的克隆(推荐)
+   更快的克隆 (推荐)
    `git clone --single-branch --depth 1 -b main https://github.com/Cubic-Project/NitWikit.git`
 2. 移动至仓库根目录
    `cd NitWikit`
@@ -87,10 +84,10 @@
 
 - 你不能声称这是你的作品
 - 未经作者允许，你不得将本作品用于如下途径：
-    - 改编或转载
-    - 盈利
+  - 改编或转载
+  - 盈利
 - 你可以将本作品在不经授权的情况下用于：
-    - 带有出处的引用
+  - 带有出处的引用
 
 如果你希望部署你自己的文档副本，可以
 

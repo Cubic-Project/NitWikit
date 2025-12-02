@@ -181,7 +181,7 @@ Skript 仍然是编程语言，所有的编程语言都必须在拥有理论基�
 
 ### 文本编辑器
 
-推荐使用 Vscode 安装 Skript 拓展。或者使用 [Skeditor](https://forums.skunity.com/resources/skeditor.1517/)高亮语法。
+推荐使用 VS Code 安装 Skript 拓展。或者使用 [Skeditor](https://forums.skunity.com/resources/skeditor.1517/)高亮语法。
 
 ### Helloworld
 

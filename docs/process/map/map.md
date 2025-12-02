@@ -240,9 +240,9 @@ sidebar_position: 7
 
 :::warning
 
-由于基岩版生态的问题，为了保证效率和质量，你应该在 JAVA 版完成建筑再将其转移到基岩版，而不是使用有限的工具折磨自己
+由于基岩版生态的问题，为了保证效率和质量，你应该在 Java 版完成建筑再将其转移到基岩版，而不是使用有限的工具折磨自己
 
-若你无法使用 Minecraft JE，尝试使用 **[Geyser](https://geysermc.org/)** 来进入为自己搭建的 JAVA 版工程服
+若你无法使用 Minecraft JE，尝试使用 **[Geyser](https://geysermc.org/)** 来进入为自己搭建的 Java 版工程服
 
 [点击转跳到 `将地图转移到基岩版`](./convert.md#将地图转移到基岩版)
 
@@ -294,14 +294,14 @@ sidebar_position: 7
 
 ### 关于世界规则
 
-大量使用树叶，又不想关闭随机刻？请使用 persistent=true 的树叶
+大量使用树叶，又不想关闭随机刻？请使用 `persistent=true` 的树叶
 
 使用浮空植物？请关闭随机刻放置方块更新
 
 :::info
 
-以上问题可使用 **[WorldGuard](https://modrinth.com/plugin/worldguard/)** 插件的 /stoplag 指令停止物理事件
+以上问题可使用 **[WorldGuard](https://modrinth.com/plugin/worldguard/)** 插件的 `/stoplag` 指令停止物理事件
 
-基岩版的不腐烂树叶是 persistent_bit=true
+基岩版的不腐烂树叶是 `persistent_bit=true`
 
 :::

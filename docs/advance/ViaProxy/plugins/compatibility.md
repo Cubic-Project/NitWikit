@@ -118,7 +118,8 @@ BungeeViaProxy 通过确保正确的主机名转发和避免重复服务器错�
     ```
 
 2. **重启 BungeeCord 服务器**
-    ```bash
+
+    ```text
     # 无需额外配置，插件会自动处理 .f2.viaproxy. 地址
     ```
 
@@ -136,11 +137,12 @@ BungeeViaProxy 通过确保正确的主机名转发和避免重复服务器错�
 
 #### BungeeCord 配置 (config.yml)
 
+<!-- autocorrect-disable -->
 ```yaml
 online_mode: true
 servers:
     server1:
-        # ViaProxy 地址格式: address.<后端IP>.port.<后端端口>.version.<版本>.f2.viaproxy.<ViaProxy IP>.nip.io:<ViaProxy端口>
+        # ViaProxy 地址格式: address.<后端 IP>.port.<后端端口>.version.<版本>.f2.viaproxy.<ViaProxy IP>.nip.io:<ViaProxy 端口>
         address: address.127.0.0.1.port.3001.version.1.20.4.f2.viaproxy.127.0.0.1.nip.io:25566
         motd: "&1示例服务器 1"
         restricted: false
@@ -158,6 +160,7 @@ listeners:
 prevent_proxy_connections: false
 ip_forward: true
 ```
+<!-- autocorrect-enable -->
 
 #### ViaProxy 配置 (config.yml)
 
@@ -208,7 +211,7 @@ settings:
 ViaProxy 的 `wildcard-domain-handling` 功能允许单个实例处理多个后端服务器的连接，使用特定的地址格式：
 
 ```text
-address.<后端IP>.port.<后端端口>.version.<版本>.f2.viaproxy.<ViaProxy IP>.nip.io:<ViaProxy端口>
+address.<后端 IP>.port.<后端端口>.version.<版本>.f2.viaproxy.<ViaProxy IP>.nip.io:<ViaProxy 端口>
 ```
 
 这些地址可以在 BungeeCord 的 `config.yml` 中列出，通过单个 ViaProxy 实例实现无缝连接管理。
@@ -265,7 +268,7 @@ ViaSnapshot 支持 Minecraft 快照版本的协议转换，目前支持 15w31a �
 
 ViaProxyEaglerCraft 为 ViaProxy 添加 EagleCraft 支持，允许 EagleCraft 客户端通过 WebSocket 连接到 Java 版服务器。
 
-### EaglerCraft 安装配置
+### ViaProxyEaglerCraft 安装配置
 
 #### 配置文件
 

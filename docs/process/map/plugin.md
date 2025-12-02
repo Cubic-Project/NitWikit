@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## 城市生成
 
-### Ouranos(付费)
+### Ouranos (付费)
 
 Ouranos 是一个 Java 版的城市生成插件，可以用来无限的城市地形，生成的城市偏向中世纪风格
 
@@ -19,7 +19,7 @@ Ouranos 是一个 Java 版的城市生成插件，可以用来无限的城市地
 
 ![](_images/825a21073ee817018bffff06e55d12da55b2a5b0.png)
 
-### Arnis(免费)
+### Arnis (免费)
 
 Arnis 是一个通过 OpenStreetMap 将现实世界的城市转换到 Minecraft 中的软件，可以自己选择转换的坐标
 
@@ -35,13 +35,13 @@ Arnis 是一个通过 OpenStreetMap 将现实世界的城市转换到 Minecraft 
 
 :::
 
-### DungeonMMO(付费)
+### DungeonMMO (付费)
 
 DungeonMMO 是一个 Java 版的地下城生成插件，自带一些模版，每次运行后，每个地下城都将被更新，所以你将永远不会看到相同的地下城
 
 [购买地址](https://www.spigotmc.org/resources/106150/)
 
-### MythicDungeons(付费)
+### MythicDungeons (付费)
 
 同样的地下城生成插件，但是没有模版
 
@@ -49,7 +49,7 @@ DungeonMMO 是一个 Java 版的地下城生成插件，自带一些模版，每
 
 ## 迷宫生成
 
-### Tangled Maze Plus(付费)
+### Tangled Maze Plus (付费)
 
 一个迷宫生成插件，可以生成复杂的迷宫和奖励箱
 
@@ -63,7 +63,7 @@ DungeonMMO 是一个 Java 版的地下城生成插件，自带一些模版，每
 
 地形生成可以生成更加好看的地形，由于这类插件较多，就不单独介绍了，以下是还在更新的
 
-- Terra(免费) [下载地址](https://modrinth.com/plugin/terra)
+- Terra (免费) [下载地址](https://modrinth.com/plugin/terra)
 
 ![](_images/356845062-1de0bbf4-7d26-4beb-b010-2f4d88efdba4.png)
 
@@ -73,13 +73,13 @@ DungeonMMO 是一个 Java 版的地下城生成插件，自带一些模版，每
 
 ![](_images/iris.png)
 
-- TerraformGenerator(付费/免费) [购买地址](https://www.spigotmc.org/resources/98309/)
+- TerraformGenerator (付费/免费) [购买地址](https://www.spigotmc.org/resources/98309/)
 
 ![](_images/erra.jpg)
 
 ![](_images/terra2.png)
 
-- Stratos(付费) [购买地址](https://www.spigotmc.org/resources/80313/)
+- Stratos (付费) [购买地址](https://www.spigotmc.org/resources/80313/)
 
 ![](_images/st.png)
 

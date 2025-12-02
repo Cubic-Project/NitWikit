@@ -8,7 +8,7 @@ import GlobalContent from '@site/src/components/GlobalContent'
 
 # 笨蛋服务
 
-这些服务由赛博菩萨 cloudflare 和 lilingfeng 搭建，完全免费提供！
+这些服务由赛博菩萨 Cloudflare 和 lilingfeng 搭建，完全免费提供！
 
 目前包括
 
@@ -25,7 +25,7 @@ import GlobalContent from '@site/src/components/GlobalContent'
 
 **不要滥用，不要上传违法文件!!!!!**
 
-图床最大上传 20MB 的图片或视频
+图床最大上传 20 MB 的图片或视频
 
 ## 免费域名
 
@@ -37,4 +37,4 @@ import GlobalContent from '@site/src/components/GlobalContent'
 
 对于文档中一些下载慢的资源可以申请提供下载镜像，如果已有镜像，在经过安全性评估后会在文档中提供，如果没有，会提供笨蛋文档维护的镜像
 
-官方下载镜像域名`dl.8aka.org`
+官方下载镜像域名 `dl.8aka.org`

@@ -101,9 +101,9 @@ TrMenu 入门学习文档
 
 ![](_images/TrMenu/trm一定要看wiki呐.jpg)
 
-## vscode 插件
+## VS Code 插件
 
-与 TrMenu 或 [kether](/Java/lang/kether) 有关的 vscode 插件
+与 TrMenu 或 [kether](/Java/lang/kether) 有关的 VS Code 插件
 
 - [TrMenu-Helper](https://marketplace.visualstudio.com/items?itemName=hhhhhy.trmenu-helper)
 

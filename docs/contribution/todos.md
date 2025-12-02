@@ -93,7 +93,7 @@ sidebar_position: 100
 - [ ] git 管理服务端？
 - [x] 二分法和控制变量法排查问题
 - [x] Q 机器人教程？
-- [x] 搭建 Frp
+- [x] 搭建 frp
 - [x] MiniMessage 简单讲解
 - [x] 怎么支持中文名的玩家
 - [x] 编码问题以及如何解决
@@ -154,3 +154,9 @@ sidebar_position: 100
 
 - [ ] /advance/bot.md 内 TODO
 - [ ] 更新 Gensokyo 的 GitHub 链接到 https://github.com/Hoshinonyaruko/Gensokyo-MCP
+- [ ] 搜索所有 包含 Ubuntu / Redhat 的 tabs，规范顺序
+- [ ] 搜索并检查所有括号 () 和 并列顿号的使用 (是否用成逗号了)
+- [ ] 搜索并列出所有文档内 TODO (搜索 `<!-- -->`)
+- [ ] 是否需要去除所有文档开头的 # 标题，因为已经在 title 内定义，不确定是否要去除这个以减少冗余
+- [ ] 更新 Cloudflare 高防信息，400 多 Tbps 了
+- [ ] 可能仍存在部分货币格式不规范
