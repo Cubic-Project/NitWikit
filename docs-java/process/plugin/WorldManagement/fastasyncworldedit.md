@@ -17,7 +17,7 @@ sidebar_label: FAWE - FastAsyncWorldEdit
   <img src="https://badges.crowdin.net/e/4a5819fae3fd88234a8ea13bfbb072bb/localized.svg" class="stylish-image" alt="Crowdin" />
 </a>
 
-> 异步创世神，可以直接无脑把 [WorldEdit](./WorldEdit.md) 替换掉
+> 异步创世神，可以直接无脑把 [WorldEdit](./worldedit.md) 替换掉
 
 FastAsyncWorldEdit 是 WorldEdit 的异步优化版本
 

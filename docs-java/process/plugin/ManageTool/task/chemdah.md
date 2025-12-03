@@ -25,7 +25,7 @@ sidebar_position: 1
 
 官方文档并不完善，使用此插件你可能需要付费购买第三方文档（WTF？？）
 
-如果你对这一切感到不满，可以试试竞品 [TypeWriter](TypeWriter.md)
+如果你对这一切感到不满，可以试试竞品 [TypeWriter](typewriter.md)
 
 ## Bstats
 

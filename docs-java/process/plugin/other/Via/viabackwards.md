@@ -17,7 +17,7 @@ sidebar_position: 3
 
 :::
 
-Via 三件套中的向下兼容，需要安装 [ViaVersion](ViaVersion.md) 作为前置
+Via 三件套中的向下兼容，需要安装 [ViaVersion](viaversion.md) 作为前置
 
 [ViaBackwards 构建站](https://ci.viaversion.com/view/ViaBackwards/job/ViaBackwards/)
 

@@ -116,7 +116,7 @@ NitWikit 支持多种编程语言的语法高亮，包括但不限于：
 - SQL/JSON/YAML/TOML
 - Shell 脚本/Bash
 - Docker/Nginx/Apache
-- 更多语言请查看[Prism.js 支持的语言列表](https://prismjs.com/#supported-languages)
+- 更多语言请查看 [Prism.js 支持的语言列表](https://prismjs.com/#supported-languages)
 
 ## 使用示例
 

@@ -21,7 +21,7 @@ sidebar_position: 2
 
 :::
 
-ViaVersion 是 Via 三件套的核心，提供了向上兼容，如果你想要向下兼容，可以再安装 [ViaBackwards](ViaBackwards.md) 和 [ViaRewind](ViaRewind.md)
+ViaVersion 是 Via 三件套的核心，提供了向上兼容，如果你想要向下兼容，可以再安装 [ViaBackwards](viabackwards.md) 和 [ViaRewind](viarewind.md)
 
 [ViaVersion 构建站](https://ci.viaversion.com/job/ViaVersion)
 

@@ -12,17 +12,17 @@ sidebar_label: 商店 - QuickShop
 
 ~~用此插件做系统商店的通常是些新手服主或半吊子人~~
 
-[QuickShop](QuickShop.md#quickshop) 原本由 [KaiKikuchi](https://github.com/KaiKikuchi) 维护
+[QuickShop](quickshop.md#quickshop) 原本由 [KaiKikuchi](https://github.com/KaiKikuchi) 维护
 
-弃坑之后 [Ghost-chu](https://github.com/Ghost-chu) fork 接手并做了 [QuickShop-Reremake](QuickShop.md#quickshop-reremakeghost-chupotatocraft-studio)
+弃坑之后 [Ghost-chu](https://github.com/Ghost-chu) fork 接手并做了 [QuickShop-Reremake](quickshop.md#quickshop-reremakeghost-chupotatocraft-studio)
 
 ~~Ghost-chu 大佬放弃维护后曾在某群抱怨这么多人用这个插件，连个 star 都不愿意点~~
 
-[PotatoCraft-Studio](https://github.com/PotatoCraft-Studio) 团队 fork 了 [Ghost-chu](https://github.com/Ghost-chu) 大佬的仓库，维护 [PotatoCraft-Studio](https://github.com/PotatoCraft-Studio) 版本的 [QuickShop-Reremake](QuickShop.md#quickshop-reremakeghost-chupotatocraft-studio)
+[PotatoCraft-Studio](https://github.com/PotatoCraft-Studio) 团队 fork 了 [Ghost-chu](https://github.com/Ghost-chu) 大佬的仓库，维护 [PotatoCraft-Studio](https://github.com/PotatoCraft-Studio) 版本的 [QuickShop-Reremake](quickshop.md#quickshop-reremakeghost-chupotatocraft-studio)
 
 但是看起来很久没更新了，大概也弃坑了
 
-[PotatoCraft-Studio](https://github.com/PotatoCraft-Studio) 团队的 [QuickShop-Reremake](QuickShop.md#quickshop-reremakeghost-chupotatocraft-studio) 的后续版本 [QuickShop-Hikari](QuickShop.md#quickshop-hikari) 目前由 [creatorfromhell](https://github.com/creatorfromhell) 维护
+[PotatoCraft-Studio](https://github.com/PotatoCraft-Studio) 团队的 [QuickShop-Reremake](quickshop.md#quickshop-reremakeghost-chupotatocraft-studio) 的后续版本 [QuickShop-Hikari](quickshop.md#quickshop-hikari) 目前由 [creatorfromhell](https://github.com/creatorfromhell) 维护
 
 :::info
 

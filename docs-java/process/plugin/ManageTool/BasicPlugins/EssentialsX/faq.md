@@ -11,4 +11,4 @@ sidebar_position: 7
 
 🏆来的我不是叫你不要装 ess 全家桶？
 
-删了你的 EssentialsXAntiBuild 或者看 [这里](../../Permission/Tips.md)
+删了你的 EssentialsXAntiBuild 或者看 [这里](../../Permission/tips.md)

@@ -136,7 +136,7 @@ XanMod Linux 内核融合了许多优化补丁，包括许多来自 Cloudflare,G
 
     输出结果
 
-    ```bash
+    ```text
     CPU supports x86-64-v4
     ```
 

@@ -7,7 +7,7 @@ sidebar_position: 2
 
 插件的配置文件一般在 `/plugins/插件名字/` 文件夹中，常见的配置文件一般是 `config.yml` 。
 
-> 插件一般会使用 **YAML** 作为配置文件格式，建议先学习 [YAML](../../../advance/YAML/YAML.md) 语法。
+> 插件一般会使用 **YAML** 作为配置文件格式，建议先学习 [YAML](../../../advance/YAML/yaml.md) 语法。
 
 我们在开始前所做的准备工作中，推荐你安装任意一款推荐的文档编辑软件：请查看[文本编辑器](/preparation/text-editor)
 
@@ -115,7 +115,7 @@ import TabItem from '@theme/TabItem';
 
 他**可能**把你要改的语言直接写死在代码里了，你要自己去改代码...
 
-比如驿站内核汉化的 [DecentHolograms](../other/Holograms/DecentHolograms.md)
+比如驿站内核汉化的 [DecentHolograms](../other/Holograms/decentholograms.md)
 
 </TabItem>
 </Tabs>

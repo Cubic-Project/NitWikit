@@ -52,7 +52,7 @@ WorldGuard 可以保护你的区域或世界，使他们免受破坏，或者调
 
 ## 前置
 
-[WorldEdit](./WorldEdit.md) 或 [FastAsyncWorldEdit](./FastAsyncWorldEdit.md)
+[WorldEdit](./worldedit.md) 或 [FastAsyncWorldEdit](./fastasyncworldedit.md)
 
 ## Bstats
 

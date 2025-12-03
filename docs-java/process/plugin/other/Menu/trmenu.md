@@ -7,16 +7,16 @@ sidebar_position: 4
 
 ![](https://gitee.com/postyizhan/images-hosting/releases/download/gif/animation.gif)
 
-<a href="https://github.com/Dreeam-qwq/TrMenu/releases">
-  <img src="https://img.shields.io/github/v/release/Dreeam-qwq/TrMenu" class="stylish-image" alt="Release" />
+<a href="https://github.com/CoderKuo/TrMenu/releases">
+  <img src="https://img.shields.io/github/v/release/CoderKuo/TrMenu" class="stylish-image" alt="Release" />
 </a>
-<a href="https://github.com/Dreeam-qwq/TrMenu/releases">
-  <img src="https://img.shields.io/github/downloads/Dreeam-qwq/TrMenu/total" class="stylish-image" alt="Downloads" />
+<a href="https://github.com/CoderKuo/TrMenu/releases">
+  <img src="https://img.shields.io/github/downloads/CoderKuo/TrMenu/total" class="stylish-image" alt="Downloads" />
 </a>
-<a href="https://github.com/Dreeam-qwq/TrMenu">
-  <img src="https://img.shields.io/github/languages/code-size/Dreeam-qwq/TrMenu" class="stylish-image" alt="Code Size" />
+<a href="https://github.com/CoderKuo/TrMenu">
+  <img src="https://img.shields.io/github/languages/code-size/CoderKuo/TrMenu" class="stylish-image" alt="Code Size" />
 </a>
-<a href="https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/LICENSE.md">
+<a href="https://github.com/CoderKuo/TrMenu/blob/stable/v3/LICENSE.md">
   <img src="https://img.shields.io/badge/license-TrMenu-lightgreen.svg" class="stylish-image" alt="License" />
 </a>
 
@@ -30,7 +30,7 @@ sidebar_position: 4
 
 - 支持 1.8.9 ~ 最新版本
 - 修复头颅显示问题
-- [国际化语言](https://github.com/Dreeam-qwq/TrMenu/pull/64)
+- [国际化语言](https://github.com/CoderKuo/TrMenu/pull/64)
 - 更多功能...
 
 Notice：维护这个分支完全是个人兴趣。
@@ -227,9 +227,9 @@ Sneaking-Offhand:
 
 :::tip
 
-你需要安装 [CheckItem](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/CheckItem)
+你需要安装 [CheckItem](/Java/process/plugin/plugin-dependencies/PlaceHolderAPI/CheckItem)
 
-并 [开启 give 和 remove](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/CheckItem#启用-give-和-remove) 和 [更改-boolean](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/Q&A#更改-boolean)
+并 [开启 give 和 remove](/Java/process/plugin/plugin-dependencies/PlaceHolderAPI/CheckItem#启用-give-和-remove) 和 [更改-boolean](/Java/process/plugin/plugin-dependencies/PlaceHolderAPI/Q&A#更改-boolean)
 
 :::
 
@@ -239,7 +239,7 @@ Sneaking-Offhand:
 
 - TrMenu 文档熟读并背诵
 - [kether](/Java/process/maintenance/lang/kether/basic)
-- [CheckItem](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/CheckItem)
+- [CheckItem](/Java/process/plugin/plugin-dependencies/PlaceHolderAPI/CheckItem)
 
 ```yaml
 "写法1":
@@ -295,7 +295,7 @@ Sneaking-Offhand:
 
 - TrMenu 文档熟读并背诵
 - [kether](/Java/process/maintenance/lang/kether/basic)
-- [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem)
+- [CheckItem](../../plugin-dependencies/PlaceHolderAPI/CheckItem)
 - [妙妙写法](#妙妙写法)
 - [\{condition=\}条件](https://hhhhhy.gitbook.io/trmenu-v3/menu/action/option#tiao-jian)
 

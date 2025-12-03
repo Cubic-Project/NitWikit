@@ -47,7 +47,7 @@ sidebar_position: 5
 
 ### 保存 nbt
 
-[点击此处](ConfigTips.md#礼包工具包)
+[点击此处](config-tips.md#礼包工具包)
 
 ### kit 执行命令
 
@@ -66,7 +66,7 @@ iloveyizhan:
 
 ### 变量
 
-[点击此处](PapiSupport.md)
+[点击此处](papi-support.md)
 
 ```text
 %essentials_has_kit_<kitname>%                  - 是否有 XX 工具包

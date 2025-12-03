@@ -11,7 +11,7 @@ sidebar_position: 3
 
 也许，是时候删除这俩玩意了
 
-实际上，经济功能装个 [XConomy](../../Front-Plugin/XConomy.md) 足够了
+实际上，经济功能装个 [XConomy](../../plugin-dependencies/xconomy.md) 足够了
 
 而对于 tpa，warp，home，back 等传送功能，或许你可以试试 [HuskHomes](https://www.spigotmc.org/resources/.83767/)
 

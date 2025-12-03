@@ -163,7 +163,7 @@ leaves 基本完全支持客户端生电 Mod，包括但不限于 Carpet，pca�
 
 目前仅有 1.8.8 版本的核心，而没有 1.8.9
 
-1.8.8 与 1.8.9 区别小到安装 [ViaVersion](../../process/plugin/other/Via/Via.md) 之后感觉不到区别
+1.8.8 与 1.8.9 区别小到安装 [ViaVersion](../../process/plugin/other/Via/via.md) 之后感觉不到区别
 
 :::
 

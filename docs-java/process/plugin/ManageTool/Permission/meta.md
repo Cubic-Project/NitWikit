@@ -234,7 +234,7 @@ memory 键名 using lp
 
 ### 称号系统
 
-见 [案例 | Invero|称号系统](../../../plugin/other/Menu/Invero.md)
+见 [案例 | Invero|称号系统](../../../plugin/other/Menu/invero.md)
 
 ## 限时 meta
 

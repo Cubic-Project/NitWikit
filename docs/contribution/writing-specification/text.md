@@ -215,7 +215,7 @@ IOC(International Olympic Committee，国际奥林匹克委员会)。这样定�
 我们的客户有 g ｲんĤЦ8、ｷ ouЯƧqu ﾑгє、๓เςг๏ร๏Ŧt ς๏гק๏гคtเ๏ภn、900913、ƒ4 ᄃëв๏๏к，IПᄃ.。
 ```
 
-注意：当网页中需要配合整体视觉风格而出现全部大写／小写的情形，HTML 中请使用标淮的大小写规范进行书写；并通过 text-transform: uppercase;／text-transform: lowercase; 对表现形式进行定义。
+注意：当网页中需要配合整体视觉风格而出现全部大写／小写的情形，HTML 中请使用标淮的大小写规范进行书写；并通过 `text-transform: uppercase;／text-transform: lowercase;` 对表现形式进行定义。
 
 ### 不要使用不地道的缩写
 

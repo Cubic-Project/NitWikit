@@ -11,6 +11,6 @@ sidebar_position: 9
 
 - [ItemsAdder](../../../maintenance/resourcepack/plugins/framework.md)
 - [Oraxen](../../../maintenance/resourcepack/plugins/framework.md)
-- [MythicMobs](../../other/MythicMobs.md)
-- [CMI](../BasicPlugins/CMI/CMI.md)
-- [SunLight](../BasicPlugins/SunLight/SunLight.md)
+- [MythicMobs](../../other/mythicmobs.md)
+- [CMI](../BasicPlugins/CMI/cmi.md)
+- [SunLight](../BasicPlugins/SunLight/sunlight.md)

@@ -23,6 +23,8 @@
 
 - [![](https://img.shields.io/discord/1342805340839870514.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.com/invite/jN4Br8uhSS) <- Click to Join
 
+![:NitWikit](https://count.kjchmc.cn/get/@:NitWikit)
+
 # 🔖 其他地址
 
 这里是本文档相关转载地址

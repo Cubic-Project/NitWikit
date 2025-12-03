@@ -27,4 +27,4 @@ sidebar_label: 创世神 - WorldEdit
 
 这个你肯定多少听说过，没听过创世神总听过小木斧
 
-建议使用优化版本 [FastAsyncWorldEdit](./FastAsyncWorldEdit.md)
+建议使用优化版本 [FastAsyncWorldEdit](./fastasyncworldedit.md)

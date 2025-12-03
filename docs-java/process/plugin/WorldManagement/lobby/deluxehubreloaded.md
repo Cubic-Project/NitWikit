@@ -15,4 +15,4 @@ sidebar_position: 3
 
 :::
 
-[DeluxeHub](DeluxeHub.md) 的第三方维护版本
+[DeluxeHub](deluxehub.md) 的第三方维护版本

@@ -48,7 +48,7 @@ online-mode=true
 
 :::
 
-注意，在离线模式下，玩家大概率没皮肤，你需要 [SkinsRestorer](../process/plugin/other/SkinsRestorer.md)，根据需求选择 SkinsRestorer 的版本。
+注意，在离线模式下，玩家大概率没皮肤，你需要 [SkinsRestorer](../process/plugin/other/skinssestorer.md)，根据需求选择 SkinsRestorer 的版本。
 
 ### 最大玩家数
 
@@ -124,7 +124,7 @@ spawn-protection=16
 
 这一配置的保护**并不能**防御苦力怕、TNT 等造成的破坏。
 
-如有保护出生点的需求，可以考虑使用插件 [WorldGuard](../process/plugin/WorldManagement/WorldGuard.md)
+如有保护出生点的需求，可以考虑使用插件 [WorldGuard](../process/plugin/WorldManagement/worldguard.md)
 
 :::
 
