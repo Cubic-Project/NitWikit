@@ -172,7 +172,7 @@ myisam_repair_threads = 2
 
 myisam_recover
 
-# *** InnoDB Specific options ***
+# *** InnoDB specific options ***
 
 #开启下条将会禁用 InnoDB
 

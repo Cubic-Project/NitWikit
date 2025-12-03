@@ -39,7 +39,7 @@ Purpur - 是基于 Purfferfish 的一个专注功能性和性能的 Fork；
 
 Leaf - 是基于 Purfferfish，Purpur，Gale 等的专注于性能的 Fork。
 
-## MOD 端
+## Mod 端
 
 Fabric 和 Forge 作为 Minecraft 中最常用的两个模组加载器，即使有些 Mod 声明他们可用于 Fabric 和 Forge 服务器，
 
