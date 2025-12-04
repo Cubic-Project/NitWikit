@@ -35,7 +35,7 @@ LiteLoaderBDS 仅适配了 BDS 的 1.20.32 及以下版本。对于更高版本�
 
 将这四个文件放进 BDS 的根目录。
 
-随后，双击运行 PreEditor.exe。该程序会弹出一个命令行窗口，当其中显示 **Done** 的时候，证明安装成功。
+随后，双击运行 `PreEditor.exe`。该程序会弹出一个命令行窗口，当其中显示 **Done** 的时候，证明安装成功。
 
 ## 运行带有 LiteLoaderBDS 加载器的 BDS
 

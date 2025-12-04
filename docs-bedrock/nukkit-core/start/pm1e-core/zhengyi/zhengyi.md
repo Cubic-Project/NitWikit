@@ -4,6 +4,7 @@ sidebar_position: 1
 ---
 
 :::warning
+
 Nukkit PetteriM1 Edition 是一个独立开发的开源项目，由 PetteriM1 及其团队负责维护和更新
 
 该项目任何争议事件与 NitWiki 站点以及任何文档维护者没有任何关联
@@ -11,14 +12,17 @@ Nukkit PetteriM1 Edition 是一个独立开发的开源项目，由 PetteriM1 �
 NitWiki 仅提供关于 Nukkit PetteriM1 Edition 的信息和教程，但不对该项目的开发、维护或任何相关争议负责
 
 所有关于 Nukkit PetteriM1 Edition 的开发、更新和维护均由 PetteriM1 及其团队独立完成，与 NitWiki 站点和文档维护者无关
+
 :::
 
 :::tip
+
 本事件自己去看，我们不会录入：刀哥《[为什么你不应该使用 PM1ENK - 细说 PM1ENK 的罪状](https://www.minebbs.com/threads/pm1enk-pm1enk.16912/)》
 
 还有：NukkitPetteriM1Edition 不知道啥时候开始老老实实把源代码推回来了：
 
 ![?](./zhengyi.png)
+
 :::
 
 大致事件如下：

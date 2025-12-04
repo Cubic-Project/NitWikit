@@ -7,7 +7,9 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 :::tip
+
 在《我的世界：基岩版》中，Nukkit 作为最早的服务器软件之一，开启了多人服务器的先河。它凭借高性能、稳定性和可定制性，为玩家和开发者提供了全新体验，推动了技术进步和社区繁荣。然而，随着网易《我的世界》的出现，Nukkit 逐渐成为历史的遗憾。但它的精神和贡献激励着后继开发者继续探索和创新，为基岩版社区注入新活力，书写新的未来。
+
 :::
 
 ![Nukkit logo](https://wiki.mcbe-dev.net/w/thumb.php?f=Nukkit.png&width=96)
@@ -34,7 +36,7 @@ Nukkit 拥有相当丰富的社区分支，例如 PM1E、PowerNukkit 和 PowerNu
 ### 劣势
 
 - Nukkit 最初为小游戏服务器设计，抛弃了很多原版游戏特性；
-- Java 虚拟机（jvm）环境版本兼容性差；
+- Java 虚拟机（JVM）环境版本兼容性差；
 - Java 多线程的优势并未得到充分利用；
 - 传统的石山代码和一些过时的架构影响着服务端的性能。
 
@@ -51,7 +53,7 @@ Nukkit 拥有相当丰富的社区分支，例如 PM1E、PowerNukkit 和 PowerNu
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 相关链接       | [NukkitX 官网](https://cloudburstmc.org/)、[GitHub 仓库](https://github.com/CloudburstMC/Nukkit)                                                                                                                   |
 | 作者           | [CloudburstMC](https://github.com/CloudburstMC)                                                                                                                                                                    |
-| 介绍           | NukkitX（原为 Nukkit2.0）是一个基于 Java 开发的高性能、开源的 Minecraft Bedrock Edition 服务端软件，继承了 Nukkit 的代码并不断优化，支持多种平台和丰富的插件扩展，为玩家和开发者提供了更稳定、更灵活的多人游戏体验 |
+| 介绍           | NukkitX（原为 Nukkit 2.0）是一个基于 Java 开发的高性能、开源的 Minecraft Bedrock Edition 服务端软件，继承了 Nukkit 的代码并不断优化，支持多种平台和丰富的插件扩展，为玩家和开发者提供了更稳定、更灵活的多人游戏体验 |
 | 下载           | [构建站](https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/)                                                                                                                                             |
 | 支持的 MC 版本 | 1.14.x-最新版 (目前保持更新)                                                                                                                                                                                       |
 
@@ -83,7 +85,9 @@ Nukkit 拥有相当丰富的社区分支，例如 PM1E、PowerNukkit 和 PowerNu
 ### 受争议的服务端
 
 :::info
+
 此类服务端是因为其发生了一些令人抽象的事情，亦或者是某些原因导致名气变差 or 暂缓更新，但不代表他们不会更新
+
 :::
 
 <Tabs queryString="nukkit-history">
@@ -110,7 +114,7 @@ Nukkit 拥有相当丰富的社区分支，例如 PM1E、PowerNukkit 和 PowerNu
 | -------------- | --------------------------------------------------------------------- |
 | 相关链接       | [GitHub 仓库](https://github.com/Nukkit/Nukkit)                       |
 | 作者           | [Nukkit Project](https://github.com/Nukkit)                           |
-| 介绍           | 第一代 Nukkit，现已停止更新并转移到 Nukkit2.0（项目重命名为 NukkitX） |
+| 介绍           | 第一代 Nukkit，现已停止更新并转移到 Nukkit 2.0（项目重命名为 NukkitX） |
 | 下载           | 无                                                                    |
 | 支持的 MC 版本 | 携带版 0.12-1.14.x                                                    |
 

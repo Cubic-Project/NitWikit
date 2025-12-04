@@ -11,12 +11,12 @@ sidebar_position: 1
 
 Windows 环境下：
 
-- [VS Code](https://code.visualstudio.com/)编辑器
-- 可选：最新版[Python 3.12+ 环境](https://python.org)
+- [VS Code](https://code.visualstudio.com/) 编辑器
+- 可选：最新版 [Python 3.12+ 环境](https://python.org)
 
 Linux 环境下：
 
-- 最新版[Python 3.12+ 环境](https://python.org) 或者 最新版[Docker 环境](https://hub.docker.com/r/endstone/endstone/)
+- 最新版 [Python 3.12+ 环境](https://python.org) 或者 最新版 [Docker 环境](https://hub.docker.com/r/endstone/endstone/)
 
 ## 方法一：直接下载启动
 
@@ -50,7 +50,7 @@ Linux 环境下：
 
 关闭界面，前往 [EndStone API](https://raw.githubusercontent.com/EndstoneMC/bedrock-server-data/main/bedrock_server_data.json) 找到相应版本的下载地址
 
-复制相应的 url 后的下载链接，直接粘贴到新窗口的 web 地址栏回车下载 BDS 服务端压缩包
+复制相应的 URL 后的下载链接，直接粘贴到新窗口的 Web 地址栏回车下载 BDS 服务端压缩包
 
 ![6](./imgs/6.png)
 
@@ -91,7 +91,9 @@ Linux 环境下：
 前往 [Python 官网](https://python.org) 下载 Python 环境
 
 :::info
-Linux 请按照 [这个教程](https://blog.csdn.net/hd243608836/article/details/121417965) 或者必应搜索 **Python Linux 安装** 完成安装 python 最新版，_安装完毕请看第二步_
+
+Linux 请按照 [这个教程](https://blog.csdn.net/hd243608836/article/details/121417965) 或者必应搜索 **Python Linux 安装** 完成安装 python 最新版，*安装完毕请看第二步*
+
 :::
 
 运行 Python 安装包程序进行安装：
@@ -102,9 +104,9 @@ Linux 请按照 [这个教程](https://blog.csdn.net/hd243608836/article/details
 
 ![103](./imgs/1-3.png)
 
-安装完成后，打开 CMD（按住 `WIN + R` 打开后输入 `cmd` 回车），输入以下指令检测 python 是否正常安装
+安装完成后，打开 CMD（按住 `WIN + R` 打开后输入 `cmd` 回车），输入以下指令检测 Python 是否正常安装
 
-```cmd
+```bash
 python
 ```
 
@@ -119,7 +121,9 @@ python
 如果在 C 盘，请输入 `cd 替换具体文件夹路径`
 
 :::danger
+
 **不建议将服务端放在 C 盘！**
+
 :::
 
 如果在 D 盘，请按照下图操作进行（**Linux 一类系统可直接使用 `cd 文件夹路径` 进入相应目录**）
@@ -128,7 +132,7 @@ python
 
 输入下面指令安装 EndStone 本体 (Python 默认的下载会比较慢，如果想加快下载速度推荐必应搜索 **Python 换国内下载源** 配置，本教程不再过多阐述)
 
-```cmd
+```bash
 pip install endstone
 ```
 
@@ -141,9 +145,11 @@ pip install endstone
 前往 [Microsoft VC 运行库下载地址](https://www.microsoft.com/zh-CN/download/details.aspx?id=48145) 下载并安装 **VC 运行库**
 
 :::tip
+
 你可能注意到了，直接运行版本是可以直接运行的，貌似这一步被省略过去了
 
 实际上并不是，只是直接运行版本自带了 python 环境和 VC 运行库，一般情况下运行 EndStone 的 start.bat 是不会出现任何问题（**除非你作死把那个删了，但会有人去删掉它吗🤔**）
+
 :::
 
 ### 四、下载 BDS 服务端
@@ -156,7 +162,7 @@ CMD 控制台输入 `endstone` ，获得该版本的 EndStone 支持的 BDS 服�
 
 关闭界面，前往 [EndStone API](https://raw.githubusercontent.com/EndstoneMC/bedrock-server-data/main/bedrock_server_data.json)
 
-找到相应版本的下载地址，复制 url 后的下载链接，直接粘贴到新窗口的 web 地址栏回车下载 BDS 服务端压缩包
+找到相应版本的下载地址，复制 URL 后的下载链接，直接粘贴到新窗口的 Web 地址栏回车下载 BDS 服务端压缩包
 
 ![6](./imgs/6.png)
 
@@ -189,9 +195,11 @@ CMD 控制台输入 `endstone` ，获得该版本的 EndStone 支持的 BDS 服�
 ## 方法三、使用 Docker 安装并运行 EndStone（目前不推荐）
 
 :::danger
+
 该方案教程大部分操作情况未知，外加 Docker 官方源因 DNS 污染等攻击 被国内防火墙拦截，目前不推荐
 
 请等待教程作者的更新
+
 :::
 
 适用系统：Linux

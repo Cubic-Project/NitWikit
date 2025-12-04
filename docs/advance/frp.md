@@ -455,13 +455,13 @@ sudo systemctl enable frpc
 1. 打开命令提示符（CMD）或 PowerShell
 2. 切换到 frp 解压目录：
 
-    ```cmd
+    ```bash
     cd C:\frp
     ```
 
 3. 运行 frpc：
 
-    ```cmd
+    ```bash
     frpc.exe -c frpc.toml
     ```
 
@@ -480,19 +480,19 @@ sudo systemctl enable frpc
 3. 以管理员身份运行命令提示符
 4. 安装服务：
 
-    ```cmd
+    ```bash
     nssm install frpc "C:\frp\frpc.exe" "-c C:\frp\frpc.toml"
     ```
 
 5. 启动服务：
 
-    ```cmd
+    ```bash
     nssm start frpc
     ```
 
 6. 其他常用命令：
 
-    ```cmd
+    ```bash
     # 停止服务
     nssm stop frpc
 
@@ -525,14 +525,14 @@ sudo systemctl enable frpc
 
 4. 以管理员身份运行命令提示符，安装服务：
 
-    ```cmd
+    ```bash
     cd C:\frp
     frpc-service.exe install
     ```
 
 5. 启动服务：
 
-    ```cmd
+    ```bash
     frpc-service.exe start
     ```
 

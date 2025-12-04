@@ -7,6 +7,7 @@ sidebar_position: 3
 
 我们先来简单看一眼 插件端 的文件夹结构 (以 Purpur 为例)：
 
+<!-- Use c to highlight comments -->
 ```c
 ├─assets            // 储存 Minecraft 音效贴图等重要文件，不要乱动
 ├─cache             // 缓存文件夹，一般放置 Minecraft 原版服务器

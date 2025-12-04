@@ -7,7 +7,9 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 :::tip
+
 作为最早出现的 Minecraft Bedrock Edition 服务端之一，PocketMine-MP 与 Nukkit 一样，为基岩版社区贡献了重要力量。它凭借强大的功能和灵活的插件系统，成为众多玩家和开发者的选择。随着 PocketMine-MP 的知名度不断提升，我们相信后继开发者将继续在此基础上创新，为基岩版社区注入新活力，提供更优质的服务。
+
 :::
 
 ![PMMPLogo](https://www.minebbs.com/attachments/pocketmine-light-rgb-gif.47206/)
@@ -39,7 +41,7 @@ PMMP 是 PocketMine-MP 的分支，由 PMMP 团队负责更新维护，目前已
 | 作者           | [pmmp](https://github.com/pmmp/)                                                                                                                    |
 | 介绍           | PocketMine-MP 是一款高度可定制的 Minecraft: Bedrock Edition 服务器软件，支持多版本，具备强大的插件 API 和丰富的生态系统，适合需要自定义功能的服务器 |
 | 下载           | [GitHub Releases](https://github.com/pmmp/PocketMine-MP/releases)                                                                                   |
-| 支持的 MC 版本 | 携带版 0.7.2-1.21.50(目前保持更新)                                                                                                                  |
+| 支持的 MC 版本 | 携带版 0.7.2-1.21.50 (目前保持更新)                                                                                                                  |
 
 </TabItem>
 </Tabs>
@@ -47,11 +49,13 @@ PMMP 是 PocketMine-MP 的分支，由 PMMP 团队负责更新维护，目前已
 ### 不稳定更新的服务端
 
 :::warning
+
 此类服务端一般为个人或者团队非开源更新，不能保证长期更新
 
 NitWiki 仅提供关于 PocketMine-MP 分支的信息和教程，但不对其项目的开发、维护或任何相关争议负责
 
 所有关于 PocketMine-MP 分支的开发、更新和维护均由 PetteriM1 及其团队独立完成，与 NitWiki 站点和文档维护者无关
+
 :::
 
 <Tabs queryString="pmmp-history">
@@ -61,7 +65,7 @@ NitWiki 仅提供关于 PocketMine-MP 分支的信息和教程，但不对其项
 | -------------- | ------------------------------------------------------------------------------------------- |
 | 相关链接       | [MineBBS 投稿贴](https://www.minebbs.com/resources/pmmp5-ng-nethergames-1-20-1-21-50.8967/) |
 | 作者           | [QYE](https://www.minebbs.com/members/qye.35358/)                                           |
-| 介绍           | 多版本的 pmmp5 核心-NG(NetherGames) 官方核心 - 支持 1.20-1.21.50                            |
+| 介绍           | 多版本的 pmmp5 核心-NG (NetherGames) 官方核心 - 支持 1.20-1.21.50                            |
 | 下载           | [MineBBS](https://www.minebbs.com/resources/pmmp5-ng-nethergames-1-20-1-21-50.8967/)        |
 | 支持的 MC 版本 | 1.20-1.21.50                                                                                |
 
@@ -72,7 +76,7 @@ NitWiki 仅提供关于 PocketMine-MP 分支的信息和教程，但不对其项
 | -------------- | ------------------------------------------------------------------------------------------- |
 | 相关链接       | [MineBBS 投稿贴](https://www.minebbs.com/resources/qf-qosgames-qfmc-pm4-1-20-1-20-50.7249/) |
 | 作者           | [QYE](https://www.minebbs.com/members/qye.35358/)                                           |
-| 介绍           | QF-QosGames(QFMC) 核心 PM4 多版本 - 现已支持 1.20-1.20.50 基岩版                            |
+| 介绍           | QF-QosGames (QFMC) 核心 PM4 多版本 - 现已支持 1.20-1.20.50 基岩版                            |
 | 下载           | [MineBBS](https://www.minebbs.com/resources/qf-qosgames-qfmc-pm4-1-20-1-20-50.7249/)        |
 | 支持的 MC 版本 | 1.20-1.20.50                                                                                |
 
@@ -115,13 +119,13 @@ NitWiki 仅提供关于 PocketMine-MP 分支的信息和教程，但不对其项
 | 支持的 MC 版本 | 1.1.x                                                                                                                                                        |
 
 </TabItem>
-<TabItem value="BlueLight-oldAPI" label="BlueLight-oldAPI">
+<TabItem value="BlueLight-oldAPI" label="BlueLight-OldAPI">
 
-| BlueLight-oldAPI | ---                                                                                                                                                            |
+| BlueLight-OldAPI | ---                                                                                                                                                            |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 相关链接         | [GitHub 仓库](https://github.com/BlueLightJapan/BlueLight)                                                                                                     |
 | 作者             | [BlueLightJapan](https://github.com/BlueLightJapan/)                                                                                                           |
-| 介绍             | BlueLight-oldAPI 是一款基于 PocketMine-MP 开发的 Minecraft: Pocket Edition 服务器软件，主要特点是支持旧 API（1.2 核心），能够在无需修改的情况下使用 1.0 的插件 |
+| 介绍             | BlueLight-OldAPI 是一款基于 PocketMine-MP 开发的 Minecraft: Pocket Edition 服务器软件，主要特点是支持旧 API（1.2 核心），能够在无需修改的情况下使用 1.0 的插件 |
 | 下载             | 无                                                                                                                                                             |
 | 支持的 MC 版本   | 1.2.x                                                                                                                                                          |
 

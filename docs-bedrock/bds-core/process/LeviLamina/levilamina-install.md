@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## 方法零：使用笨蛋脚本
 
-首先下载[安装脚本](https://script.8aka.org/liteloaderbds-install)，下载完后右键**以管理员启动**即可
+首先下载 [安装脚本](https://script.8aka.org/liteloaderbds-install)，下载完后右键 **以管理员启动** 即可
 
 :::tip
 
@@ -25,7 +25,7 @@ sidebar_position: 1
 
 最后，将该位置添加到 PATH 环境变量中。
 
-要检查是否成功安装 Lip，请在终端中运行 `lip --version`。你应该看到刚刚安装的 lip 的版本。
+要检查是否成功安装 Lip，请在终端中运行 `lip --version`。你应该看到刚刚安装的 Lip 的版本。
 
 如果你使用的是 Windows 系统，你也可以在 GitHub 中下载 `.exe` 后缀的安装程序来安装。
 
@@ -43,7 +43,7 @@ Lip 会自动下载 BDS 并配置 LeviLamina 加载器
 
 :::info
 
-如果因网络问题无法下载 GO 模块或 LeviLamina 及其依赖，可以运行命令
+如果因网络问题无法下载 Go 模块或 LeviLamina 及其依赖，可以运行命令
 
 ```bash
 lip config GoModuleProxyURL <url>

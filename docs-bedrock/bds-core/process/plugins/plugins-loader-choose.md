@@ -10,6 +10,8 @@ import TabItem from '@theme/TabItem';
 
 ## 主流加载器
 
+<!-- autocorrect-disable space-word -->
+
 <!--markdownlint-disable line-length-->
 
 <Tabs queryString="plugins-loader">
@@ -23,7 +25,7 @@ import TabItem from '@theme/TabItem';
 | 推荐与否       | 非常推荐                                                                                 |
 | 理由           | 插件生态不错，跟 [LiteLoader](#寿终正寝の加载器) 时代一样巅峰                            |
 | 下载           | [GitHub 下载](https://github.com/LiteLDev/LeviLamina/releases)                           |
-| 支持的 MC 版本 | 1.20.61-1.21.3(目前保持更新)                                                             |
+| 支持的 MC 版本 | 1.20.61-1.21.3 (目前保持更新)                                                             |
 
 </TabItem>
 <TabItem value="endstone" label="EndStone">
@@ -36,16 +38,16 @@ import TabItem from '@theme/TabItem';
 | 推荐与否       | 比较慢推荐                                                                                                        |
 | 理由           | 虽然几乎没有插件生态，仅社区有 **极少** 的插件，但最近形势较好，社区内有参与开发的声音，后续可能会追平 LeviLamina |
 | 下载           | [GitHub 下载](https://github.com/EndstoneMC/endstone/releases)                                                    |
-| 支持的 MC 版本 | 1.20.71 - 1.21.2(目前保持更新)                                                                                    |
+| 支持的 MC 版本 | 1.20.71 - 1.21.2 (目前保持更新)                                                                                    |
 
 </TabItem>
 <TabItem value="bdsx" label="BDSX">
 
 | 插件加载器     | 别名：BDSX                                                                                                                                                                             |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 名称           | [bdsx](https://github.com/bdsx/bdsx)                                                                                                                                                   |
-| 作者           | [bdsx](https://github.com/bdsx)                                                                                                                                                        |
-| 介绍           | BDSX 是一个支持 node.js 的 Minecraft 基岩版专用服务器（BDS）修改版本。基于官方 BDS 实现，包含了原版 Minecraft 的所有特性，并支持 Hook 函数与网络数据包以添加或修改服务器的功能与表现。 |
+| 名称           | [BDSX](https://github.com/bdsx/bdsx)                                                                                                                                                   |
+| 作者           | [BDSX](https://github.com/bdsx)                                                                                                                                                        |
+| 介绍           | BDSX 是一个支持 Node.js 的 Minecraft 基岩版专用服务器（BDS）修改版本。基于官方 BDS 实现，包含了原版 Minecraft 的所有特性，并支持 Hook 函数与网络数据包以添加或修改服务器的功能与表现。 |
 | 推荐与否       | 较为推荐                                                                                                                                                                               |
 | 理由           | 国内插件虽然少，但还是有很多的人去使用它，作者也从 19 年一直维护到现在                                                                                                                 |
 | 下载           | [克隆源代码下载](https://github.com/bdsx/bdsx)                                                                                                                                         |
@@ -62,7 +64,7 @@ import TabItem from '@theme/TabItem';
 <!--markdownlint-disable line-length-->
 
 <Tabs queryString="plugins-loader">
-<TabItem value="bds-script-api" label="BDS Script API(官方)">
+<TabItem value="bds-script-api" label="BDS Script API (官方)">
 
 | 插件加载器     | 别名：SAPI                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -86,15 +88,15 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="plugins-loader">
 <TabItem value="liteloader" label="LiteLoader">
 
-| 插件加载器     | 别名：LL，LLv2([详情点我](#litexloader-合并至-liteloader2022 年 2 月 12 日))                                                                                         |
+| 插件加载器     | 别名：LL，LLv2 ([详情点我](#litexloader-合并至-liteloader-2022-年-2-月-12-日))                                                                                       |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 名称           | [LiteLoaderBDS](https://github.com/LiteLDev/LiteLoaderBDSv2/)                                                                                                        |
 | 作者           | [LiteLDev](https://github.com/LiteLDev)                                                                                                                              |
 | 介绍           | LiteLoaderBDSv2 是一款专为 BDS 编写的插件加载器，旨在弥补官方行为包开发接口的不足。LiteLoaderBDSv2 支持多种编程语言编写插件，并保证了插件开发与维护的便利性          |
 | 推荐与否       | 非常不推荐                                                                                                                                                           |
-| 理由           | 插件生态无可厚非，没人会否定它的巅峰时代，可惜岁月不饶人啊...如果你服务器愿意在此版本区间便罢了，因为不好找插件了 ([详情点我](#liteloader-宣布停更 2023 年 10 月份)) |
+| 理由           | 插件生态无可厚非，没人会否定它的巅峰时代，可惜岁月不饶人啊...如果你服务器愿意在此版本区间便罢了，因为不好找插件了 ([详情点我](#liteloader-宣布停更-2023-年-10-月份)) |
 | 下载           | [GitHub 下载](https://github.com/LiteLDev/LeviLamina/releases)                                                                                                       |
-| 支持的 MC 版本 | 1.16.210-1.20.31.01(已存档)[^Archived]                                                                                                                               |
+| 支持的 MC 版本 | 1.16.210 - 1.20.31.01 (已存档)[^Archived]                                                                                                                            |
 
 </TabItem>
 <TabItem value="litexloader" label="LiteXLoader">
@@ -107,7 +109,7 @@ import TabItem from '@theme/TabItem';
 | 推荐与否       | 非常不推荐                                                                                                                                                                                                          |
 | 理由           | 后续合并到 LiteLoader 中。[详情点我](#litexloader-合并至-liteloader2022 年 2 月 12 日)                                                                                                                              |
 | 下载           | [GitHub 下载](https://github.com/EndstoneMC/endstone/releases)                                                                                                                                                      |
-| 支持的 MC 版本 | 1.20.71 - 1.21.2(已存档)[^Archived]                                                                                                                                                                                 |
+| 支持的 MC 版本 | 1.20.71 - 1.21.2 (已存档)[^Archived]                                                                                                                                                                                 |
 
 </TabItem>
 </Tabs>
@@ -136,7 +138,7 @@ import TabItem from '@theme/TabItem';
 
 我们也了解到官方相关负责人正在讨论此事。
 
-我们呼吁大家积极参与讨论，让官方了解我们的诉求！Partner 项目总监和工作室里的人讨论过，反正他们的观点是力推 CRIPT 的 API，这将势不可挡，未来是 [All in JavaScript(即 SAPI)](#主流加载器) 的时代，
+我们呼吁大家积极参与讨论，让官方了解我们的诉求！Partner 项目总监和工作室里的人讨论过，反正他们的观点是力推 CRIPT 的 API，这将势不可挡，未来是 [All in JavaScript (即 SAPI)](#主流加载器) 的时代，
 只要社区的需求大且合理，他们就会添加对应的接口。在 PDB 方面，他们认为这是 **非行业化的**，他们不认为这是合适且合法的 Mod 的行为，并 **《希望》** 社区给出一定要 PDB 才能实现的功能。
 
 此后，著名插件加载器 LeviLamina 刚出生不久就胎死腹中了...
@@ -157,6 +159,6 @@ LiteLoaderBDS 最初是基于 BedrockX 开发的，在 2.0 版本进行了完全
 ![LeviLamina 在来的路上](./_images/levilamina-is-coming.png)
 所以并不是 LiteDev 扔下史山跑路了 (这是官方原话自嘲)，而是着手重构 LiteLoader，预计在未来发布 LiteLoaderBDSV3，即 LeviLamina。
 
-### LiteXLoader 合并至 LiteLoader(2022 年 2 月 12 日)
+### LiteXLoader 合并至 LiteLoader (2022 年 2 月 12 日)
 
-LiteXLoader 于 2022 年 2 月 12 日 合并至 LiteLoader 项目，LXL 成为 LL 的一个子模块。LiteLoaderBDS 将继续更新，作为 C++、Go、Js、Lua 和其他语言的通用加载器。所有以前的 LXL 插件将继续在新的 LL 版本下正常运行，所有现有的 API 将保持不变。
+LiteXLoader 于 2022 年 2 月 12 日 合并至 LiteLoader 项目，LXL 成为 LL 的一个子模块。LiteLoaderBDS 将继续更新，作为 C++、Go、JS、Lua 和其他语言的通用加载器。所有以前的 LXL 插件将继续在新的 LL 版本下正常运行，所有现有的 API 将保持不变。

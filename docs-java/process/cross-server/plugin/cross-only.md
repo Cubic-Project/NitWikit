@@ -81,8 +81,8 @@ sidebar_position: 1
 - 下载适用于 Folia/Paper/Purpur 的文件时，需注意自 4.1.2 版本开始不再支持 1.19.x 及以下版本
 - 在 Velocity 端安装好 AuthMeVelocity 后，需编辑 `plugins\authmevelocity` 中的 config.conf 文件，将其中的 `auth-servers` 配置项修改为登录服的服务器
 
-```conf
-# 比如你的登录服在 velocity 中配置的名称是 login
+```toml
+# 比如你的登录服在 Velocity 中配置的名称是 login
 auth-servers=[
     login
 ]

@@ -6,6 +6,7 @@ sidebar_position: 1
 # 选择、下载和安装 PHP
 
 :::tip
+
 PHP 安装等待有缘人进行补充修改......
 
 ps：因为 PHP 官网下载的 PHP 环境是纯净版，没有任何依赖，但是大多数 PHP 环境是需要部分依赖
@@ -17,6 +18,7 @@ ps：因为 PHP 官网下载的 PHP 环境是纯净版，没有任何依赖，�
 如果你是 PMMP 使用者并且愿意为我们提供更多关于 PMMP 的信息支持，请在 NitWiki 仓库中提 PR 或者 QQ 群联系
 
 如果你真的需要安装 PMMP，请参考官方安装文档：[PMMP 安装文档](https://doc.pmmp.io/en/rtfd/installation.html)
+
 :::
 
 ## 安装环境

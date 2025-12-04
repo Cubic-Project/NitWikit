@@ -160,5 +160,6 @@ sidebar_position: 100
 - [ ] 是否需要去除所有文档开头的 # 标题，因为已经在 title 内定义，不确定是否要去除这个以减少冗余
 - [ ] 更新 Cloudflare 高防信息，400 多 Tbps 了
 - [ ] 可能仍存在部分货币格式不规范
-- [ ] 把文档文件名和包名都改为 `kebab-case` 并更新所有 .md 文档内引用
+- [ ] 把文档文件名和包名都改为 `kebab-case` 并更新所有 .md 文档内引用 (使用 `pnpm build` 进行检查)
 - [ ] 迁移 TODOs 到 Projects
+- [ ] 是否要规范 `<TabItem value=`

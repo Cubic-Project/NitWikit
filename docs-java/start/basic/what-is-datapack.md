@@ -43,6 +43,7 @@ sidebar_position: 6
 
 # 数据包结构
 
+<!-- Use c to highlight comments -->
 ```c
 数据包名
 ├─pack.mcmeta // 用于识别数据包及存储数据包信息。

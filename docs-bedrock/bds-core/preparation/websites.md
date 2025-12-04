@@ -56,7 +56,7 @@ sidebar_label: BDS 可能用到的网站
 
 ## GitHub
 
-全球最大的代码托管平台 **_建议注册账号_**。
+全球最大的代码托管平台 ***建议注册账号***。
 
 <details>
   <summary>点击展开</summary>
@@ -95,7 +95,7 @@ sidebar_label: BDS 可能用到的网站
 
 1. 魔法
 2. [改 hosts](https://www.cnblogs.com/eudaimonia/p/16001981.html#1034247326)
-3. [Watt Toolkit](https://steampp.net/)：下载安装完成后，在左侧侧边栏切换到**网络加速**，点击**平台加速 (免费)**，往下翻勾上 GitHub，然后点击**一键加速**，随后就可以正常访问 GitHub 了
+3. [Watt Toolkit](https://steampp.net/)：下载安装完成后，在左侧侧边栏切换到 **网络加速**，点击 **平台加速 (免费)**，往下翻勾上 GitHub，然后点击 **一键加速**，随后就可以正常访问 GitHub 了
  <!--[点击此处](https://cn.bing.com/search?q=%E8%BF%9E%E4%B8%8D%E4%B8%8AGitHub%E6%80%8E%E4%B9%88%E5%8A%9E)-->
 
 </details>
