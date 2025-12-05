@@ -7,3 +7,4 @@ sidebar_position: 8
 
 - [document-style-guide](https://github.com/ruanyf/document-style-guide)
 - [基于 Markdown 的中文文档排版规范](https://zhuanlan.zhihu.com/p/144446995)
+- [Markdown 中文教程](https://www.markdownlang.com/zh/)
