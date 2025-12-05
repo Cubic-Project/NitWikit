@@ -13,7 +13,7 @@ Velocity-CTD 在标准 Velocity 基础上增加了许多实用功能，本页面
 
 Velocity-CTD 内置了完整的 Redis 支持，可以替代 RedisBungee 等插件，提供更稳定的 Redis 体验。
 
-:::info 什么时候需要 Redis？
+:::info[什么时候需要 Redis？]
 
 - **单代理服务器**：不需要 Redis
 - **多代理服务器**：必须启用 Redis 来同步数据
@@ -66,7 +66,7 @@ key-prefix = "myserver:"
 
 Velocity-CTD 内置了高效的队列系统，可以在服务器满员时自动将玩家加入队列，支持优先级、超时等高级功能。
 
-:::tip 队列系统优势
+:::tip[队列系统优势]
 
 - **自动化**：服务器满员时自动加入队列
 - **优先级支持**：VIP 玩家可以获得更高优先级

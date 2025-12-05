@@ -7,7 +7,7 @@ import ContributorCard from '@site/src/components/ContributorCard';
 
 # 贡献者名单
 
-:::tip 项目贡献者
+:::tip[项目贡献者]
 
 以下列表展示了所有为本项目做出贡献的开发者。我们对每一位贡献者表示衷心的感谢！
 

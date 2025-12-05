@@ -6,7 +6,9 @@ sidebar_position: 2
 # HuskChat
 
 :::danger
+
 根据 SpigotMC 和 GitHub 上的官方消息，此插件已停止开发。
+
 :::
 
 :::info

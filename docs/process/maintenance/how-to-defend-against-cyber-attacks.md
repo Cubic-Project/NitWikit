@@ -24,7 +24,9 @@ sidebar_position: 6
 #### 假人攻击
 
 :::info
+
 本处仅讨论关于 Minecraft 服务器网络安全的概念，不涉及关于“生电”中假人的相关概念。
+
 :::
 
 假人攻击（Fake Player Attack），是指攻击者利用技术手段，模拟正常玩家的行为并向 Minecraft 服务器发起非正常请求，进而使得 Minecraft 服务器因各种原因而瘫痪崩溃或被渗透的一种攻击方式。

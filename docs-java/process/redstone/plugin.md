@@ -86,7 +86,7 @@ unsupported-settings:
     update-equipment-on-player-actions: false # 是否在玩家执行某些动作时更新装备；为 false 时可利用属性切换漏洞
 ```
 
-:::warning `book` 配置
+:::warning[book 配置]
 
 该选项可能会在你的服务器上启用禁人书，开启时请认真考虑
 
@@ -190,7 +190,7 @@ settings:
             vanilla-hopper: true # 修复原版漏斗的已知问题
 ```
 
-:::warning 漏斗问题
+:::warning[漏斗问题]
 
 `vanilla-hopper` 选项开启后会严重降低漏斗性能，非必要最好别开
 
@@ -208,7 +208,7 @@ Leaf 是一个 Paper 的分支，拥有非常高的性能 (基本是 Paper 系�
 
 Luminol 是 Folia 的一个分支，相比于 Folia 有这更好的性能，同时可以还原更多的特性
 
-:::tip Folia 生电
+:::tip[Folia 生电]
 
 Folia 是 Paper 的分支，也就是说 Paper 玩不了的机器 Folia 照样玩不了
 

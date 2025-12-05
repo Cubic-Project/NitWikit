@@ -100,7 +100,7 @@ tar -zxf mcsmanager_linux_release.tar.gz
 
 启动方式
 
-:::tip screen
+:::tip[screen]
 
 关于 screen 的教程，你可以看 [这个](https://blog.csdn.net/u012964600/article/details/136968398)
 

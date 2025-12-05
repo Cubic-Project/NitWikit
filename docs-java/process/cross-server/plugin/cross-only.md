@@ -91,6 +91,7 @@ auth-servers=[
 至于 Folia/Paper/Purpur 端则不需要修改任何配置，保证插件正常工作即可。
 
 :::info
+
 推荐使用来自 HaHaWTH 佬的 [AuthMeReReloaded](https://github.com/HaHaWTH/AuthMeReReloaded) 引入了完整的 Velocity 支持。
 
 如果你已经使用了这个分支的插件，只需要在配置文件中找到并开启：
@@ -104,6 +105,7 @@ Hooks:
 ```
 
 根据实际情况选择开启 Bungeecord 或 Velocity 配置项即可。
+
 :::
 
 如果未修改 AuthMeVelocity 的配置，可能导致所有玩家无法进入服务器，提示连接超时

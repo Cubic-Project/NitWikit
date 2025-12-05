@@ -477,7 +477,7 @@ TODO
 <details>
     <summary>参考写法，不唯一</summary>
 
-:::tip
+::::tip
 
 1. `command /xxx` 后一定要使用 `trigger:` 否则指令将不会注册并报错。
 2. `/xxx` 为 "指令"，第 n 个空格后的参数即为 `arg-n`，如此处的 `<world>` 为 `arg-1`
@@ -512,6 +512,8 @@ if arg-1 is world "world":
 3. 使用的 `if` 套在 `if` 后的情况比较多，在逻辑上可能会出现问题。
 
 :::
+
+::::
 
 所以，我们选择使用局部变量暂存玩家的坐标，并基于玩家所在世界及目标世界计算变量，
 
@@ -583,7 +585,7 @@ command /world <world>:
 
 后文为 TUCAOEVER 在 mcbbs 的教程未参考部分，没有进行任何格式化，TODO
 
-# :::
+:::
 
 ---
 

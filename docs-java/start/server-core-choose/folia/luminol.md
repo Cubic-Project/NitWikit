@@ -107,7 +107,7 @@ Lophine 提供了许多实验性功能，可以在配置文件中开启：
     bad_omen_infinite = false
     # 击杀袭击队长时获得不祥之兆效果
     give_bad_omen_when_kill_raid_captain = false
-    # 允许跳过30秒冷却直接触发袭击
+    # 允许跳过 30 秒冷却直接触发袭击
     allow_skip_cooldown = false
 
 [misc.container_expansion]
@@ -167,7 +167,7 @@ Lophine 提供了许多实验性功能，可以在配置文件中开启：
 
 这些配置让你可以精确控制服务器的生电特性，满足不同生电需求
 
-:::tip 配置建议
+:::tip[配置建议]
 
 对于生电服务器，建议开启以下配置：
 
@@ -182,7 +182,7 @@ Lophine 提供了许多实验性功能，可以在配置文件中开启：
 
 如果你在使用 Lophine 时遇到问题，可以加入 LuminolMC 的社区：
 
-- QQ群: [1015048616](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=QML5kIVsniPi1PlZvnjHQT_02EHsZ5Jc&authKey=%2FTCJsZC7JFQ9sxAroPCKuYnlV57Z5fyqp36ewXZk3Sn4iJ9p4MB1JKdc%2FFcX3HOM&noverify=0&group_code=1015048616)
-- QQ频道: [点击加入](https://pd.qq.com/s/eq9krf9j)
+- QQ 群：[1015048616](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=QML5kIVsniPi1PlZvnjHQT_02EHsZ5Jc&authKey=%2FTCJsZC7JFQ9sxAroPCKuYnlV57Z5fyqp36ewXZk3Sn4iJ9p4MB1JKdc%2FFcX3HOM&noverify=0&group_code=1015048616)
+- QQ 频道：[点击加入](https://pd.qq.com/s/eq9krf9j)
 - Telegram: [点击加入](https://t.me/LuminolMinecraft)
 - Discord: [点击加入](https://discord.gg/Qd7m3V6eDx)

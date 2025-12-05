@@ -52,7 +52,7 @@ screen -S xxx -X quit # 删除 xxx 窗口 (在 screen 中输入 exit 也可以�
 
 在 screen 中启动服务端，在 screen 中时，按快捷键 `Ctrl + A + D` 即可返回原窗口。
 
-:::tip 滚动查看日志
+:::tip[滚动查看日志]
 
 如果你想在 screen 中向上滚动查看历史日志：
 

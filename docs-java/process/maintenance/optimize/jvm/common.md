@@ -96,7 +96,7 @@ set PAPER_DEFAULT_CENTRAL_REPOSITORY=https://maven.aliyun.com/repository/central
 - **华为云 Maven 中心仓库**: `https://repo.huaweicloud.com/repository/maven/`
 - **腾讯云 Maven 中心仓库**: `https://mirrors.cloud.tencent.com/nexus/repository/maven-public/`
 
-:::tip 性能提示
+:::tip[性能提示]
 
 使用国内镜像源可以显著提升插件依赖库的下载速度，特别是在服务器首次启动或安装新插件时。
 

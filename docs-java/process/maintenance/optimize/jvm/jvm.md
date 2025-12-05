@@ -33,7 +33,7 @@ flowchart TD
     好的兼容性 -->|不需要,需要有实力| E[Azul Zing]
 ```
 
-:::tip Zulu 的性能
+:::tip[Zulu 的性能]
 
 根据官方对 Zulu 的定位，Zulu 的重点是**安全性和稳定性**，而非性能
 
@@ -43,7 +43,7 @@ flowchart TD
 
 :::
 
-:::tip 兼容性
+:::tip[兼容性]
 
 根据我们的测试，GraalVM,Dragonwell,Zulu 目前都没有被报告过不兼容
 

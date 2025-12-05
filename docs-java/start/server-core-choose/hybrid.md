@@ -15,7 +15,7 @@ sidebar_position: 2
 
 :::
 
-:::danger 混合端注意事项
+:::danger[混合端注意事项]
 
 Mod 作者们绝大多数都不会受理与混合端相关的问题，风险自行承担。
 
@@ -34,13 +34,13 @@ Mod 作者们绝大多数都不会受理与混合端相关的问题，风险自�
 | [Magma](https://magmafoundation.org/)                   | -                                                                                                                                                                                                                | -              | [McRes](https://mcres.cn/downloads/magma.html)                                                                                                                                                                      | 没用过，不知道        |
 | [Sponge](sponge.md)                                     | 可加入 Sponge 插件，支持 Mod，内置小部分优化，非 Sponge 服务端可安装 Mod 获得同等效果。缺点：即使你用了很多办法也很难让 Bukkit 插件稳定运行；Sponge 插件特别少；启动速度特别慢。操作特别难，与前面的完全不相同。 | 不推荐新手使用 | [McRes](https://mcres.cn/downloads/spongeforge.html) [FastMirror](https://www.fastmirror.net/#/download/SpongeForge) [MCSL](https://sync.mcsl.com.cn/core/SpongeForge)                                              | 1.7.10 - 最新         |
 
-:::tip Mo 与 Arc
+:::tip[Mohist 与 Arclight]
 
 Mohist 与 Arclight 并没有谁好谁坏，通常来说，两个服务端最好都试一试，留下表现最好的就行
 
 :::
 
-:::tip 兼容性修复
+:::tip[兼容性修复]
 
 如果你使用的是 1.12.2 的混合端，推荐同时安装 [HybridFix](https://www.mcmod.cn/class/17621.html) 增强兼容性
 
@@ -48,7 +48,7 @@ Mohist 与 Arclight 并没有谁好谁坏，通常来说，两个服务端最好
 
 ## Fabric
 
-:::tip 使用 Fabric 混合端前的提示
+:::tip[使用 Fabric 混合端前的提示]
 
 目前部分常用的 Bukkit 插件已有 Fabric 平替模组。
 
@@ -68,7 +68,7 @@ EssentialsX/CMI/HuskHomes -> HuskHomes(Fabric 版)
 
 :::info
 
-Banner 现在已经不属于 Mohist,同时已经改名为 Taiyitist
+Banner 现在已经不属于 Mohist，同时已经改名为 Taiyitist
 
 :::
 
@@ -76,6 +76,6 @@ Banner 现在已经不属于 Mohist,同时已经改名为 Taiyitist
 
 | 名称                                                         | 介绍                                                                                                                                                                                                                                                                 | 推荐与否 | 下载镜像 |
 | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------- |
-| [Arclight - NeoForge](https://github.com/IzzelAliz/Arclight) | 用Mixin实现的Bukkit API 和Neoforge实现的混合端                                                                                                                                                                                                                       | -        | -        |
+| [Arclight - NeoForge](https://github.com/IzzelAliz/Arclight) | 用 Mixin 实现的 Bukkit API 和 Neoforge 实现的混合端                                                                                                                                                                                                                       | -        | -        |
 | [Youer](https://github.com/MohistMC/Youer/)                  | 结合了 NeoForge 模组支持和 Paper API 兼容性，能无缝支持 Bukkit/Spigot/Paper 生态系统的插件，并且针对模组环境进行了性能和稳定性优化。其技术栈包含 NeoForge、Bukkit、CraftBukkit、Spigot、Paper、PurPur、Arclight Remapping 等组件，部分组件集成已完成，部分仍在进行中 | -        | -        |
-| [Magma - Neo](https://github.com/magmafoundation/Magma-Neo)  | 用Patch实现的Neoforge和Spigot API的混合端                                                                                                                                                                                                                            | -        | -        |
+| [Magma - Neo](https://github.com/magmafoundation/Magma-Neo)  | 用 Patch 实现的 Neoforge 和 Spigot API 的混合端                                                                                                                                                                                                                            | -        | -        |

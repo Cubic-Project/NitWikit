@@ -48,7 +48,9 @@ import TabItem from '@theme/TabItem';
 <TabItem value="nukkit" label="Nukkit(NK)">
 
 :::warning
+
 至本篇文档开始，**`NK`** 一致指 **`Nukkit`**，但考虑到全称不长，因此二者都会出现在本文档中
+
 :::
 
 ![Nukkit 运行时的样子](_images/nukkit-core-running.png)
@@ -77,7 +79,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="pnx" label="PowerNukkitX(PNX)">
 
-:::danger [此核心短时间内不再可用]
+:::danger[此核心短时间内不再可用]
 
 ![PNX 短时间内不再更新](_images/powernukkitx-core-rip.png)
 
@@ -113,7 +115,9 @@ import TabItem from '@theme/TabItem';
 <TabItem value="pmmp" label="PocketMine-MP(PMMP)">
 
 :::warning
+
 至本篇文档开始，**`PMMP`** 一致指 **`PocketMine-MP`**
+
 :::
 
 ![PNX 运行时的样子](_images/pocketminemp-core-running.png)

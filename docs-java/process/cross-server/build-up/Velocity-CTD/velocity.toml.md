@@ -194,7 +194,7 @@ pubsub-enabled = true
 pubsub-prefix = "velocity-ctd:pubsub:"
 ```
 
-:::warning Redis 使用注意事项
+:::warning[Redis 使用注意事项]
 
 1. **单代理服务器不需要 Redis**：如果你只有一个 Velocity-CTD 代理，无需启用 Redis
 2. **多代理环境必须启用**：如果你有多个代理服务器，必须启用 Redis 来同步数据
@@ -255,7 +255,7 @@ priority-enabled = true
 default-priority = 0
 ```
 
-:::tip 队列系统使用建议
+:::tip[队列系统使用建议]
 
 1. **小型服务器**：通常不需要启用队列系统
 2. **中大型服务器**：建议启用队列系统来管理负载
@@ -331,7 +331,7 @@ default-forwarding-mode = "modern"
 log-forwarding-changes = true
 ```
 
-:::warning 多转发系统注意事项
+:::warning[多转发系统注意事项]
 
 1. **实验性功能**：多转发系统是实验性功能，可能存在兼容性问题
 2. **配置复杂性**：需要为每个服务器正确配置对应的转发模式
@@ -369,7 +369,7 @@ disable-unsigned-message-kick = false
 disable-header-footer-translation = false
 
 # 最小版本要求。阻止使用旧版本客户端的用户连接。
-# 格式：主版本.次版本.修订版本 (例如 "1.16.5")
+# 格式：主版本。次版本。修订版本 (例如 "1.16.5")
 # 留空表示不限制版本
 minimum-version = ""
 
@@ -601,7 +601,7 @@ read-timeout = 45000
 
 ### 转发模式配置
 
-:::danger 重要提醒
+:::danger[重要提醒]
 
 **转发模式必须与子服务器配置匹配**：
 

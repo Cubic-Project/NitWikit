@@ -19,7 +19,7 @@ sidebar_position: 4
 
 ViaProxyBeta2Release 实现了 [Beta2Release](https://github.com/DirtPowered/Beta2Release) 代理功能，允许 Beta 1.7.3 客户端连接到现代服务器。
 
-:::warning 重要提醒
+:::warning[重要提醒]
 
 此插件需要 **Java 21 或更高版本**
 
@@ -87,7 +87,7 @@ BungeeViaProxy 通过确保正确的主机名转发和避免重复服务器错�
 客户端 -> BungeeCord -> ViaProxy -> 后端服务器
 ```
 
-:::warning 重要配置要求
+:::warning[重要配置要求]
 
 使用此设置时，ViaProxy 必须放置在 BungeeCord 和后端服务器之间，并且需要以下配置：
 
@@ -197,7 +197,7 @@ settings:
     bungeecord: true
 ```
 
-:::tip 重要提示
+:::tip[重要提示]
 
 - 后端服务器无需安装 ViaVersion 插件（版本转换由 ViaProxy 处理）
 - 不要使用 ViaProxyAuthHook，因为 ViaProxy 位于 BungeeCord 和后端服务器之间
@@ -228,7 +228,7 @@ address.<后端 IP>.port.<后端端口>.version.<版本>.f2.viaproxy.<ViaProxy I
 
 ViaBedrock 是 ViaVersion 的扩展插件，为 Minecraft 基岩版服务器提供支持，允许 Java 版客户端连接到基岩版服务器。
 
-:::warning 开发状态
+:::warning[开发状态]
 
 ViaBedrock 目前处于早期开发阶段，**不适合正式使用**。许多功能尚未实现
 
@@ -303,7 +303,7 @@ eagler-server-mode: 0
 legacy-passthrough: true
 ```
 
-:::warning 重要提醒
+:::warning[重要提醒]
 
 **皮肤文件限制** - 皮肤文件不包含在插件中，需要单独配置皮肤系统
 

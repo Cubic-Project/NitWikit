@@ -23,7 +23,7 @@ graph TD
 
 - **服务端**：Minecraft 1.20.5+ (Vanilla/Paper/Spigot/Purpur)
 - **客户端**：Minecraft Java Edition 1.20.5+
-- **不支持**：基岩版、1.20.5以下版本
+- **不支持**：基岩版、1.20.5 以下版本
 
 ## 核心配置
 
@@ -44,7 +44,7 @@ online-mode=false
 
 ### 网络配置要求
 
-:::warning 重要：网络访问要求
+:::warning[重要：网络访问要求]
 
 Transfer 要求**所有服务器都能被客户端直接访问**：
 
@@ -52,7 +52,7 @@ Transfer 要求**所有服务器都能被客户端直接访问**：
 
 ## Transfer 的安全问题
 
-:::danger 重要安全警告
+:::danger[重要安全警告]
 
 Transfer **没有内置的安全机制**，与传统代理端不同：
 
@@ -93,7 +93,7 @@ allow-server-list: true
 # 但貌似只有被传送的对象服务器才会检查这个
 transfer-token: "your-secure-random-token"
 
-# 允许的服务器IP和端口
+# 允许的服务器 IP 和端口
 # 不在该列表里的服务器不被允许跳转
 # 如果是公共服务器，请确保所有子服均暴露在公网下
 
@@ -108,7 +108,7 @@ allowed-servers:
   - "your-server-ip:25565"  # 登录服
 ```
 
-:::tip 安全令牌生成
+:::tip[安全令牌生成]
 
 ```bash
 # 生成32位随机令牌
@@ -132,6 +132,8 @@ accepts-transfers = true
 独立服务器 --Transfer--> Velocity ---> 子服务器群组
 ```
 
-:::warning 兼容性问题
+:::warning[兼容性问题]
+
 OnlyTransfer 插件与 Velocity 的 Transfer 支持存在部分兼容性问题，建议在测试环境中验证。
+
 :::

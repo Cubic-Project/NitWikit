@@ -111,8 +111,10 @@ _[StackMob](https://www.spigotmc.org/resources/stackmob-enhance-your-servers-per
 综上所述，不要安装堆叠插件。
 
 :::tip
+
 补充一点，我可以推荐给你这个，只在服务器 MSPT 超过阈值才堆叠动物。如果你本身有 FarmControl 之类的插件控制总量，那这个插件的使用是安全、无感、且能起到一定的“优化”作用的。<br />
 https://github.com/quiquelhappy/StackMob-5
+
 :::
 
 ### 爆炸优化插件
@@ -199,7 +201,7 @@ Paper 酱为你在 `/config/paper-world-default.yml` 中准备了爆炸优化。
 
 ## 有用的~~优化~~限制插件
 
-:::warning 红石限制？
+:::warning[红石限制？]
 
 目前，市面上的红石限制插件限制红石的方式都是通过破坏或停用实现的
 
