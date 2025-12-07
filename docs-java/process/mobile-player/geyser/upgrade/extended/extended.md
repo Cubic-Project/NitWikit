@@ -1,10 +1,10 @@
 ---
-title: Geyser扩展
+title: Geyser 扩展
 sidebar_position: 1
 slug: /Geyser/Upgrade
 ---
 
-# Geyser扩展
+# Geyser 扩展
 
 这里是进阶教程，你可以通过进阶教程获得更好的基岩版兼容
 让基岩版玩家拥有更加接近原生基岩版服务器的体验
@@ -42,6 +42,6 @@ GeyserUtils 是 zimzaza4 开发的 Geyser 扩展工具
 
 将`geyserutils-geyser`放入 geyser 的`extensions`文件夹
 
-![](_image/Geyser5.png)
+![](./_images/Geyser5.png)
 
 这样就安装好了

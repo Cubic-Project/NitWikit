@@ -27,7 +27,7 @@ GlobalLink 是 Geyser 提供的链接服务器，用于链接基岩版和 Java �
 
 要链接你的账户，你需要执行以下操作：
 
-1. 使用你的 Java 和 Bedrock 账户加入 GlobalLinkServer  
+1. 使用你的 Java 和 Bedrock 账户加入 GlobalLinkServer
    (IP: `link.geysermc.org`，Java 端口：`25565`，Bedrock 端口：`19132`)
 2. 在 Java **或** Bedrock 账户上键入`/linkaccount`开始链接过程
 3. 你将收到一个带有随机数字的消息，你需要在未开始链接过程的账户上输入该数字。

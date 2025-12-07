@@ -91,11 +91,11 @@ AZPixel-Team 的 Java2Bedrock
 
 这是一个律师勋章，我想让他在基岩版上也显示
 
-![](./_image/CIMM1.jpg)
+![](./_images/CIMM1.jpg)
 
 我们来到 `服务端/plugins/geyser/custom_mappings` 目录，创建一个 json 文件用于 Geyser 映射自定义物品
 
-![](./_image/CIMM2.jpg)
+![](./_images/CIMM2.jpg)
 
 名字可以根据自己喜好起，我这里命名为 `test_item.json`。
 
@@ -103,7 +103,7 @@ AZPixel-Team 的 Java2Bedrock
 
 回到游戏，手持律师勋章，执行 `/iatag` 指令
 
-![](./_image/CIMM3.jpg)
+![](./_images/CIMM3.jpg)
 
 我们看到他的 `ID` 是 `minecraft:paper`，以及 `CustomModelData(简称CMD)` 值是 10534
 
@@ -143,7 +143,7 @@ json 文件不允许有注释，如果你要复制过去记得删除注释
 
 现在在 `资源包/textures` 目录下，创建个 `item_textures.json` 文件用于指定物品的纹理
 
-![](./_image/CIMM4.jpg)
+![](./_images/CIMM4.jpg)
 
 在 `item_textures.json` 中写入
 

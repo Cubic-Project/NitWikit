@@ -105,7 +105,7 @@ discord 下载预构建
 
 此插件为 Geyser 提供了 JE 攻击冷却指示器样式
 
-![](_image/GeyserExtras.gif)
+![](./_images/GeyserExtras.gif)
 
 还有!:
 
@@ -141,7 +141,7 @@ discord 下载预构建
 
 让服务器在 Xbox Live 上显示为可加入的会话，朋友可以直接从 Xbox 好友列表加入服务器。
 
-![img.png](_image/img_1.png)
+![img.png](./_images/img_1.png)
 
 ### 工作原理
 
@@ -206,7 +206,7 @@ Broadcaster 通过模拟 Xbox Live 客户端，将你的 Geyser/基岩版服务�
 
 自定义图片功能允许你为服务器设置专属的展示图片，该图片会在 Xbox Live 好友列表和个人资料页面中显示。
 
-![](_image/img.png)
+![](./_images/img.png)
 
 将制作好的图片重命名为 `screenshot.jpg`,放到配置文件目录即可
 
