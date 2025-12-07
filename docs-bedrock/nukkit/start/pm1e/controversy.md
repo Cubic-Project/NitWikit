@@ -21,7 +21,7 @@ NitWiki 仅提供关于 Nukkit PetteriM1 Edition 的信息和教程，但不对�
 
 还有：NukkitPetteriM1Edition 不知道啥时候开始老老实实把源代码推回来了：
 
-![?](./zhengyi.png)
+![?](./_images/controversy.png)
 
 :::
 

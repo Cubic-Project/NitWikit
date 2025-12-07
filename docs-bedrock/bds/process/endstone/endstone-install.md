@@ -28,23 +28,23 @@ Linux 环境下：
 
 前往 EndStone 开源仓库：[GitHub](https://github.com/EndstoneMC/endstone)，找到 Releases，打开后下载压缩包
 
-![1](./imgs/1.png)
+![1](./_images/1.png)
 
-![2](./imgs/2.png)
+![2](./_images/2.png)
 
 将下载好的压缩包放到新建的文件夹内，或者上传到服务器上的新建好的文件夹内
 
-![3](./imgs/3.png)
+![3](./_images/3.png)
 
 解压后获得 EndStone 本体
 
-![4](./imgs/4.png)
+![4](./_images/4.png)
 
 ### 二、下载 BDS 服务端
 
 启动 start.bat，获得该版本的 EndStone 支持的 BDS 服务端版本
 
-![5](./imgs/5.png)
+![5](./_images/5.png)
 
 目前已知该版本的 EndStone 支持对接 1.21.41 版本
 
@@ -52,7 +52,7 @@ Linux 环境下：
 
 复制相应的 URL 后的下载链接，直接粘贴到新窗口的 Web 地址栏回车下载 BDS 服务端压缩包
 
-![6](./imgs/6.png)
+![6](./_images/6.png)
 
 将下载后的服务端 zip 压缩包放入 EndStone 文件夹内
 
@@ -60,15 +60,15 @@ Linux 环境下：
 
 创建 bedrock_server 文件夹
 
-![7](./imgs/7.png)
+![7](./_images/7.png)
 
 将 BDS 服务端 zip 压缩包解压到 bedrock_server 文件夹
 
 然后，创建 `version.txt` 文件，打开并编辑以下内容，编辑完毕后保存
 
-![8](./imgs/8.png)
+![8](./_images/8.png)
 
-![9](./imgs/9.png)
+![9](./_images/9.png)
 
 ### 四、启动服务器
 
@@ -76,7 +76,7 @@ Linux 环境下：
 
 启动成功后会显示下面内容
 
-![10](./imgs/10.png)
+![10](./_images/10.png)
 
 恭喜你！你已经成功开启了可以支持插件的基岩版服务器！赶紧体验一下吧~
 
@@ -98,11 +98,11 @@ Linux 请按照 [这个教程](https://blog.csdn.net/hd243608836/article/details
 
 运行 Python 安装包程序进行安装：
 
-![101](./imgs/1-1.png)
+![101](./_images/1-1.png)
 
-![102](./imgs/1-2.png)
+![102](./_images/1-2.png)
 
-![103](./imgs/1-3.png)
+![103](./_images/1-3.png)
 
 安装完成后，打开 CMD（按住 `WIN + R` 打开后输入 `cmd` 回车），输入以下指令检测 Python 是否正常安装
 
@@ -112,7 +112,7 @@ python
 
 安装好 CMD 会这么显示：
 
-![104](./imgs/1-4.png)
+![104](./_images/1-4.png)
 
 ### 二、安装 EndStone 本体
 
@@ -128,7 +128,7 @@ python
 
 如果在 D 盘，请按照下图操作进行（**Linux 一类系统可直接使用 `cd 文件夹路径` 进入相应目录**）
 
-![105](./imgs/1-5.png)
+![105](./_images/1-5.png)
 
 输入下面指令安装 EndStone 本体 (Python 默认的下载会比较慢，如果想加快下载速度推荐必应搜索 **Python 换国内下载源** 配置，本教程不再过多阐述)
 
@@ -138,7 +138,7 @@ pip install endstone
 
 下载完后应该是这样的
 
-![106](./imgs/1-6.png)
+![106](./_images/1-6.png)
 
 ### 三、安装 VC 运行库
 
@@ -156,7 +156,7 @@ pip install endstone
 
 CMD 控制台输入 `endstone` ，获得该版本的 EndStone 支持的 BDS 服务端版本
 
-![107](./imgs/1-7.png)
+![107](./_images/1-7.png)
 
 通过上图可知，目前该版本的 EndStone 支持对接 1.21.41 版本
 
@@ -164,7 +164,7 @@ CMD 控制台输入 `endstone` ，获得该版本的 EndStone 支持的 BDS 服�
 
 找到相应版本的下载地址，复制 URL 后的下载链接，直接粘贴到新窗口的 Web 地址栏回车下载 BDS 服务端压缩包
 
-![6](./imgs/6.png)
+![6](./_images/6.png)
 
 将下载后的服务端 zip 压缩包放入 EndStone 文件夹内
 
@@ -172,15 +172,15 @@ CMD 控制台输入 `endstone` ，获得该版本的 EndStone 支持的 BDS 服�
 
 创建 bedrock_server 文件夹
 
-![108](./imgs/1-8.png)
+![108](./_images/1-8.png)
 
 将 BDS 服务端 zip 压缩包解压到 bedrock_server 文件夹
 
 然后，创建 `version.txt` 文件，打开并编辑以下内容，编辑完毕后保存
 
-![8](./imgs/8.png)
+![8](./_images/8.png)
 
-![9](./imgs/9.png)
+![9](./_images/9.png)
 
 ### 六、启动服务器
 
@@ -188,7 +188,7 @@ CMD 控制台输入 `endstone` ，获得该版本的 EndStone 支持的 BDS 服�
 
 启动成功后会显示下面内容
 
-![109](./imgs/1-9.png)
+![109](./_images/1-9.png)
 
 恭喜你！你已经成功开启了可以支持插件的基岩版服务器！赶紧体验一下吧~
 

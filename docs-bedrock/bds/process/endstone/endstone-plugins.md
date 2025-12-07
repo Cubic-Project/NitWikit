@@ -9,15 +9,15 @@ sidebar_position: 1
 
 ### [MineBBS 论坛](https://www.minebbs.com/resources/categories/bdserver.38/)（发展国内基岩版社区的你敢说没有？）
 
-![201](./imgs/2-1.png)
+![201](./_images/2-1.png)
 
 ### [pip 源](https://pypi.org/search/?q=endstone) （EndStone 绝大多数插件都在这里发布了）
 
-![202](./imgs/2-2.png)
+![202](./_images/2-2.png)
 
 ### [Bedrinth 下载站](https://bedrinth.com/?platform=endstone) （除了 pip 外另一个比较知名的下载源，网速较慢，不太推荐）
 
-![203](./imgs/2-3.png)
+![203](./_images/2-3.png)
 
 ## 第二步、如何安装？
 
@@ -45,7 +45,7 @@ whl 格式本质上是一个压缩包，里面包含了 py 文件，以及经过
 
 :::
 
-![204](./imgs/2-4.png)
+![204](./_images/2-4.png)
 
 #### 第一步、下载插件
 
@@ -70,23 +70,23 @@ whl 格式本质上是一个压缩包，里面包含了 py 文件，以及经过
 
 1、打开 `bedrock_server` 文件夹，你会惊奇的发现：什么时候多了个 p`lugins` 文件夹？！！
 
-![205](./imgs/2-5.png)
+![205](./_images/2-5.png)
 
 2、打开 `plugins` 文件夹，将下载的 whl 插件文件拽入该文件夹中
 
 3、启动！当 CMD 显示插件名称时说明插件已加载成功！
 
-![206](./imgs/2-6.png)
+![206](./_images/2-6.png)
 
 4、如果你真不知道如何辨别插件是否加载，请在后台输入 `plugins` 指令
 
-![207](./imgs/2-7.png)
+![207](./_images/2-7.png)
 
 ##### 如果是压缩包文件
 
 比如下面这个赖皮家伙（不是）
 
-![208](./imgs/2-8.png)
+![208](./_images/2-8.png)
 
 教你三招：
 
@@ -96,17 +96,17 @@ whl 格式本质上是一个压缩包，里面包含了 py 文件，以及经过
 
 3、启动！享受插件便利！
 
-![209](./imgs/2-9.png)
+![209](./_images/2-9.png)
 
 ##### 插件配置
 
 有的会在下载的压缩文件中提前准备好
 
-![208](./imgs/2-8.png)
+![208](./_images/2-8.png)
 
 有的会在启动一次服务器后自动生成
 
-![2010](./imgs/2-10.png)
+![2010](./_images/2-10.png)
 
 编辑他们很简单，打开相应插件的文件夹，然后使用 VS Code 或者 Nodepad-- 一类编辑器对插件进行配置
 
@@ -124,6 +124,6 @@ whl 格式本质上是一个压缩包，里面包含了 py 文件，以及经过
 pip install 插件名
 ```
 
-![2011](./imgs/2-11.png)
+![2011](./_images/2-11.png)
 
 然后重启服务器，插件会自动安装完毕啦~
