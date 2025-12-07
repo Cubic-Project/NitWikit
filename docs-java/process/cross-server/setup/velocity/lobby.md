@@ -28,13 +28,13 @@ flowchart TD
 玩家 -->|登录服炸了| 游戏服
 ```
 
-- **在你的登录服安装 [登录插件](../../../plugin/other/Login/Login.md)**
+- **在你的登录服安装 [登录插件](../../../plugin/misc/login/login.md)**
 
 提供登录验证。
 
 如果你使用 AuthMe，建议在 Velocity 安装 [AuthMeVelocity](https://modrinth.com/plugin/authmevelocity)。
 
-- **在你的登录服安装 [大厅插件](../../../plugin/WorldManagement/lobby/lobby.md)**
+- **在你的登录服安装 [大厅插件](../../../plugin/world-management/lobby/lobby.md)**
 
 提供各种大厅常用的功能如：
 

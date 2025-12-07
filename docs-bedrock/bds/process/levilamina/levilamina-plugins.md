@@ -21,7 +21,7 @@ LeviLamina 的插件是以文件夹的格式存在的。通常插件文件夹中
 
 ## 使用 Lip 安装插件
 
-如果你还没有安装 Lip，可以参考 [上一章的教程](/Bedrock/bds-core/process/LeviLamina/LeviLamina-Install#准备工作---安装-lip) 。
+如果你还没有安装 Lip，可以参考 [上一章的教程](./levilamina-install.md#准备工作---安装-lip) 。
 
 要使用 Lip 安装插件，你必须确保该插件 **支持通过 Lip 安装** 。如果插件文档没有写明任何使用 Lip 安装的方法或命令，你就不应该使用 Lip 安装该插件。
 

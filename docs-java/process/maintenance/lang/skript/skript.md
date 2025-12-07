@@ -82,8 +82,8 @@ on join:
 
 ## 基础教程
 
-见[“基础教程”](BasicTutorials.md)。
+见[“基础教程”](basic-tutorials.md)。
 
 ## 进阶教程
 
-见[“高级教程”](AdvancedTutorials.md)。
+见[“高级教程”](advanced-tutorials.md)。

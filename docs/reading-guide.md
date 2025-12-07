@@ -33,6 +33,6 @@ sidebar_position: 2
 
 ## 跳转
 
-例如在 **"Java"** 的 [选择、下载和安装 Java](/Java/preparation/choose-and-download-and-install-java) 只贴了一行链接跳转到了通用
+例如在 **"Java"** 的 [选择、下载和安装 Java](/java/preparation/choose-and-download-and-install-java) 只贴了一行链接跳转到了通用
 
 这是因为此部分内容 **“Java”** 与 **“Bedrock”** 相同。阅读完成那节回来即可

@@ -10,9 +10,9 @@ sidebar_position: 2
 
 ## 关于 Transfer
 
-Transfer是一个新的，**不同于 BungeeCord 与 Velocity 的**跨服方法，在《我的世界》1.20.5版本被添加。
+Transfer 是一个新的，**不同于 BungeeCord 与 Velocity 的**跨服方法，在《我的世界》1.20.5 版本被添加。
 
-其去除了中心地位的跨服代理服务器，提供了简单有效的简易跨服方式。[点此](./build-up.md)查看搭建方法。
+其去除了中心地位的跨服代理服务器，提供了简单有效的简易跨服方式。[点此](setup.md)查看搭建方法。
 
 指令格式如下（其中普通括号表示非必须填写）：
 
@@ -44,9 +44,9 @@ Transfer是一个新的，**不同于 BungeeCord 与 Velocity 的**跨服方法�
 
 ## Velocity 的 Transfer 支持
 
-Velocity 支持从别的服务器通过 Transfer 跳转至 Velocity，需要在velocity.toml里面找到这个`accepts-transfers = false`，改false为true。
+Velocity 支持从别的服务器通过 Transfer 跳转至 Velocity，需要在 velocity.toml 里面找到这个`accepts-transfers = false`，改 false 为 true。
 
-你也可以从 Velocity 之下的1.20.5或更高版本的下游服务器跳转到其他服务器。
+你也可以从 Velocity 之下的 1.20.5 或更高版本的下游服务器跳转到其他服务器。
 
 ## 关于 NeoForge
 
@@ -68,6 +68,6 @@ Velocity 支持从别的服务器通过 Transfer 跳转至 Velocity，需要在v
 
 一开始以为是 OnlyTransfer 插件在混合架构运作不佳，但后来在纯 Transfer 跨服架构大量对比测试，确定了问题来源为 NeoForge 客户端。
 
-经测试，NeoForge 1.21.1, 1.21.4, 1.21.7均存在此问题，其他版本很可能也有这类问题。
+经测试，NeoForge 1.21.1, 1.21.4, 1.21.7 均存在此问题，其他版本很可能也有这类问题。
 
 </details>

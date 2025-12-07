@@ -46,7 +46,7 @@ BungeeCord / Velocity 端 (或他们的 Fork) 在这里我们称为`跨服端`(�
 
 **推荐使用 Velocity**，除非你的版本不适合 Velocity 的现代转发。
 
-对于各个 MC 服务器**部署在不同的服务器**上，跨服代理和子服之间出现了没法进行稳定连接的情况时，也可以尝试原版 1.20.5 服务器新增的 [Transfer](./build-up/Transfer/transfer.md) 指令。
+对于各个 MC 服务器**部署在不同的服务器**上，跨服代理和子服之间出现了没法进行稳定连接的情况时，也可以尝试原版 1.20.5 服务器新增的 [Transfer](./setup/transfer/transfer.md) 指令。
 
 ### 安装数据库
 

@@ -28,7 +28,7 @@ sidebar_position: 2
 - 喜欢传统 Minecraft 游戏体验的玩家。
 - 腐竹希望专注于提供稳定和公平的游戏环境。
 
-## 2. Addon 服 (仅 BDS)z
+## 2. Addon 服 (仅 BDS)
 
 ### 定义
 

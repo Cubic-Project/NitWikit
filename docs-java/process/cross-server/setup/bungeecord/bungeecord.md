@@ -14,4 +14,4 @@ sidebar_position: 1
 
 如果开高版本尽量选择 Waterfall 或 Velocity
 
-[关于 waterfall 停止维护](/Java/process/cross-server/server-core-choose#关于-waterfall)
+[关于 waterfall 停止维护](../../server-core-choose.md#关于-waterfall)

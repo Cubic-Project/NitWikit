@@ -34,7 +34,7 @@ java -Xms1024M -Xmx1024M -jar velocity-ctd.jar
 
 > 在 **[servers]** 那里该填什么？
 >
-> > 答:
+> > 答：
 > > `子服名 = "子服地址"`
 > >
 > > 如 `login = "0.0.0.0:25501"`
@@ -45,7 +45,7 @@ java -Xms1024M -Xmx1024M -jar velocity-ctd.jar
 
 :::
 
-[详细配置文件讲解](velocity.toml.md)
+[详细配置文件讲解](velocity-toml.md)
 
 ```toml
 # velocity 端的端口号，数字 1000~65536 随意

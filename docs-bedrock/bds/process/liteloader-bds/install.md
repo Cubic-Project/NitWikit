@@ -16,7 +16,7 @@ LiteLoaderBDS 不会自动下载安装对应版本 BDS，你需要手动寻找�
 
 :::warning
 
-LiteLoaderBDS 仅适配了 BDS 的 1.20.32 及以下版本。对于更高版本的 BDS 需要使用 [LeviLamina](../LeviLamina/LeviLamina.md) 加载器。
+LiteLoaderBDS 仅适配了 BDS 的 1.20.32 及以下版本。对于更高版本的 BDS 需要使用 [LeviLamina](../levilamina/levilamina.md) 加载器。
 对于 1.20.40 - 1.20.51 版本，你需要使用其他加载器。如果你只需要兼容 1.20.40 - 1.20.51 的客户端进服，你可以选用 BDS 1.20.32、最新版 LiteLoader 和 Glacie 插件的方案。
 
 :::

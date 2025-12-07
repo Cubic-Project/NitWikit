@@ -22,7 +22,7 @@ const config: Config = {
         start: "快速开始 🥵",
         // 标题颜色
         titleColor: "white",
-        // 自定义swizzle配置
+        // 自定义 swizzle 配置
         swizzleConfig: {
             enabled: true,
             components: {
@@ -108,7 +108,7 @@ const config: Config = {
             {
                 id: "docs-java",
                 path: "docs-java",
-                routeBasePath: "Java",
+                routeBasePath: "java",
                 editUrl: "https://github.com/Cubic-Project/NitWikit/tree/main",
                 sidebarPath: require.resolve("./sidebars.js"),
                 editCurrentVersion: true,
@@ -143,7 +143,7 @@ const config: Config = {
             {
                 id: "docs-bedrock",
                 path: "docs-bedrock",
-                routeBasePath: "Bedrock",
+                routeBasePath: "bedrock",
                 editUrl: "https://github.com/Cubic-Project/NitWikit/tree/main",
                 sidebarPath: require.resolve("./sidebars.js"),
                 editCurrentVersion: true,
@@ -227,7 +227,7 @@ const config: Config = {
             }
         },
         image: "img/docusaurus-social-card.jpg",
-        metadata: [{ name: "keywords", content: "Minecraft, 开服教程, MC, 开服, 插件, 联机, 我的世界" }],
+        metadata: [{ name: "keywords", content: "Minecraft, 开服教程，MC, 开服，插件，联机，我的世界" }],
         navbar: {
             title: "Cubic Wiki",
             logo: {

@@ -19,7 +19,7 @@ sidebar_position: 1
 
 仅仅需要你下载一个小小的 Java 安装程序，或者更改 JVM 参数 (大白话来说就是开服参数)。
 
-参见 [JVM 优化](/Java/optimize/jvm)
+参见 [JVM 优化](./jvm/jvm.md)
 
 ## 第二步 - 预生成
 
@@ -44,13 +44,13 @@ sidebar_position: 1
 
 :::
 
-完整版请查看[核心选择](/docs-java/start/server-core-choose/server-core-choose.md)
+完整版请查看[核心选择](../../../start/server-core-choose/server-core-choose.md)
 
 ## 第四步 - 调整服务端配置
 
 目前，Bilibili 上面的配置都是很老的，不推荐使用
 
-文档里的 [调服务端配置](go.md) 比较新，非常推荐
+文档里的 [调服务端配置](go.mdx) 比较新，非常推荐
 
 ## 第五步 - 更换硬件
 
