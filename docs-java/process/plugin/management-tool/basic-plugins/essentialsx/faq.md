@@ -7,8 +7,8 @@ sidebar_position: 7
 
 ## 你没有权限与 xxx 交互。
 
-![](../../Permission/_images/日志-1.png)
+![](../../permission/_images/日志-1.png)
 
 🏆来的我不是叫你不要装 ess 全家桶？
 
-删了你的 EssentialsXAntiBuild 或者看 [这里](../../Permission/tips.md)
+删了你的 EssentialsXAntiBuild 或者看 [这里](../../permission/tips.md)
