@@ -54,7 +54,7 @@ import TabItem from '@theme/TabItem';
 
 :::info
 
-见 [插件 | ViaVersion](../../plugin/other/Via/Via.md)
+见 [插件 | ViaVersion](../../plugin/misc/via/via.md)
 
 :::
 
@@ -89,7 +89,7 @@ import TabItem from '@theme/TabItem';
 
 :::info
 
-见 [插件 | Geyser](/docs-java/process/mobile-player/Geyser/introduction/overview.md)
+见 [插件 | Geyser](../../mobile-player/geyser/introduction/overview.md)
 
 :::
 
@@ -122,7 +122,7 @@ import TabItem from '@theme/TabItem';
 
 :::info
 
-见 [插件 | ServerUtils](../../plugin/ManageTool/PluginManagement/ServerUtils.md)
+见 [插件 | ServerUtils](../../plugin/management-tool/plugin-management/serverutils.md)
 
 :::
 
@@ -188,7 +188,7 @@ TODO
 
 :::info
 
-见 [插件 | TAB](../../plugin/other/TAB&Scoreboard/TAB.md)
+见 [插件 | TAB](../../plugin/misc/tab-scoreboard/tab.md)
 
 :::
 
@@ -230,7 +230,7 @@ TODO
 
 :::info
 
-[插件 | 皮肤 - skinsRestorer](../../plugin/other/SkinsRestorer.md)
+[插件 | 皮肤 - skinsRestorer](../../plugin/misc/skinsrestorer.md)
 
 :::
 

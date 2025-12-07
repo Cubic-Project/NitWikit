@@ -26,4 +26,4 @@ sidebar_position: 7
 
 ### 解析到自己域名
 
-- 可参考本文档中的 [申请域名](/advance/domain-application-and-dns-resolution)
+- 可参考本文档中的 [申请域名](/advance/domain-and-dns)

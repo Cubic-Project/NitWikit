@@ -73,7 +73,7 @@ ViaProxy 是独立的代理程序，支持任意客户端版本连接任意服�
 - 愚人节快照 (3D Shareware，20w14infinite，25w14craftmine)
 - 战斗测试快照 (Combat Test 8c)
 - 基岩版 1.21.93 ([某些功能缺失](https://github.com/RaphiMC/ViaBedrock#features))
-- 快照版本 15w31a 和 15w31b (需要 [ViaSnapshot](/advance/ViaProxy/plugins/compatibility#viasnapshot))
+- 快照版本 15w31a 和 15w31b (需要 [ViaSnapshot](/advance/viaproxy/plugins/compatibility#viasnapshot))
 
 ### 支持的客户端版本
 
