@@ -78,7 +78,7 @@ bedrock_server_mod.exe
 
 ## 方法二：手动安装 (不推荐)
 
-只有想要调试新版本的开发人员才会手动安装，手动安装只会安装允许 LeviLamina 运行的基本部件，它缺少 CrashLogger、I18N 等组件。
+只有想要调试新版本的开发人员才会手动安装，手动安装只会安装允许 LeviLamina 运行的基本部件，它缺少 CrashLogger、i18n 等组件。
 
 ### 下载必要的文件
 

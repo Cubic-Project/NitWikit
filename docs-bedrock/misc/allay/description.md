@@ -21,7 +21,7 @@ Allay 是使用 Java 编写的 Minecraft: Bedrock Edition 第三方服务端软�
 
 请注意，此项目仍处于非常早期的阶段且还未释放正式版，大量接口可能会在没有预先通知的情况下增加或删除。请不要在生产环境使用 Allay。
 
-你可以查看我们的 RoadMap 来获取开发进度。
+你可以查看我们的 Roadmap 来获取开发进度。
 
 :::
 
@@ -29,7 +29,7 @@ Allay 是使用 Java 编写的 Minecraft: Bedrock Edition 第三方服务端软�
 
 - 跨平台：Allay 基于 JVM，故可以在大多数能运行 JVM 的平台上运行。
 - 高性能：
-  - 我们充分了解 Nukkit 系服务端在高负载环境下存在的问题，Allay 在同样的负载环境下于特定方面（eg: 实体物理）的性能比 Nukkit 高近百倍。
+  - 我们充分了解 Nukkit 系服务端在高负载环境下存在的问题，Allay 在同样的负载环境下于特定方面（e.g. 实体物理）的性能比 Nukkit 高近百倍。
   - 除此之外，得益于重新设计的线程模型，Allay 能充分利用多核 CPU。这意味着你不需要刻意使用高频率的 CPU。
   - Allay 基于最新的 Java21，理论上能获得更好的性能
 - 易于上手：
@@ -45,13 +45,13 @@ Allay 是使用 Java 编写的 Minecraft: Bedrock Edition 第三方服务端软�
 
 ## 开始使用
 
-Allay 基于 Java21，故在运行&构建 Allay 前你需要安装 Java21。
+Allay 基于 Java21，故在运行 & 构建 Allay 前你需要安装 Java21。
 
 若你有开发脚本插件的需求，我们建议你使用 GraalVM 以获得最好性能。
 
 ### 直接运行
 
-前往[GitHub Releases](https://github.com/AllayMC/Allay/releases)下载
+前往 [GitHub Releases](https://github.com/AllayMC/Allay/releases) 下载
 
 使用以下启动脚本启动服务端（jar 文件名为示例，请改为你设置的 jar 核心名）
 

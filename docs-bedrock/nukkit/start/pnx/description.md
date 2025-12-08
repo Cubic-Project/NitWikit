@@ -14,7 +14,7 @@ PowerNukkitX（简称 PNX）是由包括 BlocklyNukkit 团队在内的中国 Nuk
 得益于完全开源的代码，您在遵守开源协议的情况下使用 PowerNukkitX 没有任何法律风险，
 内部的数十万 API 可以随意调用，您可以深入查看实现，
 通过 JVM 生态中的各种工具及其方便地进行开发、调试、注入、拦截。也正因如此，
-Nukkit 生态丰富多彩，成百上千各种各样的插件供您选择，您可以用您喜欢的任意 JVM 语言编写插件，如 Java, Kotlin, Scala…… ，同时也支持使用 Javascript 编写插件。
+Nukkit 生态丰富多彩，成百上千各种各样的插件供您选择，您可以用您喜欢的任意 JVM 语言编写插件，如 Java, Kotlin, Scala…… ，同时也支持使用 JavaScript 编写插件。
 
 ## 特色
 

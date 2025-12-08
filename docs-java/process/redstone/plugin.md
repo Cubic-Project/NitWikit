@@ -141,13 +141,13 @@ settings:
 
 请查看 [红石优化](../maintenance/optimize/go.mdx#redstone-implementation)
 
-同时 Mojang 在 24w33a 更新了红石的链接机制 (虽然是实验性内容),从代码来看，Mojang 的优化方式与 Alternate Current 非常像
+同时 Mojang 在 24w33a 更新了红石的链接机制 (虽然是实验性内容)，从代码来看，Mojang 的优化方式与 Alternate Current 非常像
 
 可以考虑在服务器中开启
 
 ## Purpur
 
-Purpur 可以还原比 Paper 多的特性 (虽然也就多了两个),但可以获得来自 Pufferfish 的生物优化
+Purpur 可以还原比 Paper 多的特性 (虽然也就多了两个)，但可以获得来自 Pufferfish 的生物优化
 
 ```yaml
 allow-void-trading: true # 允许虚空交易
