@@ -19,4 +19,4 @@ sidebar_label: 空岛 - ASkyBlock
 
 支持到 1.12
 
-需要 1.13+ 使用 [BSkyBlock](/Java/process/plugin/protection/BentoBox#bskyblock)
+需要 1.13+ 使用 [BSkyBlock](bentobox.md#bskyblock)

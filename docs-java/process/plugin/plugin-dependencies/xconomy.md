@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # 经济插件
 
-这里指以 [Vault](Vault/vault.md) 为前置的为服务器提供经济的 **一类插件**
+这里指以 [Vault](./vault/vault.md) 为前置的为服务器提供经济的 **一类插件**
 
 如 XConomy
 
@@ -23,7 +23,7 @@ sidebar_position: 3
 
 国人插件
 
-如果你已经安装了 [基础插件](/Java/Essentials) 并且**没有跨服的需求**，可以不安装这个插件
+如果你已经安装了 [基础插件](../management-tool/basic-plugins/basic-plugins.md) 并且**没有跨服的需求**，可以不安装这个插件
 
 因为基础插件已经提供了经济
 

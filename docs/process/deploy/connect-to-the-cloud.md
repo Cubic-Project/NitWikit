@@ -48,7 +48,7 @@ sidebar_position: 4
 
 </details>
 
-[Linux SSH](/advance/Linux/Connect-to-server)
+[Linux SSH](../../advance/linux/connect-to-server.md)
 
 #### 放行端口
 
@@ -70,7 +70,7 @@ sidebar_position: 4
 
 你的服务商告诉你，除了 `12345`，你可以使用 `12346` 端口
 
-那你就把你服务端的 [端口](/Java/start/connect-to-server#端口) 设置为 `12346` ，记得 [放行端口](#放行端口)
+那你就把你服务端的 [端口](/java/start/connect-to-server#端口) 设置为 `12346` ，记得 [放行端口](#放行端口)
 
 然后在你的游戏客户端里添加服务器，填地址为 `8aka.org:12346`
 
@@ -92,7 +92,7 @@ sidebar_position: 4
 
 [内网穿透](intranet-penetration.md)
 
-[搭建内网穿透 (frp)](/advance/frp)
+[搭建内网穿透 (frp)](../../advance/frp.md)
 
 </details>
 

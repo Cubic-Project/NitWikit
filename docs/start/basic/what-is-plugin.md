@@ -31,7 +31,7 @@ sidebar_position: 3
 >
 > 服务器运行时不要轻易这么做，绝大多数插件本身不支持热加载，这么做会导致不可预料的后果。
 >
-> 如果你一定要逆天而行，查看 [插件管理](/Java/PluginMagagement) 页面。
+> 如果你一定要逆天而行，查看 [插件管理](/java/PluginMagagement) 页面。
 
 :::warning
 

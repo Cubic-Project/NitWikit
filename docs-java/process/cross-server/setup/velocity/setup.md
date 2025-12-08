@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## 下载
 
-在 [核心选择](/docs-java/process/cross-server/server-core-choose.md) 找到 Velocity 然后下载
+在 [核心选择](../../server-core-choose.md) 找到 Velocity 然后下载
 
 ## 启动
 

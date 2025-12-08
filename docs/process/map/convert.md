@@ -75,7 +75,7 @@ Chunker 是一个多功能的转换工具，支持基岩版和 Java 之间的转
 
 Amulet 可用于高版本地图转低版本，但在地图转换后可能出现光源问题
 
-使用 [FastAsyncWorldEdit](/Java/process/plugin/WorldManagement/FastAsyncWorldEdit)
+使用 [FastAsyncWorldEdit](/java/process/plugin/world-management/fastasyncworldedit)
 
 选择光源异常区域，先 `//removelight` 再 `//fixlighting`
 

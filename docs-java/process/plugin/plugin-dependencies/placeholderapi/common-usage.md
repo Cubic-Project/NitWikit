@@ -90,7 +90,7 @@ Multiverse-Core v5 已经内置 papi 支持，不再需要额外下载扩展
 </TabItem>
 </Tabs>
 
-[案例 | 中文世界名](../../WorldManagement/Multiverse/Q&A_1.md#世界别名)
+[案例 | 中文世界名](../../world-management/multiverse/faq1.md#世界别名)
 
 ## PlayerPoints
 

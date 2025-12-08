@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## 下载
 
-前往 [核心选择](/docs-java/process/cross-server/server-core-choose.md) 下载 BungeeCord / Waterfall
+前往 [核心选择](../../server-core-choose.md) 下载 BungeeCord / Waterfall
 
 BungeeCord 不再支持过旧版本 Minecraft
 
@@ -40,7 +40,7 @@ java -Xms1024M -Xmx1024M -jar 核心名字.jar
 
 配置 BungeeCord 端根目录中的 `config.yml`
 
-[详细配置文件讲解](config.yml.md)
+[详细配置文件讲解](config-yml.md)
 
 ```yaml
 servers:

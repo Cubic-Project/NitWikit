@@ -25,7 +25,7 @@ sidebar_position: 2
 
 <!--markdownlint-disable line-length-->
 
-由于 Minecraft 的 [Tick-loop](/start/basic/what-is-caton) 逻辑是单线程的。更多核心只能用于生成区块、插件任务等非主线程任务，不建议超过 8 核心的服务器继续增加核心提升流畅度。
+由于 Minecraft 的 [Tick-loop](../../start/basic/what-is-lag.md) 逻辑是单线程的。更多核心只能用于生成区块、插件任务等非主线程任务，不建议超过 8 核心的服务器继续增加核心提升流畅度。
 
 <!--markdownlint-enable line-length-->
 

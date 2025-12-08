@@ -29,9 +29,9 @@ sidebar_position: 2
 
 在上方图片中，可以看到箭头所指一行是 `%vault_eco_balance%`
 
-你需要安装 [Vault](./../Vault/vault.md) 插件和 [经济插件](../XConomy.md)
+你需要安装 [Vault](./../vault/vault.md) 插件和 [经济插件](../xconomy.md)
 
-接着，确保你安装了 [PlaceHolderAPI](PlaceHolderAPI.md) 插件，执行下方命令
+接着，确保你安装了 [PlaceHolderAPI](placeholderapi.md) 插件，执行下方命令
 
 ```bash
 /papi ecloud download Vault

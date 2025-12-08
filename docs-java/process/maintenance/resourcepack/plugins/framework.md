@@ -134,9 +134,9 @@ CraftEngine 使用一个服务端的真实体存储家具的数据，然后将�
 
 :::info[说明]
 
-CraftEngine 提供了比 [PackSquash](/Java/process/maintenance/resourcepack/compress) 更强大的内置资源包保护。
+CraftEngine 提供了比 [PackSquash](../compress.md) 更强大的内置资源包保护。
 
-因为 CraftEngine 侧重于保护性所以使用保护功能时会导致资源包大小增加，如果侧重于压缩率更推荐使用 [PackSquash](/Java/process/maintenance/resourcepack/compress)。
+因为 CraftEngine 侧重于保护性所以使用保护功能时会导致资源包大小增加，如果侧重于压缩率更推荐使用 [PackSquash](../compress.md)。
 
 :::
 

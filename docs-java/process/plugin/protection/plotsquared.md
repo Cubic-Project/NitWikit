@@ -29,4 +29,4 @@ sidebar_label: 地皮 - PlotSquared
 
 ## 前置
 
-[WorldEdit](../WorldManagement/worldedit.md) 或 [FastAsyncWorldEdit](../WorldManagement/fastasyncworldedit.md)
+[WorldEdit](../world-management/worldedit.md) 或 [FastAsyncWorldEdit](../world-management/fastasyncworldedit.md)

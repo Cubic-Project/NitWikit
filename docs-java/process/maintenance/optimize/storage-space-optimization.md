@@ -100,7 +100,7 @@ Leaf/Luminol 等核心最新版已应用修复补丁，虽然性能会受到影�
 
 #### Slime
 
-请查看[Slime 区域格式](/Java/advance/slime-world)
+请查看[Slime 区域格式](../../../advance/slime-world.md)
 
 ## 其他
 

@@ -163,3 +163,4 @@ sidebar_position: 100
 - [ ] 把文档文件名和包名都改为 `kebab-case` 并更新所有 .md 文档内引用 (使用 `pnpm build` 进行检查)
 - [ ] 迁移 TODOs 到 Projects
 - [ ] 是否要规范 `<TabItem value=`
+- [ ] AutoCorrect 会格式化 Markdown 的图片链接，导致加入空格无法解析 (在 Final review 里要审查到，并且 AutoCorrect 的 ignore 无法正常使用，需要反馈)

@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## 下载
 
-在 [核心选择](/docs-java/process/cross-server/server-core-choose.md) 找到 Velocity-CTD 然后下载
+在 [核心选择](../../server-core-choose.md) 找到 Velocity-CTD 然后下载
 
 或者直接从 [GitHub Releases](https://github.com/GemstoneGG/Velocity-CTD/releases) 下载最新版本
 

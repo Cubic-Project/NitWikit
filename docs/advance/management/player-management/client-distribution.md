@@ -14,7 +14,7 @@ sidebar_position: 6
 
 :::tip
 
-如果你不清楚此处提到的 JRE 是什么，请阅读 [选择、下载和安装 Java](/preparation/java/choose-and-download-and-install-java)
+如果你不清楚此处提到的 JRE 是什么，请阅读 [选择、下载和安装 Java](../../../preparation//java/choose-and-download-and-install-java.md)
 
 :::
 

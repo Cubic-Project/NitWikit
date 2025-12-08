@@ -79,7 +79,7 @@ ViaProxy 是独立的代理程序，支持任意客户端版本连接任意服�
 
 - Release (1.7.2 - 1.21.8)
 - Beta 1.7.3 (需要 [ViaProxyBeta2Release](https://github.com/ViaVersionAddons/ViaProxyBeta2Release))
-- 基岩版 (需要 [Geyser](/Java/Geyser) 插件)
+- 基岩版 (需要 [Geyser](../../../mobile-player/geyser/geyser.md) 插件)
 
 ViaProxy 可以让现代客户端进入十年前的 Classic 服务器，也可以实现 Java 版与基岩版之间的互通！
 

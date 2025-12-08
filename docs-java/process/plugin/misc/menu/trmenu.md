@@ -103,7 +103,7 @@ TrMenu 入门学习文档
 
 ## VS Code 插件
 
-与 TrMenu 或 [kether](/Java/lang/kether) 有关的 VS Code 插件
+与 TrMenu 或 [kether](../../../maintenance/lang/kether/basic.md) 有关的 VS Code 插件
 
 - [TrMenu-Helper](https://marketplace.visualstudio.com/items?itemName=hhhhhy.trmenu-helper)
 
@@ -227,9 +227,9 @@ Sneaking-Offhand:
 
 :::tip
 
-你需要安装 [CheckItem](/Java/process/plugin/plugin-dependencies/PlaceHolderAPI/CheckItem)
+你需要安装 [CheckItem](../../plugin-dependencies/placeholderapi/check-item.md)
 
-并 [开启 give 和 remove](/Java/process/plugin/plugin-dependencies/PlaceHolderAPI/CheckItem#启用-give-和-remove) 和 [更改-boolean](/Java/process/plugin/plugin-dependencies/PlaceHolderAPI/Q&A#更改-boolean)
+并 [开启 give 和 remove](../../plugin-dependencies/placeholderapi/check-item.md#启用-give-和-remove) 和 [更改-boolean](../../plugin-dependencies/placeholderapi/faq.md#更改-boolean)
 
 :::
 
@@ -238,8 +238,8 @@ Sneaking-Offhand:
 **知识点：**
 
 - TrMenu 文档熟读并背诵
-- [kether](/Java/process/maintenance/lang/kether/basic)
-- [CheckItem](/Java/process/plugin/plugin-dependencies/PlaceHolderAPI/CheckItem)
+- [kether](../../../maintenance/lang/kether/basic.md)
+- [CheckItem](../../plugin-dependencies/placeholderapi/check-item.md)
 
 ```yaml
 "写法1":
@@ -294,8 +294,8 @@ Sneaking-Offhand:
 **知识点：**
 
 - TrMenu 文档熟读并背诵
-- [kether](/Java/process/maintenance/lang/kether/basic)
-- [CheckItem](../../plugin-dependencies/PlaceHolderAPI/CheckItem)
+- [kether](../../../maintenance/lang/kether/basic.md)
+- [CheckItem](../../plugin-dependencies/placeholderapi/check-item.md)
 - [妙妙写法](#妙妙写法)
 - [\{condition=\}条件](https://hhhhhy.gitbook.io/trmenu-v3/menu/action/option#tiao-jian)
 

@@ -12,7 +12,7 @@ import TabItem from '@theme/TabItem';
 
 部分 QQ 机器人程序会依赖 Minecraft 插件来实现部分无法完成的功能。
 
-关于机器人框架详情请见 [通用 | 机器人框架](./framework)
+关于机器人框架详情请见 [通用 | 机器人框架](framework.md)
 
 <!-- autocorrect-disable space-punctuation -->
 <Tabs queryString="tyqqbot">

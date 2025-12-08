@@ -111,7 +111,7 @@ https://www.java.com/zh-CN/download/
 
 </details>
 
-如果你想进行 JVM 优化，请看 [JVM 优化](/Java/optimize/jvm)
+如果你想进行 JVM 优化，请看 [JVM 优化](/java/optimize/jvm)
 
 ## 验证 Java 安装
 

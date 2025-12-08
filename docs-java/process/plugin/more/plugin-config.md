@@ -7,7 +7,7 @@ sidebar_position: 2
 
 插件的配置文件一般在 `/plugins/插件名字/` 文件夹中，常见的配置文件一般是 `config.yml` 。
 
-> 插件一般会使用 **YAML** 作为配置文件格式，建议先学习 [YAML](../../../advance/YAML/yaml.md) 语法。
+> 插件一般会使用 **YAML** 作为配置文件格式，建议先学习 [YAML](../../../advance/yaml/yaml.md) 语法。
 
 我们在开始前所做的准备工作中，推荐你安装任意一款推荐的文档编辑软件：请查看[文本编辑器](/preparation/text-editor)
 
@@ -41,11 +41,18 @@ import TabItem from '@theme/TabItem';
 
 插件文件夹中有类似 Language、lang、locale 之类的文件夹 (或其他东西？)：
 
-![](\_images/查看语言 -1.png)
+<!-- autocorrect disable space-world-->
+
+![](_images/查看语言-1.png)
 
 请寻找 zhcn、zh-cn、zh-CN、chinese 等字眼：
 
-![](\_images/查看语言 -2.png)
+<!-- autocorrect enable space-world-->
+<!-- autocorrect disable space-world-->
+
+![](_images/查看语言-2.png)
+
+<!-- autocorrect enable space-world-->
 
 然后一般要去插件配置文件 (多数为 config.yml) 把语言改成这里的文件名 (此处为 zh_cn)。
 
@@ -57,9 +64,11 @@ import TabItem from '@theme/TabItem';
 
 如果我们在插件文件夹找不到语言文件夹，可以直接用解压缩软件打开 jar 包：
 
-![](\_images/查看语言 - 拆开 jar.png)
+<!-- autocorrect disable space-world-->
 
-还有可能写在插件文档里，在项目 README 里，甚至在配置文件的注释里。
+![](_images/查看语言-拆开jar.png)
+
+<!-- autocorrect enable space-world-->
 
 碰到这之外的情况就需要你自己摸索了
 
@@ -81,7 +90,7 @@ import TabItem from '@theme/TabItem';
 
 然后把语言项改成 zh_CN、Chinese 等，具体应该写什么这地方。插件配置的注释可能提到
 
-也可以找找 [插件文件夹](/Java/process/plugin/more/plugin-config?plugin-language=folder) 和 [拆开 jar 文件](/Java/process/plugin/more/plugin-config?plugin-language=jar)
+也可以找找 [插件文件夹](plugin-config.md?plugin-language=folder) 和 [拆开 jar 文件](plugin-config.md?plugin-language=jar)
 
 </TabItem>
 
@@ -115,7 +124,7 @@ import TabItem from '@theme/TabItem';
 
 他**可能**把你要改的语言直接写死在代码里了，你要自己去改代码...
 
-比如驿站内核汉化的 [DecentHolograms](../other/Holograms/decentholograms.md)
+比如驿站内核汉化的 [DecentHolograms](../misc/holograms/decentholograms.md)
 
 </TabItem>
 </Tabs>

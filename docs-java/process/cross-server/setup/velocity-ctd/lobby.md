@@ -34,7 +34,7 @@ flowchart TD
 
 ### 登录插件
 
-**在你的登录服安装 [登录插件](../../../plugin/other/Login/Login.md)**
+**在你的登录服安装 [登录插件](../../../plugin/misc/login/login.md)**
 
 提供登录验证。
 
@@ -42,7 +42,7 @@ flowchart TD
 
 ### 大厅插件
 
-**在你的登录服安装 [大厅插件](../../../plugin/WorldManagement/lobby/lobby.md)**
+**在你的登录服安装 [大厅插件](../../../plugin/world-management/lobby/lobby.md)**
 
 提供各种大厅常用的功能如：
 
