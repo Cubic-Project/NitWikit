@@ -87,7 +87,7 @@ ViaProxy 可以让现代客户端进入十年前的 Classic 服务器，也可�
 
 官方发布页面：[GitHub Release](https://github.com/ViaVersion/ViaProxy/releases)
 
-Jenkins 构建：[ViaVersion Jenkins](https://ci.viaversion.com/view/All/job/ViaProxy/)
+Jenkins 构建：[ViaVersion Jenkins](https://ci.viaversion.com/view/all/job/ViaProxy/)
 
 ## 笨蛋脚本
 

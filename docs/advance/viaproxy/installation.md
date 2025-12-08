@@ -17,7 +17,7 @@ sidebar_position: 2
 
 ### 开发版本
 
-从 [ViaVersion Jenkins](https://ci.viaversion.com/view/All/job/ViaProxy/) 下载最新的开发版本。
+从 [ViaVersion Jenkins](https://ci.viaversion.com/view/all/job/ViaProxy/) 下载最新的开发版本。
 
 ### Docker 镜像
 

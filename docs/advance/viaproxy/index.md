@@ -11,7 +11,7 @@ sidebar_position: 10
 
 `下载` https://github.com/ViaVersion/ViaProxy/releases
 
-`Jenkins` https://ci.viaversion.com/view/All/job/ViaProxy/
+`Jenkins` https://ci.viaversion.com/view/all/job/ViaProxy/
 
 `Docker` https://github.com/ViaVersion/ViaProxy/pkgs/container/viaproxy
 
@@ -52,7 +52,7 @@ ViaProxy 是独立程序，不是服务器插件。它运行在客户端和服�
 
 官方发布页面：[GitHub Release](https://github.com/ViaVersion/ViaProxy/releases)
 
-Jenkins 构建：[ViaVersion Jenkins](https://ci.viaversion.com/view/All/job/ViaProxy/)
+Jenkins 构建：[ViaVersion Jenkins](https://ci.viaversion.com/view/all/job/ViaProxy/)
 
 Docker 镜像：[GitHub Packages](https://github.com/ViaVersion/ViaProxy/pkgs/container/viaproxy)
 
