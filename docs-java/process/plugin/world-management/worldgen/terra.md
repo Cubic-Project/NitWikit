@@ -47,7 +47,7 @@ sidebar_position: 1
 
 `GitHub` https://github.com/PolyhedralDev/Terra
 
-`文档(英文)` https://terra.polydev.org/install/index.html
+`文档 (英文)` https://terra.polydev.org/install/index.html
 
 `插件百科` https://mineplugin.org/Terra
 

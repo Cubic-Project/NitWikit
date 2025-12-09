@@ -25,4 +25,4 @@ sidebar_position: 3
 
 运行 `/luckperms group NBplus parent add default`，这样就能让 NBplus 权限组继承所有默认权限组中的权限。
 
-更多请查看：[Luckperms 中文教程](https://izzelaliz.gitbooks.io/luckperms-wiki/content/Usage.html)
+更多请查看：[LuckPerms 中文教程](https://izzelaliz.gitbooks.io/luckperms-wiki/content/Usage.html)

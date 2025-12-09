@@ -21,7 +21,7 @@ sidebar_position: 7
 
 具体操作方面：
 
-1. 保留所有的前置插件，如 Protocolib、Luckperms、Xconomy 等。
+1. 保留所有的前置插件，如 Protocolib、LuckPerms、XConomy 等。
 
 2. 将其他插件复制到新文件夹中，删除 `/plugins/` 中非前置插件的 `.jar` 文件。
 

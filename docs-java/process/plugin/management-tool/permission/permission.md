@@ -21,11 +21,11 @@ sidebar_position: 1
 
 :::tip[注意]
 
-我们只推荐 Luckperms 作为服务器的权限插件。本文档不会涉及其他任何权限插件。
+我们只推荐 LuckPerms 作为服务器的权限插件。本文档不会涉及其他任何权限插件。
 
 :::
 
-**不建议使用** Luckperms 以外的权限插件如：
+**不建议使用** LuckPerms 以外的权限插件如：
 
 - GroupManager
 - PermissionsEx
@@ -49,9 +49,9 @@ sidebar_position: 1
 
 `GitHub` https://github.com/LuckPerms/LuckPerms
 
-`文档(英文)` https://luckperms.net/wiki/Home
+`文档 (英文)` https://luckperms.net/wiki/Home
 
-`文档(中文)` https://continue-project.netlify.app/LuckPerms
+`文档 (中文)` https://continue-project.netlify.app/LuckPerms
 
 `插件百科` https://mineplugin.org/LuckPerms
 

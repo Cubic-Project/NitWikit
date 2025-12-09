@@ -11,9 +11,9 @@ sidebar_position: 2
 
 `GitHub` https://github.com/filoghost/ChestCommands
 
-`文档(英文)` https://filoghost.me/docs/chest-commands
+`文档 (英文)` https://filoghost.me/docs/chest-commands
 
-`文档(中文)` https://plugins.8aka.org/ChestCommands/intro
+`文档 (中文)` https://plugins.8aka.org/ChestCommands/intro
 
 :::
 

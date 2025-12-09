@@ -31,9 +31,9 @@ TypeWriter 是一款适用于 Paper 服务端的插件，它能通过简洁而�
 
 `MineBBS` https://www.minebbs.com/resources/.7951
 
-`文档(英文)` https://docs.typewritermc.com
+`文档 (英文)` https://docs.typewritermc.com
 
-`文档(中文)` https://typewriter.8aka.org
+`文档 (中文)` https://typewriter.8aka.org
 
 :::
 

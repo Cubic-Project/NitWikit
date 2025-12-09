@@ -30,7 +30,7 @@ sidebar_label: Java 版可能用到的网站
 
 虽然不登录账号不影响你浏览仓库和下载 Release 等。
 
-但是登录后可以给作者发 Issues 来报告问题，提交新需求/建议，还可以下载 Actions 中的文件。
+但是登录后可以给作者发 Issue 来报告问题，提交新需求/建议，还可以下载 Actions 中的文件。
 
 因此，建议注册并登陆账号。
 
@@ -52,7 +52,7 @@ GitHub 界面是全英文，可以尝试安装油猴汉化插件：https://githu
 
 1. 魔法
 2. [改 hosts](https://www.cnblogs.com/eudaimonia/p/16001981.html#1034247326)
-3. [Watt Toolkit](https://steampp.net/)：下载安装完成后，在左侧侧边栏切换到**网络加速**，点击**平台加速 (免费)**，往下翻勾上 GitHub，然后点击**一键加速**，随后就可以正常访问 GitHub 了
+3. [Watt Toolkit](https://steampp.net/)：下载安装完成后，在左侧侧边栏切换到 **网络加速**，点击 **平台加速 (免费)**，往下翻勾上 GitHub，然后点击 **一键加速**，随后就可以正常访问 GitHub 了
  <!--[点击此处](https://cn.bing.com/search?q=%E8%BF%9E%E4%B8%8D%E4%B8%8AGitHub%E6%80%8E%E4%B9%88%E5%8A%9E)-->
 
 </details>
@@ -297,7 +297,7 @@ PaperMC 的现代化的插件平台，目前正在 Beta 阶段，插件相对较
 
 能为你避开 90% 诈骗坑的 [防骗小技巧](https://www.pixelbbs.cn/t-1377-1-1.html)。
 
-> 像素论坛因[数据丢失](https://www.pixelbbs.cn/thread-3-1-1.html)，大部分页面已失效，以下为 Wayback Machine 存档。
+> 像素论坛因 [数据丢失](https://www.pixelbbs.cn/thread-3-1-1.html)，大部分页面已失效，以下为 Wayback Machine 存档。
 >
 > - [失信人员名单页面](https://web.archive.org/web/20240715222153/https://www.pixelbbs.cn/f-50-1.html)
 > - [防骗小技巧](https://web.archive.org/web/20250122075709/https://www.pixelbbs.cn/t-1377-1-1.html)
@@ -372,7 +372,7 @@ MOTD 就是 Minecraft 客户端在尝试连接服务器之前，服务器对客�
 
 MOTD 是玩家进入服务器之前最先看到的东西，决定了玩家对一个服务器的第一印象，所以，请任选一个 MOTD 生成器生成个性化 MOTD：
 
-> [MOTD.gg](https://motd.gg)(非常非常推荐)(~~还可以偷别的服务器的 motd~~)
+> [MOTD.gg](https://motd.gg) (非常非常推荐)(~~还可以偷别的服务器的 motd~~)
 >
 > [MOTD creator](https://mctools.org/motd-creator)
 >
@@ -387,9 +387,9 @@ MOTD 是玩家进入服务器之前最先看到的东西，决定了玩家对一
         <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="26" height="6" rx="3" fill="#7CB45C"></rect><rect x="8" width="18" height="6" rx="3" fill="#4BA041"></rect><rect y="11" width="32" height="6" rx="3" fill="#AAA8A8"></rect><rect x="11" y="11" width="21" height="6" rx="3" fill="#91908F"></rect><rect x="11" y="22" width="21" height="6" rx="3" fill="#70B5C3"></rect><rect x="17" y="22" width="15" height="6" rx="3" fill="#4D989B"></rect></svg>
       </a>
     </div>
-      
+
     https://misode.github.io/
-      
+
     如果你喜欢编写数据包甚至资源包那么这个网站会很有用，他拥有大量的可视化编辑器，方便进行快速编辑，但是上手需要一定相关知识基础。
   </TabItem>
 </Tabs>

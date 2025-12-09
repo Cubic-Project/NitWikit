@@ -11,7 +11,7 @@ sidebar_position: 3
 
 `GitHub` https://github.com/Strafbefehl/DeluxeHubReloaded
 
-`文档(英文)` https://strafbefehl.github.io/DeluxeHubReloadedDocs
+`文档 (英文)` https://strafbefehl.github.io/DeluxeHubReloadedDocs
 
 :::
 

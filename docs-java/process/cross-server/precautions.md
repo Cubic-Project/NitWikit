@@ -18,9 +18,9 @@ sidebar_position: 8
 - 如果你的服务器能直接获取公网（典型的比如带独立 IP 的云服务器）：
   在系统防火墙中禁止该子服服务端可执行文件或该子服对应端口的入站。
 - 如果子服与跨服端位于不同的局域网只能通过公网互相通信：
-    - 在跨服端和子服所处的两台服务器之间建立 VPN
+  - 在跨服端和子服所处的两台服务器之间建立 VPN
       （此处指虚拟专用网络，是通常用于登录学校内网或企业内网的那种网络，不是科学上网！），让子服和跨服端通过 VPN 通信
-    - 选用有成熟的防止玩家绕过跨服端连接子服的方案，如 Velocity + Paper 或 BungeeCord + Spigot/Paper 等
+  - 选用有成熟的防止玩家绕过跨服端连接子服的方案，如 Velocity + Paper 或 BungeeCord + Spigot/Paper 等
 - 因某些原因有独立 IP 又无法开启防火墙：
   选用有成熟的防止玩家绕过跨服端连接子服的方案，如 Velocity + Paper 或 BungeeCord + Spigot/Paper 等
 
@@ -46,7 +46,7 @@ sidebar_position: 8
 
 ### 关闭权限
 
-在跨服端安装 [Luckperms](../plugin/management-tool/permission/permission.md) 的跨服端对应版本然后执行命令：
+在跨服端安装 [LuckPerms](../plugin/management-tool/permission/permission.md) 的跨服端对应版本然后执行命令：
 
 - BungeeCord
 
@@ -60,9 +60,9 @@ sidebar_position: 8
 /lpv group default permission set velocity.command.server false
 ```
 
-## bc 的语义扩大
+## bc / BC 的语义扩大
 
-bc 这个缩写应只指 BungeeCord 核心
+bc 或 BC 这两个缩写应只指 BungeeCord 核心
 
 但是很多人用 bc 指 BungeeCord 和它的分支，甚至指所有的跨服端 (把 Velocity 和包括进去了)
 
@@ -70,10 +70,10 @@ bc 这个缩写应只指 BungeeCord 核心
 
 :::note
 
-服务端有个命令是 `/bc`(broadcast 广播消息) ，用来发公告的，这和此处的 BungeeCord 没有关系
+服务端有个命令是 `/bc` (broadcast 广播消息) ，用来发公告的，这和此处的 BungeeCord 没有关系
 
 :::
 
 ## Velocity 的缩写
 
-最常见的缩写是 `vc`
+最常见的缩写是 `vc` 或 `VC`

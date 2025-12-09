@@ -86,7 +86,7 @@ import TabItem from '@theme/TabItem';
 
 `GitHub` https://github.com/ValMobile/RealisticSurvival
 
-`文档(英文)` https://github.com/ValMobile/RealisticSurvival/wiki
+`文档 (英文)` https://github.com/ValMobile/RealisticSurvival/wiki
 
 :::
 

@@ -10,7 +10,7 @@ sidebar_position: 2
 forge_support: false
 # 玩家真实限制，它将限制整个服务器的玩家人数，-1 为不限
 player_limit: -1
-# BC 服务器权限组 不建议用这东西而是使用 bc 版 luckperms
+# BC 服务器权限组 不建议用这东西而是使用 BC 版 LuckPerms
 permissions:
     default:
         - bungeecord.command.server

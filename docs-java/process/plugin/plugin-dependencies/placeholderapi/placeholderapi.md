@@ -73,7 +73,7 @@ PlaceholderAPI 已破 170 万下载量，同时使用本插件的服务器数已
 # 变量扩展中心：https://api.extendedclip.com/all/
 # 文档：https://wiki.placeholderapi.com/
 # Discord: https://helpch.at/discord
-# 插件默认不提供任何变量.
+# 插件默认不提供任何变量。
 # 请用这个命令下载变量：/papi ecloud
 check_updates: true
 cloud_enabled: true
@@ -219,9 +219,9 @@ eCloud 命令
 
 `GitHub` https://github.com/PlaceholderAPI/PlaceholderAPI
 
-`文档(英文)` https://wiki.placeholderapi.com
+`文档 (英文)` https://wiki.placeholderapi.com
 
-`文档(中文)` https://continue-project.netlify.app/PlaceholderAPI
+`文档 (中文)` https://continue-project.netlify.app/PlaceholderAPI
 
 `插件百科` https://mineplugin.org/PlaceHolderAPI
 

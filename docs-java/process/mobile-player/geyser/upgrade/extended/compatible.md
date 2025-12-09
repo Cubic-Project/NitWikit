@@ -17,7 +17,7 @@ sidebar_position: 3
 #玩家加入服务器后执行事件
 on join:
     trigger:
-        #如果玩家是通过 floodgate 加入服务器就让控制台执行此指令
+        #如果玩家是通过 Floodgate 加入服务器就让控制台执行此指令
         if player is from floodgate: make console execute command "say 欢迎基岩版玩家 %player% 加入服务器!"
         #如不是就让控制台执行此指令
         else: make console execute command "say 欢迎JAVA版玩家 %player% 加入服务器!"
@@ -25,7 +25,7 @@ on join:
 
 ## LuckBedrock
 
-此插件为 Luckperms 权限管理插件提供了一个额外的情境判断，
+此插件为 LuckPerms 权限管理插件提供了一个额外的情境判断，
 
 使你可以设置仅基岩版玩家的权限或仅 Java 版玩家的权限，让你不再因为权限管理而急眼！
 

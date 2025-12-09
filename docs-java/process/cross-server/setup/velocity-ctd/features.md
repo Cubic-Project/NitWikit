@@ -84,7 +84,7 @@ enabled = true
 update-interval = 1000          # 队列更新间隔（毫秒）
 allow-multiple-queues = false   # 是否允许同时在多个队列
 timeout = 300                   # 离线保留时间（秒）
-max-queue-length = 0           # 最大队列长度（0=无限制）
+max-queue-length = 0            # 最大队列长度（0=无限制）
 position-update-interval = 10   # 位置更新间隔（秒）
 priority-enabled = true         # 启用优先级系统
 ```

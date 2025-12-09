@@ -18,7 +18,7 @@ config-version = "2.7"
 # 代理应该绑定到哪个端口？默认情况下，我们将绑定到 25565 端口的所有地址。
 bind = "0.0.0.0:25565"
 
-# 应该显示什么 MOTD(服务器消息)？当玩家将你的服务器添加到他们的服务器列表时，会显示这个。只接受 MiniMessage 格式。
+# 应该显示什么 MOTD (服务器消息)？当玩家将你的服务器添加到他们的服务器列表时，会显示这个。只接受 MiniMessage 格式。
 motd = "<#09add3>一个 Velocity-CTD 服务器"
 
 # 我们应该显示多少最大玩家数？(Velocity 不支持在线玩家数的限制。)
@@ -592,6 +592,7 @@ read-timeout = 45000
     ```
 
 3. **优化压缩设置**：
+
     ```toml
     compression-threshold = 256
     compression-level = 6

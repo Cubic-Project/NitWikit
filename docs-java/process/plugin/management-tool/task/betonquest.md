@@ -13,8 +13,8 @@ sidebar_position: 4
 
 `GitHub` https://github.com/BetonQuest/BetonQuest
 
-`文档(英文)` https://betonquest.org
+`文档 (英文)` https://betonquest.org
 
-`文档(中文)` https://miao-3.gitbook.io/betonquest-zhong-wen-wiki
+`文档 (中文)` https://miao-3.gitbook.io/betonquest-zhong-wen-wiki
 
 :::

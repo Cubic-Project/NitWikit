@@ -51,7 +51,7 @@ sidebar_position: 100
 - [x] Skript 简单教程
 - [x] papi list 扩展：插件自己挂钩 自己下载扩展 不需要插件的扩展
 - [x] 全息图 (浮空字) 插件
-- [x] AskyBlock BentoBox(BskyBlock)
+- [x] AskyBlock BentoBox (BskyBlock)
 - [x] 替换 ess 方案 huskhomes + XConomy
 - [x] 资源包插件 ia oraxen 介绍
 - [x] 龙核/萌芽 介绍

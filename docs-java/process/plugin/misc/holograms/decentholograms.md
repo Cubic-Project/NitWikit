@@ -83,9 +83,9 @@ sidebar_position: 2
 
 `MineBBS` https://www.minebbs.com/resources/.9059
 
-`文档(英文)` https://wiki.decentholograms.eu
+`文档 (英文)` https://wiki.decentholograms.eu
 
-`文档(中文)` https://continue-project.netlify.app/DecentHolograms
+`文档 (中文)` https://continue-project.netlify.app/DecentHolograms
 
 :::
 

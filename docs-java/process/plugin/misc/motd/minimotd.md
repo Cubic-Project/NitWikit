@@ -15,7 +15,7 @@ sidebar_position: 2
 
 `GitHub` https://github.com/jpenilla/MiniMOTD
 
-`文档(英文)` https://github.com/jpenilla/MiniMOTD/wiki
+`文档 (英文)` https://github.com/jpenilla/MiniMOTD/wiki
 
 :::
 

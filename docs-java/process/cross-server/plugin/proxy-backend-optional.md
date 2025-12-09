@@ -230,7 +230,7 @@ TODO
 
 :::info
 
-[插件 | 皮肤 - skinsRestorer](../../plugin/misc/skinsrestorer.md)
+[插件 | 皮肤 - SkinsRestorer](../../plugin/misc/skinsrestorer.md)
 
 :::
 

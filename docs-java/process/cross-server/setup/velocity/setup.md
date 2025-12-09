@@ -18,7 +18,7 @@ sidebar_position: 1
 并且使用参数启动以生成初始文件
 
 如果想进一步优化可以使用 JVM 参数
-[Velocity 官方](https://docs.papermc.io/velocity/getting-started#launching-velocity-under-windows)有推荐的 Flags
+[Velocity 官方](https://docs.papermc.io/velocity/getting-started#launching-velocity-under-windows) 有推荐的 Flags
 
 ```bash
 java -Xms1024M -Xmx1024M -jar 核心名字.jar
@@ -39,18 +39,18 @@ java -Xms1024M -Xmx1024M -jar 核心名字.jar
 
 :::danger
 
-中文需要用引号括起来。如`"登录服" = "0.0.0.0:25501"`
+中文需要用引号括起来。如 `"登录服" = "0.0.0.0:25501"`
 
 :::
 
 [详细配置文件讲解](velocity-toml.md)
 
 ```toml
-# velocity 端的端口号，数字 1000~65536 随意
+# Velocity 端的端口号，数字 1000~65536 随意
 bind = "0.0.0.0:25577"
 # 正版验证，有 1.19.1+ 的子服不建议开启此项
 online-mode = false
-# 1.13+ 这里填 modern 1.12-填 bungeeguard
+# 1.13+ 这里填 modern 1.12- 填 bungeeguard
 player-info-forwarding-mode = "modern"
 # 是否应将服务器列表 ping 请求传递给后端服务器？
 # 可用选项：
@@ -58,7 +58,7 @@ player-info-forwarding-mode = "modern"
 # - "mods"：仅将后端服务器的 mod 列表传递到响应中。将使用具有 mod 列表的后端服务器的第一个服务器。如果无法联系后端服务器，则 Velocity 不会显示任何 mod 信息。
 # - "description"：使用后端服务器的描述和 mod 列表。将使用响应的第一个服务器列表中的第一个服务器 (或强制主机) 进行描述和 mod 列表。
 # - "all"：将后端服务器的响应用作代理响应。如果无法联系服务器，则使用 Velocity 配置。
-# 人话，motd 插件在代理端用"disabled"，否则用"all"
+# 人话，motd 插件在代理端用 "disabled"，否则用"all"
 ping-passthrough = "all"
 # 子服名称和地址，名称不可包含”.”
 [servers]
@@ -84,8 +84,8 @@ try = [
 Velocity 支持将玩家信息 (如 IP 地址、UUID 和皮肤) 转发到你的服务器。Velocity 支持三种转发格式：
 
 - **Velocity Modern 转发** (现代转发) 是一种自定义的转发格式 (modern 转发)，它更安全。
-- **BungeeCord 转发**(也称为*传统转发*)，它有更好的兼容性但安全性较低。
-- **BungeeGuard**，与传统 BungeeCord 转发相同，但包含了一个密钥。它比单独的 BungeeCord 转发更好，但不如 Velocitymodern 转发理想。
+- **BungeeCord 转发** (也称为 *传统转发*)，它有更好的兼容性但安全性较低。
+- **BungeeGuard**，与传统 BungeeCord 转发相同，但包含了一个密钥。它比单独的 BungeeCord 转发更好，但不如 Velocity 的 modern 转发理想。
 
 你只能选择这些转发格式中的一种。目前不可能“混合匹配”转发模式或同时使用所有转发格式。一般来说，如果你只支持使用 Minecraft 1.13 及更新版本的客户端，请使用 Velocity Modern 转发；
 否则，你必须使用 BungeeCord 转发。
@@ -96,7 +96,7 @@ import TabItem from '@theme/TabItem';
 <Tabs>
   <TabItem value="Modern" label="现代转发(Modern Forwarding)" default>
 
-**`modern` 转发** 是 Velocity 的原生格式，以高效的二进制格式转发所有玩家信息，并采用 MAC 代码增加安全性，使非法服务器难以绕过你的 Velocity 代理。但它**仅支持 Minecraft 1.13 或更高版本**。
+**`modern` 转发** 是 Velocity 的原生格式，以高效的二进制格式转发所有玩家信息，并采用 MAC 代码增加安全性，使非法服务器难以绕过你的 Velocity 代理。但它 **仅支持 Minecraft 1.13 或更高版本**。
 
 :::warning
 
@@ -151,8 +151,8 @@ import TabItem from '@theme/TabItem';
 ### 传统转发增加安全性
 
 - 对于托管在共享主机上的代理，Velocity 可选地支持 **BungeeGuard**。
-    - 将 `velocity.toml` 中的 `player-info-forwarding` 设置为 `bungeeguard`。
-    - 在 BungeeGuard 配置的令牌部分添加 `forwarding.secret` 文件中的值。
+  - 将 `velocity.toml` 中的 `player-info-forwarding` 设置为 `bungeeguard`。
+  - 在 BungeeGuard 配置的令牌部分添加 `forwarding.secret` 文件中的值。
 
 ### 为 Spigot / Paper 配置传统转发
 

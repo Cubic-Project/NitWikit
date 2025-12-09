@@ -44,7 +44,7 @@ sidebar_position: 3
 
 `GitHub` https://github.com/nulli0n/SunLight-spigot
 
-`文档(英文)` https://github.com/nulli0n/SunLight-spigot/wiki
+`文档 (英文)` https://github.com/nulli0n/SunLight-spigot/wiki
 
 `插件百科` https://mineplugin.org/SunLight-Core
 

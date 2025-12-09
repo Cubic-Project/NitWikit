@@ -11,9 +11,9 @@ sidebar_position: 3
 
 `GitHub` https://github.com/Auxilor/EcoItems
 
-`文档(英文)` https://plugins.auxilor.io/ecoitems
+`文档 (英文)` https://plugins.auxilor.io/ecoitems
 
-`文档(中文)` https://docs.superiormc.cn/v/ecox-doc
+`文档 (中文)` https://docs.superiormc.cn/v/ecox-doc
 
 :::
 

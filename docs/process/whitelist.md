@@ -94,7 +94,7 @@ allow-list=on
 
 `Gitee` https://gitee.com/myKasa/BistroWhitelist
 
-`文档(中文)` https://wiki.mcxjg.cn/wiki/BistroWhitelist/%E7%AE%80%E4%BB%8B/
+`文档 (中文)` https://wiki.mcxjg.cn/wiki/BistroWhitelist/%E7%AE%80%E4%BB%8B/
 
 `MineBBS` https://www.minebbs.com/resources/bistrowhitelist-bistrobot-qq.9058/
 

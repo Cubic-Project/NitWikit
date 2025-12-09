@@ -11,9 +11,9 @@ sidebar_position: 2
 
 `GitHub` https://github.com/ItsLewizzz/DeluxeHub
 
-`文档(英文)` https://docs.zithium.net/other-plugins/deluxehub
+`文档 (英文)` https://docs.zithium.net/other-plugins/deluxehub
 
-`文档(中文)` https://miao-3.gitbook.io/deluxehub-3-zhong-wen-wiki
+`文档 (中文)` https://miao-3.gitbook.io/deluxehub-3-zhong-wen-wiki
 
 :::
 

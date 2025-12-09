@@ -109,7 +109,7 @@ Jenkins 构建：[ViaVersion Jenkins](https://ci.viaversion.com/view/all/job/Via
 
 ### 如果我拥有代理端，我应该将 Via 安装到哪里？
 
-Bungeecord、Velocity 和各种 Minecraft 服务端均可以安装 Via。但如果你有反作弊、反假人等，
+BungeeCord、Velocity 和各种 Minecraft 服务端均可以安装 Via。但如果你有反作弊、反假人等，
 
 对数据包进行大量操作的插件，后端服务器获取的玩家版本为代理端的版本，并非玩家客户端版本，
 

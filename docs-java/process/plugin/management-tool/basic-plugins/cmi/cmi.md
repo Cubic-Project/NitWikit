@@ -19,9 +19,9 @@ sidebar_position: 2
 
 `MineBBS` https://www.minebbs.com/resources/.7380
 
-`文档(英文)` https://www.zrips.net/cmi
+`文档 (英文)` https://www.zrips.net/cmi
 
-`文档(中文)` https://cmi.pueh.cn
+`文档 (中文)` https://cmi.pueh.cn
 
 :::
 

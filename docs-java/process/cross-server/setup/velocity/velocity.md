@@ -14,11 +14,11 @@ sidebar_position: 2
 
 ### 什么是 Velocity？
 
-Velocity 可以说是目前最优秀的**Minecraft 代理端**之一，由经验丰富的 PaperMC 团队研发，Velocity 拥有先进的转发方式和极高的安全性。与此同时，Velocity 也有优秀的性能表现
+Velocity 可以说是目前最优秀的 **Minecraft 代理端** 之一，由经验丰富的 PaperMC 团队研发，Velocity 拥有先进的转发方式和极高的安全性。与此同时，Velocity 也有优秀的性能表现
 
 使用 Velocity，能让你的群组服务器锦上添花
 
-如果你开的是 mod 群组服务器，那么强烈推荐使用 Velocity，因为他对 forge 和 fabric 服务端做了特别的适配
+如果你开的是 mod 群组服务器，那么强烈推荐使用 Velocity，因为他对 Forge 和 Fabric 服务端做了特别的适配
 
 当然，Mod 服务端原生不支持 Velocity，需要安装让 Mod 端支持 Velocity 的 Mod
 
@@ -32,7 +32,7 @@ Velocity 可以说是目前最优秀的**Minecraft 代理端**之一，由经验
 
 <!--markdownlint-disable ol-prefix-->
 
-1. Q：velocity 支持 Bungeecord 和 Waterfall 插件吗？
+1. Q：Velocity 支持 BungeeCord 和 Waterfall 插件吗？
 
 A：不支持，因为如果支持 BungeeCord 插件的话，那么很多 Velocity 的功能就无从实现了。
 
@@ -62,7 +62,7 @@ Can't connect to server lobby: If you wish to use IP forwarding, please enable i
 Can't connect to server lobby: Your server did not send a forwarding request to the proxy. Is it set up correctly?
 ```
 
-这些报错是你不正确配置代理端引起的 [点此前往了解 velocity 配置](velocity-toml.md)
+这些报错是你不正确配置代理端引起的 [点此前往了解 Velocity 配置](velocity-toml.md)
 
 此外，如果你同时启用了 BungeeCord 模式，也会报出以上错误，如果你使用 Velocity，那么请务必关闭 BungeeCord 模式
 
@@ -98,7 +98,7 @@ A: 一句话，Mod 太多太大导致连接时间延长了。
 
 `-Dfml.readTimeout=120` (单位：秒)
 
-这样，将服务器重启后，readTimeout 时间就拉长了，下次就可以正常进入服务器了
+这样，将服务器重启后，`readTimeout` 时间就拉长了，下次就可以正常进入服务器了
 
 6. Q：我可以每个子服都使用不同的转发模式吗？
 

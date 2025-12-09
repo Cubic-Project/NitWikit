@@ -11,7 +11,7 @@ title: Tooltip
 
 `GitHub` https://github.com/Septicuss/tooltips
 
-`文档(英文)` https://tooltips.gitbook.io/tooltips/
+`文档 (英文)` https://tooltips.gitbook.io/tooltips/
 
 :::
 

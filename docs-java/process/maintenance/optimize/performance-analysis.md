@@ -21,9 +21,9 @@ Spark 是一个 Minecraft 的性能分析器，支持广泛 (如 Bukkit，Bungee
 
 `GitHub` https://github.com/lucko/spark
 
-`文档(英文)` https://spark.lucko.me/docs
+`文档 (英文)` https://spark.lucko.me/docs
 
-`文档(中文)` https://continue-project.netlify.app/spark
+`文档 (中文)` https://continue-project.netlify.app/spark
 
 :::
 

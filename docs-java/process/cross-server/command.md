@@ -10,13 +10,13 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-  <TabItem value="bungeeCord" label="BungeeCord" default>
+  <TabItem value="bungeecord" label="BungeeCord" default>
 
 <!--markdownlint-disable line-length-->
 
 | 命令                         | 权限                        | 描述                                                                                                                                                                                                  |
 | ---------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/alert`                     | `bungeecord.command.alert`  | 发送一条整个群组的公告，会显示在所有的子服务器内。颜色符是&，使用&h 可以清除所有默认的格式                                                                                                            |
+| `/alert`                     | `bungeecord.command.alert`  | 发送一条整个群组的公告，会显示在所有的子服务器内。颜色符是 `&`，使用 `&h` 可以清除所有默认的格式                                                                                                            |
 | `/alertraw <json格式的信息>` | `bungeecord.command.alert`  | 和上一个命令一样，但是仅允许使用 json 格式的内容                                                                                                                                                      |
 | `/bungee`                    | N/A                         | 显示 BungeeCord 的版本信息                                                                                                                                                                            |
 | `/end`                       | `bungeecord.command.end`    | 关闭 BungeeCord 跨服端，类似于 Bukkit 服务器下的/stop                                                                                                                                                 |
@@ -47,9 +47,10 @@ import TabItem from '@theme/TabItem';
 
   </TabItem>
   <TabItem value="transfer" label="Transfer" default>
-    
+
 | 命令 | 权限 | 描述 |
 | --- | --- | --- |
 | `/transfer` | `minecraft.command.transfer` | 原版自带的跨服指令 |
+
   </TabItem>
 </Tabs>

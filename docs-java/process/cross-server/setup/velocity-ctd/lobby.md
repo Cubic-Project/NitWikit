@@ -81,7 +81,7 @@ hub = ["lobby", "l", "spawn"]  # 设置命令别名
 权限配置：
 
 ```yaml
-# 允许使用 hub 命令
+# 允许使用 /hub 命令
 velocity.command.hub: true
 ```
 

@@ -60,7 +60,7 @@ sidebar_label: Java 插件
   <summary>安装的插件列表</summary>
 
 - ProtocolLib 必备前置
-- Luckperms 权限管理插件
+- LuckPerms 权限管理插件
 - PlaceholderAPI 必备前置
 - PlugManx 插件管理
 - WorldEdit 创世神

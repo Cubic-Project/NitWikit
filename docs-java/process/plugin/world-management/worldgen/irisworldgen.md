@@ -163,9 +163,9 @@ Iris 支持自定义维度包开发，你可以创建自己的：
 
 `SpigotMC` https://www.spigotmc.org/resources/.84586
 
-`官方文档(新)` https://docs.volmit.com/en/doc/iris
+`官方文档 (新)` https://docs.volmit.com/en/doc/iris
 
-`官方文档(旧)` https://old.docs.volmit.com/iris
+`官方文档 (旧)` https://old.docs.volmit.com/iris
 
 :::
 

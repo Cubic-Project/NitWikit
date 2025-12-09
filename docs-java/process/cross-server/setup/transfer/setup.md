@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## 什么是 Transfer？
 
-Transfer 是 Minecraft 1.20.5 版本引入的**原生跨服功能**，与传统代理端不同，它采用去中心化架构，服务器之间直接传送玩家。
+Transfer 是 Minecraft 1.20.5 版本引入的 **原生跨服功能**，与传统代理端不同，它采用去中心化架构，服务器之间直接传送玩家。
 
 ```mermaid
 graph TD
@@ -29,7 +29,7 @@ graph TD
 
 ### 启用 Transfer 功能
 
-在**所有服务器**的 `server.properties` 中添加：
+在 **所有服务器** 的 `server.properties` 中添加：
 
 ```properties
 # 启用 Transfer 功能（关键配置）
@@ -46,7 +46,7 @@ online-mode=false
 
 :::warning[重要：网络访问要求]
 
-Transfer 要求**所有服务器都能被客户端直接访问**：
+Transfer 要求 **所有服务器都能被客户端直接访问**：
 
 :::
 
@@ -84,12 +84,12 @@ Transfer **没有内置的安全机制**，与传统代理端不同：
 
 ```yaml
 # 是否允许通过服务器列表直接进入服务器
-# 如果为 true，则该服务器被允许直接通过客户端进入，否则将仅允许 transfer
+# 如果为 true，则该服务器被允许直接通过客户端进入，否则将仅允许 Transfer
 # 如果不是主城或者登录服，不建议打开该选项，否则安全性降低
 allow-server-list: true
 
 # 跨服传送的令牌，两台服务器必须配置相同的令牌
-# 类似于 Velocity 的`forward.secret`
+# 类似于 Velocity 的 `forward.secret`
 # 但貌似只有被传送的对象服务器才会检查这个
 transfer-token: "your-secure-random-token"
 
@@ -103,9 +103,9 @@ allowed-servers:
 
 # 游戏服：禁止直接进入
 allow-server-list: false
-transfer-token: "your-secure-random-token"  # 相同令牌
+transfer-token: "your-secure-random-token" # 相同令牌
 allowed-servers:
-  - "your-server-ip:25565"  # 登录服
+  - "your-server-ip:25565" # 登录服
 ```
 
 :::tip[安全令牌生成]

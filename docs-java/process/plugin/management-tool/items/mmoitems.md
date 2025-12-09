@@ -13,9 +13,9 @@ sidebar_position: 1
 
 `GitLab` https://gitlab.com/phoenix-dvpmt/mmoitems
 
-`文档(英文)` https://gitlab.com/phoenix-dvpmt/mmoitems/-/wikis/home
+`文档 (英文)` https://gitlab.com/phoenix-dvpmt/mmoitems/-/wikis/home
 
-`文档(中文)` https://mmoitems.magicmc.top
+`文档 (中文)` https://mmoitems.magicmc.top
 
 :::
 

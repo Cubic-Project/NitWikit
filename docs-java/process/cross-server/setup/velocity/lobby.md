@@ -11,7 +11,7 @@ sidebar_position: 3
 
 在 config.yml 中找到：
 
-```TOML
+```toml
 # 当玩家登录或从服务器被踢出时，我们应该尝试让他进入哪个服务器？
 try = [
     "lobby"

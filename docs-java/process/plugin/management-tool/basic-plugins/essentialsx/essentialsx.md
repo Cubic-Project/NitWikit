@@ -38,9 +38,9 @@ EssentialsX 是一个基于 Spigot 服务端的基础插件，为从大到小的
 
 `GitHub` https://github.com/EssentialsX/Essentials
 
-`文档(英文)` https://essentialsx.net/wiki/Home.html
+`文档 (英文)` https://essentialsx.net/wiki/Home.html
 
-`文档(中文)` https://docs.tecostudio.cn/EssentialsX
+`文档 (中文)` https://docs.tecostudio.cn/EssentialsX
 
 `插件百科` https://mineplugin.org/EssentialsX
 

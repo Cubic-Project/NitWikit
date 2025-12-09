@@ -15,9 +15,9 @@ sidebar_position: 1
 
 `MC 百科`：https://www.mcmod.cn/class/9757.html
 
-`文档(英文)`：https://wiki.geysermc.org/
+`文档 (英文)`：https://wiki.geysermc.org/
 
-`文档(中文)`：https://docs.superiormc.cn/v/geyser-wiki
+`文档 (中文)`：https://docs.superiormc.cn/v/geyser-wiki
 
 :::
 

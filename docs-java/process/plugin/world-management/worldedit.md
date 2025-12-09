@@ -17,9 +17,9 @@ sidebar_label: 创世神 - WorldEdit
 
 `GitHub` https://github.com/EngineHub/WorldEdit
 
-`文档(英文)` https://worldedit.enginehub.org/en/latest/index.html
+`文档 (英文)` https://worldedit.enginehub.org/en/latest/index.html
 
-`文档(中文)` https://continue-project.netlify.app/WorldEdit
+`文档 (中文)` https://continue-project.netlify.app/WorldEdit
 
 `插件百科` https://mineplugin.org/WorldEdit
 

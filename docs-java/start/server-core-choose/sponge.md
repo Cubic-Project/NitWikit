@@ -26,9 +26,9 @@ Sponge 插件与 Bukkit 插件不兼容。
 
 `官网` https://spongepowered.org
 
-`文档(英文)` https://docs.spongepowered.org/stable/en
+`文档 (英文)` https://docs.spongepowered.org/stable/en
 
-`文档(中文)` https://docs.spongepowered.org/stable/zh-CN
+`文档 (中文)` https://docs.spongepowered.org/stable/zh-CN
 
 :::
 

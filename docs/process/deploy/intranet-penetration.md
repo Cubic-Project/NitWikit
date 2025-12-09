@@ -163,7 +163,7 @@ frp 启用 PROXY protocol 的方式参考 [自建 frp](../../advance/frp.md#配�
 
 对于 MC 服务器来说，支持 PROXY protocol 的软件有：
 
-- Bungeecord 系
+- BungeeCord 系
 - Paper 分支 (1.18.2)(仅支持 v2)
 - [Geyser](/java/process/mobile-player/geyser/introduction/faq#frp-搭建内网穿透想显示真实-ip-怎么办)
 - Spigot 端插件 [HAProxyDetector](https://github.com/andylizi/haproxy-detector)

@@ -9,14 +9,14 @@ Slime 世界格式是 Hypixel 开发的一种世界存储格式
 
 优势
 
-- 使用 ZStd 替换 ZLib，大大优化体积和加载速度
+- 使用 zstd 替换 zlib，大大优化体积和加载速度
 - 支持数据库作为加载后端，多服小游戏非常有用
 - 支持 readonly，玩完就没
 - 预加载到内存当中，玩家不会因为加载卡顿
 
 适合的服务器：
 
-- 不适用于大型生存世界，而是适用于小型世界，如**迷你游戏地图或服务器大厅**
+- 不适用于大型生存世界，而是适用于小型世界，如 **迷你游戏地图或服务器大厅**
 
 ## 下载
 
@@ -26,7 +26,7 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="mcver">
 <TabItem value="new" label="1.20.4+">
 
-前往[GitHub Release](https://github.com/InfernalSuite/AdvancedSlimePaper/releases),找到适合的版本下载即可
+前往 [GitHub Release](https://github.com/InfernalSuite/AdvancedSlimePaper/releases),找到适合的版本下载即可
 
 - `plugin-***-R0.1-SNAPSHOT.1.jar` ASM 的插件版本 (推荐)
 - `asp-server.jar` ASM 的独立服务器核心版本 (基于 Paper)
@@ -35,7 +35,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="old" label="1.8">
 
-前往[GitHub Release](https://github.com/Swofty-Developments/Continued-Slime-World-Manager/releases),下载最新版
+前往 [GitHub Release](https://github.com/Swofty-Developments/Continued-Slime-World-Manager/releases),下载最新版
 
 - 下载`swoftyworldmanager-plugin-<version>.jar` 到插件目录
 - 下载`swoftyworldmanager-classmodifier-<version>.jar` 到服务器根目录
@@ -76,7 +76,7 @@ worlds:
 
 **`source`** 存储世界的数据源名称
 
-可用选项：`file`,`mysql`,`mongodb`,也可以使用第三方插件提供的其他数据源。
+可用选项：`file`,`mysql`,`mongodb`，也可以使用第三方插件提供的其他数据源。
 
 `loadOnStartup` 服务器启动时是否应加载世界
 
@@ -84,7 +84,7 @@ worlds:
 
 **`readOnly`** 只读选项
 
-描述：如果为`true`,对世界的更改将永远不会被存储。如果为`false`,世界将被锁定，因此其他服务器无法在**没有处于只读模式**的情况下**访问它**
+描述：如果为`true`，对世界的更改将永远不会被存储。如果为`false`，世界将被锁定，因此其他服务器无法在 **没有处于只读模式** 的情况下 **访问它**
 
 :::tip
 
@@ -136,21 +136,21 @@ mongodb:
 
 :::note
 
-如果你要使用 MySQL 或 MongoDB，请将对应选项的`enabled` 设为 `true`
+如果你要使用 MySQL 或 MongoDB，请将对应选项的 `enabled` 设为 `true`
 
 :::
 
 ## 命令
 
-请查阅官方[wiki](https://infernalsuite.com/docs/asp/swp/commands)
+请查阅官方 [Wiki](https://infernalsuite.com/docs/asp/swp/commands)
 
-[1.8 版本 wiki](https://github.com/Swofty-Developments/Continued-Slime-World-Manager/blob/develop/.docs/usage/commands-and-permissions.md)
+[1.8 版本 Wiki](https://github.com/Swofty-Developments/Continued-Slime-World-Manager/blob/develop/.docs/usage/commands-and-permissions.md)
 
 ## 转换世界
 
-请查阅官方[wiki](https://infernalsuite.com/docs/asp/swp/converting_worlds)
+请查阅官方 [Wiki](https://infernalsuite.com/docs/asp/swp/converting_worlds)
 
-[1.8 版本 wiki](https://github.com/Swofty-Developments/Continued-Slime-World-Manager/blob/develop/.docs/config/convert-world-to-srf.md)
+[1.8 版本 Wiki](https://github.com/Swofty-Developments/Continued-Slime-World-Manager/blob/develop/.docs/config/convert-world-to-srf.md)
 
 ## 异步世界生成
 
@@ -160,7 +160,7 @@ mongodb:
 
 :::
 
-在配置文件中打开`enable_async_world_gen`选项即可
+在配置文件中打开 `enable_async_world_gen` 选项即可
 
 ## FAQ
 
@@ -170,7 +170,7 @@ mongodb:
 
 ### Slime 与 Multiverse-Core 兼容吗？
 
-Multiverse-Core 会检测到 Slime 世界为未加载状态，因为它找不到世界目录，然后直接忽略它们。不应该有任何问题;然而，Multiverse-Core 无法与 Slime 世界一起使用。
+Multiverse-Core 会检测到 Slime 世界为未加载状态，因为它找不到世界目录，然后直接忽略它们。不应该有任何问题；然而，Multiverse-Core 无法与 Slime 世界一起使用。
 
 ### Slime 有世界大小限制吗？
 

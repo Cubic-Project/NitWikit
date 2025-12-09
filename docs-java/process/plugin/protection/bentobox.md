@@ -17,9 +17,9 @@ sidebar_label: 领域 - BentoBox
 
 `GitHub` https://github.com/BentoBoxWorld/BentoBox
 
-`文档(英文)` https://docs.bentobox.world/en/latest
+`文档 (英文)` https://docs.bentobox.world/en/latest
 
-`文档(中文)` https://docs.bentobox.world/zh/latest
+`文档 (中文)` https://docs.bentobox.world/zh/latest
 
 :::
 

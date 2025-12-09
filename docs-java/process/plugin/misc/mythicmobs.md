@@ -16,9 +16,9 @@ sidebar_label: 实体 - MythicMobs
 
 `Modrinth` https://modrinth.com/plugin/mythicmobs
 
-`文档(英文)` https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/home
+`文档 (英文)` https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/home
 
-`文档(中文)` https://gitlab.com/TranslatedByShark/Mythic-Manual-CN/-/wikis/home
+`文档 (中文)` https://gitlab.com/TranslatedByShark/Mythic-Manual-CN/-/wikis/home
 
 `插件百科` https://mineplugin.org/MythicMobs/Mobs
 

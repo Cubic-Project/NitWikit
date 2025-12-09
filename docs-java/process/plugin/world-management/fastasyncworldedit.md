@@ -37,9 +37,9 @@ FastAsyncWorldEdit 是 WorldEdit 的异步优化版本
 
 `GitHub` https://github.com/IntellectualSites/FastAsyncWorldEdit
 
-`文档(英文)` https://intellectualsites.gitbook.io/fastasyncworldedit
+`文档 (英文)` https://intellectualsites.gitbook.io/fastasyncworldedit
 
-`文档(中文)` https://izzelaliz.gitbooks.io/fast-async-worldedit-wiki/content
+`文档 (中文)` https://izzelaliz.gitbooks.io/fast-async-worldedit-wiki/content
 
 `插件百科` https://mineplugin.org/FastAsyncWorldEdit
 

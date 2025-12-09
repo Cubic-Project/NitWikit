@@ -13,9 +13,9 @@ sidebar_position: 5
 
 `GitHub` https://github.com/ManyouTeam/MythicPrefixes
 
-`文档(英文)` https://mythicprefixes.superiormc.cn
+`文档 (英文)` https://mythicprefixes.superiormc.cn
 
-`文档(中文)` https://docs.superiormc.cn/cha-jian/mian-fei-cha-jian-cheng-hao-you-buff
+`文档 (中文)` https://docs.superiormc.cn/cha-jian/mian-fei-cha-jian-cheng-hao-you-buff
 
 :::
 

@@ -35,7 +35,7 @@ sidebar_position: 6
 
 ### 线程
 
-一般为 **Server thread** 即主线程，很多插件会调用 Craft Scheduler Thread 线程，或者为了优化主线程开销开启单独线程 (如 Luckperms)。
+一般为 **Server thread** 即主线程，很多插件会调用 Craft Scheduler Thread 线程，或者为了优化主线程开销开启单独线程 (如 LuckPerms)。
 
 **Craft Scheduler Thread** 一般为插件使用 Bukkit 计划任务时自动开启的线程。
 

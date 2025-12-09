@@ -33,7 +33,7 @@ sidebar_position: 11
 
 `GitHub` https://github.com/Lanscarlos/Vulpecula
 
-`文档(中文)` https://www.yuque.com/lanscarlos/vulpecula-doc
+`文档 (中文)` https://www.yuque.com/lanscarlos/vulpecula-doc
 
 :::
 

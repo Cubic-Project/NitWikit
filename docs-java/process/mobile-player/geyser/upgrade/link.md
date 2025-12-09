@@ -61,7 +61,7 @@ player-link:
 1. 下载链接数据库扩展之一：[这里](https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/fix-weird-via-issue/)。
    选择合适的扩展名：如果你已经有数据库或想要有多代理设置，请选择`mysql`。否则选择`sqlite`。完整名称应为
    `floodgate-*type*-database.jar`。
-2. 将刚下载的数据库扩展 jar 文件复制到 floodgate 插件文件夹中（例如`/plugins/floodgate/`）。
+2. 将刚下载的数据库扩展 jar 文件复制到 Floodgate 插件文件夹中（例如`/plugins/floodgate/`）。
 3. 在 Floodgate 的`player-link`部分中启用`enable-own-linking`。
 4. 在`player-link`部分中将`type`设置为你的数据库类型（目前只能是`mysql`或`sqlite`）
 5. 重新启动服务器

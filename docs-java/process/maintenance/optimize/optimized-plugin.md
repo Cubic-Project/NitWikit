@@ -195,11 +195,11 @@ Paper 酱为你在 `/config/paper-world-default.yml` 中准备了爆炸优化。
 
 ### 拥有相似功能的插件
 
-顾名思义，同时安装两个基础插件如 CMI 和 ESS，两个权限插件 GroupManager 和 Luckperms，两个经济插件，
+顾名思义，同时安装两个基础插件如 CMI 和 ESS，两个权限插件 GroupManager 和 LuckPerms，两个经济插件，
 
 不但可能由于插件矛盾导致性能问题，更有可能直接出现权限失效、保护功能失效等严重问题。
 
-## 有用的~~优化~~限制插件
+## 有用的 ~~优化~~ 限制插件
 
 :::warning[红石限制？]
 

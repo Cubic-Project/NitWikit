@@ -10,7 +10,7 @@ sidebar_position: 2
 Geyser 有以下版本类型：
 
 - Spigot
-- Bungeecord
+- BungeeCord
 - Velocity
 - Fabric
 - NeoForge
@@ -21,7 +21,7 @@ Geyser 有以下版本类型：
 
 Spigot 版本 可以作为插件安装在以 Spigot 及其分叉 (如 Paper) 为核心的服务端上
 
-Bungeecord、Velocity 和 ViaProxy 版本 可以作为插件安装在这些代理端上
+BungeeCord、Velocity 和 ViaProxy 版本 可以作为插件安装在这些代理端上
 
 Fabric 和 NeoForge 版本 可以作为模组安装在这些模组端上
 
@@ -107,7 +107,7 @@ remote:
 
 **`port`**:(重要选项) 请和目标服务器 (插件版必须与`server-port`一致) 一致对外开放的端口一致
 
-**`auth-type`**：有 offline/online 和 floodgate 模式，offline 和 online 分别对应离线和正版，你目标服务器用的什么就选什么，floodgate 会在后续教程中解释
+**`auth-type`**：有 offline/online 和 floodgate 模式，offline 和 online 分别对应离线和正版，你目标服务器用的什么就选什么，Floodgate 会在后续教程中解释
 
 ### 其他项
 
@@ -139,14 +139,14 @@ above-bedrock-nether-building: false
 
 ## floodagte
 
-为进一步兼容，你需要安装 [floodgate](https://geysermc.org/download#floodgate),[MCSL 下载镜像](https://sync.mcsl.com.cn/core/Floodgate)
+为进一步兼容，你需要安装 [Floodgate](https://geysermc.org/download#floodgate)，[MCSL 下载镜像](https://sync.mcsl.com.cn/core/Floodgate)
 
-Mod 服务器请安装[Floodgate-Modded](https://modrinth.com/mod/floodgate),适用于 Mod 的 Floodgate
+Mod 服务器请安装 [Floodgate-Modded](https://modrinth.com/mod/floodgate),适用于 Mod 的 Floodgate
 
-floodgate 可作为一个插件/Mod 装到 Spigot 及其分支的核心上或 BungeeCord、Velocity 之类的代理上
+Floodgate 可作为一个插件/Mod 装到 Spigot 及其分支的核心上或 BungeeCord、Velocity 之类的代理上
 群组服/独立版 Geyser 的 Floodgate 安装需要进行一些额外步骤，请跟随教程完成
 
-floodgate 是一个允许 **Minecraft 基岩版** 帐号加入 **Minecraft Java 版** 正版服务器而无需其 **正版账号** 的混合模式插件
+Floodgate 是一个允许 **Minecraft 基岩版** 帐号加入 **Minecraft Java 版** 正版服务器而无需其 **正版账号** 的混合模式插件
 
 但 **不止于此**
 
@@ -192,7 +192,7 @@ username-prefix: "."
 若是遇到重名，则会出现一个 ID 拥有两个完全不同的 UUID，这可能会发生一些无法预知的错误，而使用 `.` 前缀是因为 Java 正版玩家名中不可使用 `.`
 
 **但是**
-这在离线服中，有几个问题:
+这在离线服中，有几个问题：
 
 - 离线服玩家名是可以任意修改的，所以 Java 玩家一样可以使用相同前缀进入服务器
 - 部分登录插件会禁止诸如带有 `.` 玩家名的玩家进入服务器，这会导致基岩版玩家无法进入服务器

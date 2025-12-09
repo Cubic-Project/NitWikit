@@ -142,9 +142,9 @@ https://github.com/NEZNAMY/TAB/wiki/Developer-API
 
 `GitHub` https://github.com/NEZNAMY/TAB
 
-`文档(英文)` https://github.com/NEZNAMY/TAB/wiki
+`文档 (英文)` https://github.com/NEZNAMY/TAB/wiki
 
-`文档(中文)` https://docs.superiormc.cn/v/tab-wiki
+`文档 (中文)` https://docs.superiormc.cn/v/tab-wiki
 
 `插件百科` https://mineplugin.org/Tab
 
