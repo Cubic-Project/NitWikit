@@ -16,7 +16,7 @@ slug: /optimize/jvm/graalvm
 
 :::warning
 
-GraalVM 24 以上应该移除`-Dgraal.OptWriteMotion=true` 参数，同时将`-Dgraal.` 改为 `-Djdk.graal.`
+GraalVM 24 以上应该移除 `-Dgraal.OptWriteMotion=true` 参数，同时将 `-Dgraal.` 改为 `-Djdk.graal.`
 
 :::
 

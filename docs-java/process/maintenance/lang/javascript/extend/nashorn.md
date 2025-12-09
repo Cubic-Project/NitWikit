@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## 访问 Java 类
 
-要从 JavaScript 访问原始类型和引用类型的 Java 类型，可以调用`Java.type()`函数，返回与传入的类名称对应的类型对象。例如，以下示例演示了如何获取各种类型对象：
+要从 JavaScript 访问原始类型和引用类型的 Java 类型，可以调用 `Java.type()` 函数，返回与传入的类名称对应的类型对象。例如，以下示例演示了如何获取各种类型对象：
 
 ```js
 var ArrayList = Java.type("java.util.ArrayList");
@@ -22,14 +22,14 @@ var int2DArrayType = Java.type("int[][]");
 var anArrayList = new Java.type("java.util.ArrayList");
 ```
 
-可以使用`Java.type()`返回的类型对象来访问静态字段和方法：
+可以使用 `Java.type()` 返回的类型对象来访问静态字段和方法：
 
 ```js
 var File = Java.type("java.io.File");
 File.createTempFile("nashorn", ".tmp");
 ```
 
-要访问静态内部类，可以在`Java.type()`方法的参数中使用美元符号（$）。以下示例演示了如何返回`java.awt.geom.Arc2D`中的`Float`内部类的类型对象：
+要访问静态内部类，可以在 `Java.type()` 方法的参数中使用美元符号（$）。以下示例演示了如何返回 `java.awt.geom.Arc2D` 中的 `Float` 内部类的类型对象：
 
 ```js
 var Float = Java.type("java.awt.geom.Arc2D$Float");
@@ -44,11 +44,11 @@ var Float = Arc2D.Float;
 
 对于非静态内部类，必须将外部类的实例作为构造函数的第一个参数。
 
-尽管 JavaScript 中的类型对象与 Java 中的`java.lang.Class`对象类似，但它们是不同的。你可以使用`class`和`static`属性将两者互相转换。
+尽管 JavaScript 中的类型对象与 Java 中的 `java.lang.Class` 对象类似，但它们是不同的。你可以使用 `class` 和 `static` 属性将两者互相转换。
 
 ## 导入 Java 包和类
 
-为了通过简化名称访问 Java 类，可以使用`importPackage()`和`importClass()`函数来导入 Java 包和类。以下示例展示了如何使用这两个函数：
+为了通过简化名称访问 Java 类，可以使用 `importPackage()` 和 `importClass()` 函数来导入 Java 包和类。以下示例展示了如何使用这两个函数：
 
 ```js
 // 加载兼容性脚本
@@ -65,11 +65,11 @@ frame.setVisible(true);
 print(frame.title);
 ```
 
-标准的 Java SE 包有快捷方式（例如，`java`代表`Packages.java`，`javax`代表`Packages.javax`，`org`代表`Packages.org`）。`java.lang`包不会默认导入，因为其类可能与 JavaScript 中的内建对象（如 Object、Boolean、Math 等）冲突。
+标准的 Java SE 包有快捷方式（例如，`java` 代表 `Packages.java`，`javax` 代表 `Packages.javax`，`org` 代表 `Packages.org`）。`java.lang` 包不会默认导入，因为其类可能与 JavaScript 中的内建对象（如 Object、Boolean、Math 等）冲突。
 
 ## 使用 Java 数组
 
-要创建一个 Java 数组对象，首先需要获取 Java 数组的类型对象，然后实例化它。访问数组元素和`length`属性的语法与 Java 中相同。以下示例演示了如何创建一个 Java 数组对象并访问其元素：
+要创建一个 Java 数组对象，首先需要获取 Java 数组的类型对象，然后实例化它。访问数组元素和 `length` 属性的语法与 Java 中相同。以下示例演示了如何创建一个 Java 数组对象并访问其元素：
 
 ```js
 var StringArray = Java.type("java.lang.String[]");
@@ -83,7 +83,7 @@ print(a.length);
 print(a[0]);
 ```
 
-给定一个 JavaScript 数组，可以使用`Java.to()`方法将其转换为 Java 数组。你必须将 JavaScript 数组变量传递给此方法，并指定要返回的数组类型。
+给定一个 JavaScript 数组，可以使用 `Java.to()` 方法将其转换为 Java 数组。你必须将 JavaScript 数组变量传递给此方法，并指定要返回的数组类型。
 
 ```js
 // 创建 JavaScript 数组
@@ -96,7 +96,7 @@ print(javaIntArray[0]); // 输出数字 1
 
 ## 实现 Java 接口
 
-在 JavaScript 中实现 Java 接口的语法类似于在 Java 中声明匿名类。你可以实例化一个接口，并在同一个表达式中实现其方法。以下示例演示了如何实现`Runnable`接口：
+在 JavaScript 中实现 Java 接口的语法类似于在 Java 中声明匿名类。你可以实例化一个接口，并在同一个表达式中实现其方法。以下示例演示了如何实现 `Runnable` 接口：
 
 ```js
 // 创建一个实现 Runnable 接口的对象，run 方法作为 JavaScript 函数实现
@@ -116,7 +116,7 @@ th.join();
 
 ## 扩展抽象 Java 类
 
-你可以通过传递一个 JavaScript 对象并在其中实现抽象方法来实例化抽象 Java 类的匿名子类。以下示例展示了如何实例化`java.util.TimerTask`类的一个子类：
+你可以通过传递一个 JavaScript 对象并在其中实现抽象方法来实例化抽象 Java 类的匿名子类。以下示例展示了如何实例化 `java.util.TimerTask` 类的一个子类：
 
 ```js
 var TimerTask = Java.type("java.util.TimerTask");
@@ -128,8 +128,7 @@ var task = new TimerTask({
 ```
 
 ### 扩展具体 Java 类
-
-对于具体的 Java 类，不能直接使用类似于抽象类的扩展语法。要扩展具体类，必须使用`Java.extend()`函数。以下示例演示了如何扩展`java.lang.Thread`类并实现`run()`方法：
+对于具体的 Java 类，不能直接使用类似于抽象类的扩展语法。要扩展具体类，必须使用 `Java.extend()` 函数。以下示例演示了如何扩展 `java.lang.Thread` 类并实现 `run()` 方法：
 
 ```js
 var Thread = Java.type("java.lang.Thread");
@@ -155,7 +154,7 @@ print(__FILE__, __LINE__, __DIR__);
 
 ## 加载脚本
 
-在 JavaScript 中加载额外的脚本文件非常方便。我们可以使用`load`函数加载本地或远程脚本。
+在 JavaScript 中加载额外的脚本文件非常方便。我们可以使用 `load` 函数加载本地或远程脚本。
 
 ```javascript
 load("https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js");
@@ -175,7 +174,7 @@ loadWithNewGlobal("script.js");
 
 ### 将 JSON 对象传递给 Java
 
-`Java.asJSONCompatible(obj)`函数接受一个脚本对象并返回一个与大多数 Java JSON 库兼容的对象。它将所有数组作为`List`对象暴露，而其他对象则作为`Map`对象暴露。
+`Java.asJSONCompatible(obj)` 函数接受一个脚本对象并返回一个与大多数 Java JSON 库兼容的对象。它将所有数组作为 `List` 对象暴露，而其他对象则作为 `Map` 对象暴露。
 
 ## Nashorn 语法扩展
 

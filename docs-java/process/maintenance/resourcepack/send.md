@@ -13,7 +13,7 @@ sidebar_position: 2
 
 RoseResourcepack 是一个强大的资源包管理插件，拥有许多很好的功能
 
-- **集成资源包托管：直接从您的服务器托管资源包**(比 IA 那个唐诗好多了)
+- **集成资源包托管：直接从您的服务器托管资源包** (比 IA 那个唐诗好多了)
 - 多版本支持：兼容 Minecraft 1.16.5 至 1.21.3 版本。
 - MiniMessage 支持：使用 MiniMessage 自定义消息。
 - 与其他插件集成：与 BetterHUD、ItemsAdder 和 Oraxen 等插件兼容。
@@ -44,13 +44,13 @@ https://ce.gtemc.cn/zh-Hans/getting_start/set_up_host
 
 ## 托管网站
 
-以下均为 ia 文档中所说的 第三方平台托管 (external-host)
+以下均为 IA 文档中所说的 第三方平台托管 (external-host)
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs queryString="store">
-<TabItem value="setup" label="Setup.md(最推荐)">
+<TabItem value="setup" label="Setup.md (最推荐)">
 
 官网：https://www.setup.md/usercontent
 
@@ -68,7 +68,7 @@ import TabItem from '@theme/TabItem';
 - 注册要开梯子
 
 </TabItem>
-<TabItem value="mcpack" label="MCPacks(免登录)">
+<TabItem value="mcpack" label="MCPacks (免登录)">
 
 官网：https://mc-packs.net/
 
@@ -93,12 +93,12 @@ import TabItem from '@theme/TabItem';
 
 ### Cloudflare R2
 
-免费的 Cloudflare R2 提供 10 GB 的免费空间，只不过需要**绑定银行卡或者 PayPal**(不会花钱)，非常推荐
+免费的 Cloudflare R2 提供 10 GB 的免费空间，只不过需要 **绑定银行卡或者 PayPal** (不会花钱)，非常推荐
 
-- 使用方法：创建一个 R2 存储桶，名称自选，位置选择`亚太地区 (APAC)`(速度最快)，默认存储类一定要选择 `标准`
+- 使用方法：创建一个 R2 存储桶，名称自选，位置选择 `亚太地区 (APAC)` (速度最快)，默认存储类一定要选择 `标准`
   ，创建好后直接上传资源包就可以了 (可以设置自定义域)
 
-- 无域名方案：完成上一步后，打开设置，找到`R2.dev 子域 `，点击 `允许访问` 即可使用 CF 提供的免费域名
+- 无域名方案：完成上一步后，打开设置，找到 `R2.dev 子域`，点击 `允许访问` 即可使用 CF 提供的免费域名
 
 图文教程：https://juejin.cn/post/7331584783611281444
 
@@ -161,7 +161,7 @@ CF Worker 的一个附属品，用来当可持久存储的，用来当资源包�
 
 国内的网络环境不建议用这个
 
-- 方案一：首先创建一个新的仓库，接着创建发行版，把资源包上传至发行版，复制下载链接，将链接填入 ia 的 第三方平台托管 (
+- 方案一：首先创建一个新的仓库，接着创建发行版，把资源包上传至发行版，复制下载链接，将链接填入 IA 的 第三方平台托管 (
   external-host) 或使用 server.properties
 
 - 方案二：首先创建一个新的仓库，接着上传资源包文件到仓库中，点击你上传的文件，复制这单个文件的下载链接
@@ -185,7 +185,7 @@ CF Worker 的一个附属品，用来当可持久存储的，用来当资源包�
 
 国内的代码托管平台，访问速度快，推荐使用
 
-- 方案一：首先创建一个新的仓库，接着创建发行版，把资源包上传至发行版，复制下载链接，将链接填入 ia 的 第三方平台托管 (
+- 方案一：首先创建一个新的仓库，接着创建发行版，把资源包上传至发行版，复制下载链接，将链接填入 IA 的 第三方平台托管 (
   external-host) 或使用 server.properties
 
 - 方案二：首先创建一个新的仓库，接着上传资源包文件到仓库中，点击你上传的文件，复制这单个文件的下载链接
@@ -208,7 +208,7 @@ CF Worker 的一个附属品，用来当可持久存储的，用来当资源包�
 
 国内访问比较稳定的代码托管平台
 
-- 方案一：首先创建一个新的仓库，接着创建发行版，把资源包上传至发行版，复制下载链接，将链接填入 ia 的 第三方平台托管 (
+- 方案一：首先创建一个新的仓库，接着创建发行版，把资源包上传至发行版，复制下载链接，将链接填入 IA 的 第三方平台托管 (
   external-host) 或使用 server.properties
 
 - 方案二：首先创建一个新的仓库，接着上传资源包文件到仓库中，点击你上传的文件，复制这单个文件的下载链接
@@ -228,7 +228,7 @@ CF Worker 的一个附属品，用来当可持久存储的，用来当资源包�
 </TabItem>
 <TabItem value="drive" label="直链网盘">
 
-ia 的文档教了如何使用
+IA 的文档教了如何使用
 [Google Drive](https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting/google-drive-1.17.1+) 和
 [OneDrive](https://itemsadder.devs.beer/v/chinese/plugin-usage/resourcepack-hosting/onedrive)
 进行材质托管
@@ -275,13 +275,13 @@ ItemsAdder，可以直接在服务器上托管资源包：https://itemsadder.dev
 
 ## 分发
 
-通常，IA,RoseResourcepack 这些插件会自动将资源包发送给玩家
+通常，IA，RoseResourcepack 这些插件会自动将资源包发送给玩家
 
 当然，你也可以使用自带的`server.properties` 进行分发
 
 ### 例子
 
-我们拿到 slimefun 的资源包直链地址是:
+我们拿到 slimefun 的资源包直链地址是：
 https://github.com/xMikux/Slimefun-Resourcepack/releases/download/latest-build/Slimefun-ResourcePack.zip ，
 然后我们打开`server.properties`，找到以下内容：
 

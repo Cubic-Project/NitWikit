@@ -1,6 +1,6 @@
 # 脚本语言
 
-在 Minecraft 中，一些服主在实现一些功能的时候 (通常是一些简单的功能),不会使用 Java,Kotlin,Scala 等编程语言实现，而是通过一些脚本插件实现
+在 Minecraft 中，一些服主在实现一些功能的时候 (通常是一些简单的功能)，不会使用 Java、Kotlin、Scala 等编程语言实现，而是通过一些脚本插件实现
 
 脚本插件可以让你通过编写简单的脚本代码来实现极高自定义的功能（就像是自己写插件一样？）
 
@@ -19,10 +19,10 @@
 通用语言是一些功能非常完备的语言，在 Minecraft 中常用的有以下语言：
 
 - Skript
-- Kether(语言自身功能并不完备，但可以运行 JavaScript，并且有许多扩展，归为通用语言)
+- Kether (语言自身功能并不完备，但可以运行 JavaScript，并且有许多扩展，归为通用语言)
 - JavaScript
 - Jexl
-- OGNL(少见，已知实现是 Arthas)
+- OGNL (少见，已知实现是 Arthas)
 
 这些编程语言还可以与 Java 进行交互，实现非常复杂的功能
 
@@ -39,7 +39,7 @@
 - Denizen
 - ...
 
-在这部分文档中不会介绍特定语言，学习请查看官方 wiki
+在这部分文档中不会介绍特定语言，学习请查看官方 Wiki
 
 import DocCardList from '@theme/DocCardList';
 

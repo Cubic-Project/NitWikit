@@ -8,7 +8,7 @@ slug: /optimize/jvm/common
 
 ## 大页支持
 
-注意在 WINDOWS 上使用大页，必须要以管理员启动
+注意在 Windows 上使用大页，必须要以管理员启动
 
 当然，在动手前，让我们先试一试是不是系统已经支持了这项功能，在控制台执行此命令
 
@@ -68,7 +68,7 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 -DLeaf.library-download-repo=https://maven.aliyun.com/repository/public
 ```
 
-如果你使用的是 Paper 1.21.6(及其分支) 之后的版本，可以使用以下系统属性配置 Maven 中心仓库镜像：
+如果你使用的是 Paper 1.21.6 (及其分支) 之后的版本，可以使用以下系统属性配置 Maven 中心仓库镜像：
 
 ```text
 -Dorg.bukkit.plugin.java.LibraryLoader.centralURL=https://maven.aliyun.com/repository/central

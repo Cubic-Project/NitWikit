@@ -11,10 +11,10 @@ sidebar_position: 5
 
 推荐两个备份插件 (高效的备份，无需停服即可备份)：
 
-[ebackup](https://www.spigotmc.org/resources/ebackup-simple-and-reliable-backups-for-your-server-supports-ftp-sftp.69917/)
+[eBackup](https://www.spigotmc.org/resources/ebackup-simple-and-reliable-backups-for-your-server-supports-ftp-sftp.69917/)
 可设置黑名单不备份某些文件，FTP 远程备份支持
 
-[serverbackup](https://www.spigotmc.org/resources/server-backup-ingame-dropbox-ftp-backup-1-8-1-20-multithreaded.79320/)
+[Server Backup](https://www.spigotmc.org/resources/server-backup-ingame-dropbox-ftp-backup-1-8-1-20-multithreaded.79320/)
 可支持动态备份 (即只备份最近变更过的文件)，占用空间更小
 
 :::warning
@@ -57,9 +57,9 @@ python main.py [相对/绝对目录] [时长] [类型]
 
 ### 手动备份
 
-Windows 系统在服务器根目录右键点击压缩即可 (如果时间比较急推荐 zip，如果空间比较紧推荐 7zip)。
+Windows 系统在服务器根目录右键点击压缩即可 (如果时间比较急推荐 zip，如果空间比较紧推荐 7-Zip)。
 
-Linux 使用指令 `tar -czvf backup_date.tar.gz /[path]/` (如果使用 7zip 请自行查看 7zip 指令)。
+Linux 使用指令 `tar -czvf backup_date.tar.gz /[path]/` (如果使用 7-Zip 请自行查看 7-Zip 指令)。
 
 面板 - 大多数面板都可以像 Windows 一键压缩。
 

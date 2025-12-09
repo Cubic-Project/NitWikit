@@ -7,7 +7,7 @@ sidebar_position: 6
 
 ## 混合端
 
-由于混合端本身的问题，混合端能进行的优化很少，并且混合端**不可以装大部分优化 Mod**，但是你仍然可以进行除安装优化 mod 以外的其他优化操作
+由于混合端本身的问题，混合端能进行的优化很少，并且混合端 **不可以装大部分优化 Mod**，但是你仍然可以进行除安装优化 mod 以外的其他优化操作
 
 ~~不使用混合端来达到最佳的优化~~
 
@@ -18,7 +18,7 @@ sidebar_position: 6
 我们在这里列出的不建议使用的插件是一个类型的插件，而不是仅仅只是不推荐某个插件。对于推荐的"优化插件"
 ，其实大多数也是通过限制红石/漏斗/实体数量和 AI 等完成的，
 
-在狭义上任何使用插件操作限制任何东西都不能称之为"_优化_"而是"_限制_"，这里只是以"_优化插件_"代指一些"_限制插件_".
+在狭义上任何使用插件操作限制任何东西都不能称之为"*优化*"而是"*限制*"，这里只是以"*优化插件*"代指一些"*限制插件*".
 
 所以说，使用这些"优化插件"，不如更换服务端核心，甚至不如优化启动参数和调优服务端配置文件
 
@@ -42,7 +42,7 @@ sidebar_position: 6
 
 因此，停止使用类似插件，如：
 
-_[TooManyGen](https://modrinth.com/plugin/toomanygen) - 惩罚玩家跑图，实际上这是非常影响游戏体验的，有更好的选择。_
+*[TooManyGen](https://modrinth.com/plugin/toomanygen) - 惩罚玩家跑图，实际上这是非常影响游戏体验的，有更好的选择。*
 
 ### 对于 AI 有影响的插件
 
@@ -50,8 +50,8 @@ _[TooManyGen](https://modrinth.com/plugin/toomanygen) - 惩罚玩家跑图，实
 
 因此，停止使用类似插件，如：
 
-_LaggRemover (Fork) - 有时候会导致即使插件卸载，实体 AI 也被移除了，比不上 Pufferfish(使用 Purpur Fork 即可) 根据距离衰减的
-AI._
+*LaggRemover (Fork) - 有时候会导致即使插件卸载，实体 AI 也被移除了，比不上 Pufferfish (使用 Purpur Fork 即可) 根据距离衰减的
+AI.*
 
 ### 任何对于内存 GC 进行操作的插件
 
@@ -59,7 +59,7 @@ AI._
 
 因此，停止使用类似插件，如：
 
-_Spartan - 一款性能非常差的付费反作弊，如果你买了那么恭喜你你被骗了 (大嘘)，如果近期购买请立即申请退款!_
+*Spartan - 一款性能非常差的付费反作弊，如果你买了那么恭喜你你被骗了 (大嘘)，如果近期购买请立即申请退款!*
 
 ### 村民优化插件
 
@@ -76,12 +76,12 @@ _Spartan - 一款性能非常差的付费反作弊，如果你买了那么恭喜
 
 地面上的物品很少会导致性能问题，而且物品往往会自行消失，如果你的服务器掉落物特别多，请调整以下两个参数：
 
-[点这里查看正确方法 #alt-item-despawn-rate](go.mdx#alt-item-despawn-rate)
+[点这里查看正确方法 #alt-item-despawn-rate](go.mdx#alt-item-despawn-rate)，
 [点这里查看正确方法 #merge-radius](go.mdx#merge-radius)
 
 因此，停止使用类似插件，如：
 
-_[ClearLagg](https://www.spigotmc.org/resources/clearlagg.68271/) - 清理物品插件_
+*[ClearLagg](https://www.spigotmc.org/resources/clearlagg.68271/) - 清理物品插件*
 
 ### 生物清理插件
 
@@ -91,7 +91,7 @@ _[ClearLagg](https://www.spigotmc.org/resources/clearlagg.68271/) - 清理物品
 
 因此，停止使用类似插件，如：
 
-_[Cleaner](https://www.minebbs.com/resources/cleaner-addon.4816/) - 清理生物/物品插件_
+*[Cleaner](https://www.minebbs.com/resources/cleaner-addon.4816/) - 清理生物/物品插件*
 
 ### 实体堆叠插件
 
@@ -99,8 +99,8 @@ _[Cleaner](https://www.minebbs.com/resources/cleaner-addon.4816/) - 清理生物
 
 因此，停止使用类似插件，如：
 
-_[StackMob](https://www.spigotmc.org/resources/stackmob-enhance-your-servers-performance-without-the-sacrifice.29999/) -
-实体密集时进行堆叠的插件 (若一定要使用仍推荐本插件而不是其他堆叠插件)_
+*[StackMob](https://www.spigotmc.org/resources/stackmob-enhance-your-servers-performance-without-the-sacrifice.29999/) -
+实体密集时进行堆叠的插件 (若一定要使用仍推荐本插件而不是其他堆叠插件)*
 
 其实叠加后的一小段时间，应该是占用下降的，但是服务器会因为实际的实体变少，重新刷新怪物，这会让占用缓慢恢复。
 
@@ -230,7 +230,7 @@ Minecraft 1.20.1 开始，这还没有修复。
 
 这个插件通过用一个自定义的、更快、更简单的搜索替换原版埋藏的寻宝来修复这些类型的崩溃：它只是在合理的距离内随机选择一个海滩并将宝藏放在那里。由于这主要是异步的，因此不会导致延迟。
 
-详细使用和局限性，请看[官方页面](https://hangar.papermc.io/Kyle/OkTreasures)
+详细使用和局限性，请看 [官方页面](https://hangar.papermc.io/Kyle/OkTreasures)
 
 ### Chunky Border
 
@@ -260,7 +260,7 @@ Minecraft 1.20.1 开始，这还没有修复。
 
 ESU 是一款多合一插件，但优化只需要 NetworkThrottleModule 省流模块即可
 
-通过压缩区块数据包中玩家不可见的方块信息以有效降低上行带宽的占用。对非作弊玩家的影响为零。经过深度优化，每个区块的处理耗时低于 1ms. 负载低于 GrimAC 与其他假矿插件。
+通过压缩区块数据包中玩家不可见的方块信息以有效降低上行带宽的占用。对非作弊玩家的影响为零。经过深度优化，每个区块的处理耗时低于 1 ms. 负载低于 GrimAC 与其他假矿插件。
 在百人原版生存服的测试环境中，该功能帮助降低了约 50% 的上行带宽。详情说明请检查模块配置中的注释。
 
 - **该功能与假矿插件相冲突，不可共同安装。插件有较一般的反矿透效果**

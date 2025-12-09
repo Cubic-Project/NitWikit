@@ -11,9 +11,9 @@ sidebar_position: 2
 
 `SpigotMC` https://www.spigotmc.org/resources/.88135/
 
-`GitHub(旧)` https://github.com/ryan-clancy/PlugMan
+`GitHub (旧)` https://github.com/ryan-clancy/PlugMan
 
-`GitHub(新)` https://github.com/Test-Account666/PlugManX
+`GitHub (新)` https://github.com/Test-Account666/PlugManX
 
 :::
 

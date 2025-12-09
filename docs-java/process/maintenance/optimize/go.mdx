@@ -23,22 +23,22 @@ import TabItem from '@theme/TabItem';
 ## 更简单的
 
 自动优化脚本，[下载](https://script.8aka.org/auto-optimize)
-，在服务器根目录执行，目前支持 CraftBukkit，Spigot，Paper，Pufferfish，Purpur，Gale，Leaf
+，在服务器根目录执行，目前支持 CraftBukkit、Spigot、Paper、Pufferfish、Purpur、Gale、Leaf
 
 :::tip
 
 以下教程的优化项并不全面 (比如没有 Leaf 配置项)，如果你希望了解所有的优化配置项
 
-你可以看看**笨蛋脚本的源代码**或**服务器核心的文档**
+你可以看看 **笨蛋脚本的源代码** 或 **服务器核心的文档**
 
 Leaf 和 Gale 的优化配置项请前往：[Leaf 官方文档](https://www.leafmc.one/zh/docs)，CatServer
-可以看[这个帖子](https://bbs.mcmod.cn/thread-10697-1-1.html)
+可以看 [这个帖子](https://bbs.mcmod.cn/thread-10697-1-1.html)
 
 :::
 
 ## 网络优化
 
-网络优化主要目的是解决服务器上行带宽占用导致的玩家 **Ping**(即网络延迟) 过高导致的糟糕游戏体验。
+网络优化主要目的是解决服务器上行带宽占用导致的玩家 **Ping** (即网络延迟) 过高导致的糟糕游戏体验。
 
 ### 降低服务器视野距离
 
@@ -522,7 +522,7 @@ mob-spawn-range: 8
 
 因为我们降低了总生物的刷新频率和数量，生物的总密度会明显下降，考虑到过远处的怪物对于游戏性影响非常小。
 
-我们可以缩小生物刷新范围 (以区块为单位，且不会大于[模拟距离](#手动调整)) 从而获得和原版接近的密度。
+我们可以缩小生物刷新范围 (以区块为单位，且不会大于 [模拟距离](#手动调整)) 从而获得和原版接近的密度。
 
 推荐值：
 
@@ -536,7 +536,7 @@ mob-spawn-range: 8
 
 :::tip
 
-如果你只调`mob-spawn-range`，不更改 `spawn-limit`，会导致玩家周围刷很多怪，影响游玩
+如果你只调 `mob-spawn-range`，不更改 `spawn-limit`，会导致玩家周围刷很多怪，影响游玩
 
 :::
 
@@ -635,7 +635,7 @@ water_creature:
 
 :::
 
-覆盖 [spigot.yml] 中的同名项。它让你决定一个实体可以同时处理多少次碰撞。`0`将导致无法推动其他实体，包括玩家。`2`应该可以处理大部分情况。
+覆盖 `spigot.yml` 中的同名项。它让你决定一个实体可以同时处理多少次碰撞。`0`将导致无法推动其他实体，包括玩家。`2`应该可以处理大部分情况。
 值得注意的是，这将会破坏 maxEntityCramming gamerule 也就是生物堆叠窒息。
 
 #### fix-climbing-bypassing-cramming-rule
@@ -745,7 +745,7 @@ nerf-spawner-mobs: false
 
 :::
 
-这一项打开时候会大幅影响刷怪塔及游戏体验，因此 paper 为此做了[更加人性化的选项](#spawner-nerfed-mobs-should-jump)。
+这一项打开时候会大幅影响刷怪塔及游戏体验，因此 Paper 为此做了 [更加人性化的选项](#spawner-nerfed-mobs-should-jump)。
 
 ##### spawner-nerfed-mobs-should-jump
 
@@ -801,7 +801,7 @@ tick-inactive-villagers: true
 
 由于村民被僵尸跟踪时会触发非常复杂的寻路、铁傀儡召唤等行为。
 
-大量村民被僵尸恐吓时会造成卡顿，当 TPS 低于`purpur.yml` 中设置的 `lagging-threshold` 值时，启用此项会阻止僵尸追赶村民。
+大量村民被僵尸恐吓时会造成卡顿，当 TPS 低于 `purpur.yml` 中设置的 `lagging-threshold` 值时，启用此项会阻止僵尸追赶村民。
 
 :::tip
 
@@ -860,7 +860,7 @@ sensor:
 
 > 当 [Pufferfish's DAB](#dab) 启用时，不建议修改该项任何默认值。
 
-`acquirepoi`是村民最频繁的行为，因此它的间隔已经大大增加了。如果村民有寻路问题，请减少此项。
+`acquirepoi` 是村民最频繁的行为，因此它的间隔已经大大增加了。如果村民有寻路问题，请减少此项。
 
 #### 寻路
 
@@ -876,7 +876,7 @@ sensor:
 
 禁用此项将减少寻路次数，从而提高性能。在某些情况下，这会导致生物看起来更加迟钝；
 
-它们只会每 5 个 tick(0.25 秒) 被动更新一次路径。
+它们只会每 5 个 tick (0.25 秒) 被动更新一次路径。
 
 ### 掉落物及经验
 
@@ -988,7 +988,7 @@ exp: 4.0
 
 :::
 
-创造模式玩家射出的箭消失的时间 (以 tick 为单位)。因为玩家无法捡起这些箭，所以你不妨将其设置为`20`(1 秒) 之类的值。
+创造模式玩家射出的箭消失的时间 (以 tick 为单位)。因为玩家无法捡起这些箭，所以你不妨将其设置为`20` (1 秒) 之类的值。
 
 ### 盔甲架
 
@@ -1072,7 +1072,7 @@ ticks-per:
 
 `hopper-check` 控制了漏斗一次运输多少物品。
 
-在漏斗特别多的服务器中，合理搭配`hopper-transfer` 和 `hopper-check` 可以降低漏斗占用。(
+在漏斗特别多的服务器中，合理搭配 `hopper-transfer` 和 `hopper-check` 可以降低漏斗占用。(
 但可能略微影响一些机器的行为，如分类机)
 
 另外，使用更高的 `hopper-check` 能够增加漏斗在单位时间的物品传输效率，
@@ -1094,7 +1094,7 @@ ticks-per:
 
 在 `paper-world-default.yml` 中控制是否启用爆炸优化。
 
-将此项设为`true`可以将原版爆炸算法替换成优化版本，略微牺牲非常小的爆炸伤害换取爆炸时的大量性能提升。
+将此项设为 `true` 可以将原版爆炸算法替换成优化版本，略微牺牲非常小的爆炸伤害换取爆炸时的大量性能提升。
 
 :::tip
 

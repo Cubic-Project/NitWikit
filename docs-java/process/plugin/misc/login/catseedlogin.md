@@ -9,7 +9,7 @@ sidebar_position: 3
 
 `GitHub` https://github.com/CatSeed/CatSeedLogin
 
-`GitHub(fork)` https://github.com/zhinghu/CatSeedLogin
+`GitHub (fork)` https://github.com/zhinghu/CatSeedLogin
 
 :::
 

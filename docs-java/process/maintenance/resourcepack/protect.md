@@ -9,7 +9,7 @@ sidebar_position: 4
 
 资源包保护主要分为两种：
 
-- 无客户端 mod(客户端此时不需要做任何事情)
+- 无客户端 mod (客户端此时不需要做任何事情)
 - 有客户端 mod
 
     这个保护并不是 100% 的防御，
@@ -29,7 +29,7 @@ sidebar_position: 4
 
 无客户端 mod 保护方案由于技术限制，保护方式集中于 ZIP 格式保护 (如破坏格式),和混淆打乱 (Oraxen 命名空间打乱等)
 
-> 教程：[压缩&混淆](compress.md)
+> 教程：[压缩 & 混淆](compress.md)
 
 ## 有客户端 mod
 
@@ -68,9 +68,9 @@ sidebar_position: 4
 一个高版本的资源包保护插件，支持 1.18.1, 1.20.1, 1.21.1, 支持 NeoForge/Fabric 服务端
 
 1. 在服务器上安装此插件和 packetevents 插件
-2. 开启服务端，编辑 ~/plugins/ResourceHack/config.yml 配置加密密钥
+2. 开启服务端，编辑 `~/plugins/ResourceHack/config.yml` 配置加密密钥
 3. 重启服务端或 reload 插件
-4. 使用 `/res encrypt <path>`（需要`resack.encrypt`权限）加密资源包
+4. 使用 `/res encrypt <path>`（需要 `resack.encrypt` 权限）加密资源包
 5. 配置资源包托管
 
 客户端：

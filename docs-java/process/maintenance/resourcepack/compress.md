@@ -1,9 +1,9 @@
 ---
-title: 压缩&混淆
+title: 压缩 & 混淆
 sidebar_position: 3
 ---
 
-# 压缩&混淆
+# 压缩 & 混淆
 
 为了让玩家更快的下载资源包 (并节省你的流量),你需要对资源包进行压缩
 
@@ -15,15 +15,15 @@ sidebar_position: 3
 
 :::
 
-推荐使用 [PackSquash](https://packsquash.aylas.org/) 进行压缩和混淆，注意：**本部分内容仅限于 ZIP 层面的压缩&混淆**
+推荐使用 [PackSquash](https://packsquash.aylas.org/) 进行压缩和混淆，注意：**本部分内容仅限于 ZIP 层面的压缩 & 混淆**
 
 ## 下载
 
-前往[官网](https://packsquash.aylas.org/) 下载即可
+前往 [官网](https://packsquash.aylas.org/) 下载即可
 
 ## 使用
 
-PackSquash 需要你在目录下创建配置文件`packsquash.toml`才可以使用
+PackSquash 需要你在目录下创建配置文件 `packsquash.toml` 才可以使用
 
 然后向文件中写入以下内容
 
@@ -31,15 +31,15 @@ PackSquash 需要你在目录下创建配置文件`packsquash.toml`才可以使�
 pack_directory = 'C:\path\to\pack(填写你的资源包所在目录)'
 ```
 
-然后在当前目录运行`packsquash packsquash.toml` 即可
+然后在当前目录运行 `packsquash packsquash.toml` 即可
 
 ## 其他选项
 
 :::tip
 
-这并不是所有的选项，**只列出了一些**对于新手有用的选项
+这并不是所有的选项，**只列出了一些** 对于新手有用的选项
 
-同时简化了一些选项表达，完整版请参考[GitHub Wiki](https://github.com/ComunidadAylas/PackSquash/wiki/Options-files)
+同时简化了一些选项表达，完整版请参考 [GitHub Wiki](https://github.com/ComunidadAylas/PackSquash/wiki/Options-files)
 
 :::
 
@@ -55,13 +55,13 @@ output_file_path = 'C:\path\to\result\pack\zip\file\my_pack.zip'
 zip_spec_conformance_level = 'pedantic'
 ```
 
-默认取值为`pedantic`,表示完全遵循 ZIP 文件规范，所有的查看和托管都可以识别
+默认取值为 `pedantic`，表示完全遵循 ZIP 文件规范，所有的查看和托管都可以识别
 
-`disregard`为加料模式，包括提取保护和改进的内部 ZIP 文件结构压缩，会获得更好的性能，非常推荐
+`disregard` 为加料模式，包括提取保护和改进的内部 ZIP 文件结构压缩，会获得更好的性能，非常推荐
 
 :::warning
 
-并不是所有的托管和查看程序都能识别`disregard`模式的 zip 文件
+并不是所有的托管和查看程序都能识别 `disregard` 模式的 zip 文件
 
 :::
 
@@ -72,7 +72,7 @@ size_increasing_zip_obfuscation = true
 ```
 
 当使用`disregard`模式时，启用此选项将增加对生成的 ZIP
-文件进行查看、提取或篡改的保护，这会略微增加其大小。此选项不影响是否添加**不增加文件大小**的保护，并且如果 ZIP 标准不提供保护，则没有任何影响
+文件进行查看、提取或篡改的保护，这会略微增加其大小。此选项不影响是否添加 **不增加文件大小** 的保护，并且如果 ZIP 标准不提供保护，则没有任何影响
 
 ### 压缩保密性
 

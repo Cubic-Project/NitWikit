@@ -164,3 +164,4 @@ sidebar_position: 100
 - [ ] 迁移 TODOs 到 Projects
 - [ ] 是否要规范 `<TabItem value=`
 - [ ] AutoCorrect 会格式化 Markdown 的图片链接，导致加入空格无法解析 (在 Final review 里要审查到，并且 AutoCorrect 的 ignore 无法正常使用，需要反馈)
+- [ ] 检查所有代码块高亮的语言（特别是 kether 和 skript），以及内容格式（注释格式）

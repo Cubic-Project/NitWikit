@@ -25,7 +25,7 @@ sidebar_position: 2
 
 #### 自动版
 
-请使用[笨蛋脚本](https://script.8aka.org/auto-antiseedcracker)，在服务器根目录执行即可自动配置!!
+请使用 [笨蛋脚本](https://script.8aka.org/auto-antiseedcracker)，在服务器根目录执行即可自动配置!!
 
 #### 特征使用随机种子
 
@@ -75,9 +75,9 @@ seed-stronghold: default
 
 :::danger[特别注意]
 
-在 1.21.1 之前，开启或关闭 Leaf 安全种子**必须**删除原有存档！
+在 1.21.1 之前，开启或关闭 Leaf 安全种子 **必须** 删除原有存档！
 
-在 1.21.1 后支持直接转换为安全种子，不需要**删除存档**!
+在 1.21.1 后支持直接转换为安全种子，不需要 **删除存档**!
 
 :::
 
@@ -93,7 +93,7 @@ seed-stronghold: default
 
 #### 自动版
 
-使用[笨蛋脚本](https://script.8aka.org/auto_antixray)，在服务器根目录执行脚本即可自动配置!!
+使用 [笨蛋脚本](https://script.8aka.org/auto_antixray)，在服务器根目录执行脚本即可自动配置!!
 
 ⚠警告：`engine-mode: 3` 在 `paper 1.19.3` 往后的版本才添加⚠
 
@@ -168,7 +168,7 @@ anticheat:
 </details>
 
 <details>
-  <summary>配置Ⅱ - *带宽消耗中等，效果中等</summary>
+  <summary>配置Ⅱ - *带宽消耗中等，效果中等*</summary>
 
 ```yaml
 anticheat:
@@ -373,9 +373,9 @@ anticheat:
         enabled: false
 ```
 
-注意，如果你需要隐藏暴露在空气中的方块，需要将 `air` 添加到 `hidden-blocks` 和 `replacement-blocks` ，但这非常影响性能，不推荐。
+注意，如果你需要隐藏暴露在空气中的方块，需要将 `air` 添加到 `hidden-blocks` 和 `replacement-blocks`，但这非常影响性能，不推荐。
 
-如果你需要隐藏岩浆中的方块，请打开`lava-obscures`,但会影响性能
+如果你需要隐藏岩浆中的方块，请打开 `lava-obscures`,但会影响性能
 
 :::info
 
@@ -396,9 +396,9 @@ anticheat:
 #### RayTraceAntiXray(推荐)
 
 [RayTraceAntiXray](https://builtbybit.com/resources/raytraceantixray.24914/)，
-[开源](https://github.com/stonar96/RayTraceAntiXray)付费且仅售 7 美元。
+[开源](https://github.com/stonar96/RayTraceAntiXray) 付费且仅售 7 美元。
 
-是一款用于隐藏 paper 服务器中使用 `engine-mode: 1` 时暴露在空气中的未隐藏方块的插件。
+是一款用于隐藏 Paper 服务器中使用 `engine-mode: 1` 时暴露在空气中的未隐藏方块的插件。
 
 其使用了异步多线程光线追踪，判断玩家是否能看到目标方块，从而在玩家能够看到目标方块时发送真实方块信息。
 
@@ -440,7 +440,7 @@ world-settings:
                 - spawner
     world_nether:
         anti-xray:
-            # 注意，ancient_debris(下界合金) 永远不会自然生成在暴露于空气的地方。
+            # 注意，ancient_debris (下界合金) 永远不会自然生成在暴露于空气的地方。
             # 普通引擎模式：1 已经足够，在下界禁用射线追踪。
             ray-trace: false
     # 调整世界名称。
@@ -488,7 +488,7 @@ world-settings:
     # 调整世界名称。
     world_nether:
         anti-xray:
-            # 注意，ancient_debris(下界合金) 永远不会自然生成在暴露于空气的地方。
+            # 注意，ancient_debris (下界合金) 永远不会自然生成在暴露于空气的地方。
             # 普通引擎模式：1 已经足够，在下界禁用射线追踪。
             ray-trace: false
     # 调整世界名称。

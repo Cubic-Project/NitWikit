@@ -12,9 +12,9 @@ sidebar_position: 1
 
 `MineBBS` https://www.minebbs.com/resources/1-16-1-20-slimefun.7287
 
-`GitHub(官方)` https://github.com/Slimefun/Slimefun4
+`GitHub (官方)` https://github.com/Slimefun/Slimefun4
 
-`GitHub(中文)` https://github.com/SlimefunGuguProject/Slimefun4
+`GitHub (中文)` https://github.com/SlimefunGuguProject/Slimefun4
 
 `非官方中文wiki` https://slimefun-wiki.guizhanss.cn/
 

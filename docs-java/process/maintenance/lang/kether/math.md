@@ -49,12 +49,12 @@ math 1 + 3 * 5 / 6 - 2
 
 详细请查看：https://github.com/TabooLib/taboolib/blob/master/module/module-kether/src/main/kotlin/taboolib/module/kether/action/transform/ActionJexl3.kt
 
-- 加法：a + b
-- 减法：a - b
-- 乘法：a \* b
-- 除法：a / b
+- 加法：`a + b`
+- 减法：`a - b`
+- 乘法：`a \* b`
+- 除法：`a / b`
 
-- 取余：取余操作使用 % 符号。例如，计算 10 除以 3 的余数：10 % 3。
+- 取余：取余操作使用 `%` 符号。例如，计算 `10` 除以 `3` 的余数：`10 % 3`。
 
 当然也可以使用括号：
 

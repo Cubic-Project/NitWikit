@@ -38,7 +38,7 @@ RNG 是 **随机数生成器** 的简写。
 
 [Paper](https://papermc.io) 核心 (包括它们的分支)，可以防止玩家破解 RNG。
 
-其中， [Purpur](https://purpurmc.org/) 和 [Leaves](https://leavesmc.org/) (包括它们的分支) 可以自行选择使用的 RNG 算法。
+其中，[Purpur](https://purpurmc.org/) 和 [Leaves](https://leavesmc.org/) (包括它们的分支) 可以自行选择使用的 RNG 算法。
 
 对于 [Purpur](https://purpurmc.org/) 和 [Leaves](https://leavesmc.org/) 用户，你可以根据自己的核心类型按照下文修改配置 (默认就是开启的)：
 

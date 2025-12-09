@@ -46,19 +46,19 @@ JWarmup 的基本原理：根据前一次程序运行的情况，记录下热点
 
 <!--markdownlint-disable line-length-->
 
-添加参数`-XX:-ClassUnloading -XX:-CMSClassUnloadingEnabled -XX:-ClassUnloadingWithConcurrentMark -XX:CompilationWarmUpLogfile=jwarmup.log -XX:+CompilationWarmUpRecording -XX:CompilationWarmUpRecordTime=300`
+添加参数 `-XX:-ClassUnloading -XX:-CMSClassUnloadingEnabled -XX:-ClassUnloadingWithConcurrentMark -XX:CompilationWarmUpLogfile=jwarmup.log -XX:+CompilationWarmUpRecording -XX:CompilationWarmUpRecordTime=300`
 
 <!--markdownlint-enable line-length-->
 
 #### 使用阶段 (一般是生产环境)
 
-添加参数`-XX:+CompilationWarmUp -XX:-TieredCompilation -XX:CompilationWarmUpLogfile=jwarmup.log -XX:CompilationWarmUpDeoptTime=0`
+添加参数 `-XX:+CompilationWarmUp -XX:-TieredCompilation -XX:CompilationWarmUpLogfile=jwarmup.log -XX:CompilationWarmUpDeoptTime=0`
 
 ## 对象头压缩
 
 可以节约 10% 左右的 Java 对象内存占用，并可能提升程序性能。
 
-添加参数`-XX:+UseCompactObjectHeaders`
+添加参数 `-XX:+UseCompactObjectHeaders`
 
 ## Wisp
 
@@ -72,7 +72,7 @@ Wisp 在 JVM 上提供了一种用户态的线程实现。开启 Wisp2 后，Jav
 
 :::
 
-添加参数`-XX:+UnlockExperimentalVMOptions -XX:+UseWisp2`
+添加参数 `-XX:+UnlockExperimentalVMOptions -XX:+UseWisp2`
 
 ## G1ElasticHeap
 

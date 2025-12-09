@@ -9,7 +9,7 @@ sidebar_position: 5
 
 Honeypot 是一款采用"蜜罐陷阱"机制的反作弊插件，通过诱导恶意玩家触发陷阱来检测和处理破坏行为。
 
-通常被用来检测 x-ray 玩家
+通常被用来检测 X-ray 玩家
 
 ### 工作原理
 
@@ -151,6 +151,7 @@ honeypots:
     - 设置警告或踢出动作
 
 2. **仓库保护**
+
     ```bash
     # 将箱子设为蜜罐
     /honeypot create theft_warn

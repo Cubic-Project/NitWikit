@@ -38,7 +38,7 @@ import TabItem from '@theme/TabItem';
 
 :::
 
-付费的 HUD 的插件，以前的名字为 HappyHUD，支持的版本为 `1.19-1.21`,非常不推荐的插件:
+付费的 HUD 的插件，以前的名字为 HappyHUD，支持的版本为 `1.19-1.21`,非常不推荐的插件：
 
 - Wiki 写的非常糟糕，完全不如 BetterHud
 - HappyHUD 改个名后要求全部重新付费

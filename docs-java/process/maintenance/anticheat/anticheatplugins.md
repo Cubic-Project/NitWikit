@@ -7,7 +7,7 @@ sidebar_position: 1
 
 :::tip[写在最前]
 
-混合端**不要**用下面所列的反作弊插件，建议使用 [次元反作弊](https://www.mcmod.cn/class/6578.html)，[SkAc 反作弊](https://www.mcmod.cn/class/18057.html) 或 [猫反作弊](https://www.wxmwl.com/?p=95)
+混合端 **不要** 用下面所列的反作弊插件，建议使用 [次元反作弊](https://www.mcmod.cn/class/6578.html)，[SkAc 反作弊](https://www.mcmod.cn/class/18057.html) 或 [猫反作弊](https://www.wxmwl.com/?p=95)
 
 次元反作弊的交流群：327175980
 
@@ -201,7 +201,7 @@ TotemGuard 是一个专门检测 AutoTotem 作弊的轻量级反作弊插件
 
 ### 扩展工具
 
-这些插件自身不提供反作弊功能,但是可用于反作弊,推荐全部看一遍
+这些插件自身不提供反作弊功能，但是可用于反作弊，推荐全部看一遍
 
 <Tabs>
 <TabItem value="aco" label="AntiCheatObfuscator">

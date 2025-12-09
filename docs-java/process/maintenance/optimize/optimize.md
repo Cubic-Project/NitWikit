@@ -9,7 +9,7 @@ sidebar_position: 1
 
 每个服务器可能有自己的卡顿原因，在这部分先做最基础的通用优化，如果你使用后作用不大请参考性能分析板块。
 
-> "过早的优化是万恶之源",过早优化会让服务端不稳定，甚至 10x slower
+> "过早的优化是万恶之源"，过早优化会让服务端不稳定，甚至 10x slower
 
 在此之前，请一定查看 [优化误区](optimized-plugin.md)，停止此类无效"优化"，然后根据下面的步骤进行操作。
 
@@ -44,7 +44,7 @@ sidebar_position: 1
 
 :::
 
-完整版请查看[核心选择](../../../start/server-core-choose/server-core-choose.md)
+完整版请查看 [核心选择](../../../start/server-core-choose/server-core-choose.md)
 
 ## 第四步 - 调整服务端配置
 

@@ -61,7 +61,7 @@ sidebar_position: 2
 但搬运者（我）有一点歪门邪道
 
 - AdvancedGUI“文本"固定，不再转向玩家
-- [资源包做字体（ia 文档）](https://itemsadder.devs.beer/v/chinese/plugin-usage/adding-content/fonts) 使用资源包来改变字体
+- [资源包做字体（IA 文档）](https://itemsadder.devs.beer/v/chinese/plugin-usage/adding-content/fonts) 使用资源包来改变字体
 
 ## 汉化
 

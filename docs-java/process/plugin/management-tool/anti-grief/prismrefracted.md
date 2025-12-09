@@ -11,7 +11,7 @@ sidebar_label: 记录 - PrismRefracted
 
 `GitHub` https://github.com/prism/PrismRefracted
 
-`GitHub(汉化版)` https://github.com/Rothes/PrismRefracted
+`GitHub (汉化版)` https://github.com/Rothes/PrismRefracted
 
 :::
 

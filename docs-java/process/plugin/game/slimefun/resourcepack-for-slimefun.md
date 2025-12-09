@@ -7,6 +7,6 @@ sidebar_position: 3
 
 鬼斩的粘液科技材质 (不再更新)：https://ybw0014.net/post/guizhancraft-resource-pack
 
-建议使用 (还提供了 ia 支持)：https://github.com/xMikux/Slimefun-Resourcepack/blob/main/.github/README.zh-cn.md
+建议使用 (还提供了 IA 支持)：https://github.com/xMikux/Slimefun-Resourcepack/blob/main/.github/README.zh-cn.md
 
 geyser 可以看 [此处](../../../mobile-player/geyser/upgrade/slimefun.md)

@@ -24,7 +24,7 @@ Azul Zing 的专业性较强，新手请不要使用
 
 :::
 
-若要启用 ReadyNow，请添加以下命令行选项，其中两者`<file>`通常相同：
+若要启用 ReadyNow，请添加以下命令行选项，其中两者 `<file>` 通常相同：
 
 `-XX:ProfileLogIn=<file>` 指示 Azul Platform Prime 使用现有配置文件日志中的信息。
 
@@ -32,7 +32,7 @@ Azul Zing 的专业性较强，新手请不要使用
 
 然后，运行应用程序将自动生成或更新配置文件日志。此配置文件日志将在应用程序的后续运行时使用，从而改进预热。
 
-官方推荐所有重要函数执行**5 万遍**
+官方推荐所有重要函数执行 **5 万遍**
 
 ### 编译存储（已弃用）
 
@@ -54,15 +54,15 @@ C4 是 Zing 中唯一的垃圾收集器，取代了 OpenJDK 中可用的其他�
 
 ## 紧凑字符串
 
-添加选项`-XX:+CompactStrings`可减少内存占用，提高字符串密集型应用程序的性能，并减少花费在垃圾回收上的时间
+添加选项 `-XX:+CompactStrings` 可减少内存占用，提高字符串密集型应用程序的性能，并减少花费在垃圾回收上的时间
 
 ## 更高级别的 Falcon 优化
 
-使用选项`-XX:FalconOptimizationLevel=3`可以获得更高级别的优化，但会出现更多兼容性问题
+使用选项 `-XX:FalconOptimizationLevel=3` 可以获得更高级别的优化，但会出现更多兼容性问题
 
 ## 多层级 Falcon 优化
 
-使用选项`-XX:+UseMultiTiering` 通过添加多个编译层级，可以调整预热速度、编译器 CPU 使用时间和达到最佳性能所需时间之间的权衡。
+使用选项 `-XX:+UseMultiTiering` 通过添加多个编译层级，可以调整预热速度、编译器 CPU 使用时间和达到最佳性能所需时间之间的权衡。
 
 ## Zing System Tool
 
@@ -70,11 +70,11 @@ C4 是 Zing 中唯一的垃圾收集器，取代了 OpenJDK 中可用的其他�
 
 [官方安装教程](https://docs.azul.com/prime/zst/installation)
 
-使用`-XX:+UseZST` 开启
+使用 `-XX:+UseZST` 开启
 
 :::info
 
-**关于 ZST 的使用**：根据 Azul 官方说明，如果你的 Linux 内核版本足够新，你可以**不使用 ZST**，直接安装 Zing 即可。ZST 组件是可选的，主要用于较旧的内核版本。
+**关于 ZST 的使用**：根据 Azul 官方说明，如果你的 Linux 内核版本足够新，你可以 **不使用 ZST**，直接安装 Zing 即可。ZST 组件是可选的，主要用于较旧的内核版本。
 
 :::
 
@@ -88,7 +88,7 @@ C4 是 Zing 中唯一的垃圾收集器，取代了 OpenJDK 中可用的其他�
 
 动态减少提交的 Java 堆大小，以避免容器环境中出现的内存溢出（OOM）错误，这通常会导致 OOM 终止和崩溃。
 
-使用`-XX:+UseDefensiveHeapShrinking` 开启
+使用 `-XX:+UseDefensiveHeapShrinking` 开启
 
 ## 缓解 Intel 缩肛
 

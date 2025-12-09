@@ -23,9 +23,9 @@ sidebar_position: 1
 
 :::info
 
-**别的插件执行 kether？**
+**别的插件执行 Kether？**
 
-好吧，如果你已经安装了其他可以用命令调试 kether 的插件......
+好吧，如果你已经安装了其他可以用命令调试 Kether 的插件......
 
 **TrMenu v3**
 

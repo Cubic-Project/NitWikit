@@ -54,7 +54,7 @@ on join:
 
 效果可以是修改游戏模式、发送消息、移动玩家等任何能够改变游戏世界的动作。
 
-在 SK 中效果是脚本中实际执行的操作或指令，用于**改变游戏结果或执行动作**
+在 SK 中效果是脚本中实际执行的操作或指令，用于 **改变游戏结果或执行动作**
 
 举例：
 
@@ -75,7 +75,7 @@ on player jump:
 
 表达式是计算值或引用数据的语句。它们可以返回各种类型的结果。如数字、字符串、列表等。
 
-在 SK 中一般配合条件判断，用于**在脚本中传递和处理数据**。
+在 SK 中一般配合条件判断，用于 **在脚本中传递和处理数据**。
 
 举例：
 
@@ -110,7 +110,7 @@ on bed enter:
 
 功能是封装了特定逻辑的代码块，可以在脚本中多次调用，常用的功能是计算、向量等类型的。
 
-在 SK 中，作用主要是**快捷计算、指定类型 (如世界、颜色、玩家类型) 等**
+在 SK 中，作用主要是 **快捷计算、指定类型 (如世界、颜色、玩家类型) 等**
 
 举例：
 
@@ -175,13 +175,13 @@ Skript 仍然是编程语言，所有的编程语言都必须在拥有理论基�
 
 ### 缩进
 
-在 Skript 中 如果一行代码以 ":" 结尾 那么下一行需要进行缩进操作，如果没有就不需要进行缩进。
+在 Skript 中 如果一行代码以 `:` 结尾 那么下一行需要进行缩进操作，如果没有就不需要进行缩进。
 
 缩进的方式可以选择两个/四个空格或者一个 Tab (Tab 虽然不是很规范但是真的很爽)。
 
 ### 文本编辑器
 
-推荐使用 VS Code 安装 Skript 拓展。或者使用 [Skeditor](https://forums.skunity.com/resources/skeditor.1517/)高亮语法。
+推荐使用 VS Code 安装 Skript 拓展。或者使用 [Skeditor](https://forums.skunity.com/resources/skeditor.1517/) 高亮语法。
 
 ### Helloworld
 
@@ -202,11 +202,11 @@ on join:
 
 想必你一定有一些想法，市面上可能找不到，而且因为你不会使用 Java 写插件所以难以实现。
 
-前往 [skhub](https://skripthub.net/docs/) 或 [skunity](https://docs.skunity.com/syntax)查询 Skript 语法，现在开始构思你的插件吧。
+前往 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) 查询 Skript 语法，现在开始构思你的插件吧。
 
 ### 如何使用语法
 
-首先，最重要的是 Event(事件)，这是所有逻辑的先决要素，我们在[skhub](https://skripthub.net/docs/) 或 [skunity](https://docs.skunity.com/syntax) 上，
+首先，最重要的是 Event (事件)，这是所有逻辑的先决要素，我们在 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) 上，
 
 在侧边栏中选中 (Skript 和 Events)，即可筛选 Skript 原生事件。此处以指令监听器为例：
 
@@ -234,7 +234,7 @@ on join:
 
 ##### `%type%`
 
-表示这部分只能是固定的某种 type，如 `%itemtype%`，这部分可以勾选 [skhub](https://skripthub.net/docs/) 侧边栏 `Type` 获取。
+表示这部分只能是固定的某种 type，如 `%itemtype%`，这部分可以勾选 [Skript Hub](https://skripthub.net/docs/) 侧边栏 `Type` 获取。
 
 #### 属性
 
@@ -267,7 +267,7 @@ on command "/op":
 
 ### 最初的脚本
 
-在这个板块中，请利用 [skhub](https://skripthub.net/docs/) 或 [skunity](https://docs.skunity.com/syntax)查询 Skript 语法，满足缩进等要求，尝试写一些最基础脚本吧~
+在这个板块中，请利用 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax)查询 Skript 语法，满足缩进等要求，尝试写一些最基础脚本吧~
 
 #### 事件
 
@@ -287,7 +287,7 @@ on command "/op":
 
 ##### 事件优先级
 
-要注意，事件的监听是有优先级的，其中有六个优先级，其中执行顺序为**从上到下**分别为：
+要注意，事件的监听是有优先级的，其中有六个优先级，其中执行顺序为 **从上到下** 分别为：
 
 | 优先级      | Priority |
 | ----------- | -------- |
@@ -327,7 +327,7 @@ on teleport with priority lowest:
 
 例如，我们想写一个脚本，检测玩家在 00:00 - 06:00 没有在床上睡觉，那么就每秒扣玩家 1 生命值。
 
-查询 [skhub](https://skripthub.net/docs/) 或 [skunity](https://docs.skunity.com/syntax) ，根据直觉选择，与时间和睡觉有关系的事件可能有这些：
+查询 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) ，根据直觉选择，与时间和睡觉有关系的事件可能有这些：
 
 ```skript
 every 10 seconds:
@@ -409,7 +409,7 @@ at 00:00 in world "world":
 <details>
     <summary>参考写法，不唯一</summary>
 
-不刷新怪物的事件建议去掉，直接设置**难度为和平**。
+不刷新怪物的事件建议去掉，直接设置 **难度为和平**。
 
 ```skript
 # 不推荐，即使这是有用的！
@@ -481,7 +481,7 @@ TODO
 
 1. `command /xxx` 后一定要使用 `trigger:` 否则指令将不会注册并报错。
 2. `/xxx` 为 "指令"，第 n 个空格后的参数即为 `arg-n`，如此处的 `<world>` 为 `arg-1`
-3. 参数类型可以查 [skhub](https://skripthub.net/docs/) 选择 `type` 为参数类型，万能参数可用 `string` / `text`。
+3. 参数类型可以查 [Skript Hub](https://skripthub.net/docs/) 选择 `type` 为参数类型，万能参数可用 `string` / `text`。
 4. 参数以 `<>` 引用起来时说明该参数为必要参数，如果输入时没有这个参数时会提示格式错误，如果这个参数是可以省略的，那么可以使用类似 `[<text>]` 的方法。
 
 在这里，我们分析一下指令，应该是 `/world xxx` 中的 `xxx` 代表世界，所以我们选择 `/world <world>` 作为指令。
@@ -589,7 +589,7 @@ command /world <world>:
 
 ---
 
-### Conditions(条件)
+### Conditions (条件)
 
 条件用于判断句：有没有，是不是。它的基本格式为 "if" + 条件。
 
@@ -639,7 +639,7 @@ on command "/op":
 
 ---
 
-### Effects(效果)
+### Effects (效果)
 
 与其说它是效果，不如称作行动。
 
@@ -729,7 +729,7 @@ send subtitle %text% [to %players%] [for %time span%] [with fade[(-| )]in %time 
 
 ---
 
-### Expressions(表达) & Types(类型)
+### Expressions (表达) & Types (类型)
 
 有一天你心血来潮，想要调整玩家的最大血量。
 
@@ -737,12 +737,12 @@ send subtitle %text% [to %players%] [for %time span%] [with fade[(-| )]in %time 
 
 但是实际上是这样么？
 
-实际上并不是，所谓的 Effect(效果) 虽然都是 `动词 + 名词` 形式，但是对于 Effect(效果) 而言。
+实际上并不是，所谓的 Effect(效果) 虽然都是 `动词 + 名词` 形式，但是对于 Effect (效果) 而言。
 
 注重的是 `动词` 而非后面跟着的 `名词` 例如 `在玩家所在位置生成僵尸`。
 
-Effect(效果) 所能提供的 只有 "生成"
-通过查阅[官方文档](https://docs.skriptlang.org/docs.html?search=#EffSecSpawn)，我们知道生成的用法基本为：
+Effect (效果) 所能提供的 只有 "生成"
+通过查阅 [官方文档](https://docs.skriptlang.org/docs.html?search=#EffSecSpawn)，我们知道生成的用法基本为：
 
 ```skript
 (spawn|summon) %entity types% [%directions% %locations%]
@@ -751,7 +751,7 @@ Effect(效果) 所能提供的 只有 "生成"
 
 但是除去这个词语，我们还剩 "在玩家所在位置" 和 "僵尸"。
 
-这两个词我们又该怎么处理呢？这时候我们就需要用到 Expressions(表达)。
+这两个词我们又该怎么处理呢？这时候我们就需要用到 Expressions (表达)。
 
 位置的英文单词是 "Location" 我们在官方 Doc 查到了多种有关 "Location" 的表达
 
@@ -763,19 +763,19 @@ Effect(效果) 所能提供的 只有 "生成"
 
 但是这只解决了我们 "所在位置" 的问题 并没有解决 "玩家" 和 "僵尸" 的问题。
 
-我们可以看到 "所在位置"，Expressions(表达) 是没有主语的。
+我们可以看到 "所在位置"，Expressions (表达) 是没有主语的。
 
-Skript 不同于其他语言，正如我在开头所展示的，相比较 Java 而言 Skript 更**注重的是语言而非编程**。
+Skript 不同于其他语言，正如我在开头所展示的，相比较 Java 而言 Skript 更 **注重的是语言而非编程**。
 
 我们需要把这些零碎的东西组成句子，必不可少的是主语，次要的是宾语。
 
-这时候我们就需要引入 Types(类型)，但凡你发现你的表达里缺少主语/宾语 (对象)，来这里准没错：
+这时候我们就需要引入 Types (类型)，但凡你发现你的表达里缺少主语/宾语 (对象)，来这里准没错：
 
 https://docs.skriptlang.org/classes.html
 
 通过翻译我们可以轻松知道玩家的英文以及僵尸的英文，分别为 "player"和"zombie"。
 
-与之相对应的，我们分别在 Types(类别) 中找到：
+与之相对应的，我们分别在 Types (类别) 中找到：
 
 - https://docs.skriptlang.org/docs.html?search=#player
 - https://docs.skriptlang.org/docs.html?search=#entity
@@ -864,7 +864,7 @@ Loop 即 循环结构，是 Skript 里非常常用的结构语句，主要用于
 
 (To Be Added.)
 
-### Loop + Types(类型) 结构
+### Loop + Types (类型) 结构
 
 (To Be Added.)
 
@@ -980,12 +980,12 @@ command /<指令名称> <参数>:
   指令名称前的斜杠字符 (/) 是可选的 (但这并不意味着你可以在执行指令时不带斜杠)。
 - 参数 (可选)
   可以通过将参数放在 "[]" 中来使其成为可选参数。
-    - 类型参数
+  - 类型参数
       可以通过使用规定的格式来限制参数的类型，例如：`<type = default value>`。
-        - 类型为 "text/string" 的参数可以接受任何字符，但 "object" 类型不能用作于参数 (编者注：原因大抵是无法输入 `object`)。
-        - 类型可以是多个 (例如 number -> numbers entity -> entities)。通过这样的方法，可以使参数接受多个值。
-        - "= default value" 这一部分是可选的，如果指令执行者未输入参数，系统将自动使用默认值。
-        - 同样你也可以使用这样的方式设置参数默认值，例如：`<item = %player's tool%>`。
+    - 类型为 "text/string" 的参数可以接受任何字符，但 "object" 类型不能用作于参数 (编者注：原因大抵是无法输入 `object`)。
+    - 类型可以是多个 (例如 number -> numbers entity -> entities)。通过这样的方法，可以使参数接受多个值。
+    - "= default value" 这一部分是可选的，如果指令执行者未输入参数，系统将自动使用默认值。
+    - 同样你也可以使用这样的方式设置参数默认值，例如：`<item = %player's tool%>`。
 
 以下是一份指令示例：
 
@@ -1085,7 +1085,7 @@ file "plugins/SUPERGUILDS/playerdata/%uuid of player%.yml" does not exists:
 SG_writeFile("Datas.Username"， "**EVER"， "playerdata/%uuid of player%")
 ```
 
-**使用**方法的时候请勿画蛇添足在前面另加 "function"。
+**使用** 方法的时候请勿画蛇添足在前面另加 "function"。
 
 通过这样的方法我们大大减少了代码量，提高了开发效率。你以为 Function 就结束了？
 

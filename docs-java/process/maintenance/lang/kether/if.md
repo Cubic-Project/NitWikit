@@ -235,7 +235,7 @@ any [ 动作1 动作2 动作3 更多 ]
 /vul eval if any [ perm vulpecula.command not perm luckperms.editor ] then tell 通过 else 不通过
 ```
 
-_玩家拥有权限 vulpecula.command_ 和 _没有权限 luckperms.editor_ 满足其中一个或多个就通过
+*玩家拥有权限 vulpecula.command* 和 *没有权限 luckperms.editor* 满足其中一个或多个就通过
 
 ![](_images/if_3.png)
 
@@ -267,7 +267,7 @@ any [
 
 可是我想判断的是 `null` 这四个字母！这咋办？
 
-还记得之前学的 [literal](./basic#actiontoken和-literal) 吗？
+还记得之前学的 [literal](./basic.md#actiontoken和-literal) 吗？
 
 ```yaml
 check 你要判断的东西 == literal null

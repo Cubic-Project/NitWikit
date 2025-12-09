@@ -15,7 +15,7 @@ sidebar_position: 1
 
 ## Minecraft Title Generator
 
-一个用来整服务器 title 的 blockbench 插件
+一个用来整服务器 title 的 Blockbench 插件
 
 ![](_images/title.png)
 

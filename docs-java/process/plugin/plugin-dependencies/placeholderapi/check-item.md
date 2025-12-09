@@ -154,9 +154,9 @@ sidebar_position: 4
 
 ![](_images/CheckItem/连续使用-3.png)
 
-### 例子：收取 ia 物品
+### 例子：收取 IA 物品
 
-收取指定 ia 物品的指定数量
+收取指定 IA 物品的指定数量
 
 ```text
 %checkitem_remove_nbtstrings:itemsadder..id..data=ia 物品 ID,amt:数量%
@@ -167,7 +167,7 @@ sidebar_position: 4
 - nbtstrings
 - amt
 
-其他物品库多数也会像 ia 一样给物品打上自己的 nbt 标签，照着改改就好
+其他物品库多数也会像 IA 一样给物品打上自己的 nbt 标签，照着改改就好
 
 ## 启用 give 和 remove
 

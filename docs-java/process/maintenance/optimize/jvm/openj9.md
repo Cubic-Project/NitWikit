@@ -18,7 +18,7 @@ OpenJ9 是完全重新设计的 JVM，拥有独立的垃圾回收系统，与 Ho
 
 **重要兼容性说明**
 
-由于 Paper 服务端内置 Spark 性能分析器，而 Spark 与 OpenJ9 不兼容，因此默认情况下**不能在 Paper 服务端上使用 OpenJ9**。
+由于 Paper 服务端内置 Spark 性能分析器，而 Spark 与 OpenJ9 不兼容，因此默认情况下 **不能在 Paper 服务端上使用 OpenJ9**。
 
 :::
 

@@ -9,13 +9,13 @@ sidebar_position: 4
 
 对于 `/plugins` 文件夹储存是否需要进行优化这个问题，有个很简单的判断方法就是查看总占用，
 
-如果超过了 200 MB，那么很有可能有些插件使用了 Sqlite / yml / zip 等方式储存了一些东西，
+如果超过了 200 MB，那么很有可能有些插件使用了 SQLite / YAML / zip 等方式储存了一些东西，
 
 在服务器有一定人数的情况下这并不是推荐的储存方式，在某些情况下可能对储存空间会有一定的占用。
 
 ### 使用数据库
 
-合理使用数据库可以降低服务器硬盘占用。详见[数据库相关](/database)
+合理使用数据库可以降低服务器硬盘占用。详见 [通用 | 数据库相关](/database)
 
 ## 备份空间优化
 
@@ -23,15 +23,15 @@ sidebar_position: 4
 
 推荐两个备份插件 (高效的备份，无需停服即可备份)：
 
-[ebackup](https://www.spigotmc.org/resources/ebackup-simple-and-reliable-backups-for-your-server-supports-ftp-sftp.69917/)
+[eBackup](https://www.spigotmc.org/resources/ebackup-simple-and-reliable-backups-for-your-server-supports-ftp-sftp.69917/)
 可设置黑名单不备份某些文件，FTP 远程备份支持
 
-[serverbackup](https://www.spigotmc.org/resources/server-backup-ingame-dropbox-ftp-backup-1-8-1-20-multithreaded.79320/)
+[Server Backup](https://www.spigotmc.org/resources/server-backup-ingame-dropbox-ftp-backup-1-8-1-20-multithreaded.79320/)
 可支持增量备份 (即只备份最近变更过的文件)，占用空间更小
 
 ## 存档存储空间优化
 
-Minecraft 默认的区块格式是 ANVIL，但是这个区块格式有很多弊端，比如存了一些无用信息，使用了强制对齐等，
+Minecraft 默认的区块格式是 Anvil，但是这个区块格式有很多弊端，比如存了一些无用信息，使用了强制对齐等，
 
 且至今还使用着古老的 zlib 压缩格式，所以如果硬盘吃紧时候，可以尝试对其进行调整。
 
@@ -57,15 +57,15 @@ Leaf/Luminol 等核心最新版已应用修复补丁，虽然性能会受到影�
 
 :::
 
-此格式是由著名的 Xymb 大佬开发，相比于 ANVIL，可以节省巨大的空间
+此格式是由著名的 Xymb 大佬开发，相比于 Anvil，可以节省巨大的空间
 
 主世界可以节省大约 50% 的空间，末地大约为 90% ，且使用现代的 zstd & lz4 压缩，可以获得更快的加载和保存速度。
 
 ##### 转换区域格式
 
-使用之前你需要将 ANVIL 转换成 Linear 区域格式，如果你使用的是 Leaves，你可以在服务端内部自动转换。
+使用之前你需要将 Anvil 转换成 Linear 区域格式，如果你使用的是 Leaves，你可以在服务端内部自动转换。
 
-[转换工具](https://github.com/xymb-endcrystalme/LinearRegionFileFormatTools) ，转换非常简单你只需要看着教程做就行 (
+[转换工具](https://github.com/xymb-endcrystalme/LinearRegionFileFormatTools)，转换非常简单你只需要看着教程做就行 (
 记得做备份)
 
 ##### 开启区域格式
@@ -76,7 +76,7 @@ Leaf/Luminol 等核心最新版已应用修复补丁，虽然性能会受到影�
 
 ##### 不兼容的插件
 
-目前已知不兼容线性区域的格式的插件极少无比：ServerBackup 一款备份插件，会由于找不到 mca 文件报错。
+目前已知不兼容线性区域的格式的插件极少无比：Server Backup 一款备份插件，会由于找不到 mca 文件报错。
 ，大部分在线网页地图浏览程序，以及 Residence 部分不兼容 (
 感谢 z 大神的优雅代码，当传送到一个未加载区块的领地时会崩溃),Regionerator 不兼容
 
@@ -84,7 +84,7 @@ Leaf/Luminol 等核心最新版已应用修复补丁，虽然性能会受到影�
 
 感谢 HaHaWTH 提供的测试结果，测试内容为使用 Chunky 加载半径 1000 格的方块并保存，测试核心为 Leaf，实际结果可能与测试结果有出入。
 
-| 世界     | ANVIL(原版格式) | Linear(压缩比为一) | Linear(压缩比为六，默认压缩比) | Linear(压缩比为 22)(最大压缩比) |
+| 世界     | Anvil (原版格式) | Linear (压缩比为一) | Linear (压缩比为六，默认压缩比) | Linear (压缩比为 22)(最大压缩比) |
 | -------- | --------------- | ------------------ | ------------------------------ | ------------------------------- |
 | 主世界   | 192MB           | 142MB              | 117MB                          | 92MB                            |
 | 地狱     | 118MB           | 70MB               | 60MB                           | 46MB                            |
@@ -100,7 +100,7 @@ Leaf/Luminol 等核心最新版已应用修复补丁，虽然性能会受到影�
 
 #### Slime
 
-请查看[Slime 区域格式](../../../advance/slime-world.md)
+请查看 [Slime 区域格式](../../../advance/slime-world.md)
 
 ## 其他
 
