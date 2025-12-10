@@ -22,7 +22,7 @@ sidebar_label: 皮肤 - SkinsRestorer
 
 这个插件可以让盗版 (离线) 服务器使用皮肤。
 
-SkinsRestorer 是一体化设计，没有“单端版” “bc 版”之说，同一个 jar 文件可以直接扔 单端 / BungeeCord / Velocity 的 `plugins` 文件夹里加载
+SkinsRestorer 是一体化设计，没有“单端版” “BC 版”之说，同一个 jar 文件可以直接扔 单端 / BungeeCord / Velocity 的 `plugins` 文件夹里加载
 
 :::tip
 

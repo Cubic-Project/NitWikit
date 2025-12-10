@@ -30,9 +30,9 @@ sidebar_position: 1
 - 本插件支持 PlayerTitle 的 [新版 RGB 颜色格式](https://ricedoc.handyplus.cn/wiki/PlayerTitle/rgb/#新版本格式) （详情见下文）
 - 支持 PostgresSQL 和 Sqlite 数据库
 - 本插件使用 **TUI** 作为简易的交互方式，非 PlayerTitle 的箱子 UI
-- 支持设置称号**限量销售、限时销售**
+- 支持设置称号 **限量销售、限时销售**
 - 支持玩家使用称号币自定义称号
-- 支持外部经济系统（需要 Vault 前置支持）（3.0.6+）
+- 支持外部经济系统（需要 Vault 前置支持（3.0.6+）
 - 支持 PlaceholderAPI (4.0.0+)
 
 ## 支持版本

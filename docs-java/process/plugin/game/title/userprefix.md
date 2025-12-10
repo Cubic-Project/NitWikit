@@ -9,21 +9,12 @@ sidebar_position: 2
 
 ![](./_images/UserPrefix/1.png)
 
-<a href="https://www.codefactor.io/repository/github/carmjos/userprefix">
-  <img src="https://www.codefactor.io/repository/github/carmjos/userprefix/badge?s=b76fec1f64726b5f19989aace6adb5f85fdab840" class="stylish-image" alt="CodeFactor" />
-</a>
-<a href="https://github.com/CarmJos/UserPrefix">
-  <img src="https://img.shields.io/github/languages/code-size/CarmJos/UserPrefix" class="stylish-image" alt="CodeSize" />
-</a>
-<a href="https://github.com/CarmJos/UserPrefix/releases">
-  <img src="https://img.shields.io/github/downloads/CarmJos/UserPrefix/total" class="stylish-image" alt="Download" />
-</a>
-<a href="(https://github.com/CarmJos/UserPrefix/actions/workflows/maven.yml">
-  <img src="https://github.com/CarmJos/UserPrefix/actions/workflows/maven.yml/badge.svg?branch=master" class="stylish-image" alt="Java CI with Maven" />
-</a>
-<a href="https://github.com/CarmJos/UserPrefix">
-  <img src="https://img.shields.io/badge/Minecraft-Java%201.8--Latest-green" class="stylish-image" alt="Support" />
-</a>
+[![CodeFactor](https://www.codefactor.io/repository/github/carmjos/userprefix/badge?s=b76fec1f64726b5f19989aace6adb5f85fdab840)](https://www.codefactor.io/repository/github/carmjos/userprefix)
+![CodeSize](https://img.shields.io/github/languages/code-size/CarmJos/UserPrefix)
+[![Download](https://img.shields.io/github/downloads/CarmJos/UserPrefix/total)](https://github.com/CarmJos/UserPrefix/releases)
+[![Java CI with Maven](https://github.com/CarmJos/UserPrefix/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/CarmJos/UserPrefix/actions/workflows/maven.yml)
+![Support](https://img.shields.io/badge/Minecraft-Java%201.8--Latest-green)
+![](https://visitor-badge.glitch.me/badge?page_id=userprefix.readme)
 
 轻便、高效、实时的用户前缀系统。
 
@@ -56,12 +47,12 @@ sidebar_position: 2
 - 简单的聊天变量修改功能！(不推荐使用) `[自 v2.1.0 版本起]`
 - 自动排序，且可翻页的 GUI！
 - 支持 PlaceholderAPI 变量！(凡支持的都可以使用，如 BungeeTabListPlus)
-- 支持[Hex 颜色](https://www.hexcolortool.com/)！(1.16 以上版本) `[自 v1.2.3 版本起]`
-    - 格式： `&(#颜色代码)`
-    - 示例：LightSlateBlue `&(#8470FF)` 、 DarkSlateBlue `&(#483D8B)`
+- 支持 [Hex 颜色](https://www.hexcolortool.com/)！(1.16 以上版本) `[自 v1.2.3 版本起]`
+  - 格式： `&(#颜色代码)`
+  - 示例：LightSlateBlue `&(#8470FF)` 、 DarkSlateBlue `&(#483D8B)`
 - 支持渐变色！(1.16 以上版本) `[自 v1.2.3 版本起]`
-    - 格式： `&<#颜色代码1>消息内容&<#颜色代码2>`
-    - 示例： `&<#8470FF>Hello World!&<#483D8B>`
+  - 格式： `&<#颜色代码1>消息内容&<#颜色代码2>`
+  - 示例： `&<#8470FF>Hello World!&<#483D8B>`
 
 ## 注意事项
 
@@ -69,13 +60,13 @@ sidebar_position: 2
 
 本插件理论全版本支持，如果出现图标不加载、声音无法播放等问题请检查配置文件中物品与声音的 type 在当前版本是否存在。
 
-以声音举例，村民表示可以的声音在低版本中为“`VILLAGER_YES`”,而在高版本中则变为了“`ENTITY_VILLAGER_YES`”。
+以声音举例，村民表示可以的声音在低版本中为 `VILLAGER_YES`,而在高版本中则变为了 `ENTITY_VILLAGER_YES`。
 
 ### 2. 计分板异常问题
 
 头顶上前缀的显示与 TabList 的排序均使用到了计分板 API。
 
-如有冲突导致其他插件的计分板无法显示，请关掉配置文件中`functions.on-name-prefix`。
+如有冲突导致其他插件的计分板无法显示，请关掉配置文件中 `functions.on-name-prefix`。
 
 ## 链接
 

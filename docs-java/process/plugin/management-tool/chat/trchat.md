@@ -16,7 +16,7 @@ sidebar_position: 1
 - 云端词库，你无需自行添加过多的敏感词，插件将自动从云端更新敏感词库（当前 0.7k+）
 - 物品展示，所有频道均支持展示玩家容器内物品，支持指定槽位、同时展示多个物品，支持设置冷却
 - 聊天冷却，自定义玩家聊天间隔，防止刷屏
-- At@玩家，支持高亮@玩家，并通过音效+TITLE 等方式提醒，支持设置冷却
+- At@玩家，支持高亮@玩家，并通过音效 + TITLE 等方式提醒，支持设置冷却
 - 监听私聊，管理员支持切换监听模式，开始时将被推送玩家的私聊内容
 - 颜色代码，通过独立的权限控制玩家是否能够使用某颜色代码，支持聊天、书本、铁砧等
 - 多聊天格式，单个聊天频道支持多个聊天格式，通过权限优先级筛选
@@ -31,18 +31,10 @@ sidebar_position: 1
 
 <!--markdownlint-disable line-length-->
 
-<a href="https://github.com/FlickerProjects/TrChat/releases">
-  <img src="https://img.shields.io/github/v/release/TrPlugins/TrChat?logo=VirusTotal&style=for-the-badge" class="stylish-image" alt="Version" />
-</a>
-<a href="https://github.com/FlickerProjects/TrChat/issues">
-  <img src="https://img.shields.io/github/issues/TrPlugins/TrChat?logo=StackOverflow&style=for-the-badge" class="stylish-image" alt="Issues" />
-</a>
-<a href="https://github.com/FlickerProjects/TrChat/commits/v2">
-  <img src="https://img.shields.io/github/last-commit/TrPlugins/TrChat?logo=ApacheRocketMQ&style=for-the-badge&color=1e90ff" class="stylish-image" alt="Last Commit" />
-</a>
-<a href="https://github.com/NEZNAMY/TAB/blob/main/LICENSE">
-  <img src="https://img.shields.io/github/downloads/TrPlugins/TrChat/total?style=for-the-badge&logo=docusign" class="stylish-image" alt="Downloads" />
-</a>
+[![Version](https://img.shields.io/github/v/release/TrPlugins/TrChat?logo=VirusTotal&style=for-the-badge)](https://github.com/FlickerProjects/TrChat/releases)
+[![Issues](https://img.shields.io/github/issues/TrPlugins/TrChat?logo=StackOverflow&style=for-the-badge)](https://github.com/FlickerProjects/TrChat/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/TrPlugins/TrChat?logo=ApacheRocketMQ&style=for-the-badge&color=1e90ff)](https://github.com/FlickerProjects/TrChat/commits/v2)
+[![Downloads](https://img.shields.io/github/downloads/TrPlugins/TrChat/total?style=for-the-badge&logo=docusign)](https://github.com/NEZNAMY/TAB/blob/main/LICENSE)
 
 [TrChat](https://github.com/TrPlugins/TrChat) 是基于 [TabooLib](https://github.com/TabooLib/taboolib) 开发，发布于 2019-8-16 的高级聊天系统插件
 

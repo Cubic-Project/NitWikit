@@ -23,4 +23,4 @@ sidebar_position: 2
 
 建议下载依赖时候挂梯，不然就国内的网络环境嘛
 
-建议看 MineBBS 搬运贴，图文介绍 + addon 指路
+建议看 MineBBS 搬运贴，图文介绍 + Addon 指路

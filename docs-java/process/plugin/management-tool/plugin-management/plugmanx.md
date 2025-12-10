@@ -7,7 +7,7 @@ sidebar_position: 2
 
 :::info
 
-`Bukkit(旧)` https://dev.bukkit.org/projects/plugman
+`Bukkit (旧)` https://dev.bukkit.org/projects/plugman
 
 `SpigotMC` https://www.spigotmc.org/resources/.88135/
 

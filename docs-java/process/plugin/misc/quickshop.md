@@ -46,7 +46,7 @@ sidebar_label: 商店 - QuickShop
 
 停止维护
 
-## QuickShop-Reremake(Ghost-chu/PotatoCraft-Studio)
+## QuickShop-Reremake (Ghost-chu/PotatoCraft-Studio)
 
 :::info
 

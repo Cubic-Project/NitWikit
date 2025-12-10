@@ -15,7 +15,7 @@ sidebar_position: 3
 
 ## 如何修复
 
-要在间歇泉中设置自定义头，你必须选择如何注册你的方块。最简单的方法是使用 custom-skulls.yml
+要在间歇泉中设置自定义头，你必须选择如何注册你的方块。最简单的方法是使用 `custom-skulls.yml`
 
 ### custom-skulls.yml
 
@@ -57,7 +57,7 @@ skin-hashes：
 
 <!--markdownlint-enable line-length-->
 
-你只需要提取出你所需要显示的头颅，根据类别添加到配置文件中，然后**重启服务端**，就可以显示
+你只需要提取出你所需要显示的头颅，根据类别添加到配置文件中，然后 **重启服务端**，就可以显示
 
 ### 玩家用户名
 
@@ -73,7 +73,7 @@ skin-hashes：
 base64 编码的 JSON。
 
 如果在 Paper 服务器上，则可以通过将项目握在手中并运行命令来获取头骨的此数据。这会将项目的 NBT 数据输出到聊天和控制台。
-纹理字符串位于`SkullOwner`标签下、`Properties`标签下、`textures`标签下。例如：/paper dumpitem
+纹理字符串位于 `SkullOwner` 标签下、`Properties` 标签下、`textures` 标签下。例如：`/paper dumpitem`
 
 <!--markdownlint-disable line-length-->
 
@@ -92,10 +92,10 @@ base64 编码的 JSON。
 
 那么你可能会问，像 Slimefun 那么多，有什么快点的方法吗？当然是有的
 
-GeyserHeads 是一个小工具，可以提取 Slimefun,DeluxeMenu，手
+GeyserHeads 是一个小工具，可以提取 Slimefun、DeluxeMenu，手
 中的头颅并自动保存到配置文件，[下载地址](https://github.com/Hahaa13/GeyserHeads/releases)
 
-使用方法:
+使用方法：
 
 - `/geyserheads load Slimefun` 导出 Slimefun 头颅
 - `/geyserheads load Hand` 导出手上的头颅

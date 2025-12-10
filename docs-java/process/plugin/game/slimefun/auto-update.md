@@ -9,7 +9,7 @@ sidebar_position: 2
 
 1. 修改附属的配置
 
-将**所有附属插件**的更新关闭
+将 **所有附属插件** 的更新关闭
 
 以 Bump 附属为例：
 
@@ -18,7 +18,7 @@ options:
     auto-update: false
 ```
 
-将 auto-update 设置为 false
+将 `auto-update` 设置为 `false`
 
 2. 安装 GuizhanLibPlugin 插件
 
@@ -26,11 +26,11 @@ options:
 
 3. 修改 GuizhanLibPlugin 的更新配置
 
-将 auto-update 设置为 true
+将 `auto-update` 设置为 `true`
 
-将 location 设置为 cn
+将 `location` 设置为 `cn`
 
-(建议) 将 lang 设置为 zh_CN
+(建议) 将 `lang` 设置为 `zh_CN`
 
 下方配置供你参考
 

@@ -11,7 +11,7 @@ sidebar_position: 3
 
 在 `config.yml` 中找到：
 
-```YAML
+```yaml
   # 优先服务器列表 玩家将优先加入靠上设置的子服，进不去会尝试下一个子服
   priorities:
   - lobby

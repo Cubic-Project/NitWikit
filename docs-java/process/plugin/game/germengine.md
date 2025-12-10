@@ -40,4 +40,4 @@ sidebar_position: 5
 
 萌芽引擎 JavaDoc：http://javadoc.germmc.com 1.12.2-Bukkit：http://bukkitapi.germmc.com
 
-旧版 WIKI①(已过时)：http://wiki.germmc.com 旧版 WIKI②(已过时)：http://engine.germmc.com
+旧版 Wiki① (已过时)：http://wiki.germmc.com 旧版 Wiki② (已过时)：http://engine.germmc.com

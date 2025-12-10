@@ -7,7 +7,7 @@ sidebar_position: 4
 
 :::info
 
-`Bukkit(旧)` https://dev.bukkit.org/projects/playerpoints
+`Bukkit (旧)` https://dev.bukkit.org/projects/playerpoints
 
 `SpigotMC` https://www.spigotmc.org/resources/playerpoints.80745/
 

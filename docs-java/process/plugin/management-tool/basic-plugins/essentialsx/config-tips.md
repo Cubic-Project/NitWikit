@@ -58,14 +58,14 @@ auto-afk-kick: -1
 ```
 
 在超时 (以秒为单位) 后，用户将被踢出服务器。
-拥有 essentials.afk.kickexempt 权限可以避免被踢出。
-设置为 -1 表示不会超时。
+拥有 `essentials.afk.kickexempt` 权限可以避免被踢出。
+设置为 `-1` 表示不会超时。
 
 ```yaml
 afk-list-name: "挂机中"
 ```
 
-设置玩家 AFK 时的列表名称。默认情况下为 none。
+设置玩家 AFK 时的列表名称。默认情况下为 `none`。
 
 ## 杂项
 
@@ -83,7 +83,7 @@ custom-new-username-message: "&e[&a+&e]&6 比驿站丑的新玩家 {USERNAME} �
 
 你可以在此处设置自定义加入和退出消息。
 
-将此设置为 none 以使用默认的原版消息。
+将此设置为 `none` 以使用默认的原版消息。
 
 ## 家
 
@@ -121,7 +121,7 @@ kit: tools
 
 是否想要玩家第一次进入服务器时赠送新手礼物？
 
-设置为 '' 可禁用此功能。
+设置为 `''` 可禁用此功能。
 
 ## EssentialsX Chat
 

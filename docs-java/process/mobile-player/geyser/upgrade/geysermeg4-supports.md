@@ -9,7 +9,7 @@ sidebar_position: 6
 
 ## GeyserModelEngine
 
-一个能让你 Geyser 服务器支持 MEG4 的奇妙插件，通过给基岩版发送个史蒂夫发送 4d 皮肤给基岩版玩家，支持原版 Geyser
+一个能让你 Geyser 服务器支持 MEG4 的奇妙插件，通过给基岩版发送个史蒂夫发送 4D 皮肤给基岩版玩家，支持原版 Geyser
 
 只需要往资源包里塞动画文件即可，可以有效防止那些进服下个资源包就跑白嫖你模型的贼，但同时限制也挺多
 
@@ -39,9 +39,9 @@ sidebar_position: 6
 
 :::warning
 
-这个是真自定义实体！不支持原版 Geyser，你需要搭配[Geyser 自定义实体分支](https://github.com/zimzaza4/Geyser)和资源包一起使用才能正常工作
+这个是真自定义实体！不支持原版 Geyser，你需要搭配 [Geyser 自定义实体分支](https://github.com/zimzaza4/Geyser) 和资源包一起使用才能正常工作
 
-你可以使用`GeyserModelEnginePackGenerator`来自动生成资源包，详细教程看项目地址
+你可以使用 `GeyserModelEnginePackGenerator` 来自动生成资源包，详细教程看项目地址
 
 :::
 

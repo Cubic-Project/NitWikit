@@ -7,15 +7,9 @@ sidebar_position: 2
 
 ![](_images/Citizens/Citizens-1.png)
 
-<a href="https://github.com/CitizensDev/Citizens2">
-  <img src="https://img.shields.io/github/forks/CitizensDev/Citizens2?style=flat" class="stylish-image" alt="Forks" />
-</a>
-<a href="https://github.com/CitizensDev/Citizens2">
-  <img src="https://img.shields.io/github/stars/CitizensDev/Citizens2?style=flat" class="stylish-image" alt="Stars" />
-</a>
-<a href="https://github.com/CitizensDev/Citizens2/blob/master/LICENSE">
-  <img src="https://img.shields.io/github/license/CitizensDev/Citizens2" class="stylish-image" alt="License" />
-</a>
+[![Forks](https://img.shields.io/github/forks/CitizensDev/Citizens2?style=flat)](https://github.com/CitizensDev/Citizens2)
+[![Stars](https://img.shields.io/github/stars/CitizensDev/Citizens2?style=flat)](https://github.com/CitizensDev/Citizens2)
+[![License](https://img.shields.io/github/license/CitizensDev/Citizens2)](https://github.com/CitizensDev/Citizens2/blob/master/LICENSE)
 
 ```text
 老牌 NPC 插件。
@@ -55,7 +49,7 @@ sidebar_position: 2
 
 `官网` https://wiki.citizensnpcs.co/Citizens_Wiki
 
-`Bukkit(旧)` https://dev.bukkit.org/projects/citizens
+`Bukkit (旧)` https://dev.bukkit.org/projects/citizens
 
 `SpigotMC` https://www.spigotmc.org/resources/citizens.13811
 
@@ -71,7 +65,7 @@ sidebar_position: 2
 
 ## 下载
 
-在 SpigotMC 帖内自行寻找免费方式，以 _懒_ _看不懂英文_ _它是英文的_ 为由 通常会遭到群友的谩骂
+在 SpigotMC 帖内自行寻找免费方式，以 *懒* *看不懂英文* *它是英文的* 为由 通常会遭到群友的谩骂
 
 ## 执行命令
 

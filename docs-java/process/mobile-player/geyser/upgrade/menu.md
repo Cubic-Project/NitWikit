@@ -11,13 +11,13 @@ sidebar_position: 4
 
 <!--markdownlint-disable line-length-->
 
-可以在[GitHub](https://github.com/onebeastchris/MagicMenu/releases/tag/1.0.3) 下载，或者使用[下载镜像](https://dl.8aka.org/plugins/MagicMenu-1.0.3.jar) 下载
+可以在 [GitHub](https://github.com/onebeastchris/MagicMenu/releases/tag/1.0.3) 下载，或者使用 [下载镜像](https://dl.8aka.org/plugins/MagicMenu-1.0.3.jar) 下载
 
 <!--markdownlint-disable line-length-->
 
 ## 配置
 
-如果你是一个聪明人，看默认的`config.yml`就能看懂
+如果你是一个聪明人，看默认的 `config.yml` 就能看懂
 
 ````yaml
 # 查看所有占位符请访问 https://github.com/onebeastchris/MagicMenu/blob/master/setup.md
@@ -164,7 +164,7 @@ menus:
 
 ## 注意事项
 
-基岩版菜单中的图片**必须**是 URL，而不是资源包，你可以使用[笨蛋图床](https://image.8aka.org)上传你的图片
+基岩版菜单中的图片 **必须** 是 URL，而不是资源包，你可以使用 [笨蛋图床](https://image.8aka.org) 上传你的图片
 
 ## NPC Form
 
@@ -192,7 +192,7 @@ menus:
 
 专门用于制作商店菜单的插件，[项目地址](https://github.com/kejonaMC/BedrockFormShop)
 
-[下载地址](https://ci.kejonamc.dev/job/BedrockFormShop/job/master/),这是官方[Wiki](https://github.com/kejonaMC/BedrockFormShop/wiki)
+[下载地址](https://ci.kejonamc.dev/job/BedrockFormShop/job/master/)，这是官方 [Wiki](https://github.com/kejonaMC/BedrockFormShop/wiki)
 
 ### Residence 领地
 
@@ -230,4 +230,4 @@ zimzaza4 开发的 Skript Geyser 菜单扩展，可以使用 Skript 创建菜单
 
 同时也是目前唯一一个支持 NPC Form 的插件！
 
-[项目地址](https://github.com/zimzaza4/Skript-Floodgate-Api),安装和使用请查看 readme，建议在使用前读一遍源代码，有些功能没写上去
+[项目地址](https://github.com/zimzaza4/Skript-Floodgate-Api)，安装和使用请查看 README，建议在使用前读一遍源代码，有些功能没写上去

@@ -55,7 +55,7 @@ Java 版和基岩版的 UUID 不一致，请查阅进阶教程
 
 - **手贱开启 enable-proxy-protocol**
 
-如果你不使用像 TCPShield、frp 的反向代理，请保证你的 enable-proxy-protocol 选项是设置为 false 的
+如果你不使用像 TCPShield、frp 的反向代理，请保证你的 `enable-proxy-protocol` 选项是设置为 `false` 的
 
 - **启动时提示 java.net.BindException: Address already in use: bind**
 
@@ -65,7 +65,7 @@ Java 版和基岩版的 UUID 不一致，请查阅进阶教程
 
 这通常和你的主机端的端口有关。最常见的是，跟 Java 版的常用的 TCP 协议的端口不同，你的主机很有可能没有开放基岩版所使用的 UDP
 协议的端口。
-一个确认此问题的方法是关闭你的服务器，然后选择其他 基岩版服务端，例如 Nukkit(你不一定非要用 Nukkit) 以检查是否是该问题导致的
+一个确认此问题的方法是关闭你的服务器，然后选择其他 基岩版服务端，例如 Nukkit (你不一定非要用 Nukkit) 以检查是否是该问题导致的
 
 - **尝试重启服务器和游戏**
 
@@ -83,7 +83,7 @@ Java 版和基岩版的 UUID 不一致，请查阅进阶教程
 
 ## 加入服务器后出现区块空白
 
-如果你的服务器使用的是 Java 18 以下并且 CPU 支持 AVX512(通常来说是 Intel 10 代以上和 AMD),你可以尝试添加启动参数
+如果你的服务器使用的是 Java 18 以下并且 CPU 支持 AVX512 (通常来说是 Intel 10 代以上和 AMD),你可以尝试添加启动参数
 
 ```text
 -XX:+UnlockDiagnosticVMOptions -XX:-UseAESCTRIntrinsics
@@ -100,4 +100,4 @@ Java 版和基岩版的 UUID 不一致，请查阅进阶教程
 
 可以在服务器上安装 [SeeMore](https://modrinth.com/plugin/seemore) 来解决这个问题
 
-如果还不行，你可以升级**电脑配置**
+如果还不行，你可以升级 **电脑配置**

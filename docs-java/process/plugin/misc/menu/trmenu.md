@@ -7,18 +7,10 @@ sidebar_position: 4
 
 ![](https://gitee.com/postyizhan/images-hosting/releases/download/gif/animation.gif)
 
-<a href="https://github.com/CoderKuo/TrMenu/releases">
-  <img src="https://img.shields.io/github/v/release/CoderKuo/TrMenu" class="stylish-image" alt="Release" />
-</a>
-<a href="https://github.com/CoderKuo/TrMenu/releases">
-  <img src="https://img.shields.io/github/downloads/CoderKuo/TrMenu/total" class="stylish-image" alt="Downloads" />
-</a>
-<a href="https://github.com/CoderKuo/TrMenu">
-  <img src="https://img.shields.io/github/languages/code-size/CoderKuo/TrMenu" class="stylish-image" alt="Code Size" />
-</a>
-<a href="https://github.com/CoderKuo/TrMenu/blob/stable/v3/LICENSE.md">
-  <img src="https://img.shields.io/badge/license-TrMenu-lightgreen.svg" class="stylish-image" alt="License" />
-</a>
+[![Release](https://img.shields.io/github/v/release/CoderKuo/TrMenu)](https://github.com/CoderKuo/TrMenu/releases)
+[![Downloads](https://img.shields.io/github/downloads/CoderKuo/TrMenu/total)](https://github.com/CoderKuo/TrMenu/releases)
+[![Code Size](https://img.shields.io/github/languages/code-size/CoderKuo/TrMenu)](https://github.com/CoderKuo/TrMenu)
+[![License](https://img.shields.io/badge/license-TrMenu-lightgreen.svg)](https://github.com/CoderKuo/TrMenu/blob/stable/v3/LICENSE.md)
 
 ```text
 一个功能强大的菜单插件，国人插件。目前由社区维护。
@@ -103,7 +95,7 @@ TrMenu 入门学习文档
 
 ## VS Code 插件
 
-与 TrMenu 或 [kether](../../../maintenance/lang/kether/basic.md) 有关的 VS Code 插件
+与 TrMenu 或 [Kether](../../../maintenance/lang/kether/basic.md) 有关的 VS Code 插件
 
 - [TrMenu-Helper](https://marketplace.visualstudio.com/items?itemName=hhhhhy.trmenu-helper)
 
@@ -111,7 +103,7 @@ TrMenu 语法提示
 
 - [kether-snippet](https://marketplace.visualstudio.com/items?itemName=LiteCat.kether-snippet)
 
-kether 语法提示
+Kether 语法提示
 
 ## bStats​
 
@@ -121,7 +113,7 @@ kether 语法提示
 
 :::warning
 
-请使用 最新的 **TrMenu 社区版** 不保证**旧**版本可用性
+请使用 最新的 **TrMenu 社区版** 不保证 **旧** 版本可用性
 
 :::
 
@@ -147,7 +139,7 @@ kether 语法提示
 
 #### 子图标写动作
 
-因为 `condition` 会执行里面的 kether 语句
+因为 `condition` 会执行里面的 Kether 语句
 
 所以你可以这样子在菜单打开或重新计算子图标的时候跑一遍这些语句
 

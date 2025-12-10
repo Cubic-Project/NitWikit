@@ -7,7 +7,7 @@ sidebar_position: 5
 
 :::info
 
-`Bukkit(旧)` https://dev.bukkit.org/projects/protocollib
+`Bukkit (旧)` https://dev.bukkit.org/projects/protocollib
 
 `SpigotMC` https://www.spigotmc.org/resources/protocollib.1997/
 

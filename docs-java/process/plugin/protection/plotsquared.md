@@ -7,7 +7,7 @@ sidebar_label: 地皮 - PlotSquared
 
 :::info
 
-`Bukkit(旧)` https://dev.bukkit.org/projects/plotsquared
+`Bukkit (旧)` https://dev.bukkit.org/projects/plotsquared
 
 `SpigotMC` https://www.spigotmc.org/resources/.77506
 

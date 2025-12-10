@@ -14,31 +14,31 @@ title: 手机直装模板
 
 已经与原版共存的了，避免与本仓库主的服务器客户端冲突，建议修改
 
-(应用包名)  
-文件：`FCL/build.gradle`  
+(应用包名)
+文件：`FCL/build.gradle`
 位置：`applicationId`
 
-(文件提供器)  
-文件：`FCLLibrary/src/main/res/values/strings.xml`  
+(文件提供器)
+文件：`FCLLibrary/src/main/res/values/strings.xml`
 位置：`file_browser_provider`, `file_browser_document_provider`
 
-(默认 FCL 客户端公共目录)  
-文件：`FCLauncher/src/main/java/com/tungsten/fclauncher/utils/FCLPath.java`  
+(默认 FCL 客户端公共目录)
+文件：`FCLauncher/src/main/java/com/tungsten/fclauncher/utils/FCLPath.java`
 位置：`STORAGE_DIR`
 
 ### 应用版本号
 
-(实际版本号)  
-文件：`FCL/build.gradle`  
+(实际版本号)
+文件：`FCL/build.gradle`
 位置：`versionCode` 和 `versionName`
 
-(显示版本号)  
-文件：`FCL/src/main/res/values/strings.xml`  
+(显示版本号)
+文件：`FCL/src/main/res/values/strings.xml`
 位置：`app_version`
 
 ### 应用图标
 
-文件：`FCL/src/main/res/drawable/ic_launcher` + (`.png`|`_round.png`)  
+文件：`FCL/src/main/res/drawable/ic_launcher` + (`.png`|`_round.png`)
 文件：`FCL/src/main/res/drawable/img_app.png`
 
 ### 首次启动的 EULA 页面
@@ -47,12 +47,12 @@ title: 手机直装模板
 
 ### 默认主题颜色
 
-文件：`FCLLibrary/src/main/java/com/tungsten/fcllibrary/component/theme/ThemeEngine.java`  
+文件：`FCLLibrary/src/main/java/com/tungsten/fcllibrary/component/theme/ThemeEngine.java
 位置：`getDefaultColor`
 
 ### 删除多余的 Java
 
-路径：`FCL/src/main/assets/app_runtime/java/`  
+路径：`FCL/src/main/assets/app_runtime/java/`
 不需要哪个就删哪个，只留自己客户端需要的那个即可
 
 ### 背景图
@@ -69,13 +69,13 @@ title: 手机直装模板
 
 删掉 `android:visibility="gone"` 即可在主页面显示 FCL 的皮肤展示
 
-在该文件中还可以给主页面加任意组件，如果需要加点击事件  
+在该文件中还可以给主页面加任意组件，如果需要加点击事件
 文件：`FCL/src/main/java/com/tungsten/fcl/ui/main/MainUI.java`
 
 ### 创建账户页面
 
-(离线登录，离线账户用户名的规则)  
-文件：`FCL/src/main/java/com/tungsten/fcl/ui/account/CreateAccountDialog.java`  
+(离线登录，离线账户用户名的规则)
+文件：`FCL/src/main/java/com/tungsten/fcl/ui/account/CreateAccountDialog.java`
 位置：`USERNAME_CHECKER_PATTERN`
 
 默认的规则是，允许中文、英文、数字、下划线
@@ -100,7 +100,7 @@ title: 手机直装模板
 
 更新策略是，删除原有的所有文件，再释放安装包内文件。
 
-为了避免**安装包太大**，建议打包的客户端删除 libraries 和 assets，否则过大的安装包，会导致储存空间占用翻倍、增加使用门槛，且让玩家失去下载安装包的耐心。
+为了避免 **安装包太大**，建议打包的客户端删除 libraries 和 assets，否则过大的安装包，会导致储存空间占用翻倍、增加使用门槛，且让玩家失去下载安装包的耐心。
 
 ### 显示公告
 

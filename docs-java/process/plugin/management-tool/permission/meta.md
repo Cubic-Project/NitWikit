@@ -11,7 +11,7 @@ sidebar_position: 6
 
 ## 权限
 
-实际上，你可以给予用户和组 _不存在的_(没有被其他插件使用) 的权限节点
+实际上，你可以给予用户和组 *不存在的* (没有被其他插件使用) 的权限节点
 
 这些权限有着和其他权限一样的性质
 
@@ -69,7 +69,7 @@ sidebar_position: 6
 
 <!--markdownlint-enable line-length-->
 
-用权限的好处是适用性广，不过对 op 不太方便，因为 op 所有权限都是 true 嘛
+用权限的好处是适用性广，不过对 OP 不太方便，因为 OP 所有权限都是 true 嘛
 
 ## 限时权限
 
@@ -141,13 +141,13 @@ sidebar_position: 6
 
 我给玩家 11h 的限时权限，今日 24 点一过就是无权限状态，那些判断此权限的东西就变成每日刷新了
 
-实现 (kether)：
+实现 (Kether)：
 
 搓命令：
 
 <!--markdownlint-disable line-length-->
 
-```yaml
+```kether
 inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 24 - time as HH}}h{{math 60 - time as mm}}m{{math 60 - time as ss}}s"
 ```
 
@@ -157,7 +157,7 @@ tell 搓出来的看看
 
 执行命令：
 
-```yaml
+```kether
 command inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 24 - time as HH}}h{{math 60 - time as mm}}m{{math 60 - time as ss}}s" as console
 ```
 
@@ -207,8 +207,7 @@ command inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 
 
 但是使用 lp 的命令设置 meta 要写一大串不说，还会输出 log
 
-好在 [Vulpecula](https://github.com/Lanscarlos/Vulpecula) 的
-[memory](https://www.yuque.com/lanscarlos/vulpecula-wiki-v2/og93eqlegc0geyfi) 动作可以用来设置 meta
+好在 [Vulpecula](https://github.com/Lanscarlos/Vulpecula) 的 [memory](https://www.yuque.com/lanscarlos/vulpecula-wiki-v2/og93eqlegc0geyfi) 动作可以用来设置 meta
 
 ```text
 memory 键名 to 值 using lp

@@ -21,7 +21,7 @@ sidebar_position: 3
 
 **_默认权限组的权限有好多啊！我懒得重新加权限到新的权限组了，每次有更改还要一起改一大堆！怎么办？_**
 
-我们可以用到**继承**。
+我们可以用到 **继承**。
 
 运行 `/luckperms group NBplus parent add default`，这样就能让 NBplus 权限组继承所有默认权限组中的权限。
 

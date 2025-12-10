@@ -7,15 +7,9 @@ sidebar_position: 3
 
 ![](_images/1.png)
 
-<a href="https://discord.gg/EwNFGsnGaW">
-  <img src="_images/2.png" class="stylish-image" alt="" />
-</a>
-<a href="https://ko-fi.com/nightexpress">
-  <img src="_images/3.png" class="stylish-image" alt="" />
-</a>
-<a href="https://nightexpress.gitbook.io/sunlight">
-  <img src="_images/4.png" class="stylish-image" alt="" />
-</a>
+[![Discord](./_images/2.png)](https://discord.gg/EwNFGsnGaW)
+[![Ko-fi](./_images/3.png)](https://ko-fi.com/nightexpress)
+[![Documentation](./_images/4.png)](https://nightexpress.gitbook.io/sunlight)
 
 ## 特点
 

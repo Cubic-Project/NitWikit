@@ -32,9 +32,9 @@ Standalone 版本 可以作为一个独立的代理端启动
 在安装前，你需要找到合适的 Geyser 版本，你可以参考下图：
 ![version](_image/VersionChoose.png)
 
-- 1、运行独立版**仍需要 Java16**及以上环境，只不过你可以将其和目标服务器所处的 Java 环境隔开 此外**在任何情况下**，你都可使用独立版，甚至独立版可以和其目标不在同一服务器上
+- 1、运行独立版 **仍需要 Java16** 及以上环境，只不过你可以将其和目标服务器所处的 Java 环境隔开 此外 **在任何情况下**，你都可使用独立版，甚至独立版可以和其目标不在同一服务器上
 - 2、你可以通过 ViaVersion 插件来适配版本，这会允许不同版本的玩家进入服务器，不过问题不大
-- 3、[Hydraulic](https://github.com/GeyserMC/Hydraulic) 可以允许你加入带客户端模组的服务器，但是项目处于**早期开发阶段**，你可以做个尝试，但是请不要在实际情况下使用
+- 3、[Hydraulic](https://github.com/GeyserMC/Hydraulic) 可以允许你加入带客户端模组的服务器，但是项目处于 **早期开发阶段**，你可以做个尝试，但是请不要在实际情况下使用
 
 ## 下载
 
@@ -131,7 +131,7 @@ above-bedrock-nether-building: false
 
 **`passthrough-player-counts`**：将玩家数量和最大玩家数量发给基岩玩家
 
-**`show-cooldown`**：由于基岩版没有战斗冷却，此功能会模拟一个冷却提示器，你可以设置为 title(小标题)、actionbar(物品栏上方的标题) 或 false(关闭)
+**`show-cooldown`**：由于基岩版没有战斗冷却，此功能会模拟一个冷却提示器，你可以设置为 title (小标题)、actionbar (物品栏上方的标题) 或 false (关闭)
 
 **`show-coordinates`**：是否向玩家显示坐标
 
@@ -158,7 +158,7 @@ Floodgate 是一个允许 **Minecraft 基岩版** 帐号加入 **Minecraft Java 
 - 提供一个通用的 API，使更多插件可以兼容基岩版玩家
 - 以基岩版 XUID 作为 UUID 储存数据，使在基岩版玩家改名后不丢失数据
 
-所以就算**非正版服务器**，也有**必要**安装此插件来获取更强大的兼容性
+所以就算 **非正版服务器**，也有 **必要** 安装此插件来获取更强大的兼容性
 
 此外，Floodgate 有个小缺点，在安装之后你无法直接使基岩版玩家和 Java 版玩家数据互通，这将在进阶教程中给出两个可行的解决办法
 
@@ -256,7 +256,7 @@ send-floodgate-data: true
 
 :::
 
-下载[脚本](https://script.8aka.org/geyser-egg)，为你自动生成 Geyser 环境，免于配置
+下载 [脚本](https://script.8aka.org/geyser-egg)，为你自动生成 Geyser 环境，免于配置
 
 即使不用配置，你仍然需要看完 wiki，**明白你在做什么**
 

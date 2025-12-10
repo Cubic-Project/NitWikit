@@ -5,18 +5,10 @@ sidebar_position: 2
 
 # DecentHolograms
 
-<a href="https://github.com/DecentSoftware-eu/DecentHolograms/releases">
-  <img src="https://img.shields.io/github/v/release/DecentSoftware-eu/DecentHolograms" class="stylish-image" alt="Release" />
-</a>
-<a href="https://www.spigotmc.org/resources/.96927">
-  <img src="https://img.shields.io/spiget/downloads/96927?label=Downloads" class="stylish-image" alt="Downloads" />
-</a>
-<a href="https://github.com/DecentSoftware-eu/DecentHolograms">
-  <img src="https://img.shields.io/github/languages/code-size/DecentSoftware-eu/DecentHolograms" class="stylish-image" alt="Code Size" />
-</a>
-<a href="https://github.com/DecentSoftware-eu/DecentHolograms/blob/main/LICENSE">
-  <img src="https://img.shields.io/github/license/DecentSoftware-eu/DecentHolograms" class="stylish-image" alt="License" />
-</a>
+[![Release](https://img.shields.io/github/v/release/DecentSoftware-eu/DecentHolograms)](https://github.com/DecentSoftware-eu/DecentHolograms/releases)
+[![Downloads](https://img.shields.io/spiget/downloads/96927?label=Downloads)](https://www.spigotmc.org/resources/.96927)
+[![Code Size](https://img.shields.io/github/languages/code-size/DecentSoftware-eu/DecentHolograms)](https://github.com/DecentSoftware-eu/DecentHolograms)
+[![License](https://img.shields.io/github/license/DecentSoftware-eu/DecentHolograms)](https://github.com/DecentSoftware-eu/DecentHolograms/blob/main/LICENSE)
 
 ```text
 一个轻量级但功能强大的全息图插件，具有许多功能和配置项。
@@ -67,7 +59,7 @@ sidebar_position: 2
 
 插件命令帮助写死在代码里了，不能在语言文件汉化
 
-你可以在 MineBBS 或我 fork 的仓库的 GitHub actions 下载内核汉化版本
+你可以在 MineBBS 或我 Fork 的仓库的 GitHub Actions 下载内核汉化版本
 
 汉化仓库：https://github.com/postyizhan/DecentHolograms-CN
 
@@ -92,7 +84,7 @@ sidebar_position: 2
 ## 贡献 ![](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
 
 ​
-欢迎提交 pr！但对于重大的更改，请先创建一个 issues 来讨论此更改
+欢迎提交 PR！但对于重大的更改，请先创建一个 Issue 来讨论此更改
 
 ## 构建
 

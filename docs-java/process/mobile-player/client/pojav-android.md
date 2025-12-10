@@ -7,9 +7,9 @@ sidebar_position: 1
 
 :::warning
 
-PojavLauncher已于2025年5月17日宣布停更
+PojavLauncher 已于 2025 年 5 月 17 日宣布停更
 
-建议使用Amethyst或者FCL替代PojavLauncher
+建议使用 Amethyst 或者 FCL 替代 PojavLauncher
 
 :::
 

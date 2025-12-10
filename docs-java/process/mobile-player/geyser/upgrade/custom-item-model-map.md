@@ -9,7 +9,7 @@ Geyser 提供了自定义物品映射功能，可以为 CustomModelData 物品�
 
 ## Kas-tle 的 java2bedrock
 
-java2bedrock.sh(俗称转换器) 是一个自动资源包转换工具，可以将 JAVA 版的资源包转化成基岩版资源包的工具
+java2bedrock.sh (俗称转换器) 是一个自动资源包转换工具，可以将 JAVA 版的资源包转化成基岩版资源包的工具
 
 :::tip
 
@@ -25,7 +25,7 @@ java2bedrock.sh(俗称转换器) 是一个自动资源包转换工具，可以�
 
 :::tip
 
-转换器需要在 linux 系统上运行，如果你使用 WINDOWS，你可以选择 wsl 或者虚拟机
+转换器需要在 Linux 系统上运行，如果你使用 Windows，你可以选择 WSL 或者虚拟机
 
 :::
 
@@ -48,8 +48,8 @@ java2bedrock.sh(俗称转换器) 是一个自动资源包转换工具，可以�
 #### 操作步骤
 
 - 首先你需要新建一个 Issue
-- 在类型选择**Pack Conversion**
-- 在**Java Pack Direct Download URL** 填上你的资源包下载地址 (不能是网盘，要求是直链)
+- 在类型选择 **Pack Conversion**
+- 在 **Java Pack Direct Download URL** 填上你的资源包下载地址 (不能是网盘，要求是直链)
 - 最后勾上最下面的用户协议，点击开始就可以
 - 转换好后，有个机器人会提醒你去 GitHub Action 下载，下载就来就是转换好的基岩版资源包
 
@@ -59,7 +59,7 @@ AZPixel-Team 的 Java2Bedrock
 
 :::tip
 
-注意！字体偏移是 Java 版独有的，基岩版没有这个功能，因此一些利用字体偏移做到的东西 (如 IA 菜单) 无法正常显示，但你可以通过万能的 jsonui 来实现，或者给大佬爆金币定制基岩 jsonui
+注意！字体偏移是 Java 版独有的，基岩版没有这个功能，因此一些利用字体偏移做到的东西 (如 IA 菜单) 无法正常显示，但你可以通过万能的 JSON UI 来实现，或者给大佬爆金币定制基岩 JSON UI
 
 我非常建议使用这个来管理基岩版的字体资源包，否则你的字体图像管理是非常痛苦的
 
@@ -69,7 +69,7 @@ AZPixel-Team 的 Java2Bedrock
 
 与上面没有区别
 
-- 但是在填写资源包下载地址地方的下面，要把`Font Conversion`选项设置为 Ture
+- 但是在填写资源包下载地址地方的下面，要把 `Font Conversion` 选项设置为 `true`
 
 [项目地址](https://github.com/AZPixel-Team/Java2Bedrock)
 
@@ -77,15 +77,15 @@ AZPixel-Team 的 Java2Bedrock
 
 :::tip
 
-此教程需要你有一定的动手和理解基岩版资源包结构，你可以动脑去看[基岩版资源包模板](https://github.com/Mojang/bedrock-samples/releases)学习
+此教程需要你有一定的动手和理解基岩版资源包结构，你可以动脑去看 [基岩版资源包模板](https://github.com/Mojang/bedrock-samples/releases) 学习
 
-此教程假设你已能熟练使用 ItemsAdder 插件、并且正在边看[Geyser Wiki](https://wiki.geysermc.org/geyser/custom-items/)边看这文档学着做
+此教程假设你已能熟练使用 ItemsAdder 插件、并且正在边看 [Geyser Wiki](https://wiki.geysermc.org/geyser/custom-items/) 边看这文档学着做
 
 :::
 
 ### 物品映射
 
-这里我非常推荐使用[Geyser Wiki](https://wiki.geysermc.org/geyser/custom-items/)中的 Json 映射方式，方便编写和修改
+这里我非常推荐使用 [Geyser Wiki](https://wiki.geysermc.org/geyser/custom-items/) 中的 JSON 映射方式，方便编写和修改
 
 #### 注册物品行为
 

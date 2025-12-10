@@ -67,18 +67,18 @@ GeyserOptionalPack 是一个可选资源包
 - 发光箭实体纹理 (没有实体描边渲染 (基岩版本身就没有)，只有箭矢纹理)
 - 提供超过记分板字符限制的绕过方式
 - 隐藏在 Java 版中没有的 UI 元素，例如：
-    - 制图台中的文本输入字段
-    - 创造模式下的 2x2 工作台
-    - 命令方块菜单中的时钟延迟和重命名字段
-    - Java 版中不存在的结构方块选项
+  - 制图台中的文本输入字段
+  - 创造模式下的 2x2 工作台
+  - 命令方块菜单中的时钟延迟和重命名字段
+  - Java 版中不存在的结构方块选项
 
 ## 箱子优化
 
 基岩版原版无法看到 9x1,9x2 等大小的箱子，GeyserMoreRows
-可以解决这个问题，[GitHub](https://github.com/GeyserExtensionists/GeyserMoreRows),需要自行构建，不会可以加入 zim 的
+可以解决这个问题，[GitHub](https://github.com/GeyserExtensionists/GeyserMoreRows)，需要自行构建，不会可以加入 zim 的
 discord 下载预构建
 
-下载后还需安装[基岩资源包](https://raw.githubusercontent.com/GeyserExtensionists/GeyserMoreRows/refs/heads/main/MorerowsPack.mcpack) 和 PacketEvents
+下载后还需安装 [基岩资源包](https://raw.githubusercontent.com/GeyserExtensionists/GeyserMoreRows/refs/heads/main/MorerowsPack.mcpack) 和 PacketEvents
 
 ## 更好的第三人称
 
@@ -132,10 +132,10 @@ discord 下载预构建
 ## 展示实体修复
 
 正常情况下，展示实体在基岩版无法显示，GeyserDisplayEntity
-可以解决这个问题，[GitHub](https://github.com/GeyserExtensionists/GeyserDisplayEntity),需要自行构建，不会可以加入 zim 的
+可以解决这个问题，[GitHub](https://github.com/GeyserExtensionists/GeyserDisplayEntity)，需要自行构建，不会可以加入 zim 的
 discord 下载预构建
 
-该插件对于 IA,ORX 这些插件特别好使，让基岩版玩家不用再看口口了
+该插件对于 IA、ORX 这些插件特别好使，让基岩版玩家不用再看口口了
 
 ## Broadcaster Xbox Live 广播
 
@@ -171,6 +171,7 @@ Broadcaster 通过模拟 Xbox Live 客户端，将你的 Geyser/基岩版服务�
 
 4. **查看认证信息**
     - 服务器启动后，控制台会显示认证码：
+
     ```text
     To sign in, use a web browser to open the page https://www.microsoft.com/link and enter the code XXXXXXXX to authenticate.
     ```

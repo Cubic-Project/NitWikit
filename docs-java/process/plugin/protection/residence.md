@@ -7,7 +7,7 @@ sidebar_label: 领地 - Residence
 
 :::info
 
-`Bukkit(旧)` https://dev.bukkit.org/projects/residence
+`Bukkit (旧)` https://dev.bukkit.org/projects/residence
 
 `SpigotMC` https://www.spigotmc.org/resources/.11480
 

@@ -6,15 +6,9 @@ sidebar_position: 4
 
 ![](_images/Adyeshach/Adyeshach-1.png)
 
-<a href="https://github.com/TabooLib/adyeshach">
-  <img src="https://img.shields.io/github/forks/taboolib/adyeshach" class="stylish-image" alt="Forks" />
-</a>
-<a href="https://github.com/TabooLib/adyeshach">
-  <img src="https://img.shields.io/github/stars/taboolib/adyeshach" class="stylish-image" alt="License" />
-</a>
-<a href="https://github.com/TabooLib/adyeshach/blob/2.0/LICENSE">
-  <img src="https://img.shields.io/github/license/taboolib/adyeshach" class="stylish-image" alt="License" />
-</a>
+[![Forks](https://img.shields.io/github/forks/taboolib/adyeshach)](https://github.com/TabooLib/adyeshach)
+[![Stars](https://img.shields.io/github/stars/taboolib/adyeshach)](https://github.com/TabooLib/adyeshach)
+[![License](https://img.shields.io/github/license/taboolib/adyeshach)](https://github.com/TabooLib/adyeshach/blob/2.0/LICENSE)
 
 ```text
 Adyeshach 是一款基于 TabooLib 进行开发的纯发包 NPC 插件，旨在大幅提升性能并提供更高级的功能和 API。

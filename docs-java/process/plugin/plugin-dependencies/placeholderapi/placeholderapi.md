@@ -64,7 +64,7 @@ PlaceholderAPI 已破 170 万下载量，同时使用本插件的服务器数已
 <details>
   <summary>点击展开</summary>
 
-```YAML
+```yaml
 # PlaceholderAPI
 # 版本：2.11.4
 # 作者：extended_clip
@@ -93,7 +93,7 @@ debug: false
 <details>
   <summary>点击展开</summary>
 
-```YAML
+```yaml
 permissions:
   placeholderapi.*:
     description: "允许使用所有 PAPI 命令"
