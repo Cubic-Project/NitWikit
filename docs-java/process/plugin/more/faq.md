@@ -74,9 +74,9 @@ org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError
 
 ## 循环依赖
 
-指的是 A 依赖 B,B 依赖 C,C 依赖 A，导致 Paper 无法判断加载顺序
+指的是 A 依赖 B、B 依赖 C、C 依赖 A，导致 Paper 无法判断加载顺序
 
-解决方案：添加参数`-Dpaper.useLegacyPluginLoading=true` 即可
+解决方案：添加参数 `-Dpaper.useLegacyPluginLoading=true` 即可
 
 ## 重复插件
 

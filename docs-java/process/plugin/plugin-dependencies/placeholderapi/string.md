@@ -47,7 +47,7 @@ sidebar_position: 9
             "9": "₉"
 ```
 
-变量列表：  
+变量列表：
  `%string_equals_<string>_<match>%` - 检查 `string` 和 `match` 是否为相同字符串（区分大小写）
 
 `%string_equalsIgnoreCase_<string>_<match>%` - 检查 `string` 和 `match` 是否相同（不区分大小写）
@@ -62,10 +62,10 @@ sidebar_position: 9
 
 `%string_lastIndexOf_<string>_<match>%` - 返回 `match` 在 `string` 中最后一次出现的索引。如果不存在则返回 -1
 
-`%string_substring_<startIndex>_<string>%` - 返回从 `startIndex` 开始的子字符串  
+`%string_substring_<startIndex>_<string>%` - 返回从 `startIndex` 开始的子字符串
  **支持负索引作为起始索引**
 
-`%string_substring_<startIndex>,<endIndex>_<string>%` - 返回从 `startIndex` 开始到 `endIndex` 之前结束的子字符串  
+`%string_substring_<startIndex>,<endIndex>_<string>%` - 返回从 `startIndex` 开始到 `endIndex` 之前结束的子字符串
  **支持负索引作为结束索引**
 
 `%string_shuffle_<string>%` - 返回字符顺序被打乱的 `string`
@@ -94,5 +94,5 @@ sidebar_position: 9
 
 `%string_occurences_count_<string>_<match>%` - 计算 `match` 在 `string` 中出现的次数
 
-**支持 PlaceholderAPI 变量。只需使用大括号（`{}`）而不是百分号（`%%`）。**  
+**支持 PlaceholderAPI 变量。只需使用大括号（`{}`）而不是百分号（`%%`）。**
  例如：`%string_equals_{server_name}_Lobby%` - 将基于 `%server_name%` 变量检查当前服务器名称是否为 lobby。

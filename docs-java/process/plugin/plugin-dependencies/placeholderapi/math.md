@@ -46,7 +46,7 @@ math:
     Debug: false
 ```
 
-修改`Decimals: 3`即可修改默认输出的小数位数
+修改 `Decimals: 3` 即可修改默认输出的小数位数
 
 或者：
 
@@ -73,7 +73,7 @@ math:
 
 使用 `{}` 代替变量的 `%`
 
-比如 [Server 扩展](https://wiki.placeholderapi.com/users/placeholder-list/#server)的 `%server_online%` 显示当前服务器在线玩家数
+比如 [Server 扩展](https://wiki.placeholderapi.com/users/placeholder-list/#server) 的 `%server_online%` 显示当前服务器在线玩家数
 
 ![](_images/Math/4.png)
 

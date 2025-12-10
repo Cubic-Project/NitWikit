@@ -34,7 +34,7 @@ sidebar_position: 4
           ![build2](./_image/image-3.png)
     3. 在 `build/libs` 目录找到生成的 jar 文件
 
-> 如果遇到依赖下载慢的问题，可以参考[配置镜像源](./mirror-config.md)文档。
+> 如果遇到依赖下载慢的问题，可以参考 [配置镜像源](./mirror-config.md) 文档。
 
 ## 常见问题
 

@@ -25,7 +25,7 @@ sidebar_label: 领域 - BentoBox
 
 著名的领域生存插件。
 
-含有 BSkyBlock(空岛)AOneBlock(单方块空岛)AcidIsland(海岛) 等多种模式。
+含有 BSkyBlock (空岛)、AOneBlock (单方块空岛)、AcidIsland (海岛) 等多种模式。
 
 ## BSkyBlock
 

@@ -26,7 +26,7 @@ sidebar_position: 5
 
 ## server.proprites
 
-这一小节配置文件都位于服务端根目录下的`server.proprites`文件。如需修改，请打开该文件并找到对应选项
+这一小节配置文件都位于服务端根目录下的 `server.proprites` 文件。如需修改，请打开该文件并找到对应选项
 
 ### 正版验证
 
@@ -44,7 +44,7 @@ online-mode=true
 
 **不要在服务器投入运营后去改正版验证状态！** 这会造成 UUID 混乱，玩家数据丢失，当然你可以转换 UUID 来解决这个问题 [查看解决方法](https://klpbbs.com/thread-131458-1-1.html)
 
-如果需要更多的验证方式 (如 **皮肤站**/**统一认证** 等)，请在服务器 **公测前** 确定，具体请参考[更多验证方式](../advance/login-choices.md)
+如果需要更多的验证方式 (如 **皮肤站**/**统一认证** 等)，请在服务器 **公测前** 确定，具体请参考 [更多验证方式](../advance/login-choices.md)
 
 :::
 
@@ -121,9 +121,9 @@ spawn-protection=16
 
 :::warning
 
-强烈**建议禁用**这一配置，无论你是否需要出生点保护。
+强烈 **建议禁用** 这一配置，无论你是否需要出生点保护。
 
-这一配置的保护**并不能**防御苦力怕、TNT 等造成的破坏。
+这一配置的保护 **并不能** 防御苦力怕、TNT 等造成的破坏。
 
 如有保护出生点的需求，可以考虑使用插件 [WorldGuard](../process/plugin/world-management/worldguard.md)
 
@@ -204,7 +204,7 @@ allow-flight=true
 
 :::tip
 
-请注意，默认情况下 `/gamerule` 所设置的游戏规则**只会**在执行命令的世界生效
+请注意，默认情况下 `/gamerule` 所设置的游戏规则 **只会** 在执行命令的世界生效
 
 [Ultimate Gamerules Manager](https://www.spigotmc.org/resources/ultimate-gamerules-manager-1-13-1-20-3.102215/) 是个不错的插件，适合新手管理 gamerule 时使用
 

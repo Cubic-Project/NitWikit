@@ -37,7 +37,7 @@ Maven 的镜像配置在 `settings.xml` 文件中：
             <url>https://maven.aliyun.com/repository/public</url>
         </mirror>
 
-        <!-- 阿里云Spring仓库 -->
+        <!-- 阿里云 Spring 仓库 -->
         <mirror>
             <id>aliyun-spring</id>
             <mirrorOf>spring</mirrorOf>
@@ -45,7 +45,7 @@ Maven 的镜像配置在 `settings.xml` 文件中：
             <url>https://maven.aliyun.com/repository/spring</url>
         </mirror>
 
-        <!-- 阿里云Google仓库 -->
+        <!-- 阿里云 Google 仓库 -->
         <mirror>
             <id>aliyun-google</id>
             <mirrorOf>google</mirrorOf>
@@ -76,19 +76,19 @@ repositories {
         url = 'https://maven.aliyun.com/repository/public'
     }
 
-    // 阿里云Spring仓库
+    // 阿里云 Spring 仓库
     maven {
         name = "Aliyun-Spring"
         url = 'https://maven.aliyun.com/repository/spring'
     }
 
-    // 阿里云Google仓库
+    // 阿里云 Google 仓库
     maven {
         name = "Aliyun-Google"
         url = 'https://maven.aliyun.com/repository/google'
     }
 
-    // 保留原有的Maven中央仓库（作为备用）
+    // 保留原有的 Maven 中央仓库（作为备用）
     mavenCentral()
 }
 ```

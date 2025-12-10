@@ -19,9 +19,9 @@ Mod 端的选择一般优先考虑玩法（即主要的玩法 Mod），再考虑
 
 ![](_images/NeoForge.png)
 
-关于 NeoForge 和 Forge 的关系，可以查看[这篇文章](https://www.bilibili.com/opus/827402209530478597)
+关于 NeoForge 和 Forge 的关系，可以查看 [这篇文章](https://www.bilibili.com/opus/827402209530478597)
 
-通常来说，1.21 以上**可以**使用 NeoForge
+通常来说，1.21 以上 **可以** 使用 NeoForge
 
 ### Sinytra Connector
 
@@ -62,7 +62,7 @@ Kilt 可以在 Fabric 上运行 Forge 模组
 
 1.14 以下版本的 Fabric，主要支持 1.3-1.13.2 以及愚人节版本
 
-[下载地址](https://www.mcmod.cn/class/3391.html)，还需要安装[Legacy Fabric API](https://www.mcmod.cn/class/3398.html)
+[下载地址](https://www.mcmod.cn/class/3391.html)，还需要安装 [Legacy Fabric API](https://www.mcmod.cn/class/3398.html)
 
 :::warning
 

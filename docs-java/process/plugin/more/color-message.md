@@ -9,7 +9,7 @@ sidebar_position: 7
 
 ## 格式化代码
 
-**格式化代码 (Formatting code)**，又称**颜色代码 (Color code)**，能使在游戏中加入含颜色和格式信息。
+**格式化代码 (Formatting code)**，又称 **颜色代码 (Color code)**，能使在游戏中加入含颜色和格式信息。
 
 在 Minecraft 中，可以以分节符号 (`§`) 产生带色文字。
 
@@ -25,7 +25,7 @@ sidebar_position: 7
 
 你也可以在按住 `Alt` 键的同时，**小键盘** **按顺序** 输入 `167` 以输出 `§` 符号
 
-_(注意：![image](https://github.com/user-attachments/assets/49472da4-9b50-4fa3-92d1-f14cdb08cbb4) 使用新版时字符对应错误，请使用旧版)_
+*(注意：![image](https://github.com/user-attachments/assets/49472da4-9b50-4fa3-92d1-f14cdb08cbb4) 使用新版时字符对应错误，请使用旧版)*
 
 :::
 
@@ -71,14 +71,14 @@ MiniMessage 的实质是一个叫 Adventure 的库，这是它的 [文档](https
 | Minestom | Build 7494725                       | 内容有点杂，详见[minestom wiki](https://wiki.minestom.net/feature/adventure) |
 | Fabric   | `adventure-platform-fabric` 5.3.0\* | 虽然不是一个东西 (?)，但是体验是一样的                                       |
 
-_详情可以参阅 [Adventure 原生支持](https://docs.papermc.io/adventure/platform/native/)_
+*详情可以参阅 [Adventure 原生支持](https://docs.papermc.io/adventure/platform/native/)*
 
 :::note
 
 平台原生支持 ≠ 使用此平台开发的模组/插件支持！！！
 
 举个例子，仔细观察上述列表，你会发现 bukkit 并没有支持 MiniMessage，所以你会发现大部分基于 Bukkit 开发的插件没有 MiniMessage 这一功能 (如 EssentialsX)，
-_除非他们自身引入了 Adventure 库 (如 PlaceholderAPI)。_
+*除非他们自身引入了 Adventure 库 (如 PlaceholderAPI)。*
 
 而基于 Paper 开发的大部分插件都引入了这一功能，所以不要发现一个新奇玩意就到处瞎套。
 
@@ -123,13 +123,13 @@ Icons:
 <yellow>Hello <blue>World</blue>!
 ```
 
-在非严格模式下，所有标记名称**都不区分大小写**，以减少冲突的可能性 (懒癌晚期患者狂喜)，但美观和符合规定起见，请使用小写字母编写以便减少被他人嘲讽的几率：
+在非严格模式下，所有标记名称 **都不区分大小写**，以减少冲突的可能性 (懒癌晚期患者狂喜)，但美观和符合规定起见，请使用小写字母编写以便减少被他人嘲讽的几率：
 
 ```xml
 <YelLOw>Hello World!
 ```
 
-此外，这里有一个[测试网站](https://webui.advntr.dev/)，他可以使得你无需启动 Minecraft 便可以预览实际效果。
+此外，这里有一个 [测试网站](https://webui.advntr.dev/)，他可以使得你无需启动 Minecraft 便可以预览实际效果。
 
 关于实际使用格式详见 [标准标签](https://docs.papermc.io/adventure/minimessage/format/#standard-tags)。
 

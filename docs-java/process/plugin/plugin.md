@@ -28,7 +28,7 @@ sidebar_label: Java 插件
 
 :::danger
 
-服务器在**开发阶段**可以使用 PlugmanX，ServerUtils 等插件热重载插件。
+服务器在 **开发阶段** 可以使用 PlugmanX，ServerUtils 等插件热重载插件。
 
 过了开发阶段后切记，多数插件自带了重载（上方就是）。
 
@@ -72,7 +72,7 @@ sidebar_label: Java 插件
 - TrChat 聊天插件
 - MiniMotd MOTD 插件
 
-Via 自动安装已经移动到[此处](./misc/via/via.md#笨蛋脚本)
+Via 自动安装已经移动到 [此处](./misc/via/via.md#笨蛋脚本)
 
 </details>
 

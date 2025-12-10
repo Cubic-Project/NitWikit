@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # 常用变量
 
-这里只列出**部分**扩展的**部分**变量，这几个变量老是有人问
+这里只列出 **部分** 扩展的 **部分** 变量，这几个变量老是有人问
 
 如果你想了解全部变量，点击 [此处](https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html)
 

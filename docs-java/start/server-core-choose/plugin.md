@@ -56,7 +56,7 @@ import TabItem from '@theme/TabItem';
 - 性能 - 在高版本逐渐比不过他的分支
 - 特性 - 丧失不少原版特性
 
-总的来说，Paper 核心适合那些追究 _极端的_ 稳定的人
+总的来说，Paper 核心适合那些追究 *极端的* 稳定的人
 
 - 官方英文文档 [点我](https://docs.papermc.io/paper)
 - 笨蛋汉化文档 [点我](https://paper.8aka.org/paper)
@@ -116,7 +116,7 @@ import TabItem from '@theme/TabItem';
 
 专为生电而生的核心。
 
-leaves 基本完全支持客户端生电 Mod，包括但不限于 Carpet，pca，投影，共享原理图，minihud，bbor，ommc，Xaero 小地图，Jade，appleskin。
+Leaves 基本完全支持客户端生电 Mod，包括但不限于 Carpet，pca，投影，共享原理图，minihud，bbor，ommc，Xaero 小地图，Jade，appleskin。
 
 [点我](https://docs.leavesmc.org/zh_Hans) 查看 Leaves 官方文档
 
@@ -128,13 +128,13 @@ leaves 基本完全支持客户端生电 Mod，包括但不限于 Carpet，pca�
 - [Leaves 1.18.2](https://vip.123pan.cn/1821558579/6492009)
 
 </TabItem>
-<TabItem value="Leaf" label="Leaf">
+<TabItem value="leaf" label="Leaf">
 
 ![](_images/leaf.png)
 
 **优势**：
 
-- 性能 - 比 purpur 好的多的性能（在实体方面甚至能达到 50% 以上的提升）
+- 性能 - 比 Purpur 好的多的性能（在实体方面甚至能达到 50% 以上的提升）
 - 支持 - 国人开发的核心
 
     对插件的兼容程度：Paper = Purpur > Leaf /Leaves

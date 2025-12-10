@@ -19,4 +19,4 @@ MultiPaper 与 Folia 的目标是相同的：充分利用硬件，承载更多�
 
 :::
 
-由于其过于复杂，并且有写的更好的[文章](https://www.ghostchu.com/archives/minecraft-multipaper)，就不写了
+由于其过于复杂，并且有写的更好的 [文章](https://www.ghostchu.com/archives/minecraft-multipaper)，就不写了

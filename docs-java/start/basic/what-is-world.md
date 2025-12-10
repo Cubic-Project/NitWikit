@@ -7,7 +7,7 @@ sidebar_position: 7
 
 Minecraft 的几乎一切行为都是建立在 "世界" 上，而世界中的方块、实体等文件都存储在了根目录的对应文件夹下。
 
-Minecraft 原版目前有三个世界，分别是主世界 **world**(world)，地狱 **DIM-1** (world_nether)，末地 **DIM1** (world_the_end)。
+Minecraft 原版目前有三个世界，分别是主世界 **world** (world)，地狱 **DIM-1** (world_nether)，末地 **DIM1** (world_the_end)。
 
 每个世界的方块都按照 **X** 和 **Z** 每 _16 _ 16* 为区块 (**Chunk**)。其中每 *32 _ 32_ 个区块就会成为一组存储进一个独立的区域文件 (**Region**)。
 
@@ -17,7 +17,7 @@ Minecraft 原版目前有三个世界，分别是主世界 **world**(world)，�
 
 1. **advancements/** ：储存玩家的成就，每个玩家对应一个 **UUID** ；
 
-2. **data/** ：**idcounts.dat**和**map_xxx.dat** 储存的是玩家合成的地图有关的数据。
+2. **data/** ：**idcounts.dat** 和 **map_xxx.dat** 储存的是玩家合成的地图有关的数据。
 
 3. **datapacks/** ：储存世界所使用的数据包 (一般 Bukkit 系服务器有一个 Bukkit 文件夹)；
 

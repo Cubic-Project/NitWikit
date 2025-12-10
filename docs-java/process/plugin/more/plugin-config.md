@@ -9,7 +9,7 @@ sidebar_position: 2
 
 > 插件一般会使用 **YAML** 作为配置文件格式，建议先学习 [YAML](../../../advance/yaml/yaml.md) 语法。
 
-我们在开始前所做的准备工作中，推荐你安装任意一款推荐的文档编辑软件：请查看[文本编辑器](/preparation/text-editor)
+我们在开始前所做的准备工作中，推荐你安装任意一款推荐的文档编辑软件：请查看 [文本编辑器](/preparation/text-editor)
 
 如果你是 Windows，现在让我们双击 .yml 文件就可以开始修改配置文件了！
 
@@ -122,7 +122,7 @@ import TabItem from '@theme/TabItem';
 
 如果你要用的这个插件没有以上所提到的所有情况...
 
-他**可能**把你要改的语言直接写死在代码里了，你要自己去改代码...
+他 **可能** 把你要改的语言直接写死在代码里了，你要自己去改代码...
 
 比如驿站内核汉化的 [DecentHolograms](../misc/holograms/decentholograms.md)
 

@@ -69,7 +69,8 @@ sidebar_position: 2
 
 #### Maven 项目结构
 
-```text
+<!-- Use yaml to highlight comments -->
+```yaml
 项目根目录
 ├── src/                                       # 源代码目录
 │   ├── main/                                  # 主要代码目录
@@ -95,7 +96,8 @@ sidebar_position: 2
 
 #### Gradle 项目结构
 
-```text
+<!-- Use yaml to highlight comments -->
+```yaml
 项目根目录
 ├── src/                                       # 源代码目录
 │   ├── main/                                  # 主要代码目录
@@ -145,6 +147,7 @@ sidebar_position: 2
     ```
 
 - **config.yml**：插件的默认配置文件
+
     ```yaml
     settings:
         debug: false
@@ -170,6 +173,7 @@ sidebar_position: 2
     ```
 
 - **Gradle (build.gradle)**：
+
     ```groovy
     dependencies {
         compileOnly 'io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT'

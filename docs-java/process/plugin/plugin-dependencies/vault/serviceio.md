@@ -33,26 +33,26 @@ ServiceIO 的一个关键特性是与现有 Vault 接口的无缝集成，允许
 
 ## 命令
 
-- /service convert banks：转换所有 banks 和 bank accounts
-- /service convert chat：转换所有聊天数据（前缀、后缀、昵称等）
-- /service convert economy：转换所有经济数据（账户和余额）
-- /service convert groups：转换所有群组数据（群组、前缀、后缀、权限、成员）
-- /service convert permissions：转换所有权限数据（用户、权限）
+- `/service convert banks`：转换所有 banks 和 bank accounts
+- `/service convert chat`：转换所有聊天数据（前缀、后缀、昵称等）
+- `/service convert economy`：转换所有经济数据（账户和余额）
+- `/service convert groups`：转换所有群组数据（群组、前缀、后缀、权限、成员）
+- `/service convert permissions`：转换所有权限数据（用户、权限）
 
 ## 信息
 
-- /service info bank: 查看已安装的 bank 提供插件
-- /service info chat: 查看已安装的 chat 提供插件
-- /service info economy: 查看已安装的经济提供插件
-- /service info groups: 查看已安装的群组提供插件
-- /service info permissions: 查看已安装的权提供插件
+- `/service info bank`: 查看已安装的 bank 提供插件
+- `/service info chat`: 查看已安装的 chat 提供插件
+- `/service info economy`: 查看已安装的经济提供插件
+- `/service info groups`: 查看已安装的群组提供插件
+- `/service info permissions`: 查看已安装的权提供插件
 
 ## 权限
 
-- /service convert：需要 service.convert
-- /service info：需要 service.info
-- service.admin 权限允许访问所有 ServiceIO 命令
-- 且 vault.admin 等同于 service.admin
+- `/service convert`：需要 `service.convert`
+- `/service info`：需要 `service.info`
+- `service.admin` 权限允许访问所有 ServiceIO 命令
+- 且 `vault.admin` 等同于 `service.admin`
 
 ## 链接
 
@@ -68,8 +68,7 @@ ServiceIO 的一个关键特性是与现有 Vault 接口的无缝集成，允许
 
 ## 联系
 
-[![](https://img.shields.io/discord/1293606111177609277?logo=discord&label=Discord)](https://thenextlvl.net/discord)
-\<- 点击加入 作者的 Discord
+点击加入 作者的 Discord [![](https://img.shields.io/discord/1293606111177609277?logo=discord&label=Discord)](https://thenextlvl.net/discord)
 
 ## Bstats
 

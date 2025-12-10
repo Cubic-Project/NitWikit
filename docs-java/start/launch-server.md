@@ -183,7 +183,7 @@ import GlobalContent from '@site/src/components/GlobalContent'
 
 <GlobalContent>
 
-### 我不会在命令行界面 (CMD / 终端 / Powershell) 使用科学上网
+### 我不会在命令行界面 (CMD / 终端 / PowerShell) 使用科学上网
 
 :::tip
 
@@ -221,7 +221,7 @@ export HTTPS_PROXY=http://127.0.0.1:7890
 
 ### 中文乱码
 
-如果你用的是 Windows，你需要在启动脚本**最前面**加上`chcp 65001`
+如果你用的是 Windows，你需要在启动脚本 **最前面** 加上 `chcp 65001`
 
 如上面的方法无效，检查你的系统区域设置是否为中国和中文语言包是否下载。
 

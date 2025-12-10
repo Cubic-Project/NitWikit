@@ -10,13 +10,14 @@ sidebar_position: 5
 ### 1. 安装 JDK
 
 1. **Windows**：
-    - 从[JDK 选择](/preparation/java/choose-and-download-and-install-java)选择并下载 jdk
+    - 从 [JDK 选择](/preparation/java/choose-and-download-and-install-java) 选择并下载 JDK
     - 按照提示完成安装
-    - 配置[环境变量](/preparation/java/environment)
+    - 配置 [环境变量](/preparation/java/environment)
     - 验证安装：
         1. 按 `Win + R`，输入 `cmd` 打开终端
         2. 输入 `java -version`
         3. 如果看到类似下面的输出，说明安装成功：
+
             ```text
             java version "1.8.0_301"
             Java(TM) SE Runtime Environment (build 1.8.0_301-b09)
@@ -41,16 +42,18 @@ sidebar_position: 5
 
 1. **Maven**：
     - **Windows**：
-        1. 访问[Maven 官网](https://maven.apache.org/download.cgi)下载最新版本
+        1. 访问 [Maven 官网](https://maven.apache.org/download.cgi) 下载最新版本
         2. 下载 `apache-maven-x.x.x-bin.zip`（x.x.x 是版本号）
         3. 解压到合适位置（建议：`C:\Program Files\Apache\maven`）
-        4. 配置[环境变量](/preparation/java/environment)：
+        4. 配置 [环境变量](/preparation/java/environment)：
             - 新建系统变量 `MAVEN_HOME`，值为 Maven 解压目录
             - 在 `Path` 变量末尾添加 `;%MAVEN_HOME%\bin`
         5. 验证安装：
+
             ```bash
             mvn -version
             ```
+
     - **Linux**：
 
         ```bash
@@ -66,20 +69,22 @@ sidebar_position: 5
 
 2. **Gradle**（可选，如果项目使用 Gradle）：
     - **Windows**：
-        1. 访问[Gradle 官网](https://gradle.org/releases/)下载最新版本
+        1. 访问 [Gradle 官网](https://gradle.org/releases/) 下载最新版本
         2. 下载 `gradle-x.x.x-bin.zip`（x.x.x 是版本号）
         3. 解压到合适位置（建议：`C:\Program Files\Gradle`）
         4. 配置环境变量：
             - 新建系统变量 `GRADLE_HOME`，值为 Gradle 解压目录
             - 在 `Path` 变量末尾添加 `;%GRADLE_HOME%\bin`
         5. 验证安装：
+
             ```bash
             gradle -version
             ```
+
     - **Linux**：
 
         ```bash
-        # 使用 SDKMAN 安装（推荐）
+        # 使用 SDKMAN\! 安装（推荐）
         curl -s "https://get.sdkman.io" | bash     # 安装 SDKMAN
         source "$HOME/.sdkman/bin/sdkman-init.sh"  # 初始化 SDKMAN
         sdk install gradle                         # 安装 Gradle
@@ -193,7 +198,7 @@ ls -l build/libs
 如果看到类似 `Could not resolve dependency` 的错误：
 
 1. **配置镜像源**：
-   参考[配置镜像源](./mirror-config.md)文档进行配置。
+   参考 [配置镜像源](./mirror-config.md) 文档进行配置。
 
 2. **手动下载依赖**：
 
@@ -245,6 +250,7 @@ ls -l build/libs
 
 2. **Gradle 项目**：
    在 `build.gradle` 中添加：
+
     ```groovy
     tasks.withType(JavaCompile) {
         options.encoding = 'UTF-8'

@@ -7,11 +7,11 @@ sidebar_position: 3
 
 :::tip
 
-该教程是为**纯 Mod 服**所编写的，如果你正在使用插件或混合端，那么就不需要安装服务端这一步，直接前往下一篇教程 [开启服务端](launch-server.md)
+该教程是为 **纯 Mod 服** 所编写的，如果你正在使用插件或混合端，那么就不需要安装服务端这一步，直接前往下一篇教程 [开启服务端](launch-server.md)
 
 :::
 
-全篇以 1.20.4 Mod 服务端安装为例子，如果看不懂可以使用[笨蛋脚本](https://script.8aka.org/mod-installer) **(目前支持
+全篇以 1.20.4 Mod 服务端安装为例子，如果看不懂可以使用 [笨蛋脚本](https://script.8aka.org/mod-installer) **(目前支持
 Forge/NeoForge/Fabric)**
 
 import Tabs from '@theme/Tabs';
@@ -31,7 +31,7 @@ import TabItem from '@theme/TabItem';
 
 ![](_images/install/2.png)
 
-请选择 `Installer` ，左边右边都无所谓，打开后，你会来到一个广告窗口，点击最上面的 `SKIP`(没有出现就等一会，如果网站始终无法正常加载，请换用上文提到的国内下载镜像 **MCSL**)
+请选择 `Installer` ，左边右边都无所谓，打开后，你会来到一个广告窗口，点击最上面的 `SKIP` (没有出现就等一会，如果网站始终无法正常加载，请换用上文提到的国内下载镜像 **MCSL**)
 
 ![](_images/install/3.png)
 
@@ -73,20 +73,20 @@ import TabItem from '@theme/TabItem';
 
 ## 执行安装
 
-接着打开 cmd，不会请查看[开启 cmd](launch-server.md#笨蛋脚本)，输入以下命令
+接着打开 cmd，不会请查看 [开启 cmd](launch-server.md#笨蛋脚本)，输入以下命令
 
 ```bash
 java -jar <你下载的安装器的文件名> --installServer
 ```
 
-然后静待一会，直到控制台输出 `The server installed successfully` 就完成了！此时你应该会看到当前文件夹中出现了一个名为`forge-游戏版本号-forge版本号.jar`的文件，**这就是你此后开服时需要执行的可执行文件**。
+然后静待一会，直到控制台输出 `The server installed successfully` 就完成了！此时你应该会看到当前文件夹中出现了一个名为 `forge-游戏版本号-forge版本号.jar` 的文件，**这就是你此后开服时需要执行的可执行文件**。
 
-我们建议你现在将文件`forge-游戏版本号-forge版本号-installer.jar`（安装器文件）和`minecraft_server.游戏版本号.jar`移至其他文件夹或放入回收站，以防在后续准备开服时引发混淆。也不要直接永久删除这两个文件，因为一旦后续需要重新安装时就会用到它们。
+我们建议你现在将文件 `forge-游戏版本号-forge版本号-installer.jar`（安装器文件）和 `minecraft_server.游戏版本号.jar` 移至其他文件夹或放入回收站，以防在后续准备开服时引发混淆。也不要直接永久删除这两个文件，因为一旦后续需要重新安装时就会用到它们。
 
 </TabItem>
 <TabItem value="neoforge" label="NeoForge">
 
-与 Forge 差不多，官网换[NeoForge 官网](https://neoforged.net/)
+与 Forge 差不多，官网换 [NeoForge 官网](https://neoforged.net/)
 
 </TabItem>
 <TabItem value="fabric" label="Fabric">
@@ -119,19 +119,19 @@ java -jar <你下载的安装器的文件名> --installServer
 
 ## Fabric API
 
-安装完服务端核心后还需要安装 Fabric API,[在这下载](https://modrinth.com/mod/fabric-api),下载完后放进 `mods` 文件夹即可
+安装完服务端核心后还需要安装 Fabric API，[在这下载](https://modrinth.com/mod/fabric-api)，下载完后放进 `mods` 文件夹即可
 
 </TabItem>
 <TabItem value="quilt" label="Quilt">
 
 与 Fabric 差不多，官网换成这个 [QuiltMC](https://quiltmc.org/en/install/)
 
-安装完后还需要安装 [Quilt Standard Library](https://modrinth.com/mod/qsl),下载完后放进 `mods` 文件夹即可
+安装完后还需要安装 [Quilt Standard Library](https://modrinth.com/mod/qsl)，下载完后放进 `mods` 文件夹即可
 
 </TabItem>
 <TabItem value="ignite" label="Ignite">
 
-适用于 Paper 的 Mod 框架 (**这不是混合端**),目前在用的主要有 CraftEngine
+适用于 Paper 的 Mod 框架 (**这不是混合端**)，目前在用的主要有 CraftEngine
 
 首先前往 [GitHub](https://github.com/vectrix-space/ignite/releases) 下载 Ignite，放到服务端根目录
 
@@ -151,7 +151,7 @@ java -Xms2G -Xmx2G  -Dignite.locator=paper -Dignite.paper.jar=核心名.jar -jar
 
 :::tip
 
-安装的 Mod 仅限于支持 Ignite 的 Mod,Forge 和 Fabric 等的 mod 不可以加载
+安装的 Mod 仅限于支持 Ignite 的 Mod、Forge 和 Fabric 等的 mod 不可以加载
 
 :::
 

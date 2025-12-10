@@ -26,7 +26,7 @@ Vault 的分支版本，提供更多功能
 
 ## 权限
 
-- vault.admin：拥有权限的玩家将收到更新提醒
+- `vault.admin`：拥有权限的玩家将收到更新提醒
 
 ## 链接
 
@@ -48,7 +48,7 @@ Vault 的分支版本，提供更多功能
 
 ## 联系
 
-[![](https://img.shields.io/badge/Discord-creatorfromhell-blue?logo=Discord)](https://discord.gg/WNdwzpy) \<- 点击加入 作者的 Discord
+点击加入 作者的 Discord [![](https://img.shields.io/badge/Discord-creatorfromhell-blue?logo=Discord)](https://discord.gg/WNdwzpy)
 
 ## Bstats
 

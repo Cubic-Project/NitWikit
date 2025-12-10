@@ -5,18 +5,10 @@ sidebar_position: 2
 
 # TAB
 
-<a href="https://github.com/NEZNAMY/TAB/releases">
-  <img src="https://img.shields.io/github/v/release/NEZNAMY/TAB" class="stylish-image" alt="Releases" />
-</a>
-<a href="https://www.spigotmc.org/resources/.57806">
-  <img src="https://img.shields.io/spiget/downloads/57806?label=Downloads" class="stylish-image" alt="Downloads" />
-</a>
-<a href="https://github.com/NEZNAMY/TAB">
-  <img src="https://img.shields.io/github/languages/code-size/NEZNAMY/TAB" class="stylish-image" alt="Languages" />
-</a>
-<a href="https://github.com/NEZNAMY/TAB/blob/main/LICENSE">
-  <img src="https://img.shields.io/github/license/NEZNAMY/TAB" class="stylish-image" alt="License" />
-</a>
+[![Releases](https://img.shields.io/github/v/release/NEZNAMY/TAB)](https://github.com/NEZNAMY/TAB/releases)
+[![Downloads](https://img.shields.io/spiget/downloads/57806?label=Downloads)](https://www.spigotmc.org/resources/.57806)
+[![Code Size](https://img.shields.io/github/languages/code-size/NEZNAMY/TAB)](https://github.com/NEZNAMY/TAB)
+[![License](https://img.shields.io/github/license/NEZNAMY/TAB)](https://github.com/NEZNAMY/TAB/blob/main/LICENSE)
 
 ```text
 TAB 是一个用于在不同位置显示信息的多功能插件，旨在在功能、兼容性和性能方面超越所有类似的插件。
@@ -24,7 +16,7 @@ TAB 是一个用于在不同位置显示信息的多功能插件，旨在在功�
 
 此插件拥有自由的配置文件，无论你是只需要最简单的功能，或者制作一些复杂的功能，此插件都能满足你的需求！
 
-默认配置已经包含足够的示例让你理解此插件的配置，另外，此插件拥有全面的 wiki。
+默认配置已经包含足够的示例让你理解此插件的配置，另外，此插件拥有全面的 Wiki。
 
 ## 照片
 
@@ -123,8 +115,8 @@ TAB 是一个用于在不同位置显示信息的多功能插件，旨在在功�
 3. 世界上每个人都可以无限制地使用我的空闲时间。（？）
 4. 在不损失任何功能的情况下提高插件的性能。
 
-- 你可以加入这个大好人的 [community discord](https://discord.gg/YPqXt63YQj) 来得到其他好心人的支持
-  注：discord 在国内不能访问，需要挂梯
+- 你可以加入这个大好人的 [Community Discord](https://discord.gg/YPqXt63YQj) 来得到其他好心人的支持
+  注：Discord 在国内不能访问，需要挂梯
 
 ## API
 
@@ -157,7 +149,9 @@ https://github.com/NEZNAMY/TAB/wiki/Developer-API
 <details>
     <summary>mmessage.yml</summary>
 
-```YAML
+<!-- autocorrect-disable -->
+
+```yaml
 announce-command-usage: |-
   用法: /tab announce <种类> <名称> <长度>
   当前支持种类: &lbar, scoreboard
@@ -237,6 +231,8 @@ nametag:
   no-arg-from-console: '&c从控制台运行此指令时需要指定玩家'
 ```
 
+<!-- autocorrect-enable -->
+
 </details>
 
 ## 配置文件汉化
@@ -246,7 +242,9 @@ nametag:
 <details>
     <summary>config.yml</summary>
 
-```YAML
+<!-- autocorrect-disable -->
+
+```yaml
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Header-&-Footer
 # 头部和底部显示
 header-footer:
@@ -566,6 +564,8 @@ use-bukkit-permissions-manager: false
 # 仅影响启用在线模式的代理
 use-online-uuid-in-tablist: true
 ```
+
+<!-- autocorrect-enable -->
 
 </details>
 

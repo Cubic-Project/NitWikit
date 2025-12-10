@@ -8,31 +8,14 @@ sidebar_label: 多世界 - Multiverse
 
 ![](_images/multiverse2-long.png)
 
-<a href="https://modrinth.com/plugin/multiverse-core">
-  <img src="https://cdn.jsdmirror.cn/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg" class="stylish-image" alt="Modrinth" />
-</a>
-<a href="https://hangar.papermc.io/Multiverse/Multiverse-Core">
-  <img src="https://cdn.jsdmirror.cn/npm/@intergrav/devins-badges@3/assets/cozy/available/hangar_vector.svg" class="stylish-image" alt="Hangar" />
-</a>
-<a href="https://dev.bukkit.org/projects/multiverse-core">
-  <img src="https://cdn.jsdmirror.cn/npm/@intergrav/devins-badges@3/assets/cozy/supported/bukkit_vector.svg" class="stylish-image" alt="Bukkit" />
-</a>
-<a href="https://www.spigotmc.org/resources/multiverse-core.390">
-  <img src="https://cdn.jsdmirror.cn/npm/@intergrav/devins-badges@3/assets/cozy/supported/spigot_vector.svg" class="stylish-image" alt="Spigot" />
-</a>
-
-<a href="https://github.com/DecentSoftware-eu/DecentHolograms/releases">
-  <img src="https://img.shields.io/github/v/release/Multiverse/Multiverse-Core" class="stylish-image" alt="Release" />
-</a>
-<a href="https://discord.gg/NZtfKky">
-  <img src="https://img.shields.io/discord/325459248047980545?label=discord&logo=discord" class="stylish-image" alt="Discord" />
-</a>
-<a href="https://patreon.com/dumptruckman">
-  <img src="https://img.shields.io/badge/donate-patreon-white?logo=patreon" class="stylish-image" alt="Support us on Patreon" />
-</a>
-<a href="https://github.com/Multiverse/Multiverse-Core/blob/main/LICENSE.md">
-  <img src="https://img.shields.io/github/license/Multiverse/Multiverse-Core?color=blue" class="stylish-image" alt="License" />
-</a>
+[![Modrinth](https://cdn.jsdmirror.cn/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg)](https://modrinth.com/plugin/multiverse-core)
+[![Hangar](https://cdn.jsdmirror.cn/npm/@intergrav/devins-badges@3/assets/cozy/available/hangar_vector.svg)](https://hangar.papermc.io/Multiverse/Multiverse-Core)
+[![Bukkit](https://cdn.jsdmirror.cn/npm/@intergrav/devins-badges@3/assets/cozy/supported/bukkit_vector.svg)](https://dev.bukkit.org/projects/multiverse-core)
+[![Spigot](https://cdn.jsdmirror.cn/npm/@intergrav/devins-badges@3/assets/cozy/supported/spigot_vector.svg)](https://www.spigotmc.org/resources/multiverse-core.390)
+[![Release](https://img.shields.io/github/v/release/Multiverse/Multiverse-Core)](https://github.com/DecentSoftware-eu/DecentHolograms/releases)
+[![Discord](https://img.shields.io/discord/325459248047980545?label=discord&logo=discord)](https://discord.gg/NZtfKky)
+[![Support us on Patreon](https://img.shields.io/badge/donate-patreon-white?logo=patreon)](https://patreon.com/dumptruckman)
+[![License](https://img.shields.io/github/license/Multiverse/Multiverse-Core?color=blue)](https://github.com/Multiverse/Multiverse-Core/blob/main/LICENSE.md)
 
 > 知名老牌多世界插件。可以新建，删除，导入世界（维度）等。
 
@@ -96,7 +79,7 @@ world-name-format:
 ## Folia
 
 [Multiverse-Core_Zeta](https://github.com/RenYuan-MC/Multiverse-Core_Zeta) 是 Multiverse-Core 的一个 fork，支持 Folia
-,你可以[在这](https://dl.8aka.org/plugins/multiverse-core-4.3.14-zeta_folia-experimental.jar) 下载预编译版本，或自行编译
+,你可以 [在这](https://dl.8aka.org/plugins/multiverse-core-4.3.14-zeta_folia-experimental.jar) 下载预编译版本，或自行编译
 
 ## 崩服漏洞
 

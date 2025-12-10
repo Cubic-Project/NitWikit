@@ -5,15 +5,9 @@ sidebar_label: 保护 - Law
 
 # Law
 
-<a href="https://github.com/mouse0w0/law/releases">
-  <img src="https://img.shields.io/github/v/release/mouse0w0/law" class="stylish-image" alt="Release" />
-</a>
-<a href="https://github.com/mouse0w0/law">
-  <img src="https://img.shields.io/github/languages/code-size/mouse0w0/law" class="stylish-image" alt="Code Size" />
-</a>
-<a href="https://github.com/mouse0w0/law/blob/main/LICENSE">
-  <img src="https://img.shields.io/github/license/mouse0w0/law" class="stylish-image" alt="License" />
-</a>
+[![Release](https://img.shields.io/github/v/release/mouse0w0/law)](https://github.com/mouse0w0/law/releases)
+[![Code Size](https://img.shields.io/github/languages/code-size/mouse0w0/law)](https://github.com/mouse0w0/law)
+[![License](https://img.shields.io/github/license/mouse0w0/law)](https://github.com/mouse0w0/law/blob/main/LICENSE)
 
 本插件基于 Bukkit API 开发，用于在服务器中控制实体和方块行为，并为不同世界设置不同规则。
 

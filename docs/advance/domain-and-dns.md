@@ -242,7 +242,7 @@ DDNS 服务必须需要一个域名才能开始搭建。运行 DDNS 服务的软
 
 1. 前往 https://github.com/jeessy2/ddns-go/releases 下载最新版的 ddns-go 安装包。
 2. 将安装包 (就是下载的那个压缩包) 解压到一个不会被自己误删除的位置 (如果你不知道哪里自己不会误删除，就直接解压到文件管理器左侧的文档那个文件夹)。
-3. 在 `ddns-go.exe` 所在的同级目录 [打开 Powershell](https://www.bing.com/search?q=windows%E6%80%8E%E4%B9%88%E5%9C%A8%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%89%93%E5%BC%80powershell&qs=n&form=QBRE&sp=-1&lq=0&pq=windows%E6%80%8E%E4%B9%88%E5%9C%A8%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%89%93%E5%BC%80powershell&sc=0-26&sk=&cvid=ED4A3EA564234CA2A72F233F64580905&ghsh=0&ghacc=0&ghpl=)。
+3. 在 `ddns-go.exe` 所在的同级目录 [打开 PowerShell](https://www.bing.com/search?q=windows%E6%80%8E%E4%B9%88%E5%9C%A8%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%89%93%E5%BC%80powershell&qs=n&form=QBRE&sp=-1&lq=0&pq=windows%E6%80%8E%E4%B9%88%E5%9C%A8%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%89%93%E5%BC%80powershell&sc=0-26&sk=&cvid=ED4A3EA564234CA2A72F233F64580905&ghsh=0&ghacc=0&ghpl=)。
 4. 执行 `./ddns-go.exe`。
 5. 打开浏览器，访问网站 localhost:9876，这是 ddns-go 的管理面板。
 6. 提示输入帐号密码，由于这是你首次打开网站，直接点击登录。
