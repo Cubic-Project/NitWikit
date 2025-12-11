@@ -21,9 +21,9 @@ sudo vim /root/backup.sh
 usage() {
     echo "用法: $0 --server-dir <存档路径> --backup-dir <备份文件保存目录> [--max-backups <最大备份文件数>]"
     echo "参数:"
-    echo "  --server-dir, -s:  服务器目录(绝对路径)"
-    echo "  --backup-dir, -b:  备份文件保存目录(绝对路径)"
-    echo "  --max-backups, -m:  最大备份文件数, 选填(默认: 5)"
+    echo "  --server-dir, -s:  服务器目录 (绝对路径)"
+    echo "  --backup-dir, -b:  备份文件保存目录 (绝对路径)"
+    echo "  --max-backups, -m:  最大备份文件数，选填 (默认: 5)"
     exit 1
 }
 

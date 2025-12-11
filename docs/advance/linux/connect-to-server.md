@@ -116,7 +116,7 @@ FinalShell 是一体化的的服务器，网络管理软件，不仅是 ssh 客�
   </TabItem>
   <TabItem value="termux" label="安卓手机 (Termux)">
 
-你需要安装 Termux 这个软件。你可以去 Google Play 下载，也可以去[它的开源地址](https://github.com/termux/termux-app)下载。
+你需要安装 Termux 这个软件。你可以去 Google Play 下载，也可以去 [它的开源地址](https://github.com/termux/termux-app) 下载。
 
 安装好之后，打开软件就是命令行，随后直接使用 ssh 命令即可连接。
 

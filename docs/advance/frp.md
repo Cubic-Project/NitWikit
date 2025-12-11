@@ -543,8 +543,8 @@ sudo systemctl enable frpc
 
 ### 配置 PROXY protocol
 
-如果你使用的是现成的内网穿透运营商提供的内网穿透，**一定要根据运营商提供的教程操作**。以下是两个最有名的内网穿透运营商的 PROXY protocol 开启方法。  
-[SakuraFrp](https://doc.natfrp.com/bestpractice/realip.html#proxy-protocol)  
+如果你使用的是现成的内网穿透运营商提供的内网穿透，**一定要根据运营商提供的教程操作**。以下是两个最有名的内网穿透运营商的 PROXY protocol 开启方法。
+[SakuraFrp](https://doc.natfrp.com/bestpractice/realip.html#proxy-protocol)
 [OpenFrp](https://openfrp.wiki/use/proxy-protocol.html#%E8%8E%B7%E5%8F%96%E8%AE%BF%E9%97%AE%E8%80%85%E7%9A%84%E7%9C%9F%E5%AE%9E-ip)
 
 如果是自建内网穿透，那么如果是 ini 配置文件，就在 frpc 隧道对应的配置 (位于 frpc.ini 中) 中加入一行 `proxy_protocol_version =`，如果是协议 v1 就写等于 v1，v2 就写等于 v2。例如：
