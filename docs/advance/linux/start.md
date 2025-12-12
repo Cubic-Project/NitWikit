@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 
 开服之前，请检查服务器是否安装了 Java，在终端输入
 
-`java -ver`
+`java -version`
 
 如果你看到类似以下的输出，那么服务器中已经安装了 Java
 
