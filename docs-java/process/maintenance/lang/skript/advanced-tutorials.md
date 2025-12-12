@@ -54,7 +54,7 @@ import:
 
 对类的调用必须在导入完成后进行，因此我们建议你尽可能将此语句放在脚本中靠顶端的位置。
 
-通过 `import:` 块导入类后， **skript-reflect** 将创建一个 **Expressions** ，允许你通过其名称轻易地引用 Java 类。
+通过 `import:` 块导入类后， **skript-reflect** 将创建一个 **Expressions**，允许你通过其名称轻易地引用 Java 类。
 
 ```skript
 on TPARequestEvent:

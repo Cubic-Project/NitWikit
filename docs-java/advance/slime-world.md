@@ -26,7 +26,7 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="mcver">
 <TabItem value="new" label="1.20.4+">
 
-前往 [GitHub Release](https://github.com/InfernalSuite/AdvancedSlimePaper/releases),找到适合的版本下载即可
+前往 [GitHub Release](https://github.com/InfernalSuite/AdvancedSlimePaper/releases)，找到适合的版本下载即可
 
 - `plugin-***-R0.1-SNAPSHOT.1.jar` ASM 的插件版本 (推荐)
 - `asp-server.jar` ASM 的独立服务器核心版本 (基于 Paper)
@@ -35,7 +35,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="old" label="1.8">
 
-前往 [GitHub Release](https://github.com/Swofty-Developments/Continued-Slime-World-Manager/releases),下载最新版
+前往 [GitHub Release](https://github.com/Swofty-Developments/Continued-Slime-World-Manager/releases)，下载最新版
 
 - 下载`swoftyworldmanager-plugin-<version>.jar` 到插件目录
 - 下载`swoftyworldmanager-classmodifier-<version>.jar` 到服务器根目录

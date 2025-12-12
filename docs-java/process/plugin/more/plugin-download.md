@@ -13,7 +13,7 @@ sidebar_position: 1
 
 <!--markdownlint-disable ol-prefix-->
 
-1. (*可选，推荐*) 安装一个 SpigotMC 专用的[搜索引擎](https://fof1092.de/Plugins/SSE/Redirect/)，作为浏览器插件安装即可。
+1. (*可选，推荐*) 安装一个 SpigotMC 专用的 [搜索引擎](https://fof1092.de/Plugins/SSE/Redirect/)，作为浏览器插件安装即可。
 
     使用 SpigotSearchEngine (SpigotMC 搜索引擎) 后，你能得到比 SpigotMC 自带的搜索相关性强得多的搜索结果。
 

@@ -350,6 +350,7 @@ log-forwarding-changes = true
 
 这些是 Velocity-CTD 特有的性能优化选项，需要添加到 `[advanced]` 部分：
 
+<!-- autocorrect-disable -->
 ```toml
 [advanced]
 # ... 其他标准 Velocity 配置 ...
@@ -369,7 +370,7 @@ disable-unsigned-message-kick = false
 disable-header-footer-translation = false
 
 # 最小版本要求。阻止使用旧版本客户端的用户连接。
-# 格式：主版本。次版本。修订版本 (例如 "1.16.5")
+# 格式：主版本.次版本.修订版本 (例如 "1.16.5")
 # 留空表示不限制版本
 minimum-version = ""
 
@@ -411,6 +412,7 @@ health-check-interval = 10
 # 服务器被认为不健康的超时时间（秒）
 unhealthy-timeout = 30
 ```
+<!-- autocorrect-enable -->
 
 ### 消息配置
 

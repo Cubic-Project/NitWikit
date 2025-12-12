@@ -128,6 +128,7 @@ var task = new TimerTask({
 ```
 
 ### 扩展具体 Java 类
+
 对于具体的 Java 类，不能直接使用类似于抽象类的扩展语法。要扩展具体类，必须使用 `Java.extend()` 函数。以下示例演示了如何扩展 `java.lang.Thread` 类并实现 `run()` 方法：
 
 ```js

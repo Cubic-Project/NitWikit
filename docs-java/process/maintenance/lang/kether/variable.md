@@ -92,7 +92,7 @@ get {token} | &{token}
 
 ![](_images/var_4.png)
 
-看到这里，你就应该知道，为什么前面讲 [彩色 (color Text)](./basic.md#彩色-color-text) 动作的时候会说
+看到这里，你就应该知道，为什么前面讲 [彩色 (Color Text)](./basic.md#彩色-color-text) 动作的时候会说
 
 > 这里要用 `" "` 把要打印的信息包裹起来
 > 否则他会把这个当成变量，具体的会在后面讲到

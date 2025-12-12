@@ -54,7 +54,7 @@ tuned-adm profile throughput-performance
 
 ## 设置大页面
 
-打开文件 `/etc/sysctl.conf`,在末尾添加以下内容
+打开文件 `/etc/sysctl.conf`，在末尾添加以下内容
 
 ```text
 vm.nr_hugepages = <需要的页数>
@@ -66,7 +66,7 @@ vm.nr_hugepages = <需要的页数>
 (分配的内存数 (单位：MB)) / 2 + 300
 ```
 
-比如我分配了 12GB 的内存 (也就是 12288 MB),那么设置的值为 `12288 / 2+ 300 = 6444`,最后的设置应该长这样
+比如我分配了 12GB 的内存 (也就是 12288 MB)，那么设置的值为 `12288 / 2+ 300 = 6444`，最后的设置应该长这样
 
 ```text
 vm.nr_hugepages = 6444
@@ -171,7 +171,7 @@ XanMod Linux 内核融合了许多优化补丁，包括许多来自 Cloudflare�
 
     :::tip
 
-    `CPU supports x86-64-v4` 仍然需要安装 `x64v3`,AVX512 对于内核没有影响
+    `CPU supports x86-64-v4` 仍然需要安装 `x64v3`，AVX512 对于内核没有影响
 
     :::
 

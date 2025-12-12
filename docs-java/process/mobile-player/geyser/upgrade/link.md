@@ -29,12 +29,12 @@ GlobalLink 是 Geyser 提供的链接服务器，用于链接基岩版和 Java �
 
 1. 使用你的 Java 和 Bedrock 账户加入 GlobalLinkServer
    (IP: `link.geysermc.org`，Java 端口：`25565`，Bedrock 端口：`19132`)
-2. 在 Java **或** Bedrock 账户上键入 `/linkaccount`开 始链接过程
+2. 在 Java **或** Bedrock 账户上键入 `/linkaccount` 开始链接过程
 3. 你将收到一个带有随机数字的消息，你需要在未开始链接过程的账户上输入该数字。
 4. 在另一个账户上键入 `/linkaccount <收到的随机数字>` 输入随机数字
 5. 你应该在 Bedrock 和 Java 账户上都被踢出服务器，并收到成功链接你的账户的消息。
 
-要取消全局链接的账户链接，请在 Java 或 Bedrock 上加入 GlobalLinkServer(如上所述进行链接),并使用 `/unlinkaccount` 命令。
+要取消全局链接的账户链接，请在 Java 或 Bedrock 上加入 GlobalLinkServer (如上所述进行链接)，并使用 `/unlinkaccount` 命令。
 
 默认情况下，每个运行 Floodgate 的服务器应该已启用全局链接，但如果你禁用了它，你可以通过打开 Floodgate 配置：
 

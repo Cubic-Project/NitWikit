@@ -103,9 +103,9 @@ allowed-servers:
 
 # 游戏服：禁止直接进入
 allow-server-list: false
-transfer-token: "your-secure-random-token" # 相同令牌
+transfer-token: "your-secure-random-token"  # 相同令牌
 allowed-servers:
-  - "your-server-ip:25565" # 登录服
+  - "your-server-ip:25565"  # 登录服
 ```
 
 :::tip[安全令牌生成]

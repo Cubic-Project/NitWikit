@@ -78,8 +78,7 @@ world-name-format:
 
 ## Folia
 
-[Multiverse-Core_Zeta](https://github.com/RenYuan-MC/Multiverse-Core_Zeta) 是 Multiverse-Core 的一个 fork，支持 Folia
-,你可以 [在这](https://dl.8aka.org/plugins/multiverse-core-4.3.14-zeta_folia-experimental.jar) 下载预编译版本，或自行编译
+[Multiverse-Core_Zeta](https://github.com/RenYuan-MC/Multiverse-Core_Zeta) 是 Multiverse-Core 的一个 fork，支持 Folia，你可以 [在这](https://dl.8aka.org/plugins/multiverse-core-4.3.14-zeta_folia-experimental.jar) 下载预编译版本，或自行编译
 
 ## 崩服漏洞
 

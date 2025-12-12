@@ -267,7 +267,7 @@ on command "/op":
 
 ### 最初的脚本
 
-在这个板块中，请利用 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax)查询 Skript 语法，满足缩进等要求，尝试写一些最基础脚本吧~
+在这个板块中，请利用 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) 查询 Skript 语法，满足缩进等要求，尝试写一些最基础脚本吧~
 
 #### 事件
 
@@ -327,7 +327,7 @@ on teleport with priority lowest:
 
 例如，我们想写一个脚本，检测玩家在 00:00 - 06:00 没有在床上睡觉，那么就每秒扣玩家 1 生命值。
 
-查询 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) ，根据直觉选择，与时间和睡觉有关系的事件可能有这些：
+查询 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax)，根据直觉选择，与时间和睡觉有关系的事件可能有这些：
 
 ```skript
 every 10 seconds:
@@ -583,7 +583,7 @@ command /world <world>:
 
 :::warning
 
-后文为 TUCAOEVER 在 mcbbs 的教程未参考部分，没有进行任何格式化，TODO
+后文为 TUCAOEVER 在 MCBBS 的教程未参考部分，没有进行任何格式化，TODO
 
 :::
 
@@ -737,7 +737,7 @@ send subtitle %text% [to %players%] [for %time span%] [with fade[(-| )]in %time 
 
 但是实际上是这样么？
 
-实际上并不是，所谓的 Effect(效果) 虽然都是 `动词 + 名词` 形式，但是对于 Effect (效果) 而言。
+实际上并不是，所谓的 Effect (效果) 虽然都是 `动词 + 名词` 形式，但是对于 Effect (效果) 而言。
 
 注重的是 `动词` 而非后面跟着的 `名词` 例如 `在玩家所在位置生成僵尸`。
 

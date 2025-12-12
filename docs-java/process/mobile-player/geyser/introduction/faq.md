@@ -83,7 +83,7 @@ Java 版和基岩版的 UUID 不一致，请查阅进阶教程
 
 ## 加入服务器后出现区块空白
 
-如果你的服务器使用的是 Java 18 以下并且 CPU 支持 AVX512 (通常来说是 Intel 10 代以上和 AMD),你可以尝试添加启动参数
+如果你的服务器使用的是 Java 18 以下并且 CPU 支持 AVX512 (通常来说是 Intel 10 代以上和 AMD)，你可以尝试添加启动参数
 
 ```text
 -XX:+UnlockDiagnosticVMOptions -XX:-UseAESCTRIntrinsics

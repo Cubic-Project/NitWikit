@@ -141,7 +141,7 @@ above-bedrock-nether-building: false
 
 为进一步兼容，你需要安装 [Floodgate](https://geysermc.org/download#floodgate)，[MCSL 下载镜像](https://sync.mcsl.com.cn/core/Floodgate)
 
-Mod 服务器请安装 [Floodgate-Modded](https://modrinth.com/mod/floodgate),适用于 Mod 的 Floodgate
+Mod 服务器请安装 [Floodgate-Modded](https://modrinth.com/mod/floodgate)，适用于 Mod 的 Floodgate
 
 Floodgate 可作为一个插件/Mod 装到 Spigot 及其分支的核心上或 BungeeCord、Velocity 之类的代理上
 群组服/独立版 Geyser 的 Floodgate 安装需要进行一些额外步骤，请跟随教程完成

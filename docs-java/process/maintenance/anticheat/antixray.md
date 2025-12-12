@@ -375,7 +375,7 @@ anticheat:
 
 注意，如果你需要隐藏暴露在空气中的方块，需要将 `air` 添加到 `hidden-blocks` 和 `replacement-blocks`，但这非常影响性能，不推荐。
 
-如果你需要隐藏岩浆中的方块，请打开 `lava-obscures`,但会影响性能
+如果你需要隐藏岩浆中的方块，请打开 `lava-obscures`，但会影响性能
 
 :::info
 
