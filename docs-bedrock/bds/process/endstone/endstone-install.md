@@ -50,7 +50,7 @@ Linux 环境下：
 
 关闭界面，前往 [EndStone API](https://raw.githubusercontent.com/EndstoneMC/bedrock-server-data/main/bedrock_server_data.json) 找到相应版本的下载地址
 
-复制相应的 URL 后的下载链接，直接粘贴到新窗口的 Web 地址栏回车下载 BDS 服务端压缩包
+复制相应的 URL 后的下载链接，直接粘贴到新窗口的 web 地址栏回车下载 BDS 服务端压缩包
 
 ![6](./_images/6.png)
 
@@ -162,7 +162,7 @@ CMD 控制台输入 `endstone` ，获得该版本的 EndStone 支持的 BDS 服�
 
 关闭界面，前往 [EndStone API](https://raw.githubusercontent.com/EndstoneMC/bedrock-server-data/main/bedrock_server_data.json)
 
-找到相应版本的下载地址，复制 URL 后的下载链接，直接粘贴到新窗口的 Web 地址栏回车下载 BDS 服务端压缩包
+找到相应版本的下载地址，复制 URL 后的下载链接，直接粘贴到新窗口的 web 地址栏回车下载 BDS 服务端压缩包
 
 ![6](./_images/6.png)
 

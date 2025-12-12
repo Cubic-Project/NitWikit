@@ -439,7 +439,7 @@ per-warp-permission: false
 
 # 按组排序 /list 命令的输出。
 # 您可以通过在此定义所需行为来隐藏和合并在 /list 中显示的组。
-# 详细说明和示例可以在 wiki 上找到：https://wiki.ess3.net/wiki/List
+# 详细说明和示例可以在 Wiki 上找到：https://wiki.ess3.net/wiki/List
 list:
     # 要在 /list 中将多个组合并到一个名称下，请在一行中列出每个组，用空格分隔。
     #Staff: owner admin moderator
@@ -820,7 +820,7 @@ confirm-home-overwrite: false
 starting-balance: 0
 
 # 定义使用给定命令每次使用的成本。
-# 某些命令如 /repair 有子成本。查看 wiki 获取更多信息。
+# 某些命令如 /repair 有子成本。查看 Wiki 获取更多信息。
 command-costs:
     # 使 /example 每次使用花费 $1000：
     #example: 1000
@@ -936,7 +936,7 @@ chat:
     # 更多信息请参见 https://essentialsx.net/wiki/Color-Permissions.html。
     #
     # 您还可以为每种聊天类型指定子格式。
-    # 有关聊天格式的更多信息，请访问 wiki：https://wiki.ess3.net/wiki/Chat_Formatting#Chat_Formatting
+    # 有关聊天格式的更多信息，请访问 Wiki：https://wiki.ess3.net/wiki/Chat_Formatting#Chat_Formatting
     #
     # 可用占位符：
     # {MESSAGE} - 聊天消息的内容。
@@ -1113,7 +1113,7 @@ protect:
         # 是否应禁用跌落伤害？
         fall: false
 
-        # 是否应禁用PvP？
+        # 是否应禁用 PvP？
         # 如果设置为 true，拥有 'essentials.protect.pvp' 权限的玩家仍能够互相攻击。
         # 但是，他们无法攻击没有该权限节点的玩家。
         pvp: false

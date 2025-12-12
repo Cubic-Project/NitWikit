@@ -22,7 +22,7 @@ import TabItem from '@theme/TabItem';
         apt-get install screen
         ```
     </TabItem>
-    <TabItem value="redhat" label="CentOS/Redhat">
+    <TabItem value="redhat" label="CentOS/Redhat Linux">
         ```bash
         yum install screen
         ```
@@ -109,7 +109,7 @@ _可以通过 `systemctl --user status mc.service` 查看服务运行状态。_
 
 [详细设置说明](https://blog.csdn.net/WHQ78164/article/details/132956725)
 
-[Arch wiki 上的教程](https://wiki.archlinuxcn.org/wiki/Systemd#%E7%BC%96%E5%86%99%E5%8D%95%E5%85%83%E6%96%87%E4%BB%B6)
+[Arch Wiki 上的教程](https://wiki.archlinuxcn.org/wiki/Systemd#%E7%BC%96%E5%86%99%E5%8D%95%E5%85%83%E6%96%87%E4%BB%B6)
 
 优点：可以实现自动重启，开机自启等操作
 

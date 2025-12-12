@@ -28,7 +28,7 @@ BungeeCord 不再支持过旧版本 Minecraft
 
 并且使用参数启动以生成初始文件
 
-如果想进一步优化可以使用 JVM 参数 [Waterfall 官方](https://docs.papermc.io/waterfall/getting-started#running-the-proxy)有推荐的 flags
+如果想进一步优化可以使用 JVM 参数 [Waterfall 官方](https://docs.papermc.io/waterfall/getting-started#running-the-proxy) 有推荐的 flags
 
 ```bash
 java -Xms1024M -Xmx1024M -jar 核心名字.jar
@@ -78,7 +78,7 @@ servers:
         restricted: false
 ```
 
-### 子服 bc 模式
+### 子服 BC 模式
 
 配置子服端根目录中的 `spigot.yml`
 

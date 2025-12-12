@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 
 `GitHub (主页)` https://github.com/ItemsAdder
 
-`GitHub (可以反馈 BUG)` https://github.com/PluginBugs/Issues-ItemsAdder
+`GitHub (可以反馈 bug)` https://github.com/PluginBugs/Issues-ItemsAdder
 
 `文档 (英文)` https://itemsadder.devs.beer
 

@@ -177,7 +177,7 @@ settings:
         old-hopper-suck-in-behavior: true # 恢复旧版漏斗吸物行为
         fix-fortress-mob-spawn: true # 修复下界堡垒刷怪生成机制
         skip-height-check: true # 跳过怪物生成高度限制检查
-        string-tripwire-hook-duplicate: true # 修复绊线钩重复连接的 BUG
+        string-tripwire-hook-duplicate: true # 修复绊线钩重复连接的 bug
         budding-amethyst-can-push-by-piston: true # 允许活塞推动紫水晶母岩
         stackable-shulker-boxes: true # 允许潜影盒堆叠
         no-block-update-command: true # 禁用 /blockupdate 命令

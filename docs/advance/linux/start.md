@@ -53,7 +53,7 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS, mixed mode, shari
 
 #### SFTP 文件传输
 
-不熟悉 wget 时，先使用 Windows 前往 [zulu 下载](https://www.azul.com/downloads/?package=jdk#zulu)，下载再使用 SFTP 软件上传到服务器 `/opt` 目录下。
+不熟悉 wget 时，先使用 Windows 前往 [Zulu 下载](https://www.azul.com/downloads/?package=jdk#zulu)，下载再使用 SFTP 软件上传到服务器 `/opt` 目录下。
 
 ![](\_images/Linux 开服/开服/1.png)
 

@@ -7,7 +7,7 @@ sidebar_position: 6
 
 ## 混合端
 
-由于混合端本身的问题，混合端能进行的优化很少，并且混合端 **不可以装大部分优化 Mod**，但是你仍然可以进行除安装优化 mod 以外的其他优化操作
+由于混合端本身的问题，混合端能进行的优化很少，并且混合端 **不可以装大部分优化 mod**，但是你仍然可以进行除安装优化 mod 以外的其他优化操作
 
 ~~不使用混合端来达到最佳的优化~~
 
@@ -159,7 +159,7 @@ Paper 酱为你在 `/config/paper-world-default.yml` 中准备了爆炸优化。
    ，体验远好于此插件；
 
 5. ChunkLimiter -
-   平替插件 [Farmcontrol](https://www.spigotmc.org/resources/farmcontrol-1-15-1-19.86923/) / [Mob-Farm-Manager](https://www.spigotmc.org/resources/mob-farm-manager-supports-1-7-10-up-to-1-20-hopper-support.15127/)
+   平替插件 [FarmControl](https://www.spigotmc.org/resources/farmcontrol-1-15-1-19.86923/) / [Mob-Farm-Manager](https://www.spigotmc.org/resources/mob-farm-manager-supports-1-7-10-up-to-1-20-hopper-support.15127/)
    ，甚至更多配置项；
 
 6. Dynamic View Distance -
@@ -189,7 +189,7 @@ Paper 酱为你在 `/config/paper-world-default.yml` 中准备了爆炸优化。
 
 主要是包括一些甚至不到 10kb 的插件，功能仅仅只是右键西瓜能够收获，或是禁止农田踩踏等。
 
-这些插件功能很可能被一些其他的插件甚至核心自带了 (如 purpur 可设置农田是否可踩踏)。
+这些插件功能很可能被一些其他的插件甚至核心自带了 (如 Purpur 可设置农田是否可踩踏)。
 
 虽然一般来说这些插件不会对性能有影响，但是的确能够降低服务器维护难度等。
 

@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # JavaScript
 
-JavaScript 在 Minecraft 中有着相当广泛的应用，很多插件和 Mod 都在内部提供了 JavaScript
+JavaScript 在 Minecraft 中有着相当广泛的应用，很多插件和 mod 都在内部提供了 JavaScript
 
 常见的实现：
 
@@ -30,7 +30,7 @@ Rhino 和 Javet 在 Minecraft 中目前应用很少，因此后续部分仅介�
 
 :::warning
 
-你无法改变插件/Mod 使用的 JS 引擎 (除非你有能力改源代码)，当然你可以督促作者更改 JS 引擎
+你无法改变插件/mod 使用的 JS 引擎 (除非你有能力改源代码)，当然你可以督促作者更改 JS 引擎
 
 :::
 

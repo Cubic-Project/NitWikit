@@ -116,7 +116,7 @@ import TabItem from '@theme/TabItem';
 
 专为生电而生的核心。
 
-Leaves 基本完全支持客户端生电 Mod，包括但不限于 Carpet，pca，投影，共享原理图，minihud，bbor，ommc，Xaero 小地图，Jade，appleskin。
+Leaves 基本完全支持客户端生电 mod，包括但不限于 Carpet、PCA、投影、共享原理图、MiniHUD、BBOR、OMMC、Xaero 小地图、Jade、AppleSkin。
 
 [点我](https://docs.leavesmc.org/zh_Hans) 查看 Leaves 官方文档
 

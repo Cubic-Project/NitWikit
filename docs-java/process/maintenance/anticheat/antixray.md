@@ -95,7 +95,7 @@ seed-stronghold: default
 
 使用 [笨蛋脚本](https://script.8aka.org/auto_antixray)，在服务器根目录执行脚本即可自动配置!!
 
-⚠警告：`engine-mode: 3` 在 `paper 1.19.3` 往后的版本才添加⚠
+⚠警告：`engine-mode: 3` 在 `Paper 1.19.3` 往后的版本才添加⚠
 
 > 主世界推荐配置
 

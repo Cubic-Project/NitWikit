@@ -24,7 +24,7 @@ sudo apt install tuned
 ```
 
 </TabItem>
-  <TabItem value="RedHat/CentOS">
+  <TabItem value="CentOS/RedHat Linux">
 
 ```bash
 sudo yum install tuned
@@ -392,7 +392,7 @@ net.ipv4.tcp_frto = 2
 net.ipv4.tcp_fastopen = 3
 # TCP 流中重排序的数据报最大数量
 net.ipv4.tcp_reordering = 300
-# 开启后，在重传时会试图发送满大小的包。这是对一些有 BUG 的打印机的绕过方式
+# 开启后，在重传时会试图发送满大小的包。这是对一些有 bug 的打印机的绕过方式
 net.ipv4.tcp_retrans_collapse = 0
 # 自动阻塞判断
 net.ipv4.tcp_autocorking = 1

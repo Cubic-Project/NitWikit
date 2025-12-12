@@ -25,7 +25,7 @@ Geyser 是连接 Java 版和基岩版 的一座桥梁。可以让基岩版玩家
 
 :::danger
 
-Geyser 并不适合 Mod 服务器，不要尝试
+Geyser 并不适合 mod 服务器，不要尝试
 
 :::
 

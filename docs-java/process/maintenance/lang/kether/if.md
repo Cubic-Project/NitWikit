@@ -21,7 +21,7 @@ sidebar_position: 3
 
 ![](_images/vul-perm.png)
 
-我是 op，所以我拥有此权限，返回了 true
+我是 OP，所以我拥有此权限，返回了 true
 
 同 [PlaceholderAPI](./basic#变量-placeholderapi) 一样，**Permission** 也有一个简写 **perm**
 

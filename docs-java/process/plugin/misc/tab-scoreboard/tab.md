@@ -559,7 +559,7 @@ global-playerlist:
 # 从后端服务器而不是代理获取权限和组
 use-bukkit-permissions-manager: false
 
-# 有时服务器可能在Tab列表中使用离线UUID而不是在线UUID，例如禁用waterfall的Tab列表重写选项
+# 有时服务器可能在Tab列表中使用离线UUID而不是在线UUID，例如禁用Waterfall的Tab列表重写选项
 # 如果遇到Tab列表格式化不工作的问题，请切换此选项（设置为相反值）
 # 仅影响启用在线模式的代理
 use-online-uuid-in-tablist: true

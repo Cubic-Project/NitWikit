@@ -20,13 +20,13 @@ Velocity 可以说是目前最优秀的 **Minecraft 代理端** 之一，由经�
 
 如果你开的是 mod 群组服务器，那么强烈推荐使用 Velocity，因为他对 Forge 和 Fabric 服务端做了特别的适配
 
-当然，Mod 服务端原生不支持 Velocity，需要安装让 Mod 端支持 Velocity 的 Mod
+当然，mod 服务端原生不支持 Velocity，需要安装让 mod 端支持 Velocity 的 mod
 
-- Fabric 端支持 Velocity Mod：[CrossTitch](https://www.curseforge.com/minecraft/mc-mods/crossstitch)
+- Fabric 端支持 Velocity mod：[CrossTitch](https://www.curseforge.com/minecraft/mc-mods/crossstitch)
 
-- Fabric 端支持 Velocity Mod：[FabricProxy-Lite](https://modrinth.com/mod/fabricproxy-lite)
+- Fabric 端支持 Velocity mod：[FabricProxy-Lite](https://modrinth.com/mod/fabricproxy-lite)
 
-- Forge 端支持 Velocity Mod：[Proxy Compatible Forge](https://modrinth.com/mod/proxy-compatible-forge)
+- Forge 端支持 Velocity mod：[Proxy Compatible Forge](https://modrinth.com/mod/proxy-compatible-forge)
 
 ## FAQ
 
@@ -81,7 +81,7 @@ A: 如果你的服务器会出现这种情况：
 [connected player] player1 (/localhost: 58943): kicked from server hub: Invalid payload REGISTER!
 ```
 
-这种情况一般发生在插件服群组中。当有些人使用 Mod 客户端进入服务器时，有可能出现这种问题。
+这种情况一般发生在插件服群组中。当有些人使用 mod 客户端进入服务器时，有可能出现这种问题。
 
 如果你使用 Paper (或者其他 Fork 版本) 1.12.2 或者以上的服务端，你可以在启动脚本中添加 flag `-Dpaper.disableChannelLimit=true` 来解决这个问题
 
@@ -89,8 +89,8 @@ A: 如果你的服务器会出现这种情况：
 
 5. Q：在加入到 Froge 服务器时 readTimeout
 
-A: 一句话，Mod 太多太大导致连接时间延长了。
-你可以减少服务器的 Mod 数量或者在 Velocity 配置文件中设置 `read-timeout` 的值，同时在你的 Forge 子服的启动参数中添加 `-Dfml.readTimeout` 参数来提高阈值。
+A: 一句话，mod 太多太大导致连接时间延长了。
+你可以减少服务器的 mod 数量或者在 Velocity 配置文件中设置 `read-timeout` 的值，同时在你的 Forge 子服的启动参数中添加 `-Dfml.readTimeout` 参数来提高阈值。
 比如，你想设置你的 readTimeout 时间到 120 秒
 那么你可以设置：
 

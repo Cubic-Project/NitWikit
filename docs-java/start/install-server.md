@@ -7,11 +7,11 @@ sidebar_position: 3
 
 :::tip
 
-该教程是为 **纯 Mod 服** 所编写的，如果你正在使用插件或混合端，那么就不需要安装服务端这一步，直接前往下一篇教程 [开启服务端](launch-server.md)
+该教程是为 **纯 mod 服** 所编写的，如果你正在使用插件或混合端，那么就不需要安装服务端这一步，直接前往下一篇教程 [开启服务端](launch-server.md)
 
 :::
 
-全篇以 1.20.4 Mod 服务端安装为例子，如果看不懂可以使用 [笨蛋脚本](https://script.8aka.org/mod-installer) **(目前支持
+全篇以 1.20.4 mod 服务端安装为例子，如果看不懂可以使用 [笨蛋脚本](https://script.8aka.org/mod-installer) **(目前支持
 Forge/NeoForge/Fabric)**
 
 import Tabs from '@theme/Tabs';
@@ -131,7 +131,7 @@ java -jar <你下载的安装器的文件名> --installServer
 </TabItem>
 <TabItem value="ignite" label="Ignite">
 
-适用于 Paper 的 Mod 框架 (**这不是混合端**)，目前在用的主要有 CraftEngine
+适用于 Paper 的 mod 框架 (**这不是混合端**)，目前在用的主要有 CraftEngine
 
 首先前往 [GitHub](https://github.com/vectrix-space/ignite/releases) 下载 Ignite，放到服务端根目录
 
@@ -151,7 +151,7 @@ java -Xms2G -Xmx2G  -Dignite.locator=paper -Dignite.paper.jar=核心名.jar -jar
 
 :::tip
 
-安装的 Mod 仅限于支持 Ignite 的 Mod、Forge 和 Fabric 等的 mod 不可以加载
+安装的 mod 仅限于支持 Ignite 的 mod、Forge 和 Fabric 等的 mod 不可以加载
 
 :::
 

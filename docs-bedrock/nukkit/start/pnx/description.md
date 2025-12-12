@@ -8,7 +8,7 @@ sidebar_position: 1
 ## 什么是 PowerNukkitX
 
 PowerNukkitX（简称 PNX）是由包括 BlocklyNukkit 团队在内的中国 Nukkit 开发者们负责开发维护的 Nukkit 分支版本，
-修复了众多 BUG，改善了性能，及时跟进新版本支持、支持 1.19 所有新方块和新物品、支持新版下界、支持史诗地形生成器 (Terra)。
+修复了众多 bug，改善了性能，及时跟进新版本支持、支持 1.19 所有新方块和新物品、支持新版下界、支持史诗地形生成器 (Terra)。
 在这些大更改的情况下，PNX 仍然保持了良好的插件兼容性，Nukkit 生态中的数千个插件仍然可以在 PNX 上运行。
 
 得益于完全开源的代码，您在遵守开源协议的情况下使用 PowerNukkitX 没有任何法律风险，

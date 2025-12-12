@@ -193,7 +193,7 @@ command inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 
 
 ![](_images/memory_10.png)
 
-此方法 op 不受影响，但适用性没权限广，因为一些插件只支持判断权限
+此方法 OP 不受影响，但适用性没权限广，因为一些插件只支持判断权限
 
 :::warning
 
