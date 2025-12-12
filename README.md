@@ -31,11 +31,11 @@
 
 - [GitHub](https://github.com/Cubic-Project/NitWikit)
 - [MineBBS](https://www.minebbs.com/threads/nitwikit-geyser.26356/)
-- [klpbbs](https://klpbbs.com/forum.php?mod=viewthread&tid=136184&page=1&extra=#pid10518779)
+- [苦力怕论坛](https://klpbbs.com/forum.php?mod=viewthread&tid=136184&page=1&extra=#pid10518779)
 - [九域](https://bbs.mc9y.net/threads/1624/)
 - [暮光方块论坛](https://bbs.tsfk.top/threads/399/)
-- [mcbbs 纪念版](https://mcbbs.co/thread-103-1-1.html)
-- [mcutc 论坛](https://bbs.mcutc.cn/threads/560/)
+- [MCBBS 纪念版](https://mcbbs.co/thread-103-1-1.html)
+- [MCUTCBBS](https://bbs.mcutc.cn/threads/560/)
 - [HiMCBBS](https://www.himcbbs.com/threads/nitwikit-geyser.420/)
 
 # 🔨 构建文档

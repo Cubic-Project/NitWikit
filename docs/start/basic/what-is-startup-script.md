@@ -88,6 +88,6 @@ goto start
 while [ true ]; do
     java ..... -jar 核心名.jar --nogui
     echo 服务器自动重启中
-    echo 同时按下 CTRL + C 关服.
+    echo 同时按下 Ctrl + C 关服.
 done
 ```

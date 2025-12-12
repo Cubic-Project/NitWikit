@@ -167,3 +167,5 @@ sidebar_position: 100
 - [ ] 检查所有代码块高亮的语言（特别是 kether 和 skript），以及内容格式（注释格式）
 - [ ] 应该重命名所有 Essentials 为 EssentialsX
 - [ ] docs-java/process/redstone/plugin.md 中 purpur 介绍错误
+- [ ] 是否需要规范 ～ 连接符和顿号 (需团队内部讨论)
+- [ ] 精简 docs/advance/management/management.md，看小杰评论
