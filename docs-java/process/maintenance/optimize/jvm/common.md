@@ -77,7 +77,7 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 或者设置环境变量（优先级更高）：
 
 ```bash
-# Linux/MacOS
+# Linux/macOS
 export PAPER_DEFAULT_CENTRAL_REPOSITORY=https://maven.aliyun.com/repository/central
 
 # Windows (PowerShell)
@@ -126,7 +126,7 @@ chcp 65001 # for Windows
 
 ## 更快的安全随机数生成器
 
-(仅适合 Linux 和 MacOS 系统，在 Windows 上无效)
+(仅适合 Linux 和 macOS 系统，在 Windows 上无效)
 (原版 Minecraft 仅在个人信息公钥签名中使用到 SecureRandom)
 
 ```text

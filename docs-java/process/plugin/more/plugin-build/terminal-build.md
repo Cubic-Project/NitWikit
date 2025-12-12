@@ -85,8 +85,8 @@ sidebar_position: 5
 
         ```bash
         # 使用 SDKMAN\! 安装（推荐）
-        curl -s "https://get.sdkman.io" | bash     # 安装 SDKMAN
-        source "$HOME/.sdkman/bin/sdkman-init.sh"  # 初始化 SDKMAN
+        curl -s "https://get.sdkman.io" | bash     # 安装 SDKMAN!
+        source "$HOME/.sdkman/bin/sdkman-init.sh"  # 初始化 SDKMAN!
         sdk install gradle                         # 安装 Gradle
 
         # 验证安装
@@ -98,11 +98,11 @@ sidebar_position: 5
 ### 1. 进入项目目录
 
 ```bash
-# Windows示例（如果项目在D盘的minecraft文件夹）
+# Windows 示例（如果项目在 D 盘的 minecraft文件夹）
 D:
 cd minecraft\plugins\MyPlugin
 
-# Linux/macOS示例
+# Linux/macOS 示例
 cd ~/minecraft/plugins/MyPlugin
 
 # 验证是否在正确目录
@@ -162,11 +162,11 @@ jar 文件通常命名为：`项目名-版本号.jar`
 Wrapper 是项目专用的 Gradle 启动器，不需要本地安装 Gradle。
 
 ```bash
-# Windows系统
-# 如果是第一次运行，可能需要下载Gradle
+# Windows 系统
+# 如果是第一次运行，可能需要下载 Gradle
 gradlew.bat clean build
 
-# Linux/macOS系统
+# Linux/macOS 系统
 chmod +x ./gradlew              # 给予执行权限
 ./gradlew clean build          # 清理并构建
 ```

@@ -90,7 +90,7 @@ Minecraft 后端服务器一般是不会对 Ping 进行过滤和记录的，这�
 
 ### 传输层 (也称为 L4)
 
-Minecraft JAVA 服务端采用 TCP 作为通信协议，所以你可能会遭受到如 TCP Flood (如 SYN Flood、ACK Flood) 等攻击方式。
+Minecraft Java 服务端采用 TCP 作为通信协议，所以你可能会遭受到如 TCP Flood (如 SYN Flood、ACK Flood) 等攻击方式。
 
 同上，这里列出了一些可行的方法 [网络层与传输层攻击防御](#网络层与传输层攻击防御)
 
@@ -368,7 +368,7 @@ Pro 计划 (25$ 每月)(约合人民币 178 元):
 [官网](https://tcpshield.com/)
 
 </TabItem>
-<TabItem value="playit" label="Playit.gg(推荐)">
+<TabItem value="playit" label="playit.gg (推荐)">
 
 性价比非常高，虽说 ~~正式用途是朋友联机~~
 

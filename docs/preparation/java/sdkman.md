@@ -213,7 +213,7 @@ java -Xmx4G -Xms4G -jar server.jar nogui
 :::warning
 
 1. 使用 `sdk use` 命令只在当前终端会话中生效
-2. 如果需要在启动脚本中使用，必须先初始化 SDKMAN 环境
+2. 如果需要在启动脚本中使用，必须先初始化 SDKMAN! 环境
 
 :::
 

@@ -118,7 +118,7 @@ title: 手机直装模板
 
 ## 构建
 
-首先你需要安装 Android Studio，使用 git 命令克隆仓库
+首先你需要安装 Android Studio，使用 `git` 命令克隆仓库
 
 ```bash
 git clone https://github.com/MrXiaoM/FoldCraftLauncher

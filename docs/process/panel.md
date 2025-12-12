@@ -79,11 +79,11 @@ systemctl stop mcsm-daemon.service
 # 切换到安装目录，你也可以换成其他的目录。
 cd /opt/
 
-# 下载 NodeJS 运行时环境，如果你已经安装了 NodeJS，请忽略此步骤。
+# 下载 Node.js 运行时环境，如果你已经安装了 Node.js，请忽略此步骤。
 wget https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-x64.tar.xz
 tar -xvf node-v20.11.0-linux-x64.tar.xz
 
-# 添加 NodeJS 到系统环境变量
+# 添加 Node.js 到系统环境变量
 ln -s /opt/node-v20.11.0-linux-x64/bin/node /usr/bin/node
 ln -s /opt/node-v20.11.0-linux-x64/bin/npm /usr/bin/npm
 

@@ -19,9 +19,9 @@ sidebar_position: 1
 
 前往 BDSX 开源仓库：[GitHub](https://github.com/bdsx/bdsx)
 
-1.如果未安装 git，请点击 `<>code` 按钮然后在显示的菜单中点击 `Download ZIP` 下载已经用 zip 打包好的源代码文件；
+1.如果未安装 Git，请点击 `<>code` 按钮然后在显示的菜单中点击 `Download ZIP` 下载已经用 zip 打包好的源代码文件；
 
-2.如果安装了 git，请使用 `cmd` cd 到一个空白文件夹后使用以下指令安装。
+2.如果安装了 Git，请使用 `cmd` cd 到一个空白文件夹后使用以下指令安装。
 
 ```bash
 git clone https://github.com/bdsx/bdsx.git

@@ -43,7 +43,7 @@ sidebar_position: 3
 
 （要在 iOS 16 或更高版本上使用 AltStore，您需要前往“设置”->“隐私和安全”->“开发者模式”在设备上启用开发者模式。）
 
-12. 从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 ipa 安装包。**（需要使用 github 账号才能继续下载）**
+12. 从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 ipa 安装包。**（需要使用 GitHub 账号才能继续下载）**
 
 ### 手机开启 JIT
 
@@ -107,7 +107,7 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除 16
 
 你需要打开你安装的“persistence helper”并且点击 Install TrollStore
 
-15. 从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。**（安装包需要使用 github 账号才能继续下载）**
+15. 从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。**（安装包需要使用 GitHub 账号才能继续下载）**
 
 16. 打开 Amethyst
 
@@ -129,13 +129,13 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除 16
 
 （如果重新启动，重新执行第六步）
 
-7. 从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。**（tipa 安装包需要使用 github 账号才能继续下载）**
+7. 从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。**（tipa 安装包需要使用 GitHub 账号才能继续下载）**
 
 8. 打开 Amethyst
 
 #### 以下方法支持 iOS/iPadOS 16.7 RC、17.0 beta 5~17.0
 
-1. 安装 python3 最新版本，[官网下载地址](https://www.python.org/downloads/)。
+1. 安装 Python3 最新版本，[官网下载地址](https://www.python.org/downloads/)。
 
 2. 点击此 [链接](https://www.i4.cn) 下载爱思助手电脑端并安装。
 
@@ -159,7 +159,7 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除 16
 
 9. 解锁您的设备，打开你覆盖的系统应用程序，点击 Install TrollStore
 
-10. 从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。**（在 GitHub Actions 需要使用 github 账号才能继续下载）**
+10. 从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。**（在 GitHub Actions 需要使用 GitHub 账号才能继续下载）**
 
 11. 打开 Amethyst
 
@@ -189,7 +189,7 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除 16
 
 9. 输入你的 appleID 和密码，点击确定
 
-10. 从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 ipa 安装包。**（需要使用 github 账号才能继续下载）**
+10. 从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 ipa 安装包。**（需要使用 GitHub 账号才能继续下载）**
 
 11. 点击文件管理->右上方的“+”->导入资源，导入你刚才下载的 IPA 文件
 

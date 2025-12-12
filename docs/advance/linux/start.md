@@ -97,7 +97,7 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS, mixed mode, shari
 
 设置别名
 
-确定你所使用的终端，此处以 `bash` 和 `zulu Java` 为例
+确定你所使用的终端，此处以 `bash` 和 `Azul Zulu` 为例
 
 `vim ~/.bashrc` 在这个文件末尾追加
 

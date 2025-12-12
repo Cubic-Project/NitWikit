@@ -57,11 +57,11 @@ sidebar_position: 3
 
 - `banned-ips.json`
 
-以 json 格式存放的被 ban IP 玩家的 UUID 及游戏名称等相关信息，一旦玩家被 banip，此 IP 将无法再进入服务器。
+以 JSON 格式存放的被 ban IP 玩家的 UUID 及游戏名称等相关信息，一旦玩家被 banip，此 IP 将无法再进入服务器。
 
 - `banned-players.json`
 
-以 json 格式存放了被 ban 玩家的 UUID 及游戏名称等相关信息，离线服 ban 玩家后换 ID 即可进入服务器，而正版服无法通过改名重新进入服务器。
+以 JSON 格式存放了被 ban 玩家的 UUID 及游戏名称等相关信息，离线服 ban 玩家后换 ID 即可进入服务器，而正版服无法通过改名重新进入服务器。
 
 - `bukkit.yml`
 
@@ -81,7 +81,7 @@ sidebar_position: 3
 
 - `ops.json`
 
-以 json 格式存放了 OP 玩家的 UUID 及游戏名称等相关信息。
+以 JSON 格式存放了 OP 玩家的 UUID 及游戏名称等相关信息。
 
 - `purpur.jar`
 

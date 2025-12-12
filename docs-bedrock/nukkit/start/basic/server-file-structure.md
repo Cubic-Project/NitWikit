@@ -12,7 +12,7 @@ sidebar_position: 1
 Nukkit Server/
 ├── nukkit-1.0-SNAPSHOT.jar //服务器核心
 ├── start.bat               // Windows 运行脚本
-├── start.sh                // linux 运行脚本
+├── start.sh                // Linux 运行脚本
 ├── start.command           // macOS 运行脚本
 ├── server.properties       // 服务端配置文件
 ├── permissions.yml         // 用于设置玩家权限的

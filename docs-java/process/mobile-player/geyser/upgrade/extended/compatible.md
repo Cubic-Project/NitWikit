@@ -20,7 +20,7 @@ on join:
         #如果玩家是通过 Floodgate 加入服务器就让控制台执行此指令
         if player is from floodgate: make console execute command "say 欢迎基岩版玩家 %player% 加入服务器!"
         #如不是就让控制台执行此指令
-        else: make console execute command "say 欢迎JAVA版玩家 %player% 加入服务器!"
+        else: make console execute command "say 欢迎Java版玩家 %player% 加入服务器!"
 ```
 
 ## LuckBedrock

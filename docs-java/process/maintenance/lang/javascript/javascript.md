@@ -86,6 +86,6 @@ GraalJS 有着 Nashorn 很多没有的功能 (虽然 Minecraft 不一定用得�
 - 更加安全，可以管控 JS 代码的执行权限
 - **支持重载全局层面的运算符**
 - 与 Nashorn 完全兼容 (需要开启选项)
-- 可以运行 WebAssembly,Python,Ruby
-- 可以使用 NodeJS 和 NPM
+- 可以运行 WebAssembly、Python、Ruby
+- 可以使用 Node.js 和 npm
 - ...

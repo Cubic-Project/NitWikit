@@ -9,7 +9,7 @@ Geyser 提供了自定义物品映射功能，可以为 CustomModelData 物品�
 
 ## Kas-tle 的 java2bedrock
 
-java2bedrock.sh (俗称转换器) 是一个自动资源包转换工具，可以将 JAVA 版的资源包转化成基岩版资源包的工具
+java2bedrock.sh (俗称转换器) 是一个自动资源包转换工具，可以将 Java 版的资源包转化成基岩版资源包的工具
 
 :::tip
 
@@ -41,7 +41,7 @@ java2bedrock.sh (俗称转换器) 是一个自动资源包转换工具，可以�
 
 :::tip
 
-你需要拥有一个 GitHUB 账号才可以
+你需要拥有一个 GitHub 账号才可以
 
 :::
 
@@ -93,7 +93,7 @@ AZPixel-Team 的 Java2Bedrock
 
 ![](./_images/CIMM1.jpg)
 
-我们来到 `服务端/plugins/geyser/custom_mappings` 目录，创建一个 json 文件用于 Geyser 映射自定义物品
+我们来到 `服务端/plugins/geyser/custom_mappings` 目录，创建一个 JSON 文件用于 Geyser 映射自定义物品
 
 ![](./_images/CIMM2.jpg)
 
@@ -127,7 +127,7 @@ AZPixel-Team 的 Java2Bedrock
 }
 ```
 
-json 文件不允许有注释，如果你要复制过去记得删除注释
+JSON 文件不允许有注释，如果你要复制过去记得删除注释
 
 保存，然后我们的自定义物品 Geyser 已经注册好了，接下来是基岩版资源包方面的教程
 

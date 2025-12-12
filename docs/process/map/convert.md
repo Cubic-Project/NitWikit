@@ -115,7 +115,7 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 
 #### BDS 局部导入
 
-在 JAVA 版做完建筑，使用 [Chunker](https://chunker.app/) 转换存档
+在 Java 版做完建筑，使用 [Chunker](https://chunker.app/) 转换存档
 
 将建筑存档与服务端存档导入本地基岩版客户端
 
@@ -125,7 +125,7 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 
 具体使用方法请看官方文档，这里不过多赘述
 
-[WE-Addon 结构的使用](https://worldedit-be-docs.readthedocs.io/en/stable/usage/structures/)
+[WorldEdit-Addon 结构的使用](https://worldedit-be-docs.readthedocs.io/en/stable/usage/structures/)
 
 :::info
 
@@ -145,7 +145,7 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 
 #### NKX 局部导入
 
-在 JAVA 版做完建筑，使用 [WorldEdit](https://modrinth.com/plugin/worldedit) / [FAWE](https://modrinth.com/plugin/fastasyncworldedit) 选区导出 `.schematic` 文件
+在 Java 版做完建筑，使用 [WorldEdit](https://modrinth.com/plugin/worldedit) / [FAWE](https://modrinth.com/plugin/fastasyncworldedit) 选区导出 `.schematic` 文件
 
 于 NKX 服务端内使用 [FastAsyncWorldEdit-Nukkit](https://cloudburstmc.org/resources/fastasyncworldedit.30/) 导入 `.schematic` 文件粘贴到指定位置
 
@@ -159,4 +159,4 @@ schematic 导入粘贴可能会出现方块状态不正确的情况，例如楼�
 
 #### NKX 存档导入
 
-NukkitX 通用 JAVA 版 1.12.2 的世界，可直接替换进去
+NukkitX 通用 Java 版 1.12.2 的世界，可直接替换进去

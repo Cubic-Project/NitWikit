@@ -151,4 +151,4 @@ java -version
 
 ## 本节视频教程
 
-[**点此前往 B 站**: 笨蛋级 MC 开服教程 - 第三集 P1:实机演示安装 JAVA](https://www.bilibili.com/video/BV1eT42167iZ/)
+[**点此前往 B 站**: 笨蛋级 MC 开服教程 - 第三集 P1:实机演示安装 Java](https://www.bilibili.com/video/BV1eT42167iZ/)

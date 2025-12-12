@@ -50,7 +50,7 @@ import TabItem from '@theme/TabItem';
 
 :::
 
-[ModelEngineDecoration](https://www.spigotmc.org/resources/106916/) 是 ModelEngine V4 的一个扩展，可以把生物实体变成装饰
+[ModelEngineDecoration](https://www.spigotmc.org/resources/106916/) 是 ModelEngine v4 的一个扩展，可以把生物实体变成装饰
 
 </TabItem>
 <TabItem value="bm" label="BetterModel">

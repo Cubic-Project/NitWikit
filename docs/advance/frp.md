@@ -47,7 +47,7 @@ import TabItem from '@theme/TabItem';
 不同的 Linux 发行版更新方法大同小异
 
 <Tabs>
-<TabItem value="debian" label="Debian/Ubuntu Linux" default>
+<TabItem value="debian" label="Debian/Ubuntu" default>
 
 ```bash
 apt-get update && apt-get upgrade -y
@@ -274,12 +274,12 @@ remotePort = 19132
 2. systemd 省心，有点复杂
 
 <Tabs>
-<TabItem value="screen" label="Screen" default>
+<TabItem value="screen" label="screen" default>
 
 确保你的系统上有 `screen` 包，没有的话安装它们：
 
 <Tabs>
-<TabItem value="debian" label="Debian/Ubuntu Linux" default>
+<TabItem value="debian" label="Debian/Ubuntu" default>
 
 ```bash
 apt-get install screen
@@ -310,7 +310,7 @@ screen -dR frps frps
 ```
 
 </TabItem>
-<TabItem value="systemd" label="Systemd">
+<TabItem value="systemd" label="systemd">
 
 在 Linux 系统下，使用 systemd 可以方便地控制 frps 服务端的启动、停止、配置后台运行以及开机自启动。
 
@@ -366,12 +366,12 @@ sudo systemctl enable frps
 <Tabs>
 <TabItem value="linux" label="Linux 客户端" default>
 
-##### 使用 Screen
+##### 使用 screen
 
 确保你的系统上有 `screen` 包：
 
 <Tabs>
-<TabItem value="debian" label="Debian/Ubuntu Linux" default>
+<TabItem value="debian" label="Debian/Ubuntu" default>
 
 ```bash
 apt-get install screen
@@ -401,7 +401,7 @@ screen -dR frpc frpc
 # 键盘上按 Ctrl + A + D 退出
 ```
 
-##### 使用 Systemd
+##### 使用 systemd
 
 <!--markdownlint-disable ol-prefix-->
 

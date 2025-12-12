@@ -11,21 +11,21 @@ sidebar_position: 1
 
 :::tip
 
-你甚至不需要安装 VC 运行库，自动脚本会自行安装常用运行库，还会自动配置 Lip 镜像以加速下载
+你甚至不需要安装 VC 运行库，自动脚本会自行安装常用运行库，还会自动配置 lip 镜像以加速下载
 
 :::
 
-## 方法一：使用 Lip 进行一键配置
+## 方法一：使用 lip 进行一键配置
 
-### 准备工作 - 安装 Lip
+### 准备工作 - 安装 lip
 
-首先，从 [GitHub](https://github.com/lippkg/lip/releases/latest) 下载 Lip 的最新版本的应用
+首先，从 [GitHub](https://github.com/lippkg/lip/releases/latest) 下载 lip 的最新版本的应用
 
-然后，解压文件到你想要安装 Lip 的位置。
+然后，解压文件到你想要安装 lip 的位置。
 
 最后，将该位置添加到 PATH 环境变量中。
 
-要检查是否成功安装 Lip，请在终端中运行 `lip --version`。你应该看到刚刚安装的 Lip 的版本。
+要检查是否成功安装 lip，请在终端中运行 `lip --version`。你应该看到刚刚安装的 lip 的版本。
 
 如果你使用的是 Windows 系统，你也可以在 GitHub 中下载 `.exe` 后缀的安装程序来安装。
 
@@ -39,7 +39,7 @@ sidebar_position: 1
 lip install github.com/LiteLDev/LeviLamina
 ```
 
-Lip 会自动下载 BDS 并配置 LeviLamina 加载器
+lip 会自动下载 BDS 并配置 LeviLamina 加载器
 
 :::info
 
