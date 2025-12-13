@@ -23,7 +23,6 @@ code {
     font-size: 0.875rem;
     line-height: 1.7;
     position: relative;
-    z-index: 1;
 }
 
 pre code {

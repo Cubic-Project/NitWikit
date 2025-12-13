@@ -1,8 +1,8 @@
-name: Test
+name: Test Pull Request
 
 on:
-    push:
-        branches: ["main"]
+    pull_request:
+        types: [opened, reopened, synchronize]
 
 jobs:
     deploy:

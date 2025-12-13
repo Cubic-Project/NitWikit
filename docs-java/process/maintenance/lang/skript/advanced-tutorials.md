@@ -17,7 +17,7 @@ sidebar_position: 3
 
 - 正确编写插件是很困难的，特别是如果你是 **Java** 的新手。 **skript-reflect** 将为你负重前行，让你专注于编写高质量的 **Skript** 脚本。
 
-- 用 **skript-reflect** 编写的扩展可以快速测试，就像任何其他脚本一样。与需要编译和完全重新启动服务器的 **Skript** 插件不同， **skript-reflect** 脚本可以使用简单的 `sk reload`。
+- 与通常需要编译并重启服务器才能生效的 Java 插件不同，使用 skript-reflect 编写的 Skript 脚本可以通过简单的 sk reload 快速重载并测试。
 
 - 在 sk 脚本中实现某些功能可能需要使用反射来访问私有方法、字段和构造函数。 **skript-reflect** 的内置反射允许你无缝访问这些私有成员。
 
@@ -33,7 +33,7 @@ import:
 
 # 监听事件
 on TPARequestEvent:
-    set {_ess_User} to event.getTarget()   # 获取User对象
+    set {_ess_IUser} to event.getTarget()   # 获取IUser对象
     set {_player} to {_ess_IUser}.getBase()   # 获取Player对象
     # 判断玩家
     if {_player} is player("lilingfeng"):
@@ -73,7 +73,7 @@ on TPARequestEvent:
 
 ```skript
     if {_player} is player("lilingfeng"):
-        send "&cliliangfeng是我的不准tpa到她那里🥵"
+        send "&clilingfeng是我的不准tpa到她那里🥵"
         cancel event
 ```
 
