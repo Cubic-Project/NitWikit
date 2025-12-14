@@ -65,7 +65,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="AQQBot" label="AQQBot">
 
-| AQQBot           | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge)                                  |
+| AQQBot           | ![](https://img.shields.io/badge/状态-不再积极维护-yellow?style=for-the-badge)                                  |
 | ---------------- | ---------------------------------------------------------------------------------------------------------- |
 | 相关链接         | [Github 仓库](https://github.com/alazeprt/AQQBot)                                                          |
 | 作者             | [alazeprt](https://github.com/alazeprt)                                                                    |
@@ -83,6 +83,17 @@ import TabItem from '@theme/TabItem';
 | 支持 **Java 版** | Bukkit 及其分支                                                                                                                                                                                               |
 | 介绍             | 一个可以安装在 Bukkit 等服务端上的 QQ 机器人插件，并且提供一些 API 帮助开发者拓展功能，配置复杂但效果较好                                                                                                     |
 | 下载             | [官网下载](https://bbs.mcxin.cn/archives/216)                                                                                                                                                                 |
+
+</TabItem>
+<TabItem value="NeoBot" label="NeoBot">
+
+| NeoBot        | ![](https://img.shields.io/badge/状态-积极维护-green?style=for-the-badge)                                                                                                                                        |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 相关链接         | [Github 仓库](https://github.com/NeoVoxelDev/NeoBot) \| [文档站](https://neobot-docs.netlify.app/)                                                                                                             |
+| 作者             | [NeoVoxelDev](https://github.com/NeoVoxelDev)                                                                                                                                                                  |
+| 支持 **Java 版** | Bukkit 及其分支 \| Folia \| Velocity                                                                                                                                                                           |
+| 介绍             | 一个轻量级、模块化且支持脚本化的 QQ 机器人插件，作为 AQQBot 的继任者，提供全功能脚本化能力，赋予用户高度自定义的灵活性                                                                                            |
+| 下载             | [Github](https://github.com/NeoVoxelDev/NeoBot/releases)                                                                                                                                                                 |
 
 </TabItem>
 </Tabs>
