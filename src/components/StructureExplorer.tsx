@@ -47,6 +47,7 @@ const PrefixLine = ({ levels }: PrefixLineProps): JSX.Element => {
 
 export default function ConfigurationStructureDiagram({ data = [] }: StructureExplorerProps = {}): JSX.Element {
     const [popupNode, setPopupNode] = useState<ExplorerNode | null>(null);
+    const [showDescriptionBelow, setShowDescriptionBelow] = useState(false);
 
     const renderNode = (node: ExplorerNode, level: number = 0, isLast: boolean = true, ancestors: boolean[] = []) => {
         const isFolder = node.type === "folder";
@@ -109,30 +110,39 @@ export default function ConfigurationStructureDiagram({ data = [] }: StructureEx
                                 <span className={"config-node-contents-wrapper"}>{node.name}</span>
                             </span>
                         )}
-                        {hasDescription && (
-                            <div style={{ position: "relative", display: "inline-block" }}>
-                                <span
-                                    className={"config-explorer-popup-window-open-tag"}
-                                    onMouseEnter={handleNodeOpening}
-                                >
-                                    ⓘ
-                                </span>
-                                <div className={"config-explorer-popup-window-container"}>
-                                    <div
-                                        className={clsx(
-                                            "config-explorer-popup-window",
-                                            popupNode !== node && "display--none"
-                                        )}
+                        {hasDescription &&
+                            (showDescriptionBelow ? null : (
+                                <div style={{ position: "relative", display: "inline-block" }}>
+                                    <span
+                                        className={"config-explorer-popup-window-open-tag"}
+                                        onMouseEnter={handleNodeOpening}
                                     >
-                                        <strong>简介:</strong>
-                                        <br />
-                                        {node.description}
+                                        ⓘ
+                                    </span>
+                                    <div className={"config-explorer-popup-window-container"}>
+                                        <div
+                                            className={clsx(
+                                                "config-explorer-popup-window",
+                                                popupNode !== node && "display--none"
+                                            )}
+                                        >
+                                            <strong>简介:</strong>
+                                            <br />
+                                            {node.description}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        )}
+                            ))}
                     </div>
                 </div>
+
+                {showDescriptionBelow && hasDescription && (
+                    <div className="config-explorer-description-below">
+                        <PrefixLine levels={ancestors} />
+                        <span className="tree-line">{isLast ? "    " : "│   "}</span>
+                        <div className="config-explorer-description-text">{node.description}</div>
+                    </div>
+                )}
 
                 {hasChildren &&
                     node.children &&
@@ -147,6 +157,29 @@ export default function ConfigurationStructureDiagram({ data = [] }: StructureEx
 
     return (
         <div>
+            <div style={{ marginBottom: "12px" }}>
+                <button
+                    onClick={() => setShowDescriptionBelow(!showDescriptionBelow)}
+                    style={{
+                        padding: "6px 12px",
+                        fontSize: "14px",
+                        borderRadius: "6px",
+                        border: "1px solid",
+                        borderColor: showDescriptionBelow
+                            ? "var(--ifm-color-primary)"
+                            : "var(--ifm-color-emphasis-300)",
+                        backgroundColor: showDescriptionBelow
+                            ? "var(--ifm-color-primary)"
+                            : "var(--ifm-background-color)",
+                        color: showDescriptionBelow ? "white" : "var(--ifm-font-color-base)",
+                        cursor: "pointer",
+                        fontWeight: "500",
+                        transition: "all 0.2s ease"
+                    }}
+                >
+                    {showDescriptionBelow ? "📖 隐藏说明" : "📖 显示说明"}
+                </button>
+            </div>
             <pre className={"config-explorer-code-outer-container"}>
                 {data.map((item) => (
                     <div key={item.name}>{renderNode(item)}</div>

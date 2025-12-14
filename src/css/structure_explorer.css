@@ -1,161 +1,105 @@
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
 /* Outer Container */
 .config-explorer-code-outer-container {
-    overflow: visible;
-    display: flex;
-    flex-direction: column;
+    @apply overflow-visible flex flex-col;
 }
 
 /* File Node */
 .config-explorer-file-node {
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    width: fit-content;
-    flex-shrink: 0;
-    white-space: nowrap;
-    cursor: default;
+    @apply flex items-center rounded-[10px] w-fit shrink-0 whitespace-nowrap cursor-default;
 }
 
-.config-explorer-file-node-with-link {
-    font-weight: bold;
+.config-explorer-file-node-with-link,
+.config-explorer-file-folder-node-with-link {
+    @apply font-bold;
 }
 
-.config-explorer-file-node-with-link:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    text-decoration: none;
+.config-explorer-file-node-with-link:hover,
+.config-explorer-file-folder-node-with-link:hover {
+    @apply bg-black/10 cursor-pointer no-underline;
 }
 
 /* File Folder Node */
 .config-explorer-file-folder-node {
-    display: flex;
-    align-items: center;
-    width: fit-content;
+    @apply flex items-center w-fit cursor-default no-underline;
     color: var(--config-node-highlight-text-color);
 }
 
-.config-explorer-file-folder-node:hover {
-    cursor: default;
-    text-decoration: none;
-    color: var(--config-node-highlight-text-color);
-}
-
-/* File Folder Node with Link */
 .config-explorer-file-folder-node-with-link {
-    font-weight: bold;
     color: var(--ifm-link-color);
-}
-
-.config-explorer-file-folder-node-with-link:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--ifm-link-color);
-}
-
-/* Popup Window Container */
-.config-explorer-popup-window-container {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 /* Popup Window */
+.config-explorer-popup-window-container {
+    @apply relative inline-block align-middle;
+}
+
 .config-explorer-popup-window {
+    @apply absolute p-2.5 rounded border-0 whitespace-normal z-20;
     background-color: var(--config-node-popup-background-color);
-    padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    margin-left: 5px;
-    margin-top: -5px;
-    width: max-content;
     min-width: 200px;
     max-width: 500px;
-    z-index: 20;
-    white-space: normal;
-    position: absolute;
+    width: max-content;
     left: 20px;
     top: -10px;
+    margin-left: 5px;
+    margin-top: -5px;
 }
 
 .config-explorer-popup-window-open-tag {
-    z-index: 5;
-    margin-left: 3px;
+    @apply z-5 ml-0.75 cursor-pointer font-normal hover:font-bold;
 }
 
-.config-explorer-popup-window-open-tag:hover {
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* Tree Line Components */
-.tree-line {
-    font-size: 14px;
-    color: #bbbbbb;
-    display: inline-block;
-    font-family: monospace;
-    letter-spacing: 0;
-    line-height: 1;
-}
-
+/* Tree Components */
+.tree-line,
 .prefix-line {
-    font-size: 14px;
-    color: #bbbbbb;
-    display: inline-block;
-    font-family: monospace;
-    letter-spacing: 0;
-    line-height: 1;
+    @apply text-sm text-slate-400 inline-block font-mono leading-none;
 }
 
 /* Node Icon */
 .config-explorer-node-icon {
-    font-size: 23px;
+    @apply text-2xl mr-1.25;
+    color: var(--config-node-highlight-text-color);
 }
 
-/* Node */
-.config-explorer-node {
-    align-items: flex-start;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
+/* Node Structure */
+.config-explorer-node,
+.config-explorer-node-noflex {
+    @apply items-start relative flex flex-col shrink-0;
+}
+
+.config-explorer-node-noflex {
+    @apply my-1.25;
 }
 
 .config-explorer-node-header {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    @apply flex items-center;
 }
 
 .config-explorer-node-content {
-    display: flex;
-    align-items: center;
-}
-
-/* Node without Flex */
-.config-explorer-node-noflex {
-    align-items: flex-start;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0 5px 0;
+    @apply flex items-center;
 }
 
 .config-node-contents-wrapper {
-    margin: 0 5px 0 0;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
+    @apply mx-1.25 flex items-center text-base;
 }
 
-.config-explorer-icon {
-    /* Make it go back to the original color */
-    color: var(--config-node-highlight-text-color);
-    margin-right: 5px;
+/* Description Below */
+.config-explorer-description-below {
+    @apply flex items-start my-0.5 py-0.5 text-xs leading-relaxed;
 }
 
-/* Display None */
+.config-explorer-description-text {
+    @apply text-gray-400 whitespace-normal wrap-break-word flex-1;
+    max-width: 600px;
+}
+
+/* Utility */
 .display--none {
-    display: none;
+    @apply hidden;
 }
