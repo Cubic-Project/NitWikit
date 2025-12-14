@@ -3,19 +3,16 @@ title: 插件安装教程
 sidebar_position: 1
 ---
 
+import StructureExplorer from "@site/src/components/StructureExplorer";
+import { levilamnaPluginStructure } from "@site/src/data/structures";
+
 # 插件安装教程
 
 ## 插件的结构
 
 LeviLamina 的插件是以文件夹的格式存在的。通常插件文件夹中包含以下内容：
 
-<!-- Use c to highlight comments -->
-```c
-插件文件夹
-├─manifest.json         // 插件元数据文件，该文件必须存在并格式正确才能被 LeviLamina 识别
-├─(插件配置文件和数据库)... // 插件生成的配置文件和数据库等，大多数插件的配置文件名叫 config.json，并以一个文件夹或一个 .db 或 .json 后缀文件作为数据库
-├─(插件代码或二进制文件)... // 插件源代码，通常是 .js、.lua、.dll 后缀的文件。不要删除，修改或重命名文件，否则可能导致插件无法运行！
-```
+<StructureExplorer data={levilamnaPluginStructure} />
 
 通常情况下，你不需要手动修改 `manifest.json` 这个文件，因为插件作者会将它事先配置好。如果有特殊插件需要手动配置这个文件，该插件文档应该会给出相应教程。
 

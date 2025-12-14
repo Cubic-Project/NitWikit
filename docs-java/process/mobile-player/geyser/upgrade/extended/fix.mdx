@@ -3,6 +3,9 @@ title: 游戏机制
 sidebar_position: 2
 ---
 
+import StructureExplorer from "@site/src/components/StructureExplorer";
+import { geyserExtensionStructure } from "@site/src/data/structures";
+
 # 游戏机制
 
 目前，你服务器的基岩版玩家可能会遇到一些问题
@@ -158,13 +161,7 @@ Broadcaster 通过模拟 Xbox Live 客户端，将你的 Geyser/基岩版服务�
 
 2. **安装扩展**
 
-    ```text
-    服务器根目录/
-    ├── plugins/
-    │   └── Geyser-Spigot/
-    │       └── extensions/
-    │           └── MCXboxBroadcastExtension.jar
-    ```
+    <StructureExplorer data={geyserExtensionStructure} />
 
 3. **重启服务器**
     - 重启服务器以加载扩展

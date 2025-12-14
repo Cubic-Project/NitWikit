@@ -511,6 +511,16 @@ button[class*="colorModeToggle"]:active::after {
     }
 }
 
+[data-theme="dark"] {
+    --config-node-highlight-text-color: white;
+    --config-node-popup-background-color: #1c1e21;
+}
+
+[data-theme="light"] {
+    --config-node-highlight-text-color: black;
+    --config-node-popup-background-color: white;
+}
+
 /* 尊重用户减少动画偏好 */
 @media (prefers-reduced-motion: reduce) {
     *,

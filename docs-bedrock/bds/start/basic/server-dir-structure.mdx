@@ -3,42 +3,20 @@ title: 服务端结构
 sidebar_position: 1
 ---
 
+import StructureExplorer from "@site/src/components/StructureExplorer";
+import { bdsServerStructure } from "@site/src/data/structures";
+
 # 服务端结构
 
 我们先来简单看一眼 BDS **开服后** 的文件夹结构：
 
-<!-- Use c to highlight comments -->
-```c
-BDS服务端文件夹
-├─behavior_packs                  // 安装新行为包的文件夹
-├─config                          // 没啥用
-├─definitions                     // 貌似是生成群系的内容
-├─development_behavior_packs      // 为开发者提供安装新行为包的文件夹
-├─development_resource_packs      // 为开发者提供安装新资源包的文件夹
-├─development_skin_packs          // 为开发者提供安装新皮肤包的文件夹
-├─resource_packs                  // 安装新资源包的文件夹
-├─world-templates                 // 世界模板
-├─worlds                          // 主世界文件夹
-│  └─Bedrock level                // 世界存档
-│    ├─db                         // 存档数据文件夹
-│    ├─level_dat                  // 存档设定
-│    ├─level.dat_old              // 存档设定 (旧)
-│    └─level_name.txt             // 存档名称
-├─allowlist.json                  // 白名单文件
-├─bedrock_server.exe              // 服务端启动程序
-├─bedrock_server.pdb              // 程序数据库文件
-├─bedrock_server_how_to.html      // 如何使用 BDS 服务器的官方指南 (没多大用处，看看就行)
-├─permissions.json                // 管理员 (OP) 玩家相关数据
-├─release-notes.txt               // 服务端发行版本详情
-├─server.properties               // 配置文件
-└─valid_known_packs.json          // 已知的附加包
-```
+<StructureExplorer data={bdsServerStructure} />
 
-<!-- :::info
+{/* :::info
 
 对于世界文件夹的详细说明，请前往 **[世界文件架构](what-is-world.md)**
 
-::: -->
+::: */}
 
 ## 根目录下的一些文件
 

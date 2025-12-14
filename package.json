@@ -34,6 +34,7 @@
         "@docusaurus/theme-search-algolia": "^3.9.2",
         "@giscus/react": "^3.1.0",
         "@gracefullight/docusaurus-plugin-microsoft-clarity": "^1.0.0",
+        "@iconify/react": "^6.0.2",
         "@mdx-js/react": "^3.1.1",
         "antd": "^6.1.0",
         "clsx": "^2.1.1",
