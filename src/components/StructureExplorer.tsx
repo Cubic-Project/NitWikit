@@ -45,9 +45,7 @@ const PrefixLine = ({ levels }: PrefixLineProps): JSX.Element => {
     );
 };
 
-export default function ConfigurationStructureDiagram({
-    data = []
-}: StructureExplorerProps = {}): JSX.Element {
+export default function ConfigurationStructureDiagram({ data = [] }: StructureExplorerProps = {}): JSX.Element {
     const [popupNode, setPopupNode] = useState<ExplorerNode | null>(null);
 
     const renderNode = (node: ExplorerNode, level: number = 0, isLast: boolean = true, ancestors: boolean[] = []) => {
