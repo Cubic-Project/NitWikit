@@ -88,14 +88,6 @@
     cursor: pointer;
 }
 
-/* Indentation Arrow */
-.indentation-arrow {
-    font-size: 14px;
-    color: #bbbbbb;
-    margin: 0 8px 0 0;
-    display: inline-block;
-}
-
 /* Tree Line Components */
 .tree-line {
     font-size: 14px;

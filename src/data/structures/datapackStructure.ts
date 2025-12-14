@@ -25,7 +25,7 @@ export const datapackStructure: ExplorerNode[] = [
                         children: [
                             {
                                 name: "特定进度名.json",
-                                type: "file",
+                                type: "structure",
                                 children: [
                                     {
                                         name: "display",
@@ -56,7 +56,7 @@ export const datapackStructure: ExplorerNode[] = [
                                         children: [
                                             {
                                                 name: "特定条件名.json",
-                                                type: "file",
+                                                type: "structure",
                                                 children: [
                                                     {
                                                         name: "trigger",
@@ -82,7 +82,7 @@ export const datapackStructure: ExplorerNode[] = [
                         children: [
                             {
                                 name: "特定物品或实体的战利品表.json",
-                                type: "file",
+                                type: "structure",
                                 children: [
                                     {
                                         name: "pools",
@@ -91,7 +91,7 @@ export const datapackStructure: ExplorerNode[] = [
                                         children: [
                                             {
                                                 name: "特定战利品池.json",
-                                                type: "file",
+                                                type: "structure",
                                                 children: [
                                                     {
                                                         name: "rolls",
@@ -105,7 +105,7 @@ export const datapackStructure: ExplorerNode[] = [
                                                         children: [
                                                             {
                                                                 name: "特定条目.json",
-                                                                type: "file",
+                                                                type: "structure",
                                                                 children: [
                                                                     {
                                                                         name: "type",
@@ -127,7 +127,7 @@ export const datapackStructure: ExplorerNode[] = [
                                                                         children: [
                                                                             {
                                                                                 name: "特定函数.json",
-                                                                                type: "file",
+                                                                                    type: "structure",
                                                                                 children: [
                                                                                     {
                                                                                         name: "function",
@@ -163,7 +163,7 @@ export const datapackStructure: ExplorerNode[] = [
                         children: [
                             {
                                 name: "特定合成配方.json",
-                                type: "file",
+                                type: "structure",
                                 children: [
                                     {
                                         name: "type",
@@ -183,7 +183,7 @@ export const datapackStructure: ExplorerNode[] = [
                                         children: [
                                             {
                                                 name: "特定材料.json",
-                                                type: "file",
+                                                type: "structure",
                                                 children: [
                                                     {
                                                         name: "item",
@@ -230,7 +230,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定方块标签.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "replace",
@@ -252,7 +252,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定流体标签.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "replace",
@@ -274,7 +274,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定物品标签.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "replace",
@@ -296,7 +296,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定实体类型标签.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "replace",
@@ -318,7 +318,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定函数标签.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "replace",
@@ -340,7 +340,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定谓词标签.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "replace",
@@ -362,7 +362,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定伤害类型标签.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "replace",
@@ -384,7 +384,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定附魔标签.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "replace",
@@ -406,7 +406,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定游戏事件标签.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "replace",
@@ -441,7 +441,7 @@ export const datapackStructure: ExplorerNode[] = [
                         children: [
                             {
                                 name: "特定谓词.json",
-                                type: "file",
+                                type: "structure",
                                 children: [
                                     {
                                         name: "condition",
@@ -463,7 +463,7 @@ export const datapackStructure: ExplorerNode[] = [
                         children: [
                             {
                                 name: "特定维度类型.json",
-                                type: "file",
+                                type: "structure",
                                 children: [
                                     {
                                         name: "effects",
@@ -472,7 +472,7 @@ export const datapackStructure: ExplorerNode[] = [
                                         children: [
                                             {
                                                 name: "特定效果.json",
-                                                type: "file",
+                                                type: "structure",
                                                 children: [
                                                     {
                                                         name: "特定效果类型",
@@ -495,7 +495,7 @@ export const datapackStructure: ExplorerNode[] = [
                                         children: [
                                             {
                                                 name: "特定参数.json",
-                                                type: "file",
+                                                type: "structure",
                                                 children: [
                                                     {
                                                         name: "名称",
@@ -525,7 +525,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定生物群系.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "features",
@@ -534,7 +534,7 @@ export const datapackStructure: ExplorerNode[] = [
                                                 children: [
                                                     {
                                                         name: "特定特征.json",
-                                                        type: "file",
+                                                        type: "structure",
                                                         children: [
                                                             {
                                                                 name: "特定特征类型",
@@ -557,7 +557,7 @@ export const datapackStructure: ExplorerNode[] = [
                                                 children: [
                                                     {
                                                         name: "特定属性.json",
-                                                        type: "file",
+                                                        type: "structure",
                                                         children: [
                                                             {
                                                                 name: "名称",
@@ -583,7 +583,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定雕刻器.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "type",
@@ -602,7 +602,7 @@ export const datapackStructure: ExplorerNode[] = [
                                                 children: [
                                                     {
                                                         name: "特定参数.json",
-                                                        type: "file",
+                                                        type: "structure",
                                                         children: [
                                                             {
                                                                 name: "名称",
@@ -628,7 +628,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定配置特征.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "type",
@@ -642,7 +642,7 @@ export const datapackStructure: ExplorerNode[] = [
                                                 children: [
                                                     {
                                                         name: "特定放置规则.json",
-                                                        type: "file",
+                                                        type: "structure",
                                                         children: [
                                                             {
                                                                 name: "规则类型",
@@ -666,7 +666,7 @@ export const datapackStructure: ExplorerNode[] = [
                                                 children: [
                                                     {
                                                         name: "特定参数.json",
-                                                        type: "file",
+                                                        type: "structure",
                                                         children: [
                                                             {
                                                                 name: "名称",
@@ -692,7 +692,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定配置结构特征.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "type",
@@ -706,7 +706,7 @@ export const datapackStructure: ExplorerNode[] = [
                                                 children: [
                                                     {
                                                         name: "特定放置规则.json",
-                                                        type: "file",
+                                                        type: "structure",
                                                         children: [
                                                             {
                                                                 name: "规则类型",
@@ -730,7 +730,7 @@ export const datapackStructure: ExplorerNode[] = [
                                                 children: [
                                                     {
                                                         name: "特定参数.json",
-                                                        type: "file",
+                                                        type: "structure",
                                                         children: [
                                                             {
                                                                 name: "名称",
@@ -756,7 +756,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定噪声设置.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "noise_type",
@@ -770,7 +770,7 @@ export const datapackStructure: ExplorerNode[] = [
                                                 children: [
                                                     {
                                                         name: "特定参数.json",
-                                                        type: "file",
+                                                        type: "structure",
                                                         children: [
                                                             {
                                                                 name: "名称",
@@ -796,7 +796,7 @@ export const datapackStructure: ExplorerNode[] = [
                                 children: [
                                     {
                                         name: "特定处理器列表.json",
-                                        type: "file",
+                                        type: "structure",
                                         children: [
                                             {
                                                 name: "processors",
@@ -805,7 +805,7 @@ export const datapackStructure: ExplorerNode[] = [
                                                 children: [
                                                     {
                                                         name: "特定处理器.json",
-                                                        type: "file",
+                                                        type: "structure",
                                                         children: [
                                                             {
                                                                 name: "type",
@@ -819,7 +819,7 @@ export const datapackStructure: ExplorerNode[] = [
                                                                 children: [
                                                                     {
                                                                         name: "特定参数.json",
-                                                                        type: "file",
+                                                                        type: "structure",
                                                                         children: [
                                                                             {
                                                                                 name: "名称",

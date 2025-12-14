@@ -1,3 +1,4 @@
+import { ExplorerNode } from "@/types/ExplorerNode";
 import Link from "@docusaurus/Link";
 import { Icon } from "@iconify/react";
 import "@site/src/css/structure_explorer.css";
@@ -6,17 +7,9 @@ import React, { JSX, useState } from "react";
 
 const folderIcon = "mdi:folder";
 const fileIcon = "mdi:file";
+const structureIcon = "mdi:braces";
 
-interface ExplorerNode {
-    name: string;
-    type: "folder" | "file";
-    children?: ExplorerNode[];
-    description?: string;
-    url?: string;
-    external?: boolean;
-}
-
-interface ConfigurationStructureDiagramProps {
+interface StructureExplorerProps {
     data?: ExplorerNode[];
 }
 
@@ -54,11 +47,13 @@ const PrefixLine = ({ levels }: PrefixLineProps): JSX.Element => {
 
 export default function ConfigurationStructureDiagram({
     data = []
-}: ConfigurationStructureDiagramProps = {}): JSX.Element {
+}: StructureExplorerProps = {}): JSX.Element {
     const [popupNode, setPopupNode] = useState<ExplorerNode | null>(null);
 
     const renderNode = (node: ExplorerNode, level: number = 0, isLast: boolean = true, ancestors: boolean[] = []) => {
         const isFolder = node.type === "folder";
+        const isStructure = node.type === "structure";
+        const hasChildren = node.type === "folder" || node.type === "structure";
         const hasDescription = "description" in node;
         const hasUrl = "url" in node;
         const isExternal = node.external;
@@ -89,15 +84,15 @@ export default function ConfigurationStructureDiagram({
                         {hasUrl ? (
                             <Link
                                 className={clsx(
-                                    !isFolder && "config-explorer-file-node",
-                                    isFolder && "config-explorer-file-folder-node",
+                                    !isFolder && !isStructure && "config-explorer-file-node",
+                                    (isFolder || isStructure) && "config-explorer-file-folder-node",
                                     "config-explorer-file-node-with-link",
                                     isExternal && "config-explorer-file-folder-node-with-link"
                                 )}
                                 to={node.url}
                             >
                                 <Icon
-                                    icon={isFolder ? folderIcon : fileIcon}
+                                    icon={isFolder ? folderIcon : isStructure ? structureIcon : fileIcon}
                                     className={"config-explorer-icon config-explorer-node-icon"}
                                 />
                                 <span className={"config-node-contents-wrapper"}>{node.name}</span>
@@ -105,12 +100,12 @@ export default function ConfigurationStructureDiagram({
                         ) : (
                             <span
                                 className={clsx(
-                                    !isFolder && "config-explorer-file-node",
-                                    isFolder && "config-explorer-file-folder-node"
+                                    !isFolder && !isStructure && "config-explorer-file-node",
+                                    (isFolder || isStructure) && "config-explorer-file-folder-node"
                                 )}
                             >
                                 <Icon
-                                    icon={isFolder ? folderIcon : fileIcon}
+                                    icon={isFolder ? folderIcon : isStructure ? structureIcon : fileIcon}
                                     className={"config-explorer-icon config-explorer-node-icon"}
                                 />
                                 <span className={"config-node-contents-wrapper"}>{node.name}</span>
@@ -141,7 +136,7 @@ export default function ConfigurationStructureDiagram({
                     </div>
                 </div>
 
-                {isFolder &&
+                {hasChildren &&
                     node.children &&
                     node.children.map((child, index) => (
                         <div key={child.name}>
@@ -154,7 +149,11 @@ export default function ConfigurationStructureDiagram({
 
     return (
         <div>
-            <pre className={"config-explorer-code-outer-container"}>{data.map((item) => renderNode(item))}</pre>
+            <pre className={"config-explorer-code-outer-container"}>
+                {data.map((item) => (
+                    <div key={item.name}>{renderNode(item)}</div>
+                ))}
+            </pre>
         </div>
     );
 }
