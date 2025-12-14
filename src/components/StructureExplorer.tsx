@@ -7,7 +7,7 @@ import React, { JSX, useState } from "react";
 
 const folderIcon = "mdi:folder";
 const fileIcon = "mdi:file";
-const structureIcon = "mdi:braces";
+const structureIcon = "mdi:file";
 
 interface StructureExplorerProps {
     data?: ExplorerNode[];
