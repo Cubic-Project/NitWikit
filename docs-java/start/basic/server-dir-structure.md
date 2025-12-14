@@ -3,43 +3,50 @@ title: 服务端结构
 sidebar_position: 3
 ---
 
+import FileTree from '@site/src/components/FileTree';
+
 # 服务端结构
 
 我们先来简单看一眼 插件端 的文件夹结构 (以 Purpur 为例)：
 
-<!-- Use c to highlight comments -->
-```c
-├─assets            // 储存 Minecraft 音效贴图等重要文件，不要乱动
-├─cache             // 缓存文件夹，一般放置 Minecraft 原版服务器
-├─config            // Paper fork 服务器特有的配置文件，用于放置 Paper 的配置文件
-├─crash-reports     // 存放服务器崩溃的完整报告
-├─libraries         // 存放服务器及部分插件的依赖库
-├─logs              // 存放服务端日志的文件夹
-├─plugins           // 存放插件的文件夹
-├─versions          // 存放对应版本需要的依赖 jar
-├─world             // 主世界文件夹
-│  ├─advancements   // 成就文件夹
-│  ├─data           // 世界数据文件夹
-│  ├─datapacks      // 数据包
-│  │  └─bukkit
-│  ├─entities       // 实体数据
-│  ├─playerdata     // 玩家数据
-│  ├─poi            // 兴趣点数据
-│  ├─region         // 区块数据
-│  └─stats          // 统计信息
-├─world_nether       // 地狱世界文件夹
-│  └─DIM-1
-│      ├─data
-│      ├─entities
-│      ├─poi
-│      └─region
-└─world_the_end     // 末地世界文件夹
-    └─DIM1
-        ├─data
-        ├─entities
-        ├─poi
-        └─region
-```
+<FileTree>
+  <FileTree.Folder name="assets" comment="储存 Minecraft 音效贴图等重要文件，不要乱动" />
+  <FileTree.Folder name="cache" comment="缓存文件夹，一般放置 Minecraft 原版服务器" />
+  <FileTree.Folder name="config" comment="Paper fork 服务器特有的配置文件，用于放置 Paper 的配置文件" />
+  <FileTree.Folder name="crash-reports" comment="存放服务器崩溃的完整报告" />
+  <FileTree.Folder name="libraries" comment="存放服务器及部分插件的依赖库" />
+  <FileTree.Folder name="logs" comment="存放服务端日志的文件夹" />
+  <FileTree.Folder name="plugins" comment="存放插件的文件夹" />
+  <FileTree.Folder name="versions" comment="存放对应版本需要的依赖 jar" />
+  <FileTree.Folder name="world" comment="主世界文件夹">
+    <FileTree.Folder name="advancements" comment="成就文件夹" />
+    <FileTree.Folder name="data" comment="世界数据文件夹" />
+    <FileTree.Folder name="datapacks" comment="数据包">
+      <FileTree.Folder name="bukkit" />
+    </FileTree.Folder>
+    <FileTree.Folder name="entities" comment="实体数据" />
+    <FileTree.Folder name="playerdata" comment="玩家数据" />
+    <FileTree.Folder name="poi" comment="兴趣点数据" />
+    <FileTree.Folder name="region" comment="区块数据" />
+    <FileTree.Folder name="stats" comment="统计信息" />
+  </FileTree.Folder>
+  <FileTree.Folder name="world_nether" comment="地狱世界文件夹">
+    <FileTree.Folder name="DIM-1">
+      <FileTree.Folder name="data" />
+      <FileTree.Folder name="entities" />
+      <FileTree.Folder name="poi" />
+      <FileTree.Folder name="region" />
+    </FileTree.Folder>
+  </FileTree.Folder>
+  <FileTree.Folder name="world_the_end" comment="末地世界文件夹">
+    <FileTree.Folder name="DIM1">
+      <FileTree.Folder name="data" />
+      <FileTree.Folder name="entities" />
+      <FileTree.Folder name="poi" />
+      <FileTree.Folder name="region" />
+    </FileTree.Folder>
+  </FileTree.Folder>
+</FileTree>
 
 对于类似 Catserver 的混合服务器，文件夹结构是类似的，基本就多了 `/mods` 文件夹，少了 Bukkit 的下游服务器特有的配置 (如 `purpur.yml` 等)。
 
