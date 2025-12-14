@@ -3,6 +3,8 @@ title: 游戏机制
 sidebar_position: 2
 ---
 
+import { FileTree } from '@site/src/components/FileTree';
+
 # 游戏机制
 
 目前，你服务器的基岩版玩家可能会遇到一些问题
@@ -158,13 +160,14 @@ Broadcaster 通过模拟 Xbox Live 客户端，将你的 Geyser/基岩版服务�
 
 2. **安装扩展**
 
-    ```text
-    服务器根目录/
-    ├── plugins/
-    │   └── Geyser-Spigot/
-    │       └── extensions/
-    │           └── MCXboxBroadcastExtension.jar
-    ```
+    <FileTree>
+    {`
+    plugins
+      Geyser-Spigot
+        extensions
+          MCXboxBroadcastExtension.jar
+    `}
+    </FileTree>
 
 3. **重启服务器**
     - 重启服务器以加载扩展

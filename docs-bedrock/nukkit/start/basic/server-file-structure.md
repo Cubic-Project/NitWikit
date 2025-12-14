@@ -3,32 +3,35 @@ title: 服务端结构
 sidebar_position: 1
 ---
 
+import { FileTree } from '@site/src/components/FileTree';
+
 # 服务端结构
 
 我们先来简单看一眼 Nukkit **开服后** 的文件夹结构（大致结构是这样，部分分支会因为加了不同的功能结构会不一样）：
 
-<!-- Use c to highlight comments -->
-```c
-Nukkit Server/
-├── nukkit-1.0-SNAPSHOT.jar //服务器核心
-├── start.bat               // Windows 运行脚本
-├── start.sh                // Linux 运行脚本
-├── start.command           // macOS 运行脚本
-├── server.properties       // 服务端配置文件
-├── permissions.yml         // 用于设置玩家权限的
-├── banned-players.txt      // 存储被封禁的玩家名单的
-├── banned-ips.txt          // 存储被封禁的 IP 地址
-├── ops.txt                 // 用于设置管理员（OP）的
-├── worlds/                 // 主世界文件夹
-│   ├── world/              // 世界存档
-│   │   ├── level.dat       // 存档设定
-│   │   ├── region/         // 存储世界区块数据
-│   │   └── entities/       // 存储世界中的实体数据
-├── plugins/                // 插件存放文件夹
-├── logs/                   // 服务器日志存放
-├── whitelist.txt           // 存储允许加入服务器的玩家名单
-└── rcon_password.txt       // 存储 RCON（远程控制）功能的密码
-```
+<FileTree>
+{`
+nukkit-1.0-SNAPSHOT.jar // 服务器核心
+start.bat // Windows 运行脚本
+start.sh // Linux 运行脚本
+start.command // macOS 运行脚本
+server.properties // 服务端配置文件
+permissions.yml // 用于设置玩家权限的
+banned-players.txt // 存储被封禁的玩家名单的
+banned-ips.txt // 存储被封禁的 IP 地址
+ops.txt // 用于设置管理员（OP）的
+worlds // 主世界文件夹
+  world // 世界存档
+    level.dat // 存档设定
+    region // 存储世界区块数据
+    entities // 存储世界中的实体数据
+plugins // 插件存放文件夹
+logs // 服务器日志存放
+whitelist.txt // 存储允许加入服务器的玩家名单
+rcon_password.txt // 存储 RCON（远程控制）功能的密码
+`}
+</FileTree>
+
 
 <!-- :::info
 
