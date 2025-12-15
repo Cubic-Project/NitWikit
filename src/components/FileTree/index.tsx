@@ -26,6 +26,9 @@ interface FileTreeProps {
   descriptions?: Record<string, React.ReactNode>;
 }
 
+const MAX_INLINE_COMMENT_LENGTH = 30;
+const ROOT_PATH = 'root';
+
 const TEXT_EXTENSIONS = new Set([
   ".json", ".yml", ".yaml", ".md", ".txt", 
   ".properties", ".xml", ".html", ".css", 
@@ -103,7 +106,7 @@ function parseTreeString(content: string): FileNode[] {
     }
 
     let description: React.ReactNode | undefined = undefined;
-    if (comment.length > 30) {
+    if (comment.length > MAX_INLINE_COMMENT_LENGTH) {
       description = comment;
     }
 
@@ -143,13 +146,19 @@ function injectDescriptions(nodes: FileNode[], descriptions: Record<string, Reac
 
 const startViewTransition = (callback: () => void) => {
   if (typeof document !== 'undefined' && 'startViewTransition' in document) {
-    // @ts-ignore
-    document.startViewTransition(() => {
+    (document as any).startViewTransition(() => {
       flushSync(callback);
     });
   } else {
     callback();
   }
+};
+
+const getIconColorClass = (hasChildren: boolean, isExplicitFolder: boolean | undefined, iconType: any) => {
+  if (hasChildren || isExplicitFolder || iconType === FolderOutlined || iconType === FolderOpenOutlined) {
+    return "text-[var(--ifm-color-primary)]";
+  }
+  return "text-[var(--ifm-color-emphasis-700)]";
 };
 
 const NodeItem = React.memo(({
@@ -204,6 +213,7 @@ const NodeItem = React.memo(({
   }
 
   const isSelected = selectedPath === currentPath;
+  const iconColorClass = getIconColorClass(hasChildren, isExplicitFolder, (Icon as React.ReactElement)?.type);
 
   return (
     <li className="my-[2px] !list-none">
@@ -227,7 +237,7 @@ const NodeItem = React.memo(({
 
         <span className={clsx(
             "mr-2 flex items-center shrink-0",
-            (hasChildren || isExplicitFolder || Icon?.type === FolderOutlined || Icon?.type === FolderOpenOutlined) ? "text-[var(--ifm-color-primary)]" : "text-[var(--ifm-color-emphasis-700)]"
+            iconColorClass
         )}>
           {Icon}
         </span>
@@ -301,7 +311,7 @@ export function FileTree({ nodes, children, descriptions }: FileTreeProps): Reac
           <NodeItem
             key={node.name}
             node={node}
-            path="root"
+            path={ROOT_PATH}
             onSelect={handleSelect}
             selectedPath={selectedPath}
           />
