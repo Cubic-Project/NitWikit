@@ -12,18 +12,18 @@ import { FileTree } from '@site/src/components/FileTree';
 <!-- Use c to highlight comments -->
 <FileTree>
 {`
-BDS服务端文件夹
-  behavior_packs                  // 安装新行为包的文件夹
-  config                          // 没啥用
-  definitions                     // 貌似是生成群系的内容
-  development_behavior_packs      // 为开发者提供安装新行为包的文件夹
-  development_resource_packs      // 为开发者提供安装新资源包的文件夹
-  development_skin_packs          // 为开发者提供安装新皮肤包的文件夹
-  resource_packs                  // 安装新资源包的文件夹
-  world-templates                 // 世界模板
-  worlds                          // 主世界文件夹
-    Bedrock level                // 世界存档
-      db                         // 存档数据文件夹
+BDS服务端文件夹/
+  behavior_packs/                  // 安装新行为包的文件夹
+  config/                          // 没啥用
+  definitions/                     // 貌似是生成群系的内容
+  development_behavior_packs/      // 为开发者提供安装新行为包的文件夹
+  development_resource_packs/      // 为开发者提供安装新资源包的文件夹
+  development_skin_packs/          // 为开发者提供安装新皮肤包的文件夹
+  resource_packs/                  // 安装新资源包的文件夹
+  world-templates/                 // 世界模板
+  worlds/                          // 主世界文件夹
+    Bedrock level/                // 世界存档
+      db/                         // 存档数据文件夹
       level_dat                  // 存档设定
       level.dat_old              // 存档设定 (旧)
       level_name.txt             // 存档名称

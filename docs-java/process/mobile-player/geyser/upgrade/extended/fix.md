@@ -162,9 +162,9 @@ Broadcaster 通过模拟 Xbox Live 客户端，将你的 Geyser/基岩版服务�
 
     <FileTree>
     {`
-    plugins
-      Geyser-Spigot
-        extensions
+    plugins/
+      Geyser-Spigot/
+        extensions/
           MCXboxBroadcastExtension.jar
     `}
     </FileTree>

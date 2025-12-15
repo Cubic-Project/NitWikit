@@ -73,24 +73,24 @@ import { FileTree } from '@site/src/components/FileTree';
 
 <FileTree>
 {`
-src // 源代码目录
-  main // 主要代码目录
-    java // Java 源代码
-      com
-        example
-          plugin
+src/ // 源代码目录
+  main/ // 主要代码目录
+    java/ // Java 源代码
+      com/
+        example/
+          plugin/
             Main.java // 插件主类
-            commands // 命令类
-            listeners // 监听器类
-            utils // 工具类
-    resources // 资源文件目录
+            commands/ // 命令类
+            listeners/ // 监听器类
+            utils/ // 工具类
+    resources/ // 资源文件目录
       plugin.yml // 插件配置文件
       config.yml // 插件默认配置
       messages // 语言文件
-  test // 测试代码目录
-    java // 测试源代码
-    resources // 测试资源
-target // 构建输出目录
+  test/ // 测试代码目录
+    java/ // 测试源代码
+    resources/ // 测试资源
+target/ // 构建输出目录
 pom.xml // Maven 项目配置文件
 README.md // 项目说明文件
 `}
@@ -101,29 +101,29 @@ README.md // 项目说明文件
 
 <FileTree>
 {`
-src // 源代码目录
-  main // 主要代码目录
-    java // Java 源代码
-      com
-        example
-          plugin
+src/ // 源代码目录
+  main/ // 主要代码目录
+    java/ // Java 源代码
+      com/
+        example/
+          plugin/
             Main.java // 插件主类
-            commands // 命令类
-            listeners // 监听器类
-            utils // 工具类
-    kotlin // Kotlin 源代码（如果使用）
-    resources // 资源文件目录
+            commands/ // 命令类
+            listeners/ // 监听器类
+            utils/ // 工具类
+    kotlin/ // Kotlin 源代码（如果使用）
+    resources/ // 资源文件目录
       plugin.yml // 插件配置文件
       config.yml // 插件默认配置
       messages // 语言文件
-  test // 测试代码目录
-    java // 测试源代码
-    kotlin // Kotlin 测试代码
-    resources // 测试资源
-build // 构建输出目录
-  libs // 构建产物（jar 文件）
-gradle // Gradle 包装器目录
-  wrapper
+  test/ // 测试代码目录
+    java/ // 测试源代码
+    kotlin/ // Kotlin 测试代码
+    resources/ // 测试资源
+build/ // 构建输出目录
+  libs/ // 构建产物（jar 文件）
+gradle/ // Gradle 包装器目录
+  wrapper/
 build.gradle // Gradle 构建脚本
 settings.gradle // Gradle 设置文件
 gradlew // Gradle 包装器脚本 (Unix)

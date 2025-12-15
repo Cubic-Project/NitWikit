@@ -44,12 +44,12 @@ import { FileTree } from '@site/src/components/FileTree';
 
     <FileTree>
     {`
-    MyModpack
-      java
-        bin
+    MyModpack/
+      java/
+        bin/
       HMCL.exe
       hmcl.json
-      .minecraft
+      .minecraft/
     `}
     </FileTree>
 

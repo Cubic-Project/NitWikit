@@ -1,11 +1,14 @@
-import React, { useState, useMemo } from "react";
-import styles from "./styles.module.css";
+import React, { useState, useMemo, useCallback } from "react";
+import { flushSync } from "react-dom";
+import clsx from "clsx";
 import {
-  FolderOpenOutlined,
   FolderOutlined,
+  FolderOpenOutlined,
   FileOutlined,
   FileTextOutlined,
   InfoCircleOutlined,
+  RightOutlined,
+  DownOutlined,
 } from "@ant-design/icons";
 
 export type FileNode = {
@@ -14,6 +17,7 @@ export type FileNode = {
   description?: React.ReactNode;
   children?: FileNode[];
   icon?: React.ReactNode;
+  isFolder?: boolean;
 };
 
 interface FileTreeProps {
@@ -22,13 +26,54 @@ interface FileTreeProps {
   descriptions?: Record<string, React.ReactNode>;
 }
 
-const getIcon = (name: string, isFolder: boolean) => {
-  if (isFolder) return <FolderOutlined />;
-  if (name.endsWith(".json") || name.endsWith(".yml") || name.endsWith(".yaml") || name.endsWith(".md") || name.endsWith(".txt")) {
+const TEXT_EXTENSIONS = new Set([
+  ".json", ".yml", ".yaml", ".md", ".txt", 
+  ".properties", ".xml", ".html", ".css", 
+  ".js", ".ts", ".jsx", ".tsx", ".ini", ".conf", ".sh", ".bat",
+  ".java", ".py", ".c", ".cpp", ".h", ".hpp", ".go", ".rs", ".php",
+  ".toml", ".gradle"
+]);
+
+const KNOWN_FILES = new Set([
+  "license", "makefile", "dockerfile", "cname", 
+  "gemfile", "pipfile", "procfile", "readme", 
+  "changelog", "contributing", "security", "authors", "owners"
+]);
+
+const getIcon = (name: string) => {
+  const lowerName = name.toLowerCase();
+  
+  if (KNOWN_FILES.has(lowerName)) {
     return <FileTextOutlined />;
   }
+
+  if (name.startsWith('.')) {
+      return <FileTextOutlined />;
+  }
+
+  const dotIndex = lowerName.lastIndexOf('.');
+  if (dotIndex !== -1) {
+      const ext = lowerName.substring(dotIndex);
+      if (TEXT_EXTENSIONS.has(ext)) {
+          return <FileTextOutlined />;
+      }
+      return <FileOutlined />;
+  }
+
   return <FileOutlined />;
 };
+
+function cleanTree(nodes: FileNode[]) {
+  for (const node of nodes) {
+    if (node.children) {
+      if (node.children.length === 0) {
+        delete node.children;
+      } else {
+        cleanTree(node.children);
+      }
+    }
+  }
+}
 
 function parseTreeString(content: string): FileNode[] {
   const lines = content.split('\n');
@@ -51,13 +96,18 @@ function parseTreeString(content: string): FileNode[] {
       comment = trimmed.substring(commentIndex + 2).trim();
     }
 
+    let isFolder = false;
+    if (name.endsWith('/')) {
+        isFolder = true;
+        name = name.substring(0, name.length - 1);
+    }
+
     let description: React.ReactNode | undefined = undefined;
-    // Automatically move long comments to description
     if (comment.length > 30) {
       description = comment;
     }
 
-    const node: FileNode = { name, comment: comment || undefined, description, children: [] };
+    const node: FileNode = { name, comment: comment || undefined, description, children: [], isFolder };
 
     while (stack.length > 1 && stack[stack.length - 1].indent >= indent) {
       stack.pop();
@@ -69,24 +119,13 @@ function parseTreeString(content: string): FileNode[] {
     stack.push({ indent, nodes: node.children! });
   }
   
-  const clean = (nodes: FileNode[]) => {
-    for (const node of nodes) {
-      if (node.children && node.children.length === 0) {
-        delete node.children;
-      } else if (node.children) {
-        clean(node.children);
-      }
-    }
-  };
-  clean(root);
-  
+  cleanTree(root);
   return root;
 }
 
 function injectDescriptions(nodes: FileNode[], descriptions: Record<string, React.ReactNode>, parentPath: string = ''): FileNode[] {
   return nodes.map(node => {
       const currentPath = parentPath ? `${parentPath}/${node.name}` : node.name;
-      // Try path match first, then name match
       const desc = descriptions[currentPath] || descriptions[node.name];
       
       const newNode = { ...node };
@@ -102,7 +141,18 @@ function injectDescriptions(nodes: FileNode[], descriptions: Record<string, Reac
   });
 }
 
-function NodeItem({
+const startViewTransition = (callback: () => void) => {
+  if (typeof document !== 'undefined' && 'startViewTransition' in document) {
+    // @ts-ignore
+    document.startViewTransition(() => {
+      flushSync(callback);
+    });
+  } else {
+    callback();
+  }
+};
+
+const NodeItem = React.memo(({
   node,
   path,
   onSelect,
@@ -110,52 +160,104 @@ function NodeItem({
 }: {
   node: FileNode;
   path: string;
-  onSelect: (node: FileNode, path: string) => void;
+  onSelect: (path: string) => void;
   selectedPath: string | null;
-}): React.ReactElement {
+}): React.ReactElement => {
   const currentPath = `${path}/${node.name}`;
   const hasChildren = Boolean(node.children && node.children.length);
   const hasDescription = Boolean(node.description);
-  // Expand if selected or if it's a folder that is open (we can track folder state separately if needed)
-  // For now, let's just toggle children on click for folders.
-  // For files with description, toggle description on click.
+  const isExplicitFolder = node.isFolder;
   
   const [expanded, setExpanded] = useState(true);
   const [showDesc, setShowDesc] = useState(false);
 
-  const handleClick = (e: React.MouseEvent) => {
+  const handleMainClick = (e: React.MouseEvent) => {
     e.stopPropagation();
-    onSelect(node, currentPath);
-    if (hasChildren) {
-      setExpanded(!expanded);
-    }
-    if (hasDescription) {
-      setShowDesc(!showDesc);
-    }
+    onSelect(currentPath);
+    
+    startViewTransition(() => {
+      if (hasChildren) {
+        setExpanded(prev => !prev);
+      }
+      if (hasDescription) {
+        setShowDesc(prev => !prev);
+      }
+    });
   };
 
-  const Icon = node.icon || getIcon(node.name, hasChildren);
+  const handleChevronClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    startViewTransition(() => {
+      setExpanded(prev => !prev);
+    });
+  };
+
+  let Icon = node.icon;
+  if (!Icon) {
+    if (hasChildren) {
+      Icon = expanded ? <FolderOpenOutlined /> : <FolderOutlined />;
+    } else if (isExplicitFolder) {
+      Icon = <FolderOutlined />;
+    } else {
+      Icon = getIcon(node.name);
+    }
+  }
+
+  const isSelected = selectedPath === currentPath;
 
   return (
-    <li className={styles.nodeItem}>
+    <li className="my-[2px] !list-none">
       <div
-        className={`${styles.nodeRow} ${selectedPath === currentPath ? styles.selected : ""} ${hasDescription ? styles.hasDescription : ""}`}
-        onClick={handleClick}
+        className={clsx(
+          "flex items-center py-1 px-2 cursor-pointer rounded transition-colors duration-200 font-mono text-sm w-full group select-none",
+          isSelected 
+            ? "bg-[var(--ifm-color-emphasis-200)] text-[var(--ifm-color-emphasis-900)] dark:bg-[var(--ifm-color-emphasis-100)] dark:text-[var(--ifm-color-emphasis-900)]" 
+            : "hover:bg-[var(--ifm-color-emphasis-100)]"
+        )}
+        onClick={handleMainClick}
       >
-        <span className={styles.icon}>{Icon}</span>
-        <span className={styles.name}>{node.name}</span>
-        {node.comment && <span className={styles.commentInline}>// {node.comment}</span>}
-        {hasDescription && <InfoCircleOutlined className={styles.infoIcon} />}
+        <span 
+            className="mr-1 flex items-center justify-center w-4 h-4 shrink-0 text-[var(--ifm-color-emphasis-400)] hover:text-[var(--ifm-color-primary)] transition-colors"
+            onClick={hasChildren ? handleChevronClick : undefined}
+        >
+            {hasChildren && (
+                expanded ? <DownOutlined className="text-[10px]" /> : <RightOutlined className="text-[10px]" />
+            )}
+        </span>
+
+        <span className={clsx(
+            "mr-2 flex items-center shrink-0",
+            (hasChildren || isExplicitFolder || Icon?.type === FolderOutlined || Icon?.type === FolderOpenOutlined) ? "text-[var(--ifm-color-primary)]" : "text-[var(--ifm-color-emphasis-700)]"
+        )}>
+          {Icon}
+        </span>
+
+        <span className="font-medium whitespace-nowrap shrink-0">
+          {node.name}
+        </span>
+        {node.comment && (
+          <span className="ml-2 text-[var(--ifm-color-emphasis-600)] text-xs whitespace-nowrap overflow-hidden text-ellipsis flex-1 min-w-0">
+            // {node.comment}
+          </span>
+        )}
+        {hasDescription && (
+          <InfoCircleOutlined 
+            className={clsx(
+              "ml-2 text-[var(--ifm-color-primary)] p-1 shrink-0 transition-opacity",
+              "opacity-70 group-hover:opacity-100"
+            )} 
+          />
+        )}
       </div>
       
       {hasDescription && showDesc && (
-        <div className={styles.inlineDescription}>
+        <div className="ml-[2.2rem] my-2 p-3 bg-[var(--ifm-color-emphasis-100)] rounded text-sm leading-relaxed border-l-4 border-[var(--ifm-color-primary)]">
           {node.description}
         </div>
       )}
 
       {hasChildren && expanded && (
-        <ul className={styles.childrenList}>
+        <ul className="list-none p-0 m-0 pl-[1.2rem] border-l border-[var(--ifm-color-emphasis-200)] ml-[0.6rem]">
           {node.children!.map((child) => (
             <NodeItem
               key={`${currentPath}/${child.name}`}
@@ -169,10 +271,11 @@ function NodeItem({
       )}
     </li>
   );
-}
+});
+
+NodeItem.displayName = 'NodeItem';
 
 export function FileTree({ nodes, children, descriptions }: FileTreeProps): React.ReactElement {
-  const [selectedNode, setSelectedNode] = useState<FileNode | null>(null);
   const [selectedPath, setSelectedPath] = useState<string | null>(null);
 
   const treeData = useMemo(() => {
@@ -187,14 +290,13 @@ export function FileTree({ nodes, children, descriptions }: FileTreeProps): Reac
     return [];
   }, [nodes, children, descriptions]);
 
-  const handleSelect = (node: FileNode, path: string) => {
-    setSelectedNode(node);
+  const handleSelect = useCallback((path: string) => {
     setSelectedPath(path);
-  };
+  }, []);
 
   return (
-    <div className={styles.container}>
-      <ul className={styles.rootList}>
+    <div className="border border-[var(--ifm-color-emphasis-200)] rounded-[var(--ifm-global-radius)] bg-[var(--ifm-background-surface-color)] my-6 p-4 overflow-hidden">
+      <ul className="list-none p-0 m-0 !pl-0">
         {treeData.map((node) => (
           <NodeItem
             key={node.name}

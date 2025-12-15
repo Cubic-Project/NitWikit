@@ -20,13 +20,13 @@ permissions.yml // 用于设置玩家权限的
 banned-players.txt // 存储被封禁的玩家名单的
 banned-ips.txt // 存储被封禁的 IP 地址
 ops.txt // 用于设置管理员（OP）的
-worlds // 主世界文件夹
-  world // 世界存档
+worlds/ // 主世界文件夹
+  world/ // 世界存档
     level.dat // 存档设定
-    region // 存储世界区块数据
-    entities // 存储世界中的实体数据
-plugins // 插件存放文件夹
-logs // 服务器日志存放
+    region/ // 存储世界区块数据
+    entities/ // 存储世界中的实体数据
+plugins/ // 插件存放文件夹
+logs/ // 服务器日志存放
 whitelist.txt // 存储允许加入服务器的玩家名单
 rcon_password.txt // 存储 RCON（远程控制）功能的密码
 `}

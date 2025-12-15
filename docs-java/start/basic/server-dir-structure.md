@@ -40,36 +40,36 @@ import { FileTree } from '@site/src/components/FileTree';
   }}
 >
 {`
-assets // 储存 Minecraft 音效贴图等重要文件，不要乱动
-cache // 缓存文件夹，一般放置 Minecraft 原版服务器
-config // Paper fork 服务器特有的配置文件
-crash-reports // 存放服务器崩溃的完整报告
-libraries // 存放服务器及部分插件的依赖库
-logs // 服务端日志文件夹
-plugins // 插件目录
-versions // 对应版本需要的依赖 jar
-world // 主世界文件夹
-  advancements // 成就文件夹
-  data // 世界数据文件夹
-  datapacks // 数据包
-    bukkit
-  entities // 实体数据
-  playerdata // 玩家数据
-  poi // 兴趣点数据
-  region // 区块数据
-  stats // 统计信息
-world_nether // 地狱世界文件夹
-  DIM-1
-    data
-    entities
-    poi
-    region
-world_the_end // 末地世界文件夹
-  DIM1
-    data
-    entities
-    poi
-    region
+assets/ // 储存 Minecraft 音效贴图等重要文件，不要乱动
+cache/ // 缓存文件夹，一般放置 Minecraft 原版服务器
+config/ // Paper fork 服务器特有的配置文件
+crash-reports/ // 存放服务器崩溃的完整报告
+libraries/ // 存放服务器及部分插件的依赖库
+logs/ // 服务端日志文件夹
+plugins/ // 插件目录
+versions/ // 对应版本需要的依赖 jar
+world/ // 主世界文件夹
+  advancements/ // 成就文件夹
+  data/ // 世界数据文件夹
+  datapacks/ // 数据包
+    bukkit/
+  entities/ // 实体数据
+  playerdata/ // 玩家数据
+  poi/ // 兴趣点数据
+  region/ // 区块数据
+  stats/ // 统计信息
+world_nether/ // 地狱世界文件夹
+  DIM-1/
+    data/
+    entities/
+    poi/
+    region/
+world_the_end/ // 末地世界文件夹
+  DIM1/
+    data/
+    entities/
+    poi/
+    region/
 .console_history // 存放控制台指令历史
 banned-ips.json // 被封禁的 IP 列表
 banned-players.json // 被封禁的玩家列表

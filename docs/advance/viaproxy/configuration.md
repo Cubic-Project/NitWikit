@@ -16,15 +16,15 @@ ViaProxy 使用 YAML 格式的配置文件，主要包含以下几个部分：
 <FileTree>
 {`
 viaproxy.yml // 主配置文件
-ViaLoader // 协议转换配置
+ViaLoader/ // 协议转换配置
   viaversion.yml
   viabackwards.yml
   viarewind.yml
   vialegacy.yml
   viabedrock.yml
   viaaprilfools.yml
-plugins // 插件目录
-logs // 日志目录
+plugins/ // 插件目录
+logs/ // 日志目录
 saves.json // 服务器保存数据
 `}
 </FileTree>
