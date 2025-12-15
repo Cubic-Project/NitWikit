@@ -92,7 +92,7 @@ export default function ConfigurationStructureDiagram({ data = [] }: StructureEx
                             >
                                 <Icon
                                     icon={isFolder ? folderIcon : isStructure ? structureIcon : fileIcon}
-                                    className={"config-explorer-icon config-explorer-node-icon"}
+                                    className={"config-explorer-node-icon"}
                                 />
                                 <span className={"config-node-contents-wrapper"}>{node.name}</span>
                             </Link>
@@ -105,7 +105,7 @@ export default function ConfigurationStructureDiagram({ data = [] }: StructureEx
                             >
                                 <Icon
                                     icon={isFolder ? folderIcon : isStructure ? structureIcon : fileIcon}
-                                    className={"config-explorer-icon config-explorer-node-icon"}
+                                    className={"config-explorer-node-icon"}
                                 />
                                 <span className={"config-node-contents-wrapper"}>{node.name}</span>
                             </span>

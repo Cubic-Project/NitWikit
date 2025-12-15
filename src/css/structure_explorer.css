@@ -63,7 +63,7 @@
 
 /* Node Icon */
 .config-explorer-node-icon {
-    @apply text-2xl mr-1.25;
+    @apply text-base mr-1.25;
     color: var(--config-node-highlight-text-color);
 }
 
