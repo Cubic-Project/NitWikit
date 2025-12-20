@@ -151,7 +151,7 @@ on BotJoin:
     {_bot}.setPlayerListName("假的%{_bot_name}%")   # 修改假人在tab列表里的名字
 ```
 
-import 语句导入了 `BotJoinEvent` 类，并将其设为别名 `BotJoin`，以便在 Skript 中使用。
+`import` 语句导入了 `BotJoinEvent` 类，并将其设为别名 `BotJoin`，以便在 Skript 中使用。
 
 这一过程也可适用于其他插件，比如 [zimzaza4](https://github.com/zimzaza4) 的 [Skript-Floodgate-Api](https://github.com/zimzaza4/Skript-Floodgate-Api)，
 

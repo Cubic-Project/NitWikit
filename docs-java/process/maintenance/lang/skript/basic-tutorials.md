@@ -868,9 +868,9 @@ set {-ids::*} to 1,2,3,4,5,6
 
 数组的基本格式为 `{变量名::变量名::变量名......}`，其中 `::` 用于分隔不同的元素。
 
-{playerCoins::%player%} = %value% 中，`{playerCoins::%player%}` 就是一个数组变量，
+`{playerCoins::%player%} = %value%` 中，`{playerCoins::%player%}` 就是一个数组变量，
 
-- playerCoins 是数组的名称，表示这是一个存储玩家金币数量的数组。
+- `playerCoins` 是数组的名称，表示这是一个存储玩家金币数量的数组。
 - `%player%` 是索引，表示玩家的名称（在 Config 中可以改为 UUID）。
 - `%value%` 则表示该玩家所拥有的金币数量。
 
