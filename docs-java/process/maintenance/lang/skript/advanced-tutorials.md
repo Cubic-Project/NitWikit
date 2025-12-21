@@ -102,15 +102,15 @@ on TPARequestEvent:
 
 在上面这个例子中，我们利用了一些方法 `getTarget()`、`getBase()`、`getRequester()` 和 `getPlayer()`，这些方法都是 Java 类或接口中定义的，
 
-新手会觉得很难理解这些方法是从哪里来的，如何使用的，下面我们就来学习一下如何阅读 **Java Doc**。
+新手会觉得很难理解这些方法是从哪里来的，如何使用的，下面我们就来学习一下如何阅读 **Javadoc**。
 
 假如我们想要使用 **Leaves** 服务端的假人功能，来修改假人在玩家列表中显示的名字，但是 Skript 本身并没有提供相关的事件和方法，我们该如何实现呢？
 
-##### 学会阅读 Java Doc
+##### 学会阅读 Javadoc
 
 我们先阅读 [Leaves 的 Javadoc](https://repo.leavesmc.org/javadoc/snapshots/org/leavesmc/leaves/leaves-api/1.20.6-R0.1-SNAPSHOT)，寻找相关的事件和方法。
 
-:::info[如何阅读 Java Doc]
+:::info[如何阅读 Javadoc]
 
 ![搜索事件](_images/SearchEvent.png)
 
