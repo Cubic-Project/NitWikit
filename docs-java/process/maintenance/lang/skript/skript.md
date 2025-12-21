@@ -46,7 +46,7 @@ public void onPlayerJoin(PlayerJoinEvent evt) {
 
 使用 Skript 实现的代码：
 
-```skript
+```python
 on join:
     if player has permission "xxx": // 权限判断
         message "欢迎你加入服务器!你获得了64枚钻石!" // 发送消息
