@@ -228,7 +228,7 @@ import <fully qualified name> [as <alias>]
 
 在 Skript 中使用枚举值时，请使用 `$` 符号来分隔枚举类和枚举值。
 
-查询 JavaDoc[https://purpurmc.org/javadoc/org/bukkit/event/inventory/ClickType.html] 可以看到 `ClickType` 枚举类中有多个枚举值，如 `DROP`、`LEFT`、`RIGHT` 等。
+查询 [Paper 的 Javadoc](https://jd.papermc.io/paper/1.21.11/org/bukkit/event/inventory/ClickType.html) 可以看到 `ClickType` 枚举类中有多个枚举值，如 `DROP`、`LEFT`、`RIGHT` 等。
 
 举例：
 

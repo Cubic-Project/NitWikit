@@ -38,6 +38,6 @@ sidebar_position: 5
 
 萌芽控制台：http://admin.germmc.com
 
-萌芽引擎 JavaDoc：http://javadoc.germmc.com 1.12.2-Bukkit：http://bukkitapi.germmc.com
+萌芽引擎 Javadoc：http://javadoc.germmc.com 1.12.2-Bukkit：http://bukkitapi.germmc.com
 
 旧版 Wiki① (已过时)：http://wiki.germmc.com 旧版 Wiki② (已过时)：http://engine.germmc.com
