@@ -2,9 +2,117 @@
 title: 基础教程
 ---
 
+## 入门
+
+Skript 仍然是编程语言，所有的编程语言都必须在拥有理论基础的情况下多实践。
+
+### 缩进
+
+在 Skript 中如果一行代码以 `:` 结尾，那么下一行需要进行缩进操作，如果没有就不需要进行缩进。
+
+缩进的方式可以选择两个或四个空格，或使用 Tab（虽然 Tab 在部分风格指南中不被推荐，但仍被广泛使用且便于编辑）。
+
+### 文本编辑器
+
+推荐在 VS Code 中安装 Skript 扩展以获得更好的开发体验，也可使用 [Skeditor](https://forums.skunity.com/resources/skeditor.1517/) 提供语法高亮。
+
+### 语法查询
+
+所有的 Skript 语法都是通过同样的方法在 Skript 中注册的，因此我们必须要学会理解 Skript 语法。
+
+我们推荐在以下的网站查询 Skript 语法：
+
+- [Skript Hub](https://skripthub.net/docs/)
+- [skUnity Docs](https://docs.skunity.com/syntax)
+- [Skriptlang Docs](https://docs.skriptlang.org/docs.html)
+- 各个 Addon 的官方文档...
+
+首先，最重要的是 `Event`（事件），它构成了脚本逻辑的触发条件。在 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) 的侧边栏中选择 Skript -> Events 可以筛选出原生事件，下面以 Click 为例：
+
+在文档中，每个语法会有以下几个重要标签：
+
+#### 模式
+
+这部分用于描述语法在 Skript 是如何被解析的，如下：
+
+```text
+[on] [(right|left)(| |-)][mouse(| |-)]click[ing] [on %entitydata/itemtype/blockdata%] [(with|using|holding) %itemtype%]
+```
+
+这部分的语法格式可以分为三种：
+
+##### `[xxx]`
+
+表示这部分可以被省略，但省略后可能会导致意义改变，如此处 `on click:` 和 `on rightclick:` 意义不同，前者为所有类型的点击，而后者为右键。
+
+##### `(x|y|z)`
+
+表示该部分可以从 `x`、`y`、`z` 中选择一个值，并且这些选项可以包含空格或无空格形式。
+
+例如 `[mouse(| |-)]click` 可对应 `mouseclick`、`mouse-click`、`mouse click` 或 `click` 等写法。
+
+而 `(right|left)(| |-)` 表示 `right` 与 `left` 是两个相互区分的选项。
+
+##### `%entitydata/itemtype%`
+
+表示这部分只能是固定的某种 type，如 `%itemtype%`，这部分可以勾选 [Skript Hub](https://skripthub.net/docs/) 侧边栏 `Type` 获取。
+
+#### 属性（可选）
+
+只会出现在 Event 中，描述一个事件是否可取消，以及该事件中可用的属性，如
+
+我们要重点关注的是 `Event Values` 这一标签下所对应的内容：
+
+- event-block（事件方块-玩家点击的方块）
+- event-direction（事件方向-玩家点击的方块的方向）
+- event-entity（事件实体-通常为玩家，如果是和实体交互则为该实体）
+- event-item stack（事件物品-玩家主手工具）
+- event-player（事件玩家）
+- event-world（事件世界）
+- ...
+
+利用这些，我们便可以获取到事件中的，"谁" 和 "某地" 之类具体的信息。
+
+我们看一个 "on click" 相关示例：
+
+```skript
+on right click on dirt:
+    send "%event-world%" to console
+    send "%event-player%" to console
+    send "%event-block%" to console
+```
+
+此时，任何对泥土方块的右键点击，都会在后台输出 `event-world`、`event-player`、`event-block` 三个元素的值。
+
+相同地，你可以利用这样的方法，输出任何一个监听器下 "Event Values" 的元素值。
+
+这种获取元素值的方法将在你需要使用任何从来没有接触过的监听器的时候，快速让你掌握监听器的基本信息。
+
+#### 例子（可选）
+
+文档中会给出一些例子，帮助你更好的理解该语法的用法，通常需要点击 `View Examples` 才能看到。
+
+注意：例子在不同版本的 Skript 中可能会有所不同，请根据你所使用的 Skript 版本进行参考。
+
+#### 版本信息
+
+不同版本的 Skript 可能会对某些语法进行修改或添加新的语法，因此在使用某个语法时，务必确认你的 Skript 版本是否支持该语法。
+
+同时，新版 Skript 会对某些过时的语法进行改进，因此建议查看右上角的版本信息，确保你所参考的语法与你所使用的 Skript 版本相符。
+
+相信通过以上方法，你已经可以快速的查询到 Skript 语法，并理解其基本用法。那么接下来，我们将介绍 Skript 的八大类语法，帮助你更好的理解 Skript 的整体结构。
+
 ## 了解 "八大类"
 
-所有的脚本都是由以下八中类型的语法构成：
+所有的脚本都是由以下八种类型的语法构成：
+
+Events、Conditions、Effects、Expressions、Types、Functions、Sections、Structures
+
+其中：
+
+只有 Events 和 Structures 可以顶层使用，其余六种类型必须嵌套在其他类型中使用。
+
+只有 Conditions、Effects、Expressions、Functions 可以单独成为一行代码使用。
 
 ### Events - 事件
 
@@ -20,9 +128,9 @@ title: 基础教程
 
 ```skript
 on death of player:
-    #玩家死亡时
+    # 玩家死亡时
 on click:
-    #玩家点击时
+    # 玩家点击时
 ```
 
 此处的 `on death of player` 和 `on click` 为 Events - 事件
@@ -32,6 +140,8 @@ on click:
 条件语句用于判断某个表达式的结果，根据结果来执行不同的代码块。
 
 在 SK 中常与事件一起使用，**用于判断是否应该执行特定的效果或操作**。
+
+条件用于判断句：有没有，是不是。它的基本格式为 "if" + 条件。
 
 举例：
 
@@ -47,50 +157,85 @@ on join:
 
 此处的 `has permission "admin"` 为 Conditions - 条件
 
+另外， SK 也支持省略 if 的写法，让 Conditions 单独成为一行代码：
+
+```skript
+on join:
+    player has permission "admin"
+    send "管理你好!" to player
+```
+
+在某些不需要 else 的情况下，这种写法更加简洁，但有时候大量条件会让代码变得不易阅读，因此建议根据实际情况选择使用。
+
 ### Effects - 效果
 
 效果可以是修改游戏模式、发送消息、移动玩家等任何能够改变游戏世界的动作。
 
 在 SK 中效果是脚本中实际执行的操作或指令，用于 **改变游戏结果或执行动作**
 
+与其说它是效果，不如称作行动。Effects 注重的是 `动词` 而非后面跟着的 `名词`。
+
 举例：
 
 ```skript
-on consume:
-    # 玩家吃东西时
-    set player's health to 20
-    # 设置玩家的生命值为20
 on player jump:
     # 玩家跳跃时
     teleport player to world "nether"
-    # 将玩家传送到名为"nether"的世界
+    # 将玩家传送到名为 "nether" 的世界
 ```
 
-此处的 `set player's health to` 和 `teleport player to` 为 Effects - 效果。
+此处的 `teleport player to %world%` 为 Effects - 效果。
+
+Effect 往往是脚本中最常用的语法，因为它们直接影响游戏世界和玩家体验。
+
+因此，我们再来看一个更复杂的 Effect 示例，发送 Title 信息：
+
+```skript
+send title %text% [with subtitle %text%] [to %players%] [for %time span%] [with fade[(-| )]in %time span%] [(and|with) fade[(-| )]out %time span%]
+send subtitle %text% [to %players%] [for %time span%] [with fade[(-| )]in %time span%] [(and|with) fade[(-| )]out %time span%]
+```
+
+我们可以大致上认识到 `EffSendTitle` 的基本用法，这里面面有很多可选项和类型，我们可以根据需要选择使用。
+
+```skript
+on join:
+    wait 1 second
+    # Effect -> wait %timespan%
+    # Type -> 1 second(timespan时间类型)
+    send title "Hello %player%!" with subtitle "Welcome to our server" to player for 5 seconds with fadein 1 second and fade out 1 second
+    # Effect -> send title %text% ...
+    # Type -> "Hello %player%!"(text类型), player(players类型), 5 seconds(timespan时间类型), 1 second(timespan时间类型)
+```
+
+此处的 `wait %timespan%` 和 `send title %text% ...` 为 Effects - 效果。
 
 ### Expressions - 表达式
 
-表达式是计算值或引用数据的语句。它们可以返回各种类型的结果。如数字、字符串、列表等。
+表达式是计算值或引用数据的语句。它们可以返回各种类型的结果，如数字、字符串、列表等。
 
 在 SK 中一般配合条件判断，用于 **在脚本中传递和处理数据**。
-
-举例：
 
 ```skript
 on join:
     # 玩家加入时
-    set `{playerIP::%player%}` to ip of player
-    set `{playername::%player%}` to name of player
-    # 将玩家的名字存储到变量`{playerName}``{playerIP}`中
-    broadcast "玩家名字为: %`{playerName%,IP为：`{playerIP::%player%}`}`!"
+    set {playerIP::%player%} to ip of player
+    set {playername::%player%} to name of player
+    # 将玩家的名字存储到变量 {playerName}、{playerIP} 中
+    broadcast "玩家名字为: %{playerName}%，IP 为：%{playerIP::%player%}%!"
     # 广播玩家的名字和 IP
 ```
+
+表达式通常用于获取一个类型的属性，例如获取玩家的名字、位置，世界的时间，物品的数量等。
+
+通常来说，用中文描述一个功能时出现 “的” 字时，往往意味着需要使用 Expression 来获取或修改该属性。
+
+对应的，在英文中，往往会出现 `of` / `'s`，来连接主语和属性。
 
 此处的 `name of` 和 `ip of` 为 Expressions - 表达式。
 
 ### Types - 类型
 
-类型定义了变量、参数和返回值的数据种类。在 Skript 中，虽然不像某些编程语言那样严格区分类型，但理解不同类型的值 (如字符串、数字、列表等) 对于编写正确的脚本至关重要。
+类型定义了变量、参数和返回值的数据种类。在 Skript 中，虽然不像某些编程语言那样严格区分类型，但理解不同类型的值（如字符串、数字、列表等）对于编写正确的脚本至关重要。
 
 ```skript
 on bed enter:
@@ -101,26 +246,85 @@ on bed enter:
         # 发送消息
 ```
 
-此处的 `"world"` 为 Types - 类型。(注意，此处的 `"world"` 是包含引号的内容，指的是具体的世界名)
+此处的 `world "world"` 为 Types - 类型。
+
+（注意，此处的 `"world"` 是包含引号的内容，指的是具体的世界名）
+
+#### Expressions（表达）& Types（类型）的配合使用
+
+假设你想在玩家所在位置生成僵尸。
+
+通过查阅 [官方文档](https://docs.skriptlang.org/docs.html?search=#EffSecSpawn)，我们知道生成的语法为：
+
+```skript
+(spawn|summon) %entity types% [%directions% %locations%]
+```
+
+这个 Effect（效果）只提供了 "生成" 这个动作，但我们还需要：
+
+- **位置**：玩家所在的位置
+- **实体类型**：僵尸
+
+查询文档后，我们找到 `location of` 表达式可以获取实体的位置。
+
+但是 "位置" 和 "僵尸" 这两个具体的对象（主语/宾语）需要用 **Types（类型）** 来表示。
+
+在 https://docs.skriptlang.org/classes.html 中可以找到：
+
+- `player` - 玩家
+- `zombie` - 僵尸
+
+综合以上信息，我们得到完整代码：
+
+```skript
+spawn zombie at location of player
+```
+
+但事实上，Skript 会自动判断我们传入的类型，例如 #EffSecSpawn 中需要传入的是 `location` 类型
+
+但 Skript 会自动将 `player` 类型转换为 `location of player` 因此也可直接写成：
+
+```skript
+spawn zombie at player
+```
+
+:::caution[说明]
+
+- **Effect**：提供动作（如 `spawn`）
+- **Expression**：提供属性（如 `location of`）
+- **Type**：提供具体对象（如 `player`、`zombie`）
+
+缺少主语/宾语时，在 Types 文档中查找即可。
+
+:::
 
 ### Functions - 功能
 
-功能是封装了特定逻辑的代码块，可以在脚本中多次调用，常用的功能是计算、向量等类型的。
+功能是封装了特定逻辑的代码块，可以在脚本中多次调用，可以带参数并返回值。
 
-在 SK 中，作用主要是 **快捷计算、指定类型 (如世界、颜色、玩家类型) 等**
+在 SK 中，作用主要是 **快捷计算、指定类型（如世界、颜色、玩家类型）等**
 
 举例：
 
 ```skript
-on elytra boost:
-    # 鞘翅加速时(skbee拓展)
-    set `{_vector1}` to vector(0, 1, 0)
-    # 设置局部变量为向量(向上)
- push player `{_vector1}`
+on player join:
+    set {_location} to makePlayerFly(event-player)
+    # 调用 makePlayerFly 函数，并传入 event-player 作为参数让玩家飞起来
+    # 将返回的地点存储在局部变量 {_location} 中
+    broadcast "玩家 %event-player% 在 %{_location}% 起飞了!"
+
+function makePlayerFly(p: player) :: location:
+    # 定义一个名为 makePlayerFly 的函数，参数为 p（类型为 player），返回值类型为 location
+    set {_vector1} to vector(0, 10, 0)
+    # 设置局部变量为向量（向上）
+    push player {_vector1}
     # 以设定向量推动玩家向上
+    return location of {_p}
 ```
 
-此处的 `world(xxx)` 和 `vector(0, 1, 0)` 为 Functions - 功能。
+此处的 `makePlayerFly()`、`world(xxx)` 和 `vector(0,1,0)` 为 Functions - 功能。
+
+而 `function makePlayerFly(p: player) :: location:` 事实上是一个 Structure - 结构。
 
 ### Sections - 部分
 
@@ -133,15 +337,20 @@ on tool break:
     # 当工具用坏时
     if player is op:
         # 如果玩家是管理员
-        give player 1 of diamand
+        give player 1 of diamond
         # 给玩家一个钻石
     else:
-        # 另一种情况(如果玩家不是管理)
+        # 另一种情况（如果玩家不是管理）
         send "哦不你失去了你的工具" to player
         # 发消息给玩家
+        spawn zombie at location of player:
+        # 在玩家位置生成一个僵尸
+            set name of entity to "复仇的僵尸"
 ```
 
-此处的 `if ...` 和 `else` 为 Sections - 部分。
+此处的 `spawn zombie at location of player:`、`if ...:` 和 `else:` 为 Sections - 部分。
+
+特点是，Sections 被嵌套在 Events 或 Structures 中，往往以 `:` 结尾，并且后续代码需要缩进。
 
 ### Structures - 结构
 
@@ -152,177 +361,97 @@ on tool break:
 ```skript
 options:
     servername: myserver
-    # option 中定义 `{@xxx}` 的值
-function welcome(msg: text,p: player):
-    broadcast `{_msg}`
+    # option 中定义 {@xxx} 的值
+
+function welcome(msg: text, p: player):
+    broadcast {_msg}
     # 广播消息
-    message "欢迎 %`{_p}`% 来到`{@servername}`服务器！"
-    # 定义了 welcome(参数1:type, 参数2:type),使用option中的变量 `{@servername}`
+    message "欢迎 %{_p}% 来到 {@servername} 服务器！"
+    # 定义了 welcome（参数 1:type，参数 2:type），使用 option 中的变量 {@servername}
+
 on join:
-    bcd("欢迎玩家加入游戏",player)
+    welcome("欢迎玩家加入游戏", player)
 ```
 
 此处的 `options` 和 `function` 为 Structures - 结构。
 
 通过合理使用这八大类语法，你可以编写出功能强大、易于维护的 Skript 脚本，为 Minecraft 服务器增添丰富的功能和玩法。
 
-## 入门
-
-Skript 仍然是编程语言，所有的编程语言都必须在拥有理论基础的情况下多实践。
-
-### 缩进
-
-在 Skript 中 如果一行代码以 `:` 结尾 那么下一行需要进行缩进操作，如果没有就不需要进行缩进。
-
-缩进的方式可以选择两个/四个空格或者一个 Tab (Tab 虽然不是很规范但是真的很爽)。
-
-### 文本编辑器
-
-推荐使用 VS Code 安装 Skript 拓展。或者使用 [Skeditor](https://forums.skunity.com/resources/skeditor.1517/) 高亮语法。
-
-### Helloworld
-
-在 `/plugins/Skripts/scripts` 目录下创建一个名为 `test.sk` 的文件，并打开粘贴以下代码。
-
-```skript
-on join:
-    send "Hello World" to event-player
-```
-
-随后在权限账号或者后台输入 `/skript reload scripts` 即可完成重载。然后退出服务器并重新进入。
-
-如果进入服务器时收到了 "Hello World" 的消息，那么证明脚本 `test.sk` 已经生效了。
-
-### 查询语法
-
-很好，想必你已经大概知道 Skript 是一款什么样的编程语言了。
-
-想必你一定有一些想法，市面上可能找不到，而且因为你不会使用 Java 写插件所以难以实现。
-
-前往 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) 查询 Skript 语法，现在开始构思你的插件吧。
-
-### 如何使用语法
-
-首先，最重要的是 Event (事件)，这是所有逻辑的先决要素，我们在 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) 上，
-
-在侧边栏中选中 (Skript 和 Events)，即可筛选 Skript 原生事件。此处以指令监听器为例：
-
-在侧边栏中选中 (Skript 和 Events) 后，在搜索栏中输入 "on command"，得到以下结果。
-
-![](_assets/SkriptBasic1.png)
-
-#### 语法
-
-举一个例子，点击事件的语法是这样的：
-
-```txt
-[on] [(right|left)(| |-)][mouse(| |-)]click[ing] (with|using|holding) %itemtype% on %entitydata/itemtype%
-```
-
-##### `[xxx]`
-
-表示这部分可以被省略，但省略后可能会导致意义改变，如此处 `on click:` 和 `on rightclick:` 意义不同，前者为所有类型的点击，而后者为右键。
-
-##### `(x|y|z)`
-
-表示这部分可以从 `x`、`y`、`z` 中选择一个值，`x`、`y`、`z` 可以是空格或者空 (也就是左右可以直接连起来)
-
-例如 `[mouse(| |-)]click` 代表着：`mouseclick` `mouse-click` `mouse click` 这三者有相同的含义。
-
-##### `%type%`
-
-表示这部分只能是固定的某种 type，如 `%itemtype%`，这部分可以勾选 [Skript Hub](https://skripthub.net/docs/) 侧边栏 `Type` 获取。
-
-#### 属性
-
-是否可取消
-
-我们要重点关注的是 `Event Values` 这一标签下所对应的内容：
-
-1. "event-world"("事件 - 世界")
-2. "event-commandsender"("事件 - 指令发送者")
-3. "event-player"("事件 - 玩家")
-
-利用这些，我们便可以获取到事件中的，“谁”和“某地”之类具体的信息。
-
-我们看一个 "on command" 相关示例：
-
-```skript
-on command "/op":
-    send "%event-world%" to console
-    send "%event-commandsender%" to console
-    send "%event-player%" to console
-```
-
-此时，任何执行者执行 "/op" 指令都会触发此监听。并将三个元素 "event-world" "event-commandsender" "event-player" 输出到后台。
-
-如果是后台执行了 "/op" 指令时，因为后台并不存于任何一个世界，也没有名字。上述三个元素只会有 "event-commandsender" 存在并正常输出为 "console" 而其余不存在元素将全部输出为 `"<none>"`
-
-相同地，你可以利用这样的方法，输出任何一个监听器下 "Event Values" 的元素值。
-
-这种获取元素值的方法将在你需要使用任何从来没有接触过的监听器的时候，快速让你掌握监听器的基本信息。
-
-### 最初的脚本
+## 最初的脚本
 
 在这个板块中，请利用 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) 查询 Skript 语法，满足缩进等要求，尝试写一些最基础脚本吧~
 
-#### 事件
+当然仅仅学这些并不够，为了做到能更快更灵活的使用各类语法，在闲暇的时候，把官方 Doc 提供的所有语法的注释都认真的看一遍是快速上手 Skript 的一种好办法。
 
-在这一节中，我们学习如何选取如何选用合适的事件。因为事件是一切行为的触发器，需要事件发生了什么，在哪发生的，
+### 事件
 
-才能够进一步进行操作，事件发生的顺序是：
+在这一节中，我们学习如何选用合适的事件。因为事件是一切行为的触发器，需要事件发生了什么，在哪发生的，才能够进一步进行操作。
 
-`事件准备发生` > `监听器监听到` > `事件正式发生`。
+事件发生的顺序是：
 
-##### 事件的取消
+`事件准备发生` -> `监听器监听到` -> `事件正式发生`
+
+#### 事件的取消
 
 如果我们在监听器监听到后，加入取消事件这一环节。事件发生的顺序就变为了：
 
-`事件准备发生` > `监听器监听到` > `取消事件` > `事件未发生`
+`事件准备发生` -> `监听器监听到` -> `取消事件` -> `事件未发生`
 
-我们就成功阻止了指令的发生，我们使用 `cancel event` 来达到这一点。
+我们就成功阻止了事件的发生，我们使用 `cancel event` 来取消事件。
 
-##### 事件优先级
+#### 事件优先级
 
 要注意，事件的监听是有优先级的，其中有六个优先级，其中执行顺序为 **从上到下** 分别为：
 
-| 优先级      | Priority |
-| ----------- | -------- |
-| 最低        | Lowest   |
-| 低          | Low      |
-| 正常 (默认) | Normal   |
-| 高          | High     |
-| 最高        | Highest  |
-| 监控        | Monitor  |
+| 优先级       | Priority |
+| ------------ | -------- |
+| 最低         | Lowest   |
+| 低           | Low      |
+| 正常（默认） | Normal   |
+| 高           | High     |
+| 最高         | Highest  |
+| 监控         | Monitor  |
 
-:::caution[吐槽]
+优先级的使用可以帮助我们更好地控制事件的处理顺序，避免逻辑冲突或不必要的资源消耗。
 
-Bukkit 的事件就是这样的，所以 Skript 也继承了这个抽象名字，发生顺序为 `Lowest -> Low -> Normal -> High -> Highest -> Monitor`
-
-没错，Lowest 的事件最先发生，如果一个插件事件优先级更高且这个事件没有被更低优先级的插件取消，那么更高优先级的事件将会覆盖更低优先级的结果。
-
-我们来简单假设一个条件，我们想要写一个脚本禁止管理使用 tp 指令传送玩家到其他地方，我们会这样写：
+示例 1：禁止没有权限的玩家通过命令执行传送：
 
 ```skript
 on teleport with priority lowest:
     teleport cause is command
-    #判断 tp 原因是否为指令 tp
-    if player do not has permission "admin.tp":
-        #取消没有被 tp 权限的玩家的传送
+    # 判断 tp 原因是否为指令 tp
+    if player does not have permission "admin.tp":
+        # 取消没有 tp 权限的玩家的传送
         cancel event
 ```
 
-此时我们在常用的 `on teleport` 事件后加上优先级 `with priority lowest` (以最低优先级先发生并取消)
+在此示例中使用 `with priority lowest` 可尽早判断并取消不符合权限的传送请求。
 
-由此可见，Lowest 可以理解为 First，而 Highest 可以理解为 Last，更符合逻辑
+示例 2：记录玩家受伤情况：
+
+```skript
+on damage of player with priority monitor:
+    # 监控玩家受伤事件
+    log "玩家 %player% 受到了伤害"
+```
+
+在此示例中使用 `with priority monitor` 可确保在所有其他监听器处理完毕后记录最终的受伤信息。
+
+:::warning[说明]
+
+Skript 使用与 Bukkit 相同的事件优先级机制，触发顺序为 `Lowest -> Low -> Normal -> High -> Highest -> Monitor`。
+
+`Lowest` 会最先接收事件；若事件未被取消，则后续优先级的监听器可能对事件结果进行进一步处理。
 
 :::
 
-##### 事件选用
+#### 事件选用
 
-选用不合适的事件可能会导致逻辑混乱复杂，性能拉胯，臃肿等。所以在任何脚本编写之前应该充分考虑选用什么事件是合理的。
+选用不合适的事件可能导致逻辑混乱、性能问题或代码臃肿。因此在编写脚本之前，应充分评估并选取合适的事件。
 
-例如，我们想写一个脚本，检测玩家在 00:00 - 06:00 没有在床上睡觉，那么就每秒扣玩家 1 生命值。
+##### 练习 1 - 夜间扣血脚本
+
+例如，我们想写一个脚本，检测玩家在 00:00 ～ 06:00 没有在床上睡觉，那么就每秒扣玩家 1 生命值。
 
 查询 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax)，根据直觉选择，与时间和睡觉有关系的事件可能有这些：
 
@@ -335,8 +464,10 @@ on bed leave:
 
 我们分别使用这些事件写以下几个脚本：
 
+<details>
+    <summary>脚本 1 - Every %timespan% + loop</summary>
+
 ```skript
-# 脚本1
 every 1 second:
     loop all players:
         if loop-player is not sleeping:
@@ -344,29 +475,18 @@ every 1 second:
                 remove 1 from health of loop-player
 ```
 
-该脚本利用 `every %tiemspan%` 作为事件触发，本身也是周期循环。
+该脚本利用 `every %timespan%` 作为事件触发，本身也是周期循环。
 
 可以发现，该循环使用 `every 1 second`，触发频率比较高，即使在白天这个事件循环仍在继续，
 
-虽然整体任务不算复杂，但是如果遇到复杂判断时，高频率 (尤其是 `every tick`) 的事件是很低效的。
+虽然整体任务不算复杂，但是如果遇到复杂判断时，高频率（尤其是 `every tick`）的事件是很低效的。
 
-在这里，我们可以改写为：
+</details>
 
-```skript
-# 脚本1改
-every 1 second:
-    if time in world is between 00:00 and 6:00:
-        loop all players:
-            if loop-player is not sleeping:
-                remove 1 from health of loop-player
-```
-
-相对脚本 1，我们发现，在时间在 0 - 6 点之外的时候，我们不会 loop 和判断玩家睡眠，因为这本身是没有意义的。
-
-仅仅只是交换两行代码顺序，就能起到提升性能的效果。(这里举例是非常轻量的例子，不足以产生任何性能问题)
+<details>
+    <summary>脚本 2 - Event + At time</summary>
 
 ```skript
-# 脚本2
 on bed leave:
     set {%player%::sleep} to false
 on bed enter:
@@ -378,17 +498,20 @@ at 00:00 in world "world":
             if {%loop-player%::sleep} is false:
                 remove 1 from health of loop-player
         wait 1 second
-
 ```
 
-该脚本利用 `at time` 作为事件触发，也使用 `while` + `wait` 保持时间周期循环。使用 `bed leave` `bed enter` + 变量作为条件。
+该脚本利用 `at time` 作为事件触发，也使用 `while` + `wait` 保持时间周期循环。使用 `bed leave`、`bed enter` + 变量作为条件。
 
-属于错误使用了监听事件，因为玩家是否在睡觉不需要我们自行使用事件判断，而是有直接的条件语法。
+属于 **错误使用了监听事件**，因为玩家是否在睡觉不需要我们自行使用事件判断，而是有直接的条件语法。
+
+</details>
+
+<details>
+    <summary>脚本 3 - Event + While</summary>
 
 ```skript
-# 脚本2改
 at 00:00 in world "world":
-    while time in world is between 00:00 and 6:00:
+    while time in world is between 00:00 and 6:00: # 注意：若时间段跨越午夜（如 23:00-02:00），请不要直接使用 between，而应拆分为两个条件判断
         loop all players:
             if loop-player is not sleeping:
                 remove 1 from health of loop-player
@@ -397,11 +520,35 @@ at 00:00 in world "world":
 
 该脚本利用 `at time` 作为事件触发，使用 `while` + `wait` 保持时间周期循环，使用 `is not sleeping` 作为条件。
 
-##### 练习
+此处 `while` + `wait` 的使用也并不推荐，因为 Skript 的 `wait` 机制并不高效，因此可以考虑使用 `Skbee` 写法：
 
-制作一个 Skript 脚本，用于在大厅使用，不会刷新怪物，玩家不会受伤也不可伤害，也不会掉饱食度。
+</details>
 
-普通玩家不可放置方块，或破坏方块，而有权限 `lobby.admin` 的玩家可以放置和破坏方块。
+<details>
+    <summary>脚本 4 - Skbee Async Task</summary>
+
+```skript
+at 00:00 in world "world":
+    async run 1 tick later repeating every 1 second:
+        if time in world is not between 00:00 and 06:00:
+            exit
+        loop all players where [input is not sleeping]:
+            remove 1 from health of loop-player
+```
+
+该脚本利用 `at time` 作为事件触发，使用 Skbee 的异步定时任务保持时间周期循环，使用 `Where` 语法筛选玩家，
+
+使用 `is not sleeping` 作为条件，`if` 反转退出循环，提升了性能和可读性。
+
+</details>
+
+#### 练习 2 - 大厅保护脚本
+
+这个练习要求你运用所学的事件知识，制作一个 Skript 脚本，用于在大厅使用，
+
+取消玩家伤害、饥饿度变化与怪物刷新，同时限制普通玩家放置与破坏方块。
+
+具有 `lobby.admin` 权限的玩家应保留放置与破坏的权限。
 
 <details>
     <summary>参考写法，不唯一</summary>
@@ -410,41 +557,42 @@ at 00:00 in world "world":
 
 ```skript
 # 不推荐，即使这是有用的！
-on spawn of any monster:
+on spawn of zombie:
     cancel event
+
 on food level change:
     cancel event
-    #禁止饱食度变化
-```
+    # 禁止饱食度变化
 
-```skript
-on damage of a player with priority lowest::
+on damage of a player with priority lowest:
     cancel event
-    #取消玩家伤害
-on break with priority lowest::
-    if player do not have permission "lobby.admin":
-        #判断玩家权限
+    # 取消玩家伤害
+
+on break with priority lowest:
+    if player does not have permission "lobby.admin":
+        # 判断玩家权限
         cancel event
-        #取消无权限玩家的方块破坏
-on place with priority lowest::
+        # 取消无权限玩家的方块破坏
+
+on place with priority lowest:
     if player has permission "lobby.admin":
         stop
-        #停止进一步对有权限玩家的逻辑，即什么也不做
+        # 停止进一步对有权限玩家的逻辑，即什么也不做
     else:
         cancel event
-        #取消没有权限玩家的方块放置行为
+        # 取消没有权限玩家的方块放置行为
 ```
 
 在这里，以下两种写法是等价的。
 
 ```skript
-if player do not have permission "lobby.admin":
+if player does not have permission "lobby.admin":
     cancel event
 ```
 
 ```skript
 if player has permission "lobby.admin":
-    xxx
+    # 有权限时的处理
 else:
     cancel event
 ```
@@ -453,33 +601,135 @@ else:
 
 ```skript
 on place:
-    player do not have permission "lobby.admin"
+    player does not have permission "lobby.admin"
     cancel event
 ```
 
-在这里省略了一个 if，因此后面也不需要跟上冒号 `:`，也无需重新换行，但注意，这只适用于只对没有权限的人进行取消，而对有权限的人没有任何限制时才可以这么写。
+在这里省略了一个 if，因此后面也不需要跟上冒号 `:`，也无需重新换行，但注意，
+
+这只适用于只对没有权限的人进行取消，而对有权限的人没有任何限制时才可以这么写。
 
 </details>
 
-#### 条件
+### 指令注册
 
-TODO
+说到现在，我们所有的代码，似乎都是基于监听器进行编写的。我们都需要去触发监听器，才能执行我们的代码，那有没有什么办法可以主动触发我们的代码？
 
-#### 练习 2 - /command、局部变量、运算练习
+这时候我们就需要引入 Minecraft 插件最核心的功能，指令功能。
 
-制作一个 Skript 脚本，用于简单的跨世界传送，输入 `/world xxx` 即可传送到对应世界，坐标对应为：`主世界:地狱:末地=8:1:8`，
+在 Java 里你可能需要这样注册一个指令：
 
-即玩家在末地 `800， 100， 800` 传送到主世界坐标为 `800 100 800`，如果传送到地狱坐标为 `100 100 100`
+```Java
+@Override
+public boolean onCommand(final CommandSender sender, Command cmd, String label, String[] arg) {
+    if (cmd.getName().equalsIgnoreCase("自定义指令")) {
+        // 代码段落
+    }
+    return true;
+}
+```
+
+但是在 Skript 里你只需这样即可：
+
+```skript
+command /<指令名称> [<类型1>] [<类型2>] [<类型3>]:
+    aliases: <别名>
+    executable by: <执行者>
+    usage: <使用提示>
+    description: <指令描述>
+    permission: <所需权限>
+    permission message: <无权限消息>
+    cooldown: <冷却时间>
+    cooldown message: <冷却消息>
+    cooldown bypass: <冷却绕过权限>
+    cooldown storage: <变量>
+    trigger:
+        # 代码段
+```
+
+#### 指令注册详解
+
+- **Aliases**：子指令，指令的别名。如果需要创建多个子指令，请使用逗号分隔。示例：`/alias1, alias2, /alias3`
+
+- **Executable By**：指定可以使用该指令的执行者。例如：`console`（后台）、`players`（玩家）、`the console and players`（后台和玩家）
+
+- **Usage**：执行者用法不正确时，将发送的消息。
+
+- **Description**：指令描述，其他插件可以获取/显示此信息。
+
+- **Permission**：执行指令所需要的权限。
+
+- **Permission Message**：执行者没有权限时的提示信息。
+
+- **Cooldown**：多长冷却时间后可以再次使用该指令，需要注意的是，关服时所有指令冷却时间将被重置。
+
+- **Cooldown Message**：冷却期间，提示信息。
+
+- **Cooldown Bypass**：无视冷却时间所需要的权限。
+
+- **Cooldown Storage**：存储冷却时间全局变量名称。
+
+- **Trigger**：指令触发时执行的代码段。
+
+这里的 `[<类型>]` 就是指令参数的类型，可以查询 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) 侧边栏 `Type` 获取。
+
+常见的类型有：
+
+- `text`、`string` - 字符类型。什么是字符？可以按照字面意思来理解，字词符号。
+- `player` - 在线玩家。
+- `offline player` - 离线玩家。
+- `number` - 数字类型。
+- `integer` - 整数类型。
+- `boolean` - 布尔类型。
+
+一般来说，选择合适的类型参数，可以帮助我们更好的限制输入内容，减少边界情况的发生。
+
+另外，`command /test %arg-1% %arg-2% %arg-3%:` 指令参数在代码段内的引用方式为 `arg-1`、`arg-2`、`arg-3`，依此类推。
+
+我们只需要记住核心规则，参数前有多少个空格，那么参数编号就是多少。
+
+#### 指令参数详解
+
+##### 指令名称（必填）
+
+指令名称基本上是指令，你可以在指令名称中使用任何字符（空格字符除外）。当然如果在指令名称中使用空格字符，那么空格字符后的文本将成为参数。
+
+指令名称前的斜杠字符（`/`）是可选的（但这并不意味着你可以在执行指令时不带斜杠）。
+
+##### 指令参数（可选）
+
+- 使用 `text`/`string` 类型参数时，可以输入任何字符，`object` 类型不能用作于参数；
+- 使用 `player`/`offline player` 类型参数时，玩家名称会自动添加到 Tab 补全列表中；
+- 使用 `boolean` 类型参数时，只接受以下几种输入：`true`、`false`、`on`、`off`；
+- 使用 `<>` 引用起来时说明该参数为必要参数，如果输入时没有这个参数时会提示格式错误；
+- 使用 `[<>]` 引用起来时说明该参数为可选参数。
+- 可以通过使用规定的格式来限制参数的类型，例如：`<type = default value>`，其中 `default value` 是可选的，如果执行者未输入该参数，系统将自动使用默认值；
+- 类型可以是多个（例如 `number` -> `numbers`，`entity` -> `entities`）。通过这样的方法，可以使参数接受多个值。
+
+以下是一份指令示例，假设我们注册了一个杀死指定实体的指令：
+
+`command /kill <entity types> [in [the] radius <number = 20>]:`
+
+`/kill zombies` -> 这将会杀死半径 20 范围内的所有僵尸。
+
+`/kill creepers and animals in radius 100` -> 这将会杀死半径 100 范围内的所有爬行者和动物。
+
+`/kill monsters in the radius 6` -> 这将会杀死半径 6 范围内的所有怪物。
+
+很好，我们已经了解了指令注册的基本用法，接下来我们通过几个练习来巩固所学内容。
+
+#### 练习 3 - 跨世界传送指令（/command、局部变量、运算）
+
+制作一个 Skript 脚本，用于简单的跨世界传送，输入 `/world xxx` 即可传送到对应世界，坐标对应为：`主世界:地狱:末地 = 8:1:8`，
+
+即玩家在末地 `800，100，800` 传送到主世界坐标为 `800 100 800`，如果传送到地狱坐标为 `100 100 100`，
+
+要避免玩家传送到自己所在的世界。如果玩家输入的世界不存在，则提示 "目标世界不存在"，如果只输入 `/world` 则提示玩家所在位置。
+
+这个指令需要有 `command.world` 权限才能使用，传送 CD 为 5 秒。
 
 <details>
     <summary>参考写法，不唯一</summary>
-
-::::tip
-
-1. `command /xxx` 后一定要使用 `trigger:` 否则指令将不会注册并报错。
-2. `/xxx` 为 "指令"，第 n 个空格后的参数即为 `arg-n`，如此处的 `<world>` 为 `arg-1`
-3. 参数类型可以查 [Skript Hub](https://skripthub.net/docs/) 选择 `type` 为参数类型，万能参数可用 `string` / `text`。
-4. 参数以 `<>` 引用起来时说明该参数为必要参数，如果输入时没有这个参数时会提示格式错误，如果这个参数是可以省略的，那么可以使用类似 `[<text>]` 的方法。
 
 在这里，我们分析一下指令，应该是 `/world xxx` 中的 `xxx` 代表世界，所以我们选择 `/world <world>` 作为指令。
 
@@ -488,21 +738,25 @@ TODO
 如果你是新手，很有可能会写出类似以下的脚本：
 
 ```skript
-if arg-1 is world "world_the_end":
-    teleport player to location(player's x-coord / 8, player's y-coord, player's z-coord / 8, world "world_the_end")
-if arg-1 is world "world_nether":
-    if player's world is "world_the_end":
-        teleport player to location(player's x-coord / 8, player's y-coord, player's z-coord / 8, world "world_nether")
-    if player's world is "world":
-        teleport player to location(player's x-coord, player's y-coord, player's z-coord, world "world_nether")
-if arg-1 is world "world":
-    if player's world is world "world_nether":
-        teleport player to location(player's x-coord * 8, player's y-coord, player's z-coord * 8, world "world")
-    else:
-        teleport player to location(player's x-coord, player's y-coord, player's z-coord, world "world")
+command /world [<world>]:
+    cooldown: 5 seconds
+    permission: command.world
+    trigger:
+        if arg-1 is world "world_the_end":
+            teleport player to location(player's x-coord / 8, player's y-coord, player's z-coord / 8, world "world_the_end")
+        if arg-1 is world "world_nether":
+            if player's world is "world_the_end":
+                teleport player to location(player's x-coord / 8, player's y-coord, player's z-coord / 8, world "world_nether")
+            if player's world is "world":
+                teleport player to location(player's x-coord, player's y-coord, player's z-coord, world "world_nether")
+        if arg-1 is world "world":
+            if player's world is world "world_nether":
+                teleport player to location(player's x-coord * 8, player's y-coord, player's z-coord * 8, world "world")
+            else:
+                teleport player to location(player's x-coord, player's y-coord, player's z-coord, world "world")
 ```
 
-:::caution[为什么这是不好的]
+:::warning[问题分析]
 
 1. 在这里，每行代码都过长了，非常不利于阅读。
 2. 此想要调整不同世界的比例时，需要一个个调整参数，这不利于代码的维护。
@@ -510,632 +764,388 @@ if arg-1 is world "world":
 
 :::
 
-::::
-
-所以，我们选择使用局部变量暂存玩家的坐标，并基于玩家所在世界及目标世界计算变量，
-
-最后根据计算出的量直接使用 `teleport player to [location]` 传送即可。
+所以，我们选择使用局部变量暂存玩家的坐标，并基于玩家所在世界及目标世界计算变量，最后根据计算出的量直接使用 `teleport player to %location%` 传送即可。
 
 ```skript
-command /world <world>:
+command /world [<string>]:
+    cooldown: 5 seconds
     permission: command.world
     trigger:
+        if arg-1 is not set:
+            send "你当前所在位置为：X:%player's x-coord% Y:%player's y-coord% Z:%player's z-coord% in world %player's world%"
+            stop
+            # 如果没有输入参数则提示玩家当前位置并停止执行
         if arg-1 is player's world:
             send "[传送] 禁止套娃！"
             stop
-            #取消玩家输入的世界是自己所在的世界时的原地tp
+            # 取消玩家输入的世界是自己所在的世界时的原地 tp
+        if world "%arg-1%" is not loaded:
+            send "[传送] 目标世界不存在！"
+            stop
+            # 取消玩家输入的世界不存在时的 tp
+
+        set {_y} to player's y-coord
+        # 使用局部变量储存玩家的 y 坐标
+        if player's world is world "world_nether":
+            # 玩家在地狱时存储 x z 坐标存为 8 倍
+            set {_x} to player's x-coord * 8
+            set {_z} to player's z-coord * 8
         else:
-            set {_y} to player's y-coord
-            #使用局部变量储存玩家的 y 坐标
-            if player's world is "world_nether":
-                #玩家在地狱时存储 x z 坐标存为 8 倍
-                set {_x} to player's x-coord * 8
-                set {_z} to player's z-coord * 8
-            else:
-                #玩家在其他世界时 x z 左边暂存
-                set {_x} to player's x-coord
-                set {_z} to player's z-coord
-            if arg-1 is world "world_nether":
-                #如果玩家从其他地方到地狱，将暂存的 x z 坐标除以 8
-                set {_x} to {_x}/8
-                set {_z} to {_z}/8
-                teleport player to location({_x},{_y},{_z},world "world_nether")
-                #传送到地狱
-            else:
-                teleport player to location({_x},{_y},{_z},world "%arg-1%")
-                #传送到指令对应世界
+            # 玩家在其他世界时 x z 坐标暂存
+            set {_x} to player's x-coord
+            set {_z} to player's z-coord
+
+        if arg-1 is world "world_nether":
+            # 如果玩家从其他地方到地狱，将暂存的 x z 坐标除以 8
+            set {_x} to {_x} / 8
+            set {_z} to {_z} / 8
+        teleport player to location({_x}, {_y}, {_z}, world "%arg-1%")
+        send "[传送] 成功传送到世界 %arg-1% ！"
 ```
 
-</details>
+:::tip[卫语句的使用]
 
-#### 练习 3 -
+以上脚本将 if %condition% 代码块靠前并提前 stop，检查了玩家输入的世界是否合理，这个思想广泛运用于编程中，
 
-<details>
-    <summary>参考写法，不唯一</summary>
+称为 "守卫式编程"（Guard Clause Programming），也叫卫语句，可以有效减少嵌套层级，提高代码可读性。
 
-</details>
-
-#### 练习 4 -
-
-<details>
-    <summary>参考写法，不唯一</summary>
-
-</details>
-
-#### 练习 5 -
-
-<details>
-    <summary>参考写法，不唯一</summary>
-
-</details>
-
-#### 练习 6 -
-
-<details>
-    <summary>参考写法，不唯一</summary>
-
-</details>
-
-### 最初的脚本编写思路 (by TUCAOEVER)
-
-:::caution
-
-后文为 TUCAOEVER 在 MCBBS 的教程未参考部分，没有进行任何格式化，TODO
+尤其是在指令注册中，往往需要对输入参数进行多次检查，使用守卫式编程可以让代码逻辑更加清晰。
 
 :::
 
----
+</details>
 
-### Conditions (条件)
+### 变量
 
-条件用于判断句：有没有，是不是。它的基本格式为 "if" + 条件。
+变量是任何有用编程语言中的关键组成部分，Skript 也不例外。它们允许你存储、检索和操作数据，从而使你的脚本更加动态和灵活。
 
-这里我们和学习 Events 一样，我们先通过官方 Doc 找到所有的条件。
-
-这里我们拿最常用的一个条件作示例，判断玩家是否有权限。
-
-权限的英文是什么？"permission" 我们通过翻阅侧边栏可以得知与 "permission" 相关的只有 "Has Permission" 一条，官方对这个条件的解释为：
-"Test whether a player has a certain permission."，翻译过来就是 "检测一个玩家是否拥有某一权限"。即我们所需要的：判断玩家是否有权限，那么我们又该如何使用呢 "Has Permssion" 条件呢？
-
-在 "Has Permission" 下 "Patterns" 给了我们两种标准格式用法：
-
--   `%players/console% (has|have) [the] permission[s] %texts%`
--   `%players/console% (doesn't|does not|do not|don't) have [the] permission[s] %texts%`
-
-针对这样的格式，我相信很多人可能一头雾水。了解如下几点，或许能帮助你更好的了解用法：
-
--   "[]" 内可以省略
--   "(...|...)" 内必须选择一项填写
--   "%%" 内必须根据其所对应的类型进行填写
-
--   `player has permission "player.op"`
--   `player have the permissions "player.op"`
--   `player have permissions "player.op"`
-
-正如之前所说的：可以省略的地方，无论如何搭配，表达的意思都是一样的。
-
-这也是 Skript 一大特点，并不需要非常严谨的语法。只要意思对，语法可以根据个人喜好进行选择。
-
-同样我们还是举一个以 "on command" 监听器为核心的例子加深一下大家的理解：
+Skript 中的变量名几乎可以包含绝大多数字符，例如：
 
 ```skript
-on command "/op":
-        event-commandsender is player
-        if event-player has permission "player.op":
-                send "true" to event-player
-        else:
-                cancel event
-                send "false" to event-player
+set {玩家的金币数} to 1000
+set {_player::coin} to 1000
+set {-cache::player::score} to 2
+set metadata "permission" of player to "VIP"
+set {-ids::*} to 1,2,3,4,5,6
 ```
 
-那么在玩家触发此监听器后，系统将会判断玩家是否有 "player.op" 权限。
+其中，主要的变量类型有 4 种：
 
-如果有，指令将会正常进行，并发送 "true" 给玩家。
+- **局部变量**：以 `{_` 开头 `}` 结尾的变量，仅在当前事件或指令触发器中有效，适用于临时存储数据，避免与全局变量冲突。
+- **全局变量**：以 `{` 开头 `}` 结尾的变量，在整个 Skript 脚本中都有效，适用于需要跨事件或指令共享的数据。
+- **内存变量**：以 `{-` 开头`}` 结尾的变量，类似于全局变量，但是服务器关闭后会被清除，适用于需要在服务器运行期间存储的数据。
+- **元数据变量**： `metadata "key" of %entity%/%world%` 格式的变量，与实体或世界绑定，适用于需要与特定实体或世界关联的数据。
 
-如果没有，指令执行事件将被强制取消，并发送 "false" 给玩家。
+### 数组与循环
 
----
+在开发过程中，很多时候会遇到需要批量处理一类变量的情况。例如玩家的游戏币、点券、经验值等。
 
-### Effects (效果)
+假如我们将玩家的金币储存在变量里，我们可能会有以下选择：
 
-与其说它是效果，不如称作行动。
+`{player_%player%_coins}`
+`{player.%player%.coins}`
 
-我们把条件类的示例拿下来接着分析：
+强烈不推荐！因为这样做不仅无法使用 Skript 内置的数组和循环功能，还会导致变量管理混乱，难以维护。
+
+`{%player%::playerCoins}`
+
+可以进行数组形式的进行批量操作，但不推荐这种方式，因为不利于变量的分类和管理。
+
+`{playerCoins::%player%}`
+
+不错的选择，使用数组形式存储玩家的金币数量，可以方便地进行批量操作和管理。
+
+#### 什么是数组
+
+数组是一种数据结构，用于存储一组相关的数据项。在 Skript 中，数组允许你将多个值存储在一个变量中，并通过索引访问这些值。
+
+数组的基本格式为 `{变量名::变量名::变量名......}`，其中 `::` 用于分隔不同的元素。
+
+`{playerCoins::%player%} = %value%` 中，`{playerCoins::%player%}` 就是一个数组变量，
+
+- `playerCoins` 是数组的名称，表示这是一个存储玩家金币数量的数组。
+- `%player%` 是索引，表示玩家的名称（在 Config 中可以改为 UUID）。
+- `%value%` 则表示该玩家所拥有的金币数量。
+
+这个数组也可以将这个变量视作返回了一个包含所有玩家金币数量的列表。
+
+`set {_money} to getMoney(%player%)` => `set {_money} to {playerCoins::%player%}`
+
+每给定一个玩家名称，就可以通过 `{playerCoins::%player%}` 访问到玩家金币数量。
+
+#### 为什么使用数组
+
+例如，我们使用数组 `{playerCoins::%player%}` 来存储玩家的金币数量时，如果需要给所有玩家增加金币，
+
+我们可以遍历数组中的每个元素，而每个玩家所拥有的金币数量可以通过 `{playerCoins::*}` 进行访问和修改。
+
+对于数组 `{playerCoins::*}` ，`*` 表示所有元素，可以用于循环遍历，也可以用于其他批量操作。
+
+#### Loop / For（循环）
+
+利用数组我们知道了如何快速获取一类数据。但是我们又该如何快速操作这一类数据呢？这时候就需要引入我们的 Loop 结构。
+
+Loop / For 即循环结构，是 Skript 里非常常用的结构语句，主要用于操作数据量较大的一类变量。
+
+Loop 可以与数组、次数、Types（类型）等配合使用。
+
+Loop / For 循环的结构如下：
+
+`loop %objects%`
+`for each %key%, %value% in %objects%`
+
+我们先举一个简单的例子：
 
 ```skript
-on command "/op":
-        event-commandsender is "player"
-        if event-player has permission "player.op":
-                send "true" to event-player
-        else:
-                cancel event
-                send "false" to event-player
+on load:
+    set {_list::1} to "hey"
+    set {_list::2} to "how"
+    set {_list::are} to "you"
+    loop {_list::*}:
+        broadcast "%loop-index%: %loop-value% (%loop-counter%)"
 ```
 
-我们把两个条件判断句替换为条件 1 和条件 2，那么这段代码就可以理解为：
+在 Loop section 中，有 `loop-index`、`loop-value`、`loop-counter` 三个内置变量来获取当前循环的索引、值和计数。
 
-```txt
-指令监听 "/op":
-        事件 - 发送者类别 是 玩家
-        条件 1:
-                send "true" to event-player # 发送消息给玩家
-        条件 2:
-                cancel event # 取消事件
-                send "false" to event-player # 发送消息给玩家
-```
+- loop-index：当前循环的索引值；
+- loop-value：当前循环的值；
+- loop-counter / loop-iteration：当前循环的计数，从 `1` 开始递增。
 
-我们可以看到，条件判断结束后，代码并没有直接结束，而是分别执行行动。
+特别的，对于 `loop %blocks%/%entities%/ %players%:`，
 
-如果我希望执行其他行动呢？比如我想给一个玩家发送一个 Title 消息：
+还可以使用 `loop-block`、`loop-entity`、`loop-player` 来获取当前循环的方块、实体或玩家对象，等价于 `loop-value`。
 
-通过在官方 Doc 搜索，我们得知关于 Title 相关的 Effects 一共有两个：
+很好，我们已经了解了 Loop / For 循环的基本用法，我们来看一个更实际的例子。
 
--   [EffResetTitle](https://docs.skriptlang.org/docs.html?search=#EffResetTitle)
-    "Resets the title of the player to the default values."
-    "重置玩家的 Title 至默认值"
--   [EffSendTitle](https://docs.skriptlang.org/docs.html?search=#EffSendTitle)
-    "Sends a title/subtitle to the given player(s) with optional fadein/stay/fadeout times."
-    "发送 Title/Subtitle 至指定玩家 可自定义渐入和淡出的时间"
-
-我们需要知道的是 #EffSendTitle 的用法。关于怎么用，这里本质上和学习 Conditions(条件) 一样，我们将注意点放在 "Patterns" 上。
-
-<!--markdownlint-disable line-length-->
-
-```txt
-send title %text% [with subtitle %text%] [to %players%] [for %time span%] [with fade[(-| )]in %time span%] [(and|with) fade[(-| )]out %time span%]
-send subtitle %text% [to %players%] [for %time span%] [with fade[(-| )]in %time span%] [(and|with) fade[(-| )]out %time span%]
-```
-
-<!--markdownlint-enable line-length-->
-
-按照我们提到的原则：
-
--   "[]" 内可以省略
--   "(...|...)" 内必须选择一项填写
--   "%%" 内必须根据其所对应的类型进行填写
-
-我们大致上认识到行动的基本用法，即：
-`send title "..." with subtitle "..." to player for ... seconds with fade-in ... seconds and fade-out ... seconds`
-
-将其带入进我们的伪代码：
-
-<!--markdownlint-disable line-length-->
+我们需要发奖励，给 `{playerCoins::*}` 每一个人都新增随机 1~100 金币，并计数一共增加了多少：
 
 ```skript
-指令监听 "/op":
-        事件-发送者类别 是 玩家
-        条件1:
-                send "true" to event-player
-                send title "Hello!" with subtitle "持续时间 5s 渐入未设置 淡出未设置" to event-player for 5 seconds
-                wait 15 seconds
-                send title "Hello!" with subtitle "持续时间 5s 渐入 5s 淡出未设置" to event-player for 5 seconds with fade-in 5 seconds
-                wait 15 seconds
-                send title "Hello!" with subtitle "持续时间 5s 渐入 5s 淡出 5s" to event-player for 5 seconds with fade-in 5 seconds and fade-out 5 seconds
-        条件2:
-                cancel event
-                send "false" to event-player
+command /addcoins:
+    trigger:
+        loop {playerCoins::*}:
+            set {_reward} to random integer between 1 and 100
+            add {_reward} to {playerCoins::%loop-index%}
+            send "你获得了 %{_reward}% 金币！你现在有 %loop-value% 金币，你是第 %loop-counter% 个获得奖励的玩家" to player(loop-index)
 ```
 
-<!--markdownlint-enable line-length-->
+在这里我们使用了 `loop {playerCoins::*}:` 来遍历数组中的每一个元素，在此处：
 
-通过以上三种方式，我们都能成功的发送了 Title 信息。
+- loop-index：当前循环的索引值，在数组中表示玩家名称或 UUID；
+- loop-value：当前循环的值，在当前数组中表示玩家的金币数量；
+- loop-counter：当前循环的计数，从 1 开始递增，表示已经处理了多少个元素。
 
-只要记住以上基本原则，所有的用法问题迎刃而解。
+##### 多层嵌套
 
-而学会读 "Patterns" 是初学者必备的技能，下文我将不会再提及如何使用 "Patterns" 查阅用法。
+在 Skript 中，Loop 结构是可以嵌套使用的。也就是说，你可以在一个 Loop 结构内部再使用另一个 Loop：
 
----
+但需要注意的是，嵌套的 Loop 结构需要区分不同层级的内置变量，
 
-### Expressions (表达) & Types (类型)
+例如 `loop-index-2`、`loop-value-2`、`loop-counter-2` 分别表示第二层循环的索引、值和计数。
 
-有一天你心血来潮，想要调整玩家的最大血量。
+一旦有多个层级的 Loop 嵌套，就需要使用 `-1`、`-2` 等后缀来区分不同层级的内置变量。
 
-调整血量，之前我们提过这属于动词 + 名词形式，这是属于 Effects(效果) 类。
-
-但是实际上是这样么？
-
-实际上并不是，所谓的 Effect (效果) 虽然都是 `动词 + 名词` 形式，但是对于 Effect (效果) 而言。
-
-注重的是 `动词` 而非后面跟着的 `名词` 例如 `在玩家所在位置生成僵尸`。
-
-Effect (效果) 所能提供的 只有 "生成"
-通过查阅 [官方文档](https://docs.skriptlang.org/docs.html?search=#EffSecSpawn)，我们知道生成的用法基本为：
+这会让代码非常混乱，不推荐使用过多层级的嵌套 Loop，举个例子：
 
 ```skript
-(spawn|summon) %entity types% [%directions% %locations%]
-(spawn|summon) %number% of %entity types% [%directions% %locations%]
+on load:
+    loop all players:
+        loop all blocks in radius 5 around loop-player:
+            send "玩家 %loop-player% 附近第 %loop-counter-2% 个方块是 %loop-block%" to console
 ```
 
-但是除去这个词语，我们还剩 "在玩家所在位置" 和 "僵尸"。
+为了解决这个问题，Skript 引入了 For 循环语法，可以让代码更加简洁和易读。
 
-这两个词我们又该怎么处理呢？这时候我们就需要用到 Expressions (表达)。
+##### For 循环
 
-位置的英文单词是 "Location" 我们在官方 Doc 查到了多种有关 "Location" 的表达
-
--   https://docs.skriptlang.org/docs.html?search=#ExprLocation
--   https://docs.skriptlang.org/docs.html?search=#ExprLocationOf
--   https://docs.skriptlang.org/docs.html?search=#ExprLocationAt
-
-我们需要什么呢？我们需要 "玩家所在的位置"。相同地，通过查看官方的注释，我们知道我们需要的是 #ExprLocationOf (The location of a block or entity.)。
-
-但是这只解决了我们 "所在位置" 的问题 并没有解决 "玩家" 和 "僵尸" 的问题。
-
-我们可以看到 "所在位置"，Expressions (表达) 是没有主语的。
-
-Skript 不同于其他语言，正如我在开头所展示的，相比较 Java 而言 Skript 更 **注重的是语言而非编程**。
-
-我们需要把这些零碎的东西组成句子，必不可少的是主语，次要的是宾语。
-
-这时候我们就需要引入 Types (类型)，但凡你发现你的表达里缺少主语/宾语 (对象)，来这里准没错：
-
-https://docs.skriptlang.org/classes.html
-
-通过翻译我们可以轻松知道玩家的英文以及僵尸的英文，分别为 "player"和"zombie"。
-
-与之相对应的，我们分别在 Types (类别) 中找到：
-
--   https://docs.skriptlang.org/docs.html?search=#player
--   https://docs.skriptlang.org/docs.html?search=#entity
-
-综合上面我们所获得的信息 我们获得了完整一行代码：
-
-`spawn zombie at location of player`
-
----
-
-WOW，恭喜你！看到这，你就可以开始尝试着写一些插件了。
-
-## 例子
-
-这里刚好有一个例子，不妨动动手，试一试。
-
--   在玩家破坏方块时 检查玩家是否有 "fundamental.break" 这个权限
--   如果有那就在让后台发送一条指令 "/broadcast %player% 破坏了方块"
--   如果没有那就取消这个事件 并 向这个玩家发送 "你不能破坏这个方块"
-
-答案不唯一，仅供参考。
-
-当然仅仅学这些并不够，为了做到能更快更灵活的使用各类语法，在闲暇的时候，把官方 Doc 提供的所有语法的注释都认真的看一遍是快速上手 Skript 的一种好办法。
-
----
-
-你开始尝试着写一些有一些小功能的脚本了，但是难免的你会出现这样的问题：
-
-你为玩家创建了很多变量，很多都是属于一个类型的。
-
-比如你把所有人的游戏币数量都存在了 `{(玩家的名称)的游戏币数}` 这些变量内，你把所有人的点券数量都存在了 `{(玩家的名称)的点券数}` 这些变量内……
-
-平时你单独去操作这些变量的时候，觉得也很容易。
-
-但是假设突然有一次，由于回档需要补偿玩家损失。
-
-你需要将所有玩家的 `{(玩家的名称)的游戏币数}` 变量都 +1000。
-
-还好只有 10 个玩家数据，你可以一个一个调，就是浪费一点时间，倒还不成问题。
-
-但是如果你有 10000 个玩家数据，如果你一个一个调，可能玩家都走完了，你也调不完。
-
-你遇到了新的问题，如何存储并快速操作一类变量？
-
-这时候你需要两样东西："数组"和"loop"。
-
-### 数组
-
-数组的基本格式为 `{变量名::变量名::变量名......}`。
-
-我们带入实景，将用 `{(玩家的名称)的游戏币数}` 存储转为用 `{金币::(玩家的名称)}` 存储玩家的游戏币数量。
-
-例如，服务器有 10000 个玩家，玩家名称为 1，2，3，......，10000，玩家游戏币数量为 100，200，300，......，1000000。
-
-那么对应的 `{金币::1}` 就是：名为 "1" 玩家的游戏币数量 100。
-
-如果我用输出语句输出 `{金币::1}` 至后台，那么很显然我会得到 100 这个数值。
-
-同样的我用输出语句输出 `{金币::10000}` 至后台，我会得到 1000000 这个数值。
-
-你可能会说，这不是和用 `{(玩家的名称)的游戏币数}` 一样么？
-
-是的，确实。如果仅仅需要获得某一个玩家的游戏币数量，两者并没有什么区别。
-
-但是，如果我将 `{金币::(玩家的名称)}` 中玩家的名称改为 "_" 即 ``{金币::_}``，这时候会产生什么样的效果呢？
-
-`{金币::*}` 将包含，所有 `{金币::(玩家的名称)}` 变量。
-
-而这个，却是 `{(玩家的名称)的游戏币数量}` 怎么改也做不到的。
-
-### Loop
-
-利用数组我们知道了如何快速获取一类数据。
-
-但是我们又该如何快速操作这一类数据呢？这时候就需要引入我们的 Loop 结构。
-
-Loop 即 循环结构，是 Skript 里非常常用的结构语句，主要用于操作数据量较大的一类变量。
-
-以下是 Loop 的几大标准配合：
-
-### Loop + 数组 结构
-
-(To Be Added.)
-
-### Loop + 次数 结构
-
-(To Be Added.)
-
-### Loop + Types (类型) 结构
-
-(To Be Added.)
-
----
-
-### 注册指令
-
-说到现在，我们所有的代码，似乎都是基于监听器进行编写的。
-
-我们都需要去触发监听器，才能执行我们的代码，那有没有什么办法可以主动触发我们的代码？
-这时候我们就需要引入 Minecraft 插件最核心的功能，指令功能。
-
-在 Java 里你可能需要这样注册一个指令。
-
-```Java
-@Override
-public boolean onCommand(final CommandSender sender, Command cmd, String label, String[] arg)`{
-        if (cmd.getName().equalsIgnoreCase("自定义指令"))`{
-        代码段落
-        }`
-        return true;
-}`
-```
-
-但是在 Skript 里你只需这样即可
+For 循环与 Loop 循环类似，但 For 循环写法更简洁，用于替换 `loop` 语句，适用于简化代码结构，提高可读性。
 
 ```skript
-command /自定义指令:
-        trigger:
-                代码段
+        # for 循环中只有一个变量时，for each %value% in {array::*}:
+        # 如果有多个变量时，使用 for each %key%, %value% in {array::*}:
+        for each {_player}, {_coin} in {playerCoins::*}:
+            set {_reward} to random integer between 1 and 100
+            add {_reward} to {playerCoins::%_player%}
+            send "你获得了 %{_reward}% 金币！你现在有 %{_coin}% 金币" to player({_player})
 ```
 
-你并不需要理解前者是什么意思，仅仅需要记住后者的格式即可。
+For 循环中，`for each {_player}, {_coin} in {playerCoins::*}:` 本质和 `loop {playerCoins::*}:` 相同，
 
-如果我想注册一个 "/我学你马 Java" 的指令，你只需这样：(编者注：不建议注册中文指令。)
+但是使用了更简洁的语法来定义循环变量，直接使用了自定义变量名 `{_player}` 和 `{_coin}`，提高了代码的可读性。等价于：
 
 ```skript
-command /我学你马Java:
-        trigger:
-                kill player
-                send "不许说Java坏话" to player
+    loop {playerCoins::*}:
+        set {_player} to loop-index
+        set {_coin} to loop-value
 ```
 
-通过测试，指令正常触发。
+#### 练习 4 - 数组与循环：连锁砍树
 
-通过套公式，你可以创造成千上万的指令不成问题，但是实际上我们在使用一个插件的时候，并不是只有 `/...` 结构的指令存在，更多的是 `/... ... ...` 来构成一类指令。
+当玩家手持斧头砍伐树木时，自动将在目标方块 **正上方** 木头一并砍伐掉，
 
-那我们又该如何注册这样结构的指令呢？非常简单，基本格式与上面几乎无异。
+考虑到本教程为基础教程，暂不考虑树木形状，仅砍伐正上方的木头，连锁上限为 32 块木头。
+
+提示：`blocks above %block%` 可获取某个方块正上方的所有方块列表。
+
+<details>
+    <summary>参考写法，不唯一</summary>
 
 ```skript
-command /自定义指令 [<类型>] [<类型>] ...:
-        trigger:
-                代码段
+item tag aliases:
+    any axe = minecraft:axes
+    any log = minecraft:logs
+# 定义物品标签，方便后续使用
+
+# 连锁砍树监听
+on break:
+    if player's tool is any axe:
+    # 判断玩家手持物品是否包含 "axe" 标签
+        block is any wood
+        # 获取被破坏方块正上方的所有方块列表
+        loop blocks above event-block:
+            if loop-counter > 32:
+                stop
+            # 达到连锁上限则退出循环
+            if loop-block is any wood:
+                break loop-block using player's tool
 ```
 
-本人写代码时常用的结构就是这样。
+</details>
 
-有人问 "类型" 有哪些，其实我也说不全，我常用的有这几种。(编者注，见本页 `了解八大类`。)
+### Function（函数）
 
--   "text" - 字符类型。什么是字符？可以按照字面意思来理解，字词符号。
--   "player" - 在线玩家。
--   "offline player" - 离线玩家。
--   "number" - 数字类型。
--   "integer" - 整数类型。
+当你的插件越来越复杂时，你会发现代码段落越来越多，逻辑越来越复杂，但你会发现很多代码段落其实是相似的，甚至是完全相同的。
 
-那这些类型又有什么用处呢？它实际上是对指令的参数的一种限制。
+代码是给人看的，给机器执行的只是顺便的事情。如果代码重复过多，不仅会让代码臃肿不堪，还会增加维护难度。
 
-比如我创建如下指令：
+此时，就应该考虑使用 Function（函数）来优化代码结构和可读性 **复制粘贴不可取**。
+
+Function 可用于解决这些问题，函数的定义与指令注册具有相似性，例如二者都支持参数，函数的基本结构如下：
 
 ```skript
-command /hello [<player>]:
-        trigger:
-                代码段
-```
+function 方法名(参数名: 参数类型, 参数名: 参数类型, ...):
+    # 代码段落
 
-可以看到，第一个空格的位置，我需要的参数类型为在线玩家。
-
-那么我在执行这个指令的时候，必须在这个位置上填上一个在线玩家的名称。
-
-同样的如果我把 `"[<player>]"` 换成 `"[<integer>]"`，我就需要在这个位置上填写一个整数。
-
-如果我填了 "1.2"(小数/浮点数)，Skript 就会提示我，填写的参数类型错误。
-
-为什么填写参数？那肯定是在代码段内需要使用这些输进来的参数。
-
-那么我们在代码段里有该如何调用这些被我们输入进来的参数呢？
-
-比如像是上面这个指令，它只有一个可以填参数的位置。那么在代码段内，它就是 `arg-1`，即`第一个参数`的意思。
-
-我们只需要记住核心规则，它排在第几位，在代码段内，它就是 "arg-几"。
-
-当然我在这块的了解并不是很深入，为了不把大家带上歪路，这里引用国外 Skript 原作者更为详细的指令注册的教程。
-
-```skript
-command /<指令名称> <参数>:
-　　aliases:
-　　executable by:
-　　usage:
-　　description:
-　　permission:
-　　permission message:
-　　cooldown: <冷却时间>
-　　cooldown message:
-　　cooldown bypass:
-　　cooldown storage: <变量>
-　　trigger:
-　　　　代码段
-```
-
--   指令名称 (必填)
-    指令名称基本上是指令，你可以在指令名称中使用任何字符 (空格字符除外)。
-    当然如果在指令名称中使用空格字符，那么空格字符后的文本将成为参数。
-    指令名称前的斜杠字符 (/) 是可选的 (但这并不意味着你可以在执行指令时不带斜杠)。
--   参数 (可选)
-    可以通过将参数放在 "[]" 中来使其成为可选参数。
-    -   类型参数
-        可以通过使用规定的格式来限制参数的类型，例如：`<type = default value>`。
-        -   类型为 "text/string" 的参数可以接受任何字符，但 "object" 类型不能用作于参数 (编者注：原因大抵是无法输入 `object`)。
-        -   类型可以是多个 (例如 number -> numbers entity -> entities)。通过这样的方法，可以使参数接受多个值。
-        -   "= default value" 这一部分是可选的，如果指令执行者未输入参数，系统将自动使用默认值。
-        -   同样你也可以使用这样的方式设置参数默认值，例如：`<item = %player's tool%>`。
-
-以下是一份指令示例：
-
-`command /kill <entity types> [in [the] radius <number = 20>]:`
-
-使用 `/kill zombies /kill creepers and animals in radius 100` 或 `/kill monsters in the radius 6` 都是可以的。
-
-但是如果没有输入数值，系统将自动使用默认值，半径 20。
-
--   Aliases
-    子指令，指令的别名。如果需要创建多个子指令，请使用用逗号分隔。
-    示例：(/alias1，alias2，/alias3)
--   Executable By
-    指定可以使用该指令的执行者。
-    例如：console(后台)，players(玩家)，the console and players(后台和玩家)
--   Usage
-    执行者用法不正确时，将发送的消息。
--   Description
-    指令描述，其他插件可以获取/显示此信息。
--   Permission
-    执行指令所需要的权限。
--   Permission Message
-    执行者没有权限时的提示信息。
--   Cooldown
-    多长冷却时间后可以再次使用该指令，需要注意的是，关服时所有指令冷却时间将被重置。
--   Cooldown Message
-    冷却期间，提示信息。
--   Cooldown Bypass
-    无视冷却时间所需要的权限。
--   Cooldown Storage
-    存储冷却时间全局变量名称。
-
----
-
-### Function 第一类结构
-
-众所周知，一个复杂的插件，不免出现相似的代码段。
-
-有时候你看着不舒服，想要缩减段落，却又无从下手。这时你就需要 Function 来帮忙了。
-
-这里取 SUPERGUILDS 的一段代码做讲解。
-
-```skript
-file "plugins/SUPERGUILDS/%{_fileDir}%.yml" does not exists:
-        create file "plugins/SUPERGUILDS/%{_fileDir}%.yml"
-    yaml "plugins/SUPERGUILDS/%{_fileDir}%.yml" is not loaded:
-        load yaml "plugins/SUPERGUILDS/%{_fileDir}%.yml" as "plugins/SUPERGUILDS/%{_fileDir}%.yml"
-    set yaml value "%{_variableName}%" from "plugins/SUPERGUILDS/%{_fileDir}%.yml" to "%{_value}%"
-    save yaml "plugins/SUPERGUILDS/%{_fileDir}%.yml"
-```
-
-可能你不知道这段代码的意思，简而言之，这段代码的功能是存储一些数据至一个 YAML 文件内。对于一个相对复杂的脚本，数据的存储是必不可少的，同样也会频繁出现在我们的代码中的。难道真的每一次需要存储数据的时候，都需要再去复制粘贴么？
-
-对于一个初学者来说，无可厚非，就是多几行而已。但是对于一个老手来说，**复制粘贴不可取**。
-
-首先对于一个 5000+ 以上的插件来说，你需要关注的东西很多：一个是代码优化，一个是代码可读性。
-
-就拿 SUPERGUILDS 来说，它有 7000 多行。我所有的数据读取和存储都是通过方法完成，单一个数据写入方法我就使用了 100 多次，(也就是以上的代码)。如果我们把它都像上面一样全部展开，我的脚本将立即增加 600+ 行。
-但是我们在写脚本的时候真正需要的是这些么？不，我们需要的是效果，是功能，不是数据处理的流程。
-
-每次写入数据都需要白白多占 6 行，既不方便后期维护，又要因为要兼顾路径正确与否，浪费很多时间在查错上面，不划算。
-
-Function 为你解决了这些难题，方法的注册和指令的注册有共同的地方，比如它们同样需要参数，结构一般为：
-
-```skript
-function 方法名(参数名:参数类型， 参数名:参数类型， ...):
-        代码段落
-```
-
-(关于参数名以及参数类型的定义 可以在 "Command" 栏目下找到 此处不再赘述)
-套用公式 我们可以把上面的代码段转换成方法段
-
-```skript
-function SG_writeFile(variableName: text, value: text, fileDir: text):
-    file "plugins/SUPERGUILDS/%{_fileDir}%.yml" does not exists:
-        create file "plugins/SUPERGUILDS/%{_fileDir}%.yml"
-    yaml "plugins/SUPERGUILDS/%{_fileDir}%.yml" is not loaded:
-        load yaml "plugins/SUPERGUILDS/%{_fileDir}%.yml" as "plugins/SUPERGUILDS/%{_fileDir}%.yml"
-    set yaml value "%{_variableName}%" from "plugins/SUPERGUILDS/%{_fileDir}%.yml" to "%{_value}%"
-    save yaml "plugins/SUPERGUILDS/%{_fileDir}%.yml"
-```
-
-若想将 "plugins/SUPERGUILDS/playerdata/玩家 UUID.yml" 的 "Datas.Username" 设置为 "\*\*EVER"
-
-```skript
-file "plugins/SUPERGUILDS/playerdata/%uuid of player%.yml" does not exists:
-        create file "plugins/SUPERGUILDS/playerdata/%uuid of player%.yml"
-    yaml "plugins/SUPERGUILDS/playerdata/%uuid of player%.yml" is not loaded:
-        load yaml "plugins/SUPERGUILDS/playerdata/%uuid of player%.yml" as "plugins/SUPERGUILDS/playerdata/%uuid of player%.yml"
-    set yaml value "Datas.Username" from "plugins/SUPERGUILDS/playerdata/%uuid of player%.yml" to "**EVER"
-    save yaml "plugins/SUPERGUILDS/playerdata/%uuid of player%.yml"
-```
-
-代码即可转换为
-
-```skript
-SG_writeFile("Datas.Username"， "**EVER"， "playerdata/%uuid of player%")
+on load:
+    方法名(参数值, 参数值, ...)
 ```
 
 **使用** 方法的时候请勿画蛇添足在前面另加 "function"。
 
-通过这样的方法我们大大减少了代码量，提高了开发效率。你以为 Function 就结束了？
+此处的 `方法名` 就是函数的名称，`参数名` 是函数的参数名称，`参数类型` 是参数的数据类型。
 
-其实不然，作为方法，很多的时候它并没有 "操作" 功能，更多的是 "整理/查找/判断" 功能。
+参数类型可以参考前面提到的指令参数类型，例如 `text`、`player`、`number`、`boolean` 等等。
 
-上面我提到了使用 Function 写入了数据 那么有写入肯定需要读取 我们又该如何利用 Function 来缩短我们读取的代码呢？
+参数类型也是限定参数的输入范围，防止出现不符合预期的输入，也可以使用默认值来简化调用。
 
----
+函数的调用方式为 `方法名(参数值, 参数值, ...)`，其中 `参数值` 是传递给函数的实际值。
 
-### Function 的第二类结构
-
-```skript
-function 方法名(参数名:参数类型， 参数名:参数类型， ...) :: 输出参数类型:
-        代码段落
-        return 返回值
-```
-
-与我们之前提到的写入不同，此时在方法的第一行的末尾我们新增了 "输出参数类型"。
-
-什么是输出？就是代码执行完，我们会得到一个值，而输出即返回这个值。
-
-什么是参数类型？这里举一个例子，我们知道 1+1=2，这是因为 1 是一个数字，2 也是一个数字，所以才有数字 + 数字=数字。
-
-那“①+一”又等于什么呢？在你的思维中，很可能会认为它们仍然是数字，你会觉得答案还是 2。
-
-但是执行我们代码的是计算机，并不是“我们”。在大部分情况下，计算机所能识别的数字，只有阿拉伯数字 "1，2，3..."
-
-而对于 "①，一..."，计算机只能识别它们中的一些字符，并不能利用这些字符进行加减运算。如果有个人突然问你一句水 + 苹果 = ? 你或许也没有一个准确的答案。
-
-计算机更是这样。所以这时候就需要参数类型来规范我们运算中的这些值，以下是一份示例。
+另外，函数可以有返回，也可以没有返回值，当需要返回值时，函数的结构如下：
 
 ```skript
-function SI_isSlotAvaliable(s: integer, z: integer) :: boolean:
-    set {_m} to {_z} * 9 - 1
-    {_s} is not between 0 and {_m}:
-        return false
-    return true
+function 方法名(参数名: 参数类型, 参数名: 参数类型, ...) :: 输出参数类型:
+    # 代码段落
+    return 返回值
 
+on load:
+    set {_result} to 方法名(参数值, 参数值, ...)
 ```
 
-通过第一类 Function 的学习我们知道，这个方法可以放入两个参数，最终会返回一个参数类型为 boolean("布尔") 的值 即 "false/true"。
+在此处，`{_result}` 将会存储函数 `方法名` 执行后的返回值。
 
-那么实际操作中我们就可以通过这样一段代码，判断给定的数值是否满足条件。满足将返回 "true" ，不满足将返回 "false"。
+需要注意：
 
-切记，对于 Skript，如果代码已经成功获得的最终值，那么方法代码将立即终止，也就是说，从返回成功的一行开始，后面所有代码将不再执行。
+- 当需要返回时候，需要用 `return` 语句用于指定函数的返回值
+- 当函数执行到 `return` 语句时，函数将立即终止，后面的代码将不再执行
+- 如果函数指定了输出参数类型，那么返回值必须与该类型匹配
+- 如果使用 `return` 语句返回值，必须保证中途不能使用任何的 delay 语句
 
-到此，所有基础教程已结束，谢谢大家赏脸看完。全文 11111 字，都是自己的一些干货，点个收藏，给点人气便是对我最大的支持。
+我们来看一个简单的例子：
 
-请支持原作者 [TUCAOEVER](https://github.com/TUCAOEVER)。
+```skript
+function getFormattedTime(time: number,type:timespanperiod = ticks) :: string:
+    set {_time} to timespan({_time},{_type})
+    set {_days} to days of {_time}
+    set {_hours} to mod(hours of {_time}, 24)
+    set {_minutes} to mod(minutes of {_time}, 60)
+    set {_seconds} to mod(seconds of {_time}, 60)
+    if {_days} > 0:
+        add "%{_days}% 天 " to {_fomattedTime::*}
+    if {_hours} > 0:
+        add "%{_hours}% 小时 " to {_fomattedTime::*}
+    if {_minutes} > 0:
+        add "%{_minutes}% 分钟 " to {_fomattedTime::*}
+    return concat({_fomattedTime::*})
+```
 
-### 编者 (氿月) 的主要改动
+该例子中同样利用了 Skript 内置的 Function 来进行代码简化：
 
-1. 在部分地方加上了注释。
-2. 改动了已经失效的原文档链接。
-3. 对整篇文章进行了重格式化，使之更符合现代汉语语法和 Markdown 语法，一定程度上增强了可读性。
-4. 统一了文章中出现的部分译名，如 `command`，统一使用 `指令` 来指代。
+`mod(value, divisor)`：返回 `value` 除以 `divisor` 的余数
+
+`mod(5, 2)` => 1
+`mod(10, 4)` => 2
+
+`concat(list)`：将列表中的所有元素连接成一个字符串
+
+`concat("Hello", " ", "World")` => "Hello World"
+`concat("A", "B", "C")` => "ABC"
+
+该例子需要 `Skbee` 插件支持，函数 `getFormattedTime` 接受一个时间数值和一个时间单位类型作为参数，返回格式化后的时间字符串。
+
+通过调用该函数，可以将时间数值转换为易读的格式，例如 "1 天 2 小时 30 分钟"。
+
+```skript
+on load:
+    set {_timeString} to getFormattedTime(93784, seconds)
+    broadcast "格式化后的时间为：%{_timeString}%"
+```
+
+其他函数示例可参考 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) 侧边栏 `Function`。
+
+通过 Skript 内置的和我们自定义的函数，可以极大地提升代码的复用性和可维护性。
+
+#### 练习 5 - 函数返回值：平滑视角
+
+制作一个平滑视角函数，让玩家在一定时间内平滑地将视角从一个位置移动到另一个位置。
+
+位置以 x,y,z 的形式传入 `arg-1`、`arg-2`、`arg-3`，默认时间为 20 ticks
+
+指令已经写好，你需要完成平滑视角的函数：
+
+```skript
+command /smoothlook <number> <number> <number> [<integer>=20]:
+    trigger:
+        set {_from} to player's target block
+        set {_to} to location(arg-1, arg-2, arg-3, player's world)
+        set {_duration} to arg-4
+        loop {_duration} times:
+            set {_time} to loop-counter
+            force player look smoothUtils({_duration}, {_from}, {_to}, {_time})
+            wait 1 tick
+```
+
+<details>
+    <summary>参考写法，不唯一</summary>
+
+```skript
+#> 平滑模块
+function smoothUtils(duration:number,from:location,to:location,time:number) :: location:
+    set {_tickrate} to ({_time} / {_duration})
+    set {_x} to lerp({_from}'s x loc,{_to}'s x loc,{_tickrate})
+    set {_y} to lerp({_from}'s y loc,{_to}'s y loc,{_tickrate})
+    set {_z} to lerp({_from}'s z loc,{_to}'s z loc,{_tickrate})
+    set {_yaw} to lerp({_from}'s yaw,{_to}'s yaw,{_tickrate})
+    set {_pitch} to lerp({_from}'s pitch,{_to}'s pitch,{_tickrate})
+    return (location({_x}, {_y}, {_z}, {_from}'s world, {_yaw}, {_pitch}))
+
+#> 差值算法
+function lerp(from:number,to:number,tickrate:number) :: number:
+    return ({_from} + ({_to} - {_from}) * {_tickrate})
+```
+
+</details>
+
+## 更高级的脚本
+
+相信你已经掌握了 Skript 的基础语法和功能，能够编写一些简单的脚本来实现基本的功能。
+
+我们将在接下来的章节中，介绍一些更高级的 Skript 技巧和最佳实践，帮助你成为一名更出色的 Skript 开发者。
