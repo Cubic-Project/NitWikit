@@ -228,7 +228,7 @@ on join:
     # 广播玩家的名字和 IP
 ```
 
-表达式通常用于获取一个类型的属性，例如获取玩家的名字、位置，世界的时间，物品的数量等。
+表达式通常用于获取一个类型的属性，例如获取玩家的名字、位置、世界的时间、物品的数量等。
 
 通常来说，用中文描述一个功能时出现 “的” 字时，往往意味着需要使用 Expression 来获取或修改该属性。
 
@@ -283,7 +283,7 @@ on bed enter:
 spawn zombie at location of player
 ```
 
-但事实上，Skript 会自动判断我们传入的类型，例如 #EffSecSpawn 中需要传入的是 `location` 类型
+但事实上，Skript 会自动判断我们传入的类型，例如 `spawn` 效果需要传入的是 `location` 类型
 
 但 Skript 会自动将 `player` 类型转换为 `location of player` 因此也可直接写成：
 
@@ -384,7 +384,7 @@ on join:
 
 在这个板块中，请利用 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) 查询 Skript 语法，满足缩进等要求，尝试写一些最基础脚本吧~
 
-当然仅仅学这些并不够，为了做到能更快更灵活的使用各类语法，在闲暇的时候，把官方 Doc 提供的所有语法的注释都认真的看一遍是快速上手 Skript 的一种好办法。
+当然仅仅学这些并不够，为了做到能更快更灵活的使用各类语法，在闲暇的时候，把官方文档提供的所有语法的注释都认真的看一遍是快速上手 Skript 的一种好办法。
 
 ### 事件
 

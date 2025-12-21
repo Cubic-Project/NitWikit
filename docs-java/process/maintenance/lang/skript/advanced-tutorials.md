@@ -18,7 +18,7 @@ sidebar_position: 3
 ### 为什么使用 skript-reflect？
 
 -   我们默认，使用 Skript 的用户通常并不是经验丰富的 **Java** 开发者。 `skript-reflect` 使这些用户能够轻松访问 **Java** API；
--   作为 Skript Addon，使用 `skript-reflect` 的脚本无需像 Java 插件那样进行编译、上传并重启，从而大大降低了开发门槛和调试速度；
+-   作为 Skript Addon，使用 `skript-reflect` 的脚本无需像 Java 插件那样进行编译、上传并重启，从而大大降低了开发门槛和调试难度；
 -   在我们开发服务器时，有时需要访问其他插件的 API 来实现某些功能， `skript-reflect` 使我们能够轻松地做到这一点；
 
 ### 如何使用

@@ -10,11 +10,11 @@ sidebar_position: 1
 
 本文档大量参考了其他作者的教程，特此致谢。
 
-引用的内容主要来源于
+引用的内容主要来源于：
 
-TUCAOEVER 在 MCBBS 的教程
+-  TUCAOEVER 在 MCBBS 的教程
 
-法棍 在 CSKB 发布的 [sk 教程](https://kb.corona.studio/zhCN/skript/startup.html)
+-  法棍 在 CSKB 发布的 [sk 教程](https://kb.corona.studio/zhCN/skript/startup.html)
 
 :::
 
@@ -30,7 +30,7 @@ Skript 是一个脚本插件，取名来自 "script"。是一个面向 Bukkit �
 
 举一个简单的例子，为了实现玩家每次进入服务器就给有 "xxx" 权限的玩家 64 钻石的功能。
 
-使用 Java 时的代码：
+使用 Java 实现的代码：
 
 ```java
 @EventHandler
@@ -44,7 +44,7 @@ public void onPlayerJoin(PlayerJoinEvent evt) {
 }
 ```
 
-使用 Skript 时的代码：
+使用 Skript 实现的代码：
 
 ```skript
 on join:
@@ -78,7 +78,7 @@ on join:
 
 因此，Skript 的性能瓶颈主要在编写者的脚本逻辑上，而不是 Skript 本身。
 
-## 下载及安装
+## 下载及使用
 
 ### 本体
 
@@ -87,10 +87,10 @@ on join:
 最新版：
 `https://github.com/SkriptLang/Skript/releases`
 
-1.8.8-1.12.2 2.2dev37c:
+2.2-dev37c（适用 1.8.8-1.12.2）：
 `https://github.com/SkriptLang/Skript/releases/download/dev37c/Skript.jar`
 
-1.7.10 2.1.2
+2.1.2（适用 1.7.10）：
 `https://dev.bukkit.org/projects/skript/files/779542/download`
 
 ### 拓展插件
