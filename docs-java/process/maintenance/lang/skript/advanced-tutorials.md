@@ -9,9 +9,9 @@ sidebar_position: 3
 
 ## skript-reflect
 
-学完基本的 Skript 语法后，我们会遇到一些 Skript 本身无法实现的功能，`Skript-reflect` 就是为了解决这些问题而诞生的。
+学完基本的 Skript 语法后，我们会遇到一些 Skript 本身无法实现的功能，`skript-reflect` 就是为了解决这些问题而诞生的。
 
-在基础教程中，我们已经提到过，`Skript-reflect` 允许我们以稍低一些的性能在 Skript 中反射调用 Java API，
+在基础教程中，我们已经提到过，`skript-reflect` 允许我们以稍低一些的性能在 Skript 中反射调用 Java API，
 
 它旨在将 **Java** 的功能与 **Skript** 易于使用的开发环境相结合，从而使 **Skript** 脚本编写者能够几乎访问任何 **Java** 类、方法和字段。
 

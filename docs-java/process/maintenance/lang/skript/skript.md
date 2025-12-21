@@ -55,14 +55,14 @@ on join:
 
 在大多数情况下，Skript 不会在意大小写、定冠词 "the"，只需要符合英语语法和基本的缩进。
 
-缩进表示代码块的层级关系，类似于 Yaml，当前一行以 `:` 结尾时，下一行需要缩进表示代码块。
+缩进表示代码块的层级关系，类似于 YAML，当前一行以 `:` 结尾时，下一行需要缩进表示代码块。
 
 另外，即使使用了错误的语法，在脚本重载时，报错也基本会提示具体错误类型。
 
 ### 拓展插件多
 
 使用 Skript 时如果遇到 Skript 不包含的语法，可以使用其他拓展插件如
-[Skbee](https://github.com/ShaneBeee/SkBee)、[Skript-reflect](https://github.com/SkriptLang/skript-reflect) 等插件拓展。
+[Skbee](https://github.com/ShaneBeee/SkBee)、[skript-reflect](https://github.com/SkriptLang/skript-reflect) 等插件拓展。
 
 ### 性能略差
 
@@ -71,7 +71,7 @@ on join:
 根据测试，我们发现：
 
 1. 在事件监听、条件判断、Function 跳转、计算等基础功能几乎和 Java 原生持平；
-2. 在 skript 中，Loop 循环、wait 等操作由于需要进行上下文变量复制开销会更大一些；
+2. 在 Skript 中，Loop 循环、wait 等操作由于需要进行上下文变量复制开销会更大一些；
 3. 正常使用 skript-reflect 反射等操作时，开销大概是 Java 原生调用的 1.5 ~ 5 倍。
 
 另外，Skript 的反射使用的是 MethedHandle，性能已经远远优于传统的 Java 反射，
@@ -104,11 +104,11 @@ Skript 拓展插件常见的有：
 
 主要用于扩展 Skript 的语法和功能，提供更多的 API 支持，方便脚本编写者实现更多功能。
 
-另外，由于拓展性能一般会优于 Skript-reflect，因此推荐优先使用拓展插件实现功能。
+另外，由于拓展性能一般会优于 skript-reflect，因此推荐优先使用拓展插件实现功能。
 
 下载链接：
 
-[skunity](https://docs.skunity.com/addons)
+[skUnity](https://docs.skunity.com/addons)
 
 ### Skript 脚本
 
@@ -118,7 +118,7 @@ Skript 脚本文件后缀为 `.sk`，将脚本文件放入 `/plugins/Skript/scri
 
 [SpigotMC](https://www.spigotmc.org/resources/categories/skript.25/)
 
-[skunity](https://forums.skunity.com/resources/)
+[skUnity](https://forums.skunity.com/resources/)
 
 ### 片段
 
@@ -128,7 +128,7 @@ Skript 脚本文件后缀为 `.sk`，将脚本文件放入 `/plugins/Skript/scri
 
 下载链接：
 
-[Skunity 片段合集](https://docs.skunity.com/snippets)
+[skUnity 片段合集](https://docs.skunity.com/snippets)
 
 [ShaneBeee 片段合集](https://github.com/ShaneBeee/SkriptSnippets/tree/master/snippets)
 
