@@ -70,7 +70,7 @@ on join:
 
 根据测试，我们发现：
 
-1. 在事件监听、条件判断、Function跳转、计算等基础功能几乎和 Java 原生持平；
+1. 在事件监听、条件判断、Function 跳转、计算等基础功能几乎和 Java 原生持平；
 2. 在 skript 中，Loop 循环、wait 等操作由于需要进行上下文变量复制开销会更大一些；
 3. 正常使用 skript-reflect 反射等操作时，开销大概是 Java 原生调用的 1.5 ~ 5 倍。
 
@@ -87,7 +87,7 @@ on join:
 最新版：
 `https://github.com/SkriptLang/Skript/releases`
 
-1.8.8-1.12.2 2.2dev37c：
+1.8.8-1.12.2 2.2dev37c:
 `https://github.com/SkriptLang/Skript/releases/download/dev37c/Skript.jar`
 
 1.7.10 2.1.2
@@ -97,10 +97,10 @@ on join:
 
 Skript 拓展插件常见的有：
 
-- SkBee
-- skript-reflect
-- skNMS
-- ...
+-   SkBee
+-   skript-reflect
+-   skNMS
+-   ...
 
 主要用于扩展 Skript 的语法和功能，提供更多的 API 支持，方便脚本编写者实现更多功能。
 

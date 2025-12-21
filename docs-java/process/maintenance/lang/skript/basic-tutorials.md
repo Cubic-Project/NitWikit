@@ -25,10 +25,10 @@ Skript 仍然是编程语言，所有的编程语言都必须在拥有理论基�
 
 我们推荐在以下的网站查询 Skript 语法：
 
-- [Skript Hub](https://skripthub.net/docs/)
-- [skUnity Docs](https://docs.skunity.com/syntax)
-- [Skriptlang Docs](https://docs.skriptlang.org/docs.html)
-- 各个 Addon 的官方文档...
+-   [Skript Hub](https://skripthub.net/docs/)
+-   [skUnity Docs](https://docs.skunity.com/syntax)
+-   [Skriptlang Docs](https://docs.skriptlang.org/docs.html)
+-   各个 Addon 的官方文档...
 
 首先，最重要的是 `Event`（事件），它构成了脚本逻辑的触发条件。在 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) 的侧边栏中选择 Skript -> Events 可以筛选出原生事件，下面以 Click 为例：
 
@@ -66,13 +66,13 @@ Skript 仍然是编程语言，所有的编程语言都必须在拥有理论基�
 
 我们要重点关注的是 `Event Values` 这一标签下所对应的内容：
 
-- event-block（事件方块-玩家点击的方块）
-- event-direction（事件方向-玩家点击的方块的方向）
-- event-entity（事件实体-通常为玩家，如果是和实体交互则为该实体）
-- event-item stack（事件物品-玩家主手工具）
-- event-player（事件玩家）
-- event-world（事件世界）
-- ...
+-   event-block（事件方块-玩家点击的方块）
+-   event-direction（事件方向-玩家点击的方块的方向）
+-   event-entity（事件实体-通常为玩家，如果是和实体交互则为该实体）
+-   event-item stack（事件物品-玩家主手工具）
+-   event-player（事件玩家）
+-   event-world（事件世界）
+-   ...
 
 利用这些，我们便可以获取到事件中的，"谁" 和 "某地" 之类具体的信息。
 
@@ -102,7 +102,6 @@ on right click on dirt:
 不同版本的 Skript 可能会对某些语法进行修改或添加新的语法，因此在使用某个语法时，务必确认你的 Skript 版本是否支持该语法。
 
 同时，新版 Skript 会对某些过时的语法进行改进，因此建议查看右上角的版本信息，确保你所参考的语法与你所使用的 Skript 版本相符。
-
 
 相信通过以上方法，你已经可以快速的查询到 Skript 语法，并理解其基本用法。那么接下来，我们将介绍 Skript 的八大类语法，帮助你更好的理解 Skript 的整体结构。
 
@@ -266,8 +265,8 @@ on bed enter:
 
 这个 Effect（效果）只提供了 "生成" 这个动作，但我们还需要：
 
-- **位置**：玩家所在的位置
-- **实体类型**：僵尸
+-   **位置**：玩家所在的位置
+-   **实体类型**：僵尸
 
 查询文档后，我们找到 `location of` 表达式可以获取实体的位置。
 
@@ -275,8 +274,8 @@ on bed enter:
 
 在 https://docs.skriptlang.org/classes.html 中可以找到：
 
-- `player` - 玩家
-- `zombie` - 僵尸
+-   `player` - 玩家
+-   `zombie` - 僵尸
 
 综合以上信息，我们得到完整代码：
 
@@ -294,9 +293,9 @@ spawn zombie at player
 
 :::tip[要点]
 
-- **Effect**：提供动作（如 `spawn`）
-- **Expression**：提供属性（如 `location of`）
-- **Type**：提供具体对象（如 `player`、`zombie`）
+-   **Effect**：提供动作（如 `spawn`）
+-   **Expression**：提供属性（如 `location of`）
+-   **Type**：提供具体对象（如 `player`、`zombie`）
 
 缺少主语/宾语时，在 Types 文档中查找即可。
 
@@ -381,7 +380,6 @@ on join:
 
 通过合理使用这八大类语法，你可以编写出功能强大、易于维护的 Skript 脚本，为 Minecraft 服务器增添丰富的功能和玩法。
 
-
 ## 最初的脚本
 
 在这个板块中，请利用 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) 查询 Skript 语法，满足缩进等要求，尝试写一些最基础脚本吧~
@@ -408,14 +406,14 @@ on join:
 
 要注意，事件的监听是有优先级的，其中有六个优先级，其中执行顺序为 **从上到下** 分别为：
 
-| 优先级      | Priority |
-| ----------- | -------- |
-| 最低        | Lowest   |
-| 低          | Low      |
-| 正常（默认）| Normal   |
-| 高          | High     |
-| 最高        | Highest  |
-| 监控        | Monitor  |
+| 优先级       | Priority |
+| ------------ | -------- |
+| 最低         | Lowest   |
+| 低           | Low      |
+| 正常（默认） | Normal   |
+| 高           | High     |
+| 最高         | Highest  |
+| 监控         | Monitor  |
 
 优先级的使用可以帮助我们更好地控制事件的处理顺序，避免逻辑冲突或不必要的资源消耗。
 
@@ -456,7 +454,7 @@ Skript 使用与 Bukkit 相同的事件优先级机制，触发顺序为 `Lowest
 
 ##### 练习 1 - 夜间扣血脚本
 
-例如，我们想写一个脚本，检测玩家在 00:00～06:00 没有在床上睡觉，那么就每秒扣玩家 1 生命值。
+例如，我们想写一个脚本，检测玩家在 00:00 ～ 06:00 没有在床上睡觉，那么就每秒扣玩家 1 生命值。
 
 查询 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax)，根据直觉选择，与时间和睡觉有关系的事件可能有这些：
 
@@ -513,7 +511,6 @@ at 00:00 in world "world":
 
 <details>
     <summary>脚本 3 - Event + While</summary>
-
 
 ```skript
 at 00:00 in world "world":
@@ -637,7 +634,6 @@ public boolean onCommand(final CommandSender sender, Command cmd, String label, 
 
 但是在 Skript 里你只需这样即可：
 
-
 ```skript
 command /<指令名称> [<类型1>] [<类型2>] [<类型3>]:
     aliases: <别名>
@@ -656,38 +652,38 @@ command /<指令名称> [<类型1>] [<类型2>] [<类型3>]:
 
 #### 指令注册详解
 
-- **Aliases**：子指令，指令的别名。如果需要创建多个子指令，请使用逗号分隔。示例：`/alias1, alias2, /alias3`
+-   **Aliases**：子指令，指令的别名。如果需要创建多个子指令，请使用逗号分隔。示例：`/alias1, alias2, /alias3`
 
-- **Executable By**：指定可以使用该指令的执行者。例如：`console`（后台）、`players`（玩家）、`the console and players`（后台和玩家）
+-   **Executable By**：指定可以使用该指令的执行者。例如：`console`（后台）、`players`（玩家）、`the console and players`（后台和玩家）
 
-- **Usage**：执行者用法不正确时，将发送的消息。
+-   **Usage**：执行者用法不正确时，将发送的消息。
 
-- **Description**：指令描述，其他插件可以获取/显示此信息。
+-   **Description**：指令描述，其他插件可以获取/显示此信息。
 
-- **Permission**：执行指令所需要的权限。
+-   **Permission**：执行指令所需要的权限。
 
-- **Permission Message**：执行者没有权限时的提示信息。
+-   **Permission Message**：执行者没有权限时的提示信息。
 
-- **Cooldown**：多长冷却时间后可以再次使用该指令，需要注意的是，关服时所有指令冷却时间将被重置。
+-   **Cooldown**：多长冷却时间后可以再次使用该指令，需要注意的是，关服时所有指令冷却时间将被重置。
 
-- **Cooldown Message**：冷却期间，提示信息。
+-   **Cooldown Message**：冷却期间，提示信息。
 
-- **Cooldown Bypass**：无视冷却时间所需要的权限。
+-   **Cooldown Bypass**：无视冷却时间所需要的权限。
 
-- **Cooldown Storage**：存储冷却时间全局变量名称。
+-   **Cooldown Storage**：存储冷却时间全局变量名称。
 
-- **Trigger**：指令触发时执行的代码段。
+-   **Trigger**：指令触发时执行的代码段。
 
 这里的 `[<类型>]` 就是指令参数的类型，可以查询 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax) 侧边栏 `Type` 获取。
 
 常见的类型有：
 
-- `text`、`string` - 字符类型。什么是字符？可以按照字面意思来理解，字词符号。
-- `player` - 在线玩家。
-- `offline player` - 离线玩家。
-- `number` - 数字类型。
-- `integer` - 整数类型。
-- `boolean` - 布尔类型。
+-   `text`、`string` - 字符类型。什么是字符？可以按照字面意思来理解，字词符号。
+-   `player` - 在线玩家。
+-   `offline player` - 离线玩家。
+-   `number` - 数字类型。
+-   `integer` - 整数类型。
+-   `boolean` - 布尔类型。
 
 一般来说，选择合适的类型参数，可以帮助我们更好的限制输入内容，减少边界情况的发生。
 
@@ -697,21 +693,21 @@ command /<指令名称> [<类型1>] [<类型2>] [<类型3>]:
 
 #### 指令参数详解
 
-##### 指令名称（必填）：
+##### 指令名称（必填）
 
-指令名称基本上是指令，你可以在指令名称中使用任何字符（空格字符除外）。当然如果在指令名称中使用空格字符，那么空格字符后的文本将成为参数。 
+指令名称基本上是指令，你可以在指令名称中使用任何字符（空格字符除外）。当然如果在指令名称中使用空格字符，那么空格字符后的文本将成为参数。
 
 指令名称前的斜杠字符（`/`）是可选的（但这并不意味着你可以在执行指令时不带斜杠）。
 
-##### 指令参数（可选）：
+##### 指令参数（可选）
 
-- 使用 `text`/`string` 类型参数时，可以输入任何字符，`object` 类型不能用作于参数；
-- 使用 `player`/`offline player` 类型参数时，玩家名称会自动添加到 Tab 补全列表中；
-- 使用 `boolean` 类型参数时，只接受以下几种输入：`true`、`false`、`on`、`off`；
-- 使用 `<>` 引用起来时说明该参数为必要参数，如果输入时没有这个参数时会提示格式错误；
-- 使用 `[<>]` 引用起来时说明该参数为可选参数。
-- 可以通过使用规定的格式来限制参数的类型，例如：`<type = default value>`，其中 `default value` 是可选的，如果执行者未输入该参数，系统将自动使用默认值；
-- 类型可以是多个（例如 `number` -> `numbers`，`entity` -> `entities`）。通过这样的方法，可以使参数接受多个值。
+-   使用 `text`/`string` 类型参数时，可以输入任何字符，`object` 类型不能用作于参数；
+-   使用 `player`/`offline player` 类型参数时，玩家名称会自动添加到 Tab 补全列表中；
+-   使用 `boolean` 类型参数时，只接受以下几种输入：`true`、`false`、`on`、`off`；
+-   使用 `<>` 引用起来时说明该参数为必要参数，如果输入时没有这个参数时会提示格式错误；
+-   使用 `[<>]` 引用起来时说明该参数为可选参数。
+-   可以通过使用规定的格式来限制参数的类型，例如：`<type = default value>`，其中 `default value` 是可选的，如果执行者未输入该参数，系统将自动使用默认值；
+-   类型可以是多个（例如 `number` -> `numbers`，`entity` -> `entities`）。通过这样的方法，可以使参数接受多个值。
 
 以下是一份指令示例，假设我们注册了一个杀死指定实体的指令：
 
@@ -801,7 +797,7 @@ command /world [<string>]:
             # 玩家在其他世界时 x z 坐标暂存
             set {_x} to player's x-coord
             set {_z} to player's z-coord
-        
+
         if arg-1 is world "world_nether":
             # 如果玩家从其他地方到地狱，将暂存的 x z 坐标除以 8
             set {_x} to {_x} / 8
@@ -824,11 +820,11 @@ command /world [<string>]:
 
 ### 变量
 
-变量是任何有用编程语言中的关键组成部分，Skript也不例外。它们允许你存储、检索和操作数据，从而使你的脚本更加动态和灵活。
+变量是任何有用编程语言中的关键组成部分，Skript 也不例外。它们允许你存储、检索和操作数据，从而使你的脚本更加动态和灵活。
 
 Skript 中的变量名几乎可以包含绝大多数字符，例如：
 
-```
+```skript
 set {玩家的金币数} to 1000
 set {_player::coin} to 1000
 set {-cache::player::score} to 2
@@ -838,10 +834,10 @@ set {-ids::*} to 1,2,3,4,5,6
 
 其中，主要的变量类型有 4 种：
 
-- **局部变量**：以 `{_` 开头 `}` 结尾的变量，仅在当前事件或指令触发器中有效，适用于临时存储数据，避免与全局变量冲突。
-- **全局变量**：以 `{` 开头 `}` 结尾的变量，在整个 Skript 脚本中都有效，适用于需要跨事件或指令共享的数据。
-- **内存变量**：以 `{-` 开头`}` 结尾的变量，类似于全局变量，但是服务器关闭后会被清除，适用于需要在服务器运行期间存储的数据。
-- **元数据变量**： `metadata "key" of %entity%/%world%` 格式的变量，与实体或世界绑定，适用于需要与特定实体或世界关联的数据。
+-   **局部变量**：以 `{_` 开头 `}` 结尾的变量，仅在当前事件或指令触发器中有效，适用于临时存储数据，避免与全局变量冲突。
+-   **全局变量**：以 `{` 开头 `}` 结尾的变量，在整个 Skript 脚本中都有效，适用于需要跨事件或指令共享的数据。
+-   **内存变量**：以 `{-` 开头`}` 结尾的变量，类似于全局变量，但是服务器关闭后会被清除，适用于需要在服务器运行期间存储的数据。
+-   **元数据变量**： `metadata "key" of %entity%/%world%` 格式的变量，与实体或世界绑定，适用于需要与特定实体或世界关联的数据。
 
 ### 数组与循环
 
@@ -870,11 +866,11 @@ set {-ids::*} to 1,2,3,4,5,6
 
 `{playerCoins::%player%} = %value%` 中，`{playerCoins::%player%}` 就是一个数组变量，
 
-- `playerCoins` 是数组的名称，表示这是一个存储玩家金币数量的数组。
-- `%player%` 是索引，表示玩家的名称（在 Config 中可以改为 UUID）。
-- `%value%` 则表示该玩家所拥有的金币数量。
+-   `playerCoins` 是数组的名称，表示这是一个存储玩家金币数量的数组。
+-   `%player%` 是索引，表示玩家的名称（在 Config 中可以改为 UUID）。
+-   `%value%` 则表示该玩家所拥有的金币数量。
 
-这个数组也可以将这个变量视作返回了一个包含所有玩家金币数量的列表。 
+这个数组也可以将这个变量视作返回了一个包含所有玩家金币数量的列表。
 
 `set {_money} to getMoney(%player%)` => `set {_money} to {playerCoins::%player%}`
 
@@ -903,7 +899,7 @@ Loop / For 循环的结构如下：
 
 我们先举一个简单的例子：
 
-```
+```skript
 on load:
     set {_list::1} to "hey"
     set {_list::2} to "how"
@@ -914,9 +910,9 @@ on load:
 
 在 Loop section 中，有 `loop-index`、`loop-value`、`loop-counter` 三个内置变量来获取当前循环的索引、值和计数。
 
-- loop-index：当前循环的索引值；
-- loop-value：当前循环的值；
-- loop-counter / loop-iteration：当前循环的计数，从 `1` 开始递增。
+-   loop-index：当前循环的索引值；
+-   loop-value：当前循环的值；
+-   loop-counter / loop-iteration：当前循环的计数，从 `1` 开始递增。
 
 特别的，对于 `loop %blocks%/%entities%/ %players%:`，
 
@@ -937,9 +933,9 @@ command /addcoins:
 
 在这里我们使用了 `loop {playerCoins::*}:` 来遍历数组中的每一个元素，在此处：
 
-- loop-index：当前循环的索引值，在数组中表示玩家名称或 UUID；
-- loop-value：当前循环的值，在当前数组中表示玩家的金币数量；
-- loop-counter：当前循环的计数，从 1 开始递增，表示已经处理了多少个元素。
+-   loop-index：当前循环的索引值，在数组中表示玩家名称或 UUID；
+-   loop-value：当前循环的值，在当前数组中表示玩家的金币数量；
+-   loop-counter：当前循环的计数，从 1 开始递增，表示已经处理了多少个元素。
 
 ##### 多层嵌套
 
@@ -1061,10 +1057,10 @@ on load:
 
 需要注意：
 
-- 当需要返回时候，需要用 `return` 语句用于指定函数的返回值
-- 当函数执行到 `return` 语句时，函数将立即终止，后面的代码将不再执行
-- 如果函数指定了输出参数类型，那么返回值必须与该类型匹配
-- 如果使用 `return` 语句返回值，必须保证中途不能使用任何的 delay 语句
+-   当需要返回时候，需要用 `return` 语句用于指定函数的返回值
+-   当函数执行到 `return` 语句时，函数将立即终止，后面的代码将不再执行
+-   如果函数指定了输出参数类型，那么返回值必须与该类型匹配
+-   如果使用 `return` 语句返回值，必须保证中途不能使用任何的 delay 语句
 
 我们来看一个简单的例子：
 
@@ -1086,7 +1082,7 @@ function getFormattedTime(time: number,type:timespanperiod = ticks) :: string:
 
 该例子中同样利用了 Skript 内置的 Function 来进行代码简化：
 
-`mod(value, divisor)`：返回 `value` 除以 `divisor` 的余数 
+`mod(value, divisor)`：返回 `value` 除以 `divisor` 的余数
 
 `mod(5, 2)` => 1
 `mod(10, 4)` => 2
@@ -1118,7 +1114,7 @@ on load:
 
 指令已经写好，你需要完成平滑视角的函数：
 
-```
+```skript
 command /smoothlook <number> <number> <number> [<integer>=20]:
     trigger:
         set {_from} to player's target block
@@ -1135,7 +1131,7 @@ command /smoothlook <number> <number> <number> [<integer>=20]:
 
 ```skript
 #> 平滑模块
-function smoothUtils(duration:number,from:location,to:location,time:number) :: location: 
+function smoothUtils(duration:number,from:location,to:location,time:number) :: location:
     set {_tickrate} to ({_time} / {_duration})
     set {_x} to lerp({_from}'s x loc,{_to}'s x loc,{_tickrate})
     set {_y} to lerp({_from}'s y loc,{_to}'s y loc,{_tickrate})

@@ -17,9 +17,9 @@ sidebar_position: 3
 
 ### 为什么使用 skript-reflect？
 
-- 我们默认，使用 Skript 的用户通常并不是经验丰富的 **Java** 开发者。 `skript-reflect` 使这些用户能够轻松访问 **Java** API；
-- 作为 Skript Addon，使用 `skript-reflect` 的脚本无需像 Java 插件那样进行编译、上传并重启，从而大大降低了开发门槛和调试速度；
-- 在我们开发服务器时，有时需要访问其他插件的 API 来实现某些功能， `skript-reflect` 使我们能够轻松地做到这一点；
+-   我们默认，使用 Skript 的用户通常并不是经验丰富的 **Java** 开发者。 `skript-reflect` 使这些用户能够轻松访问 **Java** API；
+-   作为 Skript Addon，使用 `skript-reflect` 的脚本无需像 Java 插件那样进行编译、上传并重启，从而大大降低了开发门槛和调试速度；
+-   在我们开发服务器时，有时需要访问其他插件的 API 来实现某些功能， `skript-reflect` 使我们能够轻松地做到这一点；
 
 ### 如何使用
 
@@ -48,10 +48,10 @@ on TPARequestEvent:
 
 我们假设你对 Java 不够了解，我们来简单介绍一些基础的 Java 知识：
 
-- **类 (Class)** ：类是对象的蓝图或模板。它 **定义** 了对象的属性（字段）和行为（方法）。例如，`Player` 类表示游戏中的玩家对象；
-- **对象 (Object)** ：对象是类的实例。它包含类定义的属性的具体值，并且可以调用类定义的方法。例如，一个特定的玩家就是 `Player` 类的一个对象；
-- **方法 (Method)** ：方法是类中定义的函数或操作。它们定义了对象可以执行的 **行为**。类似于 Skript 中的 `Effect` 例如，`getTarget()` 方法；
-- **字段 (Field)** ：字段是类中定义的变量。它们表示对象的 **属性**。例如，`Player` 类可能有一个 `name` 字段，表示玩家的名称。
+-   **类 (Class)** ：类是对象的蓝图或模板。它 **定义** 了对象的属性（字段）和行为（方法）。例如，`Player` 类表示游戏中的玩家对象；
+-   **对象 (Object)** ：对象是类的实例。它包含类定义的属性的具体值，并且可以调用类定义的方法。例如，一个特定的玩家就是 `Player` 类的一个对象；
+-   **方法 (Method)** ：方法是类中定义的函数或操作。它们定义了对象可以执行的 **行为**。类似于 Skript 中的 `Effect` 例如，`getTarget()` 方法；
+-   **字段 (Field)** ：字段是类中定义的变量。它们表示对象的 **属性**。例如，`Player` 类可能有一个 `name` 字段，表示玩家的名称。
 
 我们来看一下详细解析一下上面的代码，首先我们需要一个事件 `TPARequestEvent`，这个事件是由 **EssentialsX** 插件提供的，
 
@@ -229,8 +229,6 @@ import <fully qualified name> [as <alias>]
 在 Skript 中使用枚举值时，请使用 `$` 符号来分隔枚举类和枚举值。
 
 查询 JavaDoc[https://purpurmc.org/javadoc/org/bukkit/event/inventory/ClickType.html] 可以看到 `ClickType` 枚举类中有多个枚举值，如 `DROP`、`LEFT`、`RIGHT` 等。
-
-
 
 举例：
 
