@@ -517,7 +517,7 @@ at 00:00 in world "world":
 
 ```skript
 at 00:00 in world "world":
-    while time in world is between 00:00 and 6:00:
+    while time in world is between 00:00 and 6:00: # 注意：若时间段跨越午夜（如 23:00-02:00），请不要直接使用 between，而应拆分为两个条件判断
         loop all players:
             if loop-player is not sleeping:
                 remove 1 from health of loop-player
