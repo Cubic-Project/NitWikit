@@ -39,7 +39,7 @@ on TPARequestEvent:
     set {_player} to {_ess_IUser}.getBase()   # 获取Player对象
     # 判断玩家
     if {_player} is player("lilingfeng"):
-        set {_command_sender} to event.getRequester().getPlayer()   # 获取发送者
+        set {_command_sender} to event.getRequester().getPlayer()   # 获取发起 tpa 请求的玩家
         send "&clilingfeng是我的不准tpa到她那里🥵" to {_command_sender}
         cancel event   # 取消事件
 ```
