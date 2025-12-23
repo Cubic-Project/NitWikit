@@ -29,7 +29,7 @@ sidebar_position: 3
 
 假如我们想要阻止某个玩家被其他玩家 tpa 到，Skript 本身并没有提供监听 **EssentialsX** tpa 请求的事件，
 
-```python
+```skript
 import:
     net.ess3.api.events.TPARequestEvent   # 导入 Java 类
 
@@ -63,7 +63,7 @@ on TPARequestEvent:
 
 这样的类我们可以在导入包后，直接在 Skript 中监听，导入包的语法如下：
 
-```python
+```skript
 import:
     net.ess3.api.events.TPARequestEvent
 
@@ -80,7 +80,7 @@ on TPARequestEvent:
 
 例如，`TPARequestEvent` 事件中没有 `event-player`，因此无法直接使用 `player` 关键字来获取发起 tpa 的玩家。
 
-```python
+```skript
     set {_ess_IUser} to event.getTarget()   # 获取 IUser 对象
     set {_player} to {_ess_IUser}.getBase()   # 获取 Player 对象
 ```
@@ -89,7 +89,7 @@ on TPARequestEvent:
 
 这个 `IUser` 是 EssentialsX 的一个 **接口**，`User` 类 **实现** 了它，可以在 [EssentialsX 的 Javadoc](https://jd-v2.essentialsx.net/net/ess3/api/iuser) 里查看。
 
-```python
+```skript
     if {_player} is player("lilingfeng"):
         set {_command_sender} to event.getRequester().getPlayer()   # 获取发送者
         send "&clilingfeng是我的不准tpa到她那里🥵" to {_command_sender}
@@ -140,7 +140,7 @@ on TPARequestEvent:
 
 ##### 编写脚本
 
-```python
+```skript
 import:
     org.leavesmc.leaves.event.bot.BotJoinEvent as BotJoin  #导入类
 
@@ -179,13 +179,13 @@ on BotJoin:
 
 语法：
 
-```python
+```skript
 [the] [java] class %text%
 ```
 
 示例：
 
-```python
+```skript
 on script load:
     set {Player} to the class "org.bukkit.entity.Player"
     message "%{Player}%" # org.bukkit.entity.Player
@@ -195,14 +195,14 @@ on script load:
 
 语法：
 
-```python
+```skript
 [the] [java] class[es] of %objects%
 %objects%'[s] [java] class[es]
 ```
 
 示例：
 
-```python
+```skript
 command /example:
     executable by: players
     trigger:
@@ -214,7 +214,7 @@ command /example:
 
 由于导入块在 effect 命令中不可用，因此你可以使用 import effect (仅在 effect 命令中可用)：
 
-```python
+```skript
 import <fully qualified name> [as <alias>]
 ```
 
@@ -232,7 +232,7 @@ import <fully qualified name> [as <alias>]
 
 举例：
 
-```python
+```skript
 import:
     org.bukkit.event.inventory.ClickType$DROP
 
@@ -249,13 +249,13 @@ on inventory click:
 
 语法：
 
-```python
+```skript
 %object%.<method name>(%objects%)
 ```
 
 示例：
 
-```python
+```skript
 event-block.breakNaturally()
 # 让方块被破坏并自然掉落
 (last spawned creeper).setPowered(true)
@@ -278,7 +278,7 @@ Java 中不同方法有不同的访问修饰符（如 `public`、`private`、`pr
 
 语法：
 
-```python
+```skript
 {_arraylist}.[ArrayList]fastRemove(1)
 ```
 
@@ -290,7 +290,7 @@ Java 中不同方法有不同的访问修饰符（如 `public`、`private`、`pr
 
 语法：
 
-```python
+```skript
 System.out.println[Object]({_something})
 
 Math.max[int, int](0, {_value})
@@ -300,7 +300,7 @@ Math.max[int, int](0, {_value})
 
 语法：
 
-```python
+```skript
 %object%.<descriptor>
 ```
 
@@ -310,7 +310,7 @@ Math.max[int, int](0, {_value})
 
 示例：
 
-```python
+```skript
 {_hashmap}.[HashMap]modCount
 ```
 
@@ -318,13 +318,13 @@ Math.max[int, int](0, {_value})
 
 语法：
 
-```python
+```skript
 [a] new %javatype%(%objects%)
 ```
 
 示例：
 
-```python
+```skript
 new Location(player's world， 0， 0， 0)
 ```
 
@@ -338,7 +338,7 @@ new Location(player's world， 0， 0， 0)
 
 则应采取适当的预防措施。例如，如果要同时侦听 `org.bukkit.event.entity.ProjectileLaunchEvent` 和 `org.bukkit.event.entity.ProjectileHitEvent`：
 
-```python
+```skript
 import:
     org.bukkit.event.entity.ProjectileLaunchEvent
     org.bukkit.event.entity.ProjectileHitEvent
@@ -357,7 +357,7 @@ on ProjectileLaunchEvent and ProjectileHitEvent:
 
 示例：
 
-```python
+```skript
 import:
     org.bukkit.event.block.BlockBreakEvent
 
@@ -377,7 +377,7 @@ on all BlockBreakEvent:
 
 ##### 创建数组
 
-```python
+```skript
 new %javatype%[%integer%]
 ```
 
@@ -385,7 +385,7 @@ new %javatype%[%integer%]
 
 ##### 通过索引获取数组的值
 
-```python
+```skript
 %array%[%integer%]
 ```
 
@@ -395,7 +395,7 @@ new %javatype%[%integer%]
 
 ##### Collect
 
-```python
+```skript
 [%objects%]
 [%objects% as %javatype%]
 ```
@@ -404,7 +404,7 @@ new %javatype%[%integer%]
 
 ##### Spread
 
-```python
+```skript
 ...%object%
 ```
 
@@ -412,13 +412,13 @@ new %javatype%[%integer%]
 
 实例：
 
-```python
+```skript
 set {_list::*} to ...{_array}
 ```
 
 ##### Null
 
-```python
+```skript
 null
 ```
 
@@ -426,7 +426,7 @@ null
 
 ##### Bits
 
-```python
+```skript
 [the] (bit %number%|bit(s| range) [from] %number%( to |[ ]-[ ])%number%) of %numbers%
 %numbers%'[s] (bit %number%|1¦bit(s| range) [from] %number%( to |[ ]-[ ])%number%)
 ```
@@ -435,7 +435,7 @@ null
 
 ##### Raw Expression
 
-```python
+```skript
 [the] raw %objects%
 ```
 
@@ -447,7 +447,7 @@ null
 
 这将更改该参数的输入值。这可用于将数据存储在调用触发器的变量中。
 
-```python
+```skript
 import:
     ch.njol.skript.lang.Variable
 
@@ -463,7 +463,7 @@ effect put %objects% in %objects%:
 
 ##### 成员
 
-```python
+```skript
 [the] (fields|methods|constructors) of %objects%
 %objects%'[s] (fields|methods|constructors)
 ```
@@ -474,7 +474,7 @@ effect put %objects% in %objects%:
 
 ##### 成员的名字
 
-```python
+```skript
 [the] (field|method) names of %objects%
 %objects%'[s] (field|method) names
 ```
@@ -483,7 +483,7 @@ effect put %objects% in %objects%:
 
 ##### 判断对象是否是某个类的实例
 
-```python
+```skript
 %objects% (is|are) [a[n]] instance[s] of %javatypes%
 %objects% (is not|isn't|are not|aren't) [a[n]] instance[s] of %javatypes%
 ```
@@ -492,7 +492,7 @@ effect put %objects% in %objects%:
 
 ##### 类引用
 
-```python
+```skript
 %javatype%.class
 ```
 
@@ -500,7 +500,7 @@ effect put %objects% in %objects%:
 
 ##### 插件实例
 
-```python
+```skript
 [(an|the)] instance of [the] plugin %javatype/string%
 ```
 

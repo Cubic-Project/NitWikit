@@ -78,7 +78,7 @@ Skript 仍然是编程语言，所有的编程语言都必须在拥有理论基�
 
 我们看一个 "on click" 相关示例：
 
-```python
+```skript
 on right click on dirt:
     send "%event-world%" to console
     send "%event-player%" to console
@@ -129,7 +129,7 @@ Events、Conditions、Effects、Expressions、Types、Functions、Sections、Str
 
 举例：
 
-```python
+```skript
 on death of player:
     # 玩家死亡时
 on click:
@@ -148,7 +148,7 @@ on click:
 
 举例：
 
-```python
+```skript
 on join:
     if player has permission "admin":
         # 管理员权限时执行
@@ -162,7 +162,7 @@ on join:
 
 另外， SK 也支持省略 if 的写法，让 Conditions 单独成为一行代码：
 
-```python
+```skript
 on join:
     player has permission "admin"
     send "管理你好!" to player
@@ -180,7 +180,7 @@ on join:
 
 举例：
 
-```python
+```skript
 on player jump:
     # 玩家跳跃时
     teleport player to world "nether"
@@ -193,14 +193,14 @@ Effect 往往是脚本中最常用的语法，因为它们直接影响游戏世�
 
 因此，我们再来看一个更复杂的 Effect 示例，发送 Title 信息：
 
-```python
+```skript
 send title %text% [with subtitle %text%] [to %players%] [for %time span%] [with fade[(-| )]in %time span%] [(and|with) fade[(-| )]out %time span%]
 send subtitle %text% [to %players%] [for %time span%] [with fade[(-| )]in %time span%] [(and|with) fade[(-| )]out %time span%]
 ```
 
 我们可以大致上认识到 `EffSendTitle` 的基本用法，这里面面有很多可选项和类型，我们可以根据需要选择使用。
 
-```python
+```skript
 on join:
     wait 1 second
     # Effect -> wait %timespan%
@@ -218,7 +218,7 @@ on join:
 
 在 SK 中一般配合条件判断，用于 **在脚本中传递和处理数据**。
 
-```python
+```skript
 on join:
     # 玩家加入时
     set {playerIP::%player%} to ip of player
@@ -240,7 +240,7 @@ on join:
 
 类型定义了变量、参数和返回值的数据种类。在 Skript 中，虽然不像某些编程语言那样严格区分类型，但理解不同类型的值（如字符串、数字、列表等）对于编写正确的脚本至关重要。
 
-```python
+```skript
 on bed enter:
     # 玩家进入床时
     if world of player is world "world":
@@ -259,7 +259,7 @@ on bed enter:
 
 通过查阅 [官方文档](https://docs.skriptlang.org/docs.html?search=#EffSecSpawn)，我们知道生成的语法为：
 
-```python
+```skript
 (spawn|summon) %entity types% [%directions% %locations%]
 ```
 
@@ -279,7 +279,7 @@ on bed enter:
 
 综合以上信息，我们得到完整代码：
 
-```python
+```skript
 spawn zombie at location of player
 ```
 
@@ -287,7 +287,7 @@ spawn zombie at location of player
 
 但 Skript 会自动将 `player` 类型转换为 `location of player` 因此也可直接写成：
 
-```python
+```skript
 spawn zombie at player
 ```
 
@@ -309,7 +309,7 @@ spawn zombie at player
 
 举例：
 
-```python
+```skript
 on player join:
     set {_location} to makePlayerFly(event-player)
     # 调用 makePlayerFly 函数，并传入 event-player 作为参数让玩家飞起来
@@ -335,7 +335,7 @@ function makePlayerFly(p: player) :: location:
 
 举例：
 
-```python
+```skript
 on tool break:
     # 当工具用坏时
     if player is op:
@@ -361,7 +361,7 @@ on tool break:
 
 举例：
 
-```python
+```skript
 options:
     servername: myserver
     # option 中定义 {@xxx} 的值
@@ -419,7 +419,7 @@ on join:
 
 示例 1：禁止没有权限的玩家通过命令执行传送：
 
-```python
+```skript
 on teleport with priority lowest:
     teleport cause is command
     # 判断 tp 原因是否为指令 tp
@@ -432,7 +432,7 @@ on teleport with priority lowest:
 
 示例 2：记录玩家受伤情况：
 
-```python
+```skript
 on damage of player with priority monitor:
     # 监控玩家受伤事件
     log "玩家 %player% 受到了伤害"
@@ -458,7 +458,7 @@ Skript 使用与 Bukkit 相同的事件优先级机制，触发顺序为 `Lowest
 
 查询 [Skript Hub](https://skripthub.net/docs/) 或 [skUnity Docs](https://docs.skunity.com/syntax)，根据直觉选择，与时间和睡觉有关系的事件可能有这些：
 
-```python
+```skript
 every 10 seconds:
 at 00:00:
 on bed enter:
@@ -470,7 +470,7 @@ on bed leave:
 <details>
     <summary>脚本 1 - Every %timespan% + loop</summary>
 
-```python
+```skript
 every 1 second:
     loop all players:
         if loop-player is not sleeping:
@@ -489,7 +489,7 @@ every 1 second:
 <details>
     <summary>脚本 2 - Event + At time</summary>
 
-```python
+```skript
 on bed leave:
     set {%player%::sleep} to false
 on bed enter:
@@ -512,7 +512,7 @@ at 00:00 in world "world":
 <details>
     <summary>脚本 3 - Event + While</summary>
 
-```python
+```skript
 at 00:00 in world "world":
     while time in world is between 00:00 and 6:00: # 注意：若时间段跨越午夜（如 23:00-02:00），请不要直接使用 between，而应拆分为两个条件判断
         loop all players:
@@ -530,7 +530,7 @@ at 00:00 in world "world":
 <details>
     <summary>脚本 4 - Skbee Async Task</summary>
 
-```python
+```skript
 at 00:00 in world "world":
     async run 1 tick later repeating every 1 second:
         if time in world is not between 00:00 and 06:00:
@@ -558,7 +558,7 @@ at 00:00 in world "world":
 
 不刷新怪物的事件建议去掉，直接设置 **难度为和平**。
 
-```python
+```skript
 # 不推荐，即使这是有用的！
 on spawn of zombie:
     cancel event
@@ -588,12 +588,12 @@ on place with priority lowest:
 
 在这里，以下两种写法是等价的。
 
-```python
+```skript
 if player does not have permission "lobby.admin":
     cancel event
 ```
 
-```python
+```skript
 if player has permission "lobby.admin":
     # 有权限时的处理
 else:
@@ -602,7 +602,7 @@ else:
 
 如果只需要判断是或不是，可以灵活选用更简洁的方法，简化为：
 
-```python
+```skript
 on place:
     player does not have permission "lobby.admin"
     cancel event
@@ -634,7 +634,7 @@ public boolean onCommand(final CommandSender sender, Command cmd, String label, 
 
 但是在 Skript 里你只需这样即可：
 
-```python
+```skript
 command /<指令名称> [<类型1>] [<类型2>] [<类型3>]:
     aliases: <别名>
     executable by: <执行者>
@@ -740,7 +740,7 @@ command /<指令名称> [<类型1>] [<类型2>] [<类型3>]:
 
 如果你是新手，很有可能会写出类似以下的脚本：
 
-```python
+```skript
 command /world [<world>]:
     cooldown: 5 seconds
     permission: command.world
@@ -769,7 +769,7 @@ command /world [<world>]:
 
 所以，我们选择使用局部变量暂存玩家的坐标，并基于玩家所在世界及目标世界计算变量，最后根据计算出的量直接使用 `teleport player to %location%` 传送即可。
 
-```python
+```skript
 command /world [<string>]:
     cooldown: 5 seconds
     permission: command.world
@@ -824,7 +824,7 @@ command /world [<string>]:
 
 Skript 中的变量名几乎可以包含绝大多数字符，例如：
 
-```python
+```skript
 set {玩家的金币数} to 1000
 set {_player::coin} to 1000
 set {-cache::player::score} to 2
@@ -899,7 +899,7 @@ Loop / For 循环的结构如下：
 
 我们先举一个简单的例子：
 
-```python
+```skript
 on load:
     set {_list::1} to "hey"
     set {_list::2} to "how"
@@ -922,7 +922,7 @@ on load:
 
 我们需要发奖励，给 `{playerCoins::*}` 每一个人都新增随机 1~100 金币，并计数一共增加了多少：
 
-```python
+```skript
 command /addcoins:
     trigger:
         loop {playerCoins::*}:
@@ -949,7 +949,7 @@ command /addcoins:
 
 这会让代码非常混乱，不推荐使用过多层级的嵌套 Loop，举个例子：
 
-```python
+```skript
 on load:
     loop all players:
         loop all blocks in radius 5 around loop-player:
@@ -962,7 +962,7 @@ on load:
 
 For 循环与 Loop 循环类似，但 For 循环写法更简洁，用于替换 `loop` 语句，适用于简化代码结构，提高可读性。
 
-```python
+```skript
         # for 循环中只有一个变量时，for each %value% in {array::*}:
         # 如果有多个变量时，使用 for each %key%, %value% in {array::*}:
         for each {_player}, {_coin} in {playerCoins::*}:
@@ -975,7 +975,7 @@ For 循环中，`for each {_player}, {_coin} in {playerCoins::*}:` 本质和 `lo
 
 但是使用了更简洁的语法来定义循环变量，直接使用了自定义变量名 `{_player}` 和 `{_coin}`，提高了代码的可读性。等价于：
 
-```python
+```skript
     loop {playerCoins::*}:
         set {_player} to loop-index
         set {_coin} to loop-value
@@ -992,7 +992,7 @@ For 循环中，`for each {_player}, {_coin} in {playerCoins::*}:` 本质和 `lo
 <details>
     <summary>参考写法，不唯一</summary>
 
-```python
+```skript
 item tag aliases:
     any axe = minecraft:axes
     any log = minecraft:logs
@@ -1024,7 +1024,7 @@ on break:
 
 Function 可用于解决这些问题，函数的定义与指令注册具有相似性，例如二者都支持参数，函数的基本结构如下：
 
-```python
+```skript
 function 方法名(参数名: 参数类型, 参数名: 参数类型, ...):
     # 代码段落
 
@@ -1044,7 +1044,7 @@ on load:
 
 另外，函数可以有返回，也可以没有返回值，当需要返回值时，函数的结构如下：
 
-```python
+```skript
 function 方法名(参数名: 参数类型, 参数名: 参数类型, ...) :: 输出参数类型:
     # 代码段落
     return 返回值
@@ -1064,7 +1064,7 @@ on load:
 
 我们来看一个简单的例子：
 
-```python
+```skript
 function getFormattedTime(time: number,type:timespanperiod = ticks) :: string:
     set {_time} to timespan({_time},{_type})
     set {_days} to days of {_time}
@@ -1096,7 +1096,7 @@ function getFormattedTime(time: number,type:timespanperiod = ticks) :: string:
 
 通过调用该函数，可以将时间数值转换为易读的格式，例如 "1 天 2 小时 30 分钟"。
 
-```python
+```skript
 on load:
     set {_timeString} to getFormattedTime(93784, seconds)
     broadcast "格式化后的时间为：%{_timeString}%"
@@ -1114,7 +1114,7 @@ on load:
 
 指令已经写好，你需要完成平滑视角的函数：
 
-```python
+```skript
 command /smoothlook <number> <number> <number> [<integer>=20]:
     trigger:
         set {_from} to player's target block
@@ -1129,7 +1129,7 @@ command /smoothlook <number> <number> <number> [<integer>=20]:
 <details>
     <summary>参考写法，不唯一</summary>
 
-```python
+```skript
 #> 平滑模块
 function smoothUtils(duration:number,from:location,to:location,time:number) :: location:
     set {_tickrate} to ({_time} / {_duration})
