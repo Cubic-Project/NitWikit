@@ -4,9 +4,9 @@ title: 高级教程
 
 ## skript-reflect
 
-学完基本的 Skript 语法后，我们会遇到一些 Skript 本身无法实现的功能，`Skript-reflect` 就是为了解决这些问题而诞生的。
+学完基本的 Skript 语法后，我们会遇到一些 Skript 本身无法实现的功能，`skript-reflect` 就是为了解决这些问题而诞生的。
 
-在基础教程中，我们已经提到过，`Skript-reflect` 允许我们以稍低一些的性能在 Skript 中反射调用 Java API，
+在基础教程中，我们已经提到过，`skript-reflect` 允许我们以稍低一些的性能在 Skript 中反射调用 Java API，
 
 它旨在将 **Java** 的功能与 **Skript** 易于使用的开发环境相结合，从而使 **Skript** 脚本编写者能够几乎访问任何 **Java** 类、方法和字段。
 
@@ -26,12 +26,12 @@ title: 高级教程
 
 ```skript
 import:
-    net.ess3.api.events.TPARequestEvent   # 导入java类
+    net.ess3.api.events.TPARequestEvent   # 导入 Java 类
 
 # 监听事件
 on TPARequestEvent:
-    set {_ess_IUser} to event.getTarget()   # 获取IUser对象
-    set {_player} to {_ess_IUser}.getBase()   # 获取Player对象
+    set {_ess_IUser} to event.getTarget()   # 获取 IUser 对象
+    set {_player} to {_ess_IUser}.getBase()   # 获取 Player 对象
     # 判断玩家
     if {_player} is player("lilingfeng"):
         set {_command_sender} to event.getRequester().getPlayer()   # 获取发起 tpa 请求的玩家
@@ -76,8 +76,8 @@ on TPARequestEvent:
 例如，`TPARequestEvent` 事件中没有 `event-player`，因此无法直接使用 `player` 关键字来获取发起 tpa 的玩家。
 
 ```skript
-    set {_ess_IUser} to event.getTarget()   # 获取IUser对象
-    set {_player} to {_ess_IUser}.getBase()   # 获取Player对象
+    set {_ess_IUser} to event.getTarget()   # 获取 IUser 对象
+    set {_player} to {_ess_IUser}.getBase()   # 获取 Player 对象
 ```
 
 这行代码意为调用这个事件里的 `getTarget()` 方法，来获取 tpa 的目标，其返回一个 `IUser`。
@@ -97,15 +97,15 @@ on TPARequestEvent:
 
 在上面这个例子中，我们利用了一些方法 `getTarget()`、`getBase()`、`getRequester()` 和 `getPlayer()`，这些方法都是 Java 类或接口中定义的，
 
-新手会觉得很难理解这些方法是从哪里来的，如何使用的，下面我们就来学习一下如何阅读 **Java Doc**。
+新手会觉得很难理解这些方法是从哪里来的，如何使用的，下面我们就来学习一下如何阅读 **Javadoc**。
 
 假如我们想要使用 **Leaves** 服务端的假人功能，来修改假人在玩家列表中显示的名字，但是 Skript 本身并没有提供相关的事件和方法，我们该如何实现呢？
 
-##### 学会阅读 Java Doc
+##### 学会阅读 Javadoc
 
 我们先阅读 [Leaves 的 Javadoc](https://repo.leavesmc.org/javadoc/snapshots/org/leavesmc/leaves/leaves-api/1.20.6-R0.1-SNAPSHOT)，寻找相关的事件和方法。
 
-:::info[如何阅读 Java Doc]
+:::info[如何阅读 Javadoc]
 
 ![搜索事件](_assets/SearchEvent.png)
 
@@ -143,7 +143,7 @@ import:
 on BotJoin:
     set {_bot} to event.getBot()   # 获取假人
     set {_bot_name} to {_bot}.getName()   # 储存假人原本的名字
-    {_bot}.setPlayerListName("假的%{_bot_name}%")   # 修改假人在tab列表里的名字
+    {_bot}.setPlayerListName("假的%{_bot_name}%")   # 修改假人在 Tab 列表里的名字
 ```
 
 `import` 语句导入了 `BotJoinEvent` 类，并将其设为别名 `BotJoin`，以便在 Skript 中使用。
@@ -223,7 +223,7 @@ import <fully qualified name> [as <alias>]
 
 在 Skript 中使用枚举值时，请使用 `$` 符号来分隔枚举类和枚举值。
 
-查询 JavaDoc[https://purpurmc.org/javadoc/org/bukkit/event/inventory/ClickType.html] 可以看到 `ClickType` 枚举类中有多个枚举值，如 `DROP`、`LEFT`、`RIGHT` 等。
+查询 [Paper 的 Javadoc](https://jd.papermc.io/paper/1.21.11/org/bukkit/event/inventory/ClickType.html) 可以看到 `ClickType` 枚举类中有多个枚举值，如 `DROP`、`LEFT`、`RIGHT` 等。
 
 举例：
 
@@ -259,9 +259,9 @@ player.giveExpLevels({_levels})
 # 给玩家经验等级 -> {_levels}
 ```
 
-方法可以用作 **Effects** 、 **Expressions** 和 **Conditions** 。
+方法可以用作 **Effects** 、**Expressions** 和 **Conditions** 。
 
-如果用作**Conditions**，则只要方法的返回值不是 `false`、`null` 或 `0`，这个 **Conditions** 就会通过。
+如果用作 **Conditions**，则只要方法的返回值不是 `false`、`null` 或 `0`，这个 **Conditions** 就会通过。
 
 ###### 调用非公共方法
 
@@ -279,7 +279,7 @@ Java 中不同方法有不同的访问修饰符（如 `public`、`private`、`pr
 
 ###### 调用 Overload 的方法
 
-通常， **skript-reflect** 可以从运行时传递的参数中推断出要调用的正确的 Overload 方法。
+通常，**skript-reflect** 可以从运行时传递的参数中推断出要调用的正确的 Overload 方法。
 
 如果需要使用某个方法的某种实现，可以在方法名称的末尾附加一个逗号分隔的列表，并用括号括起来。
 
@@ -513,4 +513,4 @@ effect put %objects% in %objects%:
 
 这不仅能让你更好地理解 **Skript** 的工作原理，也能让你提升编程能力，并为社区做出贡献。
 
-在下一章中，我们将介绍一些常用的 **Skript Addon** 以及如何编写自己的 **Skript Addon** [WIP]
+在下一章中，我们将介绍一些常用的 **Skript Addon** 以及如何编写自己的 **Skript Addon** [WIP] <!-- TODO -->
