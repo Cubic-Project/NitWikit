@@ -1,9 +1,6 @@
 ---
 title: 在 iOS 上安装 Amethyst
-sidebar_position: 3
 ---
-
-# 在 iOS 上安装 Amethyst
 
 ## 方法一：使用 AltStore
 

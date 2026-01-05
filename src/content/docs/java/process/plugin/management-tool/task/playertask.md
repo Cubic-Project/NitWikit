@@ -1,9 +1,6 @@
 ---
 title: PlayerTask
-sidebar_position: 9
 ---
-
-# PlayerTask
 
 米饭的任务，嗯草数据库不能用文本编辑器写任务，必须用它那个 GUI，功能又少
 

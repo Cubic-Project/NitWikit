@@ -1,9 +1,6 @@
 ---
 title: 常见问题
-sidebar_position: 8
 ---
-
-# 常见问题
 
 一些常见的插件安装问题
 

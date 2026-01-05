@@ -1,8 +1,6 @@
 ---
-sidebar_position: 4
+title: ViaRewind
 ---
-
-# ViaRewind
 
 :::info
 

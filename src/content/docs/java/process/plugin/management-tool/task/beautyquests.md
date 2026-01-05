@@ -1,9 +1,6 @@
 ---
 title: BeautyQuests
-sidebar_position: 6
 ---
-
-# BeautyQuests
 
 :::info
 

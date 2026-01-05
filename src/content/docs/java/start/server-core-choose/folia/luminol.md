@@ -1,9 +1,6 @@
 ---
 title: Luminol
-sidebar_position: 1
 ---
-
-# Luminol
 
 ![](../_assets/Luminol.png)
 

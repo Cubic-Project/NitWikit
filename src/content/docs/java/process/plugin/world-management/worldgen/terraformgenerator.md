@@ -1,11 +1,8 @@
 ---
 title: TerraformGenerator
-sidebar_position: 3
 ---
 
 <!--markdownlint-disable line-length-->
-
-# TerraformGenerator
 
 ![TerraformGenerator 地形展示](https://img.fastmirror.net/s/2024/08/03/66ad8d09b6679.png)
 

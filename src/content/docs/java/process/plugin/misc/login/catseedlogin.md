@@ -1,9 +1,6 @@
 ---
 title: CatSeedLogin
-sidebar_position: 3
 ---
-
-# CatSeedLogin
 
 :::info
 

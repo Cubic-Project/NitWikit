@@ -1,9 +1,6 @@
 ---
-sidebar_position: 4
-sidebar_label: 地皮 - PlotSquared
+title: 地皮 - PlotSquared
 ---
-
-# PlotSquared
 
 :::info
 

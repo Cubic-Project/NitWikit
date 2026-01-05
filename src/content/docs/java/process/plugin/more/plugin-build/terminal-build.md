@@ -1,9 +1,6 @@
 ---
 title: 使用终端
-sidebar_position: 5
 ---
-
-# 使用终端
 
 ## 环境准备
 

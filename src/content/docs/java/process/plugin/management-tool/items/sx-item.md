@@ -1,9 +1,6 @@
 ---
 title: SX-Item
-sidebar_position: 2
 ---
-
-# SX-Item
 
 :::info
 

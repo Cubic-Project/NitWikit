@@ -1,9 +1,6 @@
 ---
 title: Plugin Portal
-sidebar_position: 4
 ---
-
-# Plugin Portal
 
 :::info
 

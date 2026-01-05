@@ -1,10 +1,8 @@
 ---
-title: Linux 开服
-slug: /Sundry/Advance/Linux
-sidebar_position: 1
+title: 概述
+sidebar:
+    order: 1
 ---
-
-# Linux 开服
 
 ## 为什么选择 Linux 开服
 

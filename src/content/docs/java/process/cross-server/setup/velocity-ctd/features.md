@@ -1,9 +1,6 @@
 ---
 title: 特色功能
-sidebar_position: 4
 ---
-
-# Velocity-CTD 特色功能
 
 Velocity-CTD 在标准 Velocity 基础上增加了许多实用功能，本页面详细介绍这些特色功能的使用方法。
 

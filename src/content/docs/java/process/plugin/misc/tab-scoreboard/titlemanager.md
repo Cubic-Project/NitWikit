@@ -1,9 +1,6 @@
 ---
 title: TitleManager
-sidebar_position: 3
 ---
-
-# TitleManager
 
 ![](_assets/TitleManager/1.gif)
 

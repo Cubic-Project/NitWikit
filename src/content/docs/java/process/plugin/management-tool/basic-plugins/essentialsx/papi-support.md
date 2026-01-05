@@ -1,6 +1,5 @@
 ---
 title: papi 支持
-sidebar_position: 4
 ---
 
 :::info

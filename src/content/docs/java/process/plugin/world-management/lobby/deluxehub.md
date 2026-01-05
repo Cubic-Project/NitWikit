@@ -1,9 +1,6 @@
 ---
 title: DeluxeHub
-sidebar_position: 2
 ---
-
-# DeluxeHub
 
 :::info
 

@@ -1,9 +1,6 @@
 ---
 title: ChangeOutput
-sidebar_position: 9
 ---
-
-# ChangeOutput
 
 :::info
 

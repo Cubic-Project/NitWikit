@@ -1,25 +1,14 @@
 ---
 title: 笨蛋服务
-slug: /services
-sidebar_position: 5
 ---
-
-import GlobalContent from '@site/src/components/GlobalContent'
-
-# 笨蛋服务
 
 这些服务由赛博菩萨 Cloudflare 和 lilingfeng 搭建，完全免费提供！
 
 目前包括
 
-<GlobalContent>
-
-- [笨蛋镜像](https://mirror.yizhan.wiki) - 加速网站的访问 (为没有 VPN 的人准备)
-- [笨蛋图床](https://image.8aka.org) - 简洁，免费的图床
-
-</GlobalContent>
-
-- [日志上传](https://log.8aka.org) - 上传日志
+-   [笨蛋镜像](https://mirror.yizhan.wiki) - 加速网站的访问 (为没有 VPN 的人准备)
+-   [笨蛋图床](https://image.8aka.org) - 简洁，免费的图床
+-   [日志上传](https://log.8aka.org) - 上传日志
 
 ## 规则
 

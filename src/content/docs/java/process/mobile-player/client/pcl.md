@@ -2,8 +2,6 @@
 title: 手机直装模板
 ---
 
-# 手机直装模板
-
 在手机上装 PojavLauncher/FCL 还是太吃操作了，这时候我们就需要客户端安装包了
 
 [GitHub 地址](https://github.com/MrXiaoM/FoldCraftLauncher)

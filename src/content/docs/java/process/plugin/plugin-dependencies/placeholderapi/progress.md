@@ -1,9 +1,6 @@
 ---
 title: Progress
-sidebar_position: 7
 ---
-
-# Progress
 
 :::info
 

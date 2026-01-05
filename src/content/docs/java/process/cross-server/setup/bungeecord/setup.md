@@ -1,9 +1,6 @@
 ---
 title: 搭建
-sidebar_position: 1
 ---
-
-# 搭建
 
 ## 下载
 

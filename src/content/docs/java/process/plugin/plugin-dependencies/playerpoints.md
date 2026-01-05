@@ -1,9 +1,6 @@
 ---
 title: PlayerPoints
-sidebar_position: 4
 ---
-
-# PlayerPoints
 
 :::info
 

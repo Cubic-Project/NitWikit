@@ -1,8 +1,6 @@
 ---
-sidebar_position: 4
+title: Adyeshach
 ---
-
-# Adyeshach
 
 ![](_assets/Adyeshach/Adyeshach-1.png)
 

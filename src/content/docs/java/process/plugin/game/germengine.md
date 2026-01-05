@@ -1,9 +1,6 @@
 ---
 title: 萌芽引擎
-sidebar_position: 5
 ---
-
-# 萌芽引擎
 
 ![](_assets/Germ_Engine/1.png)
 

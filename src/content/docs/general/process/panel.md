@@ -1,9 +1,6 @@
 ---
 title: 搭建面板
-sidebar_position: 2
 ---
-
-# 搭建面板
 
 :::warning
 

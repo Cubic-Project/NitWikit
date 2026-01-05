@@ -1,9 +1,6 @@
 ---
 title: CheckItem
-sidebar_position: 4
 ---
-
-# CheckItem
 
 :::info
 

@@ -1,6 +1,5 @@
 ---
 title: 在安卓设备上安装 Java 启动器
-sidebar_position: 4
 ---
 
 这个教程支持所有安卓设备和所有启动器

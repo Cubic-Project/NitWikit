@@ -1,9 +1,6 @@
 ---
 title: ChestCommands
-sidebar_position: 2
 ---
-
-# ChestCommands
 
 :::info
 

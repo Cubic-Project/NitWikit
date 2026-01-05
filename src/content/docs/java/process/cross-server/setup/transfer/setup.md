@@ -1,9 +1,6 @@
 ---
 title: 搭建
-sidebar_position: 1
 ---
-
-# Transfer 跨服搭建
 
 ## 什么是 Transfer？
 

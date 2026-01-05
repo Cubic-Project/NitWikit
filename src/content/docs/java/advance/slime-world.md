@@ -1,9 +1,6 @@
 ---
-title: Slime 世界格式
-sidebar_position: 9
+title: Slime 存储格式
 ---
-
-# Slime 世界格式
 
 Slime 世界格式是 Hypixel 开发的一种世界存储格式
 

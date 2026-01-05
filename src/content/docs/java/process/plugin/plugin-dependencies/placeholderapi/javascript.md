@@ -1,9 +1,6 @@
 ---
 title: JavaScript
-sidebar_position: 5
 ---
-
-# JavaScript
 
 :::info
 

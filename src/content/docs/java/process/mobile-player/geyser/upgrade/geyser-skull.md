@@ -1,9 +1,6 @@
 ---
 title: 如何修复 Geyser 头颅不显示
-sidebar_position: 3
 ---
-
-# 如何修复 Geyser 头颅不显示
 
 :::note
 

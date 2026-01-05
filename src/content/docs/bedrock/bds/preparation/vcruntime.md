@@ -1,9 +1,6 @@
 ---
 title: Visual C++ 运行库
-sidebar_position: 3
 ---
-
-# Visual C++ 运行库
 
 我的世界基岩版由于使用微软开发的 Visual C++ 编写，需要依赖 Visual C++ 运行库 (VC 运行库) 才能正常运行。在玩家的电脑上，由于 Windows 系统会自动为游戏补全这些运行库，所以玩家下载好基岩版之后就可以直接开始游戏。
 

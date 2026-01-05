@@ -1,9 +1,6 @@
 ---
-sidebar_position: 2
 title: MCHPRS
 ---
-
-# MCHPRS
 
 一个为红石而构建的 Minecraft 服务器。每个 512x512 的区域运行在单独的线程上，基于 Rust ,拥有非常高的性能
 

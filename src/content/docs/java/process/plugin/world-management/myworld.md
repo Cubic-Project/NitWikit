@@ -1,9 +1,6 @@
 ---
-sidebar_position: 5
-sidebar_label: 多世界 - MyWorld
+title: 多世界 - MyWorld
 ---
-
-# MyWorld
 
 > 另一个多世界插件。
 

@@ -1,9 +1,6 @@
 ---
 title: 兼容 Slimefun
-sidebar_position: 2
 ---
-
-# 兼容 Slimefun
 
 :::danger
 

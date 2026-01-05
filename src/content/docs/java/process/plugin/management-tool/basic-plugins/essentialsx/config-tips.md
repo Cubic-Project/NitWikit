@@ -1,9 +1,6 @@
 ---
 title: Config 快速指南
-sidebar_position: 2
 ---
-
-# Config 快速指南
 
 我们为懒人列出了配置文件那些比较重要的选项 (善用 `Ctrl + F`)：
 

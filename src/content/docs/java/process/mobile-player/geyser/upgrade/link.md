@@ -1,9 +1,6 @@
 ---
 title: 账户数据互通
-sidebar_position: 4
 ---
-
-# 账户数据互通
 
 ## 全局链接
 

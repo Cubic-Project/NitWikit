@@ -1,9 +1,8 @@
 ---
 title: 汉化插件
-sidebar_position: 2
 ---
 
-# 配置插件
+## 配置插件
 
 插件的配置文件一般在 `/plugins/插件名字/` 文件夹中，常见的配置文件一般是 `config.yml` 。
 

@@ -1,9 +1,6 @@
 ---
 title: PlayerTitle
-sidebar_position: 3
 ---
-
-# PlayerTitle
 
 :::info
 

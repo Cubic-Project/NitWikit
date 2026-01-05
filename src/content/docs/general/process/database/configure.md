@@ -1,12 +1,10 @@
 ---
 title: 配置
-slug: /database/configure
-sidebar_position: 3
+sidebar:
+    order: 4
 ---
 
-## 数据库配置
-
-### MySQL
+## MySQL
 
 MySQL 的配置文件在 Windows 中，是 `my.ini` ，默认在 `C:\Program Files\MySQL\MySQL Server X.X` 文件夹中
 
@@ -257,6 +255,6 @@ innodb_lock_wait_timeout = 120
 
 :::
 
-### MariaDB
+## MariaDB
 
 TODO

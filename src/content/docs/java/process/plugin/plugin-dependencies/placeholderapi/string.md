@@ -1,9 +1,6 @@
 ---
 title: String
-sidebar_position: 9
 ---
-
-# String
 
 :::info
 

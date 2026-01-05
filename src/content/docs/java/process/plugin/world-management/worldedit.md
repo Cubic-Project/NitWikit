@@ -1,9 +1,6 @@
 ---
-sidebar_position: 6
-sidebar_label: 创世神 - WorldEdit
+title: 创世神 - WorldEdit
 ---
-
-# WorldEdit
 
 :::info
 

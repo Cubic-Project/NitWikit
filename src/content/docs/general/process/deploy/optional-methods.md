@@ -1,17 +1,14 @@
 ---
 title: 可选方式
-sidebar_position: 3
+sidebar:
+    order: 3
 ---
-
-# 可选方式
 
 :::warning
 
 这里所说的 **人话** 只是用于辅助理解，与实际情况可能存在偏差
 
 :::
-
-建议先阅读 [购置服务器](purchase-server.md)
 
 ## 面板
 

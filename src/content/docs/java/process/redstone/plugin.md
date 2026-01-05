@@ -1,10 +1,6 @@
 ---
-sidebar_position: 1
 title: 插件端
-sidebar_label: 插件端
 ---
-
-# 插件端
 
 从原版特性方面来讲，插件端其实并不适合原版生电，Paper 也在他们的文档中说明了这一点
 

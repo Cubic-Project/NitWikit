@@ -1,9 +1,6 @@
 ---
 title: MiniPlayerTitle
-sidebar_position: 1
 ---
-
-# MiniPlayerTitle
 
 ![](_assets/MiniPlayerTitle/MiniPlayerTitle-1.png)
 

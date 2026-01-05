@@ -1,9 +1,6 @@
 ---
-sidebar_position: 1
-sidebar_label: 保护 - WorldGuard
+title: 保护 - WorldGuard
 ---
-
-# WorldGuard
 
 ![](_assets/worldguard-logo.svg)
 

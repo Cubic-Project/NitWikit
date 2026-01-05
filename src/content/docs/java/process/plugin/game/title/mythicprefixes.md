@@ -1,9 +1,6 @@
 ---
 title: MythicPrefixes
-sidebar_position: 5
 ---
-
-# MythicPrefixes
 
 :::info
 

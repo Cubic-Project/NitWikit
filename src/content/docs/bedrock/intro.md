@@ -1,6 +1,5 @@
 ---
-title: 笨蛋开服教程
-sidebar_position: 1
+title: 概述
 ---
 
 ![](https://img.fastmirror.net/s/2024/11/02/672558bae4ec0.png)

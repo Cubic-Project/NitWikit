@@ -1,9 +1,6 @@
 ---
 title: Citizens
-sidebar_position: 2
 ---
-
-# Citizens
 
 ![](_assets/Citizens/Citizens-1.png)
 

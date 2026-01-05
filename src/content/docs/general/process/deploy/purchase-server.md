@@ -1,6 +1,7 @@
 ---
 title: 购置服务器
-sidebar_position: 2
+sidebar:
+    order: 2
 ---
 
 # 购置服务器

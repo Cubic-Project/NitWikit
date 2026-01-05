@@ -1,9 +1,6 @@
 ---
 title: DeluxeTags
-sidebar_position: 4
 ---
-
-# DeluxeTags
 
 :::info
 

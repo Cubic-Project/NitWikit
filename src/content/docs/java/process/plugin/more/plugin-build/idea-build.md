@@ -1,9 +1,6 @@
 ---
 title: 使用 IDEA
-sidebar_position: 4
 ---
-
-# 使用 IDEA 构建
 
 ## 第一步：导入项目
 

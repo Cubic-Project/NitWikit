@@ -1,9 +1,6 @@
 ---
 title: Mod 端
-sidebar_position: 3
 ---
-
-# Mod 端
 
 Mod 端的选择一般优先考虑玩法（即主要的玩法 mod），再考虑性能
 

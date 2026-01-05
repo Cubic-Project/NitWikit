@@ -1,11 +1,8 @@
 ---
 title: 搭建
-sidebar_position: 1
 ---
 
 <!--markdownlint-disable line-length-->
-
-# 搭建
 
 ## 下载
 

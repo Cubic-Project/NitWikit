@@ -1,14 +1,12 @@
 ---
 title: 卸载
-slug: /database/uninstall
-sidebar_position: 5
+sidebar:
+    order: 6
 ---
-
-## 数据库卸载
 
 当你乱捣鼓一通，然后给你数据库整炸了，还不会修，那除了花钱请大佬最好的办法就是删掉重新安装
 
-### 宝塔面板
+## 宝塔面板
 
 TODO
 
@@ -16,9 +14,11 @@ https://www.bt.cn/bbs/thread-9043-1-1.html
 
 https://www.bt.cn/new/btcode.html
 
-### 小皮数据库
+## 小皮数据库
 
-### Windows 平台
+TODO
+
+## Windows 平台
 
 首先，通过 PHPStudy 的控制面板，找到 MySQL 服务，并点击“暂停”按钮
 
@@ -32,7 +32,7 @@ https://www.bt.cn/new/btcode.html
 
 最后，我们重新启动 PHPStudy
 
-### Linux 平台
+## Linux 平台
 
 首先，点击左侧面板的数据库，进入数据库列表管理页面
 
@@ -40,7 +40,7 @@ https://www.bt.cn/new/btcode.html
 
 最后，在弹出的提示框中点击确定，即可删除数据库
 
-### 暴力删除
+## 暴力删除
 
 也许我们会遇到：用温和的方式弄不干净数据库的尸体，这尸体又影响我重新安装数据库了
 

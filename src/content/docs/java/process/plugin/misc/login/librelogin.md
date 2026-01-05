@@ -1,9 +1,6 @@
 ---
 title: LibreLogin
-sidebar_position: 5
 ---
-
-# LibreLogin
 
 :::info
 

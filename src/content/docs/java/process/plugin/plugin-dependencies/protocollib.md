@@ -1,9 +1,6 @@
 ---
 title: ProtocolLib
-sidebar_position: 5
 ---
-
-# ProtocolLib
 
 :::info
 

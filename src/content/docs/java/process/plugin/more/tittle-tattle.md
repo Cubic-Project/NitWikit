@@ -1,9 +1,6 @@
 ---
 title: 杂谈
-sidebar_position: 9
 ---
-
-# 杂谈
 
 ## 付费>免费/开源？
 

@@ -1,9 +1,6 @@
 ---
 title: 粘液资源包
-sidebar_position: 3
 ---
-
-# 粘液资源包
 
 鬼斩的粘液科技材质 (不再更新)：https://ybw0014.net/post/guizhancraft-resource-pack
 

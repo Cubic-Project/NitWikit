@@ -1,9 +1,6 @@
 ---
 title: TrChat
-sidebar_position: 1
 ---
-
-# TrChat
 
 ![](./_assets/TrChat/1.png)
 

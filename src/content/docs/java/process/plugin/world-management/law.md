@@ -1,9 +1,6 @@
 ---
-sidebar_position: 2
-sidebar_label: 保护 - Law
+title: 保护 - Law
 ---
-
-# Law
 
 [![Release](https://img.shields.io/github/v/release/mouse0w0/law)](https://github.com/mouse0w0/law/releases)
 [![Code Size](https://img.shields.io/github/languages/code-size/mouse0w0/law)](https://github.com/mouse0w0/law)

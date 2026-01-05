@@ -1,9 +1,6 @@
 ---
 title: TrMenu
-sidebar_position: 4
 ---
-
-# TrMenu
 
 ![](https://gitee.com/postyizhan/images-hosting/releases/download/gif/animation.gif)
 

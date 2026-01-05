@@ -1,12 +1,8 @@
 ---
 title: 使用
-slug: /database/manage
-sidebar_position: 2
+sidebar:
+    order: 3
 ---
-
-<!--markdownlint-disable no-duplicate-heading-->
-
-## 数据库管理
 
 ## 使用数据库管理软件管理
 

@@ -1,9 +1,6 @@
 ---
 title: ServiceIO
-sidebar_position: 2
 ---
-
-# ServiceIO
 
 [![](https://img.shields.io/github/v/release/TheNextLvl-net/service-io)](https://github.com/TheNextLvl-net/service-io/releases)
 [![](https://img.shields.io/github/languages/code-size/TheNextLvl-net/service-io)](https://github.com/TheNextLvl-net/service-io)

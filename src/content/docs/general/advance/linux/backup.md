@@ -1,9 +1,8 @@
 ---
 title: 自动备份存档
-sidebar_position: 8
+sidebar:
+    order: 5
 ---
-
-# 自动备份存档
 
 ## 编写备份脚本
 

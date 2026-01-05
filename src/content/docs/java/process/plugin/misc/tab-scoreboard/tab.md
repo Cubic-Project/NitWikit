@@ -1,9 +1,6 @@
 ---
 title: TAB
-sidebar_position: 2
 ---
-
-# TAB
 
 [![Releases](https://img.shields.io/github/v/release/NEZNAMY/TAB)](https://github.com/NEZNAMY/TAB/releases)
 [![Downloads](https://img.shields.io/spiget/downloads/57806?label=Downloads)](https://www.spigotmc.org/resources/.57806)

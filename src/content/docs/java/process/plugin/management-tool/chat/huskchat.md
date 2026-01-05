@@ -1,9 +1,6 @@
 ---
 title: HuskChat
-sidebar_position: 2
 ---
-
-# HuskChat
 
 :::danger
 

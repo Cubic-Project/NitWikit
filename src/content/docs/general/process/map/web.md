@@ -1,9 +1,8 @@
 ---
 title: 卫星地图
-sidebar_position: 5
+sidebar:
+    order: 6
 ---
-
-# 卫星地图
 
 通过此类功能的 mod/plugin 可以生成一个与服务端存档相对应的即时网页地图，通常以俯视、斜视或 3D 模型的形式呈现。
 

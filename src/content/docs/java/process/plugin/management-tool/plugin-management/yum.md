@@ -1,9 +1,6 @@
 ---
 title: Yum
-sidebar_position: 1
 ---
-
-# Yum
 
 连作者自己都骂的垃圾插件，不要使用。
 

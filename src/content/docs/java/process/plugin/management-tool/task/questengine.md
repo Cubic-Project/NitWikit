@@ -1,9 +1,6 @@
 ---
 title: QuestEngine
-sidebar_position: 3
 ---
-
-# QuestEngine
 
 :::info
 

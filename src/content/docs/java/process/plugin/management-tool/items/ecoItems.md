@@ -1,9 +1,6 @@
 ---
 title: EcoItems
-sidebar_position: 3
 ---
-
-# EcoItems
 
 :::info
 

@@ -1,9 +1,6 @@
 ---
 title: DecentHolograms
-sidebar_position: 2
 ---
-
-# DecentHolograms
 
 [![Release](https://img.shields.io/github/v/release/DecentSoftware-eu/DecentHolograms)](https://github.com/DecentSoftware-eu/DecentHolograms/releases)
 [![Downloads](https://img.shields.io/spiget/downloads/96927?label=Downloads)](https://www.spigotmc.org/resources/.96927)

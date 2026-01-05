@@ -1,10 +1,6 @@
 ---
 title: SkinsRestorer
-sidebar_position: 8
-sidebar_label: 皮肤 - SkinsRestorer
 ---
-
-# SkinsRestorer
 
 :::info
 

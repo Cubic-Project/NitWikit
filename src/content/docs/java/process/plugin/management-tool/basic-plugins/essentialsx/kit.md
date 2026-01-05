@@ -1,9 +1,6 @@
 ---
 title: kit 礼包
-sidebar_position: 5
 ---
-
-# kit 礼包
 
 ## 创建礼包
 

@@ -1,9 +1,6 @@
 ---
 title: TypeWriter
-sidebar_position: 2
 ---
-
-# TypeWriter
 
 ![](_assets/TypeWriter/TW_Banner_Transparant.png)
 

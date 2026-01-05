@@ -1,9 +1,6 @@
 ---
 title: 在 iOS 上安装 PojavLauncher
-sidebar_position: 2
 ---
-
-# 在 iOS 上安装 PojavLauncher
 
 :::warning
 

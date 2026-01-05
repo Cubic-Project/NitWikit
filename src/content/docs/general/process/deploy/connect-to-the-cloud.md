@@ -1,9 +1,8 @@
 ---
 title: 连接到云
-sidebar_position: 4
+sidebar:
+    order: 4
 ---
-
-# 连接到云
 
 当你买好服务器后，你应该如何连接到服务器并部署你的服务端
 

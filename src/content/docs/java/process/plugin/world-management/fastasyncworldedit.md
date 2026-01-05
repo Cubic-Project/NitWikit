@@ -1,9 +1,6 @@
 ---
-sidebar_position: 7
-sidebar_label: FAWE - FastAsyncWorldEdit
+title: FAWE - FastAsyncWorldEdit
 ---
-
-# FastAsyncWorldEdit
 
 <!--markdownlint-disable line-length-->
 

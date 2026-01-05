@@ -1,9 +1,6 @@
 ---
 title: 使用 GitHub Actions
-sidebar_position: 6
 ---
-
-# 使用 GitHub Actions
 
 ## 什么是 GitHub Actions？
 

@@ -1,9 +1,8 @@
 ---
 title: 地图偷取
-sidebar_position: 4
+sidebar:
+    order: 5
 ---
-
-# 地图偷取
 
 :::warning
 

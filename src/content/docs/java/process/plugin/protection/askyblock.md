@@ -1,9 +1,6 @@
 ---
-sidebar_position: 5
-sidebar_label: 空岛 - ASkyBlock
+title: 空岛 - ASkyBlock
 ---
-
-# ASkyBlock
 
 :::info
 

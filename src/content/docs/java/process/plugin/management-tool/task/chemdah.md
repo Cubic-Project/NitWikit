@@ -1,9 +1,6 @@
 ---
 title: Chemdah
-sidebar_position: 1
 ---
-
-# Chemdah
 
 ![](https://img.fastmirror.net/s/2024/10/18/67124f5bb2728.png)
 

@@ -1,9 +1,6 @@
 ---
 title: 龙之核心
-sidebar_position: 4
 ---
-
-# 龙之核心
 
 ## ![介绍](_assets/Dragon_Core/1.jpg)
 

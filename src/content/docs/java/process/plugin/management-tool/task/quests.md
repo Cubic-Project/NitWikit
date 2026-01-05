@@ -1,9 +1,6 @@
 ---
 title: Quests
-sidebar_position: 5
 ---
-
-# Quests
 
 :::info
 

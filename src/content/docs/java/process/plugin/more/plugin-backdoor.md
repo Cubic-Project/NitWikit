@@ -1,9 +1,6 @@
 ---
 title: 插件排毒
-sidebar_position: 5
 ---
-
-# 插件排毒
 
 :::danger
 

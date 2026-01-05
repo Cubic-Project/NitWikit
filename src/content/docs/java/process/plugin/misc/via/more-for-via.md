@@ -1,8 +1,6 @@
 ---
-sidebar_position: 5
+title: Via 进阶
 ---
-
-# Via 进阶
 
 学会更多关于 via 的知识
 

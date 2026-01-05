@@ -1,9 +1,6 @@
 ---
 title: 插件下载
-sidebar_position: 1
 ---
-
-# 插件下载
 
 ## 选择插件
 

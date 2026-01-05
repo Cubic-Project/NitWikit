@@ -1,9 +1,6 @@
 ---
-sidebar_position: 7
-sidebar_label: 城镇 - Towny
+title: 城镇 - Towny
 ---
-
-# Towny
 
 :::info
 

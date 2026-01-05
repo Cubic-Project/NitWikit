@@ -1,9 +1,6 @@
 ---
 title: Authme
-sidebar_position: 2
 ---
-
-# Authme
 
 :::info
 

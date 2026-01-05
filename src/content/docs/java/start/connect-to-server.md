@@ -1,9 +1,6 @@
 ---
 title: 连接服务器
-sidebar_position: 6
 ---
-
-# 连接服务器
 
 ## 端口
 
@@ -27,9 +24,9 @@ server-port=25565
 
 本机 IP，通常有这样几种形式：
 
-- localhost
-- 127.0.0.1
-- 0.0.0.0
+-   localhost
+-   127.0.0.1
+-   0.0.0.0
 
 如果你没有修改你的服务器端口，那么在你的 Minecraft 客户端中：
 
@@ -43,9 +40,9 @@ server-port=25565
 
 假设你的服务器端口是 12345，你应该将上方所说的 本机 IP 替换为：
 
-- localhost:12345
-- 127.0.0.1:12345
-- 0.0.0.0:12345
+-   localhost:12345
+-   127.0.0.1:12345
+-   0.0.0.0:12345
 
 :::warning
 
@@ -69,10 +66,10 @@ server-port=25565
 
 如果很不幸，你的玩家没有正常连接，请先按以下步骤检查
 
-- 请尝试本地连接，如果不行，那么就是服务器有问题
-- 如果本地连接正常，你可以尝试在防火墙中放行端口
-- 检查你在路由器中是否把这个端口公开到公网
-- 根据 [常见错误](#常见错误) 章节进行排查
+-   请尝试本地连接，如果不行，那么就是服务器有问题
+-   如果本地连接正常，你可以尝试在防火墙中放行端口
+-   检查你在路由器中是否把这个端口公开到公网
+-   根据 [常见错误](#常见错误) 章节进行排查
 
 ### 我没公网
 
@@ -84,42 +81,34 @@ server-port=25565
 
 ### `Unknown host / 未知的主机 / Can't resolve hostname / 无法解析主机名`
 
-1.检查你有没有打错域名
-
-2.如果你刚刚更改 DNS 解析：
-
-- 等一会儿再试
-- 在 Windows 下，CMD 执行`ipconfig /flushdns`
-- 在 Linux 下，终端执行 `sudo systemd-resolve --flush-caches`
-
-    3.你的域名可能被 DNS 污染，你可以检查实际解析出来的 IP 和设置的是否一致，不一致就是被污染了，临时解决方案是更改 DNS
-    服务器，长远来看最好打开 DNSSEC
+1. 检查你有没有打错域名
+2. 如果你刚刚更改 DNS 解析：
+    - 等一会儿再试
+    - 在 Windows 下，CMD 执行 `ipconfig /flushdns`
+    - 在 Linux 下，终端执行 `sudo systemd-resolve --flush-caches`
+3. 域名可能被 DNS 污染，检查解析出来的 IP 是否与配置一致；临时方案是更改 DNS 服务器，长期建议开启 DNSSEC
 
 ### `数据流终止`
 
-这个报错已经不多见，通常来说是运营商干的，比如早期网通和电信，海外流量过境有时会被 GFW 阻断也可能产生此错误
+这个报错已经不多见，通常来说是运营商导致的，比如早期网通和电信；海外流量过境有时会被 GFW 阻断也可能产生此错误
 
 ### `Connection timed out / 连接超时`
 
-1.检查你有没有打错域名
+1. 检查你有没有打错域名
+2. 检查网络状况（可以试试 ping 服务器，超时就是网的问题）
+3. 如果使用 frp，检查 frp 的配置文件是否正确
 
-2.检查网络状况 (可以试试 ping 服务器，超时就是网的问题)
-
-3.如果使用 frp ,检查 frp 的配置文件是否正确
-
-### `Invalid characters in username/ 用户名包含无效字符`
+### `Invalid characters in username / 用户名包含无效字符`
 
 用户使用了非 Minecraft 原版允许的用户名进入服务器，可以安装 CnUsername 来解决
 
-### `Flying is not enabled on this server/ 此服务器未启用飞行`
+### `Flying is not enabled on this server / 此服务器未启用飞行`
 
 打开 server.properties 文件，把 `allow-flight` 设置为 `true` 然后重启服务器
 
 ### `You are sending too many packets!/ 由于超出数据包速率限制而被踢出游戏`
 
-一般是开连点器导致的，你可以将在`paper-global.yml`中`packet-limiter`中的`max-packet-rate`调大
-
-如果使用了 ViaVersion ,也需要调大配置文件中的`max-pps`和`tracking-warning-pps`值
+一般是开连点器导致的，你可以将在 `paper-global.yml` 中 `packet-limiter` 的 `max-packet-rate` 调大；如果使用了 ViaVersion，也需要调大配置文件中的 `max-pps` 和 `tracking-warning-pps` 值
 
 ### `忽略状态请求`
 
@@ -131,13 +120,12 @@ server-port=25565
 
 ### `无效会话`
 
-没有使用正版登录进入正版服务器，也可以通过将 `online-mode` 改为` false` 解决
+没有使用正版登录进入正版服务器，也可以通过将 `online-mode` 改为 `false` 解决
 
 ### `身份验证服务器目前处于宕机状态。请稍后再试，抱歉`
 
 确认 Mojang 或微软账户服务器状态（可通过 [Mojang Status](https://status.mojang.com/) 查询）
-
-如果不是 Mojang 的验证服务器维护了，也可能是你的网络太差，连接不到验证服务器，可以安装 [AlwaysOnline](https://modrinth.com/plugin/alwaysonlineplugin) 插件来解决
+如果不是 Mojang 的验证服务器维护，也可能是你的网络太差，连接不到验证服务器，可以安装 [AlwaysOnline](https://modrinth.com/plugin/alwaysonlineplugin) 插件来解决
 
 ### `Outdated server! / 服务器版本过时`
 
@@ -157,8 +145,8 @@ server-port=25565
 
 1. 服务器或客户端网络不稳
 2. 服务器插件冲突（如反作弊插件误判，尝试移除插件排查）
-3. 被服务器防火墙强行关闭了
-4. 连接到海外服务器时被 GFW 阻断了
+3. 被服务器防火墙强行关闭
+4. 连接到海外服务器时被 GFW 阻断
 
 ### `Server is full! / 服务器已满`
 
@@ -166,8 +154,8 @@ server-port=25565
 
 ### `java.net.SocketException: Connection reset`
 
-1. 被本地/服务器防火墙强行关闭了
-2. 连接到海外服务器时被 GFW 阻断了
+1. 被本地/服务器防火墙强行关闭
+2. 连接到海外服务器时被 GFW 阻断
 
 ### `You are already connected to this server!`
 

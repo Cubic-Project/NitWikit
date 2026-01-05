@@ -1,9 +1,6 @@
 ---
 title: 经济插件
-sidebar_position: 3
 ---
-
-# 经济插件
 
 这里指以 [Vault](./vault/vault.md) 为前置的为服务器提供经济的 **一类插件**
 

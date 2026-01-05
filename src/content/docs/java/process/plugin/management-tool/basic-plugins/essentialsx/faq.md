@@ -1,9 +1,6 @@
 ---
 title: 常见问题
-sidebar_position: 7
 ---
-
-# 常见问题
 
 ## 你没有权限与 xxx 交互。 \
 

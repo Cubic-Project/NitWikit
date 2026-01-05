@@ -1,9 +1,6 @@
 ---
 title: 自定义物品模型映射
-sidebar_position: 5
 ---
-
-# 自定义物品模型映射
 
 Geyser 提供了自定义物品映射功能，可以为 CustomModelData 物品注册基岩版行为，以实现自定义物品
 

@@ -1,6 +1,7 @@
 ---
 title: 申请公网 IP
-sidebar_position: 5
+sidebar:
+    order: 5
 ---
 
 :::tip

@@ -1,10 +1,6 @@
 ---
 title: 准备工作
-sidebar_position: 1
-sidebar_label: BDS 准备工作
 ---
-
-# 准备工作
 
 在正式开 Minecraft 服务器之前，请一定确认已经准备好了以下必备软件或网页：
 

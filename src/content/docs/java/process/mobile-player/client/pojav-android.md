@@ -1,9 +1,6 @@
 ---
 title: 在 Android 上安装 PojavLauncher
-sidebar_position: 1
 ---
-
-# 在 Android 上安装 PojavLauncher
 
 :::warning
 

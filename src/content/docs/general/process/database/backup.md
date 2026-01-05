@@ -1,12 +1,10 @@
 ---
 title: 备份
-slug: /database/backup
-sidebar_position: 4
+sidebar:
+    order: 5
 ---
 
-## 手动备份
-
-### 使用命令行备份
+## 使用命令行备份
 
 使用命令行备份数据库的步骤如下：
 
@@ -46,7 +44,7 @@ mysql -u [用户名] -p [数据库名] < [备份文件名].sql
 mysql -u root -p mydb < mydb_backup.sql
 ```
 
-### 使用 Navicat 备份
+## 使用 Navicat 备份
 
 展开你想要备份的数据库，点击备份，再点击新建备份
 
@@ -104,25 +102,25 @@ mysql -u root -p mydb < mydb_backup.sql
 
 ![](_assets/45.png)
 
-### 使用 HeidiSQL 备份
+## 使用 HeidiSQL 备份
 
 TODO
 
-### 使用小皮工具箱备份
+## 使用小皮工具箱备份
 
 TODO
 
-### 使用宝塔面板备份
+## 使用宝塔面板备份
 
 TODO
 
-### 使用 1Panel 面板备份
+## 使用 1Panel 面板备份
 
 ![](_assets/51.png)
 
 ![](_assets/52.png)
 
-#### 进阶教程：新增备份账号
+### 进阶教程：新增备份账号
 
 > 什么是备份账号？简单来讲，备份账号是 1Panel 面板中不同的存储位置，即 **将备份存储在哪里**
 
@@ -130,7 +128,7 @@ TODO
 
 ## 自动备份
 
-### 使用 Navicat 自动备份
+## 使用 Navicat 自动备份
 
 ![](_assets/31.png)
 
@@ -152,6 +150,6 @@ TODO
 
 最后保存计划任务就大功告成啦
 
-### 使用 1Panel 面板自动备份
+## 使用 1Panel 面板自动备份
 
 ![](_assets/53.png)

@@ -1,9 +1,6 @@
 ---
 title: 什么是权限
-sidebar_position: 2
 ---
-
-# 什么是权限
 
 举个栗子，你想要执行 Essentials 插件的 tpa 命令，那么你需要 `essentials.tpa` 这个权限。
 

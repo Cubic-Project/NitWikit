@@ -1,9 +1,6 @@
 ---
 title: Ratziel
-sidebar_position: 5
 ---
-
-# Ratziel
 
 :::info
 

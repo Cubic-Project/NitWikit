@@ -1,8 +1,6 @@
 ---
-sidebar_position: 5
+title: Invero
 ---
-
-# Invero
 
 ## ![介绍](https://www.minebbs.com/attachments/1741419658873-webp.92935)
 

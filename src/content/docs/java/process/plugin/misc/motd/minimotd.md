@@ -1,9 +1,6 @@
 ---
 title: MiniMOTD
-sidebar_position: 2
 ---
-
-# MiniMOTD
 
 :::info
 

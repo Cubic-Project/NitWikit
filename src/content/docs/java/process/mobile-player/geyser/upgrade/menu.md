@@ -1,9 +1,6 @@
 ---
 title: 菜单插件
-sidebar_position: 4
 ---
-
-# 菜单插件
 
 目前主流的菜单插件主要是 MagicMenu 和 CrossplatForms，推荐使用 MagicMenu，相较于 CrossplatForms 更轻量，支持所有服务端核心，并且有跟更多功能
 

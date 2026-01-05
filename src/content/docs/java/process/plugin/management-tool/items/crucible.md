@@ -1,9 +1,6 @@
 ---
 title: Crucible
-sidebar_position: 4
 ---
-
-# Crucible
 
 :::info
 

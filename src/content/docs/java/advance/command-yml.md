@@ -1,9 +1,6 @@
 ---
 title: Commands.yml
-sidebar_position: 4
 ---
-
-# Commands.yml 介绍
 
 commands.yml 是一个配置文件，用于为 CraftBukkit 服务器定义自定义命令和命令方块覆盖。
 

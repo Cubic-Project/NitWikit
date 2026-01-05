@@ -1,9 +1,6 @@
 ---
-sidebar_position: 3
-sidebar_label: 保护 - NoBuildPlus
+title: 保护 - NoBuildPlus
 ---
-
-# NoBuildPlus
 
 ## ![概览](_assets/NoBuildPlus/banner_nobuildplus_zh_CN.png)
 

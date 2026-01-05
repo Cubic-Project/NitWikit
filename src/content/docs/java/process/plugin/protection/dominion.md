@@ -1,9 +1,6 @@
 ---
-sidebar_position: 2
-sidebar_label: 领地 - Dominion
+title: 领地 - Dominion
 ---
-
-# Dominion
 
 :::info
 

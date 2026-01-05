@@ -1,9 +1,6 @@
 ---
 title: config.yml
-sidebar_position: 2
 ---
-
-# config.yml
 
 ```yaml
 # Forge mod 支持，如果你的服务器中有 mod 服务器，请打开这个选项

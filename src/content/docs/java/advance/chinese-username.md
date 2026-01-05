@@ -1,9 +1,6 @@
 ---
 title: 中文游戏名
-sidebar_position: 7
 ---
-
-# 使用中文名进入服务器
 
 Minecraft 自 `1.18` 版本后，默认不再允许使用 _除英文字母、数字、下划线以外的_ 字符作为游戏名。
 而 [CnUsername](https://github.com/0XPYEX0/CnUsername) 被设计用于解决此痛点。

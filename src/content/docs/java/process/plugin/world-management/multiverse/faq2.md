@@ -1,9 +1,6 @@
 ---
-sidebar_position: 2
-sidebar_label: 常见问题 2
+title: 常见问题 2
 ---
-
-# 常见问题 2
 
 :::tip
 

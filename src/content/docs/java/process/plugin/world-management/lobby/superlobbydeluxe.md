@@ -1,9 +1,6 @@
 ---
 title: SuperLobbyDeluxe
-sidebar_position: 1
 ---
-
-# SuperLobbyDeluxe
 
 :::info
 

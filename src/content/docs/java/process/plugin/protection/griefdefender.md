@@ -1,9 +1,6 @@
 ---
-sidebar_position: 3
-sidebar_label: 领地 - GriefDefender
+title: 领地 - GriefDefender
 ---
-
-# GriefDefender
 
 :::info
 

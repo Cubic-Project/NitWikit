@@ -1,9 +1,6 @@
 ---
 title: 常见问题
-sidebar_position: 2
 ---
-
-# 常见问题
 
 ## 什么是变量？
 

@@ -1,11 +1,11 @@
 ---
 title: config.yml
-sidebar_position: 3
 ---
 
 <!--markdownlint-disable line-length-->
 
-```yaml title="plugins\Essentials\config.yml"
+```yaml
+// plugins\Essentials\config.yml
 ############################################################
 # +------------------------------------------------------+ #
 # |                       注意事项                        | #

@@ -1,9 +1,8 @@
 ---
 title: 内网穿透
-sidebar_position: 5
+sidebar:
+    order: 6
 ---
-
-# 内网穿透
 
 **适用于？**
 

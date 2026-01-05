@@ -1,9 +1,6 @@
 ---
 title: QuestCreator
-sidebar_position: 7
 ---
-
-# QuestCreator
 
 :::info
 

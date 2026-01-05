@@ -1,9 +1,6 @@
 ---
 title: ServerUtils
-sidebar_position: 3
 ---
-
-# ServerUtils
 
 :::info
 

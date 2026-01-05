@@ -1,9 +1,6 @@
 ---
 title: LimboAuth
-sidebar_position: 4
 ---
-
-# LimboAuth
 
 :::info
 

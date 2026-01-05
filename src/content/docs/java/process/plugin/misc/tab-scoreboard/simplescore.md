@@ -1,9 +1,6 @@
 ---
 title: SimpleScore
-sidebar_position: 4
 ---
-
-# SimpleScore
 
 ![](_assets/SimpleScore/SimpleScore.png)
 

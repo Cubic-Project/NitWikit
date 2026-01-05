@@ -11,14 +11,19 @@
     },
     "dependencies": {
         "@astrojs/starlight": "^0.37.1",
-        "@giscus/react": "^3.1.0",
         "@tailwindcss/vite": "^4.1.18",
-        "astro": "^5.6.1",
-        "sass": "^1.96.0",
-        "sharp": "^0.34.2"
+        "astro": "^5.16.6",
+        "astro-mermaid": "^1.2.0",
+        "mermaid": "^11.12.2",
+        "sharp": "^0.34.2",
+        "starlight-giscus": "^0.8.1",
+        "starlight-image-zoom": "^0.13.2",
+        "starlight-sidebar-topics": "^0.6.2",
+        "starlight-sidebar-topics-dropdown": "^0.5.2"
     },
     "devDependencies": {
         "@vite-pwa/astro": "^1.2.0",
+        "starlight-links-validator": "^0.19.2",
         "tailwindcss": "^4.1.18",
         "typescript": "^5.9.3"
     },

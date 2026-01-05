@@ -1,9 +1,6 @@
 ---
 title: DeluxeHubReloaded
-sidebar_position: 3
 ---
-
-# DeluxeHubReloaded
 
 :::info
 

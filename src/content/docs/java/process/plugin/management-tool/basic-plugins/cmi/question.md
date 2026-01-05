@@ -1,9 +1,6 @@
 ---
 title: 解决问题
-sidebar_position: 4
 ---
-
-# 解决问题
 
 遵循下图解决你的 CMI 相关问题：
 

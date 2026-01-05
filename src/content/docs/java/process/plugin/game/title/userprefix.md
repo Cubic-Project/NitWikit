@@ -1,11 +1,8 @@
 ---
 title: UserPrefix
-sidebar_position: 2
 ---
 
 <!--markdownlint-disable line-length-->
-
-# UserPrefix
 
 ![](./_assets/UserPrefix/1.png)
 
@@ -47,9 +44,12 @@ sidebar_position: 2
 -   简单的聊天变量修改功能！(不推荐使用) `[自 v2.1.0 版本起]`
 -   自动排序，且可翻页的 GUI！
 -   支持 PlaceholderAPI 变量！(凡支持的都可以使用，如 BungeeTabListPlus)
+
 -   支持 [Hex 颜色](https://www.hexcolortool.com/)！(1.16 以上版本) `[自 v1.2.3 版本起]`
+
     -   格式： `&(#颜色代码)`
     -   示例：LightSlateBlue `&(#8470FF)` 、 DarkSlateBlue `&(#483D8B)`
+
 -   支持渐变色！(1.16 以上版本) `[自 v1.2.3 版本起]`
     -   格式： `&<#颜色代码1>消息内容&<#颜色代码2>`
     -   示例： `&<#8470FF>Hello World!&<#483D8B>`

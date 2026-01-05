@@ -1,9 +1,6 @@
 ---
 title: 自动更新
-sidebar_position: 2
 ---
-
-# 自动更新
 
 <!--markdownlint-disable ol-prefix-->
 

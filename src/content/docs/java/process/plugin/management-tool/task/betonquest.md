@@ -1,9 +1,6 @@
 ---
 title: BetonQuest
-sidebar_position: 4
 ---
-
-# BetonQuest
 
 :::info
 

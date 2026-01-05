@@ -1,9 +1,6 @@
 ---
 title: MMOItems
-sidebar_position: 1
 ---
-
-# MMOItems
 
 ![](_assets/mmoitems.png)
 

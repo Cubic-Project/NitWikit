@@ -1,7 +1,5 @@
 ---
-title: QuickShop
-sidebar_position: 10
-sidebar_label: 商店 - QuickShop
+title: 商店 - QuickShop
 ---
 
 <!--markdownlint-disable line-length-->

@@ -1,9 +1,6 @@
 ---
 title: ViaBackwards
-sidebar_position: 3
 ---
-
-# ViaBackwards
 
 :::info
 

@@ -1,11 +1,8 @@
 ---
 title: 数据存储
-sidebar_position: 6
 ---
 
 <!--markdownlint-disable no-duplicate-heading-->
-
-# 数据存储
 
 这里简单介绍下 LuckPerms 一些可以用在储存数据方面的功能，以及一些简单的案例
 

@@ -1,9 +1,6 @@
 ---
 title: VaultUnlocked
-sidebar_position: 1
 ---
-
-# VaultUnlocked
 
 Vault 的分支版本，提供更多功能
 

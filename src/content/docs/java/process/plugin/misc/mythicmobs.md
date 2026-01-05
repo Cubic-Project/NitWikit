@@ -1,10 +1,6 @@
 ---
-title: MythicMobs
-sidebar_position: 9
-sidebar_label: 实体 - MythicMobs
+title: 实体 - MythicMobs
 ---
-
-# MythicMobs
 
 :::info
 

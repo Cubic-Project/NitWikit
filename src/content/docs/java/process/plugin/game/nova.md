@@ -1,9 +1,6 @@
 ---
 title: Nova
-sidebar_position: 2
 ---
-
-# Nova
 
 :::info
 

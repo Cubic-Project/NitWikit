@@ -1,9 +1,6 @@
 ---
 title: Zaphkiel
-sidebar_position: 7
 ---
-
-# Zaphkiel
 
 :::info
 
@@ -13,7 +10,7 @@ sidebar_position: 7
 
 坏黑的物品库插件
 
-# Zaphkiel-Plus
+## Zaphkiel-Plus
 
 二次开发的 Zaphkiel
 

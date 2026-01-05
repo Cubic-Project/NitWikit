@@ -1,9 +1,6 @@
 ---
 title: warp 地标
-sidebar_position: 6
 ---
-
-# warp 地标
 
 跨世界定点传送
 

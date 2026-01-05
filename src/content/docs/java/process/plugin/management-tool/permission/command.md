@@ -1,9 +1,6 @@
 ---
 title: 命令篇
-sidebar_position: 4
 ---
-
-# 命令篇
 
 ## 权限组
 

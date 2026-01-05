@@ -1,33 +1,671 @@
 import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import AstroPWA from "@vite-pwa/astro";
+import mermaid from "astro-mermaid";
 import { defineConfig } from "astro/config";
+import starlightGiscus from "starlight-giscus";
+import starlightImageZoom from "starlight-image-zoom";
+import starlightLinksValidator from "starlight-links-validator";
+import starlightSidebarTopics from "starlight-sidebar-topics";
 
 export default defineConfig({
     integrations: [
         starlight({
-            title: "My Docs",
-            social: [{ icon: "github", label: "GitHub", href: "https://github.com/withastro/starlight" }],
-            sidebar: [
-                {
-                    label: "Guides",
-                    items: [
-                        // Each item here is one entry in the navigation menu.
-                        { label: "Example Guide", slug: "guides/example" }
-                    ]
-                },
-                {
-                    label: "Reference",
-                    autogenerate: { directory: "reference" }
+            title: "Cubic Wiki",
+            description: "一群笨蛋编写的 Minecraft 开服教程",
+            locales: {
+                root: {
+                    label: "简体中文",
+                    lang: "zh-CN"
                 }
-            ]
+            },
+            favicon: "/favicon.ico",
+            social: [{ icon: "github", label: "GitHub", href: "https://github.com/withastro/starlight" }],
+            logo: { src: "./src/assets/logo.svg" },
+            editLink: {
+                baseUrl: "https://github.com/Cubic-Project/NitWikit/edit/main/"
+            },
+            plugins: [
+                starlightGiscus({
+                    repo: "Cubic-Project/NitWikit",
+                    repoId: "R_kgDOQWQ-Ng",
+                    category: "General",
+                    categoryId: "DIC_kwDOQWQ-Ns4Cx2No",
+                    mapping: "og:title"
+                }),
+                starlightSidebarTopics([
+                    {
+                        label: "基础",
+                        link: "/general/intro",
+                        icon: "open-book",
+                        items: [
+                            {
+                                label: "从零开始",
+                                collapsed: false,
+                                items: [{ label: "快速开始", slug: "general/intro" }, "general/reading-guide"]
+                            }
+                        ]
+                    },
+                    {
+                        label: "Java",
+                        link: "/java/intro",
+                        icon: "open-book",
+                        items: [
+                            {
+                                label: "快速开始",
+                                collapsed: false,
+                                items: ["java/intro"]
+                            },
+                            {
+                                label: "准备工作",
+                                items: [
+                                    "java/preparation/intro",
+                                    {
+                                        label: "安装 Java",
+                                        collapsed: true,
+                                        items: [
+                                            "general/java/intro",
+                                            "general/java/choose-and-download-and-install-java",
+                                            "general/java/environment",
+                                            "general/java/sdkman",
+                                            "general/java/faq"
+                                        ]
+                                    },
+                                    {
+                                        label: "文本编辑器",
+                                        collapsed: true,
+                                        autogenerate: { directory: "general/preparation/text-editor" }
+                                    }
+                                ]
+                            },
+                            {
+                                label: "开始阶段",
+                                items: [
+                                    "java/start/intro",
+                                    {
+                                        label: "选择服务器端",
+                                        collapsed: true,
+                                        items: [
+                                            "java/start/server-core-choose/intro",
+                                            "java/start/server-core-choose/plugin",
+                                            "java/start/server-core-choose/mod",
+                                            "java/start/server-core-choose/hybrid",
+                                            {
+                                                label: "Folia",
+                                                collapsed: true,
+                                                autogenerate: { directory: "java/start/server-core-choose/folia" }
+                                            }
+                                        ]
+                                    },
+                                    "java/start/install-mod-server",
+                                    "java/start/launch-server",
+                                    "java/start/server-dir-structure",
+                                    "java/start/config-server",
+                                    "java/start/connect-to-server",
+                                    {
+                                        label: "部署到生产环境",
+                                        collapsed: true,
+                                        autogenerate: { directory: "general/process/deploy" }
+                                    }
+                                ]
+                            },
+                            {
+                                label: "建设与运营",
+                                items: [
+                                    "java/process/intro",
+                                    {
+                                        label: "插件",
+                                        collapsed: true,
+                                        items: [
+                                            "java/process/plugin/intro",
+                                            {
+                                                label: "前言与基础",
+                                                collapsed: true,
+                                                items: [
+                                                    "java/process/plugin/more/intro",
+                                                    "java/process/plugin/more/plugin-download",
+                                                    {
+                                                        label: "YAML",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/more/yaml/intro",
+                                                            "java/process/plugin/more/yaml/general",
+                                                            "java/process/plugin/more/yaml/extention"
+                                                        ]
+                                                    },
+                                                    "java/process/plugin/more/color-message",
+                                                    "java/process/plugin/more/plugin-abbreviation",
+                                                    "java/process/plugin/more/plugin-backdoor",
+                                                    {
+                                                        label: "插件构建",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/more/plugin-build/intro",
+                                                            "java/process/plugin/more/plugin-build/idea-build",
+                                                            "java/process/plugin/more/plugin-build/terminal-build",
+                                                            "java/process/plugin/more/plugin-build/github-actions-build",
+                                                            "java/process/plugin/more/plugin-build/mirror-config"
+                                                        ]
+                                                    },
+                                                    "java/process/plugin/more/plugin-config",
+                                                    "java/process/plugin/more/faq",
+                                                    "java/process/plugin/more/plugin-signature-file",
+                                                    "java/process/plugin/more/tittle-tattle"
+                                                ]
+                                            },
+                                            {
+                                                label: "前置",
+                                                collapsed: true,
+                                                items: [
+                                                    "java/process/plugin/plugin-dependencies/intro",
+                                                    {
+                                                        label: "PlaceholderAPI",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/plugin-dependencies/placeholderapi/placeholderapi",
+                                                            "java/process/plugin/plugin-dependencies/placeholderapi/common-usage",
+                                                            "java/process/plugin/plugin-dependencies/placeholderapi/parse-other",
+                                                            "java/process/plugin/plugin-dependencies/placeholderapi/math",
+                                                            "java/process/plugin/plugin-dependencies/placeholderapi/string",
+                                                            "java/process/plugin/plugin-dependencies/placeholderapi/progress",
+                                                            "java/process/plugin/plugin-dependencies/placeholderapi/javascript",
+                                                            "java/process/plugin/plugin-dependencies/placeholderapi/check-item",
+                                                            "java/process/plugin/plugin-dependencies/placeholderapi/change-output",
+                                                            "java/process/plugin/plugin-dependencies/placeholderapi/faq"
+                                                        ]
+                                                    },
+                                                    "java/process/plugin/plugin-dependencies/playerpoints",
+                                                    "java/process/plugin/plugin-dependencies/protocollib",
+                                                    {
+                                                        label: "Vault",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/plugin-dependencies/vault/intro",
+                                                            "java/process/plugin/plugin-dependencies/vault/serviceio",
+                                                            "java/process/plugin/plugin-dependencies/vault/vaultunlocked"
+                                                        ]
+                                                    },
+                                                    "java/process/plugin/plugin-dependencies/xconomy"
+                                                ]
+                                            },
+                                            {
+                                                label: "管理",
+                                                collapsed: true,
+                                                items: [
+                                                    {
+                                                        label: "防破坏",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/management-tool/anti-grief/intro",
+                                                            "java/process/plugin/management-tool/anti-grief/coreprotect",
+                                                            "java/process/plugin/management-tool/anti-grief/invseeplusplus",
+                                                            "java/process/plugin/management-tool/anti-grief/prismrefracted"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "基础插件",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/management-tool/basic-plugins/intro",
+                                                            "java/process/plugin/management-tool/basic-plugins/delete",
+                                                            {
+                                                                label: "CMI",
+                                                                collapsed: true,
+                                                                items: [
+                                                                    "java/process/plugin/management-tool/basic-plugins/cmi/intro",
+                                                                    "java/process/plugin/management-tool/basic-plugins/cmi/eco",
+                                                                    "java/process/plugin/management-tool/basic-plugins/cmi/question"
+                                                                ]
+                                                            },
+                                                            {
+                                                                label: "EssentialsX",
+                                                                collapsed: true,
+                                                                items: [
+                                                                    "java/process/plugin/management-tool/basic-plugins/essentialsx/intro",
+                                                                    "java/process/plugin/management-tool/basic-plugins/essentialsx/config-yml",
+                                                                    "java/process/plugin/management-tool/basic-plugins/essentialsx/config-tips",
+                                                                    "java/process/plugin/management-tool/basic-plugins/essentialsx/warp",
+                                                                    "java/process/plugin/management-tool/basic-plugins/essentialsx/kit",
+                                                                    "java/process/plugin/management-tool/basic-plugins/essentialsx/papi-support",
+                                                                    "java/process/plugin/management-tool/basic-plugins/essentialsx/faq"
+                                                                ]
+                                                            },
+                                                            "java/process/plugin/management-tool/basic-plugins/sunlight"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "聊天",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/management-tool/chat/intro",
+                                                            "java/process/plugin/management-tool/chat/carbon",
+                                                            "java/process/plugin/management-tool/chat/huskchat",
+                                                            "java/process/plugin/management-tool/chat/trchat"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "物品库",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/management-tool/items/intro",
+                                                            "java/process/plugin/management-tool/items/crucible",
+                                                            "java/process/plugin/management-tool/items/ecoitems",
+                                                            "java/process/plugin/management-tool/items/mmoitems",
+                                                            "java/process/plugin/management-tool/items/neigeitems",
+                                                            "java/process/plugin/management-tool/items/ratziel",
+                                                            "java/process/plugin/management-tool/items/sx-item",
+                                                            "java/process/plugin/management-tool/items/zaphkiel",
+                                                            "java/process/plugin/management-tool/items/misc"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "权限",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/management-tool/permission/intro",
+                                                            "java/process/plugin/management-tool/permission/what-is-permission",
+                                                            "java/process/plugin/management-tool/permission/group",
+                                                            "java/process/plugin/management-tool/permission/command",
+                                                            "java/process/plugin/management-tool/permission/tips",
+                                                            "java/process/plugin/management-tool/permission/meta"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "插件管理",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/management-tool/plugin-management/intro",
+                                                            "java/process/plugin/management-tool/plugin-management/plugin-portal",
+                                                            "java/process/plugin/management-tool/plugin-management/plugmanx",
+                                                            "java/process/plugin/management-tool/plugin-management/serverutils",
+                                                            "java/process/plugin/management-tool/plugin-management/yum"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "任务",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/management-tool/task/intro",
+                                                            "java/process/plugin/management-tool/task/beautyquests",
+                                                            "java/process/plugin/management-tool/task/betonquest",
+                                                            "java/process/plugin/management-tool/task/chemdah",
+                                                            "java/process/plugin/management-tool/task/mangoquest",
+                                                            "java/process/plugin/management-tool/task/playertask",
+                                                            "java/process/plugin/management-tool/task/questcreator",
+                                                            "java/process/plugin/management-tool/task/questengine",
+                                                            "java/process/plugin/management-tool/task/quests",
+                                                            "java/process/plugin/management-tool/task/typewriter"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                label: "保护",
+                                                collapsed: true,
+                                                items: [
+                                                    "java/process/plugin/protection/intro",
+                                                    "java/process/plugin/protection/residence",
+                                                    "java/process/plugin/protection/dominion",
+                                                    "java/process/plugin/protection/griefdefender",
+                                                    "java/process/plugin/protection/plotsquared",
+                                                    "java/process/plugin/protection/askyblock",
+                                                    "java/process/plugin/protection/bentobox",
+                                                    "java/process/plugin/protection/towny"
+                                                ]
+                                            },
+                                            {
+                                                label: "世界管理",
+                                                collapsed: true,
+                                                items: [
+                                                    "java/process/plugin/world-management/worldedit",
+                                                    "java/process/plugin/world-management/worldguard",
+                                                    "java/process/plugin/world-management/fastasyncworldedit",
+                                                    "java/process/plugin/world-management/law",
+                                                    "java/process/plugin/world-management/myworld",
+                                                    "java/process/plugin/world-management/nobuildplus",
+                                                    {
+                                                        label: "大厅",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/world-management/lobby/intro",
+                                                            "java/process/plugin/world-management/lobby/deluxehub",
+                                                            "java/process/plugin/world-management/lobby/deluxehubreloaded",
+                                                            "java/process/plugin/world-management/lobby/superlobbydeluxe"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "多世界 - Multiverse",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/world-management/multiverse/intro",
+                                                            "java/process/plugin/world-management/multiverse/faq1",
+                                                            "java/process/plugin/world-management/multiverse/faq2"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "世界生成",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/world-management/worldgen/intro",
+                                                            "java/process/plugin/world-management/worldgen/terra",
+                                                            "java/process/plugin/world-management/worldgen/irisworldgen",
+                                                            "java/process/plugin/world-management/worldgen/terraformgenerator"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                label: "游戏性",
+                                                collapsed: true,
+                                                items: [
+                                                    "java/process/plugin/game/dragoncore",
+                                                    "java/process/plugin/game/germengine",
+                                                    "java/process/plugin/game/nova",
+                                                    {
+                                                        label: "Slimefun",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/game/slimefun/intro",
+                                                            "java/process/plugin/game/slimefun/auto-update",
+                                                            "java/process/plugin/game/slimefun/find-lag",
+                                                            "java/process/plugin/game/slimefun/resourcepack-for-slimefun"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "称号",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/game/title/deluxetags",
+                                                            "java/process/plugin/game/title/miniplayertitle",
+                                                            "java/process/plugin/game/title/mythicprefixes",
+                                                            "java/process/plugin/game/title/playertitle",
+                                                            "java/process/plugin/game/title/userprefix"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                label: "其他",
+                                                collapsed: true,
+                                                items: [
+                                                    "java/process/plugin/misc/intro",
+                                                    {
+                                                        label: "全息图",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/misc/holograms/intro",
+                                                            "java/process/plugin/misc/holograms/decentholograms",
+                                                            "java/process/plugin/misc/holograms/holographicdisplays"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "登录",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/misc/login/intro",
+                                                            "java/process/plugin/misc/login/authme",
+                                                            "java/process/plugin/misc/login/catseedlogin",
+                                                            "java/process/plugin/misc/login/librelogin",
+                                                            "java/process/plugin/misc/login/limboauth"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "菜单",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/misc/menu/intro",
+                                                            "java/process/plugin/misc/menu/chestcommands",
+                                                            "java/process/plugin/misc/menu/deluxemenus",
+                                                            "java/process/plugin/misc/menu/invero",
+                                                            "java/process/plugin/misc/menu/trmenu"
+                                                        ]
+                                                    },
+                                                    "java/process/plugin/misc/money",
+                                                    {
+                                                        label: "MOTD",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/misc/motd/intro",
+                                                            "java/process/plugin/misc/motd/minimotd"
+                                                        ]
+                                                    },
+                                                    "java/process/plugin/misc/mythicmobs",
+                                                    {
+                                                        label: "NPC",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/misc/npc/intro",
+                                                            "java/process/plugin/misc/npc/adyeshach",
+                                                            "java/process/plugin/misc/npc/citizens",
+                                                            "java/process/plugin/misc/npc/znpcsplus"
+                                                        ]
+                                                    },
+                                                    "java/process/plugin/misc/quickshop",
+                                                    "java/process/plugin/misc/skinsrestorer",
+                                                    {
+                                                        label: "Tab/记分板",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/misc/tab-scoreboard/intro",
+                                                            "java/process/plugin/misc/tab-scoreboard/simplescore",
+                                                            "java/process/plugin/misc/tab-scoreboard/tab",
+                                                            "java/process/plugin/misc/tab-scoreboard/titlemanager"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "版本兼容",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/plugin/misc/via/intro",
+                                                            "java/process/plugin/misc/via/viaversion",
+                                                            "java/process/plugin/misc/via/viabackwards",
+                                                            "java/process/plugin/misc/via/viarewind",
+                                                            "java/process/plugin/misc/via/more-for-via"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        label: "跨服端",
+                                        collapsed: true,
+                                        items: [
+                                            "java/process/cross-server/intro",
+                                            "java/process/cross-server/server-core-choose",
+                                            {
+                                                label: "搭建",
+                                                collapsed: true,
+                                                items: [
+                                                    {
+                                                        label: "BungeeCord",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/cross-server/setup/bungeecord/intro",
+                                                            "java/process/cross-server/setup/bungeecord/setup",
+                                                            "java/process/cross-server/setup/bungeecord/config-yml",
+                                                            "java/process/cross-server/setup/bungeecord/lobby"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "Velocity",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/cross-server/setup/velocity/intro",
+                                                            "java/process/cross-server/setup/velocity/setup",
+                                                            "java/process/cross-server/setup/velocity/velocity-toml",
+                                                            "java/process/cross-server/setup/velocity/lobby"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "Velocity CTD",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/cross-server/setup/velocity-ctd/intro",
+                                                            "java/process/cross-server/setup/velocity-ctd/setup",
+                                                            "java/process/cross-server/setup/velocity-ctd/velocity-toml",
+                                                            "java/process/cross-server/setup/velocity-ctd/features",
+                                                            "java/process/cross-server/setup/velocity-ctd/lobby"
+                                                        ]
+                                                    },
+                                                    {
+                                                        label: "Transfer",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/cross-server/setup/transfer/intro",
+                                                            "java/process/cross-server/setup/transfer/setup"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "java/process/cross-server/join-server",
+                                            "java/process/cross-server/command",
+                                            {
+                                                label: "跨服插件",
+                                                collapsed: true,
+                                                items: [
+                                                    "java/process/cross-server/plugin/intro",
+                                                    "java/process/cross-server/plugin/backend-only",
+                                                    "java/process/cross-server/plugin/proxy-only",
+                                                    "java/process/cross-server/plugin/proxy-backend-optional",
+                                                    "java/process/cross-server/plugin/proxy-backend-mandatory"
+                                                ]
+                                            },
+                                            "java/process/cross-server/hide-the-real-ip",
+                                            "java/process/cross-server/precautions"
+                                        ]
+                                    },
+                                    {
+                                        label: "手机玩家支持",
+                                        collapsed: true,
+                                        items: [
+                                            "java/process/mobile-player/intro",
+                                            {
+                                                label: "Geyser",
+                                                collapsed: true,
+                                                items: [
+                                                    "java/process/mobile-player/geyser/intro",
+                                                    "java/process/mobile-player/geyser/install",
+                                                    "java/process/mobile-player/geyser/faq",
+                                                    {
+                                                        label: "进阶",
+                                                        collapsed: true,
+                                                        items: [
+                                                            "java/process/mobile-player/geyser/upgrade/link",
+                                                            "java/process/mobile-player/geyser/upgrade/menu",
+                                                            "java/process/mobile-player/geyser/upgrade/slimefun",
+                                                            "java/process/mobile-player/geyser/upgrade/geyser-skull",
+                                                            "java/process/mobile-player/geyser/upgrade/custom-item-model-map",
+                                                            "java/process/mobile-player/geyser/upgrade/geysermeg4-supports",
+                                                            {
+                                                                label: "扩展",
+                                                                collapsed: true,
+                                                                items: [
+                                                                    "java/process/mobile-player/geyser/upgrade/extended/intro",
+                                                                    "java/process/mobile-player/geyser/upgrade/extended/compatible",
+                                                                    "java/process/mobile-player/geyser/upgrade/extended/fix",
+                                                                    "java/process/mobile-player/geyser/upgrade/extended/more"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                label: "手机 Java 版",
+                                                collapsed: true,
+                                                items: [
+                                                    "java/process/mobile-player/client/intro",
+                                                    "java/process/mobile-player/client/android-all",
+                                                    "java/process/mobile-player/client/pojav-android",
+                                                    "java/process/mobile-player/client/pojav-ios",
+                                                    "java/process/mobile-player/client/pcl",
+                                                    "java/process/mobile-player/client/amethyst-ios"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        label: "生电",
+                                        collapsed: true,
+                                        items: [
+                                            "java/process/redstone/intro",
+                                            "java/process/redstone/plugin",
+                                            "java/process/redstone/mchprs",
+                                            "java/process/redstone/mod"
+                                        ]
+                                    },
+                                    { label: "地图建设", autogenerate: { directory: "general/process/map" } },
+                                    "general/process/create-art-assets",
+                                    "general/process/panel"
+                                ]
+                            },
+                            {
+                                label: "进阶阶段",
+                                collapsed: false,
+                                items: [
+                                    "java/advance/intro",
+                                    {
+                                        label: "Linux 开服",
+                                        collapsed: true,
+                                        autogenerate: {
+                                            directory: "general/advance/linux"
+                                        }
+                                    },
+                                    "general/advance/domain-and-dns",
+                                    "java/advance/command-yml",
+                                    "java/advance/login-choices",
+                                    "java/advance/chinese-username",
+                                    "java/advance/slime-world",
+                                    {
+                                        label: "机器人框架",
+                                        collapsed: true,
+                                        autogenerate: {
+                                            directory: "general/advance/bot"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                label: "附录",
+                                collapsed: false,
+                                items: ["general/more/ask-for-help"]
+                            }
+                        ]
+                    },
+                    {
+                        label: "Bedrock",
+                        link: "/bedrock/intro",
+                        icon: "open-book",
+                        items: [
+                            {
+                                label: "快速开始", items: ["bedrock/intro"]
+                            },
+                            {
+                                label: "BDS 核心",
+                                collapsed: true,
+                                items: [
+                                    "bedrock/bds/preparation/preparation",
+                                    "general/preparation/text-editor",
+                                    "bedrock/bds/preparation/preparation"
+                                ]
+                            }
+                        ]
+                    }
+                ]),
+                starlightLinksValidator(),
+                starlightImageZoom()
+            ],
+            components: {
+                Sidebar: "./src/components/Sidebar.astro"
+            }
         }),
         AstroPWA({
             registerType: "autoUpdate",
 
             manifest: {
-                name: "笨蛋文档",
-                short_name: "笨蛋文档",
+                name: "Cubic Wiki",
+                short_name: "Cubic Wiki",
                 theme_color: "#2196f3",
                 background_color: "#424242",
                 display: "standalone",
@@ -43,15 +681,11 @@ export default defineConfig({
                         sizes: "512x512",
                         type: "image/png"
                     }
-                ],
-
-                related_applications: [
-                    {
-                        platform: "webapp",
-                        url: "https://nitwikit.8aka.org/manifest.json"
-                    }
                 ]
             }
+        }),
+        mermaid({
+            autoTheme: true
         })
     ],
 

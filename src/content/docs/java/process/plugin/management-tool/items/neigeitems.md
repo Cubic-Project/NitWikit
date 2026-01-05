@@ -1,9 +1,6 @@
 ---
 title: NeigeItems
-sidebar_position: 6
 ---
-
-# NeigeItems
 
 :::info
 

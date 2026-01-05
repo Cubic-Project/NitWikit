@@ -1,9 +1,6 @@
 ---
 title: 小妙招
-sidebar_position: 5
 ---
-
-# 小妙招
 
 ## 网页版可视化编辑器
 

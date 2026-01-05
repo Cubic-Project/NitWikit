@@ -1,9 +1,6 @@
 ---
 title: Carbon
-sidebar_position: 3
 ---
-
-# Carbon
 
 :::info
 

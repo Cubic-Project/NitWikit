@@ -1,9 +1,6 @@
 ---
 title: 插件兼容
-sidebar_position: 3
 ---
-
-# 插件兼容
 
 让你服务器上的插件兼容 Geyser
 

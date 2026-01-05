@@ -1,11 +1,8 @@
 ---
 title: Iris
-sidebar_position: 2
 ---
 
 <!--markdownlint-disable line-length-->
-
-# Iris
 
 ![Iris](https://s1.ax1x.com/2022/07/07/jd5y0s.png)
 

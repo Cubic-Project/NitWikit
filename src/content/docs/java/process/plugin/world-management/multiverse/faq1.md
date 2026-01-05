@@ -1,9 +1,6 @@
 ---
-sidebar_position: 1
-sidebar_label: 常见问题 1
+title: 常见问题 1
 ---
-
-# 常见问题 1
 
 ## 中文世界名乱码
 
