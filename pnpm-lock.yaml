@@ -48,6 +48,9 @@ importers:
       starlight-links-validator:
         specifier: ^0.19.2
         version: 0.19.2(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3)))(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3))
+      starlight-scroll-to-top:
+        specifier: ^0.4.0
+        version: 0.4.0(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3)))
       tailwindcss:
         specifier: ^4.1.18
         version: 4.1.18
@@ -3829,6 +3832,12 @@ packages:
     peerDependencies:
       '@astrojs/starlight': '>=0.32.0'
       astro: '>=5.1.5'
+
+  starlight-scroll-to-top@0.4.0:
+    resolution: {integrity: sha512-lxsW5Sv+oKCI8CYZQ6Ue957cExiHMozK73LmmbsvpBKWryW+AKU4OXmX/1bTQNx+mVLZcpm2qTwKa1KX5VdEaQ==}
+    engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
+    peerDependencies:
+      '@astrojs/starlight': '>=0.35'
 
   starlight-sidebar-topics-dropdown@0.5.2:
     resolution: {integrity: sha512-QeqSO5jjk/ZHDfXnUqJF1GpY1ny9dc9LqETuw9V124B93EYtpvCYa+zccxHMHojQvAuG7TguQs212P4XvJX0Wg==}
@@ -9062,6 +9071,10 @@ snapshots:
       unist-util-visit: 5.0.0
     transitivePeerDependencies:
       - supports-color
+
+  starlight-scroll-to-top@0.4.0(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3))):
+    dependencies:
+      '@astrojs/starlight': 0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3))
 
   starlight-sidebar-topics-dropdown@0.5.2(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3)))(starlight-sidebar-topics@0.6.2(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3)))):
     dependencies:
