@@ -2,7 +2,7 @@
 title: 在 Android 上安装 PojavLauncher
 ---
 
-:::warning
+:::caution
 
 PojavLauncher 已于 2025 年 5 月 17 日宣布停更
 

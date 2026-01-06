@@ -22,7 +22,7 @@ TypeWriter 是一款适用于 Paper 服务端的插件，它能通过简洁而�
 
 ## 链接
 
-:::info
+:::note
 
 `GitHub` https://github.com/gabber235/TypeWriter
 

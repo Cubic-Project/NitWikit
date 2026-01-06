@@ -3,7 +3,7 @@ title: PM1E 争议问题
 sidebar_position: 1
 ---
 
-:::warning
+:::caution
 
 Nukkit PetteriM1 Edition 是一个独立开发的开源项目，由 PetteriM1 及其团队负责维护和更新
 

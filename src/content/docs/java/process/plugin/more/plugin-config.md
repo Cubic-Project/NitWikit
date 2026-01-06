@@ -6,9 +6,9 @@ title: 汉化插件
 
 插件的配置文件一般在 `/plugins/插件名字/` 文件夹中，常见的配置文件一般是 `config.yml` 。
 
-> 插件一般会使用 **YAML** 作为配置文件格式，建议先学习 [YAML](../../../advance/yaml/yaml.md) 语法。
+> 插件一般会使用 **YAML** 作为配置文件格式，建议先学习 [YAML](/java/process/plugin/more/yaml/intro) 语法。
 
-我们在开始前所做的准备工作中，推荐你安装任意一款推荐的文档编辑软件：请查看 [文本编辑器](/preparation/text-editor)
+我们在开始前所做的准备工作中，推荐你安装任意一款推荐的文档编辑软件：请查看 [文本编辑器](/general/preparation/text-editor/intro)
 
 如果你是 Windows，现在让我们双击 .yml 文件就可以开始修改配置文件了！
 
@@ -89,7 +89,7 @@ import TabItem from '@theme/TabItem';
 
 然后把语言项改成 zh_CN、Chinese 等，具体应该写什么这地方。插件配置的注释可能提到
 
-也可以找找 [插件文件夹](plugin-config.md?plugin-language=folder) 和 [拆开 jar 文件](plugin-config.md?plugin-language=jar)
+也可以找找 [插件文件夹](/java/process/plugin/more/plugin-config?plugin-language=folder) 和 [拆开 jar 文件](/java/process/plugin/more/plugin-config?plugin-language=jar)
 
 </TabItem>
 
@@ -105,7 +105,7 @@ import TabItem from '@theme/TabItem';
 
 <!--markdownlint-disable line-length-->
 
-```text
+```txt
 请将我给出的以 YAML 格式存储的 Minecraft 插件的配置文件汉化，且不改变本身的可执行性，其中被两个 % 包裹的为变量请不要翻译，请翻译时不要带翻译腔，而是要翻译得自然、流畅和地道，使用优美和高雅的表达方式并代入 Minecraft 游戏内进行翻译，翻译后请以 Markdown 代码块的格式发送
 ```
 
@@ -123,7 +123,7 @@ import TabItem from '@theme/TabItem';
 
 他 **可能** 把你要改的语言直接写死在代码里了，你要自己去改代码...
 
-比如驿站内核汉化的 [DecentHolograms](../misc/holograms/decentholograms.md)
+比如驿站内核汉化的 [DecentHolograms](/java/process/plugin/misc/holograms/decentholograms)
 
 </TabItem>
 </Tabs>

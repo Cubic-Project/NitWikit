@@ -7,7 +7,7 @@ sidebar_position: 7
 
 白名单是一种服务器管理工具，只允许在白名单上的玩家进入服务器
 
-:::warning
+:::caution
 
 白名单最好与正版验证或其他第三方验证一起使用，不然很容易被绕过
 
@@ -88,7 +88,7 @@ allow-list=on
 
 ### BistroWhitelist (Java 版)
 
-:::info
+:::note
 
 `官网` https://wiki.mcxjg.cn/
 

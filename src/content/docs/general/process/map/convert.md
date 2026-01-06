@@ -8,7 +8,7 @@ sidebar:
 
 <!--markdownlint-disable line-length-->
 
-```text
+```txt
 [Configurations] Loading a newer configuration than is supported (31 > 30)! You may have to backup & delete the world config file to start the server.
 ```
 
@@ -42,7 +42,7 @@ java -Xms2G -Xmx2G -jar server.jar --nogui --forceUpgrade
 
 ## Chunker
 
-:::info
+:::note
 
 `官网` https://www.chunker.app
 
@@ -58,7 +58,7 @@ Chunker 是一个多功能的转换工具，支持基岩版和 Java 之间的转
 
 ## Amulet
 
-:::info
+:::note
 
 `官网` https://www.amuletmc.com
 
@@ -82,7 +82,7 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 
 ## MCA Selector
 
-:::info
+:::note
 
 `GitHub` https://github.com/Querz/mcaselector
 
@@ -104,7 +104,7 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 
 ## 将地图转移到基岩版
 
-:::warning
+:::caution
 
 此处属于危险操作，请备份服务端存档，此处教学如有错误请在提出问题
 
@@ -126,7 +126,7 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 
 [WorldEdit-Addon 结构的使用](https://worldedit-be-docs.readthedocs.io/en/stable/usage/structures/)
 
-:::info
+:::note
 
 若你有电脑，则不需要上述繁琐的步骤，可以直接使用 [Amulet](https://www.amuletmc.com/) 进行建筑存档存档转换，选区粘贴到服务端存档
 
@@ -148,7 +148,7 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 
 于 NKX 服务端内使用 [FastAsyncWorldEdit-Nukkit](https://cloudburstmc.org/resources/fastasyncworldedit.30/) 导入 `.schematic` 文件粘贴到指定位置
 
-:::warning
+:::caution
 
 NukkitX 不支持超过 1.12.2 的方块，建造地图时需注意
 

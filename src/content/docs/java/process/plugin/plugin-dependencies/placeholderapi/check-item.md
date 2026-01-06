@@ -2,7 +2,7 @@
 title: CheckItem
 ---
 
-:::info
+:::note
 
 因高版本（1.20.4+）的 CheckItem 对 NBT 的检查存在问题，HelpChat Discord 上的 Blitz 及部分开发者对其进行了针对性修复，可从 [这里](https://cdn.discordapp.com/attachments/573429521554866178/1377020689734701086/Expansion-CheckItem.jar?ex=683abdb4&is=68396c34&hm=833ab3aa7e997a35c1f85df41a18b28467e432d28884408bf6ecd5adb7b7f775&)（外网链接）直接下载。
 
@@ -10,7 +10,7 @@ title: CheckItem
 
 :::
 
-:::info
+:::note
 
 `eCloud` https://api.extendedclip.com/expansions/checkitem
 
@@ -24,7 +24,7 @@ title: CheckItem
 
 ## 安装此扩展
 
-```text
+```txt
 /papi ecloud download CheckItem
 /papi reload
 ```
@@ -33,7 +33,7 @@ title: CheckItem
 
 ![](_assets/CheckItem/remove-item.png)
 
-```text
+```txt
 /papi parse me %checkitem_remove_diamond%
 ```
 
@@ -47,7 +47,7 @@ title: CheckItem
 
 这里返回了 yes
 
-[如何返回 true/false？](/docs-java/process/plugin/plugin-dependencies/placeholderapi/faq.md#更改-boolean)
+[如何返回 true/false？](/java/process/plugin/plugin-dependencies/placeholderapi/faq#更改-boolean)
 
 例如：
 
@@ -111,7 +111,7 @@ title: CheckItem
 
 用来获取玩家指定背包位置的物品信息
 
-```text
+```txt
 %checkitem_getinfo:<槽位>_<修饰符 1>,<修饰符 2>,<...>%
 ```
 
@@ -133,19 +133,19 @@ title: CheckItem
 
 例如：
 
-```text title="检查玩家背包中钻石数量"
+```txt title="检查玩家背包中钻石数量"
 %checkitem_amount_mat:diamond%
 ```
 
 ![](_assets/CheckItem/连续使用-1.png)
 
-```text title="收取背包中所有钻石"
+```txt title="收取背包中所有钻石"
 %checkitem_remove_mat:diamond%
 ```
 
 ![](_assets/CheckItem/连续使用-2.png)
 
-```text title="收取背包中所有钻石，但是变量返回值是收取的数量"
+```txt title="收取背包中所有钻石，但是变量返回值是收取的数量"
 %checkitem_amount_remove_mat:diamond%
 ```
 
@@ -155,7 +155,7 @@ title: CheckItem
 
 收取指定 IA 物品的指定数量
 
-```text
+```txt
 %checkitem_remove_nbtstrings:itemsadder..id..data=ia 物品 ID,amt:数量%
 ```
 

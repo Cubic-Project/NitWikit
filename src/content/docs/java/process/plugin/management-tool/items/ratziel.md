@@ -2,7 +2,7 @@
 title: Ratziel
 ---
 
-:::info
+:::note
 
 `GitHub` https://github.com/TheFloodDragon/Ratziel-Beta
 

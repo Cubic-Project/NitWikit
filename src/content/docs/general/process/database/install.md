@@ -93,7 +93,7 @@ ALTER user 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 
 #### 创建表
 
-:::warning
+:::caution
 
 以下的操作为 SQL 语句，在结尾处的 `;` 不能省略否则会报错。
 
@@ -163,7 +163,7 @@ apt install redis -y
 
 ### 小皮数据库
 
-:::info
+:::note
 
 小皮数据库仅支持 Windows 系统
 
@@ -226,7 +226,7 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 
 ### 宝塔面板
 
-:::info
+:::note
 
 宝塔面板支持 Windows 和 Linux 系统
 
@@ -276,7 +276,7 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 
 ### 1Panel 面板
 
-:::warning
+:::caution
 
 1Panel 面板目前仅支持 Linux 系统，不支持 Windows 系统
 

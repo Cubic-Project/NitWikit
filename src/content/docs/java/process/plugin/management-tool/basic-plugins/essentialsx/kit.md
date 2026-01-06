@@ -4,7 +4,7 @@ title: kit 礼包
 
 ## 创建礼包
 
-```text
+```txt
 /kitcreate <kit 名字> 冷却
 ```
 
@@ -18,7 +18,7 @@ title: kit 礼包
 
 ## 获得礼包
 
-```text
+```txt
 /kit <kit 名字>
 ```
 
@@ -36,7 +36,7 @@ title: kit 礼包
 
 ## 删除礼包
 
-```text
+```txt
 /deletekit <kit 名字>
 ```
 
@@ -44,7 +44,7 @@ title: kit 礼包
 
 ### 保存 nbt
 
-[点击此处](config-tips.md#礼包工具包)
+[点击此处](/java/process/plugin/management-tool/basic-plugins/essentialsx/config-tips#礼包工具包)
 
 ### kit 执行命令
 
@@ -63,9 +63,9 @@ iloveyizhan:
 
 ### 变量
 
-[点击此处](papi-support.md)
+[点击此处](/java/process/plugin/management-tool/basic-plugins/essentialsx/papi-support)
 
-```text
+```txt
 %essentials_has_kit_<kitname>%                  - 是否有 XX 工具包
 %essentials_kit_is_available_<kitname>%         - 是否可以获得 XX 工具包
 %essentials_kit_time_until_available_<kitname>% - 礼包冷却时间

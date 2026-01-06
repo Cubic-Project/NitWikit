@@ -41,7 +41,7 @@ online-mode=false
 
 ### 网络配置要求
 
-:::warning[重要：网络访问要求]
+:::caution[重要：网络访问要求]
 
 Transfer 要求 **所有服务器都能被客户端直接访问**：
 
@@ -125,11 +125,11 @@ accepts-transfers = true
 
 **混合架构示例：**
 
-```text
+```txt
 独立服务器 --Transfer--> Velocity ---> 子服务器群组
 ```
 
-:::warning[兼容性问题]
+:::caution[兼容性问题]
 
 OnlyTransfer 插件与 Velocity 的 Transfer 支持存在部分兼容性问题，建议在测试环境中验证。
 

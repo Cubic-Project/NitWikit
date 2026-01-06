@@ -2,7 +2,7 @@
 title: 核心选择
 ---
 
-:::info
+:::note
 
 你可以点击名称一栏中的字体跳转并找到下载
 
@@ -14,7 +14,7 @@ title: 核心选择
 
 [关于 Waterfall 停止维护的公告](https://forums.papermc.io/threads/announcing-the-end-of-life-of-waterfall.1088/)。
 
-:::info
+:::note
 
 停止维护是指不再为其添加新功能或错误修补，
 

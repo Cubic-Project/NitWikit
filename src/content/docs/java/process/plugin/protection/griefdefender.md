@@ -2,7 +2,7 @@
 title: 领地 - GriefDefender
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.68900/
 

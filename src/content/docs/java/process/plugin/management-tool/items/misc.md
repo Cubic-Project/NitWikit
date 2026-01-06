@@ -6,8 +6,8 @@ title: 其他
 
 推荐使用上方页面收录的物品库插件，而不是下方插件提供的物品库功能。
 
--   [ItemsAdder](../../../maintenance/resourcepack/plugins/framework.md)
--   [Oraxen](../../../maintenance/resourcepack/plugins/framework.md)
--   [MythicMobs](../../misc/mythicmobs.md)
--   [CMI](../basic-plugins/cmi/cmi.md)
--   [SunLight](../basic-plugins/sunlight/sunlight.md)
+-   [ItemsAdder](/java/advance/maintenance/resourcepack/plugins/framework)
+-   [Oraxen](/java/advance/maintenance/resourcepack/plugins/framework)
+-   [MythicMobs](/java/process/plugin/misc/mythicmobs)
+-   [CMI](/java/process/plugin/management-tool/basic-plugins/cmi/intro)
+-   [SunLight](/java/process/plugin/management-tool/basic-plugins/sunlight)

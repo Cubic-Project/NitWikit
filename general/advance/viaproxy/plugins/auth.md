@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## ViaProxyAuthHook
 
-:::info
+:::note
 
 `GitHub` https://github.com/ViaVersionAddons/ViaProxyAuthHook
 
@@ -107,7 +107,7 @@ target-port: 25565
 
 ## ViaProxyOpenAuthMod
 
-:::info
+:::note
 
 `GitHub` https://github.com/ViaVersionAddons/ViaProxyOpenAuthMod
 

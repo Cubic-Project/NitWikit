@@ -12,7 +12,7 @@ title: 保护 - NoBuildPlus
 
 ## 链接
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/nobuildplus.101815
 

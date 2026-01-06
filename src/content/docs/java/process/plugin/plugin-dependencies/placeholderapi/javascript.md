@@ -2,7 +2,7 @@
 title: JavaScript
 ---
 
-:::info
+:::note
 
 `eCloud` https://api.extendedclip.com/expansions/javascript
 

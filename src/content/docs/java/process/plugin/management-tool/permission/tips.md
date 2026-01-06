@@ -4,7 +4,7 @@ title: 小妙招
 
 ## 网页版可视化编辑器
 
-```text
+```txt
 lp editor
 ```
 
@@ -14,7 +14,7 @@ lp editor
 
 可以实时打印权限检查情况，方便排查问题。
 
-```text
+```txt
 lp verbose <on|record|off|upload> [filter]
 ```
 
@@ -28,7 +28,7 @@ lp verbose <on|record|off|upload> [filter]
 
 打开 Luckperms 的详细日志：
 
-```text
+```txt
 /lp verbose on
 ```
 
@@ -49,7 +49,7 @@ lp verbose <on|record|off|upload> [filter]
 
 ### 过滤器
 
-```text
+```txt
 lp verbose on !Luck & !anticheat
 ```
 
@@ -69,7 +69,7 @@ lp verbose on !Luck & !anticheat
 
 `/lp verbose command` 让玩家执行命令，并打印此命令的权限检查。
 
-```text
+```txt
 /lp verbose command <me|player> <command>
 ```
 

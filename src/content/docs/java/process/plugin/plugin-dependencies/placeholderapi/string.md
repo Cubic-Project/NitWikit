@@ -2,7 +2,7 @@
 title: String
 ---
 
-:::info
+:::note
 
 `eCloud` https://api.extendedclip.com/expansions/string
 
@@ -18,7 +18,7 @@ title: String
 
 ## 安装此扩展
 
-```text
+```txt
 /papi ecloud download String
 /papi reload
 ```

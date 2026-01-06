@@ -12,7 +12,7 @@ title: TitleManager
 
 ## 链接
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.1049
 

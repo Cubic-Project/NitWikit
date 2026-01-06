@@ -2,7 +2,7 @@
 title: DeluxeTags
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.4390
 

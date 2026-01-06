@@ -2,7 +2,7 @@
 title: 实体 - MythicMobs
 ---
 
-:::info
+:::note
 
 `mythiccraft` https://mythiccraft.io/index.php?resources/.1/
 

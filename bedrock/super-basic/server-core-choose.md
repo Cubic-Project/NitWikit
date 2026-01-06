@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="server-core-choose">
 <TabItem value="bds" label="Bedrock Dedicated Server(BDS)">
 
-:::warning
+:::caution
 
 至本篇文档开始，**`BDS`** 一致指 **`Bedrock Dedicated Server`**，而不是指 **`Beidou Navigation Satellite System`** (北斗卫星导航系统)
 
@@ -26,7 +26,7 @@ import TabItem from '@theme/TabItem';
 
 -   官方支持：作为 Mojang 官方推出的服务器端软件，BDS 能够获得官方的最新更新和支持，确保与 Minecraft 基岩版的最新版本兼容。
 -   文档和社区支持：虽然官方提供了一些基本文档，但不如第三方服务器端软件的社区那样提供丰富的教程和支持。社区插件内容庞大，基本满足腐竹的日常需求 (虽然官方服务端无法加载插件，但可以通过
-    [社区开发的加载器](../bds/process/plugins/plugins-loader-choose.md)
+    [社区开发的加载器](/bedrock/bds/process/plugins/plugins-loader-choose)
     解决这一问题)。
 
 -   稳定性：由于是官方产品，BDS 在稳定性方面通常表现良好，能够提供可靠的服务器体验。
@@ -47,7 +47,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="nukkit" label="Nukkit(NK)">
 
-:::warning
+:::caution
 
 至本篇文档开始，**`NK`** 一致指 **`Nukkit`**，但考虑到全称不长，因此二者都会出现在本文档中
 
@@ -85,7 +85,7 @@ import TabItem from '@theme/TabItem';
 
 :::
 
-:::warning
+:::caution
 
 至本篇文档开始，**`PNX`** 一致指 **`PowerNukkitX`**
 
@@ -114,7 +114,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="pmmp" label="PocketMine-MP(PMMP)">
 
-:::warning
+:::caution
 
 至本篇文档开始，**`PMMP`** 一致指 **`PocketMine-MP`**
 

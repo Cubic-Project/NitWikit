@@ -2,8 +2,7 @@
 title: 游戏机制
 ---
 
-import StructureExplorer from "@site/src/components/StructureExplorer";
-import { geyserExtensionStructure } from "@site/src/data/structures";
+import { FileTree } from '@astrojs/starlight/components';
 
 # 游戏机制
 
@@ -18,7 +17,7 @@ import { geyserExtensionStructure } from "@site/src/data/structures";
 -   卡在竹子和滴水石锥中无法移动
 -   骑乘实体时无法正确控制方向，在需要使用钓竿的实体上影响尤为明显
 
-:::warning
+:::caution
 
 支持版本：1.14-1.21.1
 
@@ -33,7 +32,7 @@ import { geyserExtensionStructure } from "@site/src/data/structures";
 
 你可以在 [此处](https://github.com/Camotoy/GeyserSkinManager/releases) 下载
 
-:::warning
+:::caution
 
 GeyserSkinManager 有不同版本
 你若正在使用群组端，请在群组端安装对应版本而不是其子服
@@ -44,7 +43,7 @@ GeyserSkinManager 有不同版本
 
 你可以在 [此处](https://github.com/Camotoy/BedrockSkinUtility) 下载模组
 
-:::warning
+:::caution
 
 BedrockSkinUtility 仅支持 Fabric 1.20.2 以下的版本
 
@@ -161,7 +160,13 @@ Broadcaster 通过模拟 Xbox Live 客户端，将你的 Geyser/基岩版服务�
 
 2. **安装扩展**
 
-    <StructureExplorer data={geyserExtensionStructure} />
+    <FileTree>
+    - 服务器根目录/
+      - plugins/
+        - Geyser-Spigot/
+          - extensions/ Geyser 扩展文件夹
+            - MCXboxBroadcastExtension.jar Xbox 直播扩展
+    </FileTree>
 
 3. **重启服务器**
 
@@ -171,7 +176,7 @@ Broadcaster 通过模拟 Xbox Live 客户端，将你的 Geyser/基岩版服务�
 
     - 服务器启动后，控制台会显示认证码：
 
-    ```text
+    ```txt
     To sign in, use a web browser to open the page https://www.microsoft.com/link and enter the code XXXXXXXX to authenticate.
     ```
 

@@ -2,7 +2,7 @@
 title: CatSeedLogin
 ---
 
-:::info
+:::note
 
 `GitHub` https://github.com/CatSeed/CatSeedLogin
 

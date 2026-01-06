@@ -2,7 +2,7 @@
 title: MythicPrefixes
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.100994
 

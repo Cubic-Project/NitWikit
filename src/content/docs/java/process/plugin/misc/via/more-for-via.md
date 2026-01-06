@@ -6,7 +6,7 @@ title: Via 进阶
 
 ## AxSmithing
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.112793
 
@@ -23,7 +23,7 @@ title: Via 进阶
 
 ## ViaChatFixer
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.61955
 
@@ -37,7 +37,7 @@ title: Via 进阶
 
 ## ViaBackwards-Plus
 
-:::info
+:::note
 
 `Modrinth` https://modrinth.com/resourcepack/vb+
 
@@ -90,7 +90,7 @@ title: Via 进阶
 
 ## ViaVersion Texture Fix (VVTF)
 
-:::info
+:::note
 
 `Modrinth` https://modrinth.com/resourcepack/viaversiontexturefix
 
@@ -106,7 +106,7 @@ title: Via 进阶
 
 ## ViaAprilFools
 
-:::info
+:::note
 
 `Hangar` https://hangar.papermc.io/ViaVersion/ViaAprilFools
 
@@ -122,7 +122,7 @@ title: Via 进阶
 
 ## AutoViaUpdater
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.109331
 

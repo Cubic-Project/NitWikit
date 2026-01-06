@@ -41,14 +41,14 @@ PMMP 是 PocketMine-MP 的分支，由 PMMP 团队负责更新维护，目前已
 | 作者           | [pmmp](https://github.com/pmmp/)                                                                                                                    |
 | 介绍           | PocketMine-MP 是一款高度可定制的 Minecraft: Bedrock Edition 服务器软件，支持多版本，具备强大的插件 API 和丰富的生态系统，适合需要自定义功能的服务器 |
 | 下载           | [GitHub Releases](https://github.com/pmmp/PocketMine-MP/releases)                                                                                   |
-| 支持的 MC 版本 | 携带版 0.7.2-1.21.50 (目前保持更新)                                                                                                                  |
+| 支持的 MC 版本 | 携带版 0.7.2-1.21.50 (目前保持更新)                                                                                                                 |
 
 </TabItem>
 </Tabs>
 
 ### 不稳定更新的服务端
 
-:::warning
+:::caution
 
 此类服务端一般为个人或者团队非开源更新，不能保证长期更新
 
@@ -65,7 +65,7 @@ NitWiki 仅提供关于 PocketMine-MP 分支的信息和教程，但不对其项
 | -------------- | ------------------------------------------------------------------------------------------- |
 | 相关链接       | [MineBBS 投稿贴](https://www.minebbs.com/resources/pmmp5-ng-nethergames-1-20-1-21-50.8967/) |
 | 作者           | [QYE](https://www.minebbs.com/members/qye.35358/)                                           |
-| 介绍           | 多版本的 pmmp5 核心-NG (NetherGames) 官方核心 - 支持 1.20-1.21.50                            |
+| 介绍           | 多版本的 pmmp5 核心-NG (NetherGames) 官方核心 - 支持 1.20-1.21.50                           |
 | 下载           | [MineBBS](https://www.minebbs.com/resources/pmmp5-ng-nethergames-1-20-1-21-50.8967/)        |
 | 支持的 MC 版本 | 1.20-1.21.50                                                                                |
 
@@ -76,7 +76,7 @@ NitWiki 仅提供关于 PocketMine-MP 分支的信息和教程，但不对其项
 | -------------- | ------------------------------------------------------------------------------------------- |
 | 相关链接       | [MineBBS 投稿贴](https://www.minebbs.com/resources/qf-qosgames-qfmc-pm4-1-20-1-20-50.7249/) |
 | 作者           | [QYE](https://www.minebbs.com/members/qye.35358/)                                           |
-| 介绍           | QF-QosGames (QFMC) 核心 PM4 多版本 - 现已支持 1.20-1.20.50 基岩版                            |
+| 介绍           | QF-QosGames (QFMC) 核心 PM4 多版本 - 现已支持 1.20-1.20.50 基岩版                           |
 | 下载           | [MineBBS](https://www.minebbs.com/resources/qf-qosgames-qfmc-pm4-1-20-1-20-50.7249/)        |
 | 支持的 MC 版本 | 1.20-1.20.50                                                                                |
 

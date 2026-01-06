@@ -24,7 +24,7 @@ title: 概述
 
 ## 链接
 
-:::info
+:::note
 
 `官网` https://mvplugins.org
 

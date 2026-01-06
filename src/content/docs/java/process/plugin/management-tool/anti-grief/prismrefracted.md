@@ -4,7 +4,7 @@ title: 记录 - PrismRefracted
 
 # PrismRefracted
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/prism.99397
 

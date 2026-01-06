@@ -2,7 +2,7 @@
 title: DeluxeMenus
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/deluxemenus.11734/
 

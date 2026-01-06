@@ -156,7 +156,7 @@ Iris 支持自定义维度包开发，你可以创建自己的：
 
 ## 链接
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.84586
 

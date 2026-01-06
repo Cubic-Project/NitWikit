@@ -2,7 +2,7 @@
 title: LibreLogin
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.101040
 

@@ -53,7 +53,7 @@ ServiceIO 的一个关键特性是与现有 Vault 接口的无缝集成，允许
 
 ## 链接
 
-:::info
+:::note
 
 `Hangar` https://hangar.papermc.io/TheNextLvl/ServiceIO
 

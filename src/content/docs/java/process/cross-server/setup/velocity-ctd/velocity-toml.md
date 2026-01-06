@@ -191,7 +191,7 @@ pubsub-enabled = true
 pubsub-prefix = "velocity-ctd:pubsub:"
 ```
 
-:::warning[Redis 使用注意事项]
+:::caution[Redis 使用注意事项]
 
 1. **单代理服务器不需要 Redis**：如果你只有一个 Velocity-CTD 代理，无需启用 Redis
 2. **多代理环境必须启用**：如果你有多个代理服务器，必须启用 Redis 来同步数据
@@ -328,7 +328,7 @@ default-forwarding-mode = "modern"
 log-forwarding-changes = true
 ```
 
-:::warning[多转发系统注意事项]
+:::caution[多转发系统注意事项]
 
 1. **实验性功能**：多转发系统是实验性功能，可能存在兼容性问题
 2. **配置复杂性**：需要为每个服务器正确配置对应的转发模式

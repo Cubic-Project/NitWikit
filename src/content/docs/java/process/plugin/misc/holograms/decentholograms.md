@@ -7,7 +7,7 @@ title: DecentHolograms
 [![Code Size](https://img.shields.io/github/languages/code-size/DecentSoftware-eu/DecentHolograms)](https://github.com/DecentSoftware-eu/DecentHolograms)
 [![License](https://img.shields.io/github/license/DecentSoftware-eu/DecentHolograms)](https://github.com/DecentSoftware-eu/DecentHolograms/blob/main/LICENSE)
 
-```text
+```txt
 一个轻量级但功能强大的全息图插件，具有许多功能和配置项。
 ```
 
@@ -62,7 +62,7 @@ title: DecentHolograms
 
 ## 链接
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.96927
 
@@ -97,7 +97,7 @@ title: DecentHolograms
 
 如何在您的项目中引入 DecentHolograms API
 
-```text
+```txt
 用 DecentHolograms 当前版本替换 VERSION (Latest release)
 ```
 

@@ -2,7 +2,7 @@
 title: PlayerTitle
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.104544
 

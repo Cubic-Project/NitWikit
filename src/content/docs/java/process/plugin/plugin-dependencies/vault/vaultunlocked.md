@@ -27,7 +27,7 @@ Vault 的分支版本，提供更多功能
 
 ## 链接
 
-:::info
+:::note
 
 `Bukkit` https://dev.bukkit.org/projects/vault
 

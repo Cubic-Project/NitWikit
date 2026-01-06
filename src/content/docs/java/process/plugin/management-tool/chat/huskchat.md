@@ -8,7 +8,7 @@ title: HuskChat
 
 :::
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.94496
 

@@ -2,7 +2,7 @@
 title: Carbon
 ---
 
-:::info
+:::note
 
 `Hangar` https://hangar.papermc.io/Vicarious/Carbon
 

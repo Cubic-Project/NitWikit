@@ -82,7 +82,7 @@ unsupported-settings:
     update-equipment-on-player-actions: false # 是否在玩家执行某些动作时更新装备；为 false 时可利用属性切换漏洞
 ```
 
-:::warning[book 配置]
+:::caution[book 配置]
 
 该选项可能会在你的服务器上启用禁人书，开启时请认真考虑
 
@@ -135,7 +135,7 @@ settings:
 
 ### 红石优化
 
-请查看 [红石优化](../maintenance/optimize/go.mdx#redstone-implementation)
+请查看 [红石优化](/java/advance/maintenance/optimize/go#redstone-implementation)
 
 同时 Mojang 在 24w33a 更新了红石的链接机制 (虽然是实验性内容)，从代码来看，Mojang 的优化方式与 Alternate Current 非常像
 
@@ -186,7 +186,7 @@ settings:
             vanilla-hopper: true # 修复原版漏斗的已知问题
 ```
 
-:::warning[漏斗问题]
+:::caution[漏斗问题]
 
 `vanilla-hopper` 选项开启后会严重降低漏斗性能，非必要最好别开
 

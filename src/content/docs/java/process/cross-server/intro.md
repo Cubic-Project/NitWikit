@@ -16,7 +16,7 @@ title: 概述
 
 ![](_assets/灵魂画师教开群组服.png)
 
-:::info
+:::note
 
 BungeeCord / Velocity 端 (或他们的 Fork) 在这里我们称为 `跨服端` (或者称为 上游服务器 / 反向代理端)
 
@@ -42,12 +42,12 @@ BungeeCord / Velocity 端 (或他们的 Fork) 在这里我们称为 `跨服端` 
 
 **推荐使用 Velocity**，除非你的版本不适合 Velocity 的现代转发。
 
-对于各个 MC 服务器 **部署在不同的服务器** 上，跨服代理和子服之间出现了没法进行稳定连接的情况时，也可以尝试原版 1.20.5 服务器新增的 [Transfer](./setup/transfer/transfer.md) 指令。
+对于各个 MC 服务器 **部署在不同的服务器** 上，跨服代理和子服之间出现了没法进行稳定连接的情况时，也可以尝试原版 1.20.5 服务器新增的 [Transfer](/java/process/cross-server/setup/transfer/setup) 指令。
 
 ### 安装数据库
 
 你都跨服了，估计会有多端数据同步的需求吧？
 
-看 [通用 | 数据库相关](/database)
+看 [通用 | 数据库相关](/general/process/database/intro)
 
 一般需要安装两个数据库，MySQL 和 Redis，MySQL 用于存储重要信息，比如账号密码，经济，权限 Redis 用于快速跨服同步

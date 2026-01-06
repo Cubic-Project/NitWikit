@@ -18,7 +18,7 @@ sidebar:
 
 ### Navicat
 
-:::info
+:::note
 
 官网 https://navicat.com.cn/products
 
@@ -106,7 +106,7 @@ sidebar:
 
 ### HeidiSQL
 
-:::info
+:::note
 
 官网 https://www.heidisql.com/
 
@@ -162,7 +162,7 @@ TODO
 
 PS: 这年头谁还用指令管理数据库啊
 
-:::info
+:::note
 
 语句示例：
 

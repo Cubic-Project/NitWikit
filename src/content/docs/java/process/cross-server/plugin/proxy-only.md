@@ -6,7 +6,7 @@ title: 只安装在跨服端
 
 ## Sonar
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.115239
 
@@ -19,12 +19,9 @@ title: 只安装在跨服端
 :::
 
 核心支持：
-<a href="">
-<img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
-</a>
-<a href="">
-<img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
-</a>
+
+![BungeeCord](https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge)
+![Velocity](https://img.shields.io/badge/Velocity-blue?&style=for-the-badge)
 
 一款轻量级的反假人插件，能够有效的防止大部分假人进入你的服务器。
 
@@ -34,7 +31,7 @@ title: 只安装在跨服端
 
 ## AuthMeBungee
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.50219
 
@@ -43,9 +40,8 @@ title: 只安装在跨服端
 :::
 
 核心支持：
-<a href="">
-<img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
-</a>
+
+![BungeeCord](https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge)
 
 这是 BungeeCord 版本的 AuthMe。如果你的登录服使用 AuthMe 登录，请务必在 BungeeCord 上安装此插件，以增加登录系统的安全性和完整性，这可以为你避免一些不必要的麻烦
 
@@ -53,7 +49,7 @@ title: 只安装在跨服端
 
 ## AuthMeVelocity
 
-:::info
+:::note
 
 `Modrinth` https://modrinth.com/plugin/authmevelocity
 
@@ -62,9 +58,9 @@ title: 只安装在跨服端
 :::
 
 核心支持：
-<a href="">
-<img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
-</a>
+
+![Velocity](https://img.shields.io/badge/Velocity-blue?&style=for-the-badge)
+
 
 这是 Velocity 版本的 AuthMe。如果你的登录服使用 AuthMe 登录，请务必在 Velocity 上安装此插件，以增加登录系统的安全性和完整性，这可以为你避免一些不必要的麻烦
 
@@ -87,7 +83,7 @@ auth-servers=[
 
 至于 Folia/Paper/Purpur 端则不需要修改任何配置，保证插件正常工作即可。
 
-:::info
+:::note
 
 推荐使用来自 HaHaWTH 佬的 [AuthMeReReloaded](https://github.com/HaHaWTH/AuthMeReReloaded) 引入了完整的 Velocity 支持。
 
@@ -111,7 +107,7 @@ Hooks:
   若 AuthMe 未被加载则会导致 AuthMeVelocity 要求玩家登录但玩家却无法登录，导致所有人无法正常在服务器中游玩。
 - 如果在 AuthMeVelocity 被加载时出现形如以下报错：
 
-```text
+```txt
 java.lang.RuntimeException: Failed to download library
 ```
 
@@ -119,7 +115,7 @@ java.lang.RuntimeException: Failed to download library
 
 ## VLobby
 
-:::info
+:::note
 
 `Hangar` https://hangar.papermc.io/4drian3d/VLobby
 
@@ -128,23 +124,21 @@ java.lang.RuntimeException: Failed to download library
 :::
 
 核心支持：
-<a href="">
-<img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
-</a>
+
+![Velocity](https://img.shields.io/badge/Velocity-blue?&style=for-the-badge)
 
 一个简单的 `/lobby` `/hub` 插件
 
 ## LimboAuth
 
-:::info
+:::note
 
-见 [插件 | LimboAuth](../../plugin/misc/login/limboauth.md)
+见 [插件 | LimboAuth](/java/process/plugin/misc/login/intro)
 
 :::
 
 核心支持：
-<a href="">
-<img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
-</a>
+
+![Velocity](https://img.shields.io/badge/Velocity-blue?&style=for-the-badge)
 
 一个不错的登录插件。

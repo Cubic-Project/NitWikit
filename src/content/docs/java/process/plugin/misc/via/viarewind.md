@@ -2,7 +2,7 @@
 title: ViaRewind
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.52109
 
@@ -21,7 +21,7 @@ ViaRewind 可以让超低版本 (1.7-1.8) 客户端进入高版本服务器
 
 ## FAQ
 
-:::warning
+:::caution
 
 ViaRewind 的兼容性非常差，毕竟跨版本这么大必然有问题
 

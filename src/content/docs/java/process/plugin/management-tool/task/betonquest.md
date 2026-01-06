@@ -2,7 +2,7 @@
 title: BetonQuest
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.2117
 

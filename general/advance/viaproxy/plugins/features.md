@@ -9,7 +9,7 @@ sidebar_position: 3
 
 ## ViaProxyWhitelist {#whitelist}
 
-:::info
+:::note
 
 `GitHub` https://github.com/ViaVersionAddons/ViaProxyWhitelist
 
@@ -41,7 +41,7 @@ Whitelist:
 
 ## ViaProxySpark {#spark}
 
-:::info
+:::note
 
 `GitHub` https://github.com/ViaVersionAddons/ViaProxySpark
 
@@ -53,7 +53,7 @@ ViaProxySpark 将 Spark 性能分析器集成到 ViaProxy 中，提供详细的�
 
 ## ViaProxyMultiLaunch {#multilaunch}
 
-:::info
+:::note
 
 `GitHub` https://github.com/ViaVersionAddons/ViaProxyMultiLaunch
 
@@ -65,7 +65,7 @@ ViaProxyMultiLaunch 允许 ViaProxy 同时启动和管理多个外部程序，�
 
 ## ViaLimbo
 
-:::info
+:::note
 
 `GitHub` https://github.com/LOOHP/ViaLimbo
 
@@ -110,7 +110,7 @@ ViaLimbo 为 ViaProxy 提供 Limbo 服务器功能，可以在连接失败时显
 
 ## ayunViaProxyLegacyIcon
 
-:::info
+:::note
 
 `GitHub` https://github.com/ayunami2000/ayunViaProxyLegacyIcon
 

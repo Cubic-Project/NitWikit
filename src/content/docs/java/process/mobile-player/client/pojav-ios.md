@@ -2,7 +2,7 @@
 title: 在 iOS 上安装 PojavLauncher
 ---
 
-:::warning
+:::caution
 
 PojavLauncher 已于 2025 年 5 月 17 日宣布停更
 
@@ -55,7 +55,7 @@ PojavLauncher 已于 2025 年 5 月 17 日宣布停更
 
 ## 方法二：使用 TrollStore
 
-:::warning
+:::caution
 
 由于苹果公司修复了 iOS 系统中的相关漏洞，巨魔商店不再支持 iOS16.7 和 iOS17.1 及以上系统。
 

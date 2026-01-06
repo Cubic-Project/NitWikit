@@ -10,7 +10,7 @@ Velocity-CTD 在标准 Velocity 基础上增加了许多实用功能，本页面
 
 Velocity-CTD 内置了完整的 Redis 支持，可以替代 RedisBungee 等插件，提供更稳定的 Redis 体验。
 
-:::info[什么时候需要 Redis？]
+:::note[什么时候需要 Redis？]
 
 - **单代理服务器**：不需要 Redis
 - **多代理服务器**：必须启用 Redis 来同步数据
@@ -339,7 +339,7 @@ server-full = "<red>服务器已满，正在排队中..."
 
 #### 问题：Redis 连接失败
 
-```text
+```txt
 解决方案：
 1. 检查 Redis 服务是否运行
 2. 验证连接信息（host、port、password）
@@ -349,7 +349,7 @@ server-full = "<red>服务器已满，正在排队中..."
 
 #### 问题：多代理数据不同步
 
-```text
+```txt
 解决方案：
 1. 确保所有代理使用相同的 Redis 配置
 2. 检查 key-prefix 是否一致
@@ -360,7 +360,7 @@ server-full = "<red>服务器已满，正在排队中..."
 
 #### 问题：玩家卡在队列中
 
-```text
+```txt
 解决方案：
 1. 检查目标服务器是否正常运行
 2. 使用 /queueadmin remove <玩家> 手动移除
@@ -370,7 +370,7 @@ server-full = "<red>服务器已满，正在排队中..."
 
 #### 问题：队列优先级不生效
 
-```text
+```txt
 解决方案：
 1. 确认 priority-enabled = true
 2. 检查玩家权限：velocity.queue.priority.<服务器>.<优先级>
@@ -381,7 +381,7 @@ server-full = "<red>服务器已满，正在排队中..."
 
 #### 问题：命令不响应
 
-```text
+```txt
 解决方案：
 1. 检查命令是否启用：[commands] 部分
 2. 验证玩家权限：velocity.command.<命令名>
@@ -390,7 +390,7 @@ server-full = "<red>服务器已满，正在排队中..."
 
 #### 问题：/hub 命令不工作
 
-```text
+```txt
 解决方案：
 1. 检查 try 配置是否正确
 2. 确认回退服务器正在运行
@@ -401,7 +401,7 @@ server-full = "<red>服务器已满，正在排队中..."
 
 #### 问题：代理服务器延迟高
 
-```text
+```txt
 解决方案：
 1. 启用性能优化选项
 2. 调整压缩设置
@@ -411,7 +411,7 @@ server-full = "<red>服务器已满，正在排队中..."
 
 #### 问题：内存使用过高
 
-```text
+```txt
 解决方案：
 1. 调整 JVM 参数
 2. 减少 Redis 连接池大小
@@ -439,7 +439,7 @@ server-full = "<red>服务器已满，正在排队中..."
 
 **常见错误信息**：
 
-```text
+```txt
 "Connection refused" - 子服务器未启动或端口错误
 "Forwarding error" - 转发配置不匹配
 "Redis connection failed" - Redis 连接问题

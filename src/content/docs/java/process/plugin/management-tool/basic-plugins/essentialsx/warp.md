@@ -6,7 +6,7 @@ title: warp 地标
 
 ## 创建地标
 
-```text
+```txt
 /setwarp <地标名>
 ```
 
@@ -14,7 +14,7 @@ title: warp 地标
 
 ## 传送地标
 
-```text
+```txt
 /warp <地标名>
 ```
 
@@ -26,7 +26,7 @@ title: warp 地标
 
 ## 删除地标
 
-```text
+```txt
 /delwarp <地标名>
 ```
 

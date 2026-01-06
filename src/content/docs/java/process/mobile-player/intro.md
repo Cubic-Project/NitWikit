@@ -12,7 +12,7 @@ title: 概述
 
 使基岩版客户端进入 Java 版服务器的代理软件。
 
-[点此阅读](./geyser/geyser.md) 关于 Geyser 的文档。
+[点此阅读](/java/process/mobile-player/geyser/intro) 关于 Geyser 的文档。
 
 ## 基岩版客户端下载
 

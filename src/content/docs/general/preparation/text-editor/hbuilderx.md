@@ -8,7 +8,7 @@ title: HbuilderX
 
 一个国产的文本编辑器。
 
-:::warning
+:::caution
 
 该软件存在一些问题，例如编译需要登录、命令行中夹带广告等（[来源](https://www.zhihu.com/question/47889106/answer/3189683653)）。
 

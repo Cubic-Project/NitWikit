@@ -9,7 +9,7 @@ sidebar_position: 4
 
 ## ViaProxyBeta2Release {#beta2release}
 
-:::info
+:::note
 
 `GitHub` https://github.com/ViaVersionAddons/ViaProxyBeta2Release
 
@@ -19,7 +19,7 @@ sidebar_position: 4
 
 ViaProxyBeta2Release 实现了 [Beta2Release](https://github.com/DirtPowered/Beta2Release) 代理功能，允许 Beta 1.7.3 客户端连接到现代服务器。
 
-:::warning[重要提醒]
+:::caution[重要提醒]
 
 此插件需要 **Java 21 或更高版本**
 
@@ -51,7 +51,7 @@ world-seed = "-1849830396072973239"  # Beta 1.7.3 世界生成种子
 
 ## BungeeViaProxy {#bungeeviaproxy}
 
-:::info
+:::note
 
 `GitHub` https://github.com/ViaVersionAddons/BungeeViaProxy
 
@@ -83,11 +83,11 @@ BungeeViaProxy 通过确保正确的主机名转发和避免重复服务器错�
 
 ### 网络架构
 
-```text
+```txt
 客户端 -> BungeeCord -> ViaProxy -> 后端服务器
 ```
 
-:::warning[重要配置要求]
+:::caution[重要配置要求]
 
 使用此设置时，ViaProxy 必须放置在 BungeeCord 和后端服务器之间，并且需要以下配置：
 
@@ -125,7 +125,7 @@ BungeeViaProxy 通过确保正确的主机名转发和避免重复服务器错�
 
 假设以下服务器设置：
 
-| 服务器       | IP：端口         | Minecraft 版本 |
+| 服务器       | IP：端口        | Minecraft 版本 |
 | ------------ | --------------- | -------------- |
 | BungeeCord   | 127.0.0.1:25565 | N/A            |
 | ViaProxy     | 127.0.0.1:25566 | N/A            |
@@ -208,7 +208,7 @@ settings:
 
 ViaProxy 的 `wildcard-domain-handling` 功能允许单个实例处理多个后端服务器的连接，使用特定的地址格式：
 
-```text
+```txt
 address.<后端 IP>.port.<后端端口>.version.<版本>.f2.viaproxy.<ViaProxy IP>.nip.io:<ViaProxy 端口>
 ```
 
@@ -216,7 +216,7 @@ address.<后端 IP>.port.<后端端口>.version.<版本>.f2.viaproxy.<ViaProxy I
 
 ## ViaBedrock {#viabedrock}
 
-:::info
+:::note
 
 `GitHub` https://github.com/ViaVersion/ViaBedrock
 
@@ -226,7 +226,7 @@ address.<后端 IP>.port.<后端端口>.version.<版本>.f2.viaproxy.<ViaProxy I
 
 ViaBedrock 是 ViaVersion 的扩展插件，为 Minecraft 基岩版服务器提供支持，允许 Java 版客户端连接到基岩版服务器。
 
-:::warning[开发状态]
+:::caution[开发状态]
 
 ViaBedrock 目前处于早期开发阶段，**不适合正式使用**。许多功能尚未实现
 
@@ -239,7 +239,7 @@ ViaBedrock 目前处于早期开发阶段，**不适合正式使用**。许多�
 
 ## ViaSnapshot
 
-:::info
+:::note
 
 `GitHub` https://github.com/ViaVersionAddons/ViaSnapshot
 
@@ -256,7 +256,7 @@ ViaSnapshot 支持 Minecraft 快照版本的协议转换，目前支持 15w31a �
 
 ## ViaProxyEaglerCraft {#viaproxyeaglercraft}
 
-:::info
+:::note
 
 `GitHub` https://github.com/Oryxel/ViaProxyEaglerCraft
 
@@ -301,7 +301,7 @@ eagler-server-mode: 0
 legacy-passthrough: true
 ```
 
-:::warning[重要提醒]
+:::caution[重要提醒]
 
 **皮肤文件限制** - 皮肤文件不包含在插件中，需要单独配置皮肤系统
 

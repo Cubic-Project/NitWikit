@@ -2,7 +2,7 @@
 title: ChangeOutput
 ---
 
-:::info
+:::note
 
 `eCloud` https://api.extendedclip.com/expansions/changeoutput
 
@@ -16,7 +16,7 @@ title: ChangeOutput
 
 ## 安装此扩展
 
-```text
+```txt
 /papi ecloud download ChangeOutput
 /papi reload
 ```
@@ -25,7 +25,7 @@ title: ChangeOutput
 
 允许你修改其他变量返回的内容。
 
-```text
+```txt
 %changeoutput_<选项>_input:<输入内容>_matcher:<匹配内容>_ifmatch:<匹配输出的内容>_else:<不匹配输出的内容>%
 ```
 

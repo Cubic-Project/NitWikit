@@ -4,7 +4,7 @@ title: 选择、下载和安装 Java
 
 ## 选择版本
 
-:::warning
+:::caution
 
 部分服务端有在项目的 README 中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java 8，推荐版本为 Java 21 mod 服务端
 
@@ -50,9 +50,9 @@ title: 选择、下载和安装 Java
 
 ## 直接下载
 
-:::warning
+:::caution
 
-此处下载链接可能不是最新版，如需下载最新版请跳转至 [手动下载](#%E6%89%8B%E5%8A%A8%E4%B8%8B%E8%BD%BD)
+此处下载链接可能不是最新版，如需下载最新版请跳转至 [手动下载](#手动下载)
 
 :::
 
@@ -108,7 +108,7 @@ https://www.java.com/zh-CN/download/
 
 </details>
 
-如果你想进行 JVM 优化，请看 [JVM 优化](/java/optimize/jvm)
+如果你想进行 JVM 优化，请看 [JVM 优化](/java/advance/maintenance/optimize/jvm/intro/)
 
 ## 验证 Java 安装
 

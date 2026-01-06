@@ -2,7 +2,7 @@
 title: Progress
 ---
 
-:::info
+:::note
 
 `eCloud` https://api.extendedclip.com/expansions/progress
 
@@ -16,14 +16,14 @@ title: Progress
 
 ## 安装此扩展
 
-```text
+```txt
 /papi ecloud download Progress
 /papi reload
 ```
 
 ## 使用
 
-```text
+```txt
 %progress_bar_{变量}%
 %progress_bar_{变量}_c:<满格符号>%
 %progress_bar_{变量}_p:<半满符号>%
@@ -35,7 +35,7 @@ title: Progress
 
 例如：
 
-```text
+```txt
 name: '内存使用 / 总内存'
 lore:
     - '%progress_bar_{server_ram_used}_m:{server_ram_max}%'

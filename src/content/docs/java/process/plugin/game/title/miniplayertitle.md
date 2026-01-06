@@ -7,7 +7,7 @@ title: MiniPlayerTitle
 [![](https://img.shields.io/github/languages/code-size/DeerGiteaMirror/MiniPlayerTitle)](https://github.com/DeerGiteaMirror/MiniPlayerTitle)
 [![](https://img.shields.io/github/license/DeerGiteaMirror/MiniPlayerTitle)](https://github.com/DeerGiteaMirror/MiniPlayerTitle/blob/main/LICENSE)
 
-```text
+```txt
 一个简化版的称号插件
 ```
 
@@ -44,7 +44,7 @@ QQ 群：309428300
 
 ## 链接
 
-:::info
+:::note
 
 `Hangar` https://hangar.papermc.io/zhangyuheng/MiniPlayerTitle
 

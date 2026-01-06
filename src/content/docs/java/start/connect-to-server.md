@@ -16,7 +16,7 @@ server-port=25565
 
 ## 本地连接
 
-:::warning
+:::caution
 
 此方法仅适用于服务端和客户端在同一机器上的情况
 
@@ -44,7 +44,7 @@ server-port=25565
 -   127.0.0.1:12345
 -   0.0.0.0:12345
 
-:::warning
+:::caution
 
 这里要使用英文的 `:` **不能使用中文** 的 `：` ！
 
@@ -73,7 +73,7 @@ server-port=25565
 
 ### 我没公网
 
-查看 [内网穿透](/process/deploy/intranet-penetration) 部分，按照上面的教程把你的端口映射出去
+查看 [内网穿透](/general/process/deploy/intranet-penetration) 部分，按照上面的教程把你的端口映射出去
 
 ## 常见错误
 

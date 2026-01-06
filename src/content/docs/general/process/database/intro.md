@@ -10,7 +10,7 @@ sidebar:
 
 :::
 
-:::info
+:::note
 
 数据库好处都有啥？谁说对了就给他！
 
@@ -30,7 +30,7 @@ sidebar:
 
 MariaDB 是著名的 MySQL 分叉，只是服务器腐竹的话，你只需要知道这两个东西差不多就好了
 
-:::info
+:::note
 
 当 MariaDB Server 的前身 MySQL 于 2009 年被 Oracle 收购时，MySQL 创始人 Michael“Monty”Widenius 出于对 Oracle 管理权的担忧而分叉了该项目，并将新项目命名为 MariaDB。
 

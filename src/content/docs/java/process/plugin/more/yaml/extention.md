@@ -4,7 +4,7 @@ title: 扩展
 
 ## 锚点
 
-:::warning
+:::caution
 
 锚点一定要先声明再使用。
 

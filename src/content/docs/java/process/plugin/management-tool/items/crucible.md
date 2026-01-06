@@ -2,7 +2,7 @@
 title: Crucible
 ---
 
-:::info
+:::note
 
 `mythiccraft` https://mythiccraft.io/index.php?resources/.2
 

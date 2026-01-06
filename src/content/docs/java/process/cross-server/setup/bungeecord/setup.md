@@ -4,7 +4,7 @@ title: 搭建
 
 ## 下载
 
-前往 [核心选择](../../server-core-choose.md) 下载 BungeeCord / Waterfall
+前往 [核心选择](/java/start/server-core-choose/intro) 下载 BungeeCord / Waterfall
 
 BungeeCord 不再支持过旧版本 Minecraft
 
@@ -12,7 +12,7 @@ BungeeCord 不再支持过旧版本 Minecraft
 
 | 版本   | 构建                                                                                                   |
 | ------ | ------------------------------------------------------------------------------------------------------ |
-| 1.7.10 | [#1119](https://ci.md-5.net/job/BungeeCord/1119) 或 [Travertine](../../server-core-choose.md#核心选择) |
+| 1.7.10 | [#1119](https://ci.md-5.net/job/BungeeCord/1119) 或 [Travertine](/java/start/server-core-choose/intro) |
 | 1.6.4  | [#701](https://ci.md-5.net/job/BungeeCord/701)                                                         |
 | 1.6.2  | [#666](https://ci.md-5.net/job/BungeeCord/666)                                                         |
 | 1.5.2  | [#548](https://ci.md-5.net/job/BungeeCord/548)                                                         |
@@ -37,7 +37,7 @@ java -Xms1024M -Xmx1024M -jar 核心名字.jar
 
 配置 BungeeCord 端根目录中的 `config.yml`
 
-[详细配置文件讲解](config-yml.md)
+[详细配置文件讲解](/java/process/cross-server/setup/bungeecord/config-yml)
 
 ```yaml
 servers:
@@ -87,4 +87,4 @@ bungeecord: false
 
 ## 加入
 
-见 [加入服务器](/docs-java/process/cross-server/join-server.md)
+见 [加入服务器](/java/process/cross-server/join-server)

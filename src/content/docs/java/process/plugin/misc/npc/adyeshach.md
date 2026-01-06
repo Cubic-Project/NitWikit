@@ -8,7 +8,7 @@ title: Adyeshach
 [![Stars](https://img.shields.io/github/stars/taboolib/adyeshach)](https://github.com/TabooLib/adyeshach)
 [![License](https://img.shields.io/github/license/taboolib/adyeshach)](https://github.com/TabooLib/adyeshach/blob/2.0/LICENSE)
 
-```text
+```txt
 Adyeshach 是一款基于 TabooLib 进行开发的纯发包 NPC 插件，旨在大幅提升性能并提供更高级的功能和 API。
 ```
 
@@ -24,7 +24,7 @@ Adyeshach 是一款基于 TabooLib 进行开发的纯发包 NPC 插件，旨在�
 
 ## 链接
 
-:::info
+:::note
 
 `GitHub` https://github.com/TabooLib/Adyeshach
 
@@ -40,7 +40,7 @@ Adyeshach 是一款基于 TabooLib 进行开发的纯发包 NPC 插件，旨在�
 
 ## 1.21
 
-:::info
+:::note
 
 `GitHub` https://github.com/iiabc/adyeshach
 

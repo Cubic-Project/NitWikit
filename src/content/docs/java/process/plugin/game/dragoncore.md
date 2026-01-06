@@ -7,11 +7,11 @@ title: 龙之核心
 龙之核心是基于 Minecraft 1.12.2 版本，以插件 (服务端) + mod (客户端) 的方式，
 实现了丰富的在服务端制作各种客户端功能的方法。
 
-与 [萌芽引擎](germengine.md) 为同类型插件
+与 [萌芽引擎](/java/process/plugin/game/germengine) 为同类型插件
 
 ## 链接
 
-:::info
+:::note
 
 `文档` https://arisa.gitbook.io/internal-wiki
 

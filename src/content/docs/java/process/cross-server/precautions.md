@@ -15,9 +15,9 @@ title: 注意事项
 - 如果你的服务器能直接获取公网（典型的比如带独立 IP 的云服务器）：
   在系统防火墙中禁止该子服服务端可执行文件或该子服对应端口的入站。
 - 如果子服与跨服端位于不同的局域网只能通过公网互相通信：
-  - 在跨服端和子服所处的两台服务器之间建立 VPN
+    - 在跨服端和子服所处的两台服务器之间建立 VPN
       （此处指虚拟专用网络，是通常用于登录学校内网或企业内网的那种网络，不是科学上网！），让子服和跨服端通过 VPN 通信
-  - 选用有成熟的防止玩家绕过跨服端连接子服的方案，如 Velocity + Paper 或 BungeeCord + Spigot/Paper 等
+    - 选用有成熟的防止玩家绕过跨服端连接子服的方案，如 Velocity + Paper 或 BungeeCord + Spigot/Paper 等
 - 因某些原因有独立 IP 又无法开启防火墙：
   选用有成熟的防止玩家绕过跨服端连接子服的方案，如 Velocity + Paper 或 BungeeCord + Spigot/Paper 等
 
@@ -43,17 +43,17 @@ title: 注意事项
 
 ### 关闭权限
 
-在跨服端安装 [LuckPerms](../plugin/management-tool/permission/permission.md) 的跨服端对应版本然后执行命令：
+在跨服端安装 [LuckPerms](/java/process/plugin/management-tool/permission/intro) 的跨服端对应版本然后执行命令：
 
 - BungeeCord
 
-```text
+```txt
 /lpb group default permission set bungeecord.command.server false
 ```
 
 - Velocity
 
-```text
+```txt
 /lpv group default permission set velocity.command.server false
 ```
 

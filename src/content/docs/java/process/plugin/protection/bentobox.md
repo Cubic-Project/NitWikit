@@ -2,7 +2,7 @@
 title: 领域 - BentoBox
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.73261
 

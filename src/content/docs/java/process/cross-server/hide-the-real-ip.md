@@ -23,4 +23,4 @@ title: 隐藏真实 IP
 
 ### 解析到自己域名
 
-- 可参考本文档中的 [申请域名](/advance/domain-and-dns)
+- 可参考本文档中的 [申请域名](/general/advance/domain-and-dns)

@@ -2,7 +2,7 @@
 title: ParseOther
 ---
 
-:::info
+:::note
 
 `eCloud` https://api.extendedclip.com/expansions/parseother
 
@@ -22,14 +22,14 @@ title: ParseOther
 
 ## 安装此扩展
 
-```text
+```txt
 /papi ecloud download ParseOther
 /papi reload
 ```
 
 ## 使用
 
-```text
+```txt
 %parseother_{玩家名称}_{不带百分号的变量}%
 %parseother_unsafe_{玩家名称变量}_{不带百分号的变量}%
 %parseother_{uuid}_{不带百分号的变量}%

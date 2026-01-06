@@ -9,7 +9,7 @@ title: TrMenu
 [![Code Size](https://img.shields.io/github/languages/code-size/CoderKuo/TrMenu)](https://github.com/CoderKuo/TrMenu)
 [![License](https://img.shields.io/badge/license-TrMenu-lightgreen.svg)](https://github.com/CoderKuo/TrMenu/blob/stable/v3/LICENSE.md)
 
-```text
+```txt
 一个功能强大的菜单插件，国人插件。目前由社区维护。
 ```
 
@@ -38,7 +38,7 @@ Notice：维护这个分支完全是个人兴趣。
 
 早已停更，不推荐使用
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.83120/
 
@@ -48,7 +48,7 @@ Notice：维护这个分支完全是个人兴趣。
 
 ### TrMenu v3
 
-:::info
+:::note
 
 `MineBBS` https://www.minebbs.com/resources/trmenu-bug.9080/
 
@@ -92,7 +92,7 @@ TrMenu 入门学习文档
 
 ## VS Code 插件
 
-与 TrMenu 或 [Kether](../../../maintenance/lang/kether/basic.md) 有关的 VS Code 插件
+与 TrMenu 或 [Kether](/java/advance/maintenance/lang/kether/basic) 有关的 VS Code 插件
 
 -   [TrMenu-Helper](https://marketplace.visualstudio.com/items?itemName=hhhhhy.trmenu-helper)
 
@@ -108,7 +108,7 @@ Kether 语法提示
 
 ## 案例
 
-:::warning
+:::caution
 
 请使用 最新的 **TrMenu 社区版** 不保证 **旧** 版本可用性
 
@@ -216,9 +216,9 @@ Sneaking-Offhand:
 
 :::tip
 
-你需要安装 [CheckItem](../../plugin-dependencies/placeholderapi/check-item.md)
+你需要安装 [CheckItem](/java/process/plugin/plugin-dependencies/placeholderapi/check-item)
 
-并 [开启 give 和 remove](../../plugin-dependencies/placeholderapi/check-item.md#启用-give-和-remove) 和 [更改-boolean](../../plugin-dependencies/placeholderapi/faq.md#更改-boolean)
+并 [开启 give 和 remove](/java/process/plugin/plugin-dependencies/placeholderapi/check-item#启用-give-和-remove) 和 [更改-boolean](/java/process/plugin/plugin-dependencies/placeholderapi/faq#更改-boolean)
 
 :::
 
@@ -227,8 +227,8 @@ Sneaking-Offhand:
 **知识点：**
 
 -   TrMenu 文档熟读并背诵
--   [kether](../../../maintenance/lang/kether/basic.md)
--   [CheckItem](../../plugin-dependencies/placeholderapi/check-item.md)
+-   [kether](/java/advance/maintenance/lang/kether/basic)
+-   [CheckItem](/java/process/plugin/plugin-dependencies/placeholderapi/check-item)
 
 ```yaml
 "写法1":
@@ -283,8 +283,8 @@ Sneaking-Offhand:
 **知识点：**
 
 -   TrMenu 文档熟读并背诵
--   [kether](../../../maintenance/lang/kether/basic.md)
--   [CheckItem](../../plugin-dependencies/placeholderapi/check-item.md)
+-   [kether](/java/advance/maintenance/lang/kether/basic)
+-   [CheckItem](/java/process/plugin/plugin-dependencies/placeholderapi/check-item)
 -   [妙妙写法](#妙妙写法)
 -   [\{condition=\}条件](https://hhhhhy.gitbook.io/trmenu-v3/menu/action/option#tiao-jian)
 

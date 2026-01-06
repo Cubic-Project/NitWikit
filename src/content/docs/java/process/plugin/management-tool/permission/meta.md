@@ -100,7 +100,7 @@ title: 数据存储
         - "refresh"
 ```
 
-:::warning
+:::caution
 
 安装 LuckPerms 变量扩展才能正确显示变量
 
@@ -164,7 +164,7 @@ command inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 
 -   `%math_0_60-{server_time_mm}%` // 分
 -   `%math_0_60-{server_time_ss}%` // 秒
 
-不过我不太喜欢这种做法，另一种： [案例 | 变量 | 每日刷新](../../../maintenance/lang/kether/variable.md#每日刷新)
+不过我不太喜欢这种做法，另一种： [案例 | 变量 | 每日刷新](/java/advance/maintenance/lang/kether/variable#每日刷新)
 
 <!--markdownlint-enable line-length-->
 
@@ -184,7 +184,7 @@ command inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 
 
 ![](_assets/memory_9.png)
 
-```text
+```txt
 %luckperms_meta_键名%
 ```
 
@@ -192,7 +192,7 @@ command inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 
 
 此方法 OP 不受影响，但适用性没权限广，因为一些插件只支持判断权限
 
-:::warning
+:::caution
 
 安装 LuckPerms 变量扩展才能正确显示变量
 
@@ -206,7 +206,7 @@ command inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 
 
 好在 [Vulpecula](https://github.com/Lanscarlos/Vulpecula) 的 [memory](https://www.yuque.com/lanscarlos/vulpecula-wiki-v2/og93eqlegc0geyfi) 动作可以用来设置 meta
 
-```text
+```txt
 memory 键名 to 值 using lp
 ```
 
@@ -214,7 +214,7 @@ memory 键名 to 值 using lp
 
 ![](_assets/memory_11.png)
 
-```text
+```txt
 memory 键名 using lp
 ```
 
@@ -230,11 +230,11 @@ memory 键名 using lp
 
 ### 称号系统
 
-见 [案例 | Invero|称号系统](../../../plugin/misc/menu/invero.md)
+见 [案例 | Invero|称号系统](/java/process/plugin/misc/menu/invero)
 
 ## 限时 meta
 
-```text
+```txt
 /lp user postyizhan meta settemp 键 值 时间
 ```
 

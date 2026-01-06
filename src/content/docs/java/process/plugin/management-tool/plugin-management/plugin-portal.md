@@ -2,7 +2,7 @@
 title: Plugin Portal
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.108700/
 

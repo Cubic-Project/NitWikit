@@ -91,7 +91,7 @@ _除非他们自身引入了 Adventure 库 (如 PlaceholderAPI)。_
 
 ### 如何使用
 
-:::warning
+:::caution
 
 本篇不讲述诸如 TAB 等插件或模组自行实现的类似 MiniMessage 效果的使用。
 
@@ -139,7 +139,7 @@ TabooLib Components，当你使用 TabooLib 框架的插件时，可以使用此
 > [https://plugins.ptms.ink/category/行内复合文本](https://plugins.ptms.ink/category/%E8%A1%8C%E5%86%85%E5%A4%8D%E5%90%88%E6%96%87%E6%9C%AC) \
 > https://taboo.8aka.org/components/
 
-```text
+```txt
 [||||||||||||||||||||](gradient=#f6d365,#fda085)
 ```
 
@@ -153,7 +153,7 @@ MineDown 为 Minecraft 引入了 Markdown 风格的文本格式化语法，让�
 
 ### 语法示例
 
-```text
+```txt
 [||||||||||||||||||||](color=#f6d365-#fda085)
 ```
 

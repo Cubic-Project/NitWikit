@@ -8,7 +8,7 @@ sidebar:
 
 ## BlueMap
 
-:::info
+:::note
 
 `官网` https://bluemap.bluecolored.de/
 
@@ -26,7 +26,7 @@ sidebar:
 
 ## Dynmap
 
-:::info
+:::note
 
 `GitHub` https://github.com/webbukkit/dynmap
 
@@ -42,7 +42,7 @@ sidebar:
 
 ## squaremap
 
-:::info
+:::note
 
 `GitHub` https://github.com/jpenilla/squaremap
 
@@ -58,7 +58,7 @@ squaremap 是一款优化了资源的加载和显示的卫星地图 Mod，采用
 
 ## Overviewer
 
-:::info
+:::note
 
 `GitHub` https://github.com/overviewer/Minecraft-Overviewer
 

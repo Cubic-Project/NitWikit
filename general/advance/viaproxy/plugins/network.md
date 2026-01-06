@@ -9,7 +9,7 @@ sidebar_position: 2
 
 ## ViaProxyRakNetProviders {#raknetproviders}
 
-:::info
+:::note
 
 `GitHub` https://github.com/ViaVersionAddons/ViaProxyRakNetProviders
 

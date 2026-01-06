@@ -52,7 +52,7 @@ title: 保护 - Law
 
 ## 链接
 
-:::info
+:::note
 
 `MineBBS` https://www.minebbs.com/resources/.9067
 

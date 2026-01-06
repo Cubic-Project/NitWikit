@@ -41,7 +41,7 @@ lip install github.com/LiteLDev/LeviLamina
 
 lip 会自动下载 BDS 并配置 LeviLamina 加载器
 
-:::info
+:::note
 
 如果因网络问题无法下载 Go 模块或 LeviLamina 及其依赖，可以运行命令
 
@@ -64,7 +64,7 @@ lip config GitHubMirrorURL https://github.bibk.top
 
 :::
 
-:::info
+:::note
 
 如果因网络问题无法下载 BDS 服务端文件可以去其他地方寻找文件下载，并将压缩包放在 `your-folder\.cache\bdsdown`中
 
@@ -94,7 +94,7 @@ bedrock_server_mod.exe
     - 前往他们各自的 GitHub 发布页面：[PeEditor Releases](https://github.com/LiteLDev/PeEditor/releases) 和 [PreLoader Releases](https://github.com/LiteLDev/PreLoader/releases)。
     - 下载最新的 `PeEditor.exe` ​`PreLoader.dll` 文件
 
-:::warning
+:::caution
 
 ​**注意**​：通常，最新版本的 LeviLamina 与最新版本的 PeEditor 和 PreLoader 保持一致。确保它们与你的 BDS 版本兼容。
 

@@ -2,7 +2,7 @@
 title: HolographicDisplays
 ---
 
-:::info
+:::note
 
 `Bukkit` https://dev.bukkit.org/projects/holographic-displays
 
@@ -12,7 +12,7 @@ title: HolographicDisplays
 
 :::
 
-老牌全息图插件，不过咱建议用 [DecentHolograms](decentholograms.md)
+老牌全息图插件，不过咱建议用 [DecentHolograms](/java/process/plugin/misc/holograms/decentholograms)
 
 ## 停更
 

@@ -2,7 +2,7 @@
 title: MiniMOTD
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.81254/
 

@@ -26,7 +26,7 @@ title: 多世界 - MyWorld
 
 ## 链接
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.39594
 

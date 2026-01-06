@@ -6,7 +6,7 @@ title: Notepad++
 
 可用，相关功能也较为完善。
 
-:::warning
+:::caution
 
 作者政治立场可能引起众怒，但请理性看待：
 

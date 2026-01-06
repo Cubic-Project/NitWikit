@@ -10,11 +10,11 @@ title: 常用变量
 
 > https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#player
 
-```text
+```txt
 /papi ecloud download Player
 ```
 
-```text
+```txt
 %player_name%  - 玩家名称
 %player_exp%   - 玩家的 exp
 %player_ping%  - 玩家的延迟
@@ -26,11 +26,11 @@ title: 常用变量
 
 > https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#server
 
-```text
+```txt
 /papi ecloud download Server
 ```
 
-```text
+```txt
 %server_online%         - 服务器在线人数
 %server_max_players%    - 服务器最大在线人数
 %server_tps%            - 服务器 TPS
@@ -45,11 +45,11 @@ title: 常用变量
 
 > https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#vault
 
-```text
+```txt
 /papi ecloud download Vault
 ```
 
-```text
+```txt
 %vault_eco_balance% - 玩家的钱数
 ```
 
@@ -69,31 +69,31 @@ Multiverse-Core v5 已经内置 papi 支持，不再需要额外下载扩展
 
 :::
 
-```text
+```txt
 %multiverse-core_alias% - v5 显示世界别名
 ```
 
 </TabItem>
 <TabItem value="v4" label="Multiverse-Core v4">
 
-```text
+```txt
 /papi ecloud download multiverse
 ```
 
-```text
+```txt
 %multiverse_world_alias% - v4 显示世界别名
 ```
 
 </TabItem>
 </Tabs>
 
-[案例 | 中文世界名](../../world-management/multiverse/faq1.md#世界别名)
+[案例 | 中文世界名](/java/process/plugin/world-management/multiverse/faq1#世界别名)
 
 ## PlayerPoints
 
 > https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#playerpoints
 
-```text
+```txt
 %playerpoints_points% - 点券数
 ```
 
@@ -105,11 +105,11 @@ PlayerPoints 在 3.0.0 以及更高版本会自动挂钩 papi，不再需要自�
 
 > https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#statistic
 
-```text
+```txt
 /papi ecloud download Statistic
 ```
 
-```text
+```txt
 %statistic_time_played:days% - 在线时间（天）
 %statistic_time_played:hours% - 在线时间（时）
 %statistic_time_played:minutes% - 在线时间（分）
@@ -122,11 +122,11 @@ PlayerPoints 在 3.0.0 以及更高版本会自动挂钩 papi，不再需要自�
 
 > https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#luckperms
 
-```text
+```txt
 /papi ecloud download LuckPerms
 ```
 
-```text
+```txt
 %luckperms_prefix% - 返回玩家的前缀
 %luckperms_meta<键名>% - 返回给定元数据键的单个对应值
 %luckperms_groups% - 返回玩家直接继承的权限组列表

@@ -5,7 +5,7 @@ sidebar_position: 10
 
 # ViaProxy
 
-:::info
+:::note
 
 `GitHub` https://github.com/ViaVersion/ViaProxy
 
@@ -97,7 +97,7 @@ ViaProxy 是独立程序，运行在客户端侧，支持全版本和基岩版�
 
 将插件 JAR 文件放入 ViaProxy 的 `plugins` 文件夹，重启 ViaProxy 即可。
 
-:::warning
+:::caution
 
 ViaProxy 主要用于版本兼容性测试和特殊需求场景。对于生产环境，建议使用服务器端的 Via 插件套件。
 

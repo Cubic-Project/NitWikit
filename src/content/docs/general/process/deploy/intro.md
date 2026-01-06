@@ -20,6 +20,6 @@ sidebar:
 
 ## 有何建议？
 
-个人建议使用 VPS [可选方式#VPS](optional-methods.md#vps) 了解到相关内容
+个人建议使用 VPS [可选方式#VPS](/general/process/deploy/optional-methods#vps) 了解到相关内容
 
 如果是新手刚起步，那就不要买东西瞎费钱了，自己电脑上做就可，做成之后可以考虑 VPS 了

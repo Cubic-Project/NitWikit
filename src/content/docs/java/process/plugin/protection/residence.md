@@ -2,7 +2,7 @@
 title: 领地 - Residence
 ---
 
-:::info
+:::note
 
 `Bukkit (旧)` https://dev.bukkit.org/projects/residence
 
@@ -20,7 +20,7 @@ title: 领地 - Residence
 
 最初由 bekvon 维护，后由 Zrips 团队接手维护，并将其变更为 开源付费 模式的插件
 
-:::warning
+:::caution
 
 为避免漏洞利用，建议不要使用 5.1.4.2 以下版本的 Residence
 

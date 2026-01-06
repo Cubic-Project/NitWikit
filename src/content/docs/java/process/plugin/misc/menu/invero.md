@@ -24,7 +24,7 @@ title: Invero
 
 ## 链接
 
-:::info
+:::note
 
 `GitHub` https://github.com/Cubic-Project/Invero
 

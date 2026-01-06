@@ -10,7 +10,7 @@ title: 概述
 
 ## 链接
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.3742
 

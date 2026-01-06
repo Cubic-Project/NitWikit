@@ -22,7 +22,7 @@ Java 版和基岩版的 UUID 不一致，请查阅进阶教程
 
 ## frp 搭建内网穿透想显示真实 IP 怎么办
 
-在 frp 中[开启 PROXY protocol](/advance/frp#配置-proxy-protocol)
+在 frp 中[开启 PROXY protocol](/general/process/deploy/frp#配置-proxy-protocol)
 后，在配置文件里将 enable-proxy-protocol 设置为 true。后续如果不再使用内网穿透，**一定记得把这个配置改回 false**
 
 ## 皮肤不显示怎么办
@@ -82,7 +82,7 @@ Java 版和基岩版的 UUID 不一致，请查阅进阶教程
 
 如果你的服务器使用的是 Java 18 以下并且 CPU 支持 AVX512 (通常来说是 Intel 10 代以上和 AMD)，你可以尝试添加启动参数
 
-```text
+```txt
 -XX:+UnlockDiagnosticVMOptions -XX:-UseAESCTRIntrinsics
 ```
 

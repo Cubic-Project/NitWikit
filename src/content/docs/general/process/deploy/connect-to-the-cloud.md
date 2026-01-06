@@ -47,7 +47,7 @@ sidebar:
 
 </details>
 
-[Linux SSH](../../advance/linux/connect-to-server.md)
+[Linux SSH](/general/advance/linux/connect-to-server)
 
 #### 放行端口
 
@@ -57,7 +57,7 @@ sidebar:
 
 :::danger
 
-配置直接在公网使用 3389 端口连接服务器远程桌面 **会导致严重的安全性问题**，详见 [如何抵御网络攻击](../maintenance/how-to-defend-against-cyber-attacks.md)。
+配置直接在公网使用 3389 端口连接服务器远程桌面 **会导致严重的安全性问题**，详见 [如何抵御网络攻击](/general/advance/maintenance/how-to-defend-against-cyber-attacks)。
 
 :::
 
@@ -85,13 +85,13 @@ sidebar:
 <details>
   <summary>我没有/不知道啥是公网 IP</summary>
 
-[申请公网 ip](apply-for-public-ip-address.md)
+[申请公网 ip](/general/process/deploy/apply-for-public-ip-address)
 
 如果申请不到，那么为了在没有公网 IP 的情况下连接到你的内外机器，你需要 **内网穿透 (frp)**
 
-[内网穿透](intranet-penetration.md)
+[内网穿透](/general/process/deploy/intranet-penetration)
 
-[搭建内网穿透 (frp)](../../advance/frp.md)
+[搭建内网穿透 (frp)](/general/process/deploy/frp)
 
 </details>
 

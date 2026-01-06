@@ -2,7 +2,7 @@
 title: 空岛 - ASkyBlock
 ---
 
-:::info
+:::note
 
 `Bukkit` https://dev.bukkit.org/projects/skyblock
 
@@ -16,4 +16,4 @@ title: 空岛 - ASkyBlock
 
 支持到 1.12
 
-需要 1.13+ 使用 [BSkyBlock](bentobox.md#bskyblock)
+需要 1.13+ 使用 [BSkyBlock](/java/process/plugin/protection/bentobox#bskyblock)

@@ -16,7 +16,7 @@ title: NPC
 
 自定义 NPC 执行命令需要开启命令方块
 
-[如何启用命令方块？](/docs-java/start/config-server.md#启用命令方块)
+[如何启用命令方块？](/java/start/config-server#启用命令方块)
 
 import DocCardList from '@theme/DocCardList';
 

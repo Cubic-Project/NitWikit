@@ -2,7 +2,7 @@
 title: Nova
 ---
 
-:::info
+:::note
 
 `Modrinth` https://modrinth.com/plugin/nova-framework
 

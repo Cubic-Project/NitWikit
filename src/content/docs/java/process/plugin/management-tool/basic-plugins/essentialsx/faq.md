@@ -8,4 +8,4 @@ title: 常见问题
 
 🏆 来的我不是叫你不要装 ess 全家桶？
 
-删了你的 EssentialsXAntiBuild 或者看 [这里](../../permission/tips.md)
+删了你的 EssentialsXAntiBuild 或者看 [这里](/java/process/plugin/management-tool/permission/tips)

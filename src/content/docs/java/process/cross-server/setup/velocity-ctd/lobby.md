@@ -31,7 +31,7 @@ flowchart TD
 
 ### 登录插件
 
-**在你的登录服安装 [登录插件](../../../plugin/misc/login/login.md)**
+**在你的登录服安装 [登录插件](/java/process/plugin/misc/login/intro)**
 
 提供登录验证。
 
@@ -39,7 +39,7 @@ flowchart TD
 
 ### 大厅插件
 
-**在你的登录服安装 [大厅插件](../../../plugin/world-management/lobby/lobby.md)**
+**在你的登录服安装 [大厅插件](/java/process/plugin/world-management/lobby/intro)**
 
 提供各种大厅常用的功能如：
 
@@ -59,7 +59,7 @@ flowchart TD
 
 在你的登录服安装提供跨服传送的插件
 
-使用这些插件将你的玩家从登录服传送到其他子服，可参考 [加入服务器](../../join-server.md)。
+使用这些插件将你的玩家从登录服传送到其他子服，可参考 [加入服务器](/java/process/cross-server/join-server)。
 
 ## Velocity-CTD 特有功能
 

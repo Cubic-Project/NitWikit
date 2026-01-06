@@ -4,7 +4,7 @@ sidebar:
     order: 5
 ---
 
-:::warning
+:::caution
 
 不要使用这种方法获得地图，这会让你在开服圈子丧失信用
 
@@ -14,7 +14,7 @@ NitWikit 不会教授偷取地图的方法
 
 ## 防御
 
-:::warning
+:::caution
 
 目前没有 **纯服务端** 的解决方案，无论是 ClientDetectorPlus 还是其他的都无法检测到 WorldTools
 

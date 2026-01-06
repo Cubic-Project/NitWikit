@@ -2,7 +2,7 @@
 title: SX-Item
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.119751
 

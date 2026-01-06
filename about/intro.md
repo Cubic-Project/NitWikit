@@ -5,7 +5,7 @@ title: 关于我们
 
 # 关于我们
 
-```text
+```txt
 👋你好！我是 Cubic-Project 团队的建立者与 NitWikit 的核心贡献者 llf
 ```
 
@@ -15,7 +15,7 @@ Cubic 在群友的建议中被选中，成为了新组织的名字
 
 ## 驿站自述
 
-```text
+```txt
 👋你好！我是 NitWikit 项目和 8aka-Team 团队的建立者驿站
 ```
 

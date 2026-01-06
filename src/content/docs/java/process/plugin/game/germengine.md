@@ -19,11 +19,11 @@ title: 萌芽引擎
 萌芽引擎经历了 4 年时间的成长 50 多个版本迭代，目前同时在线客户端超过 5 万，
 并且在 300 多台服务器上同时运行。这使得它成为了当今国内 Minecraft 内容制作的潮流。
 
-与 [龙之核心](dragoncore.md) 为同类型插件
+与 [龙之核心](/java/process/plugin/game/dragoncore) 为同类型插件
 
 ## 链接
 
-:::info
+:::note
 
 `MineBBS` https://www.minebbs.com/resources/.7328
 

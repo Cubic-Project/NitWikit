@@ -2,7 +2,7 @@
 title: Quests
 ---
 
-:::info
+:::note
 
 `Bukkit` https://dev.bukkit.org/projects/quests
 

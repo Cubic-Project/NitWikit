@@ -2,7 +2,7 @@
 title: 概述
 ---
 
-:::info
+:::note
 
 `官网`：https://geysermc.org/
 
@@ -26,7 +26,7 @@ Geyser 并不适合 mod 服务器，不要尝试
 
 :::
 
-:::warning
+:::caution
 
 基岩版使用 UDP 协议来传输数据，在使用前请确保你的服务商可以使用 UDP
 

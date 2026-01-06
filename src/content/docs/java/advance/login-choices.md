@@ -38,7 +38,7 @@ title: 登录方式
 
 [Authlib-Injector](https://github.com/yushijinhun/authlib-injector) 是一个允许 Minecraft 使用自定义 Yggdrasil 验证服务器的工具。它可以提供与正版登录几乎相同的游戏体验，但使用的是非官方的身份验证服务器。
 
-::::info
+::::note
 
 Authlib-Injector 仅作为工具，它本身不提供认证服务。你需要找到一个合适的、完全实现了
 [Yggdrasil 服务端技术规范](https://github.com/yushijinhun/authlib-injector/wiki/Yggdrasil-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83)
@@ -47,7 +47,7 @@ Authlib-Injector 仅作为工具，它本身不提供认证服务。你需要找
 - [LittleSkin](https://littleskin.cn/)
 - [红石皮肤站](https://mcskin.com.cn/)
 
-:::warning
+:::caution
 
 **不能确保以上列出的所有服务提供商绝对安全可靠，请注意甄别**
 

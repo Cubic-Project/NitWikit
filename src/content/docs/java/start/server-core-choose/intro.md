@@ -26,7 +26,7 @@ title: 概述
 
 个人推荐插件服使用 Purpur，是截止到 2024 年的稳定性和优化最好的选择
 
-:::info
+:::note
 
 此类核心的存档结构有些不同
 
@@ -86,7 +86,7 @@ Folia 是 Paper 团队开发的高性能服务端，通过多线程并发处理�
 
 ## 更换核心
 
--   **[插件端](plugin.md)**
+-   **[插件端](/java/start/server-core-choose/plugin)**
 
 这类操作几乎无感
 
@@ -94,11 +94,11 @@ Folia 是 Paper 团队开发的高性能服务端，通过多线程并发处理�
 >
 > 如使用 Spigot 替换 Paper 或 Purpur 等
 
--   **[混合端](hybrid.md)**
+-   **[混合端](/java/start/server-core-choose/hybrid)**
 
 这有待商榷，因为各个端兼容性差异较大
 
--   **[Mod 端](mod.md)**
+-   **[Mod 端](/java/start/server-core-choose/mod)**
 
 这几乎不可能，你基本没有可选择的核心
 

@@ -7,7 +7,7 @@ title: TAB
 [![Code Size](https://img.shields.io/github/languages/code-size/NEZNAMY/TAB)](https://github.com/NEZNAMY/TAB)
 [![License](https://img.shields.io/github/license/NEZNAMY/TAB)](https://github.com/NEZNAMY/TAB/blob/main/LICENSE)
 
-```text
+```txt
 TAB 是一个用于在不同位置显示信息的多功能插件，旨在在功能、兼容性和性能方面超越所有类似的插件。
 ```
 
@@ -102,9 +102,9 @@ TAB 是一个用于在不同位置显示信息的多功能插件，旨在在功�
 | 跟进版本         | ✔    |
 | Bug 修复         | ✔    |
 | 文档             | ✔    |
-| 新功能请求       | ❌   |
+| 新功能请求       | ❌    |
 | Customer support | ✔    |
-| 免费用户支持     | ❌\* |
+| 免费用户支持     | ❌\*  |
 | 优化             | ✔    |
 
 1. 添加新的示例、指南和其他人们询问的有用信息。
@@ -121,7 +121,7 @@ https://github.com/NEZNAMY/TAB/wiki/Developer-API
 
 ## 链接
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.57806
 

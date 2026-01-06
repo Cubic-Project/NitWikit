@@ -6,7 +6,7 @@ title: 搭建
 
 ## 下载
 
-在 [核心选择](../../server-core-choose.md) 找到 Velocity 然后下载
+在 [核心选择](/java/start/server-core-choose/intro) 找到 Velocity 然后下载
 
 ## 启动
 
@@ -40,7 +40,7 @@ java -Xms1024M -Xmx1024M -jar 核心名字.jar
 
 :::
 
-[详细配置文件讲解](velocity-toml.md)
+[详细配置文件讲解](/java/process/cross-server/setup/velocity/velocity-toml)
 
 ```toml
 # Velocity 端的端口号，数字 1000~65536 随意
@@ -95,7 +95,7 @@ import TabItem from '@theme/TabItem';
 
 **`modern` 转发** 是 Velocity 的原生格式，以高效的二进制格式转发所有玩家信息，并采用 MAC 代码增加安全性，使非法服务器难以绕过你的 Velocity 代理。但它 **仅支持 Minecraft 1.13 或更高版本**。
 
-:::warning
+:::caution
 
 - `modern` 转发与 **Minecraft 1.13 以下版本** 和 **[ProtocolSupport](https://www.spigotmc.org/resources/.7201) 插件** 不兼容。如果使用这些，你需要使用传统的 BungeeCord 兼容转发。
 
@@ -134,7 +134,7 @@ import TabItem from '@theme/TabItem';
 
   <TabItem value="legacy" label="传统 BungeeCord 兼容转发 (Legacy Forwarding)" default>
 
-:::warning
+:::caution
 
 - 传统转发 **本质上是不安全的**。如果必须使用，应了解如何正确保护你的服务器。
 
@@ -176,6 +176,6 @@ import TabItem from '@theme/TabItem';
 
 ## 加入
 
-见 [加入服务器](/docs-java/process/cross-server/join-server.md)
+见 [加入服务器](/java/process/cross-server/join-server)
 
 <!--markdownlint-enable line-length-->

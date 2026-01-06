@@ -2,7 +2,7 @@
 title: 城镇 - Towny
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/towny-advanced.72694/
 

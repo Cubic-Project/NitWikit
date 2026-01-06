@@ -2,7 +2,7 @@
 title: 地皮 - PlotSquared
 ---
 
-:::info
+:::note
 
 `Bukkit (旧)` https://dev.bukkit.org/projects/plotsquared
 
@@ -26,4 +26,4 @@ title: 地皮 - PlotSquared
 
 ## 前置
 
-[WorldEdit](../world-management/worldedit.md) 或 [FastAsyncWorldEdit](../world-management/fastasyncworldedit.md)
+[WorldEdit](/java/process/plugin/world-management/worldedit) 或 [FastAsyncWorldEdit](/java/process/plugin/world-management/fastasyncworldedit)

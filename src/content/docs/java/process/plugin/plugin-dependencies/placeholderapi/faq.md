@@ -26,9 +26,10 @@ title: 常见问题
 
 在上方图片中，可以看到箭头所指一行是 `%vault_eco_balance%`
 
-你需要安装 [Vault](./../vault/vault.md) 插件和 [经济插件](../xconomy.md)
+你需要安装 [Vault](/java/process/plugin/plugin-dependencies/vault/intro) 插件和 [经济插件](/java/process/plugin/plugin-dependencies/xconomy)
 
-接着，确保你安装了 [PlaceHolderAPI](placeholderapi.md) 插件，执行下方命令
+接着，确保你安装了 [PlaceHolderAPI](/java/process/plugin/plugin-dependencies/placeholderapi
+/intro) 插件，执行下方命令
 
 ```bash
 /papi ecloud download Vault
@@ -73,7 +74,7 @@ boolean:
 
 ## 在哪寻找我要的变量？
 
-:::info
+:::note
 
 `Wiki` :https://wiki.placeholderapi.com/
 
@@ -85,7 +86,7 @@ boolean:
 
 ## 怎么下载变量扩展？
 
-```text
+```txt
 /papi ecloud download 扩展名
 ```
 

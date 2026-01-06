@@ -2,7 +2,7 @@
 title: BeautyQuests
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.39255
 

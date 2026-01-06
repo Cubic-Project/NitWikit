@@ -10,7 +10,7 @@ sidebar_position: 7
 
 Arthas(中文名：阿尔萨斯) 是一个 Java 诊断工具，在 Minecraft 中可以用来分析报错或追踪调用
 
-:::warning
+:::caution
 
 此部分的内容非常难，需要有较高的知识水平!!!
 
@@ -56,7 +56,7 @@ watch -x 2 net.minecraft.server.network.PlayerConnection * '{params[0],@java.lan
 - 后面那一大坨是输出过滤，只关注参数长度为 2，并且发包为`net.minecraft.network.protocol.game.ClientboundSystemChatPacket`或
   `net.minecraft.network.protocol.game.ClientboundPlayerChatPacket`
 
-:::warning
+:::caution
 
 由于混淆映射表的问题，该命令不一定在你的服务端核心上适用
 

@@ -10,7 +10,7 @@ Lumina 是 LeavesMC 开发的一个 Folia 分支，旨在遵循原版生电特�
 
 :::tip
 
-目前 Lumina 处于早期开发阶段，暂时不完善，如果你需要生电特性，推荐使用 [Lophine](luminol.md#lophine)
+目前 Lumina 处于早期开发阶段，暂时不完善，如果你需要生电特性，推荐使用 [Lophine](/java/start/server-core-choose/folia/luminol#lophine)
 
 :::
 
@@ -22,7 +22,7 @@ Lumina 目前在官网上不提供下载，你可以选择自己去编译，或�
 
 ## DeerFolia
 
-:::info
+:::note
 
 `GitHub` https://github.com/DeerGiteaMirror/DeerFolia
 
@@ -41,7 +41,7 @@ Lumina 目前在官网上不提供下载，你可以选择自己去编译，或�
 
 ## DirtyFolia
 
-:::info
+:::note
 
 `GitHub` https://github.com/pluralitycn/DirtyFolia
 
@@ -56,7 +56,7 @@ Lumina 目前在官网上不提供下载，你可以选择自己去编译，或�
 
 ## Kaiiju
 
-:::info
+:::note
 
 `GitHub` https://github.com/KaiijuMC/Kaiiju
 

@@ -2,7 +2,7 @@
 title: Authme
 ---
 
-:::info
+:::note
 
 `Bukkit` https://dev.bukkit.org/projects/authme-reloaded
 
@@ -32,7 +32,7 @@ title: Authme
 
 [AuthMeBungee](https://www.spigotmc.org/resources/.50219/)
 
-[AuthMeVelocity](../../../../process/cross-server/plugin/proxy-only.md#authmevelocity)
+[AuthMeVelocity](/java/process/cross-server/plugin/proxy-only#authmevelocity)
 
 ## 扩展
 

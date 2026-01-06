@@ -10,7 +10,7 @@ title: 常见问题
 
 <!--markdownlint-disable line-length-->
 
-```text
+```txt
 [00:00:00] [Server thread/WARN] Could not load 'plugins/MyAwesomePlugin-1.0.0.jar' in folder 'plugins'
 [00:00:00] [Server thread/WARN] org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [Vault]. Please download and install these plugins to run 'MyAwesomePlugin'.
 ```
@@ -27,7 +27,7 @@ title: 常见问题
 
 <!--markdownlint-disable line-length-->
 
-```text
+```txt
 [00:00:00] [Server thread/WARN] Could not load 'plugins/MyAwesomePlugin-1.0.0.jar' in folder 'plugins'
 [00:00:00] [Server thread/WARN] org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
 ```
@@ -45,7 +45,7 @@ title: 常见问题
 
 <!--markdownlint-disable line-length-->
 
-```text
+```txt
 org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: me/profelements/dynatech/DynaTech has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
 ```
 
@@ -81,7 +81,7 @@ org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError
 
 <!--markdownlint-disable line-length-->
 
-```text
+```txt
 [00:00:00] [Server thread/WARN] Ambiguous plugin name `Essentials' for files `plugins/EssentialsX-2.19.4.jar' and `plugins/Essentialsx-2.20.0-dev.jar' in `plugins'
 ```
 

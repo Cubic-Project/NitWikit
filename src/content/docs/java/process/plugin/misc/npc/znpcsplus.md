@@ -2,7 +2,7 @@
 title: ZNPCsPlus
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/znpcsplus.109380/
 

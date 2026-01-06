@@ -47,7 +47,7 @@ Standalone 版本 可以作为一个独立的代理端启动
 
 ### 独立版
 
-独立版作为一个单独的服务端，你可以参考 [此处](/docs-java/start/launch-server.md) 的开启方法
+独立版作为一个单独的服务端，你可以参考 [此处](/java/start/launch-server) 的开启方法
 
 ## 配置
 
@@ -161,7 +161,7 @@ Floodgate 是一个允许 **Minecraft 基岩版** 帐号加入 **Minecraft Java 
 
 ### 基础配置
 
-:::warning
+:::caution
 
 由于 Floodgate 在设计时并未考虑离线服务器
 
@@ -169,7 +169,7 @@ Floodgate 是一个允许 **Minecraft 基岩版** 帐号加入 **Minecraft Java 
 
 :::
 
-:::warning
+:::caution
 
 若你在使用独立版 Geyser 或群组服，请翻到下方跟随对应教程完成安装
 
@@ -226,7 +226,7 @@ auth-type: floodgate
 
 首先，在群组端安装 Floodgate，并按照基础配置完成安装
 
-:::warning
+:::caution
 
 不要将子服中的 Floodgate 配置直接复制到群组服，会缺少某个重要项
 

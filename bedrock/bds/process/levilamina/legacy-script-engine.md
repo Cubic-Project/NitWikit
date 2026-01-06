@@ -58,7 +58,7 @@ lip install gitea.litebds.com/LiteLDev/legacy-script-engine-nodejs
 lip install gitea.litebds.com/LiteLDev/legacy-script-engine-python
 ```
 
-:::warning
+:::caution
 
 由于 legacy-script-engine-python 与系统中的 Python 解释器冲突，安装时你需要确保系统中没有 Python 解释器。如果系统中已安装 Python 解释器，你需要将其 **彻底卸载** 。
 如果你必须使用系统中的 Python 解释器，你只能放弃所有的 Python 插件。

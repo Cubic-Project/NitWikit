@@ -26,7 +26,7 @@ McGuard 可以在不启动服务器的情况下对服务端中的全部插件进
 
 当 MCG 控制台模式完成启动后，你将见到以下字样：
 
-```text
+```txt
 [McGuard] 感谢您使用 McGuard！
 MCGuard v-b0/r0 Author: huzpsb
 请选择模式 (0-标准模式 1-专家模式 2-开发者模式)：
@@ -36,7 +36,7 @@ MCGuard v-b0/r0 Author: huzpsb
 
 ### 结果
 
-```text
+```txt
 [提示] 正在扫描 MCG.jar ................
 [提示] 正在扫描 Vault.jar ................
 [提示] 正在扫描 [C]安全测试_CoRE.jar ................
@@ -52,7 +52,7 @@ MCGuard v-b0/r0 Author: huzpsb
 
 对于存在异常的插件，MCG 会输出“结果展示”块。并给出异常的具体描述。
 
-:::warning
+:::caution
 
 \*注意，MCG 不会对插件进行修改，也不会对插件进行删除。你需要手动删除异常插件
 

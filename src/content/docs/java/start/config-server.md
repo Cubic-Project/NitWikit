@@ -41,11 +41,11 @@ online-mode=true
 
 **不要在服务器投入运营后去改正版验证状态！** 这会造成 UUID 混乱，玩家数据丢失，当然你可以转换 UUID 来解决这个问题 [查看解决方法](https://klpbbs.com/thread-131458-1-1.html)
 
-如果需要更多的验证方式 (如 **皮肤站**/**统一认证** 等)，请在服务器 **公测前** 确定，具体请参考 [更多验证方式](../advance/login-choices.md)
+如果需要更多的验证方式 (如 **皮肤站**/**统一认证** 等)，请在服务器 **公测前** 确定，具体请参考 [更多验证方式](/java/advance/login-choices)
 
 :::
 
-注意，在离线模式下，玩家大概率没皮肤，你需要 [SkinsRestorer](../process/plugin/misc/skinsrestorer.md)，根据需求选择 SkinsRestorer 的版本。
+注意，在离线模式下，玩家大概率没皮肤，你需要 [SkinsRestorer](/java/process/plugin/misc/skinsrestorer)，根据需求选择 SkinsRestorer 的版本。
 
 ### 最大玩家数
 
@@ -116,13 +116,13 @@ spawn-protection=16
 
 设置为 0 可以禁用
 
-:::warning
+:::caution
 
 强烈 **建议禁用** 这一配置，无论你是否需要出生点保护。
 
 这一配置的保护 **并不能** 防御苦力怕、TNT 等造成的破坏。
 
-如有保护出生点的需求，可以考虑使用插件 [WorldGuard](../process/plugin/world-management/worldguard.md)
+如有保护出生点的需求，可以考虑使用插件 [WorldGuard](/java/process/plugin/world-management/worldguard)
 
 :::
 
@@ -183,7 +183,7 @@ pvp=true
 allow-flight=true
 ```
 
-:::warning
+:::caution
 
 该选项极易误判，因此最好将此值设为 `true`，无论你是否需要飞行，如果你需要反飞行，请查看反作弊一章
 
@@ -191,7 +191,7 @@ allow-flight=true
 
 ### 服务器端口
 
-请前往 [连接服务器](connect-to-server.md) 章节查看
+请前往 [连接服务器](/java/start/connect-to-server) 章节查看
 
 ## 游戏规则
 

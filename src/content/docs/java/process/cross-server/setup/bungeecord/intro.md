@@ -10,4 +10,4 @@ title: 概述
 
 如果开高版本尽量选择 Waterfall 或 Velocity
 
-[关于 Waterfall 停止维护](../../server-core-choose.md#关于-waterfall)
+[关于 Waterfall 停止维护](/java/start/server-core-choose/intro)

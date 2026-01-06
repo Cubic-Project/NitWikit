@@ -8,7 +8,7 @@ title: 概述
 
 Transfer 是一个新的，**不同于 BungeeCord 与 Velocity 的** 跨服方法，在《我的世界》1.20.5 版本被添加。
 
-其去除了中心地位的跨服代理服务器，提供了简单有效的简易跨服方式。[点此](setup.md) 查看搭建方法。
+其去除了中心地位的跨服代理服务器，提供了简单有效的简易跨服方式。[点此](/java/process/cross-server/setup/transfer/setup) 查看搭建方法。
 
 指令格式如下（其中普通括号表示非必须填写）：
 

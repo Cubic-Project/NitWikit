@@ -2,7 +2,7 @@
 title: ProtocolLib
 ---
 
-:::info
+:::note
 
 `Bukkit (旧)` https://dev.bukkit.org/projects/protocollib
 

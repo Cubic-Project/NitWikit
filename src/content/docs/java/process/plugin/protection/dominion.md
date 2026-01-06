@@ -2,7 +2,7 @@
 title: 领地 - Dominion
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/dominion.119514
 
@@ -29,7 +29,7 @@ title: 领地 - Dominion
 
 1. 版本更新快（几乎是遇到一个 bug 修一个然后发一个版本），服务态度好（前提你是正常用户不是捣乱的），作者温柔又善良（嘻嘻）
 2. 完全开源、免费，专为高版本开发。
-3. 支持导入 [Residence](./residence.md) 插件的绝大多数数据。
+3. 支持导入 [Residence](/java/process/plugin/protection/residence) 插件的绝大多数数据。
 
 ## 缺点
 

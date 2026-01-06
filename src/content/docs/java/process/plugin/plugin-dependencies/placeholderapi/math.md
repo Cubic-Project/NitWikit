@@ -2,7 +2,7 @@
 title: Math
 ---
 
-:::info
+:::note
 
 `eCloud` https://api.extendedclip.com/expansions/math
 
@@ -16,7 +16,7 @@ title: Math
 
 ## 安装此扩展
 
-```text
+```txt
 /papi ecloud download Math
 /papi reload
 ```
@@ -25,7 +25,7 @@ title: Math
 
 ### 基础
 
-```text
+```txt
 %math_你的算式%
 ```
 
@@ -47,7 +47,7 @@ math:
 
 或者：
 
-```text
+```txt
 %math_小数位数_你的算式%
 ```
 

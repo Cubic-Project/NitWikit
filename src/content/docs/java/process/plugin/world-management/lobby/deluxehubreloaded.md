@@ -2,7 +2,7 @@
 title: DeluxeHubReloaded
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.118904
 
@@ -12,4 +12,4 @@ title: DeluxeHubReloaded
 
 :::
 
-[DeluxeHub](deluxehub.md) 的第三方维护版本
+[DeluxeHub](/java/process/plugin/world-management/lobby/deluxehub) 的第三方维护版本

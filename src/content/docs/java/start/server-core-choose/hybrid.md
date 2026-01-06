@@ -2,7 +2,7 @@
 title: 混合端
 ---
 
-:::info
+:::note
 
 你可以点击名称栏中的字体跳转并找到下载
 
@@ -29,7 +29,7 @@ Mod 作者们绝大多数都不会受理与混合端相关的问题，风险自�
 | [Mohist](https://mohistmc.com/software/mohist)          | 兼容 Paper 的一些插件支持，兼容 mod 和插件；缺点：比较多插件不支持，部分 mod 不支持；mod 和插件在一起运行难免出现一些七七八八的 bug。                                                                            | 推荐高版本     | [McRes](https://mcres.cn/downloads/mohist.html) [FastMirror](https://www.fastmirror.net/#/download/Mohist) [原子云](https://res.nullatom.com/Minecraft/Server/Mohist/) [MCSL](https://sync.mcsl.com.cn/core/Mohist) | 1.12.2/1.16.5/1.18+   |
 | [Arclight-Forge](https://github.com/IzzelAliz/Arclight) | -                                                                                                                                                                                                                | 推荐高版本     | [FastMirror](https://www.fastmirror.net/#/download/Arclight) [McRes](https://mcres.cn/downloads/arclight.html) [MCSL](https://sync.mcsl.com.cn/core/Arclight)                                                       | 1.16.5+               |
 | [Magma](https://magmafoundation.org/)                   | -                                                                                                                                                                                                                | -              | [McRes](https://mcres.cn/downloads/magma.html)                                                                                                                                                                      | 没用过，不知道        |
-| [Sponge](sponge.md)                                     | 可加入 Sponge 插件，支持 mod，内置小部分优化，非 Sponge 服务端可安装 mod 获得同等效果。缺点：即使你用了很多办法也很难让 Bukkit 插件稳定运行；Sponge 插件特别少；启动速度特别慢。操作特别难，与前面的完全不相同。 | 不推荐新手使用 | [McRes](https://mcres.cn/downloads/spongeforge.html) [FastMirror](https://www.fastmirror.net/#/download/SpongeForge) [MCSL](https://sync.mcsl.com.cn/core/SpongeForge)                                              | 1.7.10 - 最新         |
+| [Sponge](/java/start/server-core-choose/hybrid)         | 可加入 Sponge 插件，支持 mod，内置小部分优化，非 Sponge 服务端可安装 mod 获得同等效果。缺点：即使你用了很多办法也很难让 Bukkit 插件稳定运行；Sponge 插件特别少；启动速度特别慢。操作特别难，与前面的完全不相同。 | 不推荐新手使用 | [McRes](https://mcres.cn/downloads/spongeforge.html) [FastMirror](https://www.fastmirror.net/#/download/SpongeForge) [MCSL](https://sync.mcsl.com.cn/core/SpongeForge)                                              | 1.7.10 - 最新         |
 
 :::tip[Mohist 与 Arclight]
 
@@ -63,7 +63,7 @@ EssentialsX/CMI/HuskHomes -> HuskHomes(Fabric 版)
 
 <!--markdownlint-enable line-length-->
 
-:::info
+:::note
 
 Banner 现在已经不属于 Mohist，同时已经改名为 Taiyitist
 

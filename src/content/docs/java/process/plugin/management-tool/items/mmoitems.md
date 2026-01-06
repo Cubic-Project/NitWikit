@@ -4,7 +4,7 @@ title: MMOItems
 
 ![](_assets/mmoitems.png)
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.39267
 

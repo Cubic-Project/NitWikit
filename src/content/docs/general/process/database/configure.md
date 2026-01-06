@@ -228,7 +228,7 @@ innodb_lock_wait_timeout = 120
 
 </details>
 
-:::warning
+:::caution
 
 绝对不要直接把示例配置文件直接复制粘贴进你的配置文件当中
 
@@ -240,7 +240,7 @@ innodb_lock_wait_timeout = 120
 
 此外，还有一些十分重要的配置项，建议修改，没有的配置项可以自行在配置文件中添加
 
-:::info
+:::note
 
 <!--markdownlint-disable line-length-->
 

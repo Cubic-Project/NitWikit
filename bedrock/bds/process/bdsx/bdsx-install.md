@@ -31,7 +31,7 @@ git clone https://github.com/bdsx/bdsx.git
 
 显示以下内容即代表安装成功 (本人当前安装 Node.js 版本为 10.8.1)：
 
-```text
+```txt
 10.8.1
 ```
 

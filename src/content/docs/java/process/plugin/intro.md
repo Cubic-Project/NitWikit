@@ -6,10 +6,10 @@ title: 概述
 
 建议阅读：
 
--   [YAML 语法](../../advance/yaml/yaml.md) - 了解大部分插件配置文件的语法。
--   [特征文件](./more/plugin-signature-file.md) - 了解插件的一些信息。
--   [颜色代码](./more/color-message.md) - 改变服务器中文本的颜色
--   [什么是乱码](/start/basic/what-is-messy-code) - 了解文本文件中的字符有时为什么会变得奇奇怪怪。
+-   [YAML 语法](/java/process/plugin/more/yaml/intro) - 了解大部分插件配置文件的语法。
+-   [特征文件](/java/process/plugin/more/plugin-signature-file) - 了解插件的一些信息。
+-   [颜色代码](/java/process/plugin/more/color-message) - 改变服务器中文本的颜色
+-   [什么是乱码](/java/start/install-mod-server) - 了解文本文件中的字符有时为什么会变得奇奇怪怪。
 
 ## 基本操作
 
@@ -67,7 +67,7 @@ title: 概述
 -   TrChat 聊天插件
 -   MiniMotd MOTD 插件
 
-Via 自动安装已经移动到 [此处](./misc/via/via.md#笨蛋脚本)
+Via 自动安装已经移动到 [此处](/java/process/plugin/misc/via/intro#笨蛋脚本)
 
 </details>
 
@@ -84,4 +84,4 @@ Via 自动安装已经移动到 [此处](./misc/via/via.md#笨蛋脚本)
 
 ## 我有疑问
 
-如果你想问问题，查看 [如何向大佬求助](/start/ask-for-help)
+如果你想问问题，查看 [如何向大佬求助](/java/advance/maintenance/optimize/ask-for-help)

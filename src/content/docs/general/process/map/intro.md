@@ -4,7 +4,7 @@ sidebar:
     order: 1
 ---
 
-:::warning
+:::caution
 
 此处教程需要你阅读完`创作美术资源`的教程
 
@@ -136,7 +136,7 @@ sidebar:
 
 在原版 Minecraft 中，光线的计算有时候不符合常识，因此我们可以使用光源方块来自己设计光源效果
 
-:::warning
+:::caution
 
 基岩版没有光源方块，光线计算由客户端而非服务端处理
 
@@ -148,7 +148,7 @@ sidebar:
 
 ![](_assets/僵尸末日-2.png)
 
-:::warning
+:::caution
 
 头颅可能因为客户端网络问题或资源包问题导致无法正常显示
 
@@ -158,7 +158,7 @@ sidebar:
 
 ## 工具选取
 
-:::info
+:::note
 
 工具不过多赘述，请自行点击查看
 
@@ -202,7 +202,7 @@ sidebar:
 
 -   [WorldEdit](https://modrinth.com/plugin/worldedit)
 
-:::warning
+:::caution
 
 中大型单人项目不推荐在客户端使用 [WorldEdit](https://modrinth.com/plugin/worldedit) 模组在本地建筑
 
@@ -210,7 +210,7 @@ sidebar:
 
 :::
 
-:::info
+:::note
 
 若你是用于非盈利项目，Axiom 是可以在单人协作上免费使用，并且可以在 [Discord 频道](https://discord.gg/axiomtool) 上申请 30 天白名单用于多人协作
 
@@ -236,13 +236,13 @@ sidebar:
 
 -   [WorldEdit-PMMP](https://github.com/ryuzaki01/pocketmine-WorldEditor)
 
-:::warning
+:::caution
 
 由于基岩版生态的问题，为了保证效率和质量，你应该在 Java 版完成建筑再将其转移到基岩版，而不是使用有限的工具折磨自己
 
 若你无法使用 Minecraft JE，尝试使用 **[Geyser](https://geysermc.org/)** 来进入为自己搭建的 Java 版工程服
 
-[点击转跳到 `将地图转移到基岩版`](./convert.md#将地图转移到基岩版)
+[点击转跳到 `将地图转移到基岩版`](/general/process/map/convert#将地图转移到基岩版)
 
 :::
 
@@ -264,7 +264,7 @@ sidebar:
 
 -   [WorldMachine](https://www.world-machine.com/)
 
-:::info
+:::note
 
 这两款软件均为专业的工作软件，可用于地形、环境建设
 
@@ -296,7 +296,7 @@ sidebar:
 
 使用浮空植物？请关闭随机刻放置方块更新
 
-:::info
+:::note
 
 以上问题可使用 **[WorldGuard](https://modrinth.com/plugin/worldguard/)** 插件的 `/stoplag` 指令停止物理事件
 

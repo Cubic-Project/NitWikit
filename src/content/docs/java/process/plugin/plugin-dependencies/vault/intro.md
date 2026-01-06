@@ -2,7 +2,7 @@
 title: 概述
 ---
 
-:::info
+:::note
 
 `Bukkit` https://dev.bukkit.org/projects/vault
 
@@ -30,7 +30,7 @@ title: 概述
 
 人话：Vault 只是提供经济的插件的前置，本身并不提供经济功能，就是给众多经济系统提供了一个统一接口
 
-想要经济可以看看 [XConomy](../xconomy.md) 页面
+想要经济可以看看 [XConomy](/java/process/plugin/plugin-dependencies/xconomy) 页面
 
 ## Vault 支持旧版和新版本 MC 吗
 

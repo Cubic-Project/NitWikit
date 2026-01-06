@@ -98,7 +98,7 @@ permissions:
 
 ## 链接
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/terraform-generator.75132
 

@@ -2,7 +2,7 @@
 title: MangoQuest
 ---
 
-:::info
+:::note
 
 `GitHub` https://github.com/Cutiemango/MangoQuest
 

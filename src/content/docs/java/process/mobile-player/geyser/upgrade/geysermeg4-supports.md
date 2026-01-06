@@ -34,7 +34,7 @@ title: GeyserMEG4 支持
 
 ## GeyserModelEngine (自定义实体分支)
 
-:::warning
+:::caution
 
 这个是真自定义实体！不支持原版 Geyser，你需要搭配 [Geyser 自定义实体分支](https://github.com/zimzaza4/Geyser) 和资源包一起使用才能正常工作
 

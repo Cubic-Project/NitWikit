@@ -19,7 +19,7 @@ EssentialsX 是一个基于 Spigot 服务端的基础插件，为从大到小的
 
 ## 链接
 
-:::info
+:::note
 
 `官网` https://essentialsx.net
 

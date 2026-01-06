@@ -4,7 +4,7 @@ title: 查包 - InvSee++
 
 <!--markdownlint-disable no-duplicate-heading-->
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/invsee.82342/
 
@@ -16,7 +16,7 @@ title: 查包 - InvSee++
 
 InvSee++ 可以查看和编辑其他玩家的物品栏和末影箱。
 
-[Essentials](../basic-plugins/essentialsx/essentialsx.md) 也有这个功能，但 InvSee++ 可以：
+[Essentials](/java/process/plugin/management-tool/basic-plugins/essentialsx/intro) 也有这个功能，但 InvSee++ 可以：
 
 - 拿走或替换玩家的装备
 - 查询离线玩家的背包

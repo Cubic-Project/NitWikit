@@ -2,7 +2,7 @@
 title: ViaBackwards
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.27448
 
@@ -14,7 +14,7 @@ title: ViaBackwards
 
 :::
 
-Via 三件套中的向下兼容，需要安装 [ViaVersion](viaversion.md) 作为前置
+Via 三件套中的向下兼容，需要安装 [ViaVersion](/java/process/plugin/misc/via/intro) 作为前置
 
 [ViaBackwards 构建站](https://ci.viaversion.com/view/ViaBackwards/job/ViaBackwards/)
 

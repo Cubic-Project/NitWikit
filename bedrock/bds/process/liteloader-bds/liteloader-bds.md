@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # LiteLoaderBDS
 
-LiteLoaderBDS 是 BDS 核心的一款功能强大的插件加载器，简称 LL，是 [LeviLamina](../levilamina/levilamina.md) 的前身，**现已停更**。
+LiteLoaderBDS 是 BDS 核心的一款功能强大的插件加载器，简称 LL，是 [LeviLamina](/bedrock/bds/process/levilamina) 的前身，**现已停更**。
 
 :::tip[你知道吗]
 
@@ -13,7 +13,7 @@ LiteLoaderBDS 是 BDS 核心的一款功能强大的插件加载器，简称 LL�
 
 :::
 
-:::warning
+:::caution
 
 由于该加载器已经停止维护，目前只建议给无法使用 LeviLamina 的旧版 BDS 使用。
 

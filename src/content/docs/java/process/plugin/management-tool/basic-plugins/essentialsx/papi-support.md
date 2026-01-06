@@ -2,7 +2,7 @@
 title: papi 支持
 ---
 
-:::info
+:::note
 
 `官方文档` https://wiki.placeholderapi.com/users/placeholder-list/#essentials
 
@@ -12,14 +12,14 @@ title: papi 支持
 
 ## 安装此扩展
 
-```text
+```txt
 /papi ecloud download Essentials
 /papi reload
 ```
 
 ## 变量
 
-```text
+```txt
 %essentials_afk%
 %essentials_afk_reason%
 %essentials_fly%

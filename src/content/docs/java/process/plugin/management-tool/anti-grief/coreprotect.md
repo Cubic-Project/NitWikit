@@ -2,7 +2,7 @@
 title: 记录 - CoreProtect
 ---
 
-:::info
+:::note
 
 `Bukkit` https://dev.bukkit.org/projects/coreprotect
 

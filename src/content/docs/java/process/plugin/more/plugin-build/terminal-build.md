@@ -7,15 +7,15 @@ title: 使用终端
 ### 1. 安装 JDK
 
 1. **Windows**：
-    - 从 [JDK 选择](/preparation/java/choose-and-download-and-install-java) 选择并下载 JDK
+    - 从 [JDK 选择](/general/java/choose-and-download-and-install-java) 选择并下载 JDK
     - 按照提示完成安装
-    - 配置 [环境变量](/preparation/java/environment)
+    - 配置 [环境变量](/general/java/environment)
     - 验证安装：
         1. 按 `Win + R`，输入 `cmd` 打开终端
         2. 输入 `java -version`
         3. 如果看到类似下面的输出，说明安装成功：
 
-            ```text
+            ```txt
             java version "1.8.0_301"
             Java(TM) SE Runtime Environment (build 1.8.0_301-b09)
             Java HotSpot(TM) 64-Bit Server VM (build 25.301-b09, mixed mode)
@@ -42,7 +42,7 @@ title: 使用终端
         1. 访问 [Maven 官网](https://maven.apache.org/download.cgi) 下载最新版本
         2. 下载 `apache-maven-x.x.x-bin.zip`（x.x.x 是版本号）
         3. 解压到合适位置（建议：`C:\Program Files\Apache\maven`）
-        4. 配置 [环境变量](/preparation/java/environment)：
+        4. 配置 [环境变量](/general/java/environment)：
             - 新建系统变量 `MAVEN_HOME`，值为 Maven 解压目录
             - 在 `Path` 变量末尾添加 `;%MAVEN_HOME%\bin`
         5. 验证安装：
@@ -195,7 +195,7 @@ ls -l build/libs
 如果看到类似 `Could not resolve dependency` 的错误：
 
 1. **配置镜像源**：
-   参考 [配置镜像源](./mirror-config.md) 文档进行配置。
+   参考 [配置镜像源](/java/process/plugin/more/plugin-build/mirror-config) 文档进行配置。
 
 2. **手动下载依赖**：
 

@@ -71,8 +71,8 @@ flowchart TD
 
 ### 主要分支
 
-- **[Luminol](luminol.md)** - 性能、稳定性和功能的最佳平衡，包含 Lophine 生电分支 (1.21+)
-- **[其他分支](misc.md)** - 包含 Molia、DeerFolia、Kaiiju 等
+- **[Luminol](/java/start/server-core-choose/folia/luminol)** - 性能、稳定性和功能的最佳平衡，包含 Lophine 生电分支 (1.21+)
+- **[其他分支](/java/start/server-core-choose/folia/misc)** - 包含 Molia、DeerFolia、Kaiiju 等
 
 ### 快速下载
 
@@ -80,4 +80,4 @@ flowchart TD
 
 - [Folia](https://mcres.cn/downloads/folia.html)
 - [Luminol & Lophine](https://mcres.cn/downloads/luminol.html)
-- [更多分支下载](misc.md)
+- [更多分支下载](/java/start/server-core-choose/folia/misc)

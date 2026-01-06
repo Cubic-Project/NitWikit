@@ -8,13 +8,13 @@ title: Citizens
 [![Stars](https://img.shields.io/github/stars/CitizensDev/Citizens2?style=flat)](https://github.com/CitizensDev/Citizens2)
 [![License](https://img.shields.io/github/license/CitizensDev/Citizens2)](https://github.com/CitizensDev/Citizens2/blob/master/LICENSE)
 
-```text
+```txt
 老牌 NPC 插件。
 ```
 
 ## 汉化
 
-:::info
+:::note
 
 `MineBBS` https://www.minebbs.com/resources/.9107
 
@@ -42,7 +42,7 @@ title: Citizens
 
 ## 链接
 
-:::info
+:::note
 
 `官网` https://wiki.citizensnpcs.co/Citizens_Wiki
 

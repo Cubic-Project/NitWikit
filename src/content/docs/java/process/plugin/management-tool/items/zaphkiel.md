@@ -2,7 +2,7 @@
 title: Zaphkiel
 ---
 
-:::info
+:::note
 
 `GitHub` https://github.com/TabooLib/zaphkiel
 
@@ -16,7 +16,7 @@ title: Zaphkiel
 
 它在保留原项目核心功能的基础上，增加了一些新功能并修复了若干问题
 
-:::info
+:::note
 
 `Modrinth` https://modrinth.com/plugin/zaphkiel-plus
 

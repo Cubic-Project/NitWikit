@@ -2,7 +2,7 @@
 title: LimboAuth
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.95748
 

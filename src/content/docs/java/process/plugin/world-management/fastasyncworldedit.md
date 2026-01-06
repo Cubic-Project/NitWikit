@@ -8,13 +8,13 @@ title: FAWE - FastAsyncWorldEdit
 [![bStats Servers](https://img.shields.io/bstats/servers/1403)](https://bstats.org/plugin/bukkit/FastAsyncWorldEdit/1403)
 [![Crowdin](https://badges.crowdin.net/e/4a5819fae3fd88234a8ea13bfbb072bb/localized.svg)](https://intellectualsites.crowdin.com/fastasyncworldedit)
 
-> 异步创世神，可以直接无脑把 [WorldEdit](worldedit.md) 替换掉
+> 异步创世神，可以直接无脑把 [WorldEdit](/java/process/plugin/world-management/worldedit) 替换掉
 
 FastAsyncWorldEdit 是 WorldEdit 的异步优化版本
 
 ## 链接
 
-:::info
+:::note
 
 `Bukkit` https://dev.bukkit.org/projects/fawe
 

@@ -43,7 +43,7 @@ title: TrChat
 
 ## 链接
 
-:::info
+:::note
 
 `GitHub` https://github.com/TrPlugins/TrChat
 

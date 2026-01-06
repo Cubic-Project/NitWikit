@@ -39,7 +39,7 @@ import TabItem from '@theme/TabItem';
 
 添加启动参数
 
-```text
+```txt
 -javaagent:swoftyworldmanager-classmodifier-<version>.jar
 ```
 
@@ -151,7 +151,7 @@ mongodb:
 
 ## 异步世界生成
 
-:::warning
+:::caution
 
 该功能仅限 1.8 版本
 

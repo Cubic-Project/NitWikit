@@ -2,7 +2,7 @@
 title: PlayerPoints
 ---
 
-:::info
+:::note
 
 `Bukkit (旧)` https://dev.bukkit.org/projects/playerpoints
 

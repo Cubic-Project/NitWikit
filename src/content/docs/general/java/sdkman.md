@@ -44,9 +44,9 @@ SDKMAN! 原生不支持 Windows，但可以通过以下方式使用：
 1. **WSL (推荐)**: 在 Windows Subsystem for Linux 中安装
 2. **Git Bash**: 在 Git Bash 中安装 (可能不稳定)
 
-:::warning
+:::caution
 
-Windows 用户推荐使用 WSL 或直接使用 [AJI 工具](./choose-and-download-and-install-java.md#使用-aji-静默安装-java) 进行
+Windows 用户推荐使用 WSL 或直接使用 [AJI 工具](/general/java/choose-and-download-and-install-java#使用-aji-静默安装-java) 进行
 Java 管理。
 
 :::
@@ -69,7 +69,7 @@ sdk list java
 
 会显示所有可用的 Java 版本和发行版：
 
-```text
+```txt
 ================================================================================
 Available Java Versions for Linux 64bit
 ================================================================================
@@ -207,7 +207,7 @@ java -Xmx4G -Xms4G -jar server.jar nogui
 
 ## 注意事项
 
-:::warning
+:::caution
 
 1. 使用 `sdk use` 命令只在当前终端会话中生效
 2. 如果需要在启动脚本中使用，必须先初始化 SDKMAN! 环境

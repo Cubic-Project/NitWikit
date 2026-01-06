@@ -2,13 +2,13 @@
 title: 经济插件
 ---
 
-这里指以 [Vault](./vault/vault.md) 为前置的为服务器提供经济的 **一类插件**
+这里指以 [Vault](/java/process/plugin/plugin-dependencies/vault/intro) 为前置的为服务器提供经济的 **一类插件**
 
 如 XConomy
 
 ## XConomy
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.75669/
 
@@ -20,7 +20,7 @@ title: 经济插件
 
 国人插件
 
-如果你已经安装了 [基础插件](../management-tool/basic-plugins/basic-plugins.md) 并且 **没有跨服的需求**，可以不安装这个插件
+如果你已经安装了 [[基础插件](/java/process/plugin/management-tool/basic-plugins/intro) 并且 **没有跨服的需求**，可以不安装这个插件
 
 因为基础插件已经提供了经济
 

@@ -4,7 +4,7 @@ title: 创作美术资源
 
 > 大多数市面上的美术风格层次不齐，如果你想让自己服务器元素与原版更贴合，请耐心的看完本页
 
-:::info
+:::note
 
 翻译自 Blockbench Wiki 上的 Minecraft 风格指南
 

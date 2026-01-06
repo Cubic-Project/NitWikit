@@ -27,7 +27,7 @@ title: Sunlight
 
 ## 链接
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.67733
 

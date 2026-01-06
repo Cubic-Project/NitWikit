@@ -127,7 +127,7 @@ sudo chmod -R 777 /var/www/html/namelessmc/uploads
 </TabItem>
 <TabItem value="shared" label="共享主机">
 
-```text
+```txt
 # 通过 FTP 客户端或文件管理器设置权限
 # 文件权限：644
 # 目录权限：755
@@ -151,7 +151,7 @@ sudo chmod -R 777 /var/www/html/namelessmc/uploads
 
 1. **数据库配置**
 
-    ```text
+    ```txt
     数据库类型：MySQL
     主机地址：localhost (或你的数据库主机)
     端口：3306
@@ -165,7 +165,7 @@ sudo chmod -R 777 /var/www/html/namelessmc/uploads
 
 1. **站点配置**
 
-    ```text
+    ```txt
     站点名称：你的服务器名称
     站点 URL：完整的域名地址
     友好 URL：启用 (推荐)
@@ -173,7 +173,7 @@ sudo chmod -R 777 /var/www/html/namelessmc/uploads
 
 1. **管理员账户**
 
-    ```text
+    ```txt
     用户名：admin (可自定义)
     邮箱：admin@yourdomain.com
     密码：强密码

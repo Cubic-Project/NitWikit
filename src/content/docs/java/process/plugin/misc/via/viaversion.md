@@ -2,7 +2,7 @@
 title: ViaVersion
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.19254
 
@@ -18,7 +18,7 @@ title: ViaVersion
 
 :::
 
-ViaVersion 是 Via 三件套的核心，提供了向上兼容，如果你想要向下兼容，可以再安装 [ViaBackwards](viabackwards.md) 和 [ViaRewind](viarewind.md)
+ViaVersion 是 Via 三件套的核心，提供了向上兼容，如果你想要向下兼容，可以再安装 [ViaBackwards](/java/process/plugin/misc/via/viabackwards) 和 [ViaRewind](/java/process/plugin/misc/via/viarewind)
 
 [ViaVersion 构建站](https://ci.viaversion.com/job/ViaVersion)
 

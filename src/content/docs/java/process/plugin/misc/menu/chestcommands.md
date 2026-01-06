@@ -2,7 +2,7 @@
 title: ChestCommands
 ---
 
-:::info
+:::note
 
 `Bukkit` https://dev.bukkit.org/projects/chest-commands
 

@@ -2,7 +2,7 @@
 title: 概述
 ---
 
-:::info
+:::note
 
 `Bukkit (旧)` https://dev.bukkit.org/projects/slimefun
 

@@ -50,19 +50,19 @@ A: _<font color="gray">这里是一些可能的原因</font>_
 
 此外，这是一些常见的代理端报错：
 
-```text
+```txt
 Can't connect to server lobby: If you wish to use IP forwarding, please enable it in your Bungeecord config as well!
 ```
 
-```text
+```txt
 Can't connect to server lobby: Your server did not send a forwarding request to the proxy. Is it set up correctly?
 ```
 
-这些报错是你不正确配置代理端引起的 [点此前往了解 Velocity 配置](velocity-toml.md)
+这些报错是你不正确配置代理端引起的 [点此前往了解 Velocity 配置](/java/process/cross-server/setup/velocity/velocity-toml)
 
 此外，如果你同时启用了 BungeeCord 模式，也会报出以上错误，如果你使用 Velocity，那么请务必关闭 BungeeCord 模式
 
-```text
+```txt
 Can't connect to server lobby: This server requires you to connect with Velocity.
 ```
 
@@ -72,7 +72,7 @@ Can't connect to server lobby: This server requires you to connect with Velocity
 
 A: 如果你的服务器会出现这种情况：
 
-```text
+```txt
 [server connection] player1 -> hub has connected
 [connected player] player1 (/localhost: 58943): kicked from server hub: Invalid payload REGISTER!
 ```
@@ -100,7 +100,7 @@ A: 一句话，mod 太多太大导致连接时间延长了。
 
 A: 不行，至少现在不行，你只能在 `velocity.toml` 中设置一个单一的转发模式
 
-关于各个不同的转发模式，可以看到这里 [搭建](setup.md#子服配置)
+关于各个不同的转发模式，可以看到这里 [搭建](/java/process/cross-server/setup/velocity/setup#子服配置)
 
 有大佬提出了关于这个问题的 [PR](https://github.com/PaperMC/Velocity/pull/1357)
 

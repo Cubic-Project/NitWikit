@@ -26,7 +26,7 @@ Mod 端的选择一般优先考虑玩法（即主要的玩法 mod），再考虑
 
 Sinytra Connector(中文名：信雅互联) 可以在 Forge 上运行 Fabric 模组
 
-:::warning
+:::caution
 
 除非非常有必要，最好不要使用信雅互联，这会大大增加服务器崩溃概率
 
@@ -61,7 +61,7 @@ Kilt 可以在 Fabric 上运行 Forge 模组
 
 [下载地址](https://www.mcmod.cn/class/3391.html)，还需要安装 [Legacy Fabric API](https://www.mcmod.cn/class/3398.html)
 
-:::warning
+:::caution
 
 Legacy Fabric 的模组生态相较于 Forge 并不完善，不建议使用。
 

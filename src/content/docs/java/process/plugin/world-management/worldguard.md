@@ -25,7 +25,7 @@ WorldGuard 可以保护你的区域或世界，使他们免受破坏，或者调
 
 ## 链接
 
-:::info
+:::note
 
 `Bukkit` https://dev.bukkit.org/projects/worldguard
 
@@ -49,7 +49,7 @@ WorldGuard 可以保护你的区域或世界，使他们免受破坏，或者调
 
 ## 前置
 
-[WorldEdit](./worldedit.md) 或 [FastAsyncWorldEdit](./fastasyncworldedit.md)
+[WorldEdit](/java/process/plugin/world-management/worldedit) 或 [FastAsyncWorldEdit](/java/process/plugin/world-management/fastasyncworldedit)
 
 ## Bstats
 

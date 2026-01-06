@@ -39,7 +39,7 @@ title: 概述
 
 ![链接](_assets/3.png)
 
-:::info
+:::note
 
 `官网` https://luckperms.net
 

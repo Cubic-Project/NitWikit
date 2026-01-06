@@ -8,13 +8,13 @@ title: 加入服务器
 
 ### `/server` 命令
 
-```text
+```txt
 /server [配置中设置的子服名字]
 ```
 
-不过不建议用 `/server` 详见 [此处](/docs-java/process/cross-server/precautions.md#不要给玩家-server-权限)
+不过不建议用 `/server` 详见 [此处](/java/process/cross-server/precautions#不要给玩家-server-权限)
 
-:::warning
+:::caution
 
 此命令只能由玩家自己在聊天框里敲命令执行，插件不能让玩家执行此命令！
 
@@ -28,7 +28,7 @@ title: 加入服务器
 
 https://wiki.citizensnpcs.co/NPC_Commands#Bungee
 
-```text
+```txt
 /npc command add -p server MyServerName
 ```
 
@@ -48,7 +48,7 @@ import invero connect 子服名
 
 https://github.com/gonalez/znpcs/wiki/Commands#server
 
-```text
+```txt
 /znpcs action [id] add SERVER [server]
 ```
 

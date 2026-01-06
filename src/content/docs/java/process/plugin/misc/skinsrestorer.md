@@ -2,7 +2,7 @@
 title: SkinsRestorer
 ---
 
-:::info
+:::note
 
 `官网` https://skinsrestorer.net
 

@@ -2,7 +2,7 @@
 title: EcoItems
 ---
 
-:::info
+:::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.94601
 

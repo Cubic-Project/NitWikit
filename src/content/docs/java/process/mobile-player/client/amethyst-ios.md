@@ -200,7 +200,7 @@ A12-A17/M1-M2 处理器的 iPhone，iPad 等在 iOS/iPadOS 14.0 beta 2 ~ 17.0 �
 
 ## 方法四：越狱
 
-:::warning
+:::caution
 
 本文档不对你的设备安全负责
 

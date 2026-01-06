@@ -2,7 +2,7 @@
 title: SuperLobbyDeluxe
 ---
 
-:::info
+:::note
 
 `Bukkit` https://dev.bukkit.org/projects/superlobbydeluxe
 
