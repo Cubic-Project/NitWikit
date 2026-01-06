@@ -24,6 +24,7 @@
     },
     "devDependencies": {
         "@vite-pwa/astro": "^1.2.0",
+        "starlight-contributor-list": "^0.3.1",
         "starlight-links-validator": "^0.19.2",
         "starlight-scroll-to-top": "^0.4.0",
         "tailwindcss": "^4.1.18",
