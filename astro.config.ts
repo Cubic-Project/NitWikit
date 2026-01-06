@@ -30,6 +30,7 @@ export default defineConfig({
             editLink: {
                 baseUrl: "https://github.com/Cubic-Project/NitWikit/edit/main/"
             },
+            customCss: ["./src/styles/global.css"],
             plugins: [
                 starlightGiscus({
                     repo: "Cubic-Project/NitWikit",
