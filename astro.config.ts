@@ -93,6 +93,7 @@ export default defineConfig({
                                             collapsed: true,
                                             items: [
                                                 "java/start/server-core-choose/intro",
+                                                "java/start/server-core-choose/relationship-between-servers",
                                                 "java/start/server-core-choose/plugin",
                                                 "java/start/server-core-choose/mod",
                                                 "java/start/server-core-choose/hybrid",
