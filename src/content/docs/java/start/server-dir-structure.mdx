@@ -10,6 +10,7 @@ import { FileTree } from '@astrojs/starlight/components';
 我们先来简单看一眼 插件端 的文件夹结构 (以 Purpur 为例)：
 
 <FileTree>
+
 - assets/ 储存 Minecraft 资源文件，不要乱动
 - cache/ 缓存文件夹
 - config/ Paper 服务器配置文件
@@ -56,6 +57,7 @@ import { FileTree } from '@astrojs/starlight/components';
 - usercache.json 玩家名称和 UUID 缓存
 - version_history 版本信息记录
 - whitelist.json 白名单列表
+
 </FileTree>
 
 对于类似 Catserver 的混合服务器，文件夹结构是类似的，基本就多了 `/mods` 文件夹，少了 Bukkit 的下游服务器特有的配置 (如 `purpur.yml` 等)。

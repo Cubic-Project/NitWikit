@@ -51,7 +51,26 @@ export default defineConfig({
                                 {
                                     label: "从零开始",
                                     collapsed: false,
-                                    items: [{ label: "快速开始", slug: "general/intro" }, "general/reading-guide"]
+                                    items: [
+                                        { label: "快速开始", slug: "general/intro" },
+                                        "general/reading-guide",
+                                        {
+                                            label: "安装 Java",
+                                            collapsed: true,
+                                            items: [
+                                                "general/java/intro",
+                                                "general/java/choose-and-download-and-install-java",
+                                                "general/java/environment",
+                                                "general/java/sdkman",
+                                                "general/java/faq"
+                                            ]
+                                        },
+                                        {
+                                            label: "文本编辑器",
+                                            collapsed: true,
+                                            autogenerate: { directory: "general/preparation/text-editor" }
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -778,9 +797,205 @@ export default defineConfig({
                                     items: ["bedrock/intro"]
                                 },
                                 {
+                                    label: "超级基础知识",
+                                    items: [
+                                        "bedrock/super-basic/intro",
+                                        "bedrock/super-basic/server-core-choose",
+                                        "bedrock/super-basic/server-type",
+                                        "bedrock/super-basic/protocol-version-number",
+                                        "bedrock/super-basic/version"
+                                    ]
+                                },
+                                {
                                     label: "BDS 核心",
                                     collapsed: true,
-                                    items: []
+                                    items: [
+                                        {
+                                            label: "准备工作",
+                                            collapsed: true,
+                                            items: [
+                                                "bedrock/bds/preparation/intro",
+                                                {
+                                                    label: "文本编辑器",
+                                                    collapsed: true,
+                                                    autogenerate: { directory: "general/preparation/text-editor" }
+                                                },
+                                                "bedrock/bds/preparation/vcruntime",
+                                                "bedrock/bds/preparation/websites"
+                                            ]
+                                        },
+                                        {
+                                            label: "开始阶段",
+                                            collapsed: true,
+                                            items: [
+                                                "bedrock/bds/start/intro",
+                                                {
+                                                    label: "基础知识",
+                                                    items: [
+                                                        "bedrock/bds/start/basic/intro",
+                                                        "bedrock/bds/start/basic/server-dir-structure"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            label: "建设阶段",
+                                            collapsed: true,
+                                            items: [
+                                                "bedrock/bds/process/intro",
+                                                {
+                                                    label: "插件",
+                                                    collapsed: true,
+                                                    items: [
+                                                        "bedrock/bds/process/plugins/intro",
+                                                        "bedrock/bds/process/plugins/how-to-load-plugins",
+                                                        "bedrock/bds/process/plugins/plugins-loader-choose"
+                                                    ]
+                                                },
+                                                {
+                                                    label: "BDSX",
+                                                    collapsed: true,
+                                                    items: [
+                                                        "bedrock/bds/process/bdsx/intro",
+                                                        "bedrock/bds/process/bdsx/install"
+                                                    ]
+                                                },
+                                                {
+                                                    label: "EndStone",
+                                                    collapsed: true,
+                                                    items: [
+                                                        "bedrock/bds/process/endstone/intro",
+                                                        "bedrock/bds/process/endstone/install",
+                                                        "bedrock/bds/process/endstone/plugins"
+                                                    ]
+                                                },
+                                                {
+                                                    label: "LeviLamina",
+                                                    collapsed: true,
+                                                    items: [
+                                                        "bedrock/bds/process/levilamina/intro",
+                                                        "bedrock/bds/process/levilamina/install",
+                                                        "bedrock/bds/process/levilamina/plugins",
+                                                        "bedrock/bds/process/levilamina/legacy-script-engine"
+                                                    ]
+                                                },
+                                                {
+                                                    label: "LiteLoaderBDS",
+                                                    collapsed: true,
+                                                    items: [
+                                                        "bedrock/bds/process/liteloader-bds/intro",
+                                                        "bedrock/bds/process/liteloader-bds/install",
+                                                        "bedrock/bds/process/liteloader-bds/plugins"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    label: "Nukkit 核心",
+                                    collapsed: true,
+                                    items: [
+                                        "bedrock/nukkit/intro",
+                                        {
+                                            label: "准备工作",
+                                            collapsed: true,
+                                            items: [
+                                                "bedrock/nukkit/preparation/intro",
+                                                {
+                                                    label: "安装 Java",
+                                                    collapsed: true,
+                                                    items: [
+                                                        "general/java/intro",
+                                                        "general/java/choose-and-download-and-install-java",
+                                                        "general/java/environment",
+                                                        "general/java/sdkman",
+                                                        "general/java/faq"
+                                                    ]
+                                                },
+                                                "bedrock/nukkit/preparation/websites",
+                                                {
+                                                    label: "文本编辑器",
+                                                    collapsed: true,
+                                                    autogenerate: { directory: "general/preparation/text-editor" }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            label: "开始阶段",
+                                            collapsed: true,
+                                            items: [
+                                                "bedrock/nukkit/start/intro",
+                                                {
+                                                    label: "基础知识",
+                                                    collapsed: true,
+                                                    items: [
+                                                        "bedrock/nukkit/start/basic/intro",
+                                                        "bedrock/nukkit/start/basic/server-file-structure"
+                                                    ]
+                                                },
+                                                "bedrock/nukkit/start/nukkitmot",
+                                                "bedrock/nukkit/start/nukkitx",
+                                                {
+                                                    label: "PM1E 核心",
+                                                    collapsed: true,
+                                                    items: [
+                                                        "bedrock/nukkit/start/pm1e/intro",
+                                                        "bedrock/nukkit/start/pm1e/controversy"
+                                                    ]
+                                                },
+                                                "bedrock/nukkit/start/pnx"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    label: "PocketMine 核心",
+                                    collapsed: true,
+                                    items: [
+                                        "bedrock/pocketmine/intro",
+                                        {
+                                            label: "准备工作",
+                                            collapsed: true,
+                                            items: [
+                                                "bedrock/pocketmine/preparation/intro",
+                                                "bedrock/pocketmine/preparation/choose-and-download-and-install-php",
+                                                "bedrock/pocketmine/preparation/websites",
+                                                {
+                                                    label: "文本编辑器",
+                                                    collapsed: true,
+                                                    autogenerate: { directory: "general/preparation/text-editor" }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    label: "其他基岩版服务器核心",
+                                    collapsed: true,
+                                    items: [
+                                        {
+                                            label: "准备工作",
+                                            collapsed: true,
+                                            items: [
+                                                "bedrock/misc/preparation/intro",
+                                                "bedrock/misc/preparation/websites",
+                                                {
+                                                    label: "文本编辑器",
+                                                    collapsed: true,
+                                                    autogenerate: { directory: "general/preparation/text-editor" }
+                                                }
+                                            ]
+                                        },
+                                        "bedrock/misc/allay",
+                                        "bedrock/misc/dragonfly",
+                                        "bedrock/misc/mcpeserver"
+                                    ]
+                                },
+                                {
+                                    label: "WaterdogePE 跨服",
+                                    collapsed: true,
+                                    items: ["bedrock/waterdogepe/preparation"]
                                 }
                             ]
                         }

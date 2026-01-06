@@ -4,6 +4,8 @@ slug: /Sundry/Advance/management/player-management/client-distribution
 sidebar_position: 6
 ---
 
+import { FileTree } from '@astrojs/starlight/components';
+
 # 分发客户端
 
 当你的服务器要求玩家使用特定版本客户端或安装特定模组时，你需要主动为玩家提供客户端的获取方式，方便新玩家们更方便地玩上你的服务器。
@@ -40,10 +42,16 @@ sidebar_position: 6
 
 2. **解压至整合包目录，以 HMCL 为例，结构如下：**
 
-import StructureExplorer from "@site/src/components/StructureExplorer";
-import { hmclModpackStructure } from "@site/src/data/structures";
+   <FileTree>
 
-<StructureExplorer data={hmclModpackStructure} />
+   - MyModpack
+     - java
+       - bin
+     - HMCL.exe
+     - hmcl.json
+     - .minecraft
+
+   </FileTree>
 
 3. **调整启动器设置：**
    以 HMCL 为例，前往 **版本管理** ，确保启用了 **启用版本特定游戏设置（不影响其他游戏版本）** ，**游戏 Java** 选择 **指定 Java 版本** ，在此选项同一行的右侧输入框中填写以下内容：
