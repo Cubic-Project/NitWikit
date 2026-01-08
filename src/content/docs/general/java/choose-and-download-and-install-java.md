@@ -2,15 +2,13 @@
 title: 选择、下载和安装 Java
 ---
 
-## 选择版本
-
 :::caution
 
 部分服务端有在项目的 README 中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java 8，推荐版本为 Java 21 mod 服务端
 
 :::
 
-### 常见插件端 (Paper 等)
+## 常见插件端 (Paper 等)
 
 | Minecraft 版本 | 最低版本 | 推荐版本 |
 | -------------- | -------- | -------- |
@@ -21,9 +19,9 @@ title: 选择、下载和安装 Java
 | 1.18 - 1.20.4  | Java 17  | Java 21  |
 | 1.20.5 - 1.21  | Java 21  | Java 21  |
 
-### 混合服务端 (CatServer 等)
+## 混合服务端 (CatServer 等)
 
-#### CatServer
+### CatServer
 
 | Minecraft 版本 | 最低版本 | 推荐版本 |
 | -------------- | -------- | -------- |
@@ -31,7 +29,7 @@ title: 选择、下载和安装 Java
 | 1.16.5         | Java 8   | Java 11  |
 | 1.18.2         | Java 17  | Java 17  |
 
-#### Mohist
+### Mohist
 
 | Minecraft 版本  | 最低版本 | 推荐版本 |
 | --------------- | -------- | -------- |
@@ -39,7 +37,7 @@ title: 选择、下载和安装 Java
 | 1.16.5          | Java 11  | Java 11  |
 | 1.18.2 - 1.20.2 | Java 17  | Java 17  |
 
-#### SpongeForge
+### SpongeForge
 
 | Minecraft 版本         | 最低版本 | 推荐版本 |
 | ---------------------- | -------- | -------- |
@@ -80,11 +78,11 @@ title: 选择、下载和安装 Java
 
 ## 手动下载
 
-### 下载镜像
+## 下载镜像
 
 [InJDK](https://d10.injdk.cn/openjdk/) 各种 JDK 的下载镜像
 
-### Oracle 版
+## Oracle 版
 
 官方版本
 
