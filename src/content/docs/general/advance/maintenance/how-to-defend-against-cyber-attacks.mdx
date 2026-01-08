@@ -172,7 +172,7 @@ connection_throttle_limit: 3
 
 以下是推荐的反机器人插件列表
 
-<!--markdownlint-disable line-length-->
+{/* <!--markdownlint-disable line-length--> */}
 
 | 名称                                                         | 介绍                                                         | 支持平台                                                 | 缺点                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------------------------- | -------------------------------------------------------- |
@@ -182,7 +182,7 @@ connection_throttle_limit: 3
 | [EpicGuard](https://github.com/4drian3d/EpicGuard)           | 基于事件的反机器人和反 VPN 插件                              | Waterfall (停止维护)，Paper，Velocity                    | 容易绕过 (但没那么烦人)，且只支持特定的 Paper 服务端。   |
 | [AntiAttackRL](https://github.com/AntiAttackMC/AATRL_Public) | 支持多平台的 AntiBot 插件                                    | Bukkit，BungeeCord，Folia，Sponge，Velocity 与它们的分支 | 受攻击时新玩家无法直接进入，需要管理员操作; 防御方案过时 |
 
-<!--markdownlint-enable line-length-->
+{/* <!--markdownlint-enable line-length--> */}
 
 :::caution
 
@@ -267,8 +267,7 @@ NullCordX 是一个较好的选择。
 
 那些在 CF 上 A (或 AAAA，CNAME) 过去到源站 (可能配上 SRV) 就是 **自欺欺人，完全没用**，CF 压根不会代理这些端口和协议的流量，开小黄云也一样
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import { TabItem, Tabs } from "@astrojs/starlight/components";
 
 <Tabs queryString="protect">
 <TabItem value="cf-tunnel" label="Cloudflare Tunnel">
@@ -481,7 +480,7 @@ Cloudflare Spectrum 目前是没中国节点的
 因为在开服圈子的任何一处这种方法都是一种十分自私、对同行极不负责任的行为。
 你的行为可能会导致相应的内网穿透运营商突然出现大量额外支出，并影响大量使用同一节点的人正常使用服务 (如果节点被打死了，那么攻击者就是在攻击你的过程中误伤了大量其他无辜用户)。不要因为你图省事的想法牵连无辜的陌生人。
 
-<!--![](_assets/angryopenfrp.jpg)  -->
+{/* ![](_assets/angryopenfrp.jpg)  */}
 
 :::
 

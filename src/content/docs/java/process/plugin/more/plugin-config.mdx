@@ -16,8 +16,7 @@ title: 汉化插件
 
 ## 查看插件支持的语言
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import { TabItem, Tabs } from "@astrojs/starlight/components";
 
 <Tabs queryString="plugin-language">
 <TabItem value="spigotmc" label="SpigotMC">
@@ -40,18 +39,18 @@ import TabItem from '@theme/TabItem';
 
 插件文件夹中有类似 Language、lang、locale 之类的文件夹 (或其他东西？)：
 
-<!-- autocorrect disable space-world-->
+{/* <!-- autocorrect disable space-world--> */}
 
 ![](_assets/查看语言-1.png)
 
 请寻找 zhcn、zh-cn、zh-CN、chinese 等字眼：
 
-<!-- autocorrect enable space-world-->
-<!-- autocorrect disable space-world-->
+{/* <!-- autocorrect enable space-world--> */}
+{/* <!-- autocorrect disable space-world--> */}
 
 ![](_assets/查看语言-2.png)
 
-<!-- autocorrect enable space-world-->
+{/* <!-- autocorrect enable space-world--> */}
 
 然后一般要去插件配置文件 (多数为 config.yml) 把语言改成这里的文件名 (此处为 zh_cn)。
 
@@ -63,12 +62,11 @@ import TabItem from '@theme/TabItem';
 
 如果我们在插件文件夹找不到语言文件夹，可以直接用解压缩软件打开 jar 包：
 
-<!-- autocorrect disable space-world-->
+{/* <!-- autocorrect disable space-world--> */}
 
 ![](_assets/查看语言-拆开jar.png)
 
-<!-- autocorrect enable space-world-->
-
+{/* <!-- autocorrect enable space-world--> */}
 碰到这之外的情况就需要你自己摸索了
 
 </TabItem>
@@ -103,13 +101,13 @@ import TabItem from '@theme/TabItem';
 
 口令参考：
 
-<!--markdownlint-disable line-length-->
+{/* <!--markdownlint-disable line-length--> */}
 
 ```txt
 请将我给出的以 YAML 格式存储的 Minecraft 插件的配置文件汉化，且不改变本身的可执行性，其中被两个 % 包裹的为变量请不要翻译，请翻译时不要带翻译腔，而是要翻译得自然、流畅和地道，使用优美和高雅的表达方式并代入 Minecraft 游戏内进行翻译，翻译后请以 Markdown 代码块的格式发送
 ```
 
-<!--markdownlint-enable line-length-->
+{/* <!--markdownlint-enable line-length--> */}
 
 备注：本教程并非推荐服主通过 GPT 等 AI 进行机翻，我们不对服主利用 AI 产生文本的行为及其内容负责。
 

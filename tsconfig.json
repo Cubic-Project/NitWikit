@@ -3,6 +3,9 @@
     "include": [".astro/types.d.ts", "**/*"],
     "exclude": ["dist"],
     "compilerOptions": {
-        "resolveJsonModule": true,
+        "resolveJsonModule": true
+    },
+    "mdx": {
+        "checkMdx": true
     }
 }

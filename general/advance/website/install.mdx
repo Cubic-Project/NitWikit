@@ -3,8 +3,7 @@ title: 安装
 sidebar_position: 3
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import { TabItem, Tabs } from "@astrojs/starlight/components";
 
 # 安装
 
@@ -12,8 +11,8 @@ import TabItem from '@theme/TabItem';
 
 ## 下载
 
-<Tabs groupId="download-method">
-<TabItem value="direct" label="直接下载">
+<Tabs>
+<TabItem label="直接下载">
 
 ```bash
 curl -L "https://github.com/NamelessMC/Nameless/releases/latest/download/nameless-deps-dist.tar.xz" | tar --xz --extract --directory=/var/www/html --file -
@@ -24,7 +23,7 @@ wget -O - "https://github.com/NamelessMC/Nameless/releases/latest/download/namel
 如果你是 Windows，直接下载解压到网站目录即可 (Apache 通常是 `htdocs`)
 
 </TabItem>
-<TabItem value="git" label="Git">
+<TabItem label="Git">
 
 不推荐这么干，容易爆炸
 
@@ -34,7 +33,7 @@ git clone --branch v2 https://github.com/NamelessMC/Nameless.git /var/www/html/n
 ```
 
 </TabItem>
-<TabItem value="composer" label="Composer">
+<TabItem label="Composer">
 
 ```bash
 # 通过 Composer 安装
@@ -42,7 +41,7 @@ composer create-project namelessmc/nameless /var/www/html/namelessmc
 ```
 
 </TabItem>
-<TabItem value="docker" label="Docker">
+<TabItem label="Docker">
 
 1. **安装 Docker Compose** (Debian/Ubuntu):
 
@@ -87,8 +86,8 @@ composer create-project namelessmc/nameless /var/www/html/namelessmc
 
 ### 2. 设置文件权限
 
-<Tabs groupId="operating-systems">
-<TabItem value="ubuntu" label="Ubuntu/Debian">
+<Tabs>
+<TabItem label="Ubuntu/Debian">
 
 ```bash
 # 设置所有者
@@ -106,7 +105,7 @@ sudo chmod -R 777 /var/www/html/namelessmc/uploads
 ```
 
 </TabItem>
-<TabItem value="centos" label="CentOS/Rocky Linux">
+<TabItem label="CentOS/Rocky Linux">
 
 ```bash
 # 设置所有者
@@ -125,7 +124,7 @@ sudo chmod -R 777 /var/www/html/namelessmc/uploads
 ```
 
 </TabItem>
-<TabItem value="shared" label="共享主机">
+<TabItem label="共享主机">
 
 ```txt
 # 通过 FTP 客户端或文件管理器设置权限

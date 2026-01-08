@@ -8,7 +8,7 @@ title: 插件下载
 
 我们在此以 spigotmc.org 为例 (假设你已经注册成功)，讲解如何选择插件。
 
-<!--markdownlint-disable ol-prefix-->
+{/* <!--markdownlint-disable ol-prefix--> */}
 
 1. (_可选，推荐_) 安装一个 SpigotMC 专用的 [搜索引擎](https://fof1092.de/Plugins/SSE/Redirect/)，作为浏览器插件安装即可。
 
@@ -24,12 +24,11 @@ title: 插件下载
 <details>
     <summary>安装搜索引擎后应该长啥样？</summary>
 
-<!-- autocorrect - disable -->
+{/* <!-- autocorrect-disable --> */}
 
 ![](_assets/Spigot搜索.png)
 
-<!-- autocorrect - enable -->
-
+{/* <!-- autocorrect-enable --> */}
 </details>
 
 1. 查看这些插件的下载次数、最后更新时间、评价分数、插件特性、语言支持、是否开源、是否付费等。
@@ -52,7 +51,7 @@ title: 插件下载
 
 ![](_assets/同类插件评分选择.png)
 
-<!--markdownlint-enable ol-prefix-->
+{/* <!--markdownlint-enable ol-prefix--> */}
 
 **_不要装多个同类型插件，不要把 CMI 和 EssentialX 装在一起，也不要一个服务器装 3 ~ 4 个菜单插件！！！_**
 
@@ -70,8 +69,7 @@ TODO
 
 **建议** 你用 **最新版本** 的插件，但如果你因为一些原因必须要用旧版的话...
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import { TabItem, Tabs } from "@astrojs/starlight/components";
 
 <Tabs queryString="download-history-plugin">
 <TabItem value="bukkit" label="Bukkit">
