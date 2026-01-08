@@ -12,7 +12,3 @@ slug: /contribution/writing
 若格式不规范但不会或不想排版时请在 PR 时提出 **文档需排版**)
 
 :::
-
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />

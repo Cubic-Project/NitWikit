@@ -6,8 +6,4 @@ title: 概述
 
 在这一章我们主要围绕以下几个点：
 
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />
-
 插件 - 推荐一些常见的插件，并且提及相关的注意事项和基础知识。

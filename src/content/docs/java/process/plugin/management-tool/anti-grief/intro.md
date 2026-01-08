@@ -9,7 +9,3 @@ title: 概览
 ~~就像 TT2 协议一样~~ 就像范围回溯时间的魔法。
 
 查玩家背包用 [InvSee++](/java/process/plugin/management-tool/anti-grief/invseeplusplus)。
-
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />

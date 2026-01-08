@@ -7,7 +7,3 @@ title: 概述
 本文档暂时就开服最重要的基础概念进行介绍，如果有你自认为非常了解或者不重要的部分，
 
 **跳过他吧**，因为我们在后面再次提到这些概念的时候会重新跳转到对应链接。
-
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />

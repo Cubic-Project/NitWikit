@@ -4,10 +4,6 @@ title: 概述
 
 在正式开 Minecraft 服务器之前，请一定确认已经准备好了以下必备软件或网页：
 
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />
-
 其中：
 
 文档编辑软件能够有效提高编辑插件、核心配置时的效率，降低错误使用语法的可能性；

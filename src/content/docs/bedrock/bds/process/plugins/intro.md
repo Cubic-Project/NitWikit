@@ -7,7 +7,3 @@ title: 概述
 建议阅读：
 
 - TODO...
-
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />

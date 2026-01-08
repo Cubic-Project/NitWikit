@@ -15,7 +15,3 @@ EndStone 国内非官方交流群：982797241
 教程催更请找本教程编写作者：[virgil698](https://github.com/virgil698)
 
 :::
-
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />

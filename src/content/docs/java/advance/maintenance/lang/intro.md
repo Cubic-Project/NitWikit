@@ -42,7 +42,3 @@ title: 概述
 - ...
 
 在这部分文档中不会介绍特定语言，学习请查看官方 Wiki
-
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />

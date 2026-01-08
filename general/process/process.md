@@ -10,10 +10,6 @@ sidebar_position: 5
 
 在这一章我们主要围绕以下几个点：
 
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />
-
 插件 - 推荐一些常见的插件，并且提及相关的注意事项和基础知识；
 
 手机玩家支持 - 这部分比较复杂，且通常在国内网站上没有真正详尽的介绍；
