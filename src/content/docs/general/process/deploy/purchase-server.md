@@ -26,7 +26,7 @@ sidebar:
 
 <!--markdownlint-disable line-length-->
 
-由于 Minecraft 的 [Tick-loop](/basics/what-is-lag) 逻辑是单线程的。更多核心只能用于生成区块、插件任务等非主线程任务，不建议超过 8 核心的服务器继续增加核心提升流畅度。
+由于 Minecraft 的 [Tick-loop](/general/basics/what-is-lag) 逻辑是单线程的。更多核心只能用于生成区块、插件任务等非主线程任务，不建议超过 8 核心的服务器继续增加核心提升流畅度。
 
 <!--markdownlint-enable line-length-->
 
@@ -68,7 +68,7 @@ CPU 总占用不算高时，Minecraft 的服务器性能与 CPU 单核性能几�
 
 :::caution
 
-并不是人越多需要的内存越多，不建议分配过多内存，否则导致 GC (内存垃圾回收) 时间过长导致卡顿。
+并不是人越多需要的内存越多，不建议分配过多内存，否则导致 GC (内存垃圾回收) 时间过长导致 [卡顿](/general/basics/what-is-lag)。
 
 :::
 

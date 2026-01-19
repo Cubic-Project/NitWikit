@@ -250,7 +250,7 @@ chunk-loading-basic:
 
 :::
 
-防止玩家进入未加载的区块，以避免同步加载区块造成的主线程卡顿。view-distance 视距越小，玩家进入未加载区块的可能性就越大。
+防止玩家进入未加载的区块，以避免同步加载区块造成的主线程 [卡顿](/general/basics/what-is-lag)。view-distance 视距越小，玩家进入未加载区块的可能性就越大。
 
 #### max-loads-per-projectile
 
@@ -462,7 +462,7 @@ max-auto-save-chunks-per-tick: 24
 
 ## 实体
 
-默认情况下，实体的占用一般占服务器的 40% 左右，如果不控制实体，即使是市面上最好的 CPU，服务器也会卡顿。
+默认情况下，实体的占用一般占服务器的 40% 左右，如果不控制实体，即使是市面上最好的 CPU，服务器也会 [卡顿](/general/basics/what-is-lag)。
 
 ### 控制实体数量
 
@@ -793,7 +793,7 @@ tick-inactive-villagers: true
 
 ##### zombie.aggressive-towards-villager-when-lagging
 
-在 `purpur.yml` 中控制僵尸是否在服务器卡顿时对村民的仇恨。
+在 `purpur.yml` 中控制僵尸是否在服务器 [卡顿](/general/basics/what-is-lag) 时对村民的仇恨。
 
 由于村民被僵尸跟踪时会触发非常复杂的寻路、铁傀儡召唤等行为。
 
@@ -815,7 +815,7 @@ tick-inactive-villagers: true
 
 :::
 
-> 仅当村民造成服务器卡顿时才应启用此项！否则，村民寻路会出现问题。
+> 仅当村民造成服务器 [卡顿](/general/basics/what-is-lag) 时才应启用此项！否则，村民寻路会出现问题。
 
 村民被卸载了 AI 后只会按时补货。启用此项会禁用村民自动寻路。
 
@@ -1104,7 +1104,7 @@ ticks-per:
 
 服务端自带一些非常简陋的反作弊，检测玩家是否飞行、超速等，但效果非常差。
 
-特别是服务器出现卡顿的时候，这将在后台进行大量刷屏。如果安装了至少一个反作弊。
+特别是服务器出现 [卡顿](/general/basics/what-is-lag) 的时候，这将在后台进行大量刷屏。如果安装了至少一个反作弊。
 
 那么就可以关闭这些刷屏的无效信息。如果没有安装任何反作弊，还是保留基础反作弊吧。
 

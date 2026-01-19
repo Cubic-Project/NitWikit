@@ -16,7 +16,7 @@ title: 怎么让大佬帮我性能分析
 
 ![](_assets/怎么让大佬帮我/spark_start.png)
 
-在你服务器卡顿的时候开启，**一段时间后** 结束它
+在你服务器 [卡顿](/general/basics/what-is-lag) 的时候开启，**一段时间后** 结束它
 
 3. 结束 Spark 记录
 
