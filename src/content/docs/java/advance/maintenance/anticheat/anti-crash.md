@@ -109,7 +109,7 @@ Netty 处理超时 (NettyCrashers)，虽然不会崩服，但会严重影响玩�
 
 [购买地址](https://www.spigotmc.org/resources/panilla-prevent-hacked-items.65694/) (被标为 inactive 是因为换维护者了，还没通知 Spigot), [GitHub](https://github.com/ds58/Panilla)
 
-Panilla 主要是用于防止服务器上滥用 NBT 和数据包的插件，禁用了一些生存模式下无法获得的东西，修复了一些漏洞，该插件不仅可以预防服务器崩溃，还可预防非法 NBT 导致客户端崩溃
+Panilla 主要是用于防止服务器上滥用 NBT 和数据包的插件，禁用了一些生存模式下无法获得的东西，修复了一些漏洞，该插件不仅可以预防服务器崩溃，还可预防非法 [NBT](/general/basics/what-is-nbt) 导致客户端崩溃
 
 :::caution
 

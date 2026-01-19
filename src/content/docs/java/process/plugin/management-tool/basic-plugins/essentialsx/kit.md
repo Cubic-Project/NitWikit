@@ -42,7 +42,7 @@ title: kit 礼包
 
 ## 更多信息
 
-### 保存 nbt
+### 保存 NBT
 
 [点击此处](/java/process/plugin/management-tool/basic-plugins/essentialsx/config-tips#礼包工具包)
 

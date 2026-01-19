@@ -1,6 +1,7 @@
 ---
 title: 什么是 NBT？
-sidebar_position: 9
+topic: basics
+template: splash
 ---
 
 ## 概念

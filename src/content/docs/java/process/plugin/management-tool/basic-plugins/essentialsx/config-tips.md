@@ -38,7 +38,7 @@ use-nbt-serialization-in-createkit: false
 
 默认为 false。
 
-应该是说，开启后 kit 可以存 nbt 的东西了。
+应该是说，开启后 kit 可以存带有 [NBT 数据](/general/basics/what-is-nbt) 的物品了。
 
 ## AFK - 使用命令 /afk 暂时离开
 
