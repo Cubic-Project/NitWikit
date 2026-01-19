@@ -100,7 +100,7 @@ set PAPER_DEFAULT_CENTRAL_REPOSITORY=https://maven.aliyun.com/repository/central
 
 ## 中文编码
 
-防止乱码
+防止 [乱码](/general/basics/what-is-messy-code)
 
 ```txt
 -Dfile.encoding=UTF-8
