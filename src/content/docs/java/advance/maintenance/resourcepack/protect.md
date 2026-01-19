@@ -24,7 +24,7 @@ title: 保护
 
 尽管 CraftEngine 等插件让还原原本的资源包基本不可能，但对方完全可以提取出所有的图片/音频/JSON 等资源
 
-无客户端 mod 保护方案由于技术限制，保护方式集中于 ZIP 格式保护 (如破坏格式),和混淆打乱 (Oraxen 命名空间打乱等)
+无客户端 mod 保护方案由于技术限制，保护方式集中于 ZIP 格式保护 (如破坏格式),和混淆打乱 (Oraxen [命名空间](/general/basics/what-is-namespace) 打乱等)
 
 > 教程：[压缩 & 混淆](/java/advance/maintenance/resourcepack/compress)
 

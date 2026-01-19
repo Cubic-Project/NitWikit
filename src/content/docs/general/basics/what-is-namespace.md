@@ -1,6 +1,7 @@
 ---
 title: 什么是命名空间？
-sidebar_position: 8
+topic: basics
+template: splash
 ---
 
 ## 概念
