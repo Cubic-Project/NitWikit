@@ -1,5 +1,7 @@
 ---
 title: 什么是权限？
+topic: basics
+template: splash
 ---
 
 权限 - 在插件服务端中，确认玩家做某行为的能力是否被允许。

@@ -50,4 +50,4 @@ BungeeCord / Velocity 端 (或他们的 Fork) 在这里我们称为 `跨服端` 
 
 看 [通用 | 数据库相关](/general/process/database/intro)
 
-一般需要安装两个数据库，MySQL 和 Redis，MySQL 用于存储重要信息，比如账号密码，经济，权限 Redis 用于快速跨服同步
+一般需要安装两个数据库，MySQL 和 Redis，MySQL 用于存储重要信息，比如账号密码，经济，[权限](/general/basics/what-is-permission)，Redis 用于快速跨服同步
