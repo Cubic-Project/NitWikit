@@ -227,7 +227,7 @@ allow-flight=true
 
 ### 记录管理员使用过的命令
 
-是否在服务器日志中记录管理员使用过的命令。
+是否在服务器 [日志](/general/basics/what-is-log) 中记录管理员使用过的命令。
 
 开启：`/gamerule logAdminCommands true`
 

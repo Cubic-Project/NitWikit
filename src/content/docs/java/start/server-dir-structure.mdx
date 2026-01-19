@@ -8,6 +8,7 @@ import { FileTree } from '@astrojs/starlight/components';
 # 服务端结构
 
 我们先来简单看一眼 插件端 的文件夹结构 (以 Purpur 为例)：
+（可以点击高亮的文件夹查看对应介绍）
 
 <FileTree>
 
@@ -16,13 +17,13 @@ import { FileTree } from '@astrojs/starlight/components';
 - config/ Paper 服务器配置文件
 - crash-reports/ 服务器崩溃报告
 - libraries/ 服务器及插件依赖库
-- logs/ 服务端日志
-- plugins/ 插件文件夹
+- **[logs/](/general/basics/what-is-log)** 服务端日志
+- **[plugins/](/general/basics/what-is-plugin)** 插件文件夹
 - versions/ 版本依赖 jar
 - world/ 主世界文件夹
   - advancements/ 成就文件夹
   - data/ 世界数据文件夹
-  - datapacks/ 数据包
+  - **[datapacks/](/general/basics/what-is-datapack)** 数据包
     - bukkit/
   - entities/ 实体数据
   - playerdata/ 玩家数据
@@ -60,11 +61,11 @@ import { FileTree } from '@astrojs/starlight/components';
 
 </FileTree>
 
-对于类似 Catserver 的混合服务器，文件夹结构是类似的，基本就多了 `/mods` 文件夹，少了 Bukkit 的下游服务器特有的配置 (如 `purpur.yml` 等)。
+对于类似 Catserver 的混合服务器，文件夹结构是类似的，基本就多了 [`/mods`](/general/basics/what-is-mod) 文件夹，少了 Bukkit 的下游服务器特有的配置 (如 `purpur.yml` 等)。
 
 :::note
 
-对于世界文件夹的详细说明，请前往 **[世界文件架构](/basics/what-is-world)**
+对于世界文件夹的详细说明，请前往 **[世界文件架构](/general/basics/what-is-world)**
 
 :::
 

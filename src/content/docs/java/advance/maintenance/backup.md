@@ -82,7 +82,7 @@ Linux 使用指令 `tar -czvf backup_date.tar.gz /[path]/` (如果使用 7-Zip �
 
 ### (可选) 日志文件
 
-服务器根目录下的 logs 文件夹。
+服务器根目录下的 [logs](/general/basics/what-is-log) 文件夹。
 
 ## 删除世界
 

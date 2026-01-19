@@ -1,9 +1,8 @@
 ---
 title: 什么是模组？
-sidebar_position: 5
+topic: basics
+template: splash
 ---
-
-# 什么是模组？
 
 模组 (Mod) 是遵循 Forge、Fabric 或 LiteLoader 等 API 规范编写的 Java 程序。
 
