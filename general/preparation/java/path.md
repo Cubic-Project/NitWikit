@@ -40,7 +40,7 @@ title: 路径相关
 
 ![](_assets/path-1.png)
 
-如图所示，将“**zulu-21**”放进服务端文件夹，接着在启动脚本写入：
+如图所示，将“**zulu-21**”放进服务端文件夹，接着在 [启动脚本](/general/basics/what-is-startup-script) 写入：
 
 ```bash
 .\zulu-21\bin\java.exe -jar server.jar

@@ -79,7 +79,7 @@ A: 如果你的服务器会出现这种情况：
 
 这种情况一般发生在插件服群组中。当有些人使用 mod 客户端进入服务器时，有可能出现这种问题。
 
-如果你使用 Paper (或者其他 Fork 版本) 1.12.2 或者以上的服务端，你可以在启动脚本中添加 flag `-Dpaper.disableChannelLimit=true` 来解决这个问题
+如果你使用 Paper (或者其他 Fork 版本) 1.12.2 或者以上的服务端，你可以在 [启动脚本](/general/basics/what-is-startup-script) 中添加 flag `-Dpaper.disableChannelLimit=true` 来解决这个问题
 
 ~~虽然没什么人遇到这个问题就是了~~
 

@@ -52,7 +52,7 @@ Allay 基于 Java21，故在运行 & 构建 Allay 前你需要安装 Java21。
 
 前往 [GitHub Releases](https://github.com/AllayMC/Allay/releases) 下载
 
-使用以下启动脚本启动服务端（jar 文件名为示例，请改为你设置的 jar 核心名）
+使用以下 [启动脚本](/general/basics/what-is-startup-script) 启动服务端（jar 文件名为示例，请改为你设置的 jar 核心名）
 
 ```bash
 java -jar allay.jar
