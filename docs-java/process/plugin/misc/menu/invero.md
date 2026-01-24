@@ -28,7 +28,7 @@ sidebar_position: 5
 
 :::info
 
-`GitHub` [https://github.com/Cubic-Project/Invero](https://github.com/PaperXiang/Invero)
+`GitHub` https://github.com/PaperXiang/Invero
 
 `文档` https://invero.8aka.org
 
