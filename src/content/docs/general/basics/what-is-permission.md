@@ -24,7 +24,7 @@ template: splash
 
 ## 权限的设置
 
-我们有且只推荐 LuckPerms 作为权限插件，具体的使用方法请参考 [LuckPerms 使用方法](/java/permission)
+我们有且只推荐 LuckPerms 作为权限插件，具体的使用方法请参考 [LuckPerms 使用方法](/java/process/plugin/management-tool/permission/intro)
 
 以下举例了一些常见的权限组分类：
 

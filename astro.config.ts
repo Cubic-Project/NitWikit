@@ -111,6 +111,15 @@ export default defineConfig({
                                     items: [
                                         "java/start/intro",
                                         {
+                                            label: "基础知识",
+                                            collapsed: true,
+                                            items: [
+                                                "java/start/basic/intro",
+                                                "java/start/basic/what-is-server",
+                                                "java/start/basic/server-management-command"
+                                            ]
+                                        },
+                                        {
                                             label: "选择服务器端",
                                             collapsed: true,
                                             items: [
