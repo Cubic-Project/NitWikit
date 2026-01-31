@@ -14,7 +14,7 @@ title: GraalJS 扩展
 - `load("nashorn:parser.js")`, `load("nashorn:mozilla_compat.js")`
 - `exit`, `quit`
 
-[Nashorn 语法扩展](/java/advance/maintenance/lang/javascript/extend/nashorn#nashorn-语法扩展) 可以通过 `js.syntax-extensions` 实验性选项启用。如果启用 Nashorn 兼容模式（`js.nashorn-compat`），这些扩展也会默认启用。
+[Nashorn 语法扩展](/java/advance/lang/javascript/extend/nashorn#nashorn-语法扩展) 可以通过 `js.syntax-extensions` 实验性选项启用。如果启用 Nashorn 兼容模式（`js.nashorn-compat`），这些扩展也会默认启用。
 
 ## 类访问
 

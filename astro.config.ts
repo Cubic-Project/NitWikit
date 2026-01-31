@@ -681,68 +681,68 @@ export default defineConfig({
                                                 directory: "general/process/database"
                                             }
                                         },
-                                        "java/advance/maintenance/backup",
+                                        "java/advance/backup",
                                         {
                                             label: "优化",
                                             collapsed: true,
                                             items: [
-                                                "java/advance/maintenance/optimize/intro",
+                                                "java/advance/optimize/intro",
                                                 {
                                                     label: "JVM",
                                                     collapsed: true,
                                                     items: [
-                                                        "java/advance/maintenance/optimize/jvm/intro",
-                                                        "java/advance/maintenance/optimize/jvm/common",
-                                                        "java/advance/maintenance/optimize/jvm/dragonwell8",
-                                                        "java/advance/maintenance/optimize/jvm/dragonwell11",
-                                                        "java/advance/maintenance/optimize/jvm/openj9",
-                                                        "java/advance/maintenance/optimize/jvm/graal",
-                                                        "java/advance/maintenance/optimize/jvm/zing"
+                                                        "java/advance/optimize/jvm/intro",
+                                                        "java/advance/optimize/jvm/common",
+                                                        "java/advance/optimize/jvm/dragonwell8",
+                                                        "java/advance/optimize/jvm/dragonwell11",
+                                                        "java/advance/optimize/jvm/openj9",
+                                                        "java/advance/optimize/jvm/graal",
+                                                        "java/advance/optimize/jvm/zing"
                                                     ]
                                                 },
-                                                "java/advance/maintenance/optimize/go",
-                                                "java/advance/maintenance/optimize/storage-space-optimization",
-                                                "java/advance/maintenance/optimize/performance-analysis",
-                                                "java/advance/maintenance/optimize/kernel",
-                                                "java/advance/maintenance/optimize/optimized-plugin",
-                                                "java/advance/maintenance/optimize/ask-for-help"
+                                                "java/advance/optimize/go",
+                                                "java/advance/optimize/storage-space-optimization",
+                                                "java/advance/optimize/performance-analysis",
+                                                "java/advance/optimize/kernel",
+                                                "java/advance/optimize/optimized-plugin",
+                                                "java/advance/optimize/ask-for-help"
                                             ]
                                         },
                                         {
                                             label: "反作弊",
                                             collapsed: true,
                                             items: [
-                                                "java/advance/maintenance/anticheat/intro",
-                                                "java/advance/maintenance/anticheat/anticheatplugins",
-                                                "java/advance/maintenance/anticheat/antixray",
-                                                "java/advance/maintenance/anticheat/rng",
-                                                "java/advance/maintenance/anticheat/anti-crash",
-                                                "java/advance/maintenance/anticheat/honeypot"
+                                                "java/advance/anticheat/intro",
+                                                "java/advance/anticheat/anticheatplugins",
+                                                "java/advance/anticheat/antixray",
+                                                "java/advance/anticheat/rng",
+                                                "java/advance/anticheat/anti-crash",
+                                                "java/advance/anticheat/honeypot"
                                             ]
                                         },
                                         {
                                             label: "资源包",
                                             collapsed: true,
                                             items: [
-                                                "java/advance/maintenance/resourcepack/intro",
-                                                "java/advance/maintenance/resourcepack/software",
-                                                "java/advance/maintenance/resourcepack/send",
-                                                "java/advance/maintenance/resourcepack/compress",
+                                                "java/advance/resourcepack/intro",
+                                                "java/advance/resourcepack/software",
+                                                "java/advance/resourcepack/send",
+                                                "java/advance/resourcepack/compress",
                                                 {
                                                     label: "插件",
                                                     collapsed: true,
                                                     items: [
-                                                        "java/advance/maintenance/resourcepack/plugins/intro",
-                                                        "java/advance/maintenance/resourcepack/plugins/hud",
-                                                        "java/advance/maintenance/resourcepack/plugins/entity",
-                                                        "java/advance/maintenance/resourcepack/plugins/vehicles",
-                                                        "java/advance/maintenance/resourcepack/plugins/framework",
-                                                        "java/advance/maintenance/resourcepack/plugins/tooltip",
-                                                        "java/advance/maintenance/resourcepack/plugins/misc"
+                                                        "java/advance/resourcepack/plugins/intro",
+                                                        "java/advance/resourcepack/plugins/hud",
+                                                        "java/advance/resourcepack/plugins/entity",
+                                                        "java/advance/resourcepack/plugins/vehicles",
+                                                        "java/advance/resourcepack/plugins/framework",
+                                                        "java/advance/resourcepack/plugins/tooltip",
+                                                        "java/advance/resourcepack/plugins/misc"
                                                     ]
                                                 },
-                                                "java/advance/maintenance/resourcepack/protect",
-                                                "java/advance/maintenance/resourcepack/addon"
+                                                "java/advance/resourcepack/protect",
+                                                "java/advance/resourcepack/addon"
                                             ]
                                         },
                                         "general/advance/maintenance/how-to-defend-against-cyber-attacks",
@@ -750,42 +750,42 @@ export default defineConfig({
                                             label: "脚本语言",
                                             collapsed: true,
                                             items: [
-                                                "java/advance/maintenance/lang/intro",
+                                                "java/advance/lang/intro",
                                                 {
                                                     label: "Skript",
                                                     collapsed: true,
                                                     items: [
-                                                        "java/advance/maintenance/lang/skript/intro",
-                                                        "java/advance/maintenance/lang/skript/basic-tutorials",
-                                                        "java/advance/maintenance/lang/skript/advanced-tutorials"
+                                                        "java/advance/lang/skript/intro",
+                                                        "java/advance/lang/skript/basic-tutorials",
+                                                        "java/advance/lang/skript/advanced-tutorials"
                                                     ]
                                                 },
                                                 {
                                                     label: "Kether",
                                                     collapsed: true,
                                                     items: [
-                                                        "java/advance/maintenance/lang/kether/intro",
-                                                        "java/advance/maintenance/lang/kether/preparation",
-                                                        "java/advance/maintenance/lang/kether/basic",
-                                                        "java/advance/maintenance/lang/kether/if",
-                                                        "java/advance/maintenance/lang/kether/variable",
-                                                        "java/advance/maintenance/lang/kether/math",
-                                                        "java/advance/maintenance/lang/kether/misc",
-                                                        "java/advance/maintenance/lang/kether/vulpecula"
+                                                        "java/advance/lang/kether/intro",
+                                                        "java/advance/lang/kether/preparation",
+                                                        "java/advance/lang/kether/basic",
+                                                        "java/advance/lang/kether/if",
+                                                        "java/advance/lang/kether/variable",
+                                                        "java/advance/lang/kether/math",
+                                                        "java/advance/lang/kether/misc",
+                                                        "java/advance/lang/kether/vulpecula"
                                                     ]
                                                 },
                                                 {
                                                     label: "JavaScript",
                                                     collapsed: true,
                                                     items: [
-                                                        "java/advance/maintenance/lang/javascript/intro",
+                                                        "java/advance/lang/javascript/intro",
                                                         {
                                                             label: "扩展",
                                                             collapsed: true,
                                                             items: [
-                                                                "java/advance/maintenance/lang/javascript/extend/intro",
-                                                                "java/advance/maintenance/lang/javascript/extend/nashorn",
-                                                                "java/advance/maintenance/lang/javascript/extend/graaljs"
+                                                                "java/advance/lang/javascript/extend/intro",
+                                                                "java/advance/lang/javascript/extend/nashorn",
+                                                                "java/advance/lang/javascript/extend/graaljs"
                                                             ]
                                                         }
                                                     ]

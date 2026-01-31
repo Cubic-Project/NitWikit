@@ -135,7 +135,7 @@ settings:
 
 ### 红石优化
 
-请查看 [红石优化](/java/advance/maintenance/optimize/go#redstone-implementation)
+请查看 [红石优化](/java/advance/optimize/go#redstone-implementation)
 
 同时 Mojang 在 24w33a 更新了红石的链接机制 (虽然是实验性内容)，从代码来看，Mojang 的优化方式与 Alternate Current 非常像
 

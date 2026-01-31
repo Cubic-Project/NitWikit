@@ -26,7 +26,7 @@ title: 保护
 
 无客户端 mod 保护方案由于技术限制，保护方式集中于 ZIP 格式保护 (如破坏格式),和混淆打乱 (Oraxen [命名空间](/general/basics/what-is-namespace) 打乱等)
 
-> 教程：[压缩 & 混淆](/java/advance/maintenance/resourcepack/compress)
+> 教程：[压缩 & 混淆](/java/advance/resourcepack/compress)
 
 ## 有客户端 mod
 

@@ -35,7 +35,7 @@ title: 优化误区
 
 由于大量生成区块非常消耗性能，限制玩家生成的区块数，能够起到一定的效果。
 
-但我们一般可以通过 [参数配置](/java/advance/maintenance/optimize/go#prevent-moving-into-unloaded-chunks) 降低区块生成速率，不太需要强行拉回玩家或减速玩家等方式干扰跑图。
+但我们一般可以通过 [参数配置](/java/advance/optimize/go#prevent-moving-into-unloaded-chunks) 降低区块生成速率，不太需要强行拉回玩家或减速玩家等方式干扰跑图。
 
 因此，停止使用类似插件，如：
 
@@ -73,8 +73,8 @@ AI.*
 
 地面上的物品很少会导致性能问题，而且物品往往会自行消失，如果你的服务器掉落物特别多，请调整以下两个参数：
 
-[点这里查看正确方法 #alt-item-despawn-rate](/java/advance/maintenance/optimize/go#alt-item-despawn-rate)，
-[点这里查看正确方法 #merge-radius](/java/advance/maintenance/optimize/go#merge-radius)
+[点这里查看正确方法 #alt-item-despawn-rate](/java/advance/optimize/go#alt-item-despawn-rate)，
+[点这里查看正确方法 #merge-radius](/java/advance/optimize/go#merge-radius)
 
 因此，停止使用类似插件，如：
 
@@ -84,7 +84,7 @@ AI.*
 
 使用插件删除生物是笨蛋中的笨蛋才会做的事，生物如果达到服务器设定的上限则会停止生成。而被清除后，服务器必须重新生成生物，这个过程也是非常费性能的。
 
-如果你不需要那么多怪物，直接调整参数即可 [点这里查看正确方法](/java/advance/maintenance/optimize/go#spawn-limits)
+如果你不需要那么多怪物，直接调整参数即可 [点这里查看正确方法](/java/advance/optimize/go#spawn-limits)
 
 因此，停止使用类似插件，如：
 
@@ -118,13 +118,13 @@ https://github.com/quiquelhappy/StackMob-5
 
 Paper 酱为你在 `/config/paper-world-default.yml` 中准备了爆炸优化。
 
-[点这里查看正确方法](/java/advance/maintenance/optimize/go#optimize-explosions)
+[点这里查看正确方法](/java/advance/optimize/go#optimize-explosions)
 
 ### 区块卸载插件
 
 服务器会自己卸载插件，与其使用插件一遍遍检查区块是否需要卸载不如让服务器自行卸载，
 
-如果你需要更快卸载请 [点这里查看正确方法](/java/advance/maintenance/optimize/go#delay-chunk-unloads-by)
+如果你需要更快卸载请 [点这里查看正确方法](/java/advance/optimize/go#delay-chunk-unloads-by)
 
 ## 其他应该避免使用的插件
 
@@ -146,7 +146,7 @@ Paper 酱为你在 `/config/paper-world-default.yml` 中准备了爆炸优化。
 1. ChunkAnalyser -
    简单的搜索世界的红石，漏斗，实体之类，有很多平替插件如 [Insights](https://modrinth.com/plugin/insights)/ [Entitydetection](https://www.spigotmc.org/resources/entitydetection-tile-entity-support.20588/)；
 
-2. LagMonitor，LagMap，Benchmark - 很鸡肋的性能检测 (不如 [Spark](/java/advance/maintenance/optimize/performance-analysis#spark))；
+2. LagMonitor，LagMap，Benchmark - 很鸡肋的性能检测 (不如 [Spark](/java/advance/optimize/performance-analysis#spark))；
 
 3. RedstoneCuller -
    直接破坏红石机器，平替插件 [AntiRedstoneClock](https://hangar.papermc.io/OneLiteFeather/AntiRedstoneClock-Remastered)；

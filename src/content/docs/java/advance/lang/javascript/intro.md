@@ -38,7 +38,7 @@ Nashorn 支持版本：
 
 - [ECMAScript 5.x (ES 5)](https://www.w3school.com.cn/js/js_es5.asp)
 - [ECMAScript 2015 (ES 6)](https://www.w3school.com.cn/js/js_es6.asp) (不完全支持)
-- [JavaScript 扩展语法](/java/advance/maintenance/lang/javascript/extend/nashorn#nashorn-语法扩展)
+- [JavaScript 扩展语法](/java/advance/lang/javascript/extend/nashorn#nashorn-语法扩展)
 
 :::caution
 
@@ -61,7 +61,7 @@ GraalJS 支持版本：
 - [ECMAScript 2024](https://www.w3school.com.cn/js/js_2024.asp)
 - 所有最新稳定特性 (ES 2025)
 - 在[提案中的特性](https://github.com/tc39/proposals)
-- [JavaScript 扩展语法](/java/advance/maintenance/lang/javascript/extend/graaljs#nashorn-兼容)
+- [JavaScript 扩展语法](/java/advance/lang/javascript/extend/graaljs#nashorn-兼容)
 
 ### Java 支持
 

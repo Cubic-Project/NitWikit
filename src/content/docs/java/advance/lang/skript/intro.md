@@ -78,8 +78,8 @@ on join:
 
 ## 基础教程
 
-见["基础教程"](/java/advance/maintenance/lang/skript/basic-tutorials)。
+见["基础教程"](/java/advance/lang/skript/basic-tutorials)。
 
 ## 进阶教程
 
-见["高级教程"](/java/advance/maintenance/lang/skript/advanced-tutorials)。
+见["高级教程"](/java/advance/lang/skript/advanced-tutorials)。

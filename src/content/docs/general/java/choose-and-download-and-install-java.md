@@ -106,7 +106,7 @@ https://www.java.com/zh-CN/download/
 
 </details>
 
-如果你想进行 JVM 优化，请看 [JVM 优化](/java/advance/maintenance/optimize/jvm/intro/)
+如果你想进行 JVM 优化，请看 [JVM 优化](/java/advance/optimize/jvm/intro/)
 
 ## 验证 Java 安装
 

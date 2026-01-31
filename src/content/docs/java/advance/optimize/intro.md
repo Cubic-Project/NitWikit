@@ -8,7 +8,7 @@ title: 概述
 
 > "过早的优化是万恶之源"，过早优化会让服务端不稳定，甚至 10x slower
 
-在此之前，请一定查看 [优化误区](/java/advance/maintenance/optimize/optimized-plugin)，停止此类无效”优化”，然后根据下面的步骤进行操作。
+在此之前，请一定查看 [优化误区](/java/advance/optimize/optimized-plugin)，停止此类无效”优化”，然后根据下面的步骤进行操作。
 
 ## 第一步 - Java 优化
 
@@ -16,7 +16,7 @@ title: 概述
 
 仅仅需要你下载一个小小的 Java 安装程序，或者更改 JVM 参数 (大白话来说就是开服参数)。
 
-参见 [JVM 优化](/java/advance/maintenance/optimize/jvm/intro)
+参见 [JVM 优化](/java/advance/optimize/jvm/intro)
 
 ## 第二步 - 预生成
 
@@ -47,7 +47,7 @@ title: 概述
 
 目前，Bilibili 上面的配置都是很老的，不推荐使用
 
-文档里的 [调服务端配置](/java/advance/maintenance/optimize/go) 比较新，非常推荐
+文档里的 [调服务端配置](/java/advance/optimize/go) 比较新，非常推荐
 
 ## 第五步 - 更换硬件
 
@@ -68,7 +68,7 @@ title: 概述
 
 无论在性能还是稳定性，Linux 都比 Windows 更适合用于开服，对于 Linux 根据自己的使用经验选择即可，如果没有使用经验可以先使用 Ubuntu 等主流系统。
 
-切换到 Linux 后，你还可以进行 [内核优化](/java/advance/maintenance/optimize/kernel)
+切换到 Linux 后，你还可以进行 [内核优化](/java/advance/optimize/kernel)
 
 如果想要了解更多请前往进阶 [Linux 开服教程](/general/advance/linux/linux)
 
@@ -80,6 +80,6 @@ title: 概述
 
 如此，那么应该如何知道服务器为何 [卡顿](/general/basics/what-is-lag) 呢？
 
-如果你是个完完全全的新手，或者懒得分析，想请教别人分析应该怎么办呢？请转跳到 [怎么让大佬帮我](/java/advance/maintenance/optimize/ask-for-help)
+如果你是个完完全全的新手，或者懒得分析，想请教别人分析应该怎么办呢？请转跳到 [怎么让大佬帮我](/java/advance/optimize/ask-for-help)
 
-如果你不想求助别人，亦或者你想有一些进步，请参考 [性能分析](/java/advance/maintenance/optimize/performance-analysis)
+如果你不想求助别人，亦或者你想有一些进步，请参考 [性能分析](/java/advance/optimize/performance-analysis)

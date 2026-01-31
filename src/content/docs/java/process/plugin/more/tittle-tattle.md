@@ -48,7 +48,7 @@ Spigot 在 1.17 之后新增了一个名 为 LibraryLoader 的玩意，可以让
 
 :::
 
-如果你使用 Leaf 核心或 Paper 1.21.6 (及其分支) 之后的版本，可以直接 [这样做](/java/advance/maintenance/optimize/jvm/common#下载源加速)，不需要使用此工具。
+如果你使用 Leaf 核心或 Paper 1.21.6 (及其分支) 之后的版本，可以直接 [这样做](/java/advance/optimize/jvm/common#下载源加速)，不需要使用此工具。
 
 ## 圈内破事
 

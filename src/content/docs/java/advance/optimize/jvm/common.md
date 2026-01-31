@@ -26,7 +26,7 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 
 如果看到 `Large Page Support: Enabled (Transparent)` ，表示你的系统支持透明大页
 
-但是如果你依然不支持或者想要追求极致性能，可以查看 [内核优化](/java/advance/maintenance/optimize/kernel)
+但是如果你依然不支持或者想要追求极致性能，可以查看 [内核优化](/java/advance/optimize/kernel)
 
 如果支持 LargePages，加上此参数
 
@@ -149,7 +149,7 @@ chcp 65001 # for Windows
 -Dpaper.playerconnection.keepalive=60
 ```
 
-如果你的网络不好，可以适当延长 keepalive 时间，打开[alternate-keepalive](/java/advance/maintenance/optimize/go#心跳连接)
+如果你的网络不好，可以适当延长 keepalive 时间，打开[alternate-keepalive](/java/advance/optimize/go#心跳连接)
 
 ## 禁用文件夹遍历和符号链接验证
 

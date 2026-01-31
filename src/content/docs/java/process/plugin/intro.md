@@ -84,4 +84,4 @@ Via 自动安装已经移动到 [此处](/java/process/plugin/misc/via/intro#笨
 
 ## 我有疑问
 
-如果你想问问题，查看 [如何向大佬求助](/java/advance/maintenance/optimize/ask-for-help)
+如果你想问问题，查看 [如何向大佬求助](/java/advance/optimize/ask-for-help)

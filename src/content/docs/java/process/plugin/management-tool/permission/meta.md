@@ -164,7 +164,7 @@ command inline "lp user {{sender}} permission settemp nitwikit.demo true {{math 
 -   `%math_0_60-{server_time_mm}%` // 分
 -   `%math_0_60-{server_time_ss}%` // 秒
 
-不过我不太喜欢这种做法，另一种： [案例 | 变量 | 每日刷新](/java/advance/maintenance/lang/kether/variable#每日刷新)
+不过我不太喜欢这种做法，另一种： [案例 | 变量 | 每日刷新](/java/advance/lang/kether/variable#每日刷新)
 
 <!--markdownlint-enable line-length-->
 

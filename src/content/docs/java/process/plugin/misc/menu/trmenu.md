@@ -92,7 +92,7 @@ TrMenu 入门学习文档
 
 ## VS Code 插件
 
-与 TrMenu 或 [Kether](/java/advance/maintenance/lang/kether/basic) 有关的 VS Code 插件
+与 TrMenu 或 [Kether](/java/advance/lang/kether/basic) 有关的 VS Code 插件
 
 -   [TrMenu-Helper](https://marketplace.visualstudio.com/items?itemName=hhhhhy.trmenu-helper)
 
@@ -227,7 +227,7 @@ Sneaking-Offhand:
 **知识点：**
 
 -   TrMenu 文档熟读并背诵
--   [kether](/java/advance/maintenance/lang/kether/basic)
+-   [kether](/java/advance/lang/kether/basic)
 -   [CheckItem](/java/process/plugin/plugin-dependencies/placeholderapi/check-item)
 
 ```yaml
@@ -283,7 +283,7 @@ Sneaking-Offhand:
 **知识点：**
 
 -   TrMenu 文档熟读并背诵
--   [kether](/java/advance/maintenance/lang/kether/basic)
+-   [kether](/java/advance/lang/kether/basic)
 -   [CheckItem](/java/process/plugin/plugin-dependencies/placeholderapi/check-item)
 -   [妙妙写法](#妙妙写法)
 -   [\{condition=\}条件](https://hhhhhy.gitbook.io/trmenu-v3/menu/action/option#tiao-jian)

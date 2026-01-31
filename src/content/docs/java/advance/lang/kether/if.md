@@ -20,7 +20,7 @@ title: 逻辑判断
 
 我是 OP，所以我拥有此权限，返回了 true
 
-同 [PlaceholderAPI](/java/advance/maintenance/lang/kether/basic#变量-placeholderapi) 一样，**Permission** 也有一个简写 **perm**
+同 [PlaceholderAPI](/java/advance/lang/kether/basic#变量-placeholderapi) 一样，**Permission** 也有一个简写 **perm**
 
 ## 判断为否 (Not)
 
@@ -264,7 +264,7 @@ any [
 
 可是我想判断的是 `null` 这四个字母！这咋办？
 
-还记得之前学的 [literal](/java/advance/maintenance/lang/kether/basic#actiontoken和-literal) 吗？
+还记得之前学的 [literal](/java/advance/lang/kether/basic#actiontoken和-literal) 吗？
 
 ```yaml
 check 你要判断的东西 == literal null
