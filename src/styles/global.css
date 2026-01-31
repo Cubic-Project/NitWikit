@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @media (min-width: 96rem) {
-  :root {
-    --sl-content-width: 64rem;
-  }
+    :root {
+        --sl-content-width: 64rem;
+    }
 }

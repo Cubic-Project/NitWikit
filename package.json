@@ -12,15 +12,18 @@
     "dependencies": {
         "@astrojs/starlight": "^0.37.1",
         "@astrojs/starlight-docsearch": "^0.6.1",
+        "@astrojs/vue": "^5.1.4",
         "@tailwindcss/vite": "^4.1.18",
         "astro": "^5.16.6",
         "astro-mermaid": "^1.2.0",
         "mermaid": "^11.12.2",
+        "naive-ui": "^2.43.2",
         "sharp": "^0.34.2",
         "starlight-giscus": "^0.8.1",
         "starlight-image-zoom": "^0.13.2",
         "starlight-sidebar-topics": "^0.6.2",
-        "starlight-sidebar-topics-dropdown": "^0.5.2"
+        "starlight-sidebar-topics-dropdown": "^0.5.2",
+        "vue": "^3.5.27"
     },
     "devDependencies": {
         "@vite-pwa/astro": "^1.2.0",
