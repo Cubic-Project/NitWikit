@@ -10,7 +10,7 @@ title: 排除问题插件
 
 将报错先翻译一遍，确定其中是否提示了错误的类型 (如缺少前置，缺少类，插件需要更新等)。
 
-然后你可以尝试按照 [如何向大佬求助](/java/start/ask-for-help) 中提到的方法，增加问题解决的可能性。
+然后你可以尝试按照 [如何向大佬求助](/general/more/ask-for-help) 中提到的方法，增加问题解决的可能性。
 
 ## 二分法
 
@@ -55,4 +55,4 @@ title: 排除问题插件
 
 ## Arthas
 
-使用 Arthas 对报错进行分析，[文档](/general/advance/arthas)，需要拥有较强的技术力
+使用 Arthas 对报错进行分析，[文档](/java/advance/arthas)，需要拥有较强的技术力

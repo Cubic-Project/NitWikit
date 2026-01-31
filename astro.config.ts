@@ -79,6 +79,7 @@ export default defineConfig({
                                             label: "经营管理",
                                             collapsed: true,
                                             items: [
+                                                "general/advance/management/intro",
                                                 {
                                                     label: "玩家管理",
                                                     autogenerate: {
