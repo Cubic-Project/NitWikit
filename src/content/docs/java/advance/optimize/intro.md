@@ -80,6 +80,6 @@ title: 概述
 
 如此，那么应该如何知道服务器为何 [卡顿](/general/basics/what-is-lag) 呢？
 
-如果你是个完完全全的新手，或者懒得分析，想请教别人分析应该怎么办呢？请转跳到 [怎么让大佬帮我](/java/advance/optimize/ask-for-help)
+如果你是个完完全全的新手，或者懒得分析，想请教别人分析应该怎么办呢？请转跳到 [怎么让大佬帮我性能分析](/java/advance/optimize/ask-for-profiling-help)
 
 如果你不想求助别人，亦或者你想有一些进步，请参考 [性能分析](/java/advance/optimize/performance-analysis)

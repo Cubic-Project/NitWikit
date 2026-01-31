@@ -706,7 +706,7 @@ export default defineConfig({
                                                 "java/advance/optimize/performance-analysis",
                                                 "java/advance/optimize/kernel",
                                                 "java/advance/optimize/optimized-plugin",
-                                                "java/advance/optimize/ask-for-help"
+                                                "java/advance/optimize/ask-for-profiling-help"
                                             ]
                                         },
                                         {
