@@ -836,7 +836,6 @@ export default defineConfig({
                                 },
                                 {
                                     label: "BDS 核心",
-                                    collapsed: true,
                                     items: [
                                         {
                                             label: "准备工作",
@@ -922,7 +921,6 @@ export default defineConfig({
                                 },
                                 {
                                     label: "Nukkit 核心",
-                                    collapsed: true,
                                     items: [
                                         "bedrock/nukkit/intro",
                                         {
@@ -979,7 +977,6 @@ export default defineConfig({
                                 },
                                 {
                                     label: "PocketMine 核心",
-                                    collapsed: true,
                                     items: [
                                         "bedrock/pocketmine/intro",
                                         {
@@ -1000,7 +997,6 @@ export default defineConfig({
                                 },
                                 {
                                     label: "其他基岩版服务器核心",
-                                    collapsed: true,
                                     items: [
                                         {
                                             label: "准备工作",
@@ -1022,7 +1018,6 @@ export default defineConfig({
                                 },
                                 {
                                     label: "WaterdogePE 跨服",
-                                    collapsed: true,
                                     items: ["bedrock/waterdogepe/preparation"]
                                 }
                             ]
