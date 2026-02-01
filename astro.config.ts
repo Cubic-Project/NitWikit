@@ -658,7 +658,11 @@ export default defineConfig({
                                                 "java/process/redstone/mod"
                                             ]
                                         },
-                                        { label: "地图建设", autogenerate: { directory: "general/process/map" } },
+                                        {
+                                            label: "地图建设",
+                                            collapsed: true,
+                                            autogenerate: { directory: "general/process/map" }
+                                        },
                                         "general/process/create-art-assets",
                                         "general/process/panel"
                                     ]
