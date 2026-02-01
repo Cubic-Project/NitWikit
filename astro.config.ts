@@ -47,7 +47,7 @@ export default defineConfig({
                         {
                             label: "基础",
                             link: "/general/intro",
-                            icon: "open-book",
+                            icon: "seti:bazel",
                             id: "basics",
                             items: [
                                 {
@@ -1030,7 +1030,7 @@ export default defineConfig({
                         {
                             label: "关于",
                             link: "/about/intro",
-                            icon: "open-book",
+                            icon: "list-format",
                             items: ["about/intro", "about/sponsor", "about/timeline", "about/ad"]
                         }
                     ],
