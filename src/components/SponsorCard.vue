@@ -33,7 +33,7 @@ onMounted(() => {
 
 <template>
     <n-config-provider :theme="theme" class="not-content">
-        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; align-items: baseline">
+        <div class="grid gap-4 items-baseline grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
             <div v-for="item in props.items" :key="item.qid">
                 <n-card
                     size="medium"
@@ -42,7 +42,7 @@ onMounted(() => {
                     header-style="text-align: center; padding: 0; margin-top: 0.4rem;"
                 >
                     <template #cover>
-                        <img :src="`https://q.qlogo.cn/g?b=qq&nk=${item.qid}&s=100`" />
+                        <img :src="`https://q.qlogo.cn/g?b=qq&nk=${item.qid}&s=100`" class="mx-auto" />
                     </template>
                     ¥{{ item.amount }}
                 </n-card>
