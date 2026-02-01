@@ -27,7 +27,7 @@ export default defineConfig({
                 }
             },
             favicon: "/favicon.ico",
-            social: [{ icon: "github", label: "GitHub", href: "https://github.com/withastro/starlight" }],
+            social: [{ icon: "github", label: "GitHub", href: "https://github.com/Cubic-Project/NitWikit" }],
             logo: { src: "./src/assets/logo.svg" },
             lastUpdated: true,
             editLink: {
@@ -1051,7 +1051,6 @@ export default defineConfig({
                 starlightScrollToTop()
             ],
             components: {
-                Sidebar: "./src/components/Sidebar.astro",
                 LastUpdated: "./src/components/LastUpdated.astro"
             }
         }),
