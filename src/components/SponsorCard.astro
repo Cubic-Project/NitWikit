@@ -1,0 +1,45 @@
+---
+interface Props {
+    items: {
+        name: string;
+        amount: number;
+        qid: string;
+    }[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="not-content grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3">
+    {
+        items.map((item) => (
+            <div class="sponsor-card group flex flex-col items-center gap-2 p-3 rounded-lg border border-(--sl-color-gray-5)">
+                <div class="daisy-avatar">
+                    <div class="w-14 rounded-lg overflow-hidden">
+                        <img
+                            src={`https://q.qlogo.cn/g?b=qq&nk=${item.qid}&s=100`}
+                            alt={item.name}
+                            loading="lazy"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                </div>
+                <div class="text-center w-full">
+                    <h3 class="font-medium text-sm truncate text-(--sl-color-white)">{item.name}</h3>
+                    <span class="text-xs text-(--sl-color-gray-3) font-mono">¥{item.amount}</span>
+                </div>
+            </div>
+        ))
+    }
+</div>
+
+<style>
+    .sponsor-card {
+        background-color: transparent;
+        box-shadow: var(--sl-shadow-sm);
+    }
+    .sponsor-card:hover {
+        background: var(--sl-color-gray-7, var(--sl-color-gray-6));
+        border-color: var(--sl-color-gray-2);
+    }
+</style>

@@ -2,6 +2,9 @@
 
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
+@plugin "daisyui" {
+  prefix: "daisy-";
+}
 
 /* Dark mode colors. */
 :root {

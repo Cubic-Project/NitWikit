@@ -3,8 +3,8 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "dev": "astro dev",
-        "start": "astro dev",
+        "dev": "astro dev --host",
+        "start": "astro dev --host",
         "build": "astro build",
         "preview": "astro preview",
         "astro": "astro"
@@ -26,6 +26,7 @@
     },
     "devDependencies": {
         "@vite-pwa/astro": "^1.2.0",
+        "daisyui": "^5.5.14",
         "starlight-contributor-list": "^0.3.2",
         "starlight-links-validator": "^0.19.2",
         "starlight-scroll-to-top": "^0.4.0",
