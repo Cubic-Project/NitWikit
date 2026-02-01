@@ -43,10 +43,7 @@ importers:
         version: 0.13.2(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3)))
       starlight-sidebar-topics:
         specifier: ^0.6.2
-        version: 0.6.2(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3)))
-      starlight-sidebar-topics-dropdown:
-        specifier: ^0.5.2
-        version: 0.5.2(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3)))(starlight-sidebar-topics@0.6.2(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3))))
+        version: 0.6.2(@astrojs/starlight@0.37.5(astro@5.17.1(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.46.0)(typescript@5.9.3)))
       vue:
         specifier: ^3.5.27
         version: 3.5.27(typescript@5.9.3)
@@ -4263,13 +4260,6 @@ packages:
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
       '@astrojs/starlight': '>=0.35'
-
-  starlight-sidebar-topics-dropdown@0.5.2:
-    resolution: {integrity: sha512-QeqSO5jjk/ZHDfXnUqJF1GpY1ny9dc9LqETuw9V124B93EYtpvCYa+zccxHMHojQvAuG7TguQs212P4XvJX0Wg==}
-    engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
-    peerDependencies:
-      '@astrojs/starlight': '>=0.32'
-      starlight-sidebar-topics: '>=0.6'
 
   starlight-sidebar-topics@0.6.2:
     resolution: {integrity: sha512-SNCTUZS/hcVor0ZcaXbaSVU37+V+qtvzNirkvnOg3Mqu/awuGpthkH5+uKpiZqWxLffp6TrOlsv5E5QsxrndNg==}
@@ -10085,7 +10075,7 @@ snapshots:
     dependencies:
       '@astrojs/starlight': 0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3))
 
-  starlight-sidebar-topics-dropdown@0.5.2(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3)))(starlight-sidebar-topics@0.6.2(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3)))):
+  starlight-sidebar-topics@0.6.2(@astrojs/starlight@0.37.5(astro@5.17.1(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.46.0)(typescript@5.9.3))):
     dependencies:
       '@astrojs/starlight': 0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3))
       starlight-sidebar-topics: 0.6.2(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@2.79.2)(sass-embedded@1.83.0)(sass@1.96.0)(terser@5.44.1)(typescript@5.9.3)))

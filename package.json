@@ -22,7 +22,6 @@
         "starlight-giscus": "^0.8.1",
         "starlight-image-zoom": "^0.13.2",
         "starlight-sidebar-topics": "^0.6.2",
-        "starlight-sidebar-topics-dropdown": "^0.5.2",
         "vue": "^3.5.27"
     },
     "devDependencies": {
