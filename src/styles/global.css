@@ -6,6 +6,12 @@
     prefix: "daisy-";
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
 /* Dark mode colors. */
 :root {
     --sl-color-accent-low: #002c16;
