@@ -1,6 +1,6 @@
 <div align="center">
   <div>
-    <img src="/src/assets/nitwikit-banner.png" alt="Yizhan" />
+    <img src="./src/assets/nitwikit-banner.png" alt="Yizhan" />
   </div>
   <b>
     NitWikit
