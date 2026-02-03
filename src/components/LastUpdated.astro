@@ -1,0 +1,59 @@
+---
+/*
+ * Copyright (c) PaperMC
+ *
+ * This file includes code derived from the PaperMC project,
+ * licensed under the BSD 2-Clause License.
+ *
+ * Modified by wling
+ */
+
+import { Image } from "astro:assets";
+import { REPO, getCommitInfo } from "../utils/git";
+
+const { lang, lastUpdated } = Astro.locals.starlightRoute;
+const filePath = Astro.locals.starlightRoute.entry.filePath;
+
+const info = await getCommitInfo(filePath);
+---
+
+{
+  lastUpdated && (
+    <p class="flex flex-nowrap items-center gap-2 whitespace-nowrap">
+      <span class="flex items-center gap-1">
+        更新时间:
+        <time datetime={lastUpdated.toISOString()}>
+          {lastUpdated.toLocaleDateString(lang, {
+            dateStyle: "medium",
+            timeZone: "UTC",
+          })}
+        </time>
+      </span>
+      {info && (
+        <span class="flex items-center gap-1">
+          由{" "}
+          <a href={info.committer.href} class="flex items-center gap-1 text-accent-high hover:underline">
+            {info.committer.avatar && (
+              <Image
+                src={info.committer.avatar}
+                alt={info.committer.name}
+                class="size-4.5 rounded-full"
+                width="18"
+                height="18"
+                loading="lazy"
+              />
+            )}
+            {info.committer.name}
+          </a>{" "}
+          在 <a href={`https://github.com/${REPO}/commit/${info.hash}`} class="text-accent-high hover:underline">{info.hash.substring(0, 7)}</a> 提交
+        </span>
+      )}
+    </p>
+  )
+}
+
+<style>
+  :global(.text-accent-high) {
+    @apply text-(--sl-color-accent-high);
+  }
+</style>

@@ -1,18 +1,12 @@
 {
-    "extends": "@docusaurus/tsconfig",
+    "extends": "astro/tsconfigs/strict",
+    "include": [".astro/types.d.ts", "**/*"],
+    "exclude": ["dist"],
     "compilerOptions": {
-        "baseUrl": "./",
-        "allowSyntheticDefaultImports": true,
         "resolveJsonModule": true,
-        "strict": true,
-        "forceConsistentCasingInFileNames": true,
-        "types": ["docusaurus-plugin-sass"],
-        "paths": {
-            "@/*": ["src/*"],
-            "@components/*": ["src/components/*"],
-            "@pages/*": ["src/pages/*"],
-            "@theme/*": ["src/theme/*"],
-            "@css/*": ["src/css/*"]
-        }
+        "jsx": "preserve"
+    },
+    "mdx": {
+        "checkMdx": true
     }
 }

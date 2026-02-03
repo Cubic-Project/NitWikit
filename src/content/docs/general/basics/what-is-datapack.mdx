@@ -1,0 +1,209 @@
+---
+title: 什么是数据包？
+topic: basics
+template: splash
+---
+
+import { FileTree } from "@astrojs/starlight/components";
+
+数据包是从 Minecraft 逻辑结构层面修改我的世界，他可以添加或覆盖游戏中几乎一切的元素。一定程度下可以代替 mod，但它并不会改变原版的内容。
+
+其功能可用于覆盖或添加新的函数、进度、战利品表、物品修饰器、配方、结构、标签、维度、世界生成等
+
+# 数据包的存放位置
+
+数据包是存放于我的世界存档目录下 `world/datapacks` 它既可以是文件夹亦可以是压缩包。当你加入时数据包将为该世界启用。
+
+# 数据包注意事项
+
+数据包是存在加载顺序的，在数据包各个功能同一个分类下不同的加载顺序会导致不同的结果也就是不同的覆盖产生。
+
+这个顺序存储在 `world/level.dat` 。您可以通过单人创建存档时调整数据包的位置决定数据包的加载顺序
+
+您可以通过 `/datapack` 查看已经加载或未加载的数据包
+
+# 相关资源下载
+
+**常见数据包的下载**：
+
+| 名称                                                                    | 介绍                                                         |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [PlanetMinecraft](https://www.planetminecraft.com/data-packs/)          | 比较老牌的我的世界资源网站了，东西比较全                     |
+| [Modrinth](https://modrinth.com/datapacks)                              | 新兴的我的世界资源平台，东西比较全                           |
+| [9Minecraft](https://www.9minecraft.net/category/minecraft-data-packs/) | 比较老牌的我的世界资源网站了，界面不太符合中国习惯，不太推荐 |
+
+**数据包工具及扩展资源**：
+
+| 名称                                                          | 介绍                                |
+| ------------------------------------------------------------- | ----------------------------------- |
+| [Datapack Upgrader](https://misode.github.io/upgrader/)       | 自动升级数据包版本，未测试          |
+| [Datapack Map](https://map.jacobsjo.eu/)                      | 查看世界生成数据包对应种子的地图    |
+| [Datapack Maker](https://misode.github.io/)                   | 数据包生成器，适用于大部分环境      |
+| [vanilla tweaks](https://vanillatweaks.net/picker/datapacks/) | 常用数据包的结合体，可以集成下载    |
+| [MCCreator](https://mcreator.net/about)                       | 生成/制作初级数据包的不二之选，推荐 |
+
+# 数据包结构
+
+<FileTree>
+
+- 数据包名
+    - pack.mcmeta 数据包元数据，用于识别数据包
+    - pack.png 数据包图标（可选）
+    - data
+        - advancements
+            - 特定进度名.json
+                - display 进度显示信息
+                    - title 进度标题
+                    - description 进度描述
+                    - icon 进度图标
+                - criteria 进度达成条件
+                    - 特定条件名.json
+                        - trigger 触发条件类型
+                        - conditions 具体条件参数
+        - loot_tables
+            - 特定物品或实体的战利品表.json
+                - pools 战利品池
+                    - 特定战利品池.json
+                        - rolls 生成次数
+                        - entries 战利品条目
+                            - 特定条目.json
+                                - type 条目类型（item / loot_table 等）
+                                - name 物品或战利品表名称
+                                - functions 战利品修饰函数（可选）
+                                    - 特定函数.json
+                                        - function 函数类型
+                                        - arguments 函数参数
+        - recipes
+            - 特定合成配方.json
+                - type 合成配方类型
+                - group 合成组（可选）
+                - ingredients 合成材料
+                    - 特定材料.json
+                        - item 物品 ID
+                        - count 数量（可选）
+                - result 合成结果
+                    - item 输出物品
+                    - count 输出数量（可选）
+        - tags
+            - blocks
+                - 特定方块标签.json
+                    - replace 是否替换已有标签
+                    - values 方块列表
+            - fluids
+                - 特定流体标签.json
+                    - replace
+                    - values
+            - items
+                - 特定物品标签.json
+                    - replace
+                    - values
+            - entity_types
+                - 特定实体类型标签.json
+                    - replace
+                    - values
+            - functions
+                - 特定函数标签.json
+                    - replace
+                    - values
+            - predicates
+                - 特定谓词标签.json
+                    - replace
+                    - values
+            - damage_types
+                - 特定伤害类型标签.json
+                    - replace
+                    - values
+            - enchantments
+                - 特定附魔标签.json
+                    - replace
+                    - values
+            - game_events
+                - 特定游戏事件标签.json
+                    - replace
+                    - values
+            - 其他标签类型
+                - 特定标签.json
+                    - replace
+                    - values
+        - functions
+            - 特定函数文件.mcfunction mcfunction 命令文件
+        - predicates
+            - 特定谓词.json
+                - condition 判断条件
+                    - 特定条件类型.json
+                        - 参数
+                - result 判断结果
+        - dimension_types
+            - 特定维度类型.json
+                - effects 维度效果
+                    - 特定效果.json
+                        - 特定效果类型
+                        - 值
+                - parameters 维度参数
+                    - 特定参数.json
+                        - 名称
+                        - 值
+        - worldgen
+            - biome
+                - 特定生物群系.json
+                    - features 群系特征
+                        - 特定特征.json
+                            - 特征类型
+                            - 参数
+                    - properties 群系属性
+                        - 特定属性.json
+                            - 名称
+                            - 值
+            - configured_carver
+                - 特定雕刻器.json
+                    - type
+                    - biomes
+                    - parameters
+                        - 特定参数.json
+                            - 名称
+                            - 值
+            - configured_feature
+                - 特定配置特征.json
+                    - type
+                    - placement
+                        - 特定放置规则.json
+                            - 规则类型
+                            - 参数
+                    - parameters
+                        - 特定参数.json
+                            - 名称
+                            - 值
+            - configured_structure_feature
+                - 特定配置结构特征.json
+                    - type
+                    - placement
+                        - 特定放置规则.json
+                            - 规则类型
+                            - 参数
+                    - parameters
+                        - 特定参数.json
+                            - 名称
+                            - 值
+            - noise
+                - 特定噪声设置.json
+                    - noise_type
+                    - parameters
+                        - 特定参数.json
+                            - 名称
+                            - 值
+            - processor_list
+                - 特定处理器列表.json
+                    - processors
+                        - 特定处理器.json
+                            - type
+                            - parameters
+                                - 特定参数.json
+                                    - 名称
+                                    - 值
+        - 其他子目录 取决于数据包功能需求
+
+</FileTree>
+
+# 数据包的编写
+
+太多了，详情请参阅 [Minecraft Wiki](https://zh.minecraft.wiki/w/%E6%95%B0%E6%8D%AE%E5%8C%85)

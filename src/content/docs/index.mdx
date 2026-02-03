@@ -1,0 +1,42 @@
+---
+title: Welcome to Cubic Wiki
+giscus: false
+description: 一群笨蛋编写的 Minecraft 开服教程
+template: splash
+lastUpdated: false
+hero:
+    tagline: 主要针对高版本 Java 版和基岩版服务器的开服指南。从零开始，手把手教你搭建和运营 Minecraft 服务器～
+    image:
+        file: ../../assets/book.png
+    actions:
+        - text: 开始阅读
+          link: /general/intro
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import { ContributorList } from "starlight-contributor-list";
+import LinkCard from "/src/components/LinkCard.astro";
+
+## 下一步
+
+<CardGrid stagger>
+    <LinkCard title="新手入门" icon="pencil" href="/general/intro">
+        了解教程定位、阅读指引与基础要求
+    </LinkCard>
+    <LinkCard title="Java 版核心" icon="document" href="/java/intro">
+        高版本 Java 版服务器开服指南
+    </LinkCard>
+    <LinkCard title="基岩版核心" icon="add-document" href="/bedrock/intro">
+        基岩版服务器开服指南
+    </LinkCard>
+</CardGrid>
+
+## 贡献者们
+
+笨蛋们的力量让 Cubic Wiki 得以成长和完善，感谢每一位为项目做出贡献的朋友！
+
+这个项目从最初的简单想法，发展成为了一个包含详细教程、最佳实践和社区智慧的综合性 Minecraft 服务器开服指南。我们相信，通过集思广益和开放合作，能够帮助更多的开服爱好者少走弯路，更高效地搭建和运营自己的服务器。
+
+无论你是通过提交代码、修复错误、改进文档、设计图表，还是提出宝贵的建议和反馈，你都是推动 Cubic Wiki 前进的重要力量。每一个 Pull Request、Issue 和讨论都体现了社区的热情和专业精神。
+
+<ContributorList githubRepo="Cubic-Project/NitWikit" />

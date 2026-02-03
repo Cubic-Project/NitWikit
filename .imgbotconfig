@@ -1,5 +1,0 @@
-{
-    "aggressiveCompression": true,
-    "ignoredFiles": ["*.svg"],
-    "schedule": "weekly"
-}

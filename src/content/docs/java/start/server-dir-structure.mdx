@@ -1,0 +1,78 @@
+---
+title: 服务端结构
+sidebar_position: 3
+---
+
+import { FileTree } from "@astrojs/starlight/components";
+
+# 服务端结构
+
+我们先来简单看一眼 插件端 的文件夹结构 (以 Purpur 为例)：
+（可以点击高亮的文件夹查看对应介绍）
+
+<FileTree>
+
+- assets/ 储存 Minecraft 资源文件，不要乱动
+- cache/ 缓存文件夹
+- config/ Paper 服务器配置文件
+- crash-reports/ 服务器崩溃报告
+- libraries/ 服务器及插件依赖库
+- **[logs/](/general/basics/what-is-log)** 服务端日志
+- **[plugins/](/general/basics/what-is-plugin)** 插件文件夹
+- versions/ 版本依赖 jar
+- world/ 主世界文件夹
+    - advancements/ 成就文件夹
+    - data/ 世界数据文件夹
+    - **[datapacks/](/general/basics/what-is-datapack)** 数据包
+        - bukkit/
+    - entities/ 实体数据
+    - playerdata/ 玩家数据
+    - poi/ 兴趣点数据
+    - region/ 区块数据
+    - stats/ 统计信息
+- world_nether/ 地狱世界文件夹
+    - DIM-1/
+        - data/
+        - entities/
+        - poi/
+        - region/
+- world_the_end/ 末地世界文件夹
+    - DIM1/
+        - data/
+        - entities/
+        - poi/
+        - region/
+- .console_history 控制台历史指令
+- banned-ips.json 被 ban IP 列表
+- banned-players.json 被 ban 玩家列表
+- bukkit.yml Bukkit 配置文件
+- commands.yml 命令映射配置
+- eula.txt EULA 协议文件
+- help.yml 插件帮助信息
+- ops.json OP 玩家列表
+- purpur.jar 服务核心 jar 文件
+- purpur.yml Purpur 服务器配置文件
+- **[permissions.yml](/general/basics/what-is-permission)** 权限定义文件
+- server.properties 服务端基础配置
+- spigot.yml Spigot 服务器配置文件
+- usercache.json 玩家名称和 UUID 缓存
+- version_history 版本信息记录
+- whitelist.json 白名单列表
+
+</FileTree>
+
+对于类似 Catserver 的混合服务器，文件夹结构是类似的，基本就多了 [`/mods`](/general/basics/what-is-mod) 文件夹，少了 Bukkit 的下游服务器特有的配置 (如 `purpur.yml` 等)。
+
+:::note
+
+对于世界文件夹的详细说明，请前往 **[世界文件架构](/general/basics/what-is-world)**
+
+:::
+
+至此，大部分的以 Bukkit 为基础的服务器核心服务端的结构已经大致呈现在你眼前。
+
+:::tip
+
+如果你的服务端有更多的文件，大概率是插件 (如 Slimefun、FAWE 等插件会释放更多文件夹) 创建的文件夹，一般来说无需担心。
+
+:::
