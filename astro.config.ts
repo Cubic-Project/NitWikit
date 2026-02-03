@@ -1050,7 +1050,8 @@ export default defineConfig({
                 starlightScrollToTop()
             ],
             components: {
-                LastUpdated: "./src/components/LastUpdated.astro"
+                LastUpdated: "./src/components/LastUpdated.astro",
+                Head: "./src/components/Head.astro"
             }
         }),
         AstroPWA({
