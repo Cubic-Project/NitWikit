@@ -1,6 +1,6 @@
 <div align="center">
   <div>
-    <img src="/static/img/nitwikit-banner.png" alt="Yizhan" />
+    <img src="./src/assets/nitwikit-banner.png" alt="Yizhan" />
   </div>
   <b>
     NitWikit
@@ -53,10 +53,8 @@
    `pnpm install`
 4. 构建文档
    `pnpm build`
-5. 部署测试网站
-   `pnpm serve`
-6. 一键构建&测试
-   `pnpm test`
+5. 本地预览
+   `pnpm dev`
 
 # ⬆️ 提交贡献
 
