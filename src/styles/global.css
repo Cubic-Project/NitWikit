@@ -3,7 +3,7 @@
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
 @plugin "daisyui" {
-  prefix: "daisy-";
+    prefix: "daisy-";
 }
 
 /* Dark mode colors. */
@@ -19,6 +19,8 @@
     --sl-color-gray-5: #383838;
     --sl-color-gray-6: #272727;
     --sl-color-black: #181818;
+    --purple-hsl: 255, 60%, 60%;
+    --overlay-blurple: hsla(var(--purple-hsl), 0.2);
 }
 /* Light mode colors. */
 :root[data-theme="light"] {
@@ -34,10 +36,30 @@
     --sl-color-gray-6: #eeeeee;
     --sl-color-gray-7: #f6f6f6;
     --sl-color-black: #ffffff;
+    --purple-hsl: 255, 85%, 65%;
+    --sl-hue-accent: 350;
 }
 
 @media (min-width: 96rem) {
     :root {
         --sl-content-width: 64rem;
     }
+}
+
+[data-has-hero] .page {
+    background:
+        linear-gradient(215deg, var(--overlay-blurple), transparent 40%),
+        radial-gradient(var(--overlay-blurple), transparent 40%) no-repeat -60vw -40vh / 105vw 200vh,
+        radial-gradient(var(--overlay-blurple), transparent 65%) no-repeat 50% calc(100% + 20rem) / 60rem 30rem;
+}
+
+[data-has-hero] header {
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+}
+
+[data-has-hero] .hero > img {
+    filter: drop-shadow(0 0 3rem var(--overlay-blurple));
 }
