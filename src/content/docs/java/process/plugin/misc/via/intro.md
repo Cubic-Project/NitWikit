@@ -28,15 +28,15 @@ title: 概述
 
 ![](_assets/版本兼容图.png)
 
--   ViaVersion - 向上兼容
+- ViaVersion - 向上兼容
 
 如图中服务器版本为 1.9.x 时，允许使用 1.9.x - 1.21.x 的客户端进服
 
--   ViaBackwards - 向下兼容
+- ViaBackwards - 向下兼容
 
 如图中服务器版本为 1.21.x 时，允许 1.9.x -1.20.x 的客户端进服
 
--   ViaRewind - 向下兼容更老版本
+- ViaRewind - 向下兼容更老版本
 
 让你的服务器支持 1.7.x 以及 1.8.x 客户端进服
 
@@ -64,20 +64,20 @@ ViaProxy 是独立的代理程序，支持任意客户端版本连接任意服�
 
 ### 支持的服务器版本
 
--   Release (1.0.0 - 1.21.8)
--   Beta (b1.0 - b1.8.1)
--   Alpha (a1.0.15 - a1.2.6)
--   Classic (c0.0.15 - c0.30 包含 [CPE](https://wiki.vg/Classic_Protocol_Extension))
--   愚人节快照 (3D Shareware，20w14infinite，25w14craftmine)
--   战斗测试快照 (Combat Test 8c)
--   基岩版 1.21.93 ([某些功能缺失](https://github.com/RaphiMC/ViaBedrock#features))
--   快照版本 15w31a 和 15w31b (需要 [ViaSnapshot](/java/process/plugin/misc/via/intro))
+- Release (1.0.0 - 1.21.8)
+- Beta (b1.0 - b1.8.1)
+- Alpha (a1.0.15 - a1.2.6)
+- Classic (c0.0.15 - c0.30 包含 [CPE](https://wiki.vg/Classic_Protocol_Extension))
+- 愚人节快照 (3D Shareware，20w14infinite，25w14craftmine)
+- 战斗测试快照 (Combat Test 8c)
+- 基岩版 1.21.93 ([某些功能缺失](https://github.com/RaphiMC/ViaBedrock#features))
+- 快照版本 15w31a 和 15w31b (需要 [ViaSnapshot](/java/process/plugin/misc/via/intro))
 
 ### 支持的客户端版本
 
--   Release (1.7.2 - 1.21.8)
--   Beta 1.7.3 (需要 [ViaProxyBeta2Release](https://github.com/ViaVersionAddons/ViaProxyBeta2Release))
--   基岩版 (需要 [Geyser](/java/process/mobile-player/geyser/intro) 插件)
+- Release (1.7.2 - 1.21.8)
+- Beta 1.7.3 (需要 [ViaProxyBeta2Release](https://github.com/ViaVersionAddons/ViaProxyBeta2Release))
+- 基岩版 (需要 [Geyser](/java/process/mobile-player/geyser/intro) 插件)
 
 ViaProxy 可以让现代客户端进入十年前的 Classic 服务器，也可以实现 Java 版与基岩版之间的互通！
 

@@ -79,6 +79,7 @@ title: 特征文件
 默认权限。
 
 ### `commands`
+
 插件提供的命令。
 
 ### Dependencies
@@ -121,4 +122,4 @@ Folia 端对 Bukkit API 的修改是破坏性的，你手动添加而不是插�
 
 ## 参考
 
--   https://docs.papermc.io/paper/dev/plugin-yml
+- https://docs.papermc.io/paper/dev/plugin-yml

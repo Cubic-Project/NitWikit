@@ -285,7 +285,7 @@ try {
 ## Promises
 
 GraalJS 支持 JavaScript `Promise` 对象与 Java 的互操作性。
-Java 对象可以作为 *thenable* 对象暴露给 JavaScript 代码，允许 JavaScript 代码 `await` Java 对象。
+Java 对象可以作为 _thenable_ 对象暴露给 JavaScript 代码，允许 JavaScript 代码 `await` Java 对象。
 此外，JavaScript 的 `Promise` 对象是常规的 JavaScript 对象，可以通过本文件中描述的机制从 Java 访问。
 这使得 Java 代码能够在 JavaScript Promise 被解析或拒绝时从 JavaScript 回调。
 
@@ -293,7 +293,7 @@ Java 对象可以作为 *thenable* 对象暴露给 JavaScript 代码，允许 Ja
 
 JavaScript 应用程序可以使用 `await` 表达式与 Java 对象交互。
 当 Java 和 JavaScript 必须与异步事件交互时，这非常有用。
-要将 Java 对象暴露给 GraalJS 作为 *thenable* 对象，Java 对象应实现一个名为 `then()` 的方法，其签名如下：
+要将 Java 对象暴露给 GraalJS 作为 _thenable_ 对象，Java 对象应实现一个名为 `then()` 的方法，其签名如下：
 
 ```java
 void then(Value onResolve, Value onReject);

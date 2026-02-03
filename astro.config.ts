@@ -1082,7 +1082,6 @@ export default defineConfig({
             autoTheme: true
         })
     ],
-
     vite: {
         plugins: [tailwindcss()],
         ssr: {

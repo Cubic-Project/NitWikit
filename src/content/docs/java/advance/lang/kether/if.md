@@ -102,8 +102,8 @@ if 条件 then {
 /vul eval if 条件 then true 执行的动作 else false 执行的动作
 ```
 
--   条件为 true 执行 then 后面的动作
--   条件为 false 执行 else 后面的动作
+- 条件为 true 执行 then 后面的动作
+- 条件为 false 执行 else 后面的动作
 
 执行多行动作
 

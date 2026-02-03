@@ -163,6 +163,6 @@ MineDown 为 Minecraft 引入了 Markdown 风格的文本格式化语法，让�
 
 ## 参考
 
--   [https://zh.minecraft.wiki/w/格式化代码](https://zh.minecraft.wiki/w/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81)
--   https://docs.papermc.io/adventure/minimessage/format
--   https://docs.papermc.io/adventure/platform/native
+- [https://zh.minecraft.wiki/w/格式化代码](https://zh.minecraft.wiki/w/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81)
+- https://docs.papermc.io/adventure/minimessage/format
+- https://docs.papermc.io/adventure/platform/native

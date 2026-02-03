@@ -20,8 +20,8 @@ template: splash
 
 例如，在上面的比喻中：
 
--   左侧的 ID a.txt 表示为 命名空间 A:ID a.txt
--   右侧的 ID a.txt 表示为 命名空间 B:ID a.txt
+- 左侧的 ID a.txt 表示为 命名空间 A:ID a.txt
+- 右侧的 ID a.txt 表示为 命名空间 B:ID a.txt
 
 ## 物品
 

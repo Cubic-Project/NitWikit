@@ -86,7 +86,7 @@ Folia 是 Paper 团队开发的高性能服务端，通过多线程并发处理�
 
 ## 更换核心
 
--   **[插件端](/java/start/server-core-choose/plugin)**
+- **[插件端](/java/start/server-core-choose/plugin)**
 
 这类操作几乎无感
 
@@ -94,11 +94,11 @@ Folia 是 Paper 团队开发的高性能服务端，通过多线程并发处理�
 >
 > 如使用 Spigot 替换 Paper 或 Purpur 等
 
--   **[混合端](/java/start/server-core-choose/hybrid)**
+- **[混合端](/java/start/server-core-choose/hybrid)**
 
 这有待商榷，因为各个端兼容性差异较大
 
--   **[Mod 端](/java/start/server-core-choose/mod)**
+- **[Mod 端](/java/start/server-core-choose/mod)**
 
 这几乎不可能，你基本没有可选择的核心
 

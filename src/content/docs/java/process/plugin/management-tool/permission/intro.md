@@ -10,12 +10,12 @@ title: 概述
 
 当前最先进，现代，支持广泛，用户数量最多的 [权限](/general/basics/what-is-permission) 插件。
 
--   **响应迅速** - 在开发之初便已经将性能和可扩展性放在首位。
--   **深受信赖** - 被数以千计的服务器管理者使用，再大型的服务器也有我们的身影。
--   **简易上手** - 通过命令，配置文件，网页版编辑器等方式操作你的权限。
--   **高效灵活** - 支持多种不同的存储方式与服务器平台。
--   **可客制化** - 为您的服务器提供大量的自定义选项和设置，以便您最大程度客制化使用体验。
--   **永远免费** - 此插件基于 MIT 协议开源。
+- **响应迅速** - 在开发之初便已经将性能和可扩展性放在首位。
+- **深受信赖** - 被数以千计的服务器管理者使用，再大型的服务器也有我们的身影。
+- **简易上手** - 通过命令，配置文件，网页版编辑器等方式操作你的权限。
+- **高效灵活** - 支持多种不同的存储方式与服务器平台。
+- **可客制化** - 为您的服务器提供大量的自定义选项和设置，以便您最大程度客制化使用体验。
+- **永远免费** - 此插件基于 MIT 协议开源。
 
 :::tip[注意]
 
@@ -25,15 +25,15 @@ title: 概述
 
 **不建议使用** LuckPerms 以外的权限插件如：
 
--   GroupManager
--   PermissionsEx
--   zPermissions
--   bPermissions
--   PermissionsBukkit
--   PowerRanks
--   UltraPermissions
--   BungeePerms
--   PowerfulPerms
+- GroupManager
+- PermissionsEx
+- zPermissions
+- bPermissions
+- PermissionsBukkit
+- PowerRanks
+- UltraPermissions
+- BungeePerms
+- PowerfulPerms
 
 其他权限组插件导入数据到 Luckperms？[点击这里](https://continue-project.netlify.app/LuckPerms/how-to.migrate-from-other-plugins.html)
 

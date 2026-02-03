@@ -18,11 +18,11 @@ Velocity 可以说是目前最优秀的 **Minecraft 代理端** 之一，由经�
 
 当然，mod 服务端原生不支持 Velocity，需要安装让 mod 端支持 Velocity 的 mod
 
--   Fabric 端支持 Velocity mod：[CrossTitch](https://www.curseforge.com/minecraft/mc-mods/crossstitch)
+- Fabric 端支持 Velocity mod：[CrossTitch](https://www.curseforge.com/minecraft/mc-mods/crossstitch)
 
--   Fabric 端支持 Velocity mod：[FabricProxy-Lite](https://modrinth.com/mod/fabricproxy-lite)
+- Fabric 端支持 Velocity mod：[FabricProxy-Lite](https://modrinth.com/mod/fabricproxy-lite)
 
--   Forge 端支持 Velocity mod：[Proxy Compatible Forge](https://modrinth.com/mod/proxy-compatible-forge)
+- Forge 端支持 Velocity mod：[Proxy Compatible Forge](https://modrinth.com/mod/proxy-compatible-forge)
 
 ## FAQ
 
@@ -44,9 +44,9 @@ A: _<font color="gray">这里是一些可能的原因</font>_
 
 首先，你需要检查：
 
--   你有没有把子服务器打开，控制台有没有未响应？
--   代理端打开没？
--   是否将代理端和子服务器链接，也就是有没有在代理端设置子服务器 IP 和端口以及子服务器有没有启用 Velocity 功能
+- 你有没有把子服务器打开，控制台有没有未响应？
+- 代理端打开没？
+- 是否将代理端和子服务器链接，也就是有没有在代理端设置子服务器 IP 和端口以及子服务器有没有启用 Velocity 功能
 
 此外，这是一些常见的代理端报错：
 

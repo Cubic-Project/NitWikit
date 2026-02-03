@@ -22,7 +22,7 @@ title: LimboAuth
 
 :::danger
 
-**不要** 在你的 *Spigot/Paper* 或者 *BungeeCord/Waterfall* 端上 **安装此插件!!!**
+**不要** 在你的 _Spigot/Paper_ 或者 _BungeeCord/Waterfall_ 端上 **安装此插件!!!**
 
 :::
 

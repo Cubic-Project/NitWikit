@@ -17,10 +17,10 @@ title: 概述
 
 ## 扩展
 
--   [Multiverse-NetherPortals](https://github.com/Multiverse/Multiverse-NetherPortals) -> 允许玩家创建能够带他们去指定世界的地狱传送门！
--   [Multiverse-Portals](https://github.com/Multiverse/Multiverse-Portals) -> 创建传送到指定地点的传送门。
--   [Multiverse-Inventories](https://github.com/Multiverse/Multiverse-Inventories) -> 将玩家背包按世界隔离。
--   [Multiverse-SignPortals](https://github.com/Multiverse/Multiverse-SignPortals) -> 告示牌传送！
+- [Multiverse-NetherPortals](https://github.com/Multiverse/Multiverse-NetherPortals) -> 允许玩家创建能够带他们去指定世界的地狱传送门！
+- [Multiverse-Portals](https://github.com/Multiverse/Multiverse-Portals) -> 创建传送到指定地点的传送门。
+- [Multiverse-Inventories](https://github.com/Multiverse/Multiverse-Inventories) -> 将玩家背包按世界隔离。
+- [Multiverse-SignPortals](https://github.com/Multiverse/Multiverse-SignPortals) -> 告示牌传送！
 
 ## 链接
 
@@ -54,12 +54,12 @@ title: 概述
 
 要这么做的原因无非是因为一个服务器可能被作为大厅服务器，或者小游戏服务器无须其它世界。
 
--   主世界
-    各类服务端均无法禁用。~~禁用了还玩什么？~~
--   下界
-    在原版的配置文件 `server.properties` 中，将 `allow-nether` 设置为 `false`。
--   末地
-    打开 Bukkit 配置文件 `bukkit.yml`，将 `settings` 中的 `allow-end` 设置为 `false`。
+- 主世界
+  各类服务端均无法禁用。~~禁用了还玩什么？~~
+- 下界
+  在原版的配置文件 `server.properties` 中，将 `allow-nether` 设置为 `false`。
+- 末地
+  打开 Bukkit 配置文件 `bukkit.yml`，将 `settings` 中的 `allow-end` 设置为 `false`。
 
 在 `/plugins/Multiverse-Core/config.yml` 中，有这样的配置：
 
@@ -86,8 +86,8 @@ Multiverse-Core [4.3.1](https://www.spigotmc.org/resources/multiverse-core.390/u
 
 补丁 (只需安装其中一个)：
 
--   [Multiverse-Patches](https://www.spigotmc.org/resources/.96390)
--   [Multiverse-Core Fix](https://www.spigotmc.org/resources/.70218)
+- [Multiverse-Patches](https://www.spigotmc.org/resources/.96390)
+- [Multiverse-Core Fix](https://www.spigotmc.org/resources/.70218)
 
 ## Bstats
 

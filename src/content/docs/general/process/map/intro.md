@@ -168,39 +168,39 @@ sidebar:
 
 #### 免费
 
--   [FastAsyncWorldEdit](https://modrinth.com/plugin/fastasyncworldedit)
+- [FastAsyncWorldEdit](https://modrinth.com/plugin/fastasyncworldedit)
 
--   [FastAsyncVoxelSniper](https://modrinth.com/plugin/fastasyncvoxelsniper)
+- [FastAsyncVoxelSniper](https://modrinth.com/plugin/fastasyncvoxelsniper)
 
--   [goBrush](https://www.spigotmc.org/resources/gobrush.23118)
+- [goBrush](https://www.spigotmc.org/resources/gobrush.23118)
 
--   [goPaint](https://www.spigotmc.org/resources/gopaint.27717) 或 [goPaintAdvanced](https://modrinth.com/plugin/gopaintadvanced)
+- [goPaint](https://www.spigotmc.org/resources/gopaint.27717) 或 [goPaintAdvanced](https://modrinth.com/plugin/gopaintadvanced)
 
--   [BuildBuddy](https://www.spigotmc.org/resources/buildbuddy.103139)
+- [BuildBuddy](https://www.spigotmc.org/resources/buildbuddy.103139)
 
--   [BuilderUtilities](https://modrinth.com/plugin/buildersutilities)
+- [BuilderUtilities](https://modrinth.com/plugin/buildersutilities)
 
--   [HeadDB](https://www.spigotmc.org/resources/headdb.84967)
+- [HeadDB](https://www.spigotmc.org/resources/headdb.84967)
 
 #### 订阅
 
--   [Arceon](https://www.patreon.com/arcaniax)
+- [Arceon](https://www.patreon.com/arcaniax)
 
--   [ezEdit](https://www.patreon.com/ezedits)
+- [ezEdit](https://www.patreon.com/ezedits)
 
 ### 客户端模组
 
--   [Axiom](https://modrinth.com/mod/axiom)
+- [Axiom](https://modrinth.com/mod/axiom)
 
--   [KleeSlabs](https://modrinth.com/mod/kleeslabs)
+- [KleeSlabs](https://modrinth.com/mod/kleeslabs)
 
--   [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks)
+- [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks)
 
--   [ModernKeyBinding](https://modrinth.com/mod/modernkeybinding)
+- [ModernKeyBinding](https://modrinth.com/mod/modernkeybinding)
 
--   [WorldEditCUI](https://modrinth.com/mod/worldedit-cui)
+- [WorldEditCUI](https://modrinth.com/mod/worldedit-cui)
 
--   [WorldEdit](https://modrinth.com/plugin/worldedit)
+- [WorldEdit](https://modrinth.com/plugin/worldedit)
 
 :::caution
 
@@ -226,15 +226,15 @@ sidebar:
 
 #### Addon
 
--   [WorldEdit-Addon](https://mcpedl.com/worldedit-be-addon/)
+- [WorldEdit-Addon](https://mcpedl.com/worldedit-be-addon/)
 
 #### NukkitX 插件
 
--   [FastAsyncWorldEdit-Nukkit](https://cloudburstmc.org/resources/fastasyncworldedit.30/)
+- [FastAsyncWorldEdit-Nukkit](https://cloudburstmc.org/resources/fastasyncworldedit.30/)
 
 #### PocketMine-MP 插件
 
--   [WorldEdit-PMMP](https://github.com/ryuzaki01/pocketmine-WorldEditor)
+- [WorldEdit-PMMP](https://github.com/ryuzaki01/pocketmine-WorldEditor)
 
 :::caution
 
@@ -250,19 +250,19 @@ sidebar:
 
 #### MC 工具
 
--   [Amulet](https://www.amuletmc.com/)
+- [Amulet](https://www.amuletmc.com/)
 
--   [MCedit](https://www.mcedit.net/)
+- [MCedit](https://www.mcedit.net/)
 
--   [WorldPainter](https://www.worldpainter.net/)
+- [WorldPainter](https://www.worldpainter.net/)
 
--   [Chunker](https://chunker.app/)
+- [Chunker](https://chunker.app/)
 
 #### 专业软件
 
--   [Blender](https://www.blender.org/)
+- [Blender](https://www.blender.org/)
 
--   [WorldMachine](https://www.world-machine.com/)
+- [WorldMachine](https://www.world-machine.com/)
 
 :::note
 

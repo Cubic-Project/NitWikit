@@ -71,24 +71,24 @@ PojavLauncher 已于 2025 年 5 月 17 日宣布停更
 
 如果你是：
 
--   iOS14-beta2 ～ iOS14.8.1 的系统 (A8 ～ A11 处理器)
--   iOS15.5 系统 (A9 ～ A11 处理器)
--   iOS15.6 beta4 ～ iOS15.6.1( A9 ～ A11 处理器)
--   iOS15.7 ～ iOS15.8.2 (A9 ～ A17，M1 ～ M2 处理器)
--   iOS16 beta1 ～ beta3 (A9 ～ A11 处理器)
--   iOS16 beta4 ～ iOS16.6.1 (A9 以上，M1 ～ M2 处理器)
--   iOS17 beta1 ～ beta4 (A9 ～ A11 处理器)
+- iOS14-beta2 ～ iOS14.8.1 的系统 (A8 ～ A11 处理器)
+- iOS15.5 系统 (A9 ～ A11 处理器)
+- iOS15.6 beta4 ～ iOS15.6.1( A9 ～ A11 处理器)
+- iOS15.7 ～ iOS15.8.2 (A9 ～ A17，M1 ～ M2 处理器)
+- iOS16 beta1 ～ beta3 (A9 ～ A11 处理器)
+- iOS16 beta4 ～ iOS16.6.1 (A9 以上，M1 ～ M2 处理器)
+- iOS17 beta1 ～ beta4 (A9 ～ A11 处理器)
 
 那么 [点此查看](https://ios.cfw.guide/installing-trollstore-trollinstallerx/) TrollInstallerX 的安装方法。
 **(非常之复杂，怕麻烦的，没电脑的，没有苹果官方 Type C 转 Lighting 或者 C2C 的线的，但是又只能用这个方法安装 TrollStore 的劝退)**
 
 如果你是：
 
--   iOS14-beta2 ～ iOS14.8.1 的系统 (A12 以上，M1 ～ M2 处理器)
--   iOS15 ～ iOS15.5 beta4 (A8 以上，M1 ～ M2 处理器)
--   iOS15.5 系统 (A12 以上，M1 ～ M2 处理器)
--   iOS15.6 beta4 ～ iOS15.6.1 (A12 以上，M1 ～ M2 处理器)
--   iOS16 beta1 ～ beta3 (A12 以上，M1 ～ M2 处理器)
+- iOS14-beta2 ～ iOS14.8.1 的系统 (A12 以上，M1 ～ M2 处理器)
+- iOS15 ～ iOS15.5 beta4 (A8 以上，M1 ～ M2 处理器)
+- iOS15.5 系统 (A12 以上，M1 ～ M2 处理器)
+- iOS15.6 beta4 ～ iOS15.6.1 (A12 以上，M1 ～ M2 处理器)
+- iOS16 beta1 ～ beta3 (A12 以上，M1 ～ M2 处理器)
 
 那么复制此链接到你的 Safari 浏览器地址栏
 `itms-services://?action=download-manifest&url=https://jailbreaks.app/cdn/plists/TrollHelper.plist`
@@ -96,23 +96,23 @@ PojavLauncher 已于 2025 年 5 月 17 日宣布停更
 
 如果你是：
 
--   iOS16.7RC (A9 ～ A11 处理器)
--   iOS17 beta5 ～ iOS17.0 (A9 ～ A11 处理器)
+- iOS16.7RC (A9 ～ A11 处理器)
+- iOS17 beta5 ～ iOS17.0 (A9 ～ A11 处理器)
 
 那么你需要一个 **已经越狱了** 的苹果设备按照 [这个教程](https://ios.cfw.guide/installing-trollstore-trollhelper/) 使用 TrollHelper 安装 TrollStore。
 ~~(你手机都越狱了还用 TrollStore 干嘛，直接用其他 ipa/dpkg 包管理安装 Pojav~~
 
 如果你是：
 
--   iOS15.5 (A8 处理器)
--   iOS15.6 beta4 ～ iOS15.6.1 (A8 处理器)
+- iOS15.5 (A8 处理器)
+- iOS15.6 beta4 ～ iOS15.6.1 (A8 处理器)
 
 那么 [点此查看](https://ios.cfw.guide/installing-trollstore-trollinstallermdc/) TrollInstallerMDC 的安装方法。
 **(较复杂，怕麻烦的，没电脑的，没有苹果官方 Type C 转 Lighting 或者 C2C 的线的，但是又只能用这个方法安装 TrollStore 的劝退)**
 
 如果你是：
 
--   iOS15.7.2 ～ iOS15.8.2 (A8 处理器)
+- iOS15.7.2 ～ iOS15.8.2 (A8 处理器)
 
 那么 [点此查看](https://ios.cfw.guide/installing-trollstore-trollmisaka) TrollMisaka 的安装方法。
 **(也挺复杂，怕麻烦的，没电脑的，没有苹果官方 Type C 转 Lighting 或者 C2C 的线的，但是又只能用这个方法安装 TrollStore 的劝退)**

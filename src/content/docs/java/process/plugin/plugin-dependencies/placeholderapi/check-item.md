@@ -51,10 +51,10 @@ title: CheckItem
 
 例如：
 
--   give 给予物品 %checkitem_give_mat:diamond% // 给予玩家一个钻石
--   remove 收取物品 %checkitem_remove_mat:diamond% // 收取玩家背包中所有的钻石
--   amount 查看数量 %checkitem_amount_mat:diamond% // 查看玩家背包中的钻石数量
--   getinfo 物品信息 下面会讲到
+- give 给予物品 %checkitem_give_mat:diamond% // 给予玩家一个钻石
+- remove 收取物品 %checkitem_remove_mat:diamond% // 收取玩家背包中所有的钻石
+- amount 查看数量 %checkitem_amount_mat:diamond% // 查看玩家背包中的钻石数量
+- getinfo 物品信息 下面会讲到
 
 你应该注意到了 `mat:diamond` ，因为我写了 diamond 所以这些变量的功能是针对钻石的
 
@@ -86,26 +86,26 @@ title: CheckItem
 
 可用的修饰符有：
 
--   namecontains // 名字中包含
--   namestartswith
--   nameequals
--   mat // 物品材质
--   amt // 物品数量
--   data // 物品的 data
--   custommodeldata // 物品的 CMD 值
--   lorecontains // lore 中包含
--   loreequals
--   matcontains
--   enchantments // 附魔
--   enchanted
--   potiontype
--   potionextended
--   potionupgraded
--   strict
--   inhand
--   inslot
--   nbtstrings // nbt
--   nbtints
+- namecontains // 名字中包含
+- namestartswith
+- nameequals
+- mat // 物品材质
+- amt // 物品数量
+- data // 物品的 data
+- custommodeldata // 物品的 CMD 值
+- lorecontains // lore 中包含
+- loreequals
+- matcontains
+- enchantments // 附魔
+- enchanted
+- potiontype
+- potionextended
+- potionupgraded
+- strict
+- inhand
+- inslot
+- nbtstrings // nbt
+- nbtints
 
 ### getinfo
 
@@ -161,8 +161,8 @@ title: CheckItem
 
 使用了两个修饰符
 
--   nbtstrings
--   amt
+- nbtstrings
+- amt
 
 其他物品库多数也会像 IA 一样给物品打上自己的 nbt 标签，照着改改就好
 

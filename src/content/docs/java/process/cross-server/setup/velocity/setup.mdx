@@ -81,7 +81,7 @@ try = [
 Velocity 支持将玩家信息 (如 IP 地址、UUID 和皮肤) 转发到你的服务器。Velocity 支持三种转发格式：
 
 - **Velocity Modern 转发** (现代转发) 是一种自定义的转发格式 (modern 转发)，它更安全。
-- **BungeeCord 转发** (也称为 *传统转发*)，它有更好的兼容性但安全性较低。
+- **BungeeCord 转发** (也称为 _传统转发_)，它有更好的兼容性但安全性较低。
 - **BungeeGuard**，与传统 BungeeCord 转发相同，但包含了一个密钥。它比单独的 BungeeCord 转发更好，但不如 Velocity 的 modern 转发理想。
 
 你只能选择这些转发格式中的一种。目前不可能“混合匹配”转发模式或同时使用所有转发格式。一般来说，如果你只支持使用 Minecraft 1.13 及更新版本的客户端，请使用 Velocity Modern 转发；
@@ -147,8 +147,8 @@ import { TabItem, Tabs } from "@astrojs/starlight/components";
 ### 传统转发增加安全性
 
 - 对于托管在共享主机上的代理，Velocity 可选地支持 **BungeeGuard**。
-  - 将 `velocity.toml` 中的 `player-info-forwarding` 设置为 `bungeeguard`。
-  - 在 BungeeGuard 配置的令牌部分添加 `forwarding.secret` 文件中的值。
+    - 将 `velocity.toml` 中的 `player-info-forwarding` 设置为 `bungeeguard`。
+    - 在 BungeeGuard 配置的令牌部分添加 `forwarding.secret` 文件中的值。
 
 ### 为 Spigot / Paper 配置传统转发
 

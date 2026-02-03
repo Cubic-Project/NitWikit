@@ -6,10 +6,10 @@ title: 概述
 
 建议阅读：
 
--   [YAML 语法](/java/process/plugin/more/yaml/intro) - 了解大部分插件配置文件的语法。
--   [特征文件](/java/process/plugin/more/plugin-signature-file) - 了解插件的一些信息。
--   [颜色代码](/java/process/plugin/more/color-message) - 改变服务器中文本的颜色
--   [什么是乱码](/general/basics/what-is-messy-code) - 了解文本文件中的字符有时为什么会变得奇奇怪怪。
+- [YAML 语法](/java/process/plugin/more/yaml/intro) - 了解大部分插件配置文件的语法。
+- [特征文件](/java/process/plugin/more/plugin-signature-file) - 了解插件的一些信息。
+- [颜色代码](/java/process/plugin/more/color-message) - 改变服务器中文本的颜色
+- [什么是乱码](/general/basics/what-is-messy-code) - 了解文本文件中的字符有时为什么会变得奇奇怪怪。
 
 ## 基本操作
 
@@ -54,18 +54,18 @@ title: 概述
 <details>
   <summary>安装的插件列表</summary>
 
--   ProtocolLib 必备前置
--   LuckPerms 权限管理插件
--   PlaceholderAPI 必备前置
--   PlugManx 插件管理
--   WorldEdit 创世神
--   EssentialsX 基础插件
--   Multiverse-Core 多世界管理
--   ~~ViaVersion，ViaBackwards 跨版本~~
--   AuthMe 登陆插件
--   SkinRestorer 皮肤管理/皮肤修复
--   TrChat 聊天插件
--   MiniMotd MOTD 插件
+- ProtocolLib 必备前置
+- LuckPerms 权限管理插件
+- PlaceholderAPI 必备前置
+- PlugManx 插件管理
+- WorldEdit 创世神
+- EssentialsX 基础插件
+- Multiverse-Core 多世界管理
+- ~~ViaVersion，ViaBackwards 跨版本~~
+- AuthMe 登陆插件
+- SkinRestorer 皮肤管理/皮肤修复
+- TrChat 聊天插件
+- MiniMotd MOTD 插件
 
 Via 自动安装已经移动到 [此处](/java/process/plugin/misc/via/intro#笨蛋脚本)
 

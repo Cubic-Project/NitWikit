@@ -16,10 +16,10 @@ title: 配置服务端
 
 目前可以配置的
 
--   服务器端口
--   正版验证
--   服务器种子
--   最大玩家数
+- 服务器端口
+- 正版验证
+- 服务器种子
+- 最大玩家数
 
 ## server.proprites
 
@@ -101,10 +101,10 @@ difficulty=hard
 
 支持以下值
 
--   peaceful / 0 - 和平
--   easy / 1 - 简单
--   normal / 2 - 普通
--   hard / 3 - 困难
+- peaceful / 0 - 和平
+- easy / 1 - 简单
+- normal / 2 - 普通
+- hard / 3 - 困难
 
 ### 出生点保护
 
@@ -142,10 +142,10 @@ gamemode=survival
 
 支持以下模式
 
--   survival / 0 - 生存
--   creative / 1 - 创造
--   adventure / 2 - 冒险
--   spectator / 3 - 旁观
+- survival / 0 - 生存
+- creative / 1 - 创造
+- adventure / 2 - 冒险
+- spectator / 3 - 旁观
 
 ### 强制游戏模式
 

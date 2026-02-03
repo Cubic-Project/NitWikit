@@ -38,10 +38,10 @@ lp verbose <on|record|off|upload> [filter]
 
 ### 解释
 
--   `on` - 开启权限检查。
--   `off` - 关闭权限检查。
--   `record` - 记录日志。
--   `paste` - 停止记录，显示日志。
+- `on` - 开启权限检查。
+- `off` - 关闭权限检查。
+- `record` - 记录日志。
+- `paste` - 停止记录，显示日志。
 
 ### on
 
@@ -53,9 +53,9 @@ lp verbose <on|record|off|upload> [filter]
 lp verbose on !Luck & !anticheat
 ```
 
--   `Luck & (essentials | worldedit)` - 匹配 'essentials'和'worldedit' 开头的权限检查。
--   `!Luck & !anticheat` - 匹配除了 'Luck' 和 'anticheat' 开头以外的权限检查。
--   `anticheat & !anticheat.check` - 匹配以'anticheat' 开头 但不匹配 'anticheat.check' 开头的权限检查。
+- `Luck & (essentials | worldedit)` - 匹配 'essentials'和'worldedit' 开头的权限检查。
+- `!Luck & !anticheat` - 匹配除了 'Luck' 和 'anticheat' 开头以外的权限检查。
+- `anticheat & !anticheat.check` - 匹配以'anticheat' 开头 但不匹配 'anticheat.check' 开头的权限检查。
 
 ### paste
 

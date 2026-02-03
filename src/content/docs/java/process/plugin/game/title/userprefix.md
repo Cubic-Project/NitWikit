@@ -26,33 +26,32 @@ title: UserPrefix
 
 ## 依赖
 
--   **[必须]** 插件本体基于 [Spigot-API](https://hub.spigotmc.org/stash/projects/SPIGOT)、[BukkitAPI](http://bukkit.org/) 实现。
--   **[必须]** 数据部分基于 [LuckPerms](https://www.spigotmc.org/resources/luckperms.28140/) 实现。
--   **[推荐]** 变量部分基于 [PlaceholderAPI](https://www.spigotmc.org/resources/6245/) 实现。
+- **[必须]** 插件本体基于 [Spigot-API](https://hub.spigotmc.org/stash/projects/SPIGOT)、[BukkitAPI](http://bukkit.org/) 实现。
+- **[必须]** 数据部分基于 [LuckPerms](https://www.spigotmc.org/resources/luckperms.28140/) 实现。
+- **[推荐]** 变量部分基于 [PlaceholderAPI](https://www.spigotmc.org/resources/6245/) 实现。
 
 详细依赖列表可见 [Dependencies](https://github.com/CarmJos/UserPrefix/network/dependencies) 。
 
 ## 特性
 
--   理论上全版本支持！
--   游戏内重载配置文件并实时更新到玩家！
--   当玩家权限变更时会实时监测前缀，若权限不足则自动更换前缀并提示
--   可配置的声音、消息！
--   前缀图标可配置“选中”、“有权限”与“无权限”三种状态的物品
--   TabList 自动按照前缀的权重排序 (如有冲突可关掉)
--   玩家头顶前缀显示 (如有冲突可关掉)
--   简单的聊天变量修改功能！(不推荐使用) `[自 v2.1.0 版本起]`
--   自动排序，且可翻页的 GUI！
--   支持 PlaceholderAPI 变量！(凡支持的都可以使用，如 BungeeTabListPlus)
+- 理论上全版本支持！
+- 游戏内重载配置文件并实时更新到玩家！
+- 当玩家权限变更时会实时监测前缀，若权限不足则自动更换前缀并提示
+- 可配置的声音、消息！
+- 前缀图标可配置“选中”、“有权限”与“无权限”三种状态的物品
+- TabList 自动按照前缀的权重排序 (如有冲突可关掉)
+- 玩家头顶前缀显示 (如有冲突可关掉)
+- 简单的聊天变量修改功能！(不推荐使用) `[自 v2.1.0 版本起]`
+- 自动排序，且可翻页的 GUI！
+- 支持 PlaceholderAPI 变量！(凡支持的都可以使用，如 BungeeTabListPlus)
 
--   支持 [Hex 颜色](https://www.hexcolortool.com/)！(1.16 以上版本) `[自 v1.2.3 版本起]`
+- 支持 [Hex 颜色](https://www.hexcolortool.com/)！(1.16 以上版本) `[自 v1.2.3 版本起]`
+    - 格式： `&(#颜色代码)`
+    - 示例：LightSlateBlue `&(#8470FF)` 、 DarkSlateBlue `&(#483D8B)`
 
-    -   格式： `&(#颜色代码)`
-    -   示例：LightSlateBlue `&(#8470FF)` 、 DarkSlateBlue `&(#483D8B)`
-
--   支持渐变色！(1.16 以上版本) `[自 v1.2.3 版本起]`
-    -   格式： `&<#颜色代码1>消息内容&<#颜色代码2>`
-    -   示例： `&<#8470FF>Hello World!&<#483D8B>`
+- 支持渐变色！(1.16 以上版本) `[自 v1.2.3 版本起]`
+    - 格式： `&<#颜色代码1>消息内容&<#颜色代码2>`
+    - 示例： `&<#8470FF>Hello World!&<#483D8B>`
 
 ## 注意事项
 

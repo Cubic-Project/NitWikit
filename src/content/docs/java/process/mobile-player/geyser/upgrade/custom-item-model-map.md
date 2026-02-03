@@ -44,11 +44,11 @@ java2bedrock.sh (俗称转换器) 是一个自动资源包转换工具，可以�
 
 #### 操作步骤
 
--   首先你需要新建一个 Issue
--   在类型选择 **Pack Conversion**
--   在 **Java Pack Direct Download URL** 填上你的资源包下载地址 (不能是网盘，要求是直链)
--   最后勾上最下面的用户协议，点击开始就可以
--   转换好后，有个机器人会提醒你去 GitHub Action 下载，下载就来就是转换好的基岩版资源包
+- 首先你需要新建一个 Issue
+- 在类型选择 **Pack Conversion**
+- 在 **Java Pack Direct Download URL** 填上你的资源包下载地址 (不能是网盘，要求是直链)
+- 最后勾上最下面的用户协议，点击开始就可以
+- 转换好后，有个机器人会提醒你去 GitHub Action 下载，下载就来就是转换好的基岩版资源包
 
 ### 字体图像转换
 
@@ -66,7 +66,7 @@ AZPixel-Team 的 Java2Bedrock
 
 与上面没有区别
 
--   但是在填写资源包下载地址地方的下面，要把 `Font Conversion` 选项设置为 `true`
+- 但是在填写资源包下载地址地方的下面，要把 `Font Conversion` 选项设置为 `true`
 
 [项目地址](https://github.com/AZPixel-Team/Java2Bedrock)
 

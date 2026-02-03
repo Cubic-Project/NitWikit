@@ -8,12 +8,12 @@ title: EndStone 安装教程
 
 Windows 环境下：
 
--   [VS Code](https://code.visualstudio.com/) 编辑器
--   可选：最新版 [Python 3.12+ 环境](https://python.org)
+- [VS Code](https://code.visualstudio.com/) 编辑器
+- 可选：最新版 [Python 3.12+ 环境](https://python.org)
 
 Linux 环境下：
 
--   最新版 [Python 3.12+ 环境](https://python.org) 或者 最新版 [Docker 环境](https://hub.docker.com/r/endstone/endstone/)
+- 最新版 [Python 3.12+ 环境](https://python.org) 或者 最新版 [Docker 环境](https://hub.docker.com/r/endstone/endstone/)
 
 ## 方法一：直接下载启动
 

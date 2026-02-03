@@ -10,10 +10,10 @@ title: 域名申请与解析
 
 例如：
 
--   github.io
--   仿真教学.中国
--   live.bilibili.com
--   example.mc.12345.org
+- github.io
+- 仿真教学.中国
+- live.bilibili.com
+- example.mc.12345.org
 
 这些字符串和 IP 的对应关系被储存在 DNS 服务器上，当访问域名时候会查询 DNS 从而获取该域名对应的 IP 地址记录，
 

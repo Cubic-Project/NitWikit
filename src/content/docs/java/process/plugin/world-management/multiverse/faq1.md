@@ -18,14 +18,14 @@ title: 常见问题 1
 
 所需插件：
 
--   Multiverse-Core
--   [PlaceHolderAPI](/java/process/plugin/plugin-dependencies/placeholderapi/intro)
--   [聖天插件](/java/process/plugin/management-tool/chat/intro)
--   [TAB 和计分板插件](/java/process/plugin/misc/tab-scoreboard/intro)
--   其他你想展示中文世界名的插件
+- Multiverse-Core
+- [PlaceHolderAPI](/java/process/plugin/plugin-dependencies/placeholderapi/intro)
+- [聖天插件](/java/process/plugin/management-tool/chat/intro)
+- [TAB 和计分板插件](/java/process/plugin/misc/tab-scoreboard/intro)
+- 其他你想展示中文世界名的插件
 
--   v4：安装 [papi 的 Multiverse 扩展](/java/process/plugin/plugin-dependencies/placeholderapi/common-usage#multiverse)
--   v5：无需安装，插件自动挂钩 papi
+- v4：安装 [papi 的 Multiverse 扩展](/java/process/plugin/plugin-dependencies/placeholderapi/common-usage#multiverse)
+- v5：无需安装，插件自动挂钩 papi
 
 ## 设置别名
 
@@ -54,11 +54,11 @@ worlds:
 
 解释：
 
--   worlds - 插件检索的 YAML 节点，不用管
--   world - 主世界的默认本名 (可在 server.properties 修改)
--   world_nether - 地狱的默认本名
--   world_the_end - 末地的默认本名
--   alias - 这个世界的别名
+- worlds - 插件检索的 YAML 节点，不用管
+- world - 主世界的默认本名 (可在 server.properties 修改)
+- world_nether - 地狱的默认本名
+- world_the_end - 末地的默认本名
+- alias - 这个世界的别名
 
 我们在 **alias: ''** 中 `''` 填入这个世界的别名
 
@@ -79,8 +79,8 @@ worlds:
 
 将变量写到你想展示世界别名的插件配置里
 
--   `%multiverse_world_alias%` - v4 写法
--   `%multiverse-core_alias%` - v5 写法
+- `%multiverse_world_alias%` - v4 写法
+- `%multiverse-core_alias%` - v5 写法
 
 当然，这个插件要支持使用 papi 变量
 

@@ -62,23 +62,23 @@ DungeonMMO 是一个 Java 版的地下城生成插件，自带一些模版，每
 
 地形生成可以生成更加好看的地形，由于这类插件较多，就不单独介绍了，以下是还在更新的
 
--   Terra (免费) [下载地址](https://modrinth.com/plugin/terra)
+- Terra (免费) [下载地址](https://modrinth.com/plugin/terra)
 
 ![](_assets/356845062-1de0bbf4-7d26-4beb-b010-2f4d88efdba4.png)
 
 ![](_assets/356845134-18be416f-daf5-4ae9-8560-8412fda83dc6.png)
 
--   Iris (付费) [购买地址](https://www.spigotmc.org/resources/84586/)
+- Iris (付费) [购买地址](https://www.spigotmc.org/resources/84586/)
 
 ![](_assets/iris.png)
 
--   TerraformGenerator (付费/免费) [购买地址](https://www.spigotmc.org/resources/98309/)
+- TerraformGenerator (付费/免费) [购买地址](https://www.spigotmc.org/resources/98309/)
 
 ![](_assets/erra.jpg)
 
 ![](_assets/terra2.png)
 
--   Stratos (付费) [购买地址](https://www.spigotmc.org/resources/80313/)
+- Stratos (付费) [购买地址](https://www.spigotmc.org/resources/80313/)
 
 ![](_assets/st.png)
 

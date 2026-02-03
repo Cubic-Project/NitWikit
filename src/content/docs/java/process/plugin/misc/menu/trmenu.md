@@ -17,20 +17,20 @@ title: TrMenu
 
 ### 这个分支中有哪些新功能？
 
--   支持 1.8.9 ~ 最新版本
--   修复头颅显示问题
--   [国际化语言](https://github.com/CoderKuo/TrMenu/pull/64)
--   更多功能...
+- 支持 1.8.9 ~ 最新版本
+- 修复头颅显示问题
+- [国际化语言](https://github.com/CoderKuo/TrMenu/pull/64)
+- 更多功能...
 
 Notice：维护这个分支完全是个人兴趣。
 
 ### TrMenu v3 的优势
 
--   极佳的速度和性能：不仅针对条件判断进行了优化，而且重构了虚拟背包的 API
--   大量的模块已经确认拥有更好的性能，同时提供了一个特别的方式来检测 TrMenu 的性能表现
--   一如既往的强大功能：几乎所有功能都经过优化和保留，并添加了新功能。
--   功能与脚本：统一并标准化了内联函数的使用，重构了 TrMenu 动作，并全面支持新的 kether 脚本语言。
--   更多信息：请看 Wiki
+- 极佳的速度和性能：不仅针对条件判断进行了优化，而且重构了虚拟背包的 API
+- 大量的模块已经确认拥有更好的性能，同时提供了一个特别的方式来检测 TrMenu 的性能表现
+- 一如既往的强大功能：几乎所有功能都经过优化和保留，并添加了新功能。
+- 功能与脚本：统一并标准化了内联函数的使用，重构了 TrMenu 动作，并全面支持新的 kether 脚本语言。
+- 更多信息：请看 Wiki
 
 ## 链接
 
@@ -64,27 +64,27 @@ Notice：维护这个分支完全是个人兴趣。
 
 ## 文档
 
--   https://trmenu.trixey.cc
+- https://trmenu.trixey.cc
 
 旧文档，不推荐阅读
 
--   https://hhhhhy.gitbook.io/trmenu-v3
+- https://hhhhhy.gitbook.io/trmenu-v3
 
 8aka 文档镜像，推荐阅读
 
--   https://taboo.8aka.org/TrMenu/
+- https://taboo.8aka.org/TrMenu/
 
 新文档，推荐阅读，不挂梯也可访问
 
--   https://taboo.8aka.org/TrMenu
+- https://taboo.8aka.org/TrMenu
 
 阔大帅的文档，拥有上方新文档的全部内容且访问速度快
 
--   https://wiki.ptms.ink/index.php?title=%E7%A4%BE%E5%8C%BA:TrMenu
+- https://wiki.ptms.ink/index.php?title=%E7%A4%BE%E5%8C%BA:TrMenu
 
 社区文档，或许比上方的文档更容易理解
 
--   https://docs.qq.com/aio/DWWV6SFVuWmlES1po
+- https://docs.qq.com/aio/DWWV6SFVuWmlES1po
 
 TrMenu 入门学习文档
 
@@ -94,11 +94,11 @@ TrMenu 入门学习文档
 
 与 TrMenu 或 [Kether](/java/advance/lang/kether/basic) 有关的 VS Code 插件
 
--   [TrMenu-Helper](https://marketplace.visualstudio.com/items?itemName=hhhhhy.trmenu-helper)
+- [TrMenu-Helper](https://marketplace.visualstudio.com/items?itemName=hhhhhy.trmenu-helper)
 
 TrMenu 语法提示
 
--   [kether-snippet](https://marketplace.visualstudio.com/items?itemName=LiteCat.kether-snippet)
+- [kether-snippet](https://marketplace.visualstudio.com/items?itemName=LiteCat.kether-snippet)
 
 Kether 语法提示
 
@@ -226,9 +226,9 @@ Sneaking-Offhand:
 
 **知识点：**
 
--   TrMenu 文档熟读并背诵
--   [kether](/java/advance/lang/kether/basic)
--   [CheckItem](/java/process/plugin/plugin-dependencies/placeholderapi/check-item)
+- TrMenu 文档熟读并背诵
+- [kether](/java/advance/lang/kether/basic)
+- [CheckItem](/java/process/plugin/plugin-dependencies/placeholderapi/check-item)
 
 ```yaml
 "写法1":
@@ -282,11 +282,11 @@ Sneaking-Offhand:
 
 **知识点：**
 
--   TrMenu 文档熟读并背诵
--   [kether](/java/advance/lang/kether/basic)
--   [CheckItem](/java/process/plugin/plugin-dependencies/placeholderapi/check-item)
--   [妙妙写法](#妙妙写法)
--   [\{condition=\}条件](https://hhhhhy.gitbook.io/trmenu-v3/menu/action/option#tiao-jian)
+- TrMenu 文档熟读并背诵
+- [kether](/java/advance/lang/kether/basic)
+- [CheckItem](/java/process/plugin/plugin-dependencies/placeholderapi/check-item)
+- [妙妙写法](#妙妙写法)
+- [\{condition=\}条件](https://hhhhhy.gitbook.io/trmenu-v3/menu/action/option#tiao-jian)
 
 <!--markdownlint-disable line-length-->
 

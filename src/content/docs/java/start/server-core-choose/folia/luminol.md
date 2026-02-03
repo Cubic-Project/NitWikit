@@ -28,13 +28,13 @@ LightingLuminol 是 Luminol 的分支，旨在修复对 BukkitAPI 的破坏，�
 
 如果官网进不去或者下载慢可以使用这里的镜像！
 
--   [Luminol](https://sync.mcsl.com.cn/core/Luminol)
--   [LightingLuminol](https://sync.mcsl.com.cn/core/LightingLuminol)
--   [Molia 1.20.2](https://vip.123pan.cn/1821558579/Lingyi/core/molia-1.20.2-mcres.cn.jar)
--   [Molia 1.20.1](https://vip.123pan.cn/1821558579/Lingyi/aaa/molia/molia-1.20.1-mcres.cn.jar)
--   [Molia 1.19.4](https://vip.123pan.cn/1821558579/Lingyi/aaa/molia/Molia-1.19.4-mcres.cn.jar)
--   [DirtyMolia 1.20.2](https://vip.123pan.cn/1821558579/Lingyi/core/dirtymolia-1.20.2-mcres.cn.jar)
--   [DirtyMolia 1.20.1](https://vip.123pan.cn/1821558579/8448710)
+- [Luminol](https://sync.mcsl.com.cn/core/Luminol)
+- [LightingLuminol](https://sync.mcsl.com.cn/core/LightingLuminol)
+- [Molia 1.20.2](https://vip.123pan.cn/1821558579/Lingyi/core/molia-1.20.2-mcres.cn.jar)
+- [Molia 1.20.1](https://vip.123pan.cn/1821558579/Lingyi/aaa/molia/molia-1.20.1-mcres.cn.jar)
+- [Molia 1.19.4](https://vip.123pan.cn/1821558579/Lingyi/aaa/molia/Molia-1.19.4-mcres.cn.jar)
+- [DirtyMolia 1.20.2](https://vip.123pan.cn/1821558579/Lingyi/core/dirtymolia-1.20.2-mcres.cn.jar)
+- [DirtyMolia 1.20.1](https://vip.123pan.cn/1821558579/8448710)
 
 ## 调配置
 
@@ -52,9 +52,9 @@ Luminol 另一个好处就是可以开启生电配置
 
 打开 Luminol 的配置文件
 
--   fixes.allow_void_trading 虚空交易
--   fixes.allow_unsafe_teleportation 刷沙
--   fixes.use_vanilla_random_source RNG 操作
+- fixes.allow_void_trading 虚空交易
+- fixes.allow_unsafe_teleportation 刷沙
+- fixes.use_vanilla_random_source RNG 操作
 
 其它特性请阅读 Paper 文档
 
@@ -68,15 +68,15 @@ Lophine 基于 Luminol，但更专注于生电特性的实现，如果你是生�
 
 ### 特性
 
--   支持部分 Bukkit 插件
--   可配置的原版特性
--   Tpsbar 支持
--   对单线程区域性能的优化
--   更多生电向功能
+- 支持部分 Bukkit 插件
+- 可配置的原版特性
+- Tpsbar 支持
+- 对单线程区域性能的优化
+- 更多生电向功能
 
 ### Lophine 下载
 
--   [Lophine GitHub](https://github.com/LuminolMC/Lophine/releases)
+- [Lophine GitHub](https://github.com/LuminolMC/Lophine/releases)
 
 ### 配置
 
@@ -168,10 +168,10 @@ Lophine 提供了许多实验性功能，可以在配置文件中开启：
 
 对于生电服务器，建议开启以下配置：
 
--   `allow_void_trading = true` - 启用虚空交易
--   `allow_unsafe_teleportation = true` - 启用刷沙等特性
--   `use_vanilla_random_source = true` - 使用原版随机数
--   `disable_end_crystal_check = true` - 恢复原版重生龙逻辑
+- `allow_void_trading = true` - 启用虚空交易
+- `allow_unsafe_teleportation = true` - 启用刷沙等特性
+- `use_vanilla_random_source = true` - 使用原版随机数
+- `disable_end_crystal_check = true` - 恢复原版重生龙逻辑
 
 :::
 
@@ -179,7 +179,7 @@ Lophine 提供了许多实验性功能，可以在配置文件中开启：
 
 如果你在使用 Lophine 时遇到问题，可以加入 LuminolMC 的社区：
 
--   QQ 群：[1015048616](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=QML5kIVsniPi1PlZvnjHQT_02EHsZ5Jc&authKey=%2FTCJsZC7JFQ9sxAroPCKuYnlV57Z5fyqp36ewXZk3Sn4iJ9p4MB1JKdc%2FFcX3HOM&noverify=0&group_code=1015048616)
--   QQ 频道：[点击加入](https://pd.qq.com/s/eq9krf9j)
--   Telegram: [点击加入](https://t.me/LuminolMinecraft)
--   Discord: [点击加入](https://discord.gg/Qd7m3V6eDx)
+- QQ 群：[1015048616](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=QML5kIVsniPi1PlZvnjHQT_02EHsZ5Jc&authKey=%2FTCJsZC7JFQ9sxAroPCKuYnlV57Z5fyqp36ewXZk3Sn4iJ9p4MB1JKdc%2FFcX3HOM&noverify=0&group_code=1015048616)
+- QQ 频道：[点击加入](https://pd.qq.com/s/eq9krf9j)
+- Telegram: [点击加入](https://t.me/LuminolMinecraft)
+- Discord: [点击加入](https://discord.gg/Qd7m3V6eDx)

@@ -348,6 +348,7 @@ log-forwarding-changes = true
 这些是 Velocity-CTD 特有的性能优化选项，需要添加到 `[advanced]` 部分：
 
 <!-- autocorrect-disable -->
+
 ```toml
 [advanced]
 # ... 其他标准 Velocity 配置 ...
@@ -409,6 +410,7 @@ health-check-interval = 10
 # 服务器被认为不健康的超时时间（秒）
 unhealthy-timeout = 30
 ```
+
 <!-- autocorrect-enable -->
 
 ### 消息配置

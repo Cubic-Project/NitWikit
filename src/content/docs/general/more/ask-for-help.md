@@ -23,27 +23,27 @@ sidebar_position: 7
 
 **`怎么开基岩版互通`**
 
--   太直白了，请别人帮忙之前最好稍微带一些 **态度**。
+- 太直白了，请别人帮忙之前最好稍微带一些 **态度**。
 
 **`什么是 pojav？插件的 Wiki 在哪里？`**
 
--   **不要把群和人当做搜索引擎** (除非打钱了)。
+- **不要把群和人当做搜索引擎** (除非打钱了)。
 
 **`我玩家进不来服务器怎么办`**
 
--   **描述模糊**，可能性太多以至于没有人猜出。
+- **描述模糊**，可能性太多以至于没有人猜出。
 
 **`不正确提供 log 或不提供 log`**
 
--   **自己造词**，只有你自己能理解，以为别人明白。
+- **自己造词**，只有你自己能理解，以为别人明白。
 
 **`我玩家怎么假登陆了？天权系统怎么做？`**
 
--   以下这些情况，应该去天桥的老大爷找你算算命，因为没有有效的 log 没人能知道你遇到的问题。
--   在 **服务器** 问题中提供 **客户端** log。
--   **不完整** 的 log，甚至 **不提供** log。
--   错误的将 **客户端** 收到的报错当做 **服务端** 报错。
--   **直接将成百上千行的 log 发到交流群**
+- 以下这些情况，应该去天桥的老大爷找你算算命，因为没有有效的 log 没人能知道你遇到的问题。
+- 在 **服务器** 问题中提供 **客户端** log。
+- **不完整** 的 log，甚至 **不提供** log。
+- 错误的将 **客户端** 收到的报错当做 **服务端** 报错。
+- **直接将成百上千行的 log 发到交流群**
 
 :::caution
 
@@ -63,14 +63,14 @@ sidebar_position: 7
 
 例如，你应该：
 
--   使用一定的称呼：`请问大佬们我的 xxx 插件报错 NullPointerException 该怎么办呢？`
--   使用敬语：`打扰一下，我最近服务器总是报错 The server has not responded for 35 seconds! 请问有人知道怎么回事吗？`
+- 使用一定的称呼：`请问大佬们我的 xxx 插件报错 NullPointerException 该怎么办呢？`
+- 使用敬语：`打扰一下，我最近服务器总是报错 The server has not responded for 35 seconds! 请问有人知道怎么回事吗？`
 
 而不能：
 
--   开门见山：`服务器报错是这个 C++ Exception: std::optional<class std::system_error> 是啥情况`
--   发言不友好：`你不知道可以不说话，别在这浪费我时间`
--   斥责他人：`你是不是不会写插件啊，这插件怎么能开服就报错呢`
+- 开门见山：`服务器报错是这个 C++ Exception: std::optional<class std::system_error> 是啥情况`
+- 发言不友好：`你不知道可以不说话，别在这浪费我时间`
+- 斥责他人：`你是不是不会写插件啊，这插件怎么能开服就报错呢`
 
 <!--markdownlint-disable ol-prefix-->
 
@@ -78,26 +78,26 @@ sidebar_position: 7
 
 例如，你应该：
 
--   某插件出现不适配问题后在名为“我的世界服主交流群”的开服综合交流群里提问 `请问在升级 Paper1.20.4 之后遇到 xxx 插件不适配应该怎么办？`
--   某小众插件与 Leaves 核心出现兼容性问题后在该插件官方交流群里提问 `作者大大，你的 xxx 插件和 leaves 核心是不是有兼容性问题呢？`
+- 某插件出现不适配问题后在名为“我的世界服主交流群”的开服综合交流群里提问 `请问在升级 Paper1.20.4 之后遇到 xxx 插件不适配应该怎么办？`
+- 某小众插件与 Leaves 核心出现兼容性问题后在该插件官方交流群里提问 `作者大大，你的 xxx 插件和 leaves 核心是不是有兼容性问题呢？`
 
 而不能：
 
--   PowerNukkitX 核心相关问题到 LeviLemina 交流群里提问
--   路由器配置相关问题到某插件官方交流群里提问
--   卡服问题到其他游戏交流群里提问
+- PowerNukkitX 核心相关问题到 LeviLemina 交流群里提问
+- 路由器配置相关问题到某插件官方交流群里提问
+- 卡服问题到其他游戏交流群里提问
 
 4. 提到服务器环境
 
 例如，你应该：
 
--   `大佬们我是 1.16.5 catserver 服务器，遇到了 xxx 问题`
--   `最近我升级到了 1.21 Paper 核心，玩家反应 xxx 有人有类似的问题吗？`
+- `大佬们我是 1.16.5 catserver 服务器，遇到了 xxx 问题`
+- `最近我升级到了 1.21 Paper 核心，玩家反应 xxx 有人有类似的问题吗？`
 
 而不能：
 
--   仅给出插件名和报错却不给出服务端版本等信息：`大佬们有没有人知道我这个 xxx 插件怎么加载不了，报错 NoClassDefFoundError？`
--   仅附上报错信息却没有给出任何服务端版本、加载器版本、插件列表等信息：`有没有大佬能帮我看看这个崩服是为什么，什么也不干跑一跑图就崩，ll加载器`
+- 仅给出插件名和报错却不给出服务端版本等信息：`大佬们有没有人知道我这个 xxx 插件怎么加载不了，报错 NoClassDefFoundError？`
+- 仅附上报错信息却没有给出任何服务端版本、加载器版本、插件列表等信息：`有没有大佬能帮我看看这个崩服是为什么，什么也不干跑一跑图就崩，ll加载器`
 
 5. 给出合理的日志 - [详细说明](#给出日志)
 
@@ -109,9 +109,9 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 
 几乎所有的软件都会附上 Wiki，它们一般位于：
 
--   插件的 README 文件 (GitHub 主页往下翻一般就是)
--   插件作者在社交媒体发布的视频文章等或自行搭建的网站 (入口一般可以在插件的论坛介绍页、官网、README 中找到)
--   插件作者在即时通讯软件上发布的视频文章等 (比如有的插件作者会让你加他的 QQ 群，之后把使用文档放在群文件或群公告里)
+- 插件的 README 文件 (GitHub 主页往下翻一般就是)
+- 插件作者在社交媒体发布的视频文章等或自行搭建的网站 (入口一般可以在插件的论坛介绍页、官网、README 中找到)
+- 插件作者在即时通讯软件上发布的视频文章等 (比如有的插件作者会让你加他的 QQ 群，之后把使用文档放在群文件或群公告里)
 
 **请先耐心寻找这些文档**，实在找不到说明作者可能确实没有写，这种情况下再提问
 
@@ -195,22 +195,22 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 <details>
   <summary>其他可用的网站</summary>
 
--   https://pastes.dev/
--   https://paste.fastmirror.net/
--   https://n0paste.tk/
--   https://www.paste.lv/
--   https://nekobin.com/
--   https://note.ms/dwlg
--   https://paste.gg/
--   https://bytebin.lucko.me/
--   https://netcut.cn/
--   https://cl1p.cn/
--   https://jiantieban.cn/
--   https://www.verybin.com/
--   https://ykjtb.com/
--   https://airportal.cn/
--   https://toolight.cn/text/paste
--   https://nick-running.github.io/easy-tools/clipboard.html
+- https://pastes.dev/
+- https://paste.fastmirror.net/
+- https://n0paste.tk/
+- https://www.paste.lv/
+- https://nekobin.com/
+- https://note.ms/dwlg
+- https://paste.gg/
+- https://bytebin.lucko.me/
+- https://netcut.cn/
+- https://cl1p.cn/
+- https://jiantieban.cn/
+- https://www.verybin.com/
+- https://ykjtb.com/
+- https://airportal.cn/
+- https://toolight.cn/text/paste
+- https://nick-running.github.io/easy-tools/clipboard.html
 
 </details>
 

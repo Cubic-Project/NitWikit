@@ -182,28 +182,28 @@ permissions:
 
 解析命令 (`me` 代表自己)
 
--   `/papi bcparse <玩家|--null|me> <内容>`
--   `/papi cmdparse <玩家|me> <内容>`
--   `/papi parse <玩家|--null|me> <内容>`
--   `/papi parserel <玩家> <玩家> <内容>`
+- `/papi bcparse <玩家|--null|me> <内容>`
+- `/papi cmdparse <玩家|me> <内容>`
+- `/papi parse <玩家|--null|me> <内容>`
+- `/papi parserel <玩家> <玩家> <内容>`
 
 eCloud 命令
 
--   `/papi ecloud status`
--   `/papi ecloud clear`
--   `/papi ecloud download <变量扩展名称> [版本]`
--   `/papi ecloud update <变量扩展名称/all>` all 代表全部
--   `/papi ecloud info <变量扩展名称> [版本]`
--   `/papi ecloud list <all|<作者>|installed> [页数]` all 代表全部，installed 代表已安装的扩展
--   `/papi ecloud placeholders <变量扩展名称>`
--   `/papi ecloud refresh`
+- `/papi ecloud status`
+- `/papi ecloud clear`
+- `/papi ecloud download <变量扩展名称> [版本]`
+- `/papi ecloud update <变量扩展名称/all>` all 代表全部
+- `/papi ecloud info <变量扩展名称> [版本]`
+- `/papi ecloud list <all|<作者>|installed> [页数]` all 代表全部，installed 代表已安装的扩展
+- `/papi ecloud placeholders <变量扩展名称>`
+- `/papi ecloud refresh`
 
 变量扩展命令
 
--   `/papi info <变量扩展名称>`
--   `/papi list`
--   `/papi register <jar文件名>` 文件位于 /plugins/PlaceholderAPI/expansions/
--   `/papi unregister <变量扩展名称>`
+- `/papi info <变量扩展名称>`
+- `/papi list`
+- `/papi register <jar文件名>` 文件位于 /plugins/PlaceholderAPI/expansions/
+- `/papi unregister <变量扩展名称>`
 
 ## 链接
 

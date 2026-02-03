@@ -16,7 +16,6 @@ title: 使用 IDEA
 ## 第二步：构建项目
 
 1. **Maven 项目**：
-
     1. 打开右侧 Maven 工具窗口（View → Tool Windows → Maven）
     2. 依次点击：
         - `clean`（清理旧文件）
@@ -37,7 +36,6 @@ title: 使用 IDEA
 ## 常见问题
 
 1. **依赖下载失败**：
-
     - 检查网络连接
     - 刷新项目（右键项目 → Maven/Gradle → Reload Project）
       ![依赖](./_assets/image-4.png)

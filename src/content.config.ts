@@ -9,7 +9,7 @@ export const collections = {
         schema: docsSchema({
             extend: z.object({
                 giscus: z.boolean().optional().default(true),
-                topicSchema: topicSchema.optional(),
+                topicSchema: topicSchema.optional()
             })
         })
     })

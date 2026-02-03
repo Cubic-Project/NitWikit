@@ -20,8 +20,8 @@ title: MMOItems
 
 有很多人用多种方式对其汉化，这是其中两个：
 
--   https://www.minebbs.com/resources/.9699
--   https://github.com/MagicMC-Dev/MMOItems-Zh
+- https://www.minebbs.com/resources/.9699
+- https://github.com/MagicMC-Dev/MMOItems-Zh
 
 ![](_assets/mmoitems_2.webp)
 

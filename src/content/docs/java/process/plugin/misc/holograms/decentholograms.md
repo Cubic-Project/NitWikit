@@ -41,16 +41,16 @@ title: DecentHolograms
 
 ## Minecraft 本身限制
 
--   文本始终转向玩家
--   无法更改文本大小或字体
--   有些实体会发出声音，如 坚守者
--   图标（#ICON：）（即浮空物品）会旋转和上下摆动
+- 文本始终转向玩家
+- 无法更改文本大小或字体
+- 有些实体会发出声音，如 坚守者
+- 图标（#ICON：）（即浮空物品）会旋转和上下摆动
 
 这些是 Minecraft 本身限制，插件本身没有办法解决
 但搬运者（我）有一点歪门邪道
 
--   AdvancedGUI“文本"固定，不再转向玩家
--   [资源包做字体（IA 文档）](https://itemsadder.devs.beer/v/chinese/plugin-usage/adding-content/fonts) 使用资源包来改变字体
+- AdvancedGUI“文本"固定，不再转向玩家
+- [资源包做字体（IA 文档）](https://itemsadder.devs.beer/v/chinese/plugin-usage/adding-content/fonts) 使用资源包来改变字体
 
 ## 汉化
 

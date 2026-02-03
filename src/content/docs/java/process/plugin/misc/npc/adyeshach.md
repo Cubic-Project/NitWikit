@@ -32,7 +32,7 @@ Adyeshach 是一款基于 TabooLib 进行开发的纯发包 NPC 插件，旨在�
 
 :::
 
--   我不想花钱，我能用吗？
+- 我不想花钱，我能用吗？
 
 可以，但是你需要自己编译插件。[点击此处](https://a.ptms.ink/plugin/adyeshach/start/build)
 

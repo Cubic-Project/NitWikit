@@ -10,10 +10,10 @@ Dragonfly 是用 Go 语言编写的 Minecraft Bedrock Edition 服务器软件。
 
 ## 特色
 
--   轻量
--   易于拓展（一般用 Dragonfly 作为库来扩展）
--   具有文档齐全的代码库和易于使用的 API（[Dragonfly 文档](https://pkg.go.dev/github.com/df-mc/dragonfly/server)）
+- 轻量
+- 易于拓展（一般用 Dragonfly 作为库来扩展）
+- 具有文档齐全的代码库和易于使用的 API（[Dragonfly 文档](https://pkg.go.dev/github.com/df-mc/dragonfly/server)）
 
 ## 链接
 
--   [GitHub 链接](https://github.com/df-mc/dragonfly)
+- [GitHub 链接](https://github.com/df-mc/dragonfly)

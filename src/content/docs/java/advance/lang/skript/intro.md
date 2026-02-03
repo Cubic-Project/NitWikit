@@ -8,9 +8,9 @@ title: 概述
 
 引用的内容主要来源于：
 
--  TUCAOEVER 在 MCBBS 的教程
+- TUCAOEVER 在 MCBBS 的教程
 
--  法棍 在 CSKB 发布的 [sk 教程](https://kb.corona.studio/zhCN/skript/startup.html)
+- 法棍 在 CSKB 发布的 [sk 教程](https://kb.corona.studio/zhCN/skript/startup.html)
 
 :::
 

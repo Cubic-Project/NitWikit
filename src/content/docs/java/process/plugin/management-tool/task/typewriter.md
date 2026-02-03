@@ -12,11 +12,11 @@ TypeWriter 是一款适用于 Paper 服务端的插件，它能通过简洁而�
 
 ## 功能
 
--   **创建** 任务系统、NPC 对话树、多分支剧情 等玩法
--   **电影级过场动画**：设计动态镜头路径、NPC 动画互动及沉浸式剧情演出
--   **智能 NPC 行为**：自定义移动、外观切换、环境交互等逻辑
--   **可视化配置**：通过 网页控制台 轻松管理任务、NPC 及事件触发
--   **扩展模块**：通过 插件扩展（Extensions）集成自定义功能，打造独特游戏内容
+- **创建** 任务系统、NPC 对话树、多分支剧情 等玩法
+- **电影级过场动画**：设计动态镜头路径、NPC 动画互动及沉浸式剧情演出
+- **智能 NPC 行为**：自定义移动、外观切换、环境交互等逻辑
+- **可视化配置**：通过 网页控制台 轻松管理任务、NPC 及事件触发
+- **扩展模块**：通过 插件扩展（Extensions）集成自定义功能，打造独特游戏内容
 
 ![](https://gh-proxy.com/github.com/Cubic-Project/NitWikit/blob/main/docs-java/process/plugin/ManageTool/task/_assets/TypeWriter/cinematic.gif?raw=true)
 
