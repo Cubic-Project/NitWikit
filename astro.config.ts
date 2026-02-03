@@ -15,6 +15,7 @@ const IS_CHINA_SITE = process.env.CHINA === "true";
 
 export default defineConfig({
     site: IS_CHINA_SITE ? "https://nitwikit.8aka.cn" : "https://nitwikit.8aka.org",
+    outDir: "./build",
     integrations: [
         vue(),
         starlight({
