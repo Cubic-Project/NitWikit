@@ -54,6 +54,14 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 --add-modules=jdk.incubator.vector
 ```
 
+## E 核优化
+
+如果你使用 Java 22+、处理器为 x86_64 平台且存在大小核（P 核 + E 核）架构，你可以添加此参数
+
+```txt
+-XX:+UnlockDiagnosticVMOptions -XX:+EnableX86ECoreOpts
+```
+
 ## 下载源加速
 
 默认的 SpigotLibraryLoader 下载源或插件使用 PaperLibraryLoader 添加的 Maven 中心仓库下载源在国内访问很慢，
