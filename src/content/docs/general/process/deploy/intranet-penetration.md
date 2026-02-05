@@ -14,7 +14,7 @@ sidebar:
 
 Cloudflare 有内网穿透 Tunnel (无需注册！)，Minekube 也有内网穿透 Connect (同样无需注册)，还有 Geyser 官方推荐的 playit.gg
 
-自建 frp 参见 [此页面](/general/process/deploy/frp#配置 PROXY protocol)
+自建 frp 参见 [此页面](/general/process/deploy/frp#配置-proxy-protocol)
 
 ## Cloudflare Tunnel
 
