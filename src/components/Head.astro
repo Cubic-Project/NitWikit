@@ -1,7 +1,30 @@
 ---
 import StarlightHead from '@astrojs/starlight/components/Head.astro';
-import { ClientRouter } from 'astro:transitions';
+import VtbotStarlight from "astro-vtbot/components/starlight/Base.astro";
+import PageOffset from 'astro-vtbot/components/PageOffset.astro';
+import AutoNameSelected from 'astro-vtbot/components/AutoNameSelected.astro';
+import ProgressBar from "astro-vtbot/components/ProgressBar.astro";
+import PageOrder from 'astro-vtbot/components/starlight/PageOrder.astro';
+import { fade, slide } from 'astro:transitions';
 ---
 
-<StarlightHead><slot /></StarlightHead>
-<ClientRouter />
+<VtbotStarlight
+  replaceSidebarContent retainCurrentPageMarker>
+  <StarlightHead><slot /></StarlightHead>
+</VtbotStarlight>
+<PageOffset name="main" />
+<AutoNameSelected selector="starlight-toc li" prefix="vtbot-toc" shuffle={true} />
+<ProgressBar />
+<PageOrder />
+
+<style is:global>
+  .swup-progress-bar {
+    background: linear-gradient(
+      to bottom,
+      var(--sl-color-accent),
+      var(--sl-color-accent-high),
+      var(--sl-color-accent)
+    );
+    height: 5px;
+  }
+</style>
