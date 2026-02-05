@@ -4,17 +4,19 @@ sidebar:
     order: 6
 ---
 
-**适用于？**
+:::tip[什么时候需要？]
 
-没有公网的家里云
+没有公网的家里云或局域网环境
 
-**来几个？**
+:::
 
-内网穿透一抓一大把，比如 [樱花内网穿透](https://www.natfrp.com/) 和 [OpenFrp](https://www.openfrp.net/)
+以下是常见的内网穿透方案：
 
-Cloudflare 有内网穿透 Tunnel (无需注册！)，Minekube 也有内网穿透 Connect (同样无需注册)，还有 Geyser 官方推荐的 playit.gg
-
-自建 frp 参见 [此页面](/general/process/deploy/frp#配置-proxy-protocol)
+- **[樱花内网穿透](https://www.natfrp.com/)** 和 **[OpenFrp](https://www.openfrp.net/)** - 免费第三方方案
+- **[Cloudflare Tunnel](#cloudflare-tunnel)** - 免费，无需注册！
+- **[Minekube Connect](#minekube-connect)** - 免费，同样无需注册
+- **[playit.gg](#playitgg)** - 免费版本，支持亚太节点
+- **[自建 frp](/general/process/deploy/frp#配置-proxy-protocol)** - 自建方案
 
 ## Cloudflare Tunnel
 
