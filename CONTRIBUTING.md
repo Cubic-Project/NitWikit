@@ -34,6 +34,10 @@
 
 我们可以在你说明未排版的前提下代替你进行排版，但在此之前，请遵循以下要求：
 
+### 框架教程
+
+笨蛋文档使用 [Starlight](https://starlight.astro.build/zh-cn/) 框架，可以查看 Starlight 的 [官方文档](https://starlight.astro.build/zh-cn/getting-started/)，以对框架有基本的了解，并学习各种组件的语法及用法等。
+
 ### 格式要求
 
 对于文档，我们有格式要求，详见 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-Hans.md)，还有使用 MarkdownLint 和 Prettier 对文档进行格式化。
