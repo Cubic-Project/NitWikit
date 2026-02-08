@@ -1022,7 +1022,25 @@ export default defineConfig({
                                 },
                                 {
                                     label: "WaterdogePE 跨服",
-                                    items: ["bedrock/waterdogepe/preparation"]
+                                    items: ["bedrock/waterdogepe/intro",
+                                            {
+                                                label: "安装 Java",
+                                                collapsed: true,
+                                                items: [
+                                                        "general/java/intro",
+                                                        "general/java/choose-and-download-and-install-java",
+                                                        "general/java/environment",
+                                                        "general/java/sdkman",
+                                                        "general/java/faq"
+                                                ]
+                                            },
+                                            {
+                                                    label: "文本编辑器",
+                                                    collapsed: true,
+                                                    autogenerate: { directory: "general/preparation/text-editor" }
+                                            },
+                                            "src/content/docs/bedrock/waterdogepe/install"
+                                            ]
                                 }
                             ]
                         },
