@@ -1040,8 +1040,8 @@ export default defineConfig({
                                                     collapsed: true,
                                                     autogenerate: { directory: "general/preparation/text-editor" }
                                             },
-                                            "src/content/docs/bedrock/waterdogepe/install",
-                                            "src/content/docs/bedrock/waterdogepe/config"
+                                            "bedrock/waterdogepe/install",
+                                            "bedrock/waterdogepe/config"
                                             ]
                                 }
                             ]
