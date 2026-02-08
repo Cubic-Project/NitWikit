@@ -8,7 +8,7 @@ title: 配置文件
 
 # 启动后即可使用的所有下游服务器列表
 # address 字段格式为 ip:端口
-# public_address 为可选字段，可设置为玩家可以直接连接的IP
+# public_address 为可选字段，可设置为玩家可以直接连接的 IP
 servers:
   lobby1:
     address: 127.0.0.1:19133
@@ -23,9 +23,9 @@ listener:
   host: 0.0.0.0:19132
   # 可以连接到此代理实例的最大玩家数量
   max_players: 20
-  # 将玩家加入时使用的IP映射到特定服务器
+  # 将玩家加入时使用的 IP 映射到特定服务器
   # 例如 skywars.xyz.com => SkyWars-1
-  # 当玩家使用 skywars-xyz.com 作为服务器IP连接时，他将直接连接到 SkyWars-1
+  # 当玩家使用 skywars-xyz.com 作为服务器 IP 连接时，他将直接连接到 SkyWars-1
   forced_hosts: {}
 # 区分大小写的玩家权限列表（使用 {} 表示空）
 permissions:
@@ -59,9 +59,9 @@ prefer_fast_transfer: true
 use_fast_codec: true
 # 如果启用，代理将在 AvailableCommandsPacket 中注入所有代理命令，启用自动补全
 inject_proxy_commands: true
-# 上游服务器压缩率（代理到客户端），值越高 = 带宽越少，CPU使用越多，反之亦然
+# 上游服务器压缩率（代理到客户端），值越高 = 带宽越少，CPU 使用越多，反之亦然
 upstream_compression_level: 6
-# 上游服务器压缩率（代理到下游服务器），值越高 = 带宽越少，CPU使用越多，反之亦然
+# 上游服务器压缩率（代理到下游服务器），值越高 = 带宽越少，CPU 使用越多，反之亦然
 downstream_compression_level: 2
 # 教育功能需要小幅调整才能正常工作。如果任何下游服务器支持教育功能，请启用此选项
 enable_edu_features: false

@@ -644,7 +644,6 @@ export default defineConfig({
                                                         "java/process/mobile-player/client/android-all",
                                                         "java/process/mobile-player/client/renderer",
                                                         "java/process/mobile-player/client/pcl"
-                                                        
                                                     ]
                                                 }
                                             ]
@@ -1023,26 +1022,27 @@ export default defineConfig({
                                 },
                                 {
                                     label: "WaterdogePE 跨服",
-                                    items: ["bedrock/waterdogepe/intro",
-                                            {
-                                                label: "安装 Java",
-                                                collapsed: true,
-                                                items: [
-                                                        "general/java/intro",
-                                                        "general/java/choose-and-download-and-install-java",
-                                                        "general/java/environment",
-                                                        "general/java/sdkman",
-                                                        "general/java/faq"
-                                                ]
-                                            },
-                                            {
-                                                    label: "文本编辑器",
-                                                    collapsed: true,
-                                                    autogenerate: { directory: "general/preparation/text-editor" }
-                                            },
-                                            "bedrock/waterdogepe/install",
-                                            "bedrock/waterdogepe/config"
+                                    items: [
+                                        "bedrock/waterdogepe/intro",
+                                        {
+                                            label: "安装 Java",
+                                            collapsed: true,
+                                            items: [
+                                                "general/java/intro",
+                                                "general/java/choose-and-download-and-install-java",
+                                                "general/java/environment",
+                                                "general/java/sdkman",
+                                                "general/java/faq"
                                             ]
+                                        },
+                                        {
+                                            label: "文本编辑器",
+                                            collapsed: true,
+                                            autogenerate: { directory: "general/preparation/text-editor" }
+                                        },
+                                        "bedrock/waterdogepe/install",
+                                        "bedrock/waterdogepe/config"
+                                    ]
                                 }
                             ]
                         },
