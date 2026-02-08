@@ -1,1 +1,76 @@
+---
+title: 配置文件
+---
 
+```yaml
+# Waterdog 主配置文件
+# 在此配置您所需的网络设置
+
+# 启动后即可使用的所有下游服务器列表
+# address 字段格式为 ip:端口
+# public_address 为可选字段，可设置为玩家可以直接连接的IP
+servers:
+  lobby1:
+    address: 127.0.0.1:19133
+    public_address: play.myserver.com:19133
+listener:
+  # 在玩家服务器标签页中显示的 Motd，并在 ping 请求时返回
+  motd: §bWaterdog§3PE
+  # 服务器优先级列表。如果未被插件更改，代理将把玩家连接到这些服务器中的第一个
+  priorities:
+  - lobby1
+  # 服务器绑定的地址
+  host: 0.0.0.0:19132
+  # 可以连接到此代理实例的最大玩家数量
+  max_players: 20
+  # 将玩家加入时使用的IP映射到特定服务器
+  # 例如 skywars.xyz.com => SkyWars-1
+  # 当玩家使用 skywars-xyz.com 作为服务器IP连接时，他将直接连接到 SkyWars-1
+  forced_hosts: {}
+# 区分大小写的玩家权限列表（使用 {} 表示空）
+permissions:
+  TobiasDev:
+  - waterdog.player.transfer
+  - waterdog.player.list
+  alemiz003:
+  - waterdog.player.transfer
+  - waterdog.player.list
+# 每个玩家默认应获得的权限列表（使用 [] 表示空）
+permissions_default:
+- waterdog.command.help
+- waterdog.command.info
+# 是否在控制台启用调试输出
+enable_debug: false
+# 如果启用，将在客户端和代理之间创建加密连接
+upstream_encryption: true
+# 如果启用，只有通过 XBOX Live 身份验证的玩家才能加入。如果禁用，任何人都可以连接 *使用任意名称*
+online_mode: true
+# 如果启用，代理将能够绑定到 IPv6 地址
+enable_ipv6: false
+# 如果启用，代理将通过 LoginPacket 中的自定义字段向下游服务器传递信息（如 XUID 或 IP）
+use_login_extras: true
+# 如果启用，将用下划线替换用户名中的空格
+replace_username_spaces: false
+# 是否启用服务器查询
+enable_query: true
+# 如果启用，当接收到 McpeTransferPacket 时，代理将检查目标服务器是否在下游列表中，如果是，则使用快速传输机制
+prefer_fast_transfer: true
+# 快速编解码器仅解码代理所需的包，其他所有内容都将原始传递。禁用此选项可能会导致性能下降
+use_fast_codec: true
+# 如果启用，代理将在 AvailableCommandsPacket 中注入所有代理命令，启用自动补全
+inject_proxy_commands: true
+# 上游服务器压缩率（代理到客户端），值越高 = 带宽越少，CPU使用越多，反之亦然
+upstream_compression_level: 6
+# 上游服务器压缩率（代理到下游服务器），值越高 = 带宽越少，CPU使用越多，反之亦然
+downstream_compression_level: 2
+# 教育功能需要小幅调整才能正常工作。如果任何下游服务器支持教育功能，请启用此选项
+enable_edu_features: false
+# 启用/禁用资源包系统
+enable_packs: true
+# 是否强制应用材质包
+force_apply_packs: false
+# 您可以设置要缓存的最大资源包大小（单位：MB）
+pack_cache_size: 16
+# 在某些情况下创建线程可能代价高昂。指定每个内部线程执行器的最小空闲线程数。设置为 -1 以根据核心数量自动检测
+default_idle_threads: -1
+```
