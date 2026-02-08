@@ -14,11 +14,10 @@ import { Steps } from "@astrojs/starlight/components";
 
 4. 创建启动脚本以运行该 JAR 文件。
 
-   使用 Java 11 时，我们建议添加这些参数，这将为某些 Netty 功能提供支持。
+   使用 Java 11 时，我们建议添加以下参数，这将为某些 Netty 功能提供支持。
 
    ```bash
-   -Dio.netty.tryReflectionSetAccessible=true
-   --add-opens java.base/jdk.internal.misc=ALL-UNNAMED
+   -Dio.netty.tryReflectionSetAccessible=true --add-opens java.base/jdk.internal.misc=ALL-UNNAMED
    ```
 
     在 Windows 的启动脚本如下
