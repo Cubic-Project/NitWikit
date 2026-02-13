@@ -7,7 +7,6 @@ import starlightGiscus from "starlight-giscus";
 import starlightImageZoom from "starlight-image-zoom";
 import starlightLinksValidator from "starlight-links-validator";
 import starlightSidebarTopics from "starlight-sidebar-topics";
-import starlightDocSearch from "@astrojs/starlight-docsearch";
 import starlightScrollToTop from "starlight-scroll-to-top";
 import vue from "@astrojs/vue";
 
@@ -1061,12 +1060,6 @@ export default defineConfig({
                 ),
                 starlightLinksValidator(),
                 starlightImageZoom(),
-                starlightDocSearch({
-                    appId: "D1KV1BYF3B",
-                    apiKey: "4bb3573e59f2c49f30f057ce54edab3f",
-                    indexName: "yizhan",
-                    insights: true
-                }),
                 starlightScrollToTop()
             ],
             components: {
