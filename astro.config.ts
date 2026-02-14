@@ -41,7 +41,8 @@ export default defineConfig({
                     repoId: "R_kgDOQWQ-Ng",
                     category: "General",
                     categoryId: "DIC_kwDOQWQ-Ns4Cx2No",
-                    mapping: "og:title"
+                    mapping: "og:title",
+                    lazy: true
                 }),
                 starlightSidebarTopics(
                     [
@@ -1071,7 +1072,8 @@ export default defineConfig({
             ],
             components: {
                 LastUpdated: "./src/components/LastUpdated.astro",
-                Head: "./src/components/Head.astro"
+                Head: "./src/components/Head.astro",
+                Pagination: "./src/components/CustomPagination.astro"
             }
         }),
         AstroPWA({
