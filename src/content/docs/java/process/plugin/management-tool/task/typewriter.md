@@ -18,7 +18,7 @@ TypeWriter 是一款适用于 Paper 服务端的插件，它能通过简洁而�
 - **可视化配置**：通过 网页控制台 轻松管理任务、NPC 及事件触发
 - **扩展模块**：通过 插件扩展（Extensions）集成自定义功能，打造独特游戏内容
 
-![](https://gh-proxy.com/github.com/Cubic-Project/NitWikit/blob/main/docs-java/process/plugin/ManageTool/task/_assets/TypeWriter/cinematic.gif?raw=true)
+![](https://github.com/gabber235/Typewriter/blob/develop/readme/cinematic.gif?raw=true)
 
 ## 链接
 
