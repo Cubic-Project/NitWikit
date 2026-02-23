@@ -61,7 +61,6 @@ import { TabItem, Tabs } from "@astrojs/starlight/components";
 
 - [官方](https://papermc.io/downloads/all)
 - [FastMirror](https://www.fastmirror.net/#/download/Paper)
-- [McRes](https://mcres.cn/downloads/paper.html)
 - [原子云](https://res.nullatom.com/Minecraft/Server/Paper/)
 - [MCSL](https://sync.mcsl.com.cn/core/Paper)
 
@@ -91,7 +90,6 @@ import { TabItem, Tabs } from "@astrojs/starlight/components";
 **下载**：
 
 - [官方](https://purpurmc.org/downloads)
-- [McRes](https://mcres.cn/downloads/purpur.html)
 - [FastMirror](https://www.fastmirror.net/#/download/Purpur)
 - [MCSL](https://sync.mcsl.com.cn/core/Purpur)
 
@@ -119,7 +117,6 @@ Leaves 基本完全支持客户端生电 mod，包括但不限于 Carpet、PCA�
 **下载**:
 
 - [官方](https://leavesmc.org/downloads/leaves)
-- [McRes](https://mcres.cn/downloads/leaves.html)
 - [MCSL](https://sync.mcsl.com.cn/core/Leaves)
 - [Leaves 1.18.2](https://vip.123pan.cn/1821558579/6492009)
 
@@ -133,11 +130,11 @@ Leaves 基本完全支持客户端生电 mod，包括但不限于 Carpet、PCA�
 - 性能 - 比 Purpur 好的多的性能（在实体方面甚至能达到 50% 以上的提升）
 - 支持 - 国人开发的核心
 
-    对插件的兼容程度：Paper = Purpur > Leaf /Leaves
-
 **劣势**：
 
 - 兼容 - 有极少插件不兼容 (可向核心作者反馈)
+
+    对插件的兼容程度：Paper = Purpur > Leaf /Leaves
 
 总的来说，相比 Purpur 会有更好的优化，极少不兼容的插件可以及时找作者反馈，所以非常推荐此核心
 
@@ -146,25 +143,69 @@ Leaves 基本完全支持客户端生电 mod，包括但不限于 Carpet、PCA�
 **下载**：
 
 - [官方](https://www.leafmc.one/zh/download)
-- [McRes](https://mcres.cn/downloads/leaf.html)
+
+</TabItem>
+<TabItem label="Folia">
+
+![](_assets/folia.webp)
+
+:::danger
+
+Folia 不适合新手，新手无论如何都不要考虑 [（其详细内容会在下一章介绍）](/java/start/server-core-choose/folia/intro/.html)
+
+:::
+
+**优势**：
+
+- 性能 - 为服务器增加了区域化多线程
+
+**劣势**：
+
+- 兼容 - 目前只支持很少插件
+
+**选择**：
+
+Folia 有许多分支，每个分支都有不同的特点和适用场景。根据你的需求选择合适的分支：
+
+```mermaid
+flowchart TD
+    A[Folia]
+    A --> B[快速升到高版本]
+    A --> C[性能,稳定性和功能]
+    A --> D[插件兼容性]
+    A --> E[生电特性]
+    B --> DeerFolia
+    C --> F[1.21+] --> Luminol
+    C --> G[1.20/2] --> Molia
+    C --> H[1.19.3/4] --> Kaiiju
+    D --> I[1.21+] --> LightingLuminol
+    D --> J[1.20/2] --> DirtyMolia
+    D --> K[1.19.3/4] --> DirtyFolia
+    E --> L[1.21+] --> Lophine
+```
+
+**下载**：
+
+- [Folia](https://mcres.cn/downloads/folia.html)
+- [Luminol & Lophine](https://mcres.cn/downloads/luminol.html)
+- [更多分支下载](/java/start/server-core-choose/folia/misc)
+
 
 </TabItem>
 </Tabs>
 
 ## 其他
 
-### 1.8
-
 :::tip
 
-目前仅有 1.8.8 版本的核心，而没有 1.8.9
+对于 1.8 ，目前仅有 1.8.8 版本的核心，而没有 1.8.9
 
 1.8.8 与 1.8.9 区别小到安装 [ViaVersion](/java/process/plugin/misc/via/intro) 之后感觉不到区别
 
 :::
 
 <Tabs>
-<TabItem label="PandaSpigot">
+<TabItem label="PandaSpigot （ 1.8 ）">
 
 **优势**：
 
@@ -182,7 +223,7 @@ Leaves 基本完全支持客户端生电 mod，包括但不限于 Carpet、PCA�
 - [McRes](https://vip.123pan.cn/1821558579/Lingyi/core/pandaspigot-116-mcres.cn.jar)
 
 </TabItem>
-<TabItem label="SportPaper">
+<TabItem label="SportPaper（ 1.8 ）">
 
 **优势**：
 
@@ -199,13 +240,7 @@ Leaves 基本完全支持客户端生电 mod，包括但不限于 Carpet、PCA�
 - [McRes](https://vip.123pan.cn/1821558579/6492156)
 
 </TabItem>
-</Tabs>
-
-### 1.12
-
-我们推荐 Beast
-
-![](_assets/Beast.jpg)
+<TabItem label="Beast （ 1.12 ）">
 
 **优势**：
 
@@ -220,6 +255,11 @@ Leaves 基本完全支持客户端生电 mod，包括但不限于 Carpet、PCA�
 
 - [官方](https://github.com/HomoMC/Beast)
 - [McRes](https://vip.123pan.cn/1821558579/6492155)
+
+![](_assets/Beast.jpg)
+
+</TabItem>
+</Tabs>
 
 ## 不推荐
 
