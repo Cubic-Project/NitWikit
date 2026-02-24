@@ -4,7 +4,11 @@
     "exclude": ["dist"],
     "compilerOptions": {
         "resolveJsonModule": true,
-        "jsx": "preserve"
+        "jsx": "preserve",
+        "paths": {
+            "@components/*": ["./src/components/*"],
+            "@layouts/*": ["./src/layouts/*"]
+        }
     },
     "mdx": {
         "checkMdx": true
