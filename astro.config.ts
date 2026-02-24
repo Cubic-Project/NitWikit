@@ -305,7 +305,8 @@ export default defineConfig({
                                                                 "java/process/plugin/management-tool/chat/intro",
                                                                 "java/process/plugin/management-tool/chat/carbon",
                                                                 "java/process/plugin/management-tool/chat/huskchat",
-                                                                "java/process/plugin/management-tool/chat/trchat"
+                                                                "java/process/plugin/management-tool/chat/trchat",
+                                                                "java/process/plugin/management-tool/chat/interactivechat"
                                                             ]
                                                         },
                                                         {
