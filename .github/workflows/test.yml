@@ -1,40 +1,40 @@
 name: Test
 
 on:
-  push:
-    branches: ["main"]
+    push:
+        branches: ["main"]
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      # 拉取代码
-      - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 1
-      - name: Install Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            # 拉取代码
+            - name: Checkout
+              uses: actions/checkout@v6
+              with:
+                  fetch-depth: 1
+            - name: Install Node.js
+              uses: actions/setup-node@v6
+              with:
+                  node-version: 24
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  run_install: false
 
-      - name: Get pnpm store directory
-        shell: bash
-        run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-      - name: Setup pnpm cache
-        uses: actions/cache@v5
-        with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+            - name: Get pnpm store directory
+              shell: bash
+              run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+            - name: Setup pnpm cache
+              uses: actions/cache@v5
+              with:
+                  path: ${{ env.STORE_PATH }}
+                  key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+                  restore-keys: |
+                      ${{ runner.os }}-pnpm-store-
 
-      - name: Install
-        run: pnpm install --frozen-lockfile
+            - name: Install
+              run: pnpm install --frozen-lockfile
 
-      - name: Build
-        run: pnpm run build
+            - name: Build
+              run: pnpm run build

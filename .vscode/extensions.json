@@ -3,6 +3,6 @@
         "davidanson.vscode-markdownlint",
         "huacnlee.autocorrect",
         "astro-build.astro-vscode",
-        "esbenp.prettier-vscode"
+        "oxc.oxc-vscode"
     ]
 }
