@@ -8,7 +8,7 @@ Folia 是 Paper 的一个分支，由 Spottedleaf 开发。
 
 :::danger
 
-Folia 不适合新手，无论如何都不要考虑
+Folia 不适合新手，新手无论如何都不要考虑
 
 :::
 
