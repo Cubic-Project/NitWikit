@@ -4,8 +4,6 @@ title: 调服务端配置
 
 import { TabItem, Tabs } from "@astrojs/starlight/components";
 
-{/* markdownlint-disable no-duplicate-heading */}
-
 没有适用于所有服务器的设置。你应该理解每个配置选项，并根据服务器的最佳参数与服务器硬件、玩家数量和服务器性质等调整参数。
 
 所以参数因服而异，随着进入游戏后期，服务器工作量会随着机器或者玩家增加而逐渐增加，
@@ -330,8 +328,9 @@ max-auto-save-chunks-per-tick: 24
 
 推荐值：
 
+{/* prettier-ignore */}
 <Tabs>
-<TabItem label="1.21.5+">
+    <TabItem label="1.21.5+">
     ```yaml
     chunks:
         entity-per-chunk-save-limit:
@@ -882,8 +881,9 @@ sensor:
 
 推荐值：
 
+{/* prettier-ignore */}
 <Tabs>
-    <TabItem value="1200-1202" label="1.20~1.20.2">
+    <TabItem label="1.20~1.20.2">
     ```yaml
     enabled: true
     items:
@@ -916,7 +916,7 @@ sensor:
         scaffolding: 600
     ```
     </TabItem>
-    <TabItem value="1203+" label="1.20.3+">
+    <TabItem label="1.20.3+">
     ```yaml
     enabled: true
     items:

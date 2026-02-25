@@ -14,11 +14,11 @@ import { Steps } from "@astrojs/starlight/components";
 
 4. 创建启动脚本以运行该 JAR 文件。
 
-   使用 Java 11 时，我们建议添加以下参数，这将为某些 Netty 功能提供支持。
+    使用 Java 11 时，我们建议添加以下参数，这将为某些 Netty 功能提供支持。
 
-   ```bash
-   -Dio.netty.tryReflectionSetAccessible=true --add-opens java.base/jdk.internal.misc=ALL-UNNAMED
-   ```
+    ```bash
+    -Dio.netty.tryReflectionSetAccessible=true --add-opens java.base/jdk.internal.misc=ALL-UNNAMED
+    ```
 
     在 Windows 的启动脚本如下
 
@@ -34,16 +34,17 @@ import { Steps } from "@astrojs/starlight/components";
     #!/bin/bash
     java -Xms512M -Xmx4G -jar Waterdog.jar
     ```
+
     在启动脚本中使用上述代码仅作为模板，您也可将 512M 替换为期望分配的初始内存池大小，将 4G 替换为期望分配给代理的最大内存池大小。具体数值完全取决于您使用的底层硬件及实际需求，若无需调整则可跳过此步骤。
 
     记得为在 Linux 的脚本赋予可执行权限，这样你就可以直接使用 bash 你的启动脚本名字.sh 来启动 WaterdogPE。
 
 5. 成功安装 WDPE 后，需确保其正常运行。关键步骤之一是配置下游服务器实例（Nukkit/PMMP）以离线模式运行，可通过修改 server.properties 实现。需将 xbox-auth 属性设置为 false。
 
-   在使用代理时需禁用 PocketMine-MP 新增的另一项设置：
+    在使用代理时需禁用 PocketMine-MP 新增的另一项设置：
 
-   由于服务器认为玩家未通过认证，其 XUID 将被清除。PMMP 新增的安全验证机制会检查玩家当前 XUID 是否与历史记录匹配。
+    由于服务器认为玩家未通过认证，其 XUID 将被清除。PMMP 新增的安全验证机制会检查玩家当前 XUID 是否与历史记录匹配。
 
-   代理环境下因 XUID 不匹配导致玩家断开连接的问题，可通过在 pocketmine.yml 文件中禁用 player.verify-xuid 解决。
+    代理环境下因 XUID 不匹配导致玩家断开连接的问题，可通过在 pocketmine.yml 文件中禁用 player.verify-xuid 解决。
 
 </Steps>

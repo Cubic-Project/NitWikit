@@ -10,35 +10,35 @@ title: 配置文件
 # address 字段格式为 ip:端口
 # public_address 为可选字段，可设置为玩家可以直接连接的 IP
 servers:
-  lobby1:
-    address: 127.0.0.1:19133
-    public_address: play.myserver.com:19133
+    lobby1:
+        address: 127.0.0.1:19133
+        public_address: play.myserver.com:19133
 listener:
-  # 在玩家服务器标签页中显示的 Motd，并在 ping 请求时返回
-  motd: §bWaterdog§3PE
-  # 服务器优先级列表。如果未被插件更改，代理将把玩家连接到这些服务器中的第一个
-  priorities:
-  - lobby1
-  # 服务器绑定的地址
-  host: 0.0.0.0:19132
-  # 可以连接到此代理实例的最大玩家数量
-  max_players: 20
-  # 将玩家加入时使用的 IP 映射到特定服务器
-  # 例如 skywars.xyz.com => SkyWars-1
-  # 当玩家使用 skywars-xyz.com 作为服务器 IP 连接时，他将直接连接到 SkyWars-1
-  forced_hosts: {}
+    # 在玩家服务器标签页中显示的 Motd，并在 ping 请求时返回
+    motd: §bWaterdog§3PE
+    # 服务器优先级列表。如果未被插件更改，代理将把玩家连接到这些服务器中的第一个
+    priorities:
+        - lobby1
+    # 服务器绑定的地址
+    host: 0.0.0.0:19132
+    # 可以连接到此代理实例的最大玩家数量
+    max_players: 20
+    # 将玩家加入时使用的 IP 映射到特定服务器
+    # 例如 skywars.xyz.com => SkyWars-1
+    # 当玩家使用 skywars-xyz.com 作为服务器 IP 连接时，他将直接连接到 SkyWars-1
+    forced_hosts: {}
 # 区分大小写的玩家权限列表（使用 {} 表示空）
 permissions:
-  TobiasDev:
-  - waterdog.player.transfer
-  - waterdog.player.list
-  alemiz003:
-  - waterdog.player.transfer
-  - waterdog.player.list
+    TobiasDev:
+        - waterdog.player.transfer
+        - waterdog.player.list
+    alemiz003:
+        - waterdog.player.transfer
+        - waterdog.player.list
 # 每个玩家默认应获得的权限列表（使用 [] 表示空）
 permissions_default:
-- waterdog.command.help
-- waterdog.command.info
+    - waterdog.command.help
+    - waterdog.command.info
 # 是否在控制台启用调试输出
 enable_debug: false
 # 如果启用，将在客户端和代理之间创建加密连接

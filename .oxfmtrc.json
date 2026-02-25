@@ -1,5 +1,5 @@
 {
-    "experimentalTernaries": false,
+    "$schema": "./node_modules/oxfmt/configuration_schema.json",
     "printWidth": 120,
     "tabWidth": 4,
     "useTabs": false,
@@ -17,12 +17,6 @@
     "endOfLine": "lf",
     "embeddedLanguageFormatting": "auto",
     "singleAttributePerLine": false,
-    "overrides": [
-        {
-            "files": ["*.yml"],
-            "options": {
-                "tabWidth": 2
-            }
-        }
-    ]
+    "sortPackageJson": false,
+    "ignorePatterns": ["pnpm-lock.yaml"]
 }
