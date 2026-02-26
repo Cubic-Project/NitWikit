@@ -68,8 +68,8 @@ misc:
     max-joins-per-tick: 2147483647 # 每个 Tick 允许的最大加入玩家数，超出则延迟加入（与 bukkit.yml 中的连接节流无关）
 packet-limiter:
     all-packets:
-        interval: 0.000001 # 最大数据包速率生效的时间间隔（单位：秒）
-        max-packet-rate: 999999.0 # 每个玩家在上述时间间隔内允许的最大数据包数量
+        interval: 7 # 最大数据包速率生效的时间间隔（单位：秒）
+        max-packet-rate: 500 # 每个玩家在上述时间间隔内允许的最大数据包数量
 spam-limiter:
     incoming-packet-threshold: 2147483647 # 收到的数据包超过此阈值时视为垃圾流量并忽略
 unsupported-settings:
