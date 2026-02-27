@@ -4,9 +4,9 @@ sidebar:
     order: 2
 ---
 
-![官网图片](https://code.visualstudio.com/assets/home/home-screenshot-win-lg.png)
+![官网图片](https://code.visualstudio.com/assets/docs/getstarted/getting-started/terminal-new-file.png)
 
-全能型文本编辑器，**非常非常推荐**，支持简体中文 / 繁体中文 / 英文，仅支持 `Windows 10 +`。
+全能型文本编辑器，**非常非常推荐**，支持简体中文 / 繁体中文 / 英文，支持 `Windows 10 +` , `Linux` 和 `Mac`。
 
 缺点是启动速度可能不是很快，不过非常适合新手使用。(已经算是比较快的了。)
 
