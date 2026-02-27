@@ -23,3 +23,6 @@ Minecraft 自 `1.18` 版本后，默认不再允许使用 _除英文字母、数
 CnUsername 与某些昵称插件不同：CnUsername 是真正实现中文名，而非披着中文名的幌子，里子还是英文名的“游戏昵称 (显示名称)”
 
 后续教程及下载请查阅 [GitHub](https://github.com/0XPYEX0/CnUsername)
+
+---------------------------------------------
+Leaf核心自带此插件,将leaf-global.yml中的use-username-regex改为True,下一行改为username-regex: ^[a-zA-Z0-9_.\u4e00-\u9fa5]*$ 即可
