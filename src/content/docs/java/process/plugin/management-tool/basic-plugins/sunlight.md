@@ -13,7 +13,7 @@ title: Sunlight
 ![](_assets/5.png)
 
 - **模块化。** 插件的任何部分都可以轻松完全禁用！包括任何插件命令！
-- **轻盈而现代。** 漂亮的消息设计，简单直观的 GUI，没有过载（hello CMI），也不是那么基本（hello Essentials）。
+- **轻盈而现代。** 漂亮的消息设计，简单直观的 GUI，没有过载（hello CMI），也不是那么基本（hello EssentialsX）。
 - [**JSON 支持。**](https://github.com/nulli0n/NexEngine-spigot/wiki/Language-Config#json-formatting) 大约 90% 的插件消息（命令用法和描述除外）支持自定义 JSON 元素！
 - **GUI 驱动。** 忘记在聊天中浏览套件、经线、房屋、禁令等。所有这些都是通过完全可定制的信息 GUI 完成的！
 - **常用命令。** 超过 50+ 基本和实用命令！

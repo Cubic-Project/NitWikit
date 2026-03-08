@@ -49,7 +49,7 @@ command-block-overrides:
     - "give"
 ```
 
-当在 Essentitals 插件加载时在命令方块中的实现效果将会是 `minecraft:give` 而不是 `essentials:give`
+当在 EssentialsX 插件加载时在命令方块中的实现效果将会是 `minecraft:give` 而不是 `essentials:give`
 
 当你需要命令方块执行大量 Mojang 命令 (MC 原版命令) 而不被插件等覆盖时，您可以将这个命令加入到 `command-block-overrides` 中，以下指令会覆盖命令方块中所有的命令使用 MC 原版命令 :
 

@@ -2,11 +2,11 @@
 title: 什么是权限
 ---
 
-举个栗子，你想要执行 Essentials 插件的 tpa 命令，那么你需要 `essentials.tpa` 这个权限。
+举个栗子，你想要执行 EssentialsX 插件的 tpa 命令，那么你需要 `essentials.tpa` 这个权限。
 
 :::note
 
-大佬们，想要这个起作用当然需要装 Essentials 插件了...
+大佬们，想要这个起作用当然需要装 EssentialsX 插件了...
 
 :::
 
@@ -16,7 +16,7 @@ title: 什么是权限
 
 形如 xxx.xxx 或者 xxx.xxx.xxx。
 
-比如上面提到的 essentials.tpa，我们称为权限节点。
+比如上面提到的 `essentials.tpa`，我们称为权限节点。
 
 (当然你别认为所有 xxx.xxx 都是权限节点)。
 

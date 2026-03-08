@@ -47,7 +47,7 @@ auto-afk: 300
 ```
 
 在超时 (以秒为单位) 后，用户将被设置为 AFK。
-此功能需要玩家拥有 essentials.afk.auto 权限。
+此功能需要玩家拥有 `essentials.afk.auto` 权限。
 设置为 -1 表示不会超时。
 
 ```yaml

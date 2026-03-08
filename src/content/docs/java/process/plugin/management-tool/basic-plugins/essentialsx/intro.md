@@ -47,8 +47,8 @@ EssentialsX 是一个基于 Spigot 服务端的基础插件，为从大到小的
 
 Essentials 插件分为两个版本：
 
-- essentials(早已停更) 适合 MC 1.7.10 [下载](https://mineplugin.org/Essentials/Downloads)。
-- essentialsX 适合 MC 1.8+ [下载](https://essentialsx.net/downloads.html)。
+- Essentials（早已停更）适合 MC 1.7.10 [下载](https://mineplugin.org/Essentials/Downloads)。
+- EssentialsX 适合 MC 1.8+ [下载](https://essentialsx.net/downloads.html)。
 
 <details>
 <summary>怎么找到官网并从官网下载 Essentials？</summary>
@@ -80,7 +80,7 @@ Essentials 插件分为两个版本：
 | EssentialsX Discord Link | Discord 和 Minecraft 之间的帐户同步。                 |
 | EssentialsX AntiBuild    | 可以设置谁可以建造，或谁可以放置/破坏哪种方块。       |
 | EssentialsX Geo          | 地理 IP 查找功能。                                    |
-| EssentialsProtect        | 是一个基本的世界保护，可以设置世界规则。              |
+| EssentialsX Protect      | 是一个基本的世界保护，可以设置世界规则。              |
 | EssentialsX XMPP         | 轻量级聊天、消息和服务器日志与 Jabber/XMPP 服务集成。 |
 
 ## MySQL 存储扩展

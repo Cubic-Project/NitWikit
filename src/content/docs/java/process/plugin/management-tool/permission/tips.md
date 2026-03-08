@@ -22,7 +22,7 @@ lp verbose <on|record|off|upload> [filter]
 
 当安装 EssentialsX AntiBuild 后，你没有权限破坏方块时。
 
-你还不知道翻文档的情况，也不用跟个~~傻逼~~一样问群友这个
+你还不知道翻文档的情况，也不用跟个 ~~笨蛋~~ 一样问群友这个
 
 ![](./_assets/日志-1.png)
 

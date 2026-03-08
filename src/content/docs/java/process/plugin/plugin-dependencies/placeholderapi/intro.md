@@ -22,7 +22,7 @@ PlaceholderAPI 是适用于 Spigot 及其衍生服务端的插件，它允许服
 
 也可以做到一些你以为它不能做的事，比如 Math (数学运算)、Checkitem (操作玩家物品)、JavaScript (执行 JS)、Progress (制作进度条)。
 
-对于插件的变量支持，通常由插件自己提供，或者安装变量扩展来提供变量。变量扩展可以在游戏内通过 PAPI eCloud 下载安装。现有超过 230 个扩展可下载，可支持非常多的插件，比如 Essentials、Factions、LuckPerms、Vault 等。如果你是开发者，并且希望为你的插件添加 PlaceholderAPI 支持，请参阅 [API 使用文档](https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Hook-into-PlaceholderAPI)。
+对于插件的变量支持，通常由插件自己提供，或者安装变量扩展来提供变量。变量扩展可以在游戏内通过 PAPI eCloud 下载安装。现有超过 230 个扩展可下载，可支持非常多的插件，比如 EssentialsX、Factions、LuckPerms、Vault 等。如果你是开发者，并且希望为你的插件添加 PlaceholderAPI 支持，请参阅 [API 使用文档](https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Hook-into-PlaceholderAPI)。
 
 PlaceholderAPI 已破 170 万下载量，同时使用本插件的服务器数已超过 4.5 万，成为了各规模各类型服务器的必需品。
 
