@@ -74,7 +74,7 @@ Essentials 插件分为两个版本：
 | 名字                     | 介绍                                                  |
 | ------------------------ | ----------------------------------------------------- |
 | EssentialsX              | 包括 tpa，warp，home，afk，kit 等。                   |
-| EssentialsX Chat         | 聊天模块。                                            |
+| EssentialsX Chat         | 聊天模块                                              |
 | EssentialsX Spawn        | 包含基本的玩家生成，还可以进服给玩家一个工具包。      |
 | EssentialsX Discord      | 与 Discord 的轻量级聊天、消息传递和命令集成。         |
 | EssentialsX Discord Link | Discord 和 Minecraft 之间的帐户同步。                 |

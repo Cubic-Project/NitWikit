@@ -2,7 +2,7 @@
 title: 常见问题
 ---
 
-## 你没有权限与 xxx 交互。
+## 你没有权限与 xxx 交互。\
 
 ![](../../permission/_assets/日志-1.png)
 

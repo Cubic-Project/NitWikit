@@ -417,7 +417,7 @@ allow-old-id-signs: false
 # 例如，如果插件提供 [kit] 标牌，而您希望使用它们的而不是 EssentialsX 的，
 # 那么只需在下面添加 'kit'，EssentialsX 就不会保护它。
 #
-# 更多信息请参见 https://github.com/drtshock/EssentialsX/pull/699。
+# 更多信息请参见 https://github.com/EssentialsX/Essentials/pull/699。
 unprotected-sign-names:
     #- kit
 
@@ -812,7 +812,7 @@ confirm-home-overwrite: false
 # +------------------------------------------------------+ #
 ############################################################
 
-# 更多信息，请访问 https://wiki.ess3.net/wiki/EssentialsX_Economy
+# 更多信息，请访问 https://wiki.ess3.net/wiki/Essentials_Economy
 
 # 您可以通过使用 /setworth 命令和 'worth.yml' 来控制出售给服务器的物品的价值。
 
