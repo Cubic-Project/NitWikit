@@ -277,7 +277,15 @@ world-settings:
 
 ## Leaves（推荐）
 
-Leaves 是一个专注于生电玩家的 Minecraft 服务端，皆在还原被上游破坏的原版特性，也是目前最适用于生电服的插件端核心。
+:::note
+
+Leaves 的实现方式决定了 Leaves 不可能完全符合原版特性，如果对生电需求很高仍然建议使用 Fabric！
+
+如某些生电机器在 Leaves 上出现非预期行为请优先在 Leaves 的 QQ/Discord/GitHub 中反馈，而不是反馈给机器作者。
+
+:::
+
+Leaves 是一个专注于生电玩家的 Minecraft 服务端，皆在还原被上游破坏的原版特性，也是目前插件端核心中对于生电适配性最高的核心。
 
 其配置文件 `leaves.yml` 提供了涵盖性能优化、问题修复、原版机制恢复以及玩法增强等各种生电友好的自定义配置项。
 
@@ -293,21 +301,23 @@ Leaf 是一个 Paper 的分支，拥有非常高的性能（基本是 Paper 系�
 
 ## Luminol
 
-Luminol 是 Folia 的一个分支，相比于 Folia 有这更好的性能，同时可以还原更多的特性。
+Luminol 是 Folia 的一个分支，相比于 Folia 有着更好的性能，同时可以还原更多的特性。
 
 :::tip[Folia 生电]
 
 Folia 是 Paper 的分支，也就是说 Paper 玩不了的机器 Folia 照样玩不了。
 
-唯一使用 Folia 的理由是 Folia 可以调用多个核心是实现更好的性能，因此在选择 Folia 开服前应该认真的思考。
+唯一使用 Folia 的理由是 Folia 可以调用多个核心以实现更好的性能，因此在选择 Folia 开服前应该认真的思考。
 
-如果机器配置不够（没有 8h16g）建议考虑 Leaf 而不是 Folia。
+如果机器配置低于 16 物理核心（不是线程数），建议优先考虑 Leaves 或者 Leaf，而不是 Folia。
 
 一些碎碎念：
 
-目前 Folia 还存在各种小问题，比如极高效率的双维度刷怪农场，如猪人塔，会导致服务器卡死，等等。
+尽管在 Folia 上，许多游戏行为和常规的服务器核心看起来相差不大，但其底层机制相较于原版 MC 已经发生了重大改变。
 
-因此，目前 Folia 系核心仍旧不能作为原版生电服平替 Fabric 的替代品。
+部分原版机制的缺失，跨维度时序与原版的差异，仍然是 Folia 目前迈不过去的门槛。
+
+因此，目前 Folia 系核心仍旧不能作为原版生电服平替 Fabric 的选择，也不建议各位服主贸然选择 Folia。
 
 :::
 
@@ -368,13 +378,13 @@ Folia 是 Paper 的分支，也就是说 Paper 玩不了的机器 Folia 照样�
   enabled = true
 ```
 
-同时需要调整分配线程数，因为众所周知 Folia 默认的分配线程数非常保守，会出现一核有难，八核围观的场景。
+同时需要调整分配线程数。因为众所周知 Folia 默认的分配线程数非常保守，会出现一核有难，八核围观的场景。
 
 打开 Paper 的全局配置，找到 `threaded-regions.threads`，通常情况下，分配给区块 Tick 线程数应该是 80% 乘上你的物理 CPU 核数。
 
 ## Lophine
 
-Lophine 是一个基于 Luminol 的分支，相比于 Luminol 添加了更多适用于生电的实用功能，和可配置的原版特性。目标是在 Folia 上实现更多生电的内容。
+Lophine 是一个基于 Luminol 的分支，相比于 Luminol 添加了更多适用于生电的实用功能和可配置的原版特性。其目标是在 Folia 上实现更多生电相关机制。
 
 ```toml
 # lophine_global_config.toml
