@@ -1026,15 +1026,21 @@ exp: 4.0
 
 :::
 
-将红石系统替换为优化版本，减少冗余更新，降低服务器必须计算的逻辑量。可能会对~~个别~~的红石机器产生影响，
+将红石系统替换为优化版本，减少冗余更新，降低服务器必须计算的逻辑量。可能会对 ~~个别~~ 的红石机器产生影响，
 
 但其提升非常大，性能提升可能有 70%，利大于弊。甚至还可以修复 Bukkit 造成的红石同步问题。
 
-`ALTERNATE_CURRENT`是基于 [Alternate Current](https://modrinth.com/mod/alternate-current)。更多信息请阅读该页面。
+`ALTERNATE_CURRENT` 是基于 [Alternate Current](https://modrinth.com/mod/alternate-current)。更多信息请阅读该页面。
 
 :::caution
 
-此选项会使 TNT 复制失效，生电服请不要考虑此选项。
+Paper 提供的两种红石优化算法都会对红石机器有不同程度的轻微影响。
+
+`ALTERNATE_CURRENT` 算法会使某一 TNT 复制机的设计失效，需要对设计进行更改，可以查看 SpaceWalkerRS 在 [alternate-current#23](https://github.com/SpaceWalkerRS/alternate-current/issues/23#issuecomment-1475507971) 中对这个问题的详细解释，同时在 Issue 底部可以找到有人附上的机器改造教程。
+
+`EIGENCRAFT` 算法可以兼容目前几乎所有的红石机器，但是也有罕见的边缘例子，比如 theosib 在 [MC-81098 评论](https://mojira.dev/MC-81098#comment-420777) 中提及的红石设计。
+
+如你服是生电服并且玩家不想改造机器，可以使用 `EIGENCRAFT`。或者保留此项为 `VANILLA` 不使用红石优化。
 
 :::
 
