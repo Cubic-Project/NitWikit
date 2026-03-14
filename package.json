@@ -33,7 +33,8 @@
         "starlight-links-validator": "^0.19.2",
         "starlight-scroll-to-top": "^0.4.0",
         "tailwindcss": "^4.1.18",
-        "typescript": "^5.9.3"
+        "typescript": "^5.9.3",
+        "workbox-window": "^7.4.0"
     },
     "engines": {
         "node": ">=18.0"

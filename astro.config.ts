@@ -1116,7 +1116,7 @@ export default defineConfig({
     vite: {
         plugins: [tailwindcss()],
         ssr: {
-            noExternal: ["naive-ui", "vueuc", "date-fns"]
+            noExternal: ["naive-ui", "vueuc", "date-fns", "workbox-window"]
         }
     }
 });
