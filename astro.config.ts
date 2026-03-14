@@ -1094,19 +1094,7 @@ export default defineConfig({
                 short_name: "Cubic Wiki",
                 display: "standalone",
                 theme_color: "#2196f3",
-                background_color: "#424242",
-                icons: [
-                    {
-                        src: "/icons/book-192.png",
-                        sizes: "192x192",
-                        type: "image/png"
-                    },
-                    {
-                        src: "/icons/book-512.png",
-                        sizes: "512x512",
-                        type: "image/png"
-                    }
-                ]
+                background_color: "#424242"
             }
         }),
         mermaid({
