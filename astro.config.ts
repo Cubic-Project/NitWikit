@@ -1079,14 +1079,22 @@ export default defineConfig({
         }),
         AstroPWA({
             registerType: "autoUpdate",
-
+            workbox: {
+                skipWaiting: true,
+                clientsClaim: true,
+                navigateFallback: "/404",
+                ignoreURLParametersMatching: [/./],
+                globPatterns: ["**/*.{html,js,css,png,svg,json,ttf,pf_fragment,pf_index,pf_meta,pagefind,wasm}"]
+            },
+            experimental: {
+                directoryAndTrailingSlashHandler: true
+            },
             manifest: {
                 name: "Cubic Wiki",
                 short_name: "Cubic Wiki",
+                display: "standalone",
                 theme_color: "#2196f3",
                 background_color: "#424242",
-                display: "standalone",
-                start_url: "/",
                 icons: [
                     {
                         src: "/icons/book-192.png",

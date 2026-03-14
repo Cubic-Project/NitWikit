@@ -1,19 +1,71 @@
 ---
-import StarlightHead from '@astrojs/starlight/components/Head.astro';
+import StarlightHead from "@astrojs/starlight/components/Head.astro";
 import VtbotStarlight from "astro-vtbot/components/starlight/Base.astro";
-import PageOffset from 'astro-vtbot/components/PageOffset.astro';
-import AutoNameSelected from 'astro-vtbot/components/AutoNameSelected.astro';
+import PageOffset from "astro-vtbot/components/PageOffset.astro";
+import AutoNameSelected from "astro-vtbot/components/AutoNameSelected.astro";
 import ProgressBar from "astro-vtbot/components/ProgressBar.astro";
-import PageOrder from 'astro-vtbot/components/starlight/PageOrder.astro';
-import { fade, slide } from 'astro:transitions';
+import PageOrder from "astro-vtbot/components/starlight/PageOrder.astro";
+import { pwaInfo } from "virtual:pwa-info";
 ---
 
-<VtbotStarlight
-  replaceSidebarContent retainCurrentPageMarker>
+<script>
+  import { registerSW } from "virtual:pwa-register";
+  // 每10分钟检查一次更新，页面将自动刷新
+  const intervalMS = 10 * 60 * 1000;
+  const updateSW = registerSW({
+    immediate: true,
+    onRegisteredSW(swUrl, r) {
+      console.log("SW registered: ", swUrl);
+      r &&
+        setInterval(async () => {
+          if (r.installing || !navigator) return;
+
+          if ("connection" in navigator && !navigator.onLine) return;
+
+          const resp = await fetch(swUrl, {
+            cache: "no-store",
+            headers: {
+              cache: "no-store",
+              "cache-control": "no-cache",
+            },
+          });
+
+          if (resp?.status === 200) await r.update();
+        }, intervalMS);
+    },
+    onOfflineReady() {
+      console.log("PWA application ready to work offline");
+    },
+  });
+</script>
+<script is:inline type="module">
+  await import("/pagefind/pagefind-highlight.js");
+  new PagefindHighlight({
+    highlightParam: "highlight",
+    addStyles: false,
+    markOptions: {
+      className: "pagefind-highlight",
+      exclude: ["[data-pagefind-ignore]", "[data-pagefind-ignore] *"],
+      accuracy: { value: "complementary", limiters: [",", "", ".", ":"] },
+      acrossElements: true,
+      synonyms: {
+        1: "one",
+        2: "two",
+      },
+    },
+  });
+</script>
+
+{pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
+<VtbotStarlight replaceSidebarContent retainCurrentPageMarker>
   <StarlightHead><slot /></StarlightHead>
 </VtbotStarlight>
 <PageOffset name="main" />
-<AutoNameSelected selector="starlight-toc li" prefix="vtbot-toc" shuffle={true} />
+<AutoNameSelected
+  selector="starlight-toc li"
+  prefix="vtbot-toc"
+  shuffle={true}
+/>
 <ProgressBar />
 <PageOrder />
 
