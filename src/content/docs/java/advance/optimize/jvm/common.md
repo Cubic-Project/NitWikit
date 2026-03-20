@@ -46,14 +46,6 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 
 :::
 
-## SIMD
-
-如果你使用的是 Pufferfish 的分支 (Purpur，Leaf，Leaves，Gale)，你可以添加此参数
-
-```txt
---add-modules=jdk.incubator.vector
-```
-
 ## 下载源加速
 
 默认的 SpigotLibraryLoader 下载源或插件使用 PaperLibraryLoader 添加的 Maven 中心仓库下载源在国内访问很慢，

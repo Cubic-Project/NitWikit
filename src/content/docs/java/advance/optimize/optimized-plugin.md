@@ -47,7 +47,7 @@ _[TooManyGen](https://modrinth.com/plugin/toomanygen) - 惩罚玩家跑图，实
 
 因此，停止使用类似插件，如：
 
-_LaggRemover (Fork) - 有时候会导致即使插件卸载，实体 AI 也被移除了，比不上 Pufferfish (使用 Purpur Fork 即可) 根据距离衰减的
+_LaggRemover (Fork) - 有时候会导致即使插件卸载，实体 AI 也被移除了，比不上 Pufferfish (或其他专注优化的分支) 根据距离衰减的
 AI._
 
 ### 任何对于内存 GC 进行操作的插件

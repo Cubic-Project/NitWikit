@@ -32,9 +32,9 @@ Gale - 是基于 Paper 的一个专注各种性能优化的 Fork；
 
 Leaves - 是基于 Paper 的一个致力于修复原版服务端被破坏特性的 Fork；
 
-Purpur - 是基于 Purfferfish 的一个专注功能性和性能的 Fork；
+Purpur - 是基于 Paper 的一个专注自定义配置和功能性的 Fork；
 
-Leaf - 是基于 Purfferfish，Purpur，Gale 等的专注于性能的 Fork。
+Leaf - 是基于 Paper 的专注于各种性能优化的 Fork。
 
 ## Mod 端
 
