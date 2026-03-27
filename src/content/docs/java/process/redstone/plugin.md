@@ -225,6 +225,10 @@ world-settings:
             misc: 160
             display: 160
             other: 512
+        # 服务器每 tick 处理 TNT 爆炸的次数
+        # 设为 0 或少于 0，以禁用此限制
+        # 或者设为任意极高的值，如 2000，以允许世吞等涉及大量 TNT 爆炸的生电机器的正常运行
+        max-tnt-per-tick: 0
 ```
 
 ### bukkit.yml 配置
@@ -233,7 +237,7 @@ world-settings:
 # bukkit.yml
 settings:
     # 生物生成限制
-    # bukkit.yml 内默认值即遵从原版的单区块生成上限数值
+    # bukkit.yml 内默认值即遵从原版的生成上限数值
     # 如觉得生成过少导致农场效率过低，可以适当调高相应生物类别的生成限制值
     spawn-limits:
         monsters: 70
