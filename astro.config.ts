@@ -702,7 +702,7 @@ export default defineConfig({
                                                         "java/advance/optimize/jvm/common",
                                                         "java/advance/optimize/jvm/dragonwell8",
                                                         "java/advance/optimize/jvm/dragonwell11",
-                                                        "java/advance/optimize/jvm/openj9",
+                                                        "java/advance/optimize/jvm/semeru",
                                                         "java/advance/optimize/jvm/graal",
                                                         "java/advance/optimize/jvm/zing"
                                                     ]
