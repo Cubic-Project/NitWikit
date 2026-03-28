@@ -55,21 +55,20 @@ GraalVM 在 22.3.0 修复了所有已知的 Minecraft 错误
 
 import { TabItem, Tabs } from "@astrojs/starlight/components";
 
-<Tabs queryString="jvm-download">
-<TabItem value="dragonwell" label="Dragonwell">
+<Tabs queryString="jdk-download">
+<TabItem value="zulu" label="Azul Zulu">
 
-Dragonwell 分为 Standard Edition 和 Extended Edition，推荐下载 Extended Edition
+Azul Zulu 支持 Java 8 以上，Java 7 和 6 需要成为客户才能下载
 
-- [官网](https://dragonwell-jdk.io/) 下载区域选择 `China Mainland`
-- [Dragonwell 8 预览](https://github.com/dragonwell-project/dragonwell8/releases)
-- [Dragonwell 11 预览](https://github.com/dragonwell-project/dragonwell11/releases)
+- [官网](https://www.azul.com/downloads/?package=jdk&show-old-builds=true#zulu)
+- [下载镜像](https://d.injdk.cn/download/zulu)
 
 </TabItem>
 <TabItem value="graalvm" label="GraalVM">
 
 GraalVM 分为 Community Edition (CE) 和 Enterprise Edition (EE)，除非你服务器大到会被 Oracle 找上门，不然请选择 Enterprise Edition
 
-推荐下载最新版，也就是 Java 24
+推荐下载最新版，也就是 Java 25
 
 - [下载 EE](https://www.graalvm.org/downloads/)
 - [下载 CE](https://github.com/graalvm/graalvm-ce-builds/releases/)
@@ -82,27 +81,28 @@ Oracle 官网同样提供 GraalVM，但是上面的 GraalVM EE 包含了企业�
 :::
 
 </TabItem>
+<TabItem value="dragonwell" label="Dragonwell">
+
+Alibaba Dragonwell 分为 Standard Edition 和 Extended Edition，推荐下载 Extended Edition
+
+- [官网](https://dragonwell-jdk.io/) 下载区域选择 `China Mainland`
+- [Dragonwell 8 预览](https://github.com/dragonwell-project/dragonwell8/releases)
+- [Dragonwell 11 预览](https://github.com/dragonwell-project/dragonwell11/releases)
+
+</TabItem>
+<TabItem value="openj9" label="OpenJ9">
+
+OpenJ9 有认证版和非认证版，主要是因为和 OpenJ9 和操作系统的关系而使用不同的许可证罢了，本质代码是一样的，直接下 `IBM Semeru Runtime Open Edition` 就行
+
+- [官网](https://developer.ibm.com/languages/java/semeru-runtimes/downloads/)
+- [下载镜像](https://d.injdk.cn/download/ibm)
+
+</TabItem>
 <TabItem value="zing" label="Azul Zing">
 
 Azul Zing 不提供公开下载。如确认服务器性能已受到当前 JDK 的瓶颈限制，可提交试用申请表申请试用。
 
 [填写申请](https://www.azul.com/prime-trial)
-
-</TabItem>
-<TabItem value="zulu" label="Azul Zulu">
-
-Azul Zulu 支持 Java 8 以上，Java 7 和 6 需要成为客户才能下载
-
-- [官网](https://www.azul.com/downloads/?package=jdk&show-old-builds=true#zulu)
-- [下载镜像](https://d.injdk.cn/download/zulu)
-
-</TabItem>
-<TabItem value="openj9" label="OpenJ9">
-
-OpenJ9 有认证版和非认证版，主要是因为和 OpenJ9 的关系和操作系统的关系而使用不同的许可证罢了，本质代码是一样的，直接下 `IBM Semeru Runtime Open Edition` 就行
-
-- [官网](https://developer.ibm.com/languages/java/semeru-runtimes/downloads/)
-- [下载镜像](https://d.injdk.cn/download/ibm)
 
 </TabItem>
 </Tabs>
