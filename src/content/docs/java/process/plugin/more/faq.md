@@ -55,19 +55,7 @@ org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError
 
 `has been compiled by a more recent version of the Java Runtime (class file version <Class 版本>)` 就是你需要更新到的 Java 版本
 
-常用 Class Version 对应表
-
-| Java 版本 | Class 文件版本 |
-| --------- | -------------- |
-| Java 7    | 51.0           |
-| Java 8    | 52.0           |
-| Java 11   | 55.0           |
-| Java 16   | 60.0           |
-| Java 17   | 61.0           |
-| Java 21   | 65.0           |
-| Java 22   | 66.0           |
-| Java 23   | 67.0           |
-| Java 24   | 68.0           |
+你可以在 [这里](https://javaalmanac.io/bytecode/versions/) 找到 Class Version 和 Java 版本的对应表。
 
 ## 循环依赖
 

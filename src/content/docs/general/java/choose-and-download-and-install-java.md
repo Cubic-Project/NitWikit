@@ -62,7 +62,7 @@ title: 选择、下载和安装 Java
 | Java 11   | [Dragonwell](https://dragonwell-jdk.io/)                                                                 |
 | Java 17   | [Azul Zulu](https://d10.injdk.cn/openjdk/zulu/17/)                                                       |
 | Java 21   | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/21/) / [Azul Zulu](https://d10.injdk.cn/openjdk/zulu/21/) |
-| Java 24   | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/24/) / [Azul Zulu](https://d10.injdk.cn/openjdk/zulu/24/) |
+| Java 25   | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/25/) / [Azul Zulu](https://d10.injdk.cn/openjdk/zulu/25/) |
 
 <!--markdownlint-enable line-length-->
 

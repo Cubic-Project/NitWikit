@@ -1,8 +1,10 @@
 ---
-title: OpenJ9
+title: Semeru
 ---
 
-OpenJ9 是完全重新设计的 JVM，拥有独立的垃圾回收系统，与 HotSpot JVM 的 G1GC、ZGC 等完全不同。
+Semeru 是由 IBM 提供的 JDK 发行版，使用 OpenJ9 JVM 而非 HotSpot JVM。
+
+OpenJ9 是一套遵循 Java 虚拟机规范、独立实现并重新设计的 JVM，拥有独立的内存管理机制和垃圾收集策略，和 HotSpot JVM 内的 G1GC、ZGC 不同。
 
 :::caution
 
@@ -10,19 +12,17 @@ OpenJ9 是完全重新设计的 JVM，拥有独立的垃圾回收系统，与 Ho
 
 :::
 
-:::danger
+:::danger[兼容性说明]
 
-**重要兼容性说明**
-
-由于 Paper 服务端内置 Spark 性能分析器，而 Spark 与 OpenJ9 不兼容，因此默认情况下 **不能在 Paper 服务端上使用 OpenJ9**。
+Paper 核心内置 Spark 性能分析器，这会导致和 OpenJ9 JVM 不兼容，因此默认情况下 **不推荐** 将 Semeru 用于 Paper 或其分支。
 
 :::
 
 ## Paper 兼容性修复
 
-如需在 Paper 及其分支上使用 OpenJ9，需禁用内置 Spark：
+如需在 Paper 及其分支上使用 Semeru，你需要禁用内置 Spark：
 
-### 方法一：配置文件（推荐）
+### 方法一：关闭内置 Spark（推荐）
 
 在 `config/paper-global.yml` 中设置：
 
@@ -31,19 +31,21 @@ spark:
     enabled: false
 ```
 
-### 方法二：启动参数
-
-添加参数：
-
-```txt
--Dpaper.preferSparkPlugin=true
-```
-
 :::caution
 
 禁用 Spark 后无法使用性能分析功能。
 
 :::
+
+### 方法二：使用插件版 Spark
+
+添加 JVM 启动参数：
+
+```txt
+-Dpaper.preferSparkPlugin=true
+```
+
+使核心优先选择 Spark 插件，而非内置的版本。
 
 ## 基础参数
 
