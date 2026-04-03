@@ -6,9 +6,9 @@ sidebar:
 
 ## MySQL
 
-MySQL 的配置文件在 Windows 中，是 `my.ini` ，默认在 `C:\Program Files\MySQL\MySQL Server X.X` 文件夹中
+MySQL 的配置文件在 Windows 中，是 `my.ini`，默认在 `C:\Program Files\MySQL\MySQL Server X.X` 文件夹中。
 
-而 Linux 中，是 `my.cnf` ，默认路径为 `/etc/my.cnf`
+而 Linux 中，是 `my.cnf`，默认路径为 `/etc/my.cnf`。
 
 <details>
   <summary>示例配置文件</summary>
@@ -230,15 +230,15 @@ innodb_lock_wait_timeout = 120
 
 :::caution
 
-绝对不要直接把示例配置文件直接复制粘贴进你的配置文件当中
+绝对不要直接把示例配置文件直接复制粘贴进你的配置文件当中，
 
-否则有可能会导致数据库无法启动
+否则有可能会导致数据库无法启动。
 
-正确的做法是看完注释之后根据自己的需要，自行去修改配置文件，然后重启或重载 MySQL 服务
+正确的做法是看完注释之后根据自己的需要，自行去修改配置文件，然后重启或重载 MySQL 服务。
 
 :::
 
-此外，还有一些十分重要的配置项，建议修改，没有的配置项可以自行在配置文件中添加
+此外，还有一些十分重要的配置项，建议修改，没有的配置项可以自行在配置文件中添加。
 
 :::note
 

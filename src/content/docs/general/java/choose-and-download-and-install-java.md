@@ -4,7 +4,7 @@ title: 选择、下载和安装 Java
 
 :::caution
 
-部分服务端有在项目的 README 中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java 8，推荐版本为 Java 21 mod 服务端
+部分服务端有在项目的 README 中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java 8，推荐版本为 Java 21 mod 服务端。
 
 :::
 
@@ -50,7 +50,7 @@ title: 选择、下载和安装 Java
 
 :::caution
 
-此处下载链接可能不是最新版，如需下载最新版请跳转至 [手动下载](#手动下载)
+此处下载链接可能不是最新版，如需下载最新版请跳转至 [手动下载](#手动下载)。
 
 :::
 
@@ -80,14 +80,14 @@ title: 选择、下载和安装 Java
 
 ## 下载镜像
 
-[InJDK](https://d10.injdk.cn/openjdk/) 各种 JDK 的下载镜像
+[InJDK](https://d10.injdk.cn/openjdk/) 各种 JDK 的下载镜像。
 
 ## Oracle 版
 
 官方版本
 
 <details>
-  <summary>怎么找到官网并从官网下载</summary>
+  <summary>怎么找到官网并从官网下载：</summary>
 
 ![](_assets/Oracle-1.png)
 ![](_assets/Oracle-2.png)
@@ -126,7 +126,7 @@ java -version
 
 ![](_assets/cmd-2.png)
 
-> 返回类似的消息即为 Java 已安装
+> 返回类似的消息即为 Java 已安装。
 
 ## 使用 AJI 静默安装 Java
 
@@ -136,8 +136,8 @@ java -version
 <summary>食用方式：</summary>
 
 1. 打开此链接下载 AJI: https://github.com/Lafcadia/AJI/releases/download/v0.0.2/main.exe
-2. 下好了，右键选择以管理员权限打开 (如果不以管理员权限打开就无法绑定 Java 环境变量，虽然不给管理员权限程序也能正常运行，并安装
-   Java，但可能会在后续阶段出现问题)
+2. 下好了，右键选择以管理员权限打开（如果不以管理员权限打开就无法绑定 Java 环境变量，虽然不给管理员权限程序也能正常运行，并安装
+   Java，但可能会在后续阶段出现问题）
 3. ![示意图](https://github.com/user-attachments/assets/28035c47-d34b-4b38-b895-29f38366bef9)
 4. 选择合适的版本的 Java，点击 `Install Java`，下载。
 5. 不要关闭窗口，直到下方的提示栏从 `Installing...` 变为 `Complete.`
@@ -146,4 +146,4 @@ java -version
 
 ## 本节视频教程
 
-[**点此前往 B 站**: 笨蛋级 MC 开服教程 - 第三集 P1:实机演示安装 Java](https://www.bilibili.com/video/BV1eT42167iZ/)
+[**点此前往 B 站**: 笨蛋级 MC 开服教程 - 第三集 P1:实机演示安装 Java](https://www.bilibili.com/video/BV1eT42167iZ/)。

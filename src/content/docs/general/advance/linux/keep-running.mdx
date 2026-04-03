@@ -17,9 +17,21 @@ import { TabItem, Tabs } from "@astrojs/starlight/components";
 确保你的系统上有 `screen` 包，没有的话安装它们：
 
 <Tabs>
-    <TabItem label="Debian/Ubuntu">```bash apt-get install screen ```</TabItem>
-    <TabItem label="CentOS/RHEL">```bash yum install screen ```</TabItem>
-    <TabItem label="Arch Linux">```bash pacman -Sy screen ```</TabItem>
+    <TabItem label="Debian/Ubuntu">
+    ```bash
+    apt-get install screen
+    ```
+    </TabItem>
+    <TabItem label="CentOS/RHEL">
+    ```bash
+    yum install screen
+    ```
+    </TabItem>
+    <TabItem label="Arch Linux">
+    ```bash
+    pacman -Sy screen
+    ```
+    </TabItem>
 </Tabs>
 
 screen 的基础指令：
@@ -34,7 +46,7 @@ screen -S xxx -X quit # 删除 xxx 窗口 (在 screen 中输入 exit 也可以�
 
 :::note
 
-重新连接到 screen 时可以使用 `screen -Dr xxx` 指令，意为踢出正在使用 xxx 窗口的用户并回到 xxx 窗口
+重新连接到 screen 时可以使用 `screen -Dr xxx` 指令，意为踢出正在使用 xxx 窗口的用户并回到 xxx 窗口。
 
 :::
 
@@ -49,21 +61,21 @@ screen -S xxx -X quit # 删除 xxx 窗口 (在 screen 中输入 exit 也可以�
 
 :::
 
-推荐原因：后台运行的同时还可以在服务端控制台中查看日志，打指令
+推荐原因：后台运行的同时还可以在服务端控制台中查看日志，输入指令。
 
 ## 方法二 面板 (推荐)
 
-例如 MCSManager 等面板，简单无脑可视化
+例如 [MCSManager](/general/process/panel/#mcsmanager) 等面板，简单无脑可视化。
 
 ## 方法三 systemd
 
-使用 `vim` 命令创建 `mc.service` 单元文件
+使用 `vim` 命令创建 `mc.service` 单元文件：
 
 ```bash
 vim ~/.config/systemd/user/mc.service
 ```
 
-文件中的内容按以下配置
+文件中的内容按以下配置：
 
 ```ini
 [Unit]
@@ -99,9 +111,9 @@ _可以通过 `systemctl --user status mc.service` 查看服务运行状态。_
 
 [Arch Wiki 上的教程](https://wiki.archlinuxcn.org/wiki/Systemd#%E7%BC%96%E5%86%99%E5%8D%95%E5%85%83%E6%96%87%E4%BB%B6)
 
-优点：可以实现自动重启，开机自启等操作
+优点：可以实现自动重启，开机自启等操作；
 
-缺点：无法进入控制台打指令
+缺点：无法进入控制台打指令。
 
 ## 方法四 nohup 和 &
 
@@ -117,18 +129,18 @@ nohup：在启动时前面加上这个
 
 :::tip
 
-Start.sh: 你需要后台运行的程序
+Start.sh: 你需要后台运行的程序，
 
-> : 日志文件追加到文件中
+> : 日志文件追加到文件中。
 
-run.log: 运行的日志，或你的文件的输出内容
+run.log: 运行的日志，或你的文件的输出内容。
 
 & 是一个描述符，如果 1 或 2 前不加 &，会被当成一个普通文件。
 
-`1>&2` 意思是把标准输出重定向到标准错误。
+`1>&2` 意思是把标准输出重定向到标准错误；
 
-`2>&1` 意思是把标准错误输出重定向到标准输出。
+`2>&1` 意思是把标准错误输出重定向到标准输出；
 
-`&>filename` 意思是把标准输出和标准错误输出都重定向到文件 `filename` 中
+`&>filename` 意思是把标准输出和标准错误输出都重定向到文件 `filename` 中。
 
 :::

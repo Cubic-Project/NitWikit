@@ -22,9 +22,9 @@ VS Code 会在未保存的文件后标记一个白点，提示你这个文件编
 
 ![](_assets/vscode保存和自动保存.png) <!-- autocorrect-disable space-word -->
 
-保存按钮 (红色箭头)，也可以用快捷键来保存 `Ctrl + S`。
+保存按钮（红色箭头），也可以用快捷键来保存 `Ctrl + S`。
 
-开启自动保存 (绿色箭头)。
+开启自动保存（绿色箭头）。
 
 ~~当年 TrMenu 的自动重载治好了我的 autosave~~
 

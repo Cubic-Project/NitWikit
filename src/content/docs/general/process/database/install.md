@@ -6,7 +6,7 @@ sidebar:
 
 ## Windows 直接安装
 
-你可以选择直接下载安装包来安装，如果觉得麻烦，请看下面的 **使用工具安装** 或 **Linux 命令行安装**
+你可以选择直接下载安装包来安装，如果觉得麻烦，请看下面的 **使用工具安装** 或 **Linux 命令行安装**。
 
 :::tip
 
@@ -16,15 +16,15 @@ sidebar:
 
 :::
 
-对于 Windows 用户，请下载 `.msi` 或 `zip` 的包，其中 `.msi` 是安装包，`.zip` 是绿色版，推荐下载 `.msi` 版本来安装
+对于 Windows 用户，请下载 `.msi` 或 `zip` 的包，其中 `.msi` 是安装包，`.zip` 是绿色版，推荐下载 `.msi` 版本来安装。
 
 对于 MySQL 安装，请看这篇文章：[2024 年 MySQL 8.0 安装 配置 教程 最简易 (保姆级)](https://blog.csdn.net/m0_52559040/article/details/121843945)
 
-在下载的时候请务必注意自己的系统、架构等是否与安装包上标的匹配
+在下载的时候请务必注意自己的系统、架构等是否与安装包上标的匹配！
 
 ## Linux 命令行安装
 
-本部分讲解在命令行中安装常见数据库的方式。本教程以 Ubuntu 24.04 系统为例
+本部分讲解在命令行中安装常见数据库的方式。本教程以 Ubuntu 24.04 系统为例。
 
 ### MySQL
 
@@ -77,7 +77,7 @@ systemctl enable mysql
 mysql -uroot -p
 ```
 
-按提示输入密码登录到 MySQL
+按提示输入密码登录到 MySQL：
 
 ![](_assets/linux/database/4.png)
 
@@ -87,7 +87,7 @@ mysql -uroot -p
 ALTER user 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 ```
 
-将 NewPassword 修改为你自己设置的密码
+将 NewPassword 修改为你自己设置的密码。
 
 **至此，MySQL 安装已经完成。**
 
@@ -103,7 +103,7 @@ ALTER user 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 CREATE DATABASE IF NOT EXISTS XXX DEFAULT CHARACTER SET utf8mb4;
 ```
 
-这里的 XXX 可以选择是你要使用数据库的插件名称也可以是自定义字符
+这里的 XXX 可以选择是你要使用数据库的插件名称也可以是自定义字符。
 
 #### 创建用户
 
@@ -123,9 +123,9 @@ UserName 填写用户名，
 
 `%` 代表所有 IP 地址，如果 Minecraft 服务端和数据库处于同一个服务器，建议改成 localhost 以增加安全性，
 
-Password 填写用户的密码 (由于安全性设置，密码必须有大小写长度 8 位以上，并且默认关闭远程访问)
+Password 填写用户的密码（由于安全性设置，密码必须有大小写长度 8 位以上，并且默认关闭远程访问）
 
-如果需要设置密码强度为低，开启远程访问等不安全的操作请自行百度，对于修改安全设置之后的数据库安全问题，本站概不负责
+如果需要设置密码强度为低，开启远程访问等不安全的操作请自行百度，对于修改安全设置之后的数据库安全问题，本站概不负责。
 
 :::
 
@@ -141,17 +141,17 @@ apt update
 apt install redis -y
 ```
 
-安装完成后输入 `systemctl start redis-server`
+安装完成后输入 `systemctl start redis-server`。
 
 ![](_assets/linux/database/5.png)
 
-至此安装完成，输入 `redis-cli` 即可进入命令行管理
+至此安装完成，输入 `redis-cli` 即可进入命令行管理。
 
 ![](_assets/linux/database/6.png)
 
 :::tip
 
-使用 `systemctl enable redis-server` 使 Redis 开机自启
+使用 `systemctl enable redis-server` 使 Redis 开机自启。
 
 ![](_assets/linux/database/7.png)
 
@@ -159,13 +159,13 @@ apt install redis -y
 
 ## 使用工具安装
 
-我会告诉你 **我认为** 最简单的几种安装数据库的方法
+我会告诉你 **我认为** 最简单的几种安装数据库的方法。
 
 ### 小皮数据库
 
 :::note
 
-小皮数据库仅支持 Windows 系统
+小皮数据库仅支持 Windows 系统。
 
 :::
 
@@ -189,7 +189,7 @@ apt install redis -y
 <details>
   <summary>卸载 MySQL5 和安装 MySQL8</summary>
 
-MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够用了
+MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够用了。
 
 ![](_assets/7.png)
 
@@ -200,7 +200,7 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 <details>
   <summary>初次启动</summary>
 
-安装好后在首页启动 MySQL
+安装好后在首页启动 MySQL：
 
 ![](_assets/9.png)
 
@@ -220,7 +220,7 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 
 ![](_assets/11.png)
 
-然后你就可以建数据库了，建好之后把你填这里的信息填到插件的配置文件里
+然后你就可以建数据库了，建好之后把你填这里的信息填到插件的配置文件里。
 
 </details>
 
@@ -228,7 +228,7 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 
 :::note
 
-宝塔面板支持 Windows 和 Linux 系统
+宝塔面板支持 Windows 和 Linux 系统。
 
 :::
 
@@ -251,13 +251,13 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 
 ![](_assets/19.png)
 
-宝塔面板是必须要绑定账号的
+宝塔面板是必须要绑定账号的。
 
-按照提示去做
+按照提示去做：
 
 ![](_assets/20.png)
 
-全 x 掉，一个都不需要装
+全 x 掉，一个都不需要装。
 
 ![](_assets/21.png)
 
@@ -278,7 +278,7 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 
 :::caution
 
-1Panel 面板目前仅支持 Linux 系统，不支持 Windows 系统
+1Panel 面板目前仅支持 Linux 系统，不支持 Windows 系统。
 
 :::
 
