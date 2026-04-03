@@ -62,6 +62,23 @@ export default defineConfig({
                   collapsed: true,
                   items: [
                     {
+                      label: "常见术语解析",
+                      collapsed: true,
+                      items: [
+                        "general/basics/what-is-world",
+                        "general/basics/what-is-datapack",
+                        "general/basics/what-is-mod",
+                        "general/basics/what-is-plugin",
+                        "general/basics/what-is-lag",
+                        "general/basics/what-is-log",
+                        "general/basics/what-is-messy-code",
+                        "general/basics/what-is-permission",
+                        "general/basics/what-is-startup-script",
+                        "general/basics/what-is-nbt",
+                        "general/basics/what-is-namespace",
+                      ]
+                    },
+                    {
                       label: "安装 Java",
                       collapsed: true,
                       items: [

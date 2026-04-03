@@ -1,7 +1,6 @@
 ---
 title: 什么是 NBT？
 topic: basics
-template: splash
 ---
 
 ## 概念

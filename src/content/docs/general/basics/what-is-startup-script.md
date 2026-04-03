@@ -1,7 +1,6 @@
 ---
 title: 什么是启动脚本？
 topic: basics
-template: splash
 ---
 
 启动脚本主要部分就是设置 Java 参数设置。

@@ -1,7 +1,6 @@
 ---
 title: 什么是命名空间？
 topic: basics
-template: splash
 ---
 
 ## 概念
