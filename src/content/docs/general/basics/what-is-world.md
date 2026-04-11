@@ -1,7 +1,6 @@
 ---
 title: 什么是世界？
 topic: basics
-template: splash
 ---
 
 Minecraft 的几乎一切行为都是建立在 "世界" 上，而世界中的方块、实体等文件都存储在了根目录的对应文件夹下。
