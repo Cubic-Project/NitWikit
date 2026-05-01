@@ -28,8 +28,7 @@ title: 常见问题
 
 你需要安装 [Vault](/java/process/plugin/plugin-dependencies/vault/intro) 插件和 [经济插件](/java/process/plugin/plugin-dependencies/xconomy)
 
-接着，确保你安装了 [PlaceHolderAPI](/java/process/plugin/plugin-dependencies/placeholderapi
-/intro) 插件，执行下方命令
+接着，确保你安装了 [PlaceHolderAPI](/java/process/plugin/plugin-dependencies/placeholderapi/intro) 插件，执行下方命令
 
 ```bash
 /papi ecloud download Vault

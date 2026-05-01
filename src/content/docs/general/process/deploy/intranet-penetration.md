@@ -160,7 +160,7 @@ Premium 版本一个月 3 刀 (约合人民币 27 元)，一年 30 刀
 正是因为 frp 在转发玩家请求时重写了请求头部，导致了以上情况的发生。frp 虽然不能不重写这个请求头部，但是他可以通过一种方式还原请求头部，让服务器正常显示出连接 IP。
 PROXY protocol 是由 HAProxy 开发者 Willy 提出的一种反向代理协议，可以参考 [HAProxy 文档](http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt)
 获取更多信息。frp 内置的 PROXY protocol 要求被其穿透的服务器也支持 PROXY protocol，否则会造成对应的服务无法使用，所以并不是随便拿一个服务就能用 PROXY protocol。
-frp 启用 PROXY protocol 的方式参考 [自建 frp](/general/process/deploy/frp#配置 PROXY protocol)。
+frp 启用 PROXY protocol 的方式参考 [自建 frp](/general/process/deploy/frp#配置-proxy-protocol)。
 
 对于 MC 服务器来说，支持 PROXY protocol 的软件有：
 
