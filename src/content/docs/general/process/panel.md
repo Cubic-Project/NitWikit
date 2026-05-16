@@ -122,6 +122,16 @@ tar -zxf mcsmanager_linux_release.tar.gz
 
 ## 翼龙面板
 
-翼龙面板的部署相对较为复杂，对新手不太友好
+翼龙面板只能在linux上去部署，无法在windows上部署。
 
-[这篇](https://www.alongw.cn/archives/837) 是个较为简单的教程
+### 前端面板
+
+前端的搭建可以用docker来部署，你可以看[这个](https://pterodactyl.top/panel/1.0/docker_getstarted.html)。
+
+如果你想手动搭建那 [这篇宝塔面板上去部署的教程可以参考](https://pterodactyl.top/panel/1.0/btpanel_getstarted.html)。
+
+### 后端wings
+
+后端一定要在可以被外网访问的服务器上搭建，而且需要在linux上部署。  
+win就算使用docker兼容性也不是很好。  
+但搭建并不是很难，你可以看[这个](https://pterodactyl.top/wings/1.0/installing.html)。
