@@ -14,7 +14,7 @@ import vue from "@astrojs/vue";
 const IS_CHINA_SITE = process.env.CHINA === "true";
 
 export default defineConfig({
-    site: IS_CHINA_SITE ? "https://nitwikit.8aka.cn" : "https://nitwikit.8aka.org",
+    //site: IS_CHINA_SITE ? "https://nitwikit.8aka.cn" : "https://nitwikit.8aka.org", // 等 cn 镜像站修好了再启用
     outDir: "./build",
     integrations: [
         vue(),
