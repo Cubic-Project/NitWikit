@@ -8,7 +8,7 @@ title: 记录 - CoreProtect
 
 `SpigotMC` https://www.spigotmc.org/resources/coreprotect.8631/
 
-`Modrinth` https://modrinth.com/plugin/coreprotect/version/latest
+`Modrinth` https://modrinth.com/plugin/coreprotect
 
 `GitHub` https://github.com/PlayPro/CoreProtect
 
