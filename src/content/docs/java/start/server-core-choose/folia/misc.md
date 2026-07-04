@@ -10,13 +10,13 @@ Lumina 是 LeavesMC 开发的一个 Folia 分支，旨在遵循原版生电特�
 
 :::tip
 
-目前 Lumina 处于早期开发阶段，暂时不完善，如果你需要生电特性，推荐使用 [Lophine](/java/start/server-core-choose/folia/luminol#lophine)。
+目前 Lumina 已经停更了，且目前的实现并不完善，如果你需要生电特性，推荐使用 [Lophine](/java/start/server-core-choose/folia/luminol#lophine)。
 
 :::
 
 ### 下载
 
-Lumina 目前在官网上不提供下载，你可以选择自己去编译，或使用第三方预编译版本。
+Lumina 目前在官网上不提供下载，你可以选择自己去编译，或使用Github actions打包的文件。
 
 [下载 (1.20.6)](https://vip.123pan.cn/1821558579/Lingyi/aaa/lumina/Lumina-1.20.6-mcres.jar)
 
