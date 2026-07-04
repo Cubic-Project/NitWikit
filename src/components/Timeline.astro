@@ -1,0 +1,94 @@
+---
+interface TimelineItem {
+    children: string;
+    label: string;
+    type?: "default" | "info" | "warning" | "error" | "success";
+}
+interface Props {
+    items: TimelineItem[];
+}
+const { items: rawItems } = Astro.props;
+
+function parseLabel(label: string) {
+    const match = label.match(
+        /^(\d{4})-(\d{1,2})-(\d{1,2})(?:\s+(\d{1,2}):(\d{2}))?$/,
+    );
+    if (!match) return { time: 0, formatted: label };
+    const [, y, m, d, h, min] = match;
+    const mm = m.padStart(2, "0");
+    const dd = d.padStart(2, "0");
+    const hh = (h ?? "00").padStart(2, "0");
+    const mi = min ?? "00";
+    const time = new Date(
+        Number(y),
+        Number(m) - 1,
+        Number(d),
+        Number(hh),
+        Number(mi),
+    ).getTime();
+    return { time, formatted: `${y}-${mm}-${dd} ${hh}:${mi}` };
+}
+
+function pseudoHash(input: string): string {
+    let h = 0;
+    for (let i = 0; i < input.length; i++) {
+        h = (h << 5) - h + input.charCodeAt(i);
+        h |= 0;
+    }
+    return Math.abs(h).toString(16).padStart(7, "0").slice(0, 7);
+}
+
+const items = [...rawItems].sort(
+    (a, b) => parseLabel(b.label).time - parseLabel(a.label).time,
+);
+
+const config = {
+    default: { prefix: "○", class: "text-base-content/50", tag: null },
+    info: { prefix: "◆", class: "text-info", tag: "INFO" },
+    warning: { prefix: "▲", class: "text-warning", tag: "WARN" },
+    error: { prefix: "✕", class: "text-error", tag: "ERR" },
+    success: { prefix: "●", class: "text-success", tag: "OK" },
+} as const;
+---
+
+<div class="not-content mockup-code bg-base-300 font-mono text-xs sm:text-sm">
+    <div class="flex flex-col gap-0.5">
+        <pre
+            data-prefix="$"
+            class="text-info whitespace-normal">
+            <code>git log --graph --date=short --all</code>
+        </pre>
+        {
+            items.map((item) => {
+                const type = item.type ?? "default";
+                const c = config[type];
+                const { formatted } = parseLabel(item.label);
+                const hash = pseudoHash(item.label + item.children);
+                return (
+                    <pre
+                        data-prefix={c.prefix}
+                        class={`${c.class} whitespace-normal wrap-break-word leading-6`}
+                    >
+                        <code>
+                            <span class="text-warning">{hash}</span>
+                            <span class="ml-2 text-base-content/60">
+                                {formatted}
+                            </span>
+                            {c.tag ? (
+                                <span class="ml-2 font-semibold">{`[${c.tag}]`}</span>
+                            ) : null}
+                            <span class="ml-2 text-base-content">
+                                {item.children}
+                            </span>
+                        </code>
+                    </pre>
+                );
+            })
+        }
+        <pre
+            data-prefix=">"
+            class="text-info whitespace-normal">
+            <code class="animate-pulse">_</code>
+        </pre>
+    </div>
+</div>
