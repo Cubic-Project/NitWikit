@@ -22,9 +22,7 @@ CoreProtect 的开发团队（PlayPro）将预编译的开发版（Development B
 
 :::
 
-
 ## 手动构建
-
 
 ## 安装所需软件
 
@@ -50,11 +48,12 @@ cd CoreProtect
 
 :::caution
 
-CoreProtect 社区版（CE）在启动时会检查 `branch` 属性，必须设为 `development` 才能正常启用。 
+CoreProtect 社区版（CE）在启动时会检查 `branch` 属性，必须设为 `development` 才能正常启用。
 
 :::
 
 在编译前需要修改 `pom.xml`，在 `<properties>` 区域内修改为以下行：
+
 ```xml
 <project.branch>development</project.branch>
 ```

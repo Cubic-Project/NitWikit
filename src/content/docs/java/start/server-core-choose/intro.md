@@ -64,7 +64,7 @@ title: 概述
 
 :::
 
-混合端常见的有 Catserver；高版本推荐使用 Mohist 或 Arclight，就目前来看，它们的本身稳定性良好，也比纯 Forge 有所优化 
+混合端常见的有 Catserver；高版本推荐使用 Mohist 或 Arclight，就目前来看，它们的本身稳定性良好，也比纯 Forge 有所优化
 （mod /插件数量多了之后兼容性问题可能会莫名让人头疼）。
 
 ## 更换核心
