@@ -8,6 +8,14 @@ import PageOrder from "astro-vtbot/components/starlight/PageOrder.astro";
 import { pwaInfo } from "virtual:pwa-info";
 ---
 
+<script is:inline>
+  (() => {
+    const storedTheme = localStorage.getItem("starlight-theme");
+    const theme = storedTheme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    document.documentElement.dataset.theme = theme === "light" ? "light" : "dark";
+  })();
+</script>
+
 <script>
   import { registerSW } from "virtual:pwa-register";
   // 每10分钟检查一次更新，页面将自动刷新
