@@ -78,11 +78,11 @@ title: 选择、下载和安装 Java
 
 ## 手动下载
 
-## 下载镜像
+### 下载镜像
 
 [InJDK](https://d10.injdk.cn/openjdk/) 各种 JDK 的下载镜像
 
-## Oracle 版
+### Oracle 版
 
 官方版本
 
