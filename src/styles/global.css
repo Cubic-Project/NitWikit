@@ -1,8 +1,10 @@
-@layer theme, base, components, utilities;
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/utilities.css" layer(utilities);
+@layer base, starlight, theme, components, utilities;
 
-@plugin "daisyui"{
+@import "@astrojs/starlight-tailwind";
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+@plugin "daisyui" {
     prefix: daisy-;
 }
 
@@ -12,38 +14,32 @@
     }
 }
 
+@theme {
+    /* 由深浅两套 accent 色值归并而成 */
+    --color-accent-200: #bfe1ca;
+    --color-accent-600: #007f48;
+    --color-accent-900: #003d20;
+    --color-accent-950: #002c16;
+
+    /* 由深浅两套 gray 色值归并而成 */
+    --color-gray-100: #f6f6f6;
+    --color-gray-200: #eeeeee;
+    --color-gray-300: #c8c8c8;
+    --color-gray-400: #a4a4a4;
+    --color-gray-500: #8b8b8b;
+    --color-gray-700: #585858;
+    --color-gray-800: #383838;
+    --color-gray-900: #272727;
+}
+
 /* Dark mode colors. */
 :root {
-    --sl-color-accent-low: #002c16;
-    --sl-color-accent: #007f48;
-    --sl-color-accent-high: #a8d6b7;
-    --sl-color-white: #ffffff;
-    --sl-color-gray-1: #eeeeee;
-    --sl-color-gray-2: #c8c8c8;
-    --sl-color-gray-3: #a4a4a4;
-    --sl-color-gray-4: #585858;
-    --sl-color-gray-5: #383838;
-    --sl-color-gray-6: #272727;
-    --sl-color-black: #181818;
     --purple-hsl: 255, 60%, 60%;
     --overlay-blurple: hsla(var(--purple-hsl), 0.2);
 }
 /* Light mode colors. */
 :root[data-theme="light"] {
-    --sl-color-accent-low: #bfe1ca;
-    --sl-color-accent: #005831;
-    --sl-color-accent-high: #003d20;
-    --sl-color-white: #181818;
-    --sl-color-gray-1: #272727;
-    --sl-color-gray-2: #383838;
-    --sl-color-gray-3: #585858;
-    --sl-color-gray-4: #8b8b8b;
-    --sl-color-gray-5: #c2c2c2;
-    --sl-color-gray-6: #eeeeee;
-    --sl-color-gray-7: #f6f6f6;
-    --sl-color-black: #ffffff;
     --purple-hsl: 255, 85%, 65%;
-    --sl-hue-accent: 350;
 }
 
 @media (min-width: 96rem) {
