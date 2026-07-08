@@ -4,7 +4,6 @@
         "resolveJsonModule": true,
         "jsx": "preserve",
         "jsxImportSource": "astro",
-        "baseUrl": ".",
         "paths": {
             "@components/*": ["./src/components/*"],
             "@layouts/*": ["./src/layouts/*"]
