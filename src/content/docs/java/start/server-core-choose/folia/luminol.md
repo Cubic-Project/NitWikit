@@ -4,7 +4,7 @@ title: Luminol
 
 ![](../_assets/Luminol.png)
 
-Luminol 是一个非常棒的 Folia 分支！
+Luminol 是一个非常棒的 Folia 分支！（现已归档，26.2及更新版本请选择[Camellia](https://github.com/MonnaiRealms/Camellia)）
 
 ## 安装
 
