@@ -28,39 +28,52 @@ title: 其他作弊类型
 
 修改每种结构和矿物分别对应的种子能推迟或防止玩家推算出结构或矿物所在位置。
 
-应该如何操作？首先找到 `/config/paper-world-defaults.yml` 文件。调整以下参数：
+**若要同时增加矿物等特征与结构位置的反推难度，下面两项配置需要一并完成，二者同样重要。**
+
+##### 1. 启用 Paper 特征随机种子
+
+在服务器根目录下的 `config/paper-world-defaults.yml` 中启用以下配置：
 
 ```yaml
 feature-seeds:
     generate-random-seeds-for-all: true
 ```
 
-> 这是对每个建筑使用随机种子，防止你的世界种子轻易的被破解
-> 如果发现你的 `spigot.yml` 中出现了类似以下的配置配置就成功了，你可以修改其中的种子。(但其实不改也完全没问题)
+Paper 会为每个 `ConfiguredFeature` 生成随机种子。启动服务器后，可以在各世界目录的 `paper-world.yml` 中检查 `feature-seeds.features` 是否包含生成的条目。
+
+##### 2. 修改 Spigot 结构放置等参数
+
+上述 Paper 配置只会随机化 `ConfiguredFeature`，不会修改村庄等结构的放置参数。因此，还需要修改 `spigot.yml` 中的相应数值。
+
+`seed-village` 等字段由 Spigot/Paper 初始化世界配置时自动生成，它们的出现不能用来判断第一项配置是否成功。服务器默认写入的数值与原版相同：
 
 ```yaml
-seed-village: 10387312
-seed-desert: 14357617
-seed-igloo: 14357618
-seed-jungle: 14357619
-seed-swamp: 14357620
-seed-monument: 10387313
-seed-shipwreck: 165745295
-seed-ocean: 14357621
-seed-outpost: 165745296
-seed-endcity: 10387313
-seed-slime: 987234911
-seed-nether: 30084232
-seed-mansion: 10387319
-seed-fossil: 14357921
-seed-portal: 34222645
-seed-ancientcity: 20083232
-seed-trailruins: 83469867
-seed-trialchambers: 94251327
-seed-buriedtreasure: 10387320
-seed-mineshaft: default
-seed-stronghold: default
+world-settings:
+    default:
+        seed-village: 10387312
+        seed-desert: 14357617
+        seed-igloo: 14357618
+        seed-jungle: 14357619
+        seed-swamp: 14357620
+        seed-monument: 10387313
+        seed-shipwreck: 165745295
+        seed-ocean: 14357621
+        seed-outpost: 165745296
+        seed-endcity: 10387313
+        seed-slime: 987234911
+        seed-nether: 30084232
+        seed-mansion: 10387319
+        seed-fossil: 14357921
+        seed-portal: 34222645
+        seed-ancientcity: 20083232
+        seed-trailruins: 83469867
+        seed-trialchambers: 94251327
+        seed-buriedtreasure: 10387320
+        seed-mineshaft: default
+        seed-stronghold: default
 ```
+
+保持这些默认值时，相同世界种子下的相关结构候选位置和史莱姆区块仍可按原版规则推算。要使这一步发挥作用，需要在生成世界前为相应字段设置随机值；`seed-mineshaft` 和 `seed-stronghold` 也需要将 `default` 替换为数值才能启用自定义值。
 
 #### Matter 安全种子
 
