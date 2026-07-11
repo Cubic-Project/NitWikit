@@ -1,7 +1,16 @@
 ---
 title: DeluxeHub
 ---
+由ItzSave开发(更推荐)
+:::note
 
+`GitHub` https://github.com/ItzSave/DeluxeHub/
+
+`Modrinth` https://modrinth.com/plugin/deluxehub
+
+:::
+
+由ItsLewizzz开发
 :::note
 
 `SpigotMC` https://www.spigotmc.org/resources/.49425
@@ -14,6 +23,4 @@ title: DeluxeHub
 
 :::
 
-避孕套大厅，在我编辑此页时，此插件的最后一次代码提交为 Jun 20, 2023
 
-个人认为插件作者已经放弃维护此插件，建议使用第三方更新的 [DeluxeHubReloaded](/java/process/plugin/world-management/lobby/deluxehubreloaded)
