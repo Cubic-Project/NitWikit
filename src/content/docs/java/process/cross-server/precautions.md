@@ -35,7 +35,7 @@ title: 注意事项
 
 :::tip
 
-如果你使用的是 AuthMe 登录插件，请务必在跨服端安装对应的 AuthMe 插件，如 AuthMeVelocity、AuthMeBungee 等插件
+如果你使用的是 AuthMe 及其衍生登录插件，请务必在跨服端安装对应的 AuthMe 插件，如 AuthMeVelocity、AuthMeBungee 等插件
 
 这样就可以避免一些此类问题了
 

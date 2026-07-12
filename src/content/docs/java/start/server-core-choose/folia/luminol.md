@@ -6,9 +6,9 @@ title: Luminol
 
 Luminol 是一个非常棒的 Folia 分支！
 
-:::warning[仓库已归档]
+:::warning[仓库已删除]
 
-[LuminolMC/Luminol](https://github.com/LuminolMC/Luminol) 主仓库已于 2026 年 7 月 9 日被所有者归档（Archived），仓库现为只读状态，不再接受新的提交、Issue 或 PR。已发布的版本和下方镜像下载仍可正常使用，但后续是否会有新版本或由社区分支接手维护，请关注 [官网](https://luminolsuki.moe/) 或社区群组的最新消息。
+[LuminolMC/Luminol](https://github.com/LuminolMC/Luminol) 主仓库已于 2026 年 7 月 11 日被所有者删除，官方账号已经被注销。Luminol、LightingLuminol、Lophine 均不再更新，最新版本为 26.2。
 
 :::
 
