@@ -51,19 +51,10 @@ Velocity 支持从别的服务器通过 Transfer 跳转至 Velocity，需要在 
 - 无模组的 NeoForge 客户端无法在原版服务器使用 Transfer 跳转。
 - 跳转失败，且服务端没有任何有用的日志记录。
 
-如果你使用 Transfer 方案，请告知玩家不要使用 NeoForge 进行多人游戏。
+目前已知，这个问题只会影响到在 Linux 系统环境下的电脑，并且在玩家多人游戏的服务器列表同时存在 IPv4 地址的服务器和 IPv6 地址的服务器时容易发生。
+
+一般情况下你无需担心 NeoForge 会创飞你的跳转体验。
 
 以下是死亡回放：
 
 <img width="519" height="248" alt="图片" src="https://github.com/user-attachments/assets/524caaf0-746f-4543-8f68-d708edf9cf43" />
-
-<details>
-  <summary>事情经过</summary>
-
-当时 OnlyTransfer 插件还在测试中，正在测试 Velocity 与 Transfer 混合架构的可行性，使用了 NeoForge 客户端发现了此问题。
-
-一开始以为是 OnlyTransfer 插件在混合架构运作不佳，但后来在纯 Transfer 跨服架构大量对比测试，确定了问题来源为 NeoForge 客户端。
-
-经测试，NeoForge 1.21.1, 1.21.4, 1.21.7 均存在此问题，其他版本很可能也有这类问题。
-
-</details>
