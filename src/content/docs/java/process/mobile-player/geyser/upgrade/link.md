@@ -69,7 +69,7 @@ player-link:
 就是这样。你可以按照键入 `/linkaccount` 时收到的说明来链接你的账户。
 
 ### ForcePlayerLink
- 
+
 通过本地链接自动链接同名的基岩版和 Java 版玩家
 
 [注意事项]
