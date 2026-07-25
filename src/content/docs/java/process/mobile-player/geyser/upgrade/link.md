@@ -55,7 +55,9 @@ player-link:
 
 请注意，如果你有代理（BungeeCord 或 Velocity），则只需在代理上执行以下步骤。
 
-1. 下载链接数据库扩展之一：[这里](https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/fix-weird-via-issue/)。
+1. 下载链接数据库扩展之一：[这里](https://github.com/GeyserMC/Floodgate/actions)。
+   点击最新带绿色对勾的工作流运行记录。
+   向下滚动到 Artifacts，下载你需要的文件。
    选择合适的扩展名：如果你已经有数据库或想要有多代理设置，请选择 `mysql`。否则选择 `sqlite`。完整名称应为 `floodgate-*type*-database.jar`。
 2. 将刚下载的数据库扩展 jar 文件复制到 Floodgate 插件文件夹中（例如 `/plugins/floodgate/`）。
 3. 在 Floodgate 的 `player-link` 部分中启用 `enable-own-linking`。
@@ -67,7 +69,7 @@ player-link:
 就是这样。你可以按照键入 `/linkaccount` 时收到的说明来链接你的账户。
 
 ### ForcePlayerLink
-
+ 
 通过本地链接自动链接同名的基岩版和 Java 版玩家
 
 [注意事项]
