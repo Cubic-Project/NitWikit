@@ -7,9 +7,8 @@ export const collections = {
     docs: defineCollection({
         loader: docsLoader(),
         schema: docsSchema({
-            extend: z.object({
-                giscus: z.boolean().optional().default(true),
-                topicSchema: topicSchema.optional()
+            extend: topicSchema.extend({
+                giscus: z.boolean().optional().default(true)
             })
         })
     })

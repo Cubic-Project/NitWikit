@@ -47,62 +47,22 @@ export default defineConfig({
                 starlightSidebarTopics(
                     [
                         {
-                            label: "基础",
+                            label: "引导",
                             link: "/general/intro",
                             icon: "seti:bazel",
                             id: "basics",
                             items: [
                                 {
-                                    label: "从零开始",
+                                    label: "从这里开始",
                                     collapsed: false,
-                                    items: [{ label: "快速开始", slug: "general/intro" }, "general/reading-guide"]
-                                },
-                                {
-                                    label: "通用知识库",
-                                    collapsed: true,
-                                    items: [
-                                        {
-                                            label: "安装 Java",
-                                            collapsed: true,
-                                            items: [
-                                                "general/java/intro",
-                                                "general/java/choose-and-download-and-install-java",
-                                                "general/java/environment",
-                                                "general/java/sdkman",
-                                                "general/java/faq"
-                                            ]
-                                        },
-                                        {
-                                            label: "文本编辑器",
-                                            collapsed: true,
-                                            autogenerate: { directory: "general/preparation/text-editor" }
-                                        },
-                                        {
-                                            label: "经营管理",
-                                            collapsed: true,
-                                            items: [
-                                                "general/advance/management/intro",
-                                                {
-                                                    label: "玩家管理",
-                                                    autogenerate: {
-                                                        directory: "general/advance/management/player-management"
-                                                    }
-                                                },
-                                                {
-                                                    label: "资金管理",
-                                                    autogenerate: {
-                                                        directory: "general/advance/management/money-management"
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    ]
+                                    items: ["general/intro", "general/reading-guide"]
                                 }
                             ]
                         },
                         {
                             label: "Java",
                             link: "/java/intro",
+                            id: "java",
                             icon: "open-book",
                             items: [
                                 {
@@ -115,28 +75,6 @@ export default defineConfig({
                                     items: [
                                         "java/preparation/intro",
                                         {
-                                            label: "安装 Java",
-                                            collapsed: true,
-                                            items: [
-                                                "general/java/intro",
-                                                "general/java/choose-and-download-and-install-java",
-                                                "general/java/environment",
-                                                "general/java/sdkman",
-                                                "general/java/faq"
-                                            ]
-                                        },
-                                        {
-                                            label: "文本编辑器",
-                                            collapsed: true,
-                                            autogenerate: { directory: "general/preparation/text-editor" }
-                                        }
-                                    ]
-                                },
-                                {
-                                    label: "开始阶段",
-                                    items: [
-                                        "java/start/intro",
-                                        {
                                             label: "基础知识",
                                             collapsed: true,
                                             items: [
@@ -145,6 +83,28 @@ export default defineConfig({
                                                 "java/start/basic/server-management-command"
                                             ]
                                         },
+                                        {
+                                            label: "安装 Java",
+                                            collapsed: true,
+                                            items: [
+                                                "java/preparation/java/intro",
+                                                "java/preparation/java/choose-and-download-and-install-java",
+                                                "java/preparation/java/environment",
+                                                "java/preparation/java/sdkman",
+                                                "java/preparation/java/faq"
+                                            ]
+                                        },
+                                        {
+                                            label: "文本编辑器",
+                                            collapsed: true,
+                                            autogenerate: { directory: "java/preparation/text-editor" }
+                                        }
+                                    ]
+                                },
+                                {
+                                    label: "搭建服务器",
+                                    items: [
+                                        "java/start/intro",
                                         {
                                             label: "选择服务器端",
                                             collapsed: true,
@@ -174,7 +134,7 @@ export default defineConfig({
                                     ]
                                 },
                                 {
-                                    label: "建设与运营",
+                                    label: "插件与玩法",
                                     items: [
                                         "java/process/intro",
                                         {
@@ -534,6 +494,49 @@ export default defineConfig({
                                             ]
                                         },
                                         {
+                                            label: "生电",
+                                            collapsed: true,
+                                            items: [
+                                                "java/process/redstone/intro",
+                                                "java/process/redstone/plugin",
+                                                "java/process/redstone/mchprs",
+                                                "java/process/redstone/mod"
+                                            ]
+                                        },
+                                        {
+                                            label: "地图建设",
+                                            collapsed: true,
+                                            autogenerate: { directory: "general/process/map" }
+                                        },
+                                        "general/process/create-art-assets",
+                                        "general/process/panel"
+                                    ]
+                                },
+                                {
+                                    label: "进阶知识",
+                                    collapsed: false,
+                                    items: [
+                                        "java/advance/intro",
+                                        {
+                                            label: "经营管理",
+                                            collapsed: true,
+                                            items: [
+                                                "general/advance/management/intro",
+                                                {
+                                                    label: "玩家管理",
+                                                    autogenerate: {
+                                                        directory: "general/advance/management/player-management"
+                                                    }
+                                                },
+                                                {
+                                                    label: "资金管理",
+                                                    autogenerate: {
+                                                        directory: "general/advance/management/money-management"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
                                             label: "跨服端",
                                             collapsed: true,
                                             items: [
@@ -650,30 +653,6 @@ export default defineConfig({
                                                 }
                                             ]
                                         },
-                                        {
-                                            label: "生电",
-                                            collapsed: true,
-                                            items: [
-                                                "java/process/redstone/intro",
-                                                "java/process/redstone/plugin",
-                                                "java/process/redstone/mchprs",
-                                                "java/process/redstone/mod"
-                                            ]
-                                        },
-                                        {
-                                            label: "地图建设",
-                                            collapsed: true,
-                                            autogenerate: { directory: "general/process/map" }
-                                        },
-                                        "general/process/create-art-assets",
-                                        "general/process/panel"
-                                    ]
-                                },
-                                {
-                                    label: "进阶知识",
-                                    collapsed: false,
-                                    items: [
-                                        "java/advance/intro",
                                         {
                                             label: "Linux 开服",
                                             collapsed: true,
@@ -824,6 +803,7 @@ export default defineConfig({
                         {
                             label: "Bedrock",
                             link: "/bedrock/intro",
+                            id: "bedrock",
                             icon: "open-book",
                             items: [
                                 {
@@ -831,7 +811,7 @@ export default defineConfig({
                                     items: ["bedrock/intro"]
                                 },
                                 {
-                                    label: "超级基础知识",
+                                    label: "基础知识",
                                     items: [
                                         "bedrock/super-basic/intro",
                                         "bedrock/super-basic/server-core-choose",
@@ -841,24 +821,26 @@ export default defineConfig({
                                     ]
                                 },
                                 {
+                                    label: "准备工作",
+                                    collapsed: true,
+                                    items: [
+                                        { label: "文本编辑器", collapsed: true, autogenerate: { directory: "bedrock/preparation/text-editor" } }
+                                    ]
+                                },
+                                {
                                     label: "BDS 核心",
                                     items: [
                                         {
-                                            label: "准备工作",
+                                            label: "准备",
                                             collapsed: true,
                                             items: [
                                                 "bedrock/bds/preparation/intro",
-                                                {
-                                                    label: "文本编辑器",
-                                                    collapsed: true,
-                                                    autogenerate: { directory: "general/preparation/text-editor" }
-                                                },
                                                 "bedrock/bds/preparation/vcruntime",
                                                 "bedrock/bds/preparation/websites"
                                             ]
                                         },
                                         {
-                                            label: "开始阶段",
+                                            label: "搭建",
                                             collapsed: true,
                                             items: [
                                                 "bedrock/bds/start/intro",
@@ -872,7 +854,7 @@ export default defineConfig({
                                             ]
                                         },
                                         {
-                                            label: "建设阶段",
+                                            label: "进阶",
                                             collapsed: true,
                                             items: [
                                                 "bedrock/bds/process/intro",
@@ -930,7 +912,7 @@ export default defineConfig({
                                     items: [
                                         "bedrock/nukkit/intro",
                                         {
-                                            label: "准备工作",
+                                            label: "准备",
                                             collapsed: true,
                                             items: [
                                                 "bedrock/nukkit/preparation/intro",
@@ -938,23 +920,18 @@ export default defineConfig({
                                                     label: "安装 Java",
                                                     collapsed: true,
                                                     items: [
-                                                        "general/java/intro",
-                                                        "general/java/choose-and-download-and-install-java",
-                                                        "general/java/environment",
-                                                        "general/java/sdkman",
-                                                        "general/java/faq"
+                                                        "bedrock/preparation/java/intro",
+                                                        "bedrock/preparation/java/choose-and-download-and-install-java",
+                                                        "bedrock/preparation/java/environment",
+                                                        "bedrock/preparation/java/sdkman",
+                                                        "bedrock/preparation/java/faq"
                                                     ]
                                                 },
-                                                "bedrock/nukkit/preparation/websites",
-                                                {
-                                                    label: "文本编辑器",
-                                                    collapsed: true,
-                                                    autogenerate: { directory: "general/preparation/text-editor" }
-                                                }
+                                                "bedrock/nukkit/preparation/websites"
                                             ]
                                         },
                                         {
-                                            label: "开始阶段",
+                                            label: "搭建",
                                             collapsed: true,
                                             items: [
                                                 "bedrock/nukkit/start/intro",
@@ -986,35 +963,25 @@ export default defineConfig({
                                     items: [
                                         "bedrock/pocketmine/intro",
                                         {
-                                            label: "准备工作",
+                                            label: "准备",
                                             collapsed: true,
                                             items: [
                                                 "bedrock/pocketmine/preparation/intro",
                                                 "bedrock/pocketmine/preparation/choose-and-download-and-install-php",
-                                                "bedrock/pocketmine/preparation/websites",
-                                                {
-                                                    label: "文本编辑器",
-                                                    collapsed: true,
-                                                    autogenerate: { directory: "general/preparation/text-editor" }
-                                                }
+                                                "bedrock/pocketmine/preparation/websites"
                                             ]
                                         }
                                     ]
                                 },
                                 {
-                                    label: "其他基岩版服务器核心",
+                                    label: "其他核心",
                                     items: [
                                         {
-                                            label: "准备工作",
+                                            label: "准备",
                                             collapsed: true,
                                             items: [
                                                 "bedrock/misc/preparation/intro",
-                                                "bedrock/misc/preparation/websites",
-                                                {
-                                                    label: "文本编辑器",
-                                                    collapsed: true,
-                                                    autogenerate: { directory: "general/preparation/text-editor" }
-                                                }
+                                                "bedrock/misc/preparation/websites"
                                             ]
                                         },
                                         "bedrock/misc/allay",
@@ -1027,23 +994,44 @@ export default defineConfig({
                                     items: [
                                         "bedrock/waterdogepe/intro",
                                         {
-                                            label: "安装 Java",
+                                            label: "准备",
                                             collapsed: true,
                                             items: [
-                                                "general/java/intro",
-                                                "general/java/choose-and-download-and-install-java",
-                                                "general/java/environment",
-                                                "general/java/sdkman",
-                                                "general/java/faq"
+                                                {
+                                                    label: "安装 Java",
+                                                    collapsed: true,
+                                                    items: [
+                                                        "bedrock/preparation/java/intro",
+                                                        "bedrock/preparation/java/choose-and-download-and-install-java",
+                                                        "bedrock/preparation/java/environment",
+                                                        "bedrock/preparation/java/sdkman",
+                                                        "bedrock/preparation/java/faq"
+                                                    ]
+                                                },
                                             ]
-                                        },
-                                        {
-                                            label: "文本编辑器",
-                                            collapsed: true,
-                                            autogenerate: { directory: "general/preparation/text-editor" }
                                         },
                                         "bedrock/waterdogepe/install",
                                         "bedrock/waterdogepe/config"
+                                    ]
+                                },
+                                {
+                                    label: "服务器管理",
+                                    items: [
+                                        "bedrock/advance/management/intro",
+                                        {
+                                            label: "玩家管理",
+                                            collapsed: true,
+                                            autogenerate: {
+                                                directory: "bedrock/advance/management/player-management"
+                                            }
+                                        },
+                                        {
+                                            label: "资金管理",
+                                            collapsed: true,
+                                            autogenerate: {
+                                                directory: "bedrock/advance/management/money-management"
+                                            }
+                                        }
                                     ]
                                 }
                             ]
@@ -1057,7 +1045,20 @@ export default defineConfig({
                     ],
                     {
                         topics: {
-                            basics: ["/basics", "/basics/**/*"]
+                            basics: [
+                                "/basics",
+                                "/basics/**/*",
+                                "/general/java/**",
+                                "/general/preparation/text-editor/**"
+                            ],
+                            java: [
+                                "/general/process/**",
+                                "/general/advance/linux/**",
+                                "/general/advance/domain-and-dns",
+                                "/general/advance/bot/**",
+                                "/general/advance/maintenance/**",
+                                "/general/more/**"
+                            ]
                         }
                     }
                 ),
