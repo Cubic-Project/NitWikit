@@ -1082,6 +1082,7 @@ export default defineConfig({
             workbox: {
                 skipWaiting: true,
                 clientsClaim: true,
+                cleanupOutdatedCaches: true,
                 navigateFallback: "/404",
                 ignoreURLParametersMatching: [/./],
                 globPatterns: ["**/*.{html,js,css,png,svg,json,ttf,pf_fragment,pf_index,pf_meta,pagefind,wasm}"]
