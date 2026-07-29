@@ -1,13 +1,13 @@
 ---
 title: Vim
+sidebar:
+    order: 5
 ---
 
-![](https://www.vim.org/images/vim_header.gif)
+纯命令行文本编辑器，SSH 远程管理服务器的必备工具。
 
-官网链接：https://www.vim.org/
+![Vim](https://www.vim.org/images/vim_header.gif)
 
-这是一个纯命令行的编辑器，适用于在 SSH 或 Web Shell 中编辑，甚至是服务器上没有安装图形界面的场景，也具有图形化版本（GVim）和其他分支（例如 NeoVim）。
+无需图形界面，适用于终端环境。使用 `vim 文件名` 打开文件，按 `I` 进入编辑模式，编辑完成后按 `ESC` 退出编辑模式，输入 `:wq` 保存并退出。
 
-使用 `vim 文件名` 打开一个文件或者创建一个文件，然后按下 `I` 键开始编辑，编辑好后按下 `ESC` 退出，输入 `:wq` 命令即可保存，若不能保存，使用 `:wq!` 命令。
-
-Vim 是可自由分发的开放源代码软件。
+- 官网：[vim.org](https://www.vim.org/)

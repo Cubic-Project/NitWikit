@@ -1,5 +1,5 @@
 ---
-title: 笨蛋开服教程
+title: 概述
 ---
 
 ![](../../../assets/nitwikit-banner.png)
