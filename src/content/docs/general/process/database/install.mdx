@@ -548,6 +548,14 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 
 :::
 
+:::danger
+
+安装时请务必确认是否开启 **端口外部访问**，这么做会导致容器将其端口暴露到公开网络。
+
+请注意，防火墙无法禁用 **容器端口映射**。
+
+:::
+
 <details>
   <summary>安装，配置面板</summary>
 
@@ -564,6 +572,22 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 <details>
   <summary>安装 MySQL</summary>
 
-![](_assets/50.png)
+![安装 MySQL](_assets/50.png)
+
+</details>
+
+<details>
+  <summary>安装 PostgreSQL</summary>
+
+![安装 PostgreSQL](_assets/1Ppostgre.png)
+
+![安装 PostgreSQL](_assets/1Ppostgre1.png)
+
+</details>
+
+<details>
+  <summary>安装 Redis</summary>
+
+![安装 Redis](_assets/1Predis.png)
 
 </details>
