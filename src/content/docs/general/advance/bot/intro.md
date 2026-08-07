@@ -21,3 +21,6 @@ sidebar:
 ## OneBot 标准
 
 [OneBot](https://onebot.dev/) 是 **统一的聊天机器人应用接口标准**。它适用于各种各样的即时通讯软件，QQ 是其应用场景之一。如果机器人框架和机器人都支持 OneBot，那它们便可以配合使用。
+
+## Milky 标准
+[Milky](https://milky.ntqqrev.org/) 是基于 **HTTP / WebSocket** 通信的新时代 QQ 机器人应用接口标准。**Milky** 有许多直接或间接源自 **OneBot 11** 的设计，但并不是 **OneBot 11** 的扩展
