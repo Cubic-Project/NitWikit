@@ -824,7 +824,11 @@ export default defineConfig({
                                     label: "准备工作",
                                     collapsed: true,
                                     items: [
-                                        { label: "文本编辑器", collapsed: true, autogenerate: { directory: "bedrock/preparation/text-editor" } }
+                                        {
+                                            label: "文本编辑器",
+                                            collapsed: true,
+                                            autogenerate: { directory: "bedrock/preparation/text-editor" }
+                                        }
                                     ]
                                 },
                                 {
@@ -1007,7 +1011,7 @@ export default defineConfig({
                                                         "bedrock/preparation/java/sdkman",
                                                         "bedrock/preparation/java/faq"
                                                     ]
-                                                },
+                                                }
                                             ]
                                         },
                                         "bedrock/waterdogepe/install",
