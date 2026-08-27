@@ -35,7 +35,7 @@ LightingLuminol 是 Luminol 的分支，旨在修复对 BukkitAPI 的破坏，�
 如果官网进不去或者下载慢可以使用这里的镜像！
 
 - [Luminol-MCSL](https://sync.mcsl.com.cn/core/Luminol)
-- [Luminol-McRes]((https://mcres.cn/downloads/luminol.html))
+- [Luminol-McRes](https://mcres.cn/downloads/luminol.html)
 - [LightingLuminol-MCSL](https://sync.mcsl.com.cn/core/LightingLuminol)
 - [LightingLuminol-McRes](https://mcres.cn/downloads/lightingluminol.html)
 - [Molia](https://mcres.cn/downloads/molia.html)
@@ -82,7 +82,7 @@ Lophine 基于 Luminol，但更专注于生电特性的实现，如果你是生�
 ### Lophine 下载
 
 - [Lophine GitHub](https://github.com/LuminolMC/Lophine/releases)
-- [McRes]((https://mcres.cn/downloads/lophine.html))
+- [McRes](https://mcres.cn/downloads/lophine.html)
 
 ### 配置
 
