@@ -79,5 +79,6 @@ flowchart TD
 如果你已经确定要使用的分支，可以直接从以下镜像下载：
 
 - [Folia](https://mcres.cn/downloads/folia.html)
-- [Luminol & Lophine](https://mcres.cn/downloads/luminol.html)
+- [Luminol](https://mcres.cn/downloads/luminol.html)
+- [Lophine](https://mcres.cn/downloads/lophine.html)
 - [更多分支下载](/java/start/server-core-choose/folia/misc)

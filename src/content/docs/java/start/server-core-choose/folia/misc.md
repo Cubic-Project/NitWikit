@@ -18,7 +18,7 @@ Lumina 是 LeavesMC 开发的一个 Folia 分支，旨在遵循原版生电特�
 
 Lumina 目前在官网上不提供下载，你可以选择自己去编译，或使用第三方预编译版本。
 
-[下载 (1.20.6)](https://vip.123pan.cn/1821558579/Lingyi/aaa/lumina/Lumina-1.20.6-mcres.jar)
+[下载 (1.20.6)](https://mcres.cn/downloads/lumina.html)
 
 ## DeerFolia
 
@@ -39,6 +39,10 @@ Lumina 目前在官网上不提供下载，你可以选择自己去编译，或�
 - [1.20.6](https://ssl.lunadeer.cn:14446/zhangyuheng/DeerFolia/releases/download/1.20.6-85d30a2/DeerFolia-paperclip-1.20.6-R0.1-SNAPSHOT-mojmap.jar)
 - [1.20.4](https://ssl.lunadeer.cn:14446/zhangyuheng/DeerFolia/releases/download/1.20.4-2615826/DeerFolia-paperclip-1.20.4-R0.1-SNAPSHOT-reobf.jar)
 
+镜像:
+
+- [McRes](https://mcres.cn/downloads/deerfolia.html)
+
 ## DirtyFolia
 
 :::note
@@ -51,8 +55,7 @@ Lumina 目前在官网上不提供下载，你可以选择自己去编译，或�
 
 下载镜像：
 
-- [1.19.4](https://vip.123pan.cn/1821558579/Lingyi/aaa/dirtyfolia/dirtyfolia-1.19.4-mcres.cn.jar)
-- [1.20.1](https://vip.123pan.cn/1821558579/Lingyi/aaa/dirtyfolia/dirtyfolia-1.20.1-mcres.cn.jar)
+- [McRes](https://mcres.cn/downloads/dirtyfolia.html)
 
 ## Kaiiju
 
@@ -66,6 +69,7 @@ Lumina 目前在官网上不提供下载，你可以选择自己去编译，或�
 
 下载镜像：
 
-- [1.20.1](https://vip.123pan.cn/1821558579/Lingyi/kaiiju-paperclip-1.20.1-R0.1-SNAPSHOT-reobf.jar)
 - [1.19.4](https://dl.8aka.org/plugins/kaiiju-paperclip-1.19.4-R0.1-SNAPSHOT-reobf.jar)
 - [1.19.3](https://dl.8aka.org/plugins/kaiiju-paperclip-1.19.3-R0.1-SNAPSHOT-reobf.jar)
+
+- [McRes(1.19.3/1.19.4/1.20.1)](https://mcres.cn/downloads/kaiiju.html)
