@@ -62,5 +62,3 @@ Luminol 另一个好处就是可以开启生电配置。
 - fixes.use_vanilla_random_source RNG 操作
 
 其它特性请阅读 Paper 文档
-
-
