@@ -56,10 +56,10 @@ flowchart TD
     A --> D[插件兼容性]
     A --> E[生电特性]
     B --> DeerFolia
-    C --> F[1.21+] --> Luminol
+    C --> F[1.21-26.2] --> Luminol
     C --> G[1.20/2] --> Molia
     C --> H[1.19.3/4] --> Kaiiju
-    D --> I[1.21+] --> LightingLuminol
+    D --> I[1.21-26.2] --> LightingLuminol
     D --> J[1.20/2] --> DirtyMolia
     D --> K[1.19.3/4] --> DirtyFolia
     E --> L[1.21+] --> Lophine
@@ -71,7 +71,8 @@ flowchart TD
 
 ### 主要分支
 
-- **[Luminol](/java/start/server-core-choose/folia/luminol)** - 性能、稳定性和功能的最佳平衡，包含 Lophine 生电分支 (1.21+)。
+- **[Luminol](/java/start/server-core-choose/folia/luminol)** - 性能、稳定性和功能的最佳平衡(已停止更新)
+- **[Lophine](/java/start/server-core-choose/folia/lophine)** - 实现更多生电内容
 - **[其他分支](/java/start/server-core-choose/folia/misc)** - 包含 Molia、DeerFolia、Kaiiju 等。
 
 ### 快速下载
