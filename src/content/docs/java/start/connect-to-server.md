@@ -124,7 +124,7 @@ server-port=25565
 
 ### `身份验证服务器目前处于宕机状态。请稍后再试，抱歉`
 
-确认 Mojang 或微软账户服务器状态（可通过 [Mojang Status](https://status.mojang.com/) 查询），
+确认 Mojang 或微软账户服务器状态（原 Mojang Status 页面已于 2021 年停用，可通过英文的 [ServerBuddy 服务状态页](https://serverbuddy.net/is-minecraft-down) 查询），
 如果不是 Mojang 的验证服务器维护，也可能是你的网络太差，连接不到验证服务器，可以安装 [AlwaysOnline](https://modrinth.com/plugin/alwaysonlineplugin) 插件来解决。
 
 ### `Outdated server! / 服务器版本过时`
